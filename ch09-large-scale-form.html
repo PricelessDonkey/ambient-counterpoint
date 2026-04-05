@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 09 — Large-Scale Form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner"><span class="banner-text">CHAPTER 09 — LARGE-SCALE FORM — RITORNELLO — FUGUE — EPISODES — NESTING — ARCH FORM ◇ CHAPTER 09 — LARGE-SCALE FORM — RITORNELLO — FUGUE — EPISODES — NESTING — ARCH FORM ◇ CHAPTER 09 — LARGE-SCALE FORM ◇</span></div>
+
+<div class="hero">
+  <h1><span>Large-Scale Form</span></h1>
+  <p class="subtitle">How sentences chain into movements — and how the same seam-free logic scales from four notes to four minutes.</p>
+</div>
+
+<div class="intro-box"><div class="inner">Bach's music feels inevitable because its architecture works at every zoom level. A four-note motif obeys the same handoff logic as a multi-section fugue. This chapter maps the largest structural containers: ritornello form, fugue exposition, episodes, and arch form — then shows how the same nesting principle connects them all from motif to movement.</div></div>
+
+<div class="content">
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">43</div>
+      <div class="card-title">Ritornello</div>
+    </div>
+    <div class="card-body">
+      <p>A <span class="key">ritornello</span> is a recurring refrain — a memorable passage that returns between contrasting episodes, each time in a new key. The word means "little return" in Italian. Bach uses it to give listeners a structural anchor: no matter how far the music travels harmonically, the refrain brings them home to familiar material.</p>
+      <p>The pattern: <strong>Rit-A (tonic) → Episode → Rit-A (relative major) → Episode → Rit-A (dominant) → Episode → Rit-A (tonic, final)</strong>. The refrain material is fixed — the key center rotates while the shape stays constant. In practice Bach often presents only an excerpt of the refrain at interior returns rather than the full passage, but the recognizable opening gesture is always there. Listeners locate themselves by shape, not by length.</p>
+      <p>For ambient work, a ritornello can be a repeating drone pad, a looped motif, or an unchanging rhythmic texture that anchors a long-form piece. Episodes become zones of evolution; the ritornello is the moment of grounding — arrival without finality, until the last return.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 115" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="16" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">RITORNELLO FORM — same material, rotating key centers</text>
+          <!-- Rit 1 (D minor) -->
+          <rect x="20" y="26" width="80" height="52" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <text x="60" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#3b6ea5">Rit. A</text>
+          <text x="60" y="64" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#3b6ea5">D minor</text>
+          <!-- Episode 1 -->
+          <rect x="108" y="26" width="95" height="52" rx="3" fill="#4a8c5c" fill-opacity="0.13" stroke="#4a8c5c" stroke-width="1.5"/>
+          <text x="155" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c">Episode 1</text>
+          <text x="155" y="64" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">sequential</text>
+          <!-- Rit 2 (F major) -->
+          <rect x="211" y="26" width="80" height="52" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <text x="251" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#3b6ea5">Rit. A</text>
+          <text x="251" y="64" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#3b6ea5">F major</text>
+          <!-- Episode 2 -->
+          <rect x="299" y="26" width="95" height="52" rx="3" fill="#4a8c5c" fill-opacity="0.13" stroke="#4a8c5c" stroke-width="1.5"/>
+          <text x="346" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c">Episode 2</text>
+          <text x="346" y="64" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">sequential</text>
+          <!-- Rit 3 (A minor) -->
+          <rect x="402" y="26" width="80" height="52" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <text x="442" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#3b6ea5">Rit. A</text>
+          <text x="442" y="64" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#3b6ea5">A minor</text>
+          <!-- Episode 3 (development) -->
+          <rect x="490" y="26" width="95" height="52" rx="3" fill="#e07830" fill-opacity="0.13" stroke="#e07830" stroke-width="1.5"/>
+          <text x="537" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#e07830">Episode 3</text>
+          <text x="537" y="64" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e07830">development</text>
+          <!-- Rit 4 (D minor, final — emphasized) -->
+          <rect x="593" y="22" width="145" height="60" rx="3" fill="#3b6ea5" fill-opacity="0.28" stroke="#3b6ea5" stroke-width="2"/>
+          <text x="665" y="46" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#3b6ea5">Rit. A</text>
+          <text x="665" y="62" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#3b6ea5">D minor</text>
+          <text x="665" y="75" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">final return</text>
+          <!-- Time axis -->
+          <line x1="20" y1="90" x2="738" y2="90" stroke="#d9d4ca" stroke-width="1"/>
+          <text x="20" y="104" font-family="Space Mono,monospace" font-size="9" fill="#888">0:00</text>
+          <text x="380" y="104" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">time</text>
+          <text x="738" y="104" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#888">3:00</text>
+        </svg>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Ambient application</span>
+        Design your ritornello first — it's the motif or texture that anchors every return. Episodes are where evolution happens; the ritornello is where listeners exhale.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">44</div>
+      <div class="card-title">Fugue Exposition</div>
+    </div>
+    <div class="card-body">
+      <p>A <span class="key">fugue exposition</span> is the opening section where Bach introduces each voice in turn, building texture gradually from silence to full polyphony. Voice 1 states the <span class="key">subject</span> — the main melodic idea. Once it finishes, Voice 2 enters with the <span class="key">answer</span> — the subject transposed up a fifth — while Voice 1 continues with a countersubject. Voice 3 then enters with the subject again while both upper voices continue weaving.</p>
+      <p>The effect is cinematic: each voice addition raises the density. The exposition ends when all voices have entered. What follows is the first episode — the fugue's development zone.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="16" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">FUGUE EXPOSITION — voices enter one by one, stacking density</text>
+          <!-- Voice labels -->
+          <text x="68" y="65" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Voice 1</text>
+          <text x="68" y="108" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Voice 2</text>
+          <text x="68" y="151" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Voice 3</text>
+          <!-- Bar markers -->
+          <text x="73" y="30" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 1</text>
+          <text x="173" y="30" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 2</text>
+          <text x="273" y="30" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 3</text>
+          <text x="373" y="30" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 4</text>
+          <text x="473" y="30" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 5</text>
+          <text x="573" y="30" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 6</text>
+          <!-- Grid lines -->
+          <line x1="70" y1="35" x2="70" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="170" y1="35" x2="170" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="270" y1="35" x2="270" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="370" y1="35" x2="370" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="470" y1="35" x2="470" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="570" y1="35" x2="570" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="670" y1="35" x2="670" y2="165" stroke="#d9d4ca" stroke-width="0.5"/>
+          <!-- Voice 1: Subject bars 1-2 -->
+          <rect x="70" y="48" width="200" height="24" rx="3" fill="#3b6ea5" fill-opacity="0.22" stroke="#3b6ea5" stroke-width="1.5"/>
+          <text x="170" y="65" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">Subject (D minor)</text>
+          <!-- Voice 1: Countersubject bars 3-6 -->
+          <rect x="270" y="48" width="400" height="24" rx="3" fill="#3b6ea5" fill-opacity="0.07" stroke="#3b6ea5" stroke-width="1" stroke-dasharray="5 3"/>
+          <text x="470" y="65" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">countersubject</text>
+          <!-- Voice 2: silent bars 1-2 -->
+          <line x1="70" y1="107" x2="270" y2="107" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/>
+          <!-- Voice 2: Answer bars 3-4 -->
+          <rect x="270" y="91" width="200" height="24" rx="3" fill="#4a8c5c" fill-opacity="0.2" stroke="#4a8c5c" stroke-width="1.5"/>
+          <text x="370" y="108" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c">Answer (A minor, 5th up)</text>
+          <!-- Voice 2: Countersubject bars 5-6 -->
+          <rect x="470" y="91" width="200" height="24" rx="3" fill="#4a8c5c" fill-opacity="0.07" stroke="#4a8c5c" stroke-width="1" stroke-dasharray="5 3"/>
+          <text x="570" y="108" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c">countersubject</text>
+          <!-- Voice 3: silent bars 1-4 -->
+          <line x1="70" y1="151" x2="470" y2="151" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/>
+          <!-- Voice 3: Subject bars 5-6 -->
+          <rect x="470" y="134" width="200" height="24" rx="3" fill="#3b6ea5" fill-opacity="0.22" stroke="#3b6ea5" stroke-width="1.5"/>
+          <text x="570" y="151" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">Subject (D minor)</text>
+          <!-- Density labels -->
+          <text x="700" y="65" font-family="Space Mono,monospace" font-size="9" fill="#888">1 voice</text>
+          <text x="700" y="108" font-family="Space Mono,monospace" font-size="9" fill="#888">2 voices</text>
+          <text x="700" y="151" font-family="Space Mono,monospace" font-size="9" fill="#888">3 voices</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Subject vs Answer</div>
+        <p>The <span class="key">subject</span> is the main theme in the tonic key. The <span class="key">answer</span> is the same theme a fifth up — in D minor, a fifth above D is A, so the answer arrives in A minor (the minor dominant). Sometimes the answer is adjusted by a semitone to preserve tonal stability — this adjusted version is called a <span class="key">tonal answer</span>, as opposed to a <span class="key">real answer</span> that transposes exactly. The alternation tonic → dominant → tonic forms the exposition's harmonic arc.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">45</div>
+      <div class="card-title">Episodes</div>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Episodes</span> are the connective tissue between subject entries in a fugue, or between ritornello passages in a concerto. They contain no statement of the main subject — instead they spin freely, typically using <span class="key">sequential patterns</span> (a motif repeated, transposing down or up by step) to carry momentum while traveling through key areas.</p>
+      <p>In a Baroque fugue, the episode functions like the Fortspinnung of a sentence: it extracts a small fragment from the subject or countersubject and sequences it, modulating toward the key where the next subject entry will arrive. The episode is both transition and development — it doesn't state the main idea, but evolves it.</p>
+      <div class="sub-section">
+        <div class="sub-title">Episode anatomy</div>
+        <p>A typical Bach episode: <strong>bar 1</strong> — extract a 2-beat figure from the countersubject; <strong>bars 2–3</strong> — sequence it down by step, each iteration arriving in a new key area; <strong>bar 4</strong> — land on the dominant of the new target key, preparing the re-entry of the subject. Efficient, purposeful, 4–8 bars.</p>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Ambient equivalent</span>
+        An episode is a texture that evolves between anchor points. Use filter sweeps, rhythmic variation, or gradual pitch drift to create the sense of "traveling" — then snap back to the ritornello for arrival.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">46</div>
+      <div class="card-title">The Nesting Principle</div>
+    </div>
+    <div class="card-body">
+      <p>Bach's music is <span class="key">self-similar</span> at every structural level. The same logic — generate, develop, resolve; statement, contrast, return — operates whether you're looking at a two-bar phrase or a ten-minute movement. This is the <span class="key">nesting principle</span>: smaller units are built from the same handoff logic as larger ones, and each level is contained within the next.</p>
+      <p>Motif → Phrase → Sentence → Movement. At each zoom level: a unit begins, develops, and resolves before handing off to the next. Nothing starts until the previous unit completes; nothing ends without preparing what follows.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 168" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="16" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">NESTING — same handoff logic at every zoom level</text>
+          <!-- Level labels -->
+          <text x="82" y="46" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">motif</text>
+          <text x="82" y="84" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c">phrase</text>
+          <text x="82" y="122" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#e07830">sentence</text>
+          <text x="82" y="160" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#7a5ab5">movement</text>
+          <!-- Level 1: 8 motif blocks, 80px each, 2px gap, x_start=90 -->
+          <rect x="90"  y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="172" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="254" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="336" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="418" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="500" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="582" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="664" y="30" width="80" height="24" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <!-- Level 2: 4 phrase blocks, 162px each (= 2×80 + 2), same gaps -->
+          <rect x="90"  y="68" width="162" height="24" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <rect x="254" y="68" width="162" height="24" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <rect x="418" y="68" width="162" height="24" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <rect x="582" y="68" width="162" height="24" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <!-- Level 3: 2 sentence blocks, 326px each (= 2×162 + 2) -->
+          <rect x="90"  y="106" width="326" height="24" rx="2" fill="#e07830" fill-opacity="0.15" stroke="#e07830" stroke-width="1"/>
+          <rect x="418" y="106" width="326" height="24" rx="2" fill="#e07830" fill-opacity="0.15" stroke="#e07830" stroke-width="1"/>
+          <!-- Level 4: 1 movement block, 654px (= 2×326 + 2) -->
+          <rect x="90" y="144" width="654" height="24" rx="2" fill="#7a5ab5" fill-opacity="0.15" stroke="#7a5ab5" stroke-width="1.5"/>
+          <text x="417" y="161" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#7a5ab5">movement</text>
+        </svg>
+      </div>
+      <div class="principle-box">
+        The nesting principle is why you can learn Bach's techniques at the phrase level and apply them at the movement level. The rules are the same — only the timescale changes.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">47</div>
+      <div class="card-title">Arch Form / Palindrome</div>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Arch form</span> (ABCBA) is a palindromic structure where the second half mirrors the first. A → B → C (climax) → B → A. The ending is not just a cadence — it's a full structural echo of the opening, heard now with the memory of the entire journey. The return feels earned rather than imposed.</p>
+      <p>Bach uses arch structures at multiple levels — individual movements and across multi-movement works. In ambient music, arch form maps perfectly to long-form composition: build texture and harmonic tension toward a peak at C, then systematically subtract back to the opening state. The arc is felt over minutes, not bars.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 145" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="16" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">ARCH FORM — ABCBA — the ending mirrors the beginning</text>
+          <!-- Outer arch: A1 center (150,70) to A2 center (630,70), peak at (390,20) -->
+          <path d="M 150 70 Q 390 18 630 70" stroke="#e04848" stroke-width="1.5" fill="none" stroke-dasharray="6 3" opacity="0.6"/>
+          <!-- Inner arch: B1 center (270,70) to B2 center (510,70), peak at (390,36) -->
+          <path d="M 270 70 Q 390 36 510 70" stroke="#4a8c5c" stroke-width="1.5" fill="none" stroke-dasharray="6 3" opacity="0.6"/>
+          <!-- A1 -->
+          <rect x="100" y="72" width="100" height="48" rx="3" fill="#e04848" fill-opacity="0.15" stroke="#e04848" stroke-width="1.5"/>
+          <text x="150" y="93" text-anchor="middle" font-family="Space Mono,monospace" font-size="16" font-weight="bold" fill="#e04848">A</text>
+          <text x="150" y="111" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">opening</text>
+          <!-- B1 -->
+          <rect x="220" y="72" width="100" height="48" rx="3" fill="#4a8c5c" fill-opacity="0.15" stroke="#4a8c5c" stroke-width="1.5"/>
+          <text x="270" y="93" text-anchor="middle" font-family="Space Mono,monospace" font-size="16" font-weight="bold" fill="#4a8c5c">B</text>
+          <text x="270" y="111" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">development</text>
+          <!-- C (climax, taller) -->
+          <rect x="340" y="62" width="100" height="58" rx="3" fill="#e07830" fill-opacity="0.2" stroke="#e07830" stroke-width="2"/>
+          <text x="390" y="86" text-anchor="middle" font-family="Space Mono,monospace" font-size="16" font-weight="bold" fill="#e07830">C</text>
+          <text x="390" y="103" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e07830">climax</text>
+          <text x="390" y="114" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#e07830">peak tension</text>
+          <!-- B2 -->
+          <rect x="460" y="72" width="100" height="48" rx="3" fill="#4a8c5c" fill-opacity="0.15" stroke="#4a8c5c" stroke-width="1.5"/>
+          <text x="510" y="93" text-anchor="middle" font-family="Space Mono,monospace" font-size="16" font-weight="bold" fill="#4a8c5c">B</text>
+          <text x="510" y="111" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">development</text>
+          <!-- A2 -->
+          <rect x="580" y="72" width="100" height="48" rx="3" fill="#e04848" fill-opacity="0.15" stroke="#e04848" stroke-width="1.5"/>
+          <text x="630" y="93" text-anchor="middle" font-family="Space Mono,monospace" font-size="16" font-weight="bold" fill="#e04848">A</text>
+          <text x="630" y="111" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">return</text>
+          <!-- Mirror axis -->
+          <line x1="390" y1="55" x2="390" y2="128" stroke="#e07830" stroke-width="1" stroke-dasharray="3 2" opacity="0.45"/>
+          <text x="390" y="138" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">mirror axis</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Why arch form resonates in ambient music</div>
+        <p>Works by Arvo Pärt, Stars of the Lid, and Floating Points often use arch-like structures — not through explicit ABCBA design, but through intuitive tension arcs that peak and recede. Learning to design this consciously gives you control over the emotional shape of a long-form piece: build deliberately, peak precisely, and return with intention rather than accident.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — Map the Movement</div>
+    </div>
+    <div class="card-body">
+      <p>Open your Ch08 session (16 bars: the 8-bar sentence + 8-bar motivic development episode). You've been building the micro-scale. Now plan the macro.</p>
+      <p><strong>Don't write new notes yet.</strong> Create a structural map — a text document, a grid, or notes in Ableton's arrangement view — for a 3-minute ritornello piece built from your existing material:</p>
+      <div class="sub-section">
+        <div class="sub-title">The seven-section map</div>
+        <p><strong>Section A — Ritornello A (D minor):</strong> bars 1–8. Your existing sentence, unchanged. Voices: 2. Density: 1/5 (sparse).</p>
+        <p><strong>Section B — Episode 1:</strong> bars 9–16. Your existing motivic development episode. Density: 2–3/5 (building).</p>
+        <p><strong>Section C — Ritornello A (F major):</strong> bars 17–24. Same 8-bar material, transposed to F major (relative). Density: 3/5 (medium).</p>
+        <p><strong>Section D — Episode 2:</strong> bars 25–32. New sequential material modulating toward A minor. Density: 4/5 (high).</p>
+        <p><strong>Section E — Ritornello A (A minor):</strong> bars 33–40. Sentence material in A minor. Density: 5/5 (peak).</p>
+        <p><strong>Section F — Episode 3 (development):</strong> bars 41–48. Motivic fragmentation, tension rising then receding back to low density.</p>
+        <p><strong>Section G — Ritornello A (D minor, final):</strong> bars 49–56. Full tonic return. Strip back to 2 voices only — the same texture as bar 1. Density: 1/5.</p>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">For each section, note</span>
+        (1) key center, (2) which tracks are active, (3) texture density on a 1–5 scale, (4) what harmonic motion happens within it. This map becomes your composition blueprint for the next sessions.
+      </div>
+      <div class="principle-box">
+        You now have a 56-bar piece outline. The ritornello creates a tonal arch: D minor → F major → A minor → D minor. Same material, three key positions, one emotional arc. The return to D minor in bar 49 will land like a resolution you've been waiting 48 bars for.
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg">
+          <!-- Section arch map: 7 equal sections (8 bars each), density shown as bar height -->
+          <!-- Section x positions (w=104 each): A=30, B=134, C=238, D=342, E=446, F=550, G=654 -->
+
+          <!-- Section letter labels -->
+          <text x="82"  y="13" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" font-weight="700" text-anchor="middle">A</text>
+          <text x="186" y="13" font-family="Space Mono,monospace" font-size="11" fill="#4caf79" font-weight="700" text-anchor="middle">B</text>
+          <text x="290" y="13" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" font-weight="700" text-anchor="middle">C</text>
+          <text x="394" y="13" font-family="Space Mono,monospace" font-size="11" fill="#4caf79" font-weight="700" text-anchor="middle">D</text>
+          <text x="498" y="13" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" font-weight="700" text-anchor="middle">E</text>
+          <text x="602" y="13" font-family="Space Mono,monospace" font-size="11" fill="#4caf79" font-weight="700" text-anchor="middle">F</text>
+          <text x="706" y="13" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" font-weight="700" text-anchor="middle">G</text>
+
+          <!-- Top and bottom borders of density zone -->
+          <line x1="30" y1="18" x2="758" y2="18" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="30" y1="70" x2="758" y2="70" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Background strip -->
+          <rect x="30" y="18" width="728" height="52" fill="#f5f0e8"/>
+
+          <!-- Density bars (bottom-aligned at y=70, max height=52px for E section) -->
+          <!-- A (Dm, 1/5): h=10 -->
+          <rect x="30"  y="60" width="104" height="10" fill="#3d7ec7" opacity="0.7"/>
+          <!-- B (episode, 2-3/5): h=26 -->
+          <rect x="134" y="44" width="104" height="26" fill="#4caf79" opacity="0.7"/>
+          <!-- C (Fmaj, 3/5): h=31 -->
+          <rect x="238" y="39" width="104" height="31" fill="#3d7ec7" opacity="0.7"/>
+          <!-- D (episode, 4/5): h=41 -->
+          <rect x="342" y="29" width="104" height="41" fill="#4caf79" opacity="0.7"/>
+          <!-- E (Amin, 5/5 peak): h=52 -->
+          <rect x="446" y="18" width="104" height="52" fill="#3d7ec7" opacity="0.9"/>
+          <!-- F (episode, declining ~3/5): h=31 -->
+          <rect x="550" y="39" width="104" height="31" fill="#4caf79" opacity="0.7"/>
+          <!-- G (Dm, 1/5): h=10 -->
+          <rect x="654" y="60" width="104" height="10" fill="#3d7ec7" opacity="0.7"/>
+
+          <!-- Section dividers -->
+          <line x1="134" y1="18" x2="134" y2="70" stroke="#1a1a1a" stroke-width="0.5"/>
+          <line x1="238" y1="18" x2="238" y2="70" stroke="#1a1a1a" stroke-width="0.5"/>
+          <line x1="342" y1="18" x2="342" y2="70" stroke="#1a1a1a" stroke-width="0.5"/>
+          <line x1="446" y1="18" x2="446" y2="70" stroke="#1a1a1a" stroke-width="0.5"/>
+          <line x1="550" y1="18" x2="550" y2="70" stroke="#1a1a1a" stroke-width="0.5"/>
+          <line x1="654" y1="18" x2="654" y2="70" stroke="#1a1a1a" stroke-width="0.5"/>
+
+          <!-- Peak label -->
+          <text x="498" y="34" font-family="Space Mono,monospace" font-size="8" fill="#ffffff" font-weight="700" text-anchor="middle">PEAK</text>
+
+          <!-- Key labels (below density zone) -->
+          <text x="82"  y="83" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D min</text>
+          <text x="186" y="83" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">ep.</text>
+          <text x="290" y="83" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">F maj</text>
+          <text x="394" y="83" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">ep.</text>
+          <text x="498" y="83" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">A min</text>
+          <text x="602" y="83" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">ep.</text>
+          <text x="706" y="83" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D min</text>
+
+          <!-- Density labels -->
+          <text x="82"  y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">1/5</text>
+          <text x="186" y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">2-3/5</text>
+          <text x="290" y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">3/5</text>
+          <text x="394" y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">4/5</text>
+          <text x="498" y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">5/5</text>
+          <text x="602" y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">↓</text>
+          <text x="706" y="97" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">1/5</text>
+
+          <!-- Caption -->
+          <text x="394" y="114" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar height = texture density — tonal arch: D min → F maj → A min → D min</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner"><span class="banner-text">RITORNELLO ◇ FUGUE EXPOSITION ◇ EPISODES ◇ NESTING PRINCIPLE ◇ ARCH FORM ◇ RITORNELLO ◇ FUGUE EXPOSITION ◇ EPISODES ◇ NESTING PRINCIPLE ◇ ARCH FORM ◇</span></div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch08-motivic-development.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 08 — Motivic Development</span>
+  </a>
+
+  <a class="chapter-nav-item chapter-nav-next" href="ch10-space-breathing.html">
+    <span class="chapter-nav-label">Next →</span>
+    <span class="chapter-nav-title">Ch 10 — Space and Breathing</span>
+  </a>
+</div>
+
+<div class="footer"><p>AMBIENT COUNTERPOINT — CH 09: LARGE-SCALE FORM — D MINOR</p></div>
+
+</body>
+</html>

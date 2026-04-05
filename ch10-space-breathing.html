@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 10 — Space and Breathing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner"><span class="banner-text">CHAPTER 10 — SPACE AND BREATHING — TEXTURE — REGISTER — HARMONIC RHYTHM — REST ◇ CHAPTER 10 — SPACE AND BREATHING — TEXTURE — REGISTER — HARMONIC RHYTHM — REST ◇ CHAPTER 10 — SPACE AND BREATHING ◇</span></div>
+
+<div class="hero">
+  <h1><span>Space and Breathing</span></h1>
+  <p class="subtitle">Making dense music feel open — the art of controlled silence, register, and harmonic stillness.</p>
+</div>
+
+<div class="intro-box"><div class="inner">Dense counterpoint earns its power from contrast. Without space, tension has nowhere to breathe and release loses its impact. This chapter covers seven techniques Bach uses to create breathing room inside otherwise continuous music: dropping voices, stretching duration, cycling sequences, slowing harmonic rhythm, widening register, resting individual voices, and cadential breathing. These are not pauses — they are active compositional choices that make the dense moments land harder.</div></div>
+
+<div class="content">
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">48</div>
+      <div class="card-title">Texture Reduction</div>
+    </div>
+    <div class="card-body">
+      <p>The most immediate way to create space is to <span class="key">drop voices</span>. A passage with three or four voices moving in parallel feels dense by default. Remove two and the physical room in the frequency spectrum opens up — listeners can hear through to the remaining voices instead of processing a wall of sound.</p>
+      <p>Bach does this instinctively between sections. An Epilog often reduces from full texture to two voices or even one, giving the cadence room to land. The transition into a new Vordersatz frequently strips back to a single line — the same pattern as the very opening of the piece. Returning material sounds fresh precisely because texture dropped before it arrived.</p>
+      <p>For ambient work, voice dropout is your most powerful fader. Muting a track mid-phrase creates room. The ear, trained by prior density, fills in the missing voice for a bar or two even after it leaves — ghost voices are still heard in absence.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="14" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">TEXTURE DENSITY MAP — voices active across 8 bars</text>
+          <!-- Voice labels -->
+          <text x="78" y="59" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Upper</text>
+          <text x="78" y="99" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Middle</text>
+          <text x="78" y="139" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Bass</text>
+          <!-- Bar number labels -->
+          <text x="130" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">1</text>
+          <text x="210" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">2</text>
+          <text x="290" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">3</text>
+          <text x="370" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">4</text>
+          <text x="450" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">5</text>
+          <text x="530" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">6</text>
+          <text x="610" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">7</text>
+          <text x="690" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">8</text>
+          <!-- Bar grid lines (bar width = 80px, starting at x=90) -->
+          <line x1="90" y1="33" x2="90" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="170" y1="33" x2="170" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="250" y1="33" x2="250" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="330" y1="33" x2="330" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="490" y1="33" x2="490" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="570" y1="33" x2="570" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="650" y1="33" x2="650" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="730" y1="33" x2="730" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <!-- Section divider at bar 5 (x=410) — heavier line -->
+          <line x1="410" y1="33" x2="410" y2="160" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Bars 1–4: all voices active (green) -->
+          <rect x="92" y="44" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="172" y="44" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="252" y="44" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="332" y="44" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="92" y="84" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="172" y="84" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="252" y="84" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="332" y="84" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="92" y="124" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="172" y="124" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="252" y="124" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <rect x="332" y="124" width="76" height="26" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <!-- Bars 5–8: Upper only active (blue), Middle and Bass inactive (dashed) -->
+          <rect x="412" y="44" width="76" height="26" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <rect x="492" y="44" width="76" height="26" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <rect x="572" y="44" width="76" height="26" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <rect x="652" y="44" width="76" height="26" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <rect x="412" y="84" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="492" y="84" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="572" y="84" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="652" y="84" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="412" y="124" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="492" y="124" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="572" y="124" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="652" y="124" width="76" height="26" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <!-- Section labels at bottom -->
+          <text x="250" y="168" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">full texture — 3 voices</text>
+          <text x="570" y="168" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#3b6ea5">texture reduced — upper voice only</text>
+        </svg>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Ableton application</span>
+        Mute tracks cleanly at a bar boundary using clip automation. The abruptness of a voice disappearing reads as structural intent. A crossfade here would soften the impact — avoid it unless you want the reduction to feel gradual.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">49</div>
+      <div class="card-title">Long Notes Amid Motion</div>
+    </div>
+    <div class="card-body">
+      <p>A single <span class="key">long note</span> inside continuous motion functions as a rest even though sound continues. After eight bars of eighth notes, a half note landing feels like the music exhaling — not stopping, but releasing the tension of constant movement. The mechanism is relative: duration contrast is what registers, not absolute silence.</p>
+      <p>Bach uses this at the pivot point of sequences: a held note punctuates the sequence before the next step begins, giving the listener a moment to absorb their harmonic position before the line moves on. The long note says "we are here now" before the journey resumes.</p>
+      <p>In piano roll terms: a note block four times longer than its neighbors draws the eye and the ear. It marks arrival. The phrase that follows will feel like it begins from solid ground rather than a moving stream.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="14" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">LONG NOTE AS PERCEIVED REST — 8 eighths then a half-note landing</text>
+          <!-- Beat/bar grid -->
+          <line x1="80" y1="22" x2="80" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="102" y1="22" x2="102" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="124" y1="22" x2="124" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="146" y1="22" x2="146" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="168" y1="22" x2="168" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="190" y1="22" x2="190" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="212" y1="22" x2="212" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="234" y1="22" x2="234" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <!-- Bar line -->
+          <line x1="256" y1="22" x2="256" y2="105" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="300" y1="22" x2="300" y2="105" stroke="#d9d4ca" stroke-width="0.5"/>
+          <!-- Bar labels -->
+          <text x="168" y="19" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 1 — continuous eighths</text>
+          <text x="302" y="19" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 2</text>
+          <!-- 8 eighth notes: arch shape D4→E4→F4→G4→A4→G4→F4→E4 -->
+          <!-- 7px/semitone: D4=90, E4=76, F4=69, G4=55, A4=41 -->
+          <rect x="80" y="90" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="102" y="76" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="124" y="69" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="146" y="55" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="168" y="41" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="190" y="55" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="212" y="69" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <rect x="234" y="76" width="20" height="6" rx="2" fill="#3b6ea5"/>
+          <!-- Connecting line (path of motion) -->
+          <polyline points="90,93 112,79 134,72 156,58 178,44 200,58 222,72 244,79 302,93"
+                    stroke="#3b6ea5" stroke-width="1.5" fill="none" stroke-opacity="0.35"/>
+          <!-- Half note arrival (D4) -->
+          <rect x="258" y="88" width="88" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <text x="302" y="108" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#9a7a00">D4 — half note arrival</text>
+        </svg>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Duration contrast rule</span>
+        After eight or more consecutive short notes, a note at least 3× longer registers as a landing, not just a longer note. Below a 3× ratio, the difference reads as rhythm variation rather than arrival.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">50</div>
+      <div class="card-title">Sequences as Cognitive Rest</div>
+    </div>
+    <div class="card-body">
+      <p>A <span class="key">sequence</span> is a pattern repeated at a different pitch level. Once the listener's ear recognizes the pattern — usually after two repetitions — the brain shifts from active tracking to passive prediction. That shift feels like rest even though notes are still flowing at the same speed and density.</p>
+      <p>This is why Bach's Fortspinnung sections (see <a href="ch07-the-sentence.html">ch07-the-sentence.html</a>) feel spacious despite continuous eighth-note motion. The sequences create a predictable trajectory. The ear stops parsing new information and instead rides the pattern's momentum toward its expected resolution.</p>
+      <div class="sub-section">
+        <div class="sub-title">Why it works</div>
+        <p>Tension comes from unpredictability. A sequence removes unpredictability for two to six bars — the ear knows where the next step lands before it arrives. Suspense is replaced by the pleasure of confirmation. This is the same mechanism that makes familiar songs feel comforting: the brain rewards accurate prediction.</p>
+        <p>In your sessions: a two-bar motif repeated three times descending by fifth through D–G–C–F is technically denser than a single melody, but it registers as more relaxed. The cognitive load drops, and the listener opens up — ready for the disruption you've been saving.</p>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Three-step minimum</span>
+        A sequence needs at least three repetitions to register as a pattern. Two is ambiguous. Three locks in the expectation and creates the cognitive rest effect.
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Break the fourth step</span>
+        After three sequence steps, diverting on the fourth creates maximum surprise. The ear predicted step four — deviating at exactly that moment exploits the cognitive rest you just built.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">51</div>
+      <div class="card-title">Harmonic Rhythm Slowing</div>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Harmonic rhythm</span> is how often the chord changes. Fast harmonic rhythm — one chord per beat — feels urgent and mobile. Slow harmonic rhythm — one chord per two or four bars — feels hovering and spacious, even when the melody keeps moving at the same speed above it.</p>
+      <p>Bach creates breathing space by holding a single harmony for multiple bars while the upper voice sequences or runs through passing tones. The listener's sense of harmonic travel stops; the music hovers in place. When harmony finally moves, the motion registers as more significant than if changes had been constant throughout.</p>
+      <p>For ambient production: a sustained pad or drone under a running arpeggio creates the same effect. The arpeggio provides rhythmic motion; the pad provides harmonic stasis. The combination feels alive but spacious — motion without travel.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 170" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="14" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">HARMONIC RHYTHM — frequent changes vs sustained harmony</text>
+          <!-- Row labels -->
+          <text x="82" y="65" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#555">FREQUENT</text>
+          <text x="82" y="132" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#555">SUSTAINED</text>
+          <!-- Bar grid (4 bars, bar_w=160, start x=90) -->
+          <line x1="90" y1="30" x2="90" y2="155" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="250" y1="30" x2="250" y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="410" y1="30" x2="410" y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="570" y1="30" x2="570" y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="730" y1="30" x2="730" y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <!-- Bar numbers -->
+          <text x="170" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 1</text>
+          <text x="330" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 2</text>
+          <text x="490" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 3</text>
+          <text x="650" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 4</text>
+          <!-- FREQUENT ROW: 4 chord blocks per bar (beat = 40px wide, h=26) -->
+          <!-- Bar 1 -->
+          <rect x="91" y="49" width="38" height="26" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <text x="110" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">Dm</text>
+          <rect x="131" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="150" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Gm</text>
+          <rect x="171" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="190" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Am</text>
+          <rect x="211" y="49" width="38" height="26" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <text x="230" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">Dm</text>
+          <!-- Bar 2 -->
+          <rect x="251" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="270" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">C</text>
+          <rect x="291" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="310" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">F</text>
+          <rect x="331" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="350" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Bb</text>
+          <rect x="371" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="390" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Am</text>
+          <!-- Bar 3 -->
+          <rect x="411" y="49" width="38" height="26" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <text x="430" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">Dm</text>
+          <rect x="451" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="470" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">C</text>
+          <rect x="491" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="510" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Bb</text>
+          <rect x="531" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="550" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Am</text>
+          <!-- Bar 4 -->
+          <rect x="571" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="590" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Gm</text>
+          <rect x="611" y="49" width="38" height="26" rx="2" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="630" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">Am</text>
+          <rect x="651" y="49" width="38" height="26" rx="2" fill="#e04848" fill-opacity="0.13" stroke="#e04848" stroke-width="1"/>
+          <text x="670" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#e04848">A7</text>
+          <rect x="691" y="49" width="38" height="26" rx="2" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1"/>
+          <text x="710" y="66" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">Dm</text>
+          <!-- Frequent row description -->
+          <text x="410" y="90" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">16 chord changes in 4 bars — constantly in motion, no breathing room</text>
+          <!-- SUSTAINED ROW: 2 blocks spanning 2 bars each -->
+          <rect x="91" y="116" width="317" height="28" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <text x="250" y="134" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">Dm — bars 1–2</text>
+          <rect x="411" y="116" width="317" height="28" rx="3" fill="#e04848" fill-opacity="0.13" stroke="#e04848" stroke-width="1.5"/>
+          <text x="570" y="134" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#e04848">A7 — bars 3–4</text>
+          <!-- Sustained row description -->
+          <text x="410" y="158" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">2 chord changes in 4 bars — melody moves freely above a still harmony</text>
+        </svg>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Hovering vs traveling</span>
+        Frequent harmony = traveling (ear tracks each move). Slow harmony = hovering (ear settles into the color). Ambient music lives in the hovering register. Save frequent changes for moments of arrival or deliberate disruption.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">52</div>
+      <div class="card-title">Register as Openness</div>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Register</span> is where in the pitch spectrum a voice sits. When all voices cluster in the same octave, the sound feels dense — every voice occupies overlapping frequency space. When voices spread across two or more octaves, the same chord feels spacious even at identical dynamic levels. The chord quality is the same; only the vertical span changes.</p>
+      <p>Bach's cathedral effect: in large-scale climaxes, the bass drops to the lowest register while the upper voice reaches its highest point. The physical span of the voicing creates the feeling of a room expanding around the listener. The same D minor chord, voiced D3–A4–D5, fills a space that D4–F4–A4 does not.</p>
+      <p>The technique works in reverse too: compressing all voices into a tight cluster creates intimacy and density — set up a wide-register release and compress first to maximize the contrast.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="14" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">REGISTER WIDTH — Dm close voicing vs Dm spread voicing</text>
+          <!-- Panel divider -->
+          <line x1="380" y1="22" x2="380" y2="232" stroke="#d9d4ca" stroke-width="1"/>
+          <!-- Panel labels -->
+          <text x="190" y="32" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" font-weight="bold" fill="#555">DENSE</text>
+          <text x="570" y="32" text-anchor="middle" font-family="Space Mono,monospace" font-size="11" font-weight="bold" fill="#555">OPEN</text>
+          <!-- Dense panel: D4=130, F4=106, A4=74 (8px/semitone) -->
+          <!-- Subtle pitch grid lines -->
+          <line x1="100" y1="74" x2="360" y2="74" stroke="#f0ede7" stroke-width="0.5"/>
+          <line x1="100" y1="106" x2="360" y2="106" stroke="#f0ede7" stroke-width="0.5"/>
+          <line x1="100" y1="130" x2="360" y2="130" stroke="#f0ede7" stroke-width="0.5"/>
+          <!-- Dense chord note blocks: x=120, w=90 -->
+          <rect x="120" y="71" width="90" height="7" rx="2" fill="#3b6ea5"/>
+          <text x="218" y="79" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">A4</text>
+          <rect x="120" y="103" width="90" height="7" rx="2" fill="#4a8c5c"/>
+          <text x="218" y="111" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c">F4</text>
+          <rect x="120" y="127" width="90" height="7" rx="2" fill="#3b6ea5"/>
+          <text x="218" y="135" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">D4</text>
+          <!-- Dense span bracket (left side) -->
+          <line x1="112" y1="71" x2="112" y2="134" stroke="#555" stroke-width="1.5"/>
+          <line x1="108" y1="71" x2="116" y2="71" stroke="#555" stroke-width="1.5"/>
+          <line x1="108" y1="134" x2="116" y2="134" stroke="#555" stroke-width="1.5"/>
+          <text x="100" y="107" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#555">5th</text>
+          <!-- Dense label -->
+          <text x="190" y="158" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">close position — voices overlap</text>
+          <text x="190" y="170" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">in the same frequency band</text>
+          <!-- Open panel: D5=34, A4=74, D3=226 -->
+          <!-- (D5 = D4-96 = 34, D3 = D4+96 = 226) -->
+          <line x1="400" y1="34" x2="660" y2="34" stroke="#f0ede7" stroke-width="0.5"/>
+          <line x1="400" y1="74" x2="660" y2="74" stroke="#f0ede7" stroke-width="0.5"/>
+          <line x1="400" y1="226" x2="660" y2="226" stroke="#f0ede7" stroke-width="0.5"/>
+          <!-- Open chord note blocks: x=520, w=90 -->
+          <rect x="520" y="31" width="90" height="7" rx="2" fill="#3b6ea5"/>
+          <text x="618" y="39" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">D5</text>
+          <rect x="520" y="71" width="90" height="7" rx="2" fill="#3b6ea5"/>
+          <text x="618" y="79" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">A4</text>
+          <rect x="520" y="223" width="90" height="7" rx="2" fill="#3b6ea5"/>
+          <text x="618" y="231" font-family="Space Mono,monospace" font-size="10" fill="#3b6ea5">D3</text>
+          <!-- Open span bracket (left side of right panel) -->
+          <line x1="512" y1="31" x2="512" y2="230" stroke="#555" stroke-width="1.5"/>
+          <line x1="508" y1="31" x2="516" y2="31" stroke="#555" stroke-width="1.5"/>
+          <line x1="508" y1="230" x2="516" y2="230" stroke="#555" stroke-width="1.5"/>
+          <text x="500" y="135" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#555">2 oct</text>
+          <!-- Open label (above D3 note to avoid overlap) -->
+          <text x="570" y="205" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">spread voicing — same chord,</text>
+          <text x="570" y="217" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">different voicing</text>
+        </svg>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Cathedral technique</span>
+        In Ableton: transpose your bass track down one octave and your lead up one octave while holding the middle voice static. Same notes — but the frequency spread changes the perceived room size immediately.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">53</div>
+      <div class="card-title">Rests in Individual Voices</div>
+    </div>
+    <div class="card-body">
+      <p>A voice can breathe without the whole piece stopping. When one voice <span class="key">rests</span> while others continue, the texture thins locally — a density shift without a structural break. The result is more subtle than dropping all voices at once: one part of the harmonic space opens while others maintain continuity.</p>
+      <p>Bach uses this constantly in two-voice counterpoint: the upper voice will rest for a bar or two while the lower voice holds, then the upper voice re-enters. Each voice takes turns as the rhythmically active one. The relationship between them breathes rather than both voices always filling every beat.</p>
+      <p>In ambient layered sessions: mute one track in a specific bar range while others loop unchanged. The re-entry of the resting voice two or four bars later becomes a moment of renewed density — the opposite of dropout, a small arrival.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="14" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">INDIVIDUAL VOICE REST — lower voice holds while upper rests then returns</text>
+          <!-- Voice labels -->
+          <text x="78" y="63" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Upper</text>
+          <text x="78" y="100" text-anchor="end" font-family="Space Mono,monospace" font-size="10" fill="#555">Lower</text>
+          <!-- Bar grid (4 bars, bar_w=160, start x=90) -->
+          <line x1="90" y1="28" x2="90" y2="112" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="250" y1="28" x2="250" y2="112" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="410" y1="28" x2="410" y2="112" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="570" y1="28" x2="570" y2="112" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="730" y1="28" x2="730" y2="112" stroke="#1a1a1a" stroke-width="1"/>
+          <!-- Bar numbers -->
+          <text x="170" y="26" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 1</text>
+          <text x="330" y="26" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 2</text>
+          <text x="490" y="26" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 3</text>
+          <text x="650" y="26" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">bar 4</text>
+          <!-- Upper voice: active bars 1 and 4, resting bars 2–3 -->
+          <rect x="92" y="50" width="156" height="22" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <!-- Upper rest bars 2–3 (dashed) -->
+          <rect x="252" y="50" width="316" height="22" rx="3" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <text x="410" y="65" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">— rest —</text>
+          <!-- Upper re-entry bar 4 -->
+          <rect x="572" y="50" width="156" height="22" rx="3" fill="#3b6ea5" fill-opacity="0.18" stroke="#3b6ea5" stroke-width="1.5"/>
+          <!-- Lower voice: active all 4 bars (green) -->
+          <rect x="92" y="87" width="636" height="22" rx="3" fill="#4a8c5c" fill-opacity="0.18" stroke="#4a8c5c" stroke-width="1.5"/>
+          <!-- Re-entry annotation -->
+          <line x1="572" y1="44" x2="572" y2="50" stroke="#3b6ea5" stroke-width="1" stroke-dasharray="3 2"/>
+          <text x="620" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">re-entry</text>
+        </svg>
+      </div>
+      <div class="idiom">
+        <span class="idiom-name">Voice-level breathing</span>
+        Two bars of rest followed by a clear re-entry registers as a small arrival event. The listener notices — not consciously, but the density increase lands. Use it before the moment you want to emphasize.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">54</div>
+      <div class="card-title">Cadential Breathing</div>
+    </div>
+    <div class="card-body">
+      <p>The <span class="key">Epilog</span> (see <a href="ch07-the-sentence.html">ch07-the-sentence.html</a>) is not just a closing formula — it is the piece's structural exhale. Where the Fortspinnung built momentum through sequences and chromatic color, the Epilog releases it: rhythm slows, texture reduces, harmonic motion simplifies to a single dominant-to-tonic cadence. The music breathes out before landing.</p>
+      <p>Every section boundary is an opportunity for cadential breathing. The transition between a dense episode and a returning ritornello typically involves a short Epilog-style exhale: a bar or two of dominant pedal, thinned texture, a suspension resolving. The new section enters a cleared space.</p>
+      <p>In ambient terms, this translates to a transition zone between loops or sections — a moment where complexity drops before the next structural idea arrives. Without it, sections feel abrupt. With it, the listener is carried across.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg">
+          <text x="380" y="14" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BREATHING PLAN — 16 bars, four techniques applied in sequence</text>
+          <!-- Section header bands: 4 sections of 4 bars each -->
+          <!-- bar_w=43px, left=40px. Sections: A=40-212, B=212-384, C=384-556, D=556-728 -->
+          <rect x="40" y="22" width="172" height="36" rx="3" fill="#4a8c5c" fill-opacity="0.10" stroke="#4a8c5c" stroke-width="1"/>
+          <text x="126" y="36" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" font-weight="bold" fill="#4a8c5c">BARS 1–4</text>
+          <text x="126" y="50" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">full texture</text>
+          <rect x="212" y="22" width="172" height="36" rx="3" fill="#3b6ea5" fill-opacity="0.10" stroke="#3b6ea5" stroke-width="1"/>
+          <text x="298" y="36" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" font-weight="bold" fill="#3b6ea5">BARS 5–8</text>
+          <text x="298" y="50" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#3b6ea5">texture thins</text>
+          <rect x="384" y="22" width="172" height="36" rx="3" fill="#7a5ea5" fill-opacity="0.10" stroke="#7a5ea5" stroke-width="1"/>
+          <text x="470" y="36" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" font-weight="bold" fill="#7a5ea5">BARS 9–12</text>
+          <text x="470" y="50" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#7a5ea5">register opens</text>
+          <rect x="556" y="22" width="172" height="36" rx="3" fill="#e07830" fill-opacity="0.10" stroke="#e07830" stroke-width="1"/>
+          <text x="642" y="36" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" font-weight="bold" fill="#e07830">BARS 13–16</text>
+          <text x="642" y="50" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#e07830">harmony slows</text>
+          <!-- Voice row labels -->
+          <text x="33" y="82" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#555">Upper</text>
+          <text x="33" y="100" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#555">Middle</text>
+          <text x="33" y="118" text-anchor="end" font-family="Space Mono,monospace" font-size="9" fill="#555">Bass</text>
+          <!-- Bar grid lines -->
+          <line x1="40" y1="65" x2="40" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="83" y1="65" x2="83" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="126" y1="65" x2="126" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="169" y1="65" x2="169" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="212" y1="65" x2="212" y2="135" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="255" y1="65" x2="255" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="298" y1="65" x2="298" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="341" y1="65" x2="341" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="384" y1="65" x2="384" y2="135" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="427" y1="65" x2="427" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="470" y1="65" x2="470" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="513" y1="65" x2="513" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="556" y1="65" x2="556" y2="135" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="599" y1="65" x2="599" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="642" y1="65" x2="642" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="685" y1="65" x2="685" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="728" y1="65" x2="728" y2="135" stroke="#d9d4ca" stroke-width="0.5"/>
+          <!-- Section A (bars 1–4): all 3 voices — green -->
+          <rect x="41" y="70" width="169" height="14" rx="2" fill="#4a8c5c" fill-opacity="0.25" stroke="#4a8c5c" stroke-width="1"/>
+          <rect x="41" y="88" width="169" height="14" rx="2" fill="#4a8c5c" fill-opacity="0.25" stroke="#4a8c5c" stroke-width="1"/>
+          <rect x="41" y="106" width="169" height="14" rx="2" fill="#4a8c5c" fill-opacity="0.25" stroke="#4a8c5c" stroke-width="1"/>
+          <!-- Section B (bars 5–8): upper only — blue -->
+          <rect x="213" y="70" width="169" height="14" rx="2" fill="#3b6ea5" fill-opacity="0.25" stroke="#3b6ea5" stroke-width="1"/>
+          <rect x="213" y="88" width="169" height="14" rx="2" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="213" y="106" width="169" height="14" rx="2" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <!-- Section C (bars 9–12): upper + bass, no middle — purple -->
+          <rect x="385" y="70" width="169" height="14" rx="2" fill="#7a5ea5" fill-opacity="0.22" stroke="#7a5ea5" stroke-width="1"/>
+          <rect x="385" y="88" width="169" height="14" rx="2" fill="none" stroke="#d9d4ca" stroke-dasharray="4 3"/>
+          <rect x="385" y="106" width="169" height="14" rx="2" fill="#7a5ea5" fill-opacity="0.22" stroke="#7a5ea5" stroke-width="1"/>
+          <!-- Section D (bars 13–16): all voices, slow harmony — orange -->
+          <rect x="557" y="70" width="169" height="14" rx="2" fill="#e07830" fill-opacity="0.20" stroke="#e07830" stroke-width="1"/>
+          <rect x="557" y="88" width="169" height="14" rx="2" fill="#e07830" fill-opacity="0.20" stroke="#e07830" stroke-width="1"/>
+          <!-- Bass in D: two long blocks showing slow harmonic rhythm -->
+          <rect x="557" y="106" width="83" height="14" rx="2" fill="#e07830" fill-opacity="0.30" stroke="#e07830" stroke-width="1.5"/>
+          <text x="598" y="116" text-anchor="middle" font-family="Space Mono,monospace" font-size="7" fill="#e07830">D drone</text>
+          <rect x="642" y="106" width="83" height="14" rx="2" fill="#e04848" fill-opacity="0.20" stroke="#e04848" stroke-width="1.5"/>
+          <text x="683" y="116" text-anchor="middle" font-family="Space Mono,monospace" font-size="7" fill="#e04848">A drone</text>
+          <!-- Bar number ticks at y=140 -->
+          <text x="62" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">1</text>
+          <text x="105" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">2</text>
+          <text x="148" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">3</text>
+          <text x="191" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">4</text>
+          <text x="234" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">5</text>
+          <text x="277" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">6</text>
+          <text x="320" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">7</text>
+          <text x="363" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">8</text>
+          <text x="406" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">9</text>
+          <text x="449" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">10</text>
+          <text x="492" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">11</text>
+          <text x="535" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">12</text>
+          <text x="578" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">13</text>
+          <text x="621" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">14</text>
+          <text x="664" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">15</text>
+          <text x="707" y="148" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#bbb">16</text>
+          <!-- Density arc label -->
+          <text x="380" y="170" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">full → sparse → wide → hovering — one breathing technique per section</text>
+          <!-- Arrow showing arc -->
+          <polyline points="60,178 210,178 210,182 380,182 380,178 550,178 550,182 700,182"
+                    stroke="#d9d4ca" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+      <div class="principle-box">
+        Every structural section boundary benefits from a micro-exhale before the new idea enters. The listener needs a cleared space to hear the return as fresh. The Epilog is Bach's formal solution; your session's transition zones are the same mechanism scaled down.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — Breathing Version</div>
+    </div>
+    <div class="card-body">
+      <p>Open your 16-bar Ableton session from Ch08 — 5 MIDI tracks, development episode in bars 9–16. (The Ch09 structural map was a planning document; your MIDI session is still 16 bars.) Apply three breathing edits to create a piece that arcs: full → sparse → wide → hovering.</p>
+      <div class="sub-section">
+        <div class="sub-title">Edit 1 — Bars 5–8: texture dropout</div>
+        <p>In bars 5–8, mute tracks 2, 3, 4, and 5 — keep only Track 1 (Upper voice) playing. Do this with empty clips or clip automation, not a global mute. After 4 bars of full texture, the sudden single voice opens the room. The listener has heard the material; one voice is enough to carry it forward.</p>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Edit 2 — Bars 9–12: register spread</div>
+        <p>Re-enable Track 1 (Upper) and Track 3 (Bass). Mute Track 2 (Middle) for these bars. In Track 1 bars 9–12, select all notes and shift up one octave (Shift+↑ in Ableton's piano roll, 12 semitones). In Track 3 bars 9–12, shift all notes down one octave. The same D minor chord tones now span the full pitch spectrum — upper voice in octave 6, bass in octave 1. This is the cathedral effect: same notes, doubled vertical space.</p>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Edit 3 — Bars 13–16: harmonic freeze</div>
+        <p>Re-enable all tracks. In Track 3 (Bass) bars 13–16, simplify the bass line to two long notes: hold D2 for the entire bars 13–14 (one note, two bars long), then A1 for bars 15–16. Delete all other bass activity in this range. Leave the upper voices unchanged — they continue their normal motion above a near-static harmonic field. The result: motion without travel, the characteristic hovering quality of ambient music.</p>
+      </div>
+      <p>Play through the 16 bars. Notice each point of relief: bar 5 (room opens), bar 9 (space expands), bar 13 (movement stops). Each technique is isolated to a 4-bar window so the contrast is clean. Your session now demonstrates three of the chapter's breathing techniques — dropout, register spread, and harmonic freeze — in a single audible pass.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 192" xmlns="http://www.w3.org/2000/svg">
+          <!-- Track activity grid: 5 tracks × 4 bar-groups of 4 bars each -->
+          <!-- Columns: label(120px) + 4×160px = 760px -->
+          <!-- Rows: header(32px) + 5 tracks×32px = 192px -->
+
+          <!-- Column header backgrounds -->
+          <rect x="0"   y="0" width="120" height="32" fill="#e8e4de"/>
+          <rect x="120" y="0" width="160" height="32" fill="#3d7ec718"/>
+          <rect x="280" y="0" width="160" height="32" fill="#d4842a18"/>
+          <rect x="440" y="0" width="160" height="32" fill="#8b5cf618"/>
+          <rect x="600" y="0" width="160" height="32" fill="#d4842a18"/>
+
+          <!-- Column header labels -->
+          <text x="60"  y="20" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle" font-weight="700">TRACK</text>
+          <text x="200" y="14" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle" font-weight="700">BARS 1–4</text>
+          <text x="200" y="26" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">full texture</text>
+          <text x="360" y="14" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle" font-weight="700">BARS 5–8</text>
+          <text x="360" y="26" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">dropout</text>
+          <text x="520" y="14" font-family="Space Mono,monospace" font-size="8" fill="#7c3aed" text-anchor="middle" font-weight="700">BARS 9–12</text>
+          <text x="520" y="26" font-family="Space Mono,monospace" font-size="8" fill="#7c3aed" text-anchor="middle">register spread</text>
+          <text x="680" y="14" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle" font-weight="700">BARS 13–16</text>
+          <text x="680" y="26" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">harmonic freeze</text>
+
+          <!-- Grid lines -->
+          <line x1="0" y1="32"  x2="760" y2="32"  stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="0" y1="64"  x2="760" y2="64"  stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="0" y1="96"  x2="760" y2="96"  stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="0" y1="128" x2="760" y2="128" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="0" y1="160" x2="760" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="0" y1="192" x2="760" y2="192" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="120" y1="0" x2="120" y2="192" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="280" y1="0" x2="280" y2="192" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="440" y1="0" x2="440" y2="192" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="600" y1="0" x2="600" y2="192" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="760" y1="0" x2="760" y2="192" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Track label column -->
+          <text x="8" y="52" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T1</text>
+          <text x="8" y="62" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">Upper</text>
+          <text x="8" y="84" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T2</text>
+          <text x="8" y="94" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">Lower</text>
+          <text x="8" y="116" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T3</text>
+          <text x="8" y="126" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">Bass</text>
+          <text x="8" y="148" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T4</text>
+          <text x="8" y="158" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">Dev.</text>
+          <text x="8" y="180" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T5</text>
+          <text x="8" y="190" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">Dev.</text>
+
+          <!-- T1 row (y=32-64) -->
+          <rect x="121" y="33" width="158" height="30" fill="#4caf7940" rx="1"/>  <!-- bars 1-4: active -->
+          <rect x="281" y="33" width="158" height="30" fill="#4caf79"   rx="1"/>  <!-- bars 5-8: SOLO -->
+          <rect x="441" y="33" width="158" height="30" fill="#d4842a30" rx="1"/>  <!-- bars 9-12: active + octave up -->
+          <rect x="601" y="33" width="158" height="30" fill="#4caf7940" rx="1"/>  <!-- bars 13-16: active -->
+          <text x="200" y="51" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+          <text x="360" y="47" font-family="Space Mono,monospace" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="700">SOLO</text>
+          <text x="360" y="58" font-family="Space Mono,monospace" font-size="7" fill="#ffffff" text-anchor="middle">only voice</text>
+          <text x="520" y="47" font-family="Space Mono,monospace" font-size="8" fill="#7c3aed" text-anchor="middle" font-weight="700">↑ octave</text>
+          <text x="520" y="58" font-family="Space Mono,monospace" font-size="7" fill="#7c3aed" text-anchor="middle">spread up</text>
+          <text x="680" y="51" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+
+          <!-- T2 row (y=64-96) -->
+          <rect x="121" y="65" width="158" height="30" fill="#4caf7940" rx="1"/>  <!-- bars 1-4: active -->
+          <rect x="281" y="65" width="158" height="30" fill="#f0ece4"   rx="1"/>  <!-- bars 5-8: muted -->
+          <rect x="441" y="65" width="158" height="30" fill="#f0ece4"   rx="1"/>  <!-- bars 9-12: muted -->
+          <rect x="601" y="65" width="158" height="30" fill="#4caf7940" rx="1"/>  <!-- bars 13-16: active -->
+          <text x="200" y="83" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+          <text x="360" y="83" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="520" y="83" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="680" y="83" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+
+          <!-- T3 row (y=96-128) -->
+          <rect x="121" y="97"  width="158" height="30" fill="#4caf7940" rx="1"/>
+          <rect x="281" y="97"  width="158" height="30" fill="#f0ece4"   rx="1"/>
+          <rect x="441" y="97"  width="158" height="30" fill="#d4842a30" rx="1"/>  <!-- octave down -->
+          <rect x="601" y="97"  width="158" height="30" fill="#d4842a30" rx="1"/>  <!-- simplified -->
+          <text x="200" y="115" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+          <text x="360" y="115" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="520" y="111" font-family="Space Mono,monospace" font-size="8" fill="#7c3aed" text-anchor="middle" font-weight="700">↓ octave</text>
+          <text x="520" y="122" font-family="Space Mono,monospace" font-size="7" fill="#7c3aed" text-anchor="middle">spread down</text>
+          <text x="680" y="111" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle" font-weight="700">simplified</text>
+          <text x="680" y="122" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">D2 → A1</text>
+
+          <!-- T4 row (y=128-160) -->
+          <rect x="121" y="129" width="158" height="30" fill="#4caf7940" rx="1"/>
+          <rect x="281" y="129" width="158" height="30" fill="#f0ece4"   rx="1"/>
+          <rect x="441" y="129" width="158" height="30" fill="#f0ece4"   rx="1"/>
+          <rect x="601" y="129" width="158" height="30" fill="#4caf7940" rx="1"/>
+          <text x="200" y="147" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+          <text x="360" y="147" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="520" y="147" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="680" y="147" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+
+          <!-- T5 row (y=160-192) -->
+          <rect x="121" y="161" width="158" height="30" fill="#4caf7940" rx="1"/>
+          <rect x="281" y="161" width="158" height="30" fill="#f0ece4"   rx="1"/>
+          <rect x="441" y="161" width="158" height="30" fill="#f0ece4"   rx="1"/>
+          <rect x="601" y="161" width="158" height="30" fill="#4caf7940" rx="1"/>
+          <text x="200" y="179" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+          <text x="360" y="179" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="520" y="179" font-family="Space Mono,monospace" font-size="8" fill="#a0998f" text-anchor="middle">—</text>
+          <text x="680" y="179" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner"><span class="banner-text">TEXTURE ◇ LONG NOTES ◇ SEQUENCES ◇ HARMONIC RHYTHM ◇ REGISTER ◇ VOICE RESTS ◇ CADENTIAL BREATHING ◇ TEXTURE ◇ LONG NOTES ◇ SEQUENCES ◇ HARMONIC RHYTHM ◇ REGISTER ◇ VOICE RESTS ◇ CADENTIAL BREATHING ◇</span></div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch09-large-scale-form.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 09 — Large-Scale Form</span>
+  </a>
+</div>
+
+<div class="footer"><p>AMBIENT COUNTERPOINT — CH 10: SPACE AND BREATHING — D MINOR</p></div>
+
+</body>
+</html>

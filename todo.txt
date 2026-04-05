@@ -1,0 +1,7 @@
+- chord reference app (enter a scale / tonic, get a list of notes in the scale. clicking a note shows you the chords you can make with that note, including the various extensions, etc. additionally, tells you information about the chord like if it's dominant, which degree it is, etc
+- 'next page' and 'prev page' in footer of each chapter
+- applications to ambient/minimal music. How to take lessons learned from Bach and apply them to other musical styles.
+- compositional techniques used by Philip glass and Steve Reich
+- jazz improv tricks (base it on udemy course)
+
+Maybe split minimalism/jazz into new main sections

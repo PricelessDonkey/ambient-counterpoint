@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bach Chord Cheat Sheet — Visual Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ── Map site tokens onto the chord sheet's color variables ── */
+.chord-sheet {
+  --color-background-primary: #ffffff;
+  --color-background-secondary: var(--cream);
+  --color-text-primary: var(--ink);
+  --color-text-secondary: var(--ink-soft);
+  --color-text-tertiary: #888888;
+  --color-border-primary: var(--ink);
+  --color-border-secondary: #aaaaaa;
+  --color-border-tertiary: #dddddd;
+  --color-background-info: var(--blue-light);
+  --color-text-info: var(--blue);
+  --color-background-warning: var(--orange-light);
+  --color-text-warning: var(--orange);
+  --border-radius-lg: 0px;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+/* ── Filter bar ── */
+.chord-sheet .filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+.chord-sheet .filter-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+.chord-sheet .filter-btn:hover {
+  background: var(--cream-dark);
+}
+.chord-sheet .filter-btn.active {
+  background: var(--yellow);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* ── Chord card grid ── */
+.chord-sheet .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* ── Individual chord cards (scoped to avoid conflict with .card in styles.css) ── */
+.chord-sheet .card {
+  background: var(--color-background-primary);
+  border: 2px solid var(--ink);
+  border-radius: var(--border-radius-lg);
+  padding: 16px 18px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.12s ease;
+  margin-bottom: 0; /* override shared .card margin */
+}
+.chord-sheet .card::after {
+  /* override shared .card drop-shadow */
+  display: none;
+}
+.chord-sheet .card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.chord-sheet .card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  border-bottom: none; /* override shared .card-header border */
+  padding: 0;
+}
+.chord-sheet .chord-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+}
+.chord-sheet .tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+.chord-sheet .tag-triad    { background: var(--blue-light);   color: var(--blue); }
+.chord-sheet .tag-seventh  { background: var(--purple-light); color: var(--purple); }
+.chord-sheet .tag-color    { background: var(--green-light);  color: var(--green); }
+.chord-sheet .tag-suspend  { background: var(--orange-light); color: var(--orange); }
+
+/* ── Interval dot visualization ── */
+.chord-sheet .semitones {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.chord-sheet .root-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+}
+.chord-sheet .interval-block {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.chord-sheet .arrow-span {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+}
+.chord-sheet .note-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.chord-sheet .note-dot-blue   { background: #E6F1FB; color: #0C447C; border: 1px solid #85B7EB; }
+.chord-sheet .note-dot-purple { background: #EEEDFE; color: #3C3489; border: 1px solid #AFA9EC; }
+.chord-sheet .note-dot-teal   { background: #E1F5EE; color: #085041; border: 1px solid #5DCAA5; }
+.chord-sheet .note-dot-amber  { background: #FAEEDA; color: #633806; border: 1px solid #EF9F27; }
+.chord-sheet .note-dot-coral  { background: #FAECE7; color: #712B13; border: 1px solid #F0997B; }
+.chord-sheet .interval-num {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  color: var(--color-text-tertiary);
+  text-align: center;
+  margin-top: 2px;
+}
+.chord-sheet .interval-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Card text ── */
+.chord-sheet .desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.chord-sheet .function-row {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  border-top: 1px dashed var(--cream-dark);
+  padding-top: 8px;
+}
+.chord-sheet .fn-label {
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+.chord-sheet .example-key {
+  margin-top: 4px;
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+.chord-sheet .hidden { display: none; }
+
+@media (max-width: 600px) {
+  .chord-sheet .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="nav-back"><a href="index.html">Home</a></div>
+
+<div class="banner">
+  <span class="banner-text">
+    BACH CHORD CHEAT SHEET &nbsp;&nbsp; ◇ &nbsp;&nbsp; TRIADS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEVENTH CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; COLOUR CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH CHORD CHEAT SHEET &nbsp;&nbsp; ◇ &nbsp;&nbsp; TRIADS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEVENTH CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; COLOUR CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="hero">
+  <h1><span>Bach Chord Cheat Sheet</span></h1>
+  <p class="subtitle">Every chord type Bach uses — what it sounds like, how it functions, and where it sits in the harmony.</p>
+</div>
+
+<div class="content">
+  <div class="chord-sheet">
+    <div class="filter-row" id="filters">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="triad">Triads</button>
+      <button class="filter-btn" data-cat="seventh">Seventh chords</button>
+      <button class="filter-btn" data-cat="color">Colour chords</button>
+      <button class="filter-btn" data-cat="suspend">Suspensions</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</div>
+
+<div class="banner">
+  <span class="banner-text">
+    BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="footer">
+  <p>BACH CHORD REFERENCE — TRIADS, SEVENTHS, COLOUR CHORDS, SUSPENSIONS</p>
+</div>
+
+<script>
+const chords = [
+  {
+    name: "Major triad",
+    symbol: "I / IV / V",
+    cat: "triad",
+    tag: "Triad",
+    tagClass: "tag-triad",
+    intervals: [0, 4, 7],
+    labels: ["R", "M3", "P5"],
+    colors: ["blue", "blue", "blue"],
+    steps: [4, 3],
+    desc: "Two stacked thirds — a major third then a minor third. Bright, stable, and resolved.",
+    fn: "Tonic (I), subdominant (IV), dominant (V)",
+    example: "C–E–G in C major"
+  },
+  {
+    name: "Minor triad",
+    symbol: "ii / iii / vi",
+    cat: "triad",
+    tag: "Triad",
+    tagClass: "tag-triad",
+    intervals: [0, 3, 7],
+    labels: ["R", "m3", "P5"],
+    colors: ["purple", "purple", "purple"],
+    steps: [3, 4],
+    desc: "A minor third then a major third. Darker and more introspective than the major.",
+    fn: "Supertonic (ii), mediant (iii), submediant (vi)",
+    example: "D–F–A in C major"
+  },
+  {
+    name: "Diminished triad",
+    symbol: "vii°",
+    cat: "triad",
+    tag: "Triad",
+    tagClass: "tag-triad",
+    intervals: [0, 3, 6],
+    labels: ["R", "m3", "d5"],
+    colors: ["coral", "coral", "coral"],
+    steps: [3, 3],
+    desc: "Two stacked minor thirds. Tense and unstable — wants to resolve. Bach uses it constantly as the leading-tone chord.",
+    fn: "Leading-tone chord (vii°), often in first inversion",
+    example: "B–D–F in C major"
+  },
+  {
+    name: "Augmented triad",
+    symbol: "III+ / V+",
+    cat: "triad",
+    tag: "Triad",
+    tagClass: "tag-triad",
+    intervals: [0, 4, 8],
+    labels: ["R", "M3", "A5"],
+    colors: ["amber", "amber", "amber"],
+    steps: [4, 4],
+    desc: "Two stacked major thirds. Ambiguous and unstable — used sparingly in Bach for colour and surprise.",
+    fn: "Passing or chromatic colour chord",
+    example: "C–E–G♯"
+  },
+  {
+    name: "Dominant seventh",
+    symbol: "V7",
+    cat: "seventh",
+    tag: "Seventh",
+    tagClass: "tag-seventh",
+    intervals: [0, 4, 7, 10],
+    labels: ["R", "M3", "P5", "m7"],
+    colors: ["blue", "blue", "blue", "purple"],
+    steps: [4, 3, 3],
+    desc: "Major triad plus a minor seventh. The most powerful tension chord — the tritone between 3rd and 7th demands resolution to the tonic.",
+    fn: "V7 → I (the essential cadential motion)",
+    example: "G–B–D–F resolving to C major"
+  },
+  {
+    name: "Diminished seventh",
+    symbol: "vii°7",
+    cat: "seventh",
+    tag: "Seventh",
+    tagClass: "tag-seventh",
+    intervals: [0, 3, 6, 9],
+    labels: ["R", "m3", "d5", "d7"],
+    colors: ["coral", "coral", "coral", "coral"],
+    steps: [3, 3, 3],
+    desc: "Four notes, all a minor third apart — perfectly symmetrical. Maximally tense. Bach deploys it for drama, chromaticism, and modulation.",
+    fn: "Leading-tone chord in minor, pivot for modulation",
+    example: "B–D–F–A♭ in C minor"
+  },
+  {
+    name: "Half-diminished seventh",
+    symbol: "vii⌀7 / ii⌀7",
+    cat: "seventh",
+    tag: "Seventh",
+    tagClass: "tag-seventh",
+    intervals: [0, 3, 6, 10],
+    labels: ["R", "m3", "d5", "m7"],
+    colors: ["coral", "coral", "coral", "purple"],
+    steps: [3, 3, 4],
+    desc: "Diminished triad with a minor (not diminished) seventh. Less extreme than fully diminished — the characteristic ii chord in minor keys.",
+    fn: "ii⌀7 → V7 → i in minor, pre-dominant",
+    example: "B–D–F–A in C minor"
+  },
+  {
+    name: "Major seventh",
+    symbol: "IM7",
+    cat: "seventh",
+    tag: "Seventh",
+    tagClass: "tag-seventh",
+    intervals: [0, 4, 7, 11],
+    labels: ["R", "M3", "P5", "M7"],
+    colors: ["blue", "blue", "blue", "teal"],
+    steps: [4, 3, 4],
+    desc: "Major triad plus the major seventh. Warm and slightly dreamy. In Bach it often appears as a passing tone rather than a full chord.",
+    fn: "Tonic extension, rarely a full chord but implied by counterpoint",
+    example: "C–E–G–B"
+  },
+  {
+    name: "Minor seventh",
+    symbol: "ii7 / vi7",
+    cat: "seventh",
+    tag: "Seventh",
+    tagClass: "tag-seventh",
+    intervals: [0, 3, 7, 10],
+    labels: ["R", "m3", "P5", "m7"],
+    colors: ["purple", "purple", "purple", "purple"],
+    steps: [3, 4, 3],
+    desc: "Minor triad with a minor seventh. Mellow and pre-dominant — frequently arises in Bach's voice leading as a passing harmony.",
+    fn: "Supertonic seventh (ii7), pre-dominant function",
+    example: "D–F–A–C in C major"
+  },
+  {
+    name: "Neapolitan chord",
+    symbol: "♭II / N6",
+    cat: "color",
+    tag: "Colour",
+    tagClass: "tag-color",
+    intervals: [0, 4, 7],
+    labels: ["♭2", "4", "♭6"],
+    colors: ["teal", "teal", "teal"],
+    steps: [4, 3],
+    desc: "A major triad built on the flattened second scale degree — almost always in first inversion (N6). Creates a striking chromatic drop before the dominant.",
+    fn: "Pre-dominant, ♭II6 → V7 → i",
+    example: "D♭–F–A♭ in C minor"
+  },
+  {
+    name: "Italian aug. sixth",
+    symbol: "It+6",
+    cat: "color",
+    tag: "Colour",
+    tagClass: "tag-color",
+    intervals: [0, 4, 10],
+    labels: ["♭6", "1", "♯4"],
+    colors: ["amber", "teal", "amber"],
+    steps: [4, 6],
+    desc: "Three notes spanning an augmented sixth (10 semitones) between the outer voices. Drives urgently to the dominant — no fifth, maximum tension.",
+    fn: "Pre-dominant → V, outer voices resolve outward by semitone",
+    example: "A♭–C–F♯ in C minor"
+  },
+  {
+    name: "German aug. sixth",
+    symbol: "Ger+6",
+    cat: "color",
+    tag: "Colour",
+    tagClass: "tag-color",
+    intervals: [0, 4, 7, 10],
+    labels: ["♭6", "1", "♭3", "♯4"],
+    colors: ["amber", "teal", "amber", "amber"],
+    steps: [4, 3, 3],
+    desc: "Like the Italian but with an added perfect fifth (or enharmonically, a diminished seventh). Richer sound — the most powerful of the augmented sixth chords.",
+    fn: "Pre-dominant → V (parallel fifths avoided via cadential 6/4)",
+    example: "A♭–C–E♭–F♯ in C minor"
+  },
+  {
+    name: "Suspended fourth",
+    symbol: "sus4",
+    cat: "suspend",
+    tag: "Suspension",
+    tagClass: "tag-suspend",
+    intervals: [0, 5, 7],
+    labels: ["R", "P4", "P5"],
+    colors: ["teal", "amber", "teal"],
+    steps: [5, 2],
+    desc: "The third is replaced by a fourth — creating tension that resolves downward by a semitone to the major third. In Bach, always a suspension, never a standalone chord.",
+    fn: "4–3 suspension over the dominant",
+    example: "G–C–D resolving to G–B–D"
+  },
+  {
+    name: "Suspended second",
+    symbol: "sus2",
+    cat: "suspend",
+    tag: "Suspension",
+    tagClass: "tag-suspend",
+    intervals: [0, 2, 7],
+    labels: ["R", "M2", "P5"],
+    colors: ["teal", "amber", "teal"],
+    steps: [2, 5],
+    desc: "The third is replaced by the major second above the root. In Bach this appears as a 2–3 suspension — the second resolves down to the third.",
+    fn: "2–3 suspension, inner-voice or bass ornament",
+    example: "C–D–G resolving to C–E–G"
+  }
+];
+
+function makeIntervalDots(chord) {
+  const colorMap = { blue: 'note-dot-blue', purple: 'note-dot-purple', teal: 'note-dot-teal', amber: 'note-dot-amber', coral: 'note-dot-coral' };
+  let html = `<div class="interval-col"><div class="root-dot">0</div><div class="interval-num">root</div></div>`;
+  chord.steps.forEach((step, i) => {
+    const sem = chord.intervals[i + 1];
+    const cls = colorMap[chord.colors[i + 1]] || 'note-dot-blue';
+    html += `<div class="interval-block"><div class="interval-col"><div class="arrow-span">+${step}</div></div></div>`;
+    html += `<div class="interval-col"><div class="note-dot ${cls}">${sem}</div><div class="interval-num">${chord.labels[i+1]}</div></div>`;
+  });
+  return html;
+}
+
+function renderCards(cat) {
+  const grid = document.getElementById('grid');
+  const filtered = cat === 'all' ? chords : chords.filter(c => c.cat === cat);
+  grid.innerHTML = filtered.map(c => `
+    <div class="card">
+      <div class="card-header">
+        <div class="chord-name">${c.name} <span style="font-size:11px;font-weight:400;color:var(--ink-soft)">${c.symbol}</span></div>
+        <div class="tag ${c.tagClass}">${c.tag}</div>
+      </div>
+      <div class="semitones">${makeIntervalDots(c)}</div>
+      <div class="desc">${c.desc}</div>
+      <div class="function-row">
+        <span class="fn-label">Function: </span>${c.fn}
+        <div class="example-key">${c.example}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+document.getElementById('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards(btn.dataset.cat);
+  history.replaceState(null, '', '#' + btn.dataset.cat);
+});
+
+// Support deep-linking via URL hash (e.g. bach_chord_cheat_sheet.html#seventh)
+const hash = location.hash.slice(1);
+const initialCat = ['triad','seventh','color','suspend'].includes(hash) ? hash : 'all';
+if (initialCat !== 'all') {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-cat="${initialCat}"]`).classList.add('active');
+}
+renderCards(initialCat);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 01 — A Single Line</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner">
+  <span class="banner-text">
+    CHAPTER 01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; A SINGLE LINE &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; A SINGLE LINE &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="hero">
+  <h1><span>A Single Line</span></h1>
+  <p class="subtitle">Before counterpoint, before harmony — just one voice, moving through time with intention.</p>
+</div>
+
+<div class="intro-box">
+  <div class="inner">
+    <strong>Everything starts here.</strong> A single melody line is the hardest thing to write well. There's nowhere to hide — no chord stack to fill the space, no second voice to carry the weight. But Bach's melodic thinking is also the most transferable skill in this whole system: the same rules that make a solo line compelling are what make two-voice counterpoint, harmonic progressions, and even ambient loops work. Get this right, and the rest follows.
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- CARD 1: Steps and Leaps -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">1</div>
+      <div class="card-title">Stepwise Motion &amp; Leaps — The 70/30 Ratio</div>
+    </div>
+    <div class="card-body">
+      <div class="sub-section">
+        <p>Bach's melodies move mostly by step — adjacent scale degrees, one note at a time. Roughly <span class="key">70% stepwise, 30% leaps</span>. That ratio creates the feeling of a line that has somewhere to go without constantly lurching.</p>
+        <p>Steps create connection. They feel inevitable — your ear can track them without effort. Leaps create drama. They pull attention, introduce energy that needs to be resolved. The melody earns its leaps by spending the rest of the time stepping.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title red">The leap rule</p>
+        <p>After a leap, step back in the opposite direction. If you leap up a fifth (D4 → A4), the next note should step down (A4 → G4). The leap creates tension; the step deflates it. <span class="key">Leap away, step back.</span> Bach almost never leaps in the same direction twice in a row.</p>
+      </div>
+
+      <!-- Diagram: steps vs leaps -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-blue" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3d7ec7"/>
+            </marker>
+            <marker id="arr-red" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#e04848"/>
+            </marker>
+          </defs>
+          <!-- grid -->
+          <line x1="30" y1="20" x2="30" y2="140" class="grid-line"/>
+          <line x1="30" y1="140" x2="740" y2="140" class="grid-line"/>
+          <!-- pitch rows: D4=120, E4=105, F4=90, G4=75, A4=60, Bb4=45, C5=30, D5=15 -->
+
+          <!-- LEFT: stepwise phrase  D E F G A G F E D -->
+          <text x="50" y="155" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" letter-spacing="1">STEPWISE — smooth, inevitable</text>
+          <!-- notes at x = 60, 110, 160, 210, 260, 310, 360, 410, 460 -->
+          <!-- D4=120 E4=105 F4=90 G4=75 A4=60 G4=75 F4=90 E4=105 D4=120 -->
+          <polyline points="60,120 110,105 160,90 210,75 260,60 310,75 360,90 410,105 460,120" stroke="#3d7ec7" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="60"  cy="120" r="5" fill="#3d7ec7"/>
+          <circle cx="110" cy="105" r="5" fill="#3d7ec7"/>
+          <circle cx="160" cy="90"  r="5" fill="#3d7ec7"/>
+          <circle cx="210" cy="75"  r="5" fill="#3d7ec7"/>
+          <circle cx="260" cy="60"  r="5" fill="#3d7ec7"/>
+          <circle cx="310" cy="75"  r="5" fill="#3d7ec7"/>
+          <circle cx="360" cy="90"  r="5" fill="#3d7ec7"/>
+          <circle cx="410" cy="105" r="5" fill="#3d7ec7"/>
+          <circle cx="460" cy="120" r="5" fill="#3d7ec7"/>
+          <!-- labels -->
+          <text x="57"  y="136" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">D4</text>
+          <text x="110" y="100" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">E</text>
+          <text x="160" y="85"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">F</text>
+          <text x="210" y="70"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">G</text>
+          <text x="260" y="55"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">A</text>
+          <text x="310" y="70"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">G</text>
+          <text x="360" y="85"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">F</text>
+          <text x="410" y="100" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">E</text>
+          <text x="460" y="136" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">D4</text>
+
+          <!-- divider -->
+          <line x1="500" y1="15" x2="500" y2="140" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+
+          <!-- RIGHT: leap + step back  D → A → G (leap up, step down) -->
+          <text x="520" y="155" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" letter-spacing="1">LEAP → STEP BACK</text>
+          <!-- D4=120, A4=60, G4=75 -->
+          <line x1="540" y1="120" x2="620" y2="60"  stroke="#e04848" stroke-width="2.5" stroke-dasharray="6 3"/>
+          <line x1="620" y1="60"  x2="700" y2="75"  stroke="#3d7ec7" stroke-width="2.5"/>
+          <circle cx="540" cy="120" r="5" fill="#3d7ec7"/>
+          <circle cx="620" cy="60"  r="6" fill="#e04848"/>
+          <circle cx="700" cy="75"  r="5" fill="#3d7ec7"/>
+          <text x="540" y="136" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">D4</text>
+          <text x="620" y="52"  font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle" font-weight="700">A4 ↑5th</text>
+          <text x="700" y="70"  font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">G4 ↓step</text>
+        </svg>
+      </div>
+
+      <div class="principle-box">
+        Steps are the default. Leaps are the event. After the event, return to default — step in the opposite direction. Your ear expects it, and when you deliver, the leap feels resolved.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2: Five Contour Shapes -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">2</div>
+      <div class="card-title">The Five Contour Shapes</div>
+    </div>
+    <div class="card-body">
+      <p>Every Bach phrase has a shape — a contour you can draw as a silhouette. There are five recurring templates. Internalising these gives you a menu to reach for when starting a new phrase. See <a href="phrase-shapes.html" class="chord-ref">phrase-shapes.html</a> for detailed SVG diagrams of each.</p>
+
+      <!-- Five mini shape diagrams side by side -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Five shapes, each 140px wide, starting at x=10, 160, 310, 460, 610 -->
+          <!-- Labels at y=195 -->
+
+          <!-- 1. Step-leap (step step LEAP down) -->
+          <!-- D E F → leap to low A  x=10..140 -->
+          <text x="75" y="195" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" letter-spacing="0">STEP-LEAP</text>
+          <polyline points="20,150 55,130 90,110 125,170" stroke="#3d7ec7" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <!-- leap segment red -->
+          <line x1="90" y1="110" x2="125" y2="170" stroke="#e04848" stroke-width="2" stroke-dasharray="5 3"/>
+          <circle cx="20"  cy="150" r="4" fill="#3d7ec7"/>
+          <circle cx="55"  cy="130" r="4" fill="#3d7ec7"/>
+          <circle cx="90"  cy="110" r="4" fill="#3d7ec7"/>
+          <circle cx="125" cy="170" r="4" fill="#e04848"/>
+          <text x="20"  y="165" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">D</text>
+          <text x="55"  y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E</text>
+          <text x="90"  y="105" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">F</text>
+          <text x="125" y="185" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">A3</text>
+
+          <!-- 2. Leap-step (LEAP up → steps back down) -->
+          <text x="225" y="195" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" letter-spacing="0">LEAP-STEP</text>
+          <line x1="170" y1="150" x2="205" y2="80" stroke="#e04848" stroke-width="2" stroke-dasharray="5 3"/>
+          <polyline points="205,80 240,95 275,110 310,125" stroke="#3d7ec7" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <circle cx="170" cy="150" r="4" fill="#3d7ec7"/>
+          <circle cx="205" cy="80"  r="5" fill="#e04848"/>
+          <circle cx="240" cy="95"  r="4" fill="#3d7ec7"/>
+          <circle cx="275" cy="110" r="4" fill="#3d7ec7"/>
+          <circle cx="310" cy="125" r="4" fill="#3d7ec7"/>
+          <text x="170" y="165" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">D</text>
+          <text x="205" y="75"  font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">A</text>
+          <text x="275" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">F</text>
+
+          <!-- 3. Arch (up then down) -->
+          <text x="375" y="195" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" letter-spacing="0">ARCH</text>
+          <polyline points="320,150 355,115 390,80 425,115 460,150" stroke="#3d7ec7" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <circle cx="320" cy="150" r="4" fill="#3d7ec7"/>
+          <circle cx="355" cy="115" r="4" fill="#3d7ec7"/>
+          <circle cx="390" cy="80"  r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="425" cy="115" r="4" fill="#3d7ec7"/>
+          <circle cx="460" cy="150" r="4" fill="#3d7ec7"/>
+          <text x="390" y="72" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">peak</text>
+
+          <!-- 4. Circle / arpeggio -->
+          <text x="525" y="195" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" letter-spacing="0">CIRCLE</text>
+          <!-- D F A D5 → step down C B Bb A -->
+          <polyline points="475,150 500,120 525,90 550,60 575,75 600,90 625,105 650,120" stroke="#3a9e6e" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <circle cx="475" cy="150" r="4" fill="#3a9e6e"/>
+          <circle cx="500" cy="120" r="4" fill="#3a9e6e"/>
+          <circle cx="525" cy="90"  r="4" fill="#3a9e6e"/>
+          <circle cx="550" cy="60"  r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="575" cy="75"  r="4" fill="#3a9e6e"/>
+          <circle cx="600" cy="90"  r="4" fill="#3a9e6e"/>
+          <circle cx="625" cy="105" r="4" fill="#3a9e6e"/>
+          <circle cx="650" cy="120" r="4" fill="#3a9e6e"/>
+          <text x="475" y="165" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">D</text>
+          <text x="500" y="115" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">F</text>
+          <text x="525" y="85"  font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">A</text>
+          <text x="550" y="55"  font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">D5</text>
+
+          <!-- 5. Fortspinnung label only — complex for mini -->
+          <text x="710" y="195" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" letter-spacing="0">CHAIN</text>
+          <!-- two mini sequences then drop -->
+          <polyline points="670,150 685,130 700,110 715,90 730,110 745,90 755,130" stroke="#3a9e6e" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          <circle cx="670" cy="150" r="3" fill="#3a9e6e"/>
+          <circle cx="685" cy="130" r="3" fill="#3a9e6e"/>
+          <circle cx="700" cy="110" r="3" fill="#3a9e6e"/>
+          <circle cx="715" cy="90"  r="3" fill="#3a9e6e"/>
+          <circle cx="730" cy="110" r="3" fill="#3a9e6e"/>
+          <circle cx="745" cy="90"  r="3" fill="#3a9e6e"/>
+          <circle cx="755" cy="130" r="3" fill="#d4842a"/>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">How to use the shapes</p>
+        <p>Pick a shape before you start writing. It gives you a target — you know roughly where the phrase is going before you commit to the first note. The <span class="key">arch</span> is the most universal; it rises to a peak and returns. The <span class="key">leap-step</span> is the most dramatic opener. The <span class="key">circle</span> is your arpeggio shape — chord tones stacked in time, then a step-wise descent to land.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3: Rhythmic Variety -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">3</div>
+      <div class="card-title">Rhythmic Variety</div>
+    </div>
+    <div class="card-body">
+      <p>Pitch gets most of the attention, but rhythm is what separates a melody from a scale. Three patterns do most of the work in Bach's melodic writing:</p>
+
+      <div class="sub-section">
+        <p class="sub-title">Long–short–short (♩ ♪♪)</p>
+        <p>One beat note followed by two half-beat notes. Creates forward momentum — the long note establishes, the short pair rushes toward the next downbeat. In a 4/4 DAW grid: a quarter note on beat 1, two eighths on beats 2-and and 3. <span class="key">This is Bach's default.</span></p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Short–short–long (♪♪ ♩)</p>
+        <p>The reverse: two quick pickups that arrive on a longer held note. Creates a gathering, arriving feeling. Use this when you want the phrase to settle — especially before a cadence.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Anacrusis — the pickup note</p>
+        <p>Starting a phrase on the "and" of beat 4 rather than beat 1. The melody begins slightly before the bar, which means it lands on beat 1 with a sense of inevitability. <span class="key">In Ableton:</span> place your first MIDI note at bar X, beat 4-and (the last eighth of the previous bar). The strong beat arrival hits harder because you earned it with the pickup.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Rhythmic displacement</p>
+        <p>Take a phrase and shift every note one eighth note later. The pitches are identical — the rhythm is offset. The phrase suddenly sounds like it's leaning forward, or slightly off-balance. Bach uses this to create the sense of a melody that doesn't quite resolve when expected.</p>
+      </div>
+
+      <!-- Rhythm diagram: long-short-short vs even eighths vs anacrusis -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 170" xmlns="http://www.w3.org/2000/svg">
+          <!-- Beat grid: 4 beats across, each beat = 160px / 4 = 40px per eighth -->
+          <!-- Label area left = 130px, diagram area = 630px wide -->
+          <!-- 8 eighths per bar: x positions 130, 168, 206, 244, 282, 320, 358, 396 (delta=38) -->
+
+          <!-- Row 1: long-short-short -->
+          <text x="0" y="38" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" dominant-baseline="middle">LONG–SHORT–SHORT</text>
+          <!-- Quarter on beat 1 (w=76), eighth on beat 2-and (w=38), eighth on beat 3 (w=38), quarter on beat 4 (w=76) -->
+          <rect x="130" y="20" width="76" height="30" fill="#3d7ec7" opacity="0.85" rx="2"/>
+          <rect x="244" y="20" width="38" height="30" fill="#3d7ec7" opacity="0.55" rx="2"/>
+          <rect x="282" y="20" width="38" height="30" fill="#3d7ec7" opacity="0.55" rx="2"/>
+          <rect x="358" y="20" width="76" height="30" fill="#3d7ec7" opacity="0.85" rx="2"/>
+          <!-- beat labels -->
+          <text x="168" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">1</text>
+          <text x="263" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">2+</text>
+          <text x="301" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">3</text>
+          <text x="396" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">4</text>
+
+          <!-- Row 2: short-short-long -->
+          <text x="0" y="90" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" dominant-baseline="middle">SHORT–SHORT–LONG</text>
+          <rect x="130" y="72" width="38" height="30" fill="#3a9e6e" opacity="0.55" rx="2"/>
+          <rect x="168" y="72" width="38" height="30" fill="#3a9e6e" opacity="0.55" rx="2"/>
+          <rect x="244" y="72" width="114" height="30" fill="#3a9e6e" opacity="0.85" rx="2"/>
+          <text x="149" y="92" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">1</text>
+          <text x="187" y="92" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">1+</text>
+          <text x="301" y="92" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">2–3</text>
+
+          <!-- Row 3: anacrusis pickup -->
+          <text x="0" y="140" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" dominant-baseline="middle">ANACRUSIS / PICKUP</text>
+          <!-- bar 1 beat 4-and = pickup; then bar 2 beat 1 = landing -->
+          <!-- prev bar beat 4-and at x=358+38=396, landing at x=510 (bar 2 beat 1) -->
+          <rect x="472" y="122" width="38"  height="30" fill="#d4842a" opacity="0.7" rx="2"/>
+          <rect x="510" y="122" width="76"  height="30" fill="#d4842a" opacity="0.9" rx="2"/>
+          <text x="491" y="142" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">4+</text>
+          <text x="548" y="142" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle">1 !</text>
+          <!-- bar boundary line -->
+          <line x1="510" y1="115" x2="510" y2="160" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="510" y="110" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">bar line</text>
+
+          <!-- beat grid lines across all rows -->
+          <line x1="130" y1="10" x2="130" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="168" y1="10" x2="168" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="206" y1="10" x2="206" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="244" y1="10" x2="244" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="282" y1="10" x2="282" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="320" y1="10" x2="320" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="358" y1="10" x2="358" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="396" y1="10" x2="396" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="434" y1="10" x2="434" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="472" y1="10" x2="472" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="510" y1="10" x2="510" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="548" y1="10" x2="548" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="586" y1="10" x2="586" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="624" y1="10" x2="624" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="662" y1="10" x2="662" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="700" y1="10" x2="700" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="738" y1="10" x2="738" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+
+          <!-- beat numbers at top -->
+          <text x="149" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">1</text>
+          <text x="187" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">+</text>
+          <text x="225" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">2</text>
+          <text x="263" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">+</text>
+          <text x="301" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">3</text>
+          <text x="339" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">+</text>
+          <text x="377" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">4</text>
+          <text x="415" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">+</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4: Sequences -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">4</div>
+      <div class="card-title">Sequences — Same Shape, Different Position</div>
+    </div>
+    <div class="card-body">
+      <p>A sequence takes a short melodic idea — a 2–4 note motif — and repeats it starting on a different scale degree, usually one step down or up. The shape stays the same; only the starting pitch moves. <span class="key">Three repetitions, then break the pattern.</span></p>
+
+      <div class="sub-section">
+        <p>The sequence creates a sense of inevitability — your ear locks onto the pattern after the second repetition and knows where the third is going. Breaking the pattern after the third is what makes the phrase breathe and arrive somewhere. If you never break it, the sequence just continues like wallpaper — your ear stops listening. If you break it on the second repetition, you haven't established the pattern yet.</p>
+        <p>In D minor, a descending sequence by step looks like: motif starting on D → same motif starting on C → same motif starting on Bb → break into cadence. That's three instances, then out.</p>
+      </div>
+
+      <!-- Sequence diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Pitch grid: D4=160, E4=140, F4=120, G4=100, A4=80, Bb4=60, C5=40, D5=20 -->
+          <!-- Each sequence unit: 4 notes, 40px each = 160px per unit -->
+          <!-- Brackets below at y=185 -->
+
+          <!-- Unit 1: D E F G  (x = 40,80,120,160) starting at D -->
+          <polyline points="40,160 80,140 120,120 160,100" stroke="#3a9e6e" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="40"  cy="160" r="5" fill="#3a9e6e"/>
+          <circle cx="80"  cy="140" r="5" fill="#3a9e6e"/>
+          <circle cx="120" cy="120" r="5" fill="#3a9e6e"/>
+          <circle cx="160" cy="100" r="5" fill="#3a9e6e"/>
+          <text x="40"  y="175" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">D</text>
+          <text x="80"  y="175" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">E</text>
+          <text x="120" y="175" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">F</text>
+          <text x="160" y="175" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">G</text>
+          <!-- bracket 1 -->
+          <line x1="30"  y1="185" x2="170" y2="185" stroke="#3a9e6e" stroke-width="1.5"/>
+          <line x1="30"  y1="185" x2="30"  y2="178" stroke="#3a9e6e" stroke-width="1.5"/>
+          <line x1="170" y1="185" x2="170" y2="178" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="100" y="197" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">unit 1</text>
+
+          <!-- Unit 2: C D E F  shifted down a step (x=200,240,280,320) — diatonic, stays in D minor -->
+          <polyline points="200,175 240,155 280,135 320,115" stroke="#3a9e6e" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="200" cy="175" r="5" fill="#3a9e6e"/>
+          <circle cx="240" cy="155" r="5" fill="#3a9e6e"/>
+          <circle cx="280" cy="135" r="5" fill="#3a9e6e"/>
+          <circle cx="320" cy="115" r="5" fill="#3a9e6e"/>
+          <text x="200" y="190" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">C</text>
+          <text x="240" y="190" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">D</text>
+          <text x="280" y="190" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">E</text>
+          <text x="320" y="190" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">F</text>
+          <!-- bracket 2 -->
+          <line x1="190" y1="185" x2="330" y2="185" stroke="#3a9e6e" stroke-width="1.5"/>
+          <line x1="190" y1="185" x2="190" y2="178" stroke="#3a9e6e" stroke-width="1.5"/>
+          <line x1="330" y1="185" x2="330" y2="178" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="260" y="197" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">unit 2</text>
+
+          <!-- Unit 3: Bb C D F E (x=360,400,440,480) -->
+          <polyline points="360,185 400,165 440,145 480,125" stroke="#3a9e6e" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="360" cy="185" r="5" fill="#3a9e6e"/>
+          <circle cx="400" cy="165" r="5" fill="#3a9e6e"/>
+          <circle cx="440" cy="145" r="5" fill="#3a9e6e"/>
+          <circle cx="480" cy="125" r="5" fill="#3a9e6e"/>
+          <!-- note: no text below these as running out of space, clip at 200 -->
+          <text x="360" y="198" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">Bb</text>
+          <!-- bracket 3 -->
+          <line x1="350" y1="185" x2="490" y2="185" stroke="#3a9e6e" stroke-width="1.5"/>
+          <line x1="350" y1="185" x2="350" y2="178" stroke="#3a9e6e" stroke-width="1.5"/>
+          <line x1="490" y1="185" x2="490" y2="178" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="420" y="197" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">unit 3</text>
+
+          <!-- Break: cadential figure different shape, orange -->
+          <polyline points="520,125 560,160 600,140 640,165 680,180" stroke="#d4842a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="520" cy="125" r="5" fill="#d4842a"/>
+          <circle cx="560" cy="160" r="5" fill="#d4842a"/>
+          <circle cx="600" cy="140" r="5" fill="#d4842a"/>
+          <circle cx="640" cy="165" r="5" fill="#d4842a"/>
+          <circle cx="680" cy="180" r="6" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <text x="600" y="197" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle">BREAK → CADENCE</text>
+
+          <!-- Continuation line between units (ghost) -->
+          <line x1="160" y1="100" x2="200" y2="175" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="320" y1="115" x2="360" y2="185" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="480" y1="125" x2="520" y2="125" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="3 3"/>
+        </svg>
+      </div>
+
+      <div class="principle-box">
+        The sequence creates the expectation. The break creates the arrival. Without both, you have neither tension nor release — just repetition.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 5: Hidden Structure -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">5</div>
+      <div class="card-title">Constant Motion with Hidden Structure</div>
+    </div>
+    <div class="card-body">
+      <p>Bach's fast runs — strings of sixteenth notes that seem to flow continuously — aren't random. They have a skeleton: <span class="key">chord tones fall on strong beats, passing tones fill the weak beats.</span> Your ear hears the top level (a continuous stream) and the bottom level (the chord) simultaneously, without consciously parsing the difference.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">Strong beats vs weak beats</p>
+        <p>In a bar of 4/4 sixteenth notes, beats 1, 2, 3, and 4 are strong (the downbeats of each quarter). The "ands," "e's," and "ahs" are weak. In a bar of eighth notes, beats 1, 2, 3, 4 are strong, and the "ands" are weak.</p>
+        <p><span class="key">Chord tones on strong beats.</span> Scale-step passing tones on weak beats. The melody implies harmony at its skeleton even without a bassline.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The principle in action — an 8-note run</p>
+        <p>The same logic applies whether you're writing eighth-note lines or sixteenth-note runs. Take a Dm chord (D, F, A). Lay the chord tones on beats 1, 2, 3, 4 of a bar of eighth notes. Then fill the gaps between them with adjacent scale steps. You now have an 8-note run that implies Dm throughout, but sounds like fluid motion. The listener hears melody — you know it's a chord with decoration.</p>
+      </div>
+
+      <!-- Hidden structure diagram: a run of 8 eighths, strong beats highlighted -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+          <!-- 8 eighth-note positions: x = 60, 140, 220, 300, 380, 460, 540, 620 (delta=80) -->
+          <!-- Pitches (Dm arpeggio + passing tones): D4=150, E4=130, F4=110, G4=90, A4=70, Bb4=50, C5=30 -->
+          <!-- Pattern: D(chord) E(pass) F(chord) G(pass) A(chord) G(pass) F(chord) E(pass) -->
+          <!-- Strong beats (1,2,3,4) = 1st, 3rd, 5th, 7th positions -->
+
+          <!-- Pitch line -->
+          <polyline points="60,150 140,130 220,110 300,90 380,70 460,90 540,110 620,130"
+                    stroke="#1a1a1a" stroke-width="2" fill="none" stroke-linejoin="round" opacity="0.3"/>
+
+          <!-- Passing tones (weak beats) -->
+          <circle cx="140" cy="130" r="6" fill="#d9d4ca" stroke="#4a4a4a" stroke-width="1.5"/>
+          <circle cx="300" cy="90"  r="6" fill="#d9d4ca" stroke="#4a4a4a" stroke-width="1.5"/>
+          <circle cx="460" cy="90"  r="6" fill="#d9d4ca" stroke="#4a4a4a" stroke-width="1.5"/>
+          <circle cx="620" cy="130" r="6" fill="#d9d4ca" stroke="#4a4a4a" stroke-width="1.5"/>
+
+          <!-- Chord tones (strong beats) — highlighted -->
+          <circle cx="60"  cy="150" r="8" fill="#3d7ec7"/>
+          <circle cx="220" cy="110" r="8" fill="#3d7ec7"/>
+          <circle cx="380" cy="70"  r="8" fill="#3d7ec7"/>
+          <circle cx="540" cy="110" r="8" fill="#3d7ec7"/>
+
+          <!-- Labels -->
+          <text x="60"  y="170" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" text-anchor="middle" font-weight="700">D4</text>
+          <text x="140" y="170" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" text-anchor="middle">E4</text>
+          <text x="220" y="170" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" text-anchor="middle" font-weight="700">F4</text>
+          <text x="300" y="170" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" text-anchor="middle">G4</text>
+          <text x="380" y="170" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" text-anchor="middle" font-weight="700">A4</text>
+          <text x="460" y="170" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" text-anchor="middle">G4</text>
+          <text x="540" y="170" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" text-anchor="middle" font-weight="700">F4</text>
+          <text x="620" y="170" font-family="Space Mono,monospace" font-size="10" fill="#4a4a4a" text-anchor="middle">E4</text>
+
+          <!-- Beat labels at top -->
+          <text x="60"  y="14" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">beat 1</text>
+          <text x="140" y="14" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">+</text>
+          <text x="220" y="14" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">beat 2</text>
+          <text x="300" y="14" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">+</text>
+          <text x="380" y="14" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">beat 3</text>
+          <text x="460" y="14" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">+</text>
+          <text x="540" y="14" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">beat 4</text>
+          <text x="620" y="14" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">+</text>
+
+          <!-- Chord label -->
+          <text x="300" y="36" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" text-anchor="middle" font-weight="700">— Dm implied throughout —</text>
+
+          <!-- Legend -->
+          <circle cx="40"  cy="24" r="6" fill="#3d7ec7"/>
+          <text x="52"  y="28" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7">chord tone (strong beat)</text>
+          <circle cx="400" cy="24" r="6" fill="#d9d4ca" stroke="#4a4a4a" stroke-width="1.5"/>
+          <text x="412" cy="28" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">passing tone (weak beat)</text>
+          <text x="412" y="28" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">passing tone (weak beat)</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Why this matters for ambient/loop music</p>
+        <p>When you build an 8-note arpeggio loop in Ableton, this principle tells you which notes to put where. Put the chord root (D) and fifth (A) on the downbeats. Fill the rest with scale steps. The loop will imply harmony even with no bass, no pad — just the single melodic line cycling.</p>
+      </div>
+
+      <div class="principle-box">
+        The run is a chord in disguise. The strong beats are the chord. The weak beats are the path between them. Your ear strips away the path and hears the skeleton underneath.
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 6: Build It -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — 4-Bar Melody in Ableton</div>
+    </div>
+    <div class="card-body">
+      <p>Open a new MIDI clip in Ableton. One MIDI track, no effects, no instrument loaded yet — just map to any piano sound. Set the clip to 4 bars, 120 BPM, 4/4. You're writing the seed motif that will grow into everything in subsequent chapters.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">The seed motif (step–step–leap–step)</p>
+        <p>Write this 4-note motif in bar 1, starting on beat 1:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> D4 — quarter note</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2:</strong> E4 — eighth note</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> F4 — eighth note</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> A4 — quarter note (leap of a third — the event)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> G4 — quarter note (step back down after the leap)</li>
+        </ul>
+        <p>That's your motif: <span class="key">D E F A G</span>. Step–step–leap–step.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 2 — sequence it down</p>
+        <p>Same shape, starting one step lower (C4). Bach's sequences stay in the key — the leap shrinks from a major third to a minor third to fit the scale, but the contour stays the same:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> C4 — quarter note</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2:</strong> D4 — eighth</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> E4 — eighth</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> G4 — quarter (leap)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> F4 — quarter (step back)</li>
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 3 — sequence again (Bb)</p>
+        <p>Same shape, starting on Bb3:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> Bb3 — quarter</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2:</strong> C4 — eighth</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> D4 — eighth</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> F4 — quarter (leap)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> E4 — quarter (step back)</li>
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 4 — break the pattern, land on D</p>
+        <p>Don't sequence again. Change direction entirely to signal arrival:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--orange)">Beat 1:</strong> A4 — quarter (jump up — unexpected)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--orange)">Beat 2:</strong> G4 — eighth</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--orange)">Beat 2+:</strong> F4 — eighth</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--orange)">Beat 3:</strong> E4 — quarter</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--orange)">Beat 4:</strong> D4 — quarter note (land and hold)</li>
+        </ul>
+        <p>The final D4 signals resolution. The pattern stopped; the sequence ended; we're home.</p>
+      </div>
+
+      <!-- Piano roll diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Piano roll: horizontal = time (4 bars), vertical = pitch -->
+          <!-- Pitch rows: Bb3=170, C4=150, D4=130, E4=110, F4=90, G4=70, A4=50 -->
+          <!-- Each bar = 180px. Each quarter = 45px. Each eighth = 22.5px -->
+          <!-- Bar 1 starts at x=40, bar 2 at x=220, bar 3 at x=400, bar 4 at x=580 -->
+
+          <!-- Pitch labels left -->
+          <text x="0"  y="54"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">A4</text>
+          <text x="0"  y="74"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">G4</text>
+          <text x="0"  y="94"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">F4</text>
+          <text x="0"  y="114" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">E4</text>
+          <text x="0"  y="124" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle"></text>
+          <text x="0"  y="134" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">D4</text>
+          <text x="0"  y="154" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">C4</text>
+          <text x="0"  y="174" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" dominant-baseline="middle">Bb3</text>
+
+          <!-- Horizontal pitch lines -->
+          <line x1="30" y1="50"  x2="760" y2="50"  class="grid-line"/>
+          <line x1="30" y1="70"  x2="760" y2="70"  class="grid-line"/>
+          <line x1="30" y1="90"  x2="760" y2="90"  class="grid-line"/>
+          <line x1="30" y1="110" x2="760" y2="110" class="grid-line"/>
+          <line x1="30" y1="130" x2="760" y2="130" class="grid-line"/>
+          <line x1="30" y1="150" x2="760" y2="150" class="grid-line"/>
+          <line x1="30" y1="170" x2="760" y2="170" class="grid-line"/>
+          <line x1="30" y1="190" x2="760" y2="190" class="grid-line"/>
+
+          <!-- Bar lines -->
+          <line x1="40"  y1="10" x2="40"  y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="220" y1="10" x2="220" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="400" y1="10" x2="400" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="580" y1="10" x2="580" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="760" y1="10" x2="760" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Bar labels -->
+          <text x="40"  y="8" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">BAR 1</text>
+          <text x="220" y="8" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">BAR 2</text>
+          <text x="400" y="8" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">BAR 3</text>
+          <text x="580" y="8" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" font-weight="700">BAR 4 — break</text>
+
+          <!-- BAR 1: D4 quarter, E4 eighth, F4 eighth, A4 quarter, G4 quarter -->
+          <!-- D4=y130, E4=y110, F4=y90, A4=y50, G4=y70 -->
+          <!-- quarter=45px, eighth=22px -->
+          <rect x="40"  y="126" width="43"  height="8" fill="#3d7ec7" rx="2"/>  <!-- D4 beat1 -->
+          <rect x="85"  y="106" width="21"  height="8" fill="#3d7ec7" rx="2"/>  <!-- E4 beat2 -->
+          <rect x="107" y="86"  width="21"  height="8" fill="#3d7ec7" rx="2"/>  <!-- F4 beat2+ -->
+          <rect x="130" y="46"  width="43"  height="8" fill="#e04848" rx="2"/>  <!-- A4 beat3 leap -->
+          <rect x="175" y="66"  width="43"  height="8" fill="#3d7ec7" rx="2"/>  <!-- G4 beat4 step back -->
+
+          <!-- BAR 2: C4, D4, E4, G4, F4 -->
+          <!-- C4=y150, D4=y130, E4=y110, G4=y70, F4=y90 -->
+          <rect x="220" y="146" width="43"  height="8" fill="#3d7ec7" rx="2"/>  <!-- C4 -->
+          <rect x="265" y="126" width="21"  height="8" fill="#3d7ec7" rx="2"/>  <!-- D4 -->
+          <rect x="287" y="106" width="21"  height="8" fill="#3d7ec7" rx="2"/>  <!-- E4 -->
+          <rect x="310" y="66"  width="43"  height="8" fill="#e04848" rx="2"/>  <!-- G4 leap -->
+          <rect x="355" y="86"  width="43"  height="8" fill="#3d7ec7" rx="2"/>  <!-- F4 step back -->
+
+          <!-- BAR 3: Bb3, C4, D4, F4, E4 -->
+          <!-- Bb3=y170, C4=y150, D4=y130, F4=y90, E4=y110 -->
+          <rect x="400" y="166" width="43"  height="8" fill="#3d7ec7" rx="2"/>  <!-- Bb3 -->
+          <rect x="445" y="146" width="21"  height="8" fill="#3d7ec7" rx="2"/>  <!-- C4 -->
+          <rect x="467" y="126" width="21"  height="8" fill="#3d7ec7" rx="2"/>  <!-- D4 -->
+          <rect x="490" y="86"  width="43"  height="8" fill="#e04848" rx="2"/>  <!-- F4 leap -->
+          <rect x="535" y="106" width="43"  height="8" fill="#3d7ec7" rx="2"/>  <!-- E4 step back -->
+
+          <!-- BAR 4: A4, G4, F4, E4, D4 half -->
+          <!-- A4=y50, G4=y70, F4=y90, E4=y110, D4=y130 -->
+          <rect x="580" y="46"  width="43"  height="8" fill="#d4842a" rx="2"/>  <!-- A4 -->
+          <rect x="625" y="66"  width="21"  height="8" fill="#d4842a" rx="2"/>  <!-- G4 -->
+          <rect x="647" y="86"  width="21"  height="8" fill="#d4842a" rx="2"/>  <!-- F4 -->
+          <rect x="670" y="106" width="43"  height="8" fill="#d4842a" rx="2"/>  <!-- E4 -->
+          <rect x="715" y="126" width="43"  height="8" fill="#ffd200" stroke="#1a1a1a" stroke-width="1" rx="2"/>  <!-- D4 final -->
+
+          <!-- D4 final label -->
+          <text x="735" y="121" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">D !</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">What to listen for</p>
+        <p>Play the 4 bars back. Notice how bars 1–3 feel like the same phrase spinning — same shape, lower each time, pulling downward. Bar 4 suddenly goes up before stepping down to rest. That upward surprise is the "break." The final D4 is the exhale. <span class="key">This 4-bar phrase is the seed of everything that follows.</span> Save the clip — you'll add to it in every subsequent chapter.</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /content -->
+
+<div class="banner">
+  <span class="banner-text">
+    STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; ABLETON PIANO ROLL &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-next" href="ch02-implied-polyphony.html">
+    <span class="chapter-nav-label">Next →</span>
+    <span class="chapter-nav-title">Ch 02 — Making One Line Sound Like Two</span>
+  </a>
+</div>
+
+<div class="footer">
+  <p>AMBIENT COUNTERPOINT — CH 01: A SINGLE LINE — D MINOR</p>
+</div>
+
+</body>
+</html>

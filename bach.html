@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bach Counterpoint — Ambient Counterpoint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ── Series index — shared with landing page style ── */
+  .hero {
+    padding-bottom: 10px;
+  }
+
+  .section-label {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 0 40px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .page-grid {
+    max-width: 900px;
+    margin: 16px auto 0;
+    padding: 0 40px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .page-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 14px);
+  }
+
+  .page-card {
+    border: 2px solid var(--ink);
+    background: white;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 0 var(--ink);
+    transition: transform 0.15s ease;
+  }
+  .page-card:hover {
+    transform: translate(-2px, -2px);
+  }
+
+  .page-card-header {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 2px solid var(--ink);
+  }
+  .page-card-num {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 28px;
+    background: var(--blue-light);
+    color: var(--blue);
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid var(--ink);
+    flex-shrink: 0;
+  }
+  .page-card-title {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+  }
+
+  .page-card-body {
+    padding: 18px 20px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  .page-card-desc {
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .page-card-link {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .page-card-link::after {
+    content: '→';
+  }
+
+  @media (max-width: 600px) {
+    .section-label { padding: 0 20px; }
+    .page-grid {
+      grid-template-columns: 1fr;
+      padding: 0 20px 60px;
+      gap: 24px;
+    }
+    .page-card:last-child:nth-child(odd) {
+      grid-column: auto;
+      max-width: none;
+    }
+    .page-card-num { min-width: 56px; font-size: 22px; }
+    .page-card-title { font-size: 12px; padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-back"><a href="index.html">Ambient Counterpoint</a></div>
+
+<div class="banner">
+  <span class="banner-text">
+    BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="hero">
+  <h1><span>Bach Counterpoint</span></h1>
+  <p class="subtitle">A working reference for voice leading, phrase architecture, and harmonic thinking drawn from Bach.</p>
+</div>
+
+<div class="section-label">Chapters</div>
+
+<div class="page-grid">
+
+  <a class="page-card" href="ch01-single-line.html">
+    <div class="page-card-header">
+      <div class="page-card-num">01</div>
+      <div class="page-card-title">A Single Line</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Start with nothing but one voice and make it sing. Stepwise motion, leaps, contour shapes, rhythmic variety, sequences, and the hidden structure inside a Bach run.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch02-implied-polyphony.html">
+    <div class="page-card-header">
+      <div class="page-card-num">02</div>
+      <div class="page-card-title">Making One Line Sound Like Two</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Compound melody, register separation, and arpeggiation as implied harmony. One monophonic line that the ear hears as two independent voices.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch03-two-voices.html">
+    <div class="page-card-header">
+      <div class="page-card-num">03</div>
+      <div class="page-card-title">Adding a Second Voice</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Real counterpoint begins here. Contrary motion, parallel thirds and sixths, oblique pedal freeze, voice exchange, and what parallel fifths and octaves actually sound like — and why to avoid them.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch04-tension-release.html">
+    <div class="page-card-header">
+      <div class="page-card-num">04</div>
+      <div class="page-card-title">Tension and Release Between Voices</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Suspensions, suspension chains, chromatic enclosures, diminished intervals, and cross relations — the techniques that make counterpoint expressive rather than merely correct.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch05-harmonic-foundations.html">
+    <div class="page-card-header">
+      <div class="page-card-num">05</div>
+      <div class="page-card-title">Harmonic Foundations</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Circle of fifths descent, the 5-1 ratchet, lament bass, ascending bass, chromatic descent, and tonicization vs. modulation — the chord progressions that give your counterpoint somewhere to live.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch06-harmonic-color.html">
+    <div class="page-card-header">
+      <div class="page-card-num">06</div>
+      <div class="page-card-title">Harmonic Color</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Leading tone pull, the Lydian ♯11, Neapolitan drop, augmented sixth chords, modal mixture, and the Picardy third — the chromatic gestures that make harmony expressive rather than merely functional.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch07-the-sentence.html">
+    <div class="page-card-header">
+      <div class="page-card-num">07</div>
+      <div class="page-card-title">The Sentence</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Vordersatz, Fortspinnung, and Epilog — the three-part Baroque sentence that turns a motif into a paragraph, chains into key journeys, and resolves through deceptive cadences and asymmetric lengths.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch08-motivic-development.html">
+    <div class="page-card-header">
+      <div class="page-card-num">08</div>
+      <div class="page-card-title">Motivic Development</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Maximum mileage from minimum material. Inversion, retrograde, fragmentation, augmentation, stretto, and invertible counterpoint — the transformation toolkit that turns a four-note seed into a full movement.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch09-large-scale-form.html">
+    <div class="page-card-header">
+      <div class="page-card-num">09</div>
+      <div class="page-card-title">Large-Scale Form</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">How sentences chain into movements. Ritornello form, fugue exposition, episodes, the nesting principle, and arch form — the structural containers that give a long piece its sense of arrival and return.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch10-space-breathing.html">
+    <div class="page-card-header">
+      <div class="page-card-num">10</div>
+      <div class="page-card-title">Space and Breathing</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Making dense music feel open. Six techniques — texture dropout, long notes, sequences, harmonic stillness, register spread, and voice rests — for creating breathing room inside continuous counterpoint.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch11-ambient-counterpoint.html">
+    <div class="page-card-header">
+      <div class="page-card-num">11</div>
+      <div class="page-card-title">From Bach to Ambient</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Translating ten chapters of counterpoint into loops, phase displacement, and space. Voice-leading inside arpeggios, one-note-per-cycle evolution, phase drift, velocity as a third voice, and the subtraction arc.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="ch12-canons-rounds.html">
+    <div class="page-card-header">
+      <div class="page-card-num">12</div>
+      <div class="page-card-title">Canons &amp; Rounds</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Imitation, rounds, canons at unison and interval, stretto, and phase music as rhythmic canon — the forms between a single motif and a fugue.</p>
+      <span class="page-card-link">Open</span>
+    </div>
+  </a>
+
+</div>
+
+<div class="banner">
+  <span class="banner-text">
+    BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="footer">
+  <p>AMBIENT COUNTERPOINT — BACH COUNTERPOINT SERIES — D MINOR</p>
+</div>
+
+</body>
+</html>

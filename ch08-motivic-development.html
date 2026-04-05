@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 08 — Motivic Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner"><span class="banner-text">CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇ CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇ CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇</span></div>
+
+<div class="hero">
+  <h1><span>Motivic Development</span></h1>
+  <p class="subtitle">Getting maximum mileage from minimum material.</p>
+</div>
+
+<div class="intro-box"><div class="inner">Bach never threw away a motif — he put it through a transformation machine. Inversion, retrograde, fragmentation, augmentation, stretto: these are not tricks but a systematic toolkit for deriving an entire movement from a single seed idea. The four-note figure you wrote in Chapter 1 already contains everything you need to fill any length of music.</div></div>
+
+<div class="content">
+
+  <!-- Card 37: Melodic Inversion -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">37</div>
+      <h2>Melodic Inversion</h2>
+    </div>
+    <div class="card-body">
+      <p>Flip every interval upside down. If the motif goes up a major second then up a minor third, the inversion goes down a major second then down a minor third. The shape mirrors around its starting pitch.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Four canonical transformations</div>
+        <p>Every motif has four standard orientations. Original and retrograde share the same set of intervals forward and backward; inversion and retrograde-inversion do the same with flipped intervals. The diagrams below use <span class="key">tonal inversion</span> — intervals are mirrored by diatonic step within D minor rather than by exact semitone count, keeping all notes in the key. (Real inversion preserves exact interval sizes and may introduce accidentals outside the key.)</p>
+
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+            <!-- Grid lines at each diatonic pitch level -->
+            <line class="grid-line" x1="0" y1="55" x2="760" y2="55"/>
+            <line class="grid-line" x1="0" y1="70" x2="760" y2="70"/>
+            <line class="grid-line" x1="0" y1="85" x2="760" y2="85"/>
+            <line class="grid-line" x1="0" y1="100" x2="760" y2="100"/>
+            <line class="grid-line" x1="0" y1="115" x2="760" y2="115"/>
+            <line class="grid-line" x1="0" y1="130" x2="760" y2="130"/>
+            <line class="grid-line" x1="0" y1="145" x2="760" y2="145"/>
+            <line class="grid-line" x1="0" y1="160" x2="760" y2="160"/>
+            <line class="grid-line" x1="0" y1="175" x2="760" y2="175"/>
+
+            <!-- Sub-diagram dividers -->
+            <line x1="190" y1="35" x2="190" y2="185" stroke="#c8c2ba" stroke-width="1"/>
+            <line x1="380" y1="35" x2="380" y2="185" stroke="#c8c2ba" stroke-width="1"/>
+            <line x1="570" y1="35" x2="570" y2="185" stroke="#c8c2ba" stroke-width="1"/>
+
+            <!-- Labels -->
+            <text x="95" y="22" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" font-weight="700">ORIGINAL</text>
+            <text x="285" y="22" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#e04848">INVERSION</text>
+            <text x="475" y="22" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4caf7d">RETROGRADE</text>
+            <text x="665" y="22" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#9b59b6">RETRO-INV.</text>
+
+            <!-- Pitch axis labels (left side) -->
+            <text x="3" y="58" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">A4</text>
+            <text x="3" y="88" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">F4</text>
+            <text x="3" y="103" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">E4</text>
+            <text x="3" y="118" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">D4</text>
+            <text x="3" y="133" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">C4</text>
+            <text x="3" y="148" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">B♭3</text>
+            <text x="3" y="178" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">G3</text>
+
+            <!-- SUB 1: Original — D4 E4 F4 A4 (ascending step-step-leap) -->
+            <polyline points="25,115 65,100 105,85 145,55" stroke="#4a90d9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+            <circle cx="25" cy="115" r="5" fill="#4a90d9"/>
+            <circle cx="65" cy="100" r="5" fill="#4a90d9"/>
+            <circle cx="105" cy="85" r="5" fill="#4a90d9"/>
+            <circle cx="145" cy="55" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Note name labels below sub 1 -->
+            <text x="25" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">D</text>
+            <text x="65" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">E</text>
+            <text x="105" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">F</text>
+            <text x="145" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">A</text>
+
+            <!-- SUB 2: Inversion — D4 C4 Bb3 G3 (descending, intervals flipped) -->
+            <polyline points="215,115 255,130 295,145 335,175" stroke="#e04848" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+            <circle cx="215" cy="115" r="5" fill="#e04848"/>
+            <circle cx="255" cy="130" r="5" fill="#e04848"/>
+            <circle cx="295" cy="145" r="5" fill="#e04848"/>
+            <circle cx="335" cy="175" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Note name labels below sub 2 -->
+            <text x="215" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">D</text>
+            <text x="255" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">C</text>
+            <text x="295" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">B♭</text>
+            <text x="335" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">G</text>
+
+            <!-- SUB 3: Retrograde — A4 F4 E4 D4 (original backwards) -->
+            <polyline points="405,55 445,85 485,100 525,115" stroke="#4caf7d" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+            <circle cx="405" cy="55" r="5" fill="#4caf7d"/>
+            <circle cx="445" cy="85" r="5" fill="#4caf7d"/>
+            <circle cx="485" cy="100" r="5" fill="#4caf7d"/>
+            <circle cx="525" cy="115" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Note name labels below sub 3 -->
+            <text x="405" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4caf7d">A</text>
+            <text x="445" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4caf7d">F</text>
+            <text x="485" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4caf7d">E</text>
+            <text x="525" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4caf7d">D</text>
+
+            <!-- SUB 4: Retro-inversion — G3 Bb3 C4 D4 (inversion backwards = ascending) -->
+            <polyline points="595,175 635,145 675,130 715,115" stroke="#9b59b6" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+            <circle cx="595" cy="175" r="5" fill="#9b59b6"/>
+            <circle cx="635" cy="145" r="5" fill="#9b59b6"/>
+            <circle cx="675" cy="130" r="5" fill="#9b59b6"/>
+            <circle cx="715" cy="115" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Note name labels below sub 4 -->
+            <text x="595" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6">G</text>
+            <text x="635" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6">B♭</text>
+            <text x="675" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6">C</text>
+            <text x="715" y="197" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6">D</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="idiom">
+        <div class="idiom-name">Mirror the shape, keep the character</div>
+        Inversion sounds like the same motif seen in a mirror — listeners recognize it subconsciously without consciously noticing the flip. This is why inversion feels like development rather than departure.
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 38: Retrograde -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">38</div>
+      <h2>Retrograde</h2>
+    </div>
+    <div class="card-body">
+      <p>Play the motif backwards. The retrograde of <span class="key">D E F A</span> is <span class="key">A F E D</span>. Unlike inversion, retrograde is harder for listeners to consciously recognize — but it maintains the same set of intervals and therefore the same harmonic "flavor."</p>
+      <p>Retrograde is most effective when the melodic rhythm is also reversed, so the long notes that used to end the motif now begin it. This creates a sense of arrival-then-departure, the reverse of the original's departure-then-arrival shape.</p>
+      <div class="idiom">
+        <div class="idiom-name">Retrograde as cadential turn</div>
+        Because retrograde ends on the motif's opening pitch, it naturally functions as a return gesture. Use it to circle back to the tonic at phrase endings — the music feels like it has "completed its arc."
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 39: Fragmentation -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">39</div>
+      <h2>Fragmentation</h2>
+    </div>
+    <div class="card-body">
+      <p>As musical tension builds, present only the first two or three notes of the motif. The motif appears to "break apart under pressure." Listeners fill in the rest from memory, which creates active engagement. The gap where the remaining notes should be becomes its own expressive device.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Motif dissolving across eight bars</div>
+        <p>Start with the full motif, then drop one note per section. By bars 7–8 only a single sustained pitch remains — maximum compression, maximum tension before release.</p>
+
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 760 155" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+            <!-- Section labels -->
+            <text x="105" y="18" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#8a8078">BARS 1–2</text>
+            <text x="105" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">4 NOTES</text>
+            <text x="295" y="18" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#8a8078">BARS 3–4</text>
+            <text x="295" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">3 NOTES</text>
+            <text x="485" y="18" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#8a8078">BARS 5–6</text>
+            <text x="485" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">2 NOTES</text>
+            <text x="675" y="18" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#8a8078">BARS 7–8</text>
+            <text x="675" y="28" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#e04848">1 NOTE</text>
+
+            <!-- Pitch rows -->
+            <line class="grid-line" x1="20" y1="45" x2="750" y2="45"/>
+            <line class="grid-line" x1="20" y1="70" x2="750" y2="70"/>
+            <line class="grid-line" x1="20" y1="85" x2="750" y2="85"/>
+            <line class="grid-line" x1="20" y1="100" x2="750" y2="100"/>
+
+            <!-- Pitch axis labels -->
+            <text x="2" y="48" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">A4</text>
+            <text x="2" y="73" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">F4</text>
+            <text x="2" y="88" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">E4</text>
+            <text x="2" y="103" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">D4</text>
+
+            <!-- Section dividers -->
+            <line x1="200" y1="35" x2="200" y2="115" stroke="#c8c2ba" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="390" y1="35" x2="390" y2="115" stroke="#c8c2ba" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="580" y1="35" x2="580" y2="115" stroke="#c8c2ba" stroke-width="1" stroke-dasharray="4 3"/>
+
+            <!-- Section 1: Full motif (D E F A, 4 quarter notes, each 35px wide) -->
+            <rect x="20" y="96" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="55" y="81" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="90" y="66" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="125" y="41" width="33" height="8" rx="2" fill="#4a90d9"/>
+
+            <!-- Section 2: 3 notes (D E F, A as ghost) -->
+            <rect x="210" y="96" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="245" y="81" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="280" y="66" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <!-- Ghost A4 -->
+            <rect x="315" y="41" width="33" height="8" rx="2" fill="none" stroke="#c8c2ba" stroke-dasharray="4 2"/>
+
+            <!-- Section 3: 2 notes (D E, F and A as ghost) -->
+            <rect x="400" y="96" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="435" y="81" width="33" height="8" rx="2" fill="#4a90d9"/>
+            <!-- Ghost F4 and A4 -->
+            <rect x="470" y="66" width="33" height="8" rx="2" fill="none" stroke="#c8c2ba" stroke-dasharray="4 2"/>
+            <rect x="505" y="41" width="33" height="8" rx="2" fill="none" stroke="#c8c2ba" stroke-dasharray="4 2"/>
+
+            <!-- Section 4: 1 note (D4, half-note = 70px wide) -->
+            <rect x="590" y="96" width="68" height="8" rx="2" fill="#e04848"/>
+            <!-- Ghost E4, F4, A4 -->
+            <rect x="660" y="81" width="33" height="8" rx="2" fill="none" stroke="#c8c2ba" stroke-dasharray="4 2"/>
+            <rect x="660" y="66" width="33" height="8" rx="2" fill="none" stroke="#c8c2ba" stroke-dasharray="4 2"/>
+            <rect x="660" y="41" width="33" height="8" rx="2" fill="none" stroke="#c8c2ba" stroke-dasharray="4 2"/>
+
+            <!-- Compression arrow beneath -->
+            <line x1="20" y1="130" x2="740" y2="130" stroke="#c8c2ba" stroke-width="1"/>
+            <polygon points="740,126 748,130 740,134" fill="#c8c2ba"/>
+            <text x="380" y="145" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">INCREASING TENSION →</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="idiom">
+        <div class="idiom-name">Absence as presence</div>
+        When a listener has heard the motif four times, they anticipate the fourth note. Playing only three notes makes the missing fourth note ring out in the imagination — often louder than if you had played it.
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 40: Augmentation and Diminution -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">40</div>
+      <h2>Augmentation and Diminution</h2>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Augmentation</span> doubles every note value — the motif moves at half speed, taking on a grand, monumental character. <span class="key">Diminution</span> halves every note value — the motif accelerates, urgent and compressed. The pitches are identical; only time changes.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Same motif, three speeds</div>
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 760 125" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+            <!-- Section labels -->
+            <text x="60" y="15" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">DIMINUTION</text>
+            <text x="240" y="15" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">ORIGINAL</text>
+            <text x="520" y="15" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">AUGMENTATION</text>
+
+            <!-- Dividers -->
+            <line x1="135" y1="22" x2="135" y2="108" stroke="#c8c2ba" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="345" y1="22" x2="345" y2="108" stroke="#c8c2ba" stroke-width="1" stroke-dasharray="4 3"/>
+
+            <!-- Pitch rows -->
+            <line class="grid-line" x1="20" y1="38" x2="740" y2="38"/>
+            <line class="grid-line" x1="20" y1="58" x2="740" y2="58"/>
+            <line class="grid-line" x1="20" y1="73" x2="740" y2="73"/>
+            <line class="grid-line" x1="20" y1="88" x2="740" y2="88"/>
+
+            <!-- Pitch axis labels -->
+            <text x="2" y="41" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">A4</text>
+            <text x="2" y="61" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">F4</text>
+            <text x="2" y="76" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">E4</text>
+            <text x="2" y="91" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">D4</text>
+
+            <!-- Diminution (eighth notes, 15px each): D E F A -->
+            <rect x="22" y="84" width="13" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="37" y="69" width="13" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="52" y="54" width="13" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="67" y="34" width="13" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+
+            <text x="60" y="110" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">2× speed</text>
+
+            <!-- Original (quarter notes, 30px each): D E F A -->
+            <rect x="160" y="84" width="28" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="190" y="69" width="28" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="220" y="54" width="28" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="250" y="34" width="28" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+
+            <text x="240" y="110" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">1× speed</text>
+
+            <!-- Augmentation (half notes, 60px each): D E F A -->
+            <rect x="365" y="84" width="58" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="425" y="69" width="58" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="485" y="54" width="58" height="8" rx="2" fill="#4a90d9"/>
+            <rect x="545" y="34" width="58" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+
+            <text x="520" y="110" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">½× speed</text>
+          </svg>
+        </div>
+      </div>
+
+      <p>Augmentation is particularly powerful for final cadences — the motif expands into the cadence, slowing the world down as if the music is aware it is ending. Bach uses this in fugue codas to great effect.</p>
+
+      <div class="idiom">
+        <div class="idiom-name">Augmentation at cadences, diminution in development</div>
+        Use augmentation to signal arrival and finality. Use diminution to create drive and urgency in the middle of a phrase. The same notes do opposite emotional work depending on their speed.
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 41: Stretto -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">41</div>
+      <h2>Stretto</h2>
+    </div>
+    <div class="card-body">
+      <p>In a stretto, a second voice enters with the motif before the first voice has finished. The entries pile up, overlapping each other — voices tumbling over one another in increasing urgency. Bach uses stretto to build the climax of a fugue, compressing the space between entries as tension peaks.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Voices entering before the previous one finishes</div>
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 760 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+            <defs>
+              <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#c8c2ba"/>
+              </marker>
+            </defs>
+
+            <!-- Beat grid -->
+            <line class="grid-line" x1="90" y1="30" x2="750" y2="30"/>
+            <line class="grid-line" x1="90" y1="75" x2="750" y2="75"/>
+
+            <!-- Bar lines -->
+            <line x1="90" y1="25" x2="90" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+            <line x1="210" y1="25" x2="210" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+            <line x1="330" y1="25" x2="330" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+            <line x1="450" y1="25" x2="450" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+            <line x1="570" y1="25" x2="570" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+
+            <!-- Beat subdivisions (30px per beat) -->
+            <line class="grid-line" x1="120" y1="25" x2="120" y2="120"/>
+            <line class="grid-line" x1="150" y1="25" x2="150" y2="120"/>
+            <line class="grid-line" x1="180" y1="25" x2="180" y2="120"/>
+            <line class="grid-line" x1="240" y1="25" x2="240" y2="120"/>
+            <line class="grid-line" x1="270" y1="25" x2="270" y2="120"/>
+            <line class="grid-line" x1="300" y1="25" x2="300" y2="120"/>
+            <line class="grid-line" x1="360" y1="25" x2="360" y2="120"/>
+            <line class="grid-line" x1="390" y1="25" x2="390" y2="120"/>
+            <line class="grid-line" x1="420" y1="25" x2="420" y2="120"/>
+            <line class="grid-line" x1="480" y1="25" x2="480" y2="120"/>
+            <line class="grid-line" x1="510" y1="25" x2="510" y2="120"/>
+            <line class="grid-line" x1="540" y1="25" x2="540" y2="120"/>
+
+            <!-- Lane labels -->
+            <text x="10" y="22" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">V1</text>
+            <text x="10" y="67" font-family="Space Mono,monospace" font-size="9" fill="#4caf7d">V2</text>
+
+            <!-- Voice 1, Entry 1: bars 1-2 beat 1 → beat 4, blue -->
+            <rect x="90" y="33" width="120" height="22" rx="3" fill="#4a90d9" opacity="0.85"/>
+            <text x="150" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#fff">motif</text>
+
+            <!-- Voice 1, Entry 2: starts bar 3, beat 1 -->
+            <rect x="330" y="33" width="120" height="22" rx="3" fill="#4a90d9" opacity="0.85"/>
+            <text x="390" y="48" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#fff">motif</text>
+
+            <!-- Voice 2, Entry 1: starts bar 1 beat 3 (60px in), green — overlaps with V1 -->
+            <rect x="150" y="77" width="120" height="22" rx="3" fill="#4caf7d" opacity="0.85"/>
+            <text x="210" y="92" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#fff">motif (inv.)</text>
+
+            <!-- Voice 2, Entry 2 -->
+            <rect x="390" y="77" width="120" height="22" rx="3" fill="#4caf7d" opacity="0.85"/>
+            <text x="450" y="92" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#fff">motif (inv.)</text>
+
+            <!-- Overlap bracket -->
+            <line x1="150" y1="25" x2="210" y2="25" stroke="#e04848" stroke-width="2"/>
+            <line x1="150" y1="22" x2="150" y2="28" stroke="#e04848" stroke-width="2"/>
+            <line x1="210" y1="22" x2="210" y2="28" stroke="#e04848" stroke-width="2"/>
+            <text x="180" y="20" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#e04848">overlap</text>
+
+            <!-- Bar number labels -->
+            <text x="97" y="125" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">bar 1</text>
+            <text x="217" y="125" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">bar 2</text>
+            <text x="337" y="125" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">bar 3</text>
+            <text x="457" y="125" font-family="Space Mono,monospace" font-size="8" fill="#8a8078">bar 4</text>
+
+            <!-- Entry offset arrow -->
+            <line x1="90" y1="110" x2="150" y2="110" stroke="#8a8078" stroke-width="1" marker-end="url(#arr)"/>
+            <text x="120" y="118" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#8a8078">2 beats</text>
+          </svg>
+        </div>
+      </div>
+
+      <p>The overlap zone is the stretto's tension core — two voices are simultaneously in the middle of the same melodic idea. Combining the original form with its inversion creates the densest stretto texture because the voices move in contrary motion, avoiding parallel octaves or fifths.</p>
+
+      <div class="idiom">
+        <div class="idiom-name">Tighten the offset to increase tension</div>
+        Bach often begins stretto entries 4 beats apart, then 2 beats apart, then 1 beat apart as the climax approaches. Shortening the gap between entries is itself a form of rhythmic compression — the chase accelerating.
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 42: Invertible Counterpoint -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">42</div>
+      <h2>Invertible Counterpoint</h2>
+    </div>
+    <div class="card-body">
+      <p>Two melodies are in <span class="key">invertible counterpoint</span> if they work just as well when swapped — the upper voice becomes the lower and vice versa. Bach designs his subjects and countersubjects this way, allowing him to flip the texture freely without creating forbidden parallels or awkward voice crossing.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Designing for double use</div>
+        <p>The test: take your two voices and transpose one of them up or down an octave so their relative positions swap. If the result still sounds good — no parallel fifths or octaves, no awkward leaps — you have invertible counterpoint.</p>
+        <p>Practically, this means avoiding intervals of a fourth between the voices. When the voices flip, a fourth becomes a fifth — and parallel fourths in the original produce forbidden parallel fifths when inverted. A fifth, by contrast, becomes a fourth when inverted — harmless. Writing mostly in thirds and sixths avoids the problem entirely, since thirds invert to sixths and vice versa.</p>
+      </div>
+
+      <div class="idiom">
+        <div class="idiom-name">Write in thirds and sixths, swap for free</div>
+        A passage dominated by thirds and sixths between voices inverts cleanly into sixths and thirds. This is why Bach's countersubjects tend toward these intervals — he needs them to work both above and below the subject.
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Relation to ambient music</div>
+        <p>In loop-based music, invertible counterpoint means a two-voice loop can be recomposed mid-track simply by moving one layer up an octave. The harmonic relationship stays intact; the perceived "melody" shifts. It is a zero-effort textural variation that sounds like substantial compositional change.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Build It Card -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <h2>Build It</h2>
+    </div>
+    <div class="card-body">
+      <p>Open your Ch 07 session — 8 bars, 3 MIDI tracks. You will add a second 8-bar section (bars 9–16) as a motivic development episode, using the 4-note seed motif <span class="key">D E F A</span> from Chapter 1 as your raw material.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Bars 9–10 — Inversion</div>
+        <p>Add a 4th MIDI track. Play the inverted form of the motif: <span class="key">D C B♭ G</span> (starting on D4, descending by the same intervals that the original ascends). Loop it over two bars. Let the existing harmony from Ch07 ring underneath — the inversion will land differently against each chord change.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Bars 11–12 — Fragmentation</div>
+        <p>Trim the motif to its first three notes: <span class="key">D E F</span>. Keep repeating this fragment, varying the rhythm slightly each time. Leave a gap where the A should be. Automate a subtle filter or reverb swell to mark where the missing note "would" have arrived.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Bars 13–14 — Stretto</div>
+        <p>Use two tracks simultaneously. Track A plays the original motif <span class="key">D E F A</span>. Track B (pitched using your inversion) enters 2 beats after Track A — before Track A has finished. Set both tracks at a slightly lower velocity than the melody to keep the texture transparent. You should hear them chasing each other.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Bars 15–16 — Augmentation cadence</div>
+        <p>Double every note value. The motif <span class="key">D E F A</span> now takes the full 2 bars: D4 as a half note in bar 15, then E4–F4 as quarter notes, then A4 as a half note landing on bar 16 beat 1. Hold the A4 through the downbeat, then resolve to D4 in the second half of bar 16. The piece is now 16 bars: the Ch07 sentence followed by a motivic development episode.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 255" xmlns="http://www.w3.org/2000/svg">
+          <!-- Piano roll: bars 9–16, motivic development episode -->
+          <!-- 8 bars at 90px each: x=40,130,220,310,400,490,580,670,760 -->
+          <!-- Pitch rows: A4=50, G4=70, F4=90, E4=110, D4=130, C4=150, B♭3=170, A3=190, G3=210 -->
+
+          <!-- Section background tints -->
+          <rect x="40"  y="30" width="180" height="190" fill="#4caf7910"/>
+          <rect x="220" y="30" width="180" height="190" fill="#d4842a10"/>
+          <rect x="400" y="30" width="180" height="190" fill="#8b5cf610"/>
+          <rect x="580" y="30" width="180" height="190" fill="#e0484810"/>
+
+          <!-- Technique labels -->
+          <text x="130" y="20" font-family="Space Mono,monospace" font-size="9" fill="#4caf79" font-weight="700" text-anchor="middle">INVERSION</text>
+          <text x="310" y="20" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" font-weight="700" text-anchor="middle">FRAGMENTATION</text>
+          <text x="490" y="20" font-family="Space Mono,monospace" font-size="9" fill="#8b5cf6" font-weight="700" text-anchor="middle">STRETTO</text>
+          <text x="670" y="20" font-family="Space Mono,monospace" font-size="9" fill="#e04848" font-weight="700" text-anchor="middle">AUGMENTATION</text>
+
+          <!-- Bar labels -->
+          <text x="42"  y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 9</text>
+          <text x="132" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 10</text>
+          <text x="222" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 11</text>
+          <text x="312" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 12</text>
+          <text x="402" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 13</text>
+          <text x="492" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 14</text>
+          <text x="582" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 15</text>
+          <text x="672" y="29" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">BAR 16</text>
+
+          <!-- Pitch labels -->
+          <text x="0" y="54"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">A4</text>
+          <text x="0" y="74"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">G4</text>
+          <text x="0" y="94"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">F4</text>
+          <text x="0" y="114" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">E4</text>
+          <text x="0" y="134" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">D4</text>
+          <text x="0" y="154" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">C4</text>
+          <text x="0" y="174" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">B♭3</text>
+          <text x="0" y="194" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">A3</text>
+          <text x="0" y="214" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a">G3</text>
+
+          <!-- Horizontal grid lines -->
+          <line x1="30" y1="50"  x2="760" y2="50"  class="grid-line"/>
+          <line x1="30" y1="70"  x2="760" y2="70"  class="grid-line"/>
+          <line x1="30" y1="90"  x2="760" y2="90"  class="grid-line"/>
+          <line x1="30" y1="110" x2="760" y2="110" class="grid-line"/>
+          <line x1="30" y1="130" x2="760" y2="130" class="grid-line"/>
+          <line x1="30" y1="150" x2="760" y2="150" class="grid-line"/>
+          <line x1="30" y1="170" x2="760" y2="170" class="grid-line"/>
+          <line x1="30" y1="190" x2="760" y2="190" class="grid-line"/>
+          <line x1="30" y1="210" x2="760" y2="210" class="grid-line"/>
+
+          <!-- Bar lines -->
+          <line x1="40"  y1="30" x2="40"  y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="130" y1="30" x2="130" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="220" y1="30" x2="220" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="310" y1="30" x2="310" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="400" y1="30" x2="400" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="490" y1="30" x2="490" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="580" y1="30" x2="580" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="670" y1="30" x2="670" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="760" y1="30" x2="760" y2="220" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- BARS 9–10: Inversion — D4 C4 B♭3 G3 descending (green) -->
+          <rect x="40"  y="126" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="63"  y="146" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="86"  y="166" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="109" y="206" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="130" y="126" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="153" y="146" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="176" y="166" width="22" height="8" fill="#4caf79" rx="2"/>
+          <rect x="199" y="206" width="22" height="8" fill="#4caf79" rx="2"/>
+
+          <!-- BARS 11–12: Fragmentation — D E F repeating, A missing (orange) -->
+          <rect x="220" y="126" width="22" height="8" fill="#d4842a" rx="2"/>
+          <rect x="243" y="106" width="22" height="8" fill="#d4842a" rx="2"/>
+          <rect x="266" y="86"  width="22" height="8" fill="#d4842a" rx="2"/>
+          <rect x="292" y="126" width="16" height="8" fill="#d4842a" rx="2"/>
+          <rect x="310" y="106" width="22" height="8" fill="#d4842a" rx="2"/>
+          <rect x="333" y="86"  width="22" height="8" fill="#d4842a" rx="2"/>
+          <rect x="356" y="106" width="22" height="8" fill="#d4842a" rx="2"/>
+          <rect x="379" y="126" width="18" height="8" fill="#d4842a" rx="2"/>
+          <text x="289" y="100" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">[A?]</text>
+          <text x="374" y="100" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">[A?]</text>
+
+          <!-- BARS 13–14: Stretto — Track A (light purple) and Track B (dark purple, 2 beats late) -->
+          <!-- Track A: D4 E4 F4 A4 per bar -->
+          <rect x="400" y="126" width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="422" y="106" width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="444" y="86"  width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="466" y="46"  width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="490" y="126" width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="512" y="106" width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="534" y="86"  width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <rect x="556" y="46"  width="22" height="8" fill="#8b5cf6" rx="2"/>
+          <!-- Track B enters 2 beats later (bar 13 beat 3): D4 C4 Bb3 G3 (inversion) -->
+          <rect x="444" y="126" width="22" height="8" fill="#6d28d9" rx="2"/>
+          <rect x="466" y="146" width="22" height="8" fill="#6d28d9" rx="2"/>
+          <rect x="490" y="166" width="22" height="8" fill="#6d28d9" rx="2"/>
+          <rect x="512" y="206" width="22" height="8" fill="#6d28d9" rx="2"/>
+          <rect x="534" y="126" width="22" height="8" fill="#6d28d9" rx="2"/>
+          <rect x="556" y="146" width="22" height="8" fill="#6d28d9" rx="2"/>
+          <text x="444" y="156" font-family="Space Mono,monospace" font-size="7" fill="#6d28d9">→ B</text>
+
+          <!-- BARS 15–16: Augmentation — slow long notes (red) -->
+          <!-- Bar 15: D4 half, E4 quarter, F4 quarter -->
+          <rect x="580" y="126" width="45" height="8" fill="#e04848" rx="2"/>
+          <rect x="625" y="106" width="22" height="8" fill="#e04848" rx="2"/>
+          <rect x="647" y="86"  width="22" height="8" fill="#e04848" rx="2"/>
+          <!-- Bar 16: A4 half, D4 half (final arrival, yellow) -->
+          <rect x="670" y="46"  width="45" height="8" fill="#e04848" rx="2"/>
+          <rect x="715" y="126" width="43" height="8" fill="#ffd200" stroke="#1a1a1a" stroke-width="1" rx="2"/>
+          <text x="736" y="121" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">D ✦</text>
+
+          <!-- Annotation labels -->
+          <text x="130" y="238" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">D C B♭ G — inverted</text>
+          <text x="310" y="238" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">D E F … (A missing)</text>
+          <text x="490" y="238" font-family="Space Mono,monospace" font-size="8" fill="#8b5cf6" text-anchor="middle">A (orig.) + B (inv.), 2-beat stagger</text>
+          <text x="670" y="238" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">note values doubled</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner"><span class="banner-text">INVERSION ◇ RETROGRADE ◇ FRAGMENTATION ◇ AUGMENTATION ◇ STRETTO ◇ INVERTIBLE COUNTERPOINT ◇ INVERSION ◇ RETROGRADE ◇ FRAGMENTATION ◇ AUGMENTATION ◇ STRETTO ◇ INVERTIBLE COUNTERPOINT ◇</span></div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch07-the-sentence.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 07 — The Sentence</span>
+  </a>
+</div>
+
+<div class="footer"><p>AMBIENT COUNTERPOINT — CH 08: MOTIVIC DEVELOPMENT — D MINOR</p></div>
+
+</body>
+</html>

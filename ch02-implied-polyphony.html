@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 02 — Making One Line Sound Like Two</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner">
+  <span class="banner-text">CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; COMPOUND MELODY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REGISTER SEPARATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; ARPEGGIATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; COMPOUND MELODY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REGISTER SEPARATION &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
+</div>
+
+<div class="hero">
+  <h1><span>Making One Line<br>Sound Like Two</span></h1>
+  <p class="subtitle">Still monophonic — but the ear hears polyphony.</p>
+</div>
+
+<div class="intro-box">
+  <div class="inner">
+    <strong>The ear is a grouping machine.</strong> Give it two streams of pitch information — even interleaved inside a single line — and it will organize them into separate voices automatically. Bach exploits this constantly: one violin or keyboard line zigzags between high and low registers, and the listener hears a melody above and a bass below. This chapter shows you how to write that way, and why it's the foundation for everything that comes next in counterpoint.
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- CARD 6: Implied Polyphony -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">6</div>
+      <div class="card-title">Implied Polyphony / Compound Melody</div>
+    </div>
+    <div class="card-body">
+
+      <p>A <span class="key">compound melody</span> is a single melodic line that the ear parses as two (or more) independent voices. The mechanism: alternate between two distinct pitch registers quickly enough that the brain groups same-register notes into separate streams. One instrument, two perceived voices — no accompaniment needed.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">Auditory stream segregation</p>
+        <p>When notes are separated by more than roughly a sixth, the auditory system stops hearing them as a single continuous line and begins tracking them as parallel threads. This is <span class="key">auditory stream segregation</span> — the same mechanism that lets you follow a single voice in a crowd. Bach's compound melodies put multiple streams into one instrumental part and trust the listener's brain to do the sorting.</p>
+        <p>The illusion holds as long as register separation is consistent. If the "upper voice" notes are always above C5 and the "lower voice" notes are always below C4, the grouping is unambiguous. Let them drift into the same range and the two-voice illusion collapses into a single line again.</p>
+      </div>
+
+      <!-- Single line vs compound melody -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr2-blue" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#3d7ec7"/>
+            </marker>
+            <marker id="arr2-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#e04848"/>
+            </marker>
+          </defs>
+
+          <!-- Panel labels -->
+          <text x="180" y="18" font-family="Space Mono,monospace" font-size="11" fill="#4a4a4a" text-anchor="middle" font-weight="700">SINGLE LINE</text>
+          <text x="565" y="18" font-family="Space Mono,monospace" font-size="11" fill="#4a4a4a" text-anchor="middle" font-weight="700">COMPOUND MELODY</text>
+
+          <!-- Panel divider -->
+          <line x1="370" y1="8" x2="370" y2="235" stroke="#d9d4ca" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+          <!-- ── LEFT: single line, all in octave 4 ── -->
+          <!-- y anchors (D minor scale, 20px per diatonic step): A4=60, G4=80, F4=100, E4=120, D4=140, C4=160 -->
+          <!-- 6 notes: D4 F4 A4 G4 F4 D4 -->
+          <line class="grid-line" x1="25" y1="60"  x2="345" y2="60"/>
+          <line class="grid-line" x1="25" y1="100" x2="345" y2="100"/>
+          <line class="grid-line" x1="25" y1="140" x2="345" y2="140"/>
+          <line class="grid-line" x1="25" y1="160" x2="345" y2="160"/>
+
+          <polyline points="45,140 105,100 165,60 225,80 285,100 325,140"
+                    stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+          <circle cx="45"  cy="140" r="5" fill="#1a1a1a"/>
+          <circle cx="105" cy="100" r="5" fill="#1a1a1a"/>
+          <circle cx="165" cy="60"  r="5" fill="#1a1a1a"/>
+          <circle cx="225" cy="80"  r="5" fill="#1a1a1a"/>
+          <circle cx="285" cy="100" r="5" fill="#1a1a1a"/>
+          <circle cx="325" cy="140" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <text x="45"  y="158" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">D4</text>
+          <text x="105" y="118" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">F4</text>
+          <text x="165" y="52"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">A4</text>
+          <text x="225" y="72"  font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">G4</text>
+          <text x="285" y="118" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">F4</text>
+          <text x="325" y="158" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">D4</text>
+
+          <text x="185" y="210" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">ear hears:</text>
+          <text x="185" y="224" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">ONE VOICE</text>
+
+          <!-- ── RIGHT: compound melody, zigzag oct5/oct3 ── -->
+          <!-- Upper band (oct5): y 30–65. Lower band (oct3): y 155–195 -->
+          <!-- Tinted bands -->
+          <rect x="385" y="22" width="355" height="52" fill="#d6e8f7" opacity="0.45" rx="3"/>
+          <rect x="385" y="148" width="355" height="52" fill="#fde8e8" opacity="0.45" rx="3"/>
+
+          <text x="393" y="35" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">OCT 5 — UPPER VOICE</text>
+          <text x="393" y="162" font-family="Space Mono,monospace" font-size="8" fill="#e04848" font-weight="700">OCT 3 — LOWER VOICE</text>
+
+          <!-- No man's land label -->
+          <text x="565" y="115" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle" font-style="italic">— OCT 4: no man's land —</text>
+          <line x1="385" y1="120" x2="740" y2="120" stroke="#d9d4ca" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+          <!-- x positions: 415, 455, 495, 535, 575, 615, 655, 695, 730 -->
+          <!-- Upper notes (blue): D5=50, F5=42, A5=30, G5=36, E5=46 -->
+          <!-- Lower notes (red): A3=170, G3=176, F3=182, D3=190 -->
+
+          <!-- Thin actual-path line showing it IS one line -->
+          <polyline points="415,50 455,176 495,42 535,182 575,36 615,190 655,46 695,196"
+                    stroke="#1a1a1a" stroke-width="1" fill="none" stroke-linejoin="round" opacity="0.18"/>
+
+          <!-- Dashed grouping lines for each voice -->
+          <polyline points="415,50 495,42 575,36 655,46"
+                    stroke="#3d7ec7" stroke-width="1.5" fill="none" stroke-dasharray="5 3"/>
+          <polyline points="455,176 535,182 615,190 695,196"
+                    stroke="#e04848" stroke-width="1.5" fill="none" stroke-dasharray="5 3"/>
+
+          <!-- Upper notes -->
+          <circle cx="415" cy="50"  r="6" fill="#3d7ec7"/>
+          <circle cx="495" cy="42"  r="6" fill="#3d7ec7"/>
+          <circle cx="575" cy="36"  r="6" fill="#3d7ec7"/>
+          <circle cx="655" cy="46"  r="6" fill="#3d7ec7"/>
+
+          <!-- Lower notes -->
+          <circle cx="455" cy="176" r="6" fill="#e04848"/>
+          <circle cx="535" cy="182" r="6" fill="#e04848"/>
+          <circle cx="615" cy="190" r="6" fill="#e04848"/>
+          <circle cx="695" cy="196" r="6" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Pitch labels -->
+          <text x="415" y="42"  font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">D5</text>
+          <text x="495" y="34"  font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">F5</text>
+          <text x="575" y="28"  font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">A5</text>
+          <text x="655" y="38"  font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">G5</text>
+          <text x="455" y="196" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">A3</text>
+          <text x="535" y="202" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">G3</text>
+          <text x="615" y="210" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">F3</text>
+          <text x="695" y="186" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">D3</text>
+
+          <text x="565" y="210" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">ear hears:</text>
+          <text x="565" y="224" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">TWO VOICES</text>
+        </svg>
+      </div>
+
+      <div class="principle-box">
+        One line, written as one line — but heard as two. The two-voice illusion is a gift from psychoacoustics. Your only job is to keep the register separation consistent so the brain can do its grouping work.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 7: Register Separation -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">7</div>
+      <div class="card-title">Register Separation</div>
+    </div>
+    <div class="card-body">
+
+      <p>Compound melody stands or falls on <span class="key">register discipline</span>. Assign each implied voice a home octave and keep it there. Notes that stray into shared territory muddy the grouping. Notes that cross — where the "upper" voice dips below the "lower" voice — shatter it entirely.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">The two-octave gap</p>
+        <p>The most reliable division: <span class="key">upper voice in octave 5, lower voice in octave 3</span>. This leaves all of octave 4 as empty space between them — a buffer zone the ear treats as proof that two independent streams exist. In Ableton's piano roll, you'll see two horizontal bands of notes with a clear gap between. That visual clarity maps directly to sonic clarity.</p>
+        <p>You don't need two full octaves of separation for the effect to work — a consistent sixth can be enough — but the two-octave gap is the safest starting point while you're learning the technique. Once the two-voice illusion is intuitive, you can bring the registers closer together.</p>
+      </div>
+
+      <!-- Register lane diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Upper band -->
+          <rect x="20" y="15"  width="720" height="54" fill="#d6e8f7" opacity="0.5" rx="4"/>
+          <!-- Lower band -->
+          <rect x="20" y="135" width="720" height="54" fill="#fde8e8" opacity="0.5" rx="4"/>
+          <!-- No man's land -->
+          <rect x="20" y="72"  width="720" height="60" fill="#f0ebe1" opacity="0.35" rx="0"/>
+
+          <!-- Band labels -->
+          <text x="36" y="35"  font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" font-weight="700">UPPER VOICE — OCTAVE 5</text>
+          <text x="36" y="52"  font-family="Space Mono,monospace" font-size="9"  fill="#3d7ec7">D5  E5  F5  G5  A5  Bb5  ...</text>
+          <text x="36" y="155" font-family="Space Mono,monospace" font-size="10" fill="#e04848" font-weight="700">LOWER VOICE — OCTAVE 3</text>
+          <text x="36" y="172" font-family="Space Mono,monospace" font-size="9"  fill="#e04848">D3  E3  F3  G3  A3  Bb3  ...</text>
+
+          <!-- No man's land label -->
+          <line x1="20" y1="101" x2="740" y2="101" stroke="#d9d4ca" stroke-width="0.8" stroke-dasharray="4 3"/>
+          <text x="380" y="105" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle" font-style="italic">OCTAVE 4 — no man's land</text>
+
+          <!-- Example alternating notes: 8 notes, upper at x=175,255,335,415 lower at x=215,295,375,455 -->
+          <!-- thin single-line path -->
+          <polyline points="175,42 215,155 255,42 295,155 335,42 375,155 415,42 455,155"
+                    stroke="#1a1a1a" stroke-width="1" fill="none" opacity="0.18"/>
+
+          <!-- upper notes (blue) -->
+          <circle cx="175" cy="42"  r="8" fill="#3d7ec7"/>
+          <circle cx="255" cy="42"  r="8" fill="#3d7ec7"/>
+          <circle cx="335" cy="42"  r="8" fill="#3d7ec7"/>
+          <circle cx="415" cy="42"  r="8" fill="#3d7ec7"/>
+
+          <!-- lower notes (red) -->
+          <circle cx="215" cy="155" r="8" fill="#e04848"/>
+          <circle cx="295" cy="155" r="8" fill="#e04848"/>
+          <circle cx="375" cy="155" r="8" fill="#e04848"/>
+          <circle cx="455" cy="155" r="8" fill="#e04848"/>
+
+          <!-- ✗ rule-breaking note crossing into no-man's land -->
+          <circle cx="580" cy="100" r="8" fill="#ffd200" stroke="#e04848" stroke-width="2.5"/>
+          <text x="580" y="86"  font-family="Space Mono,monospace" font-size="11" fill="#e04848" text-anchor="middle" font-weight="700">✗</text>
+          <text x="620" y="97"  font-family="Space Mono,monospace" font-size="9"  fill="#e04848">voice</text>
+          <text x="620" y="109" font-family="Space Mono,monospace" font-size="9"  fill="#e04848">crosses</text>
+          <line x1="580" y1="108" x2="580" y2="195" stroke="#e04848" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="580" y="203" font-family="Space Mono,monospace" font-size="8"  fill="#e04848" text-anchor="middle">illusion breaks</text>
+
+          <!-- legend -->
+          <circle cx="510" cy="42"  r="6" fill="#3d7ec7"/>
+          <text x="522" y="46"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7">upper voice</text>
+          <circle cx="510" cy="155" r="6" fill="#e04848"/>
+          <text x="522" y="159" font-family="Space Mono,monospace" font-size="8" fill="#e04848">lower voice</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Don't let the voices meet</p>
+        <p>Even within their own lanes, the voices shouldn't land on the same pitch-class at the same time. If the upper voice lands on D5 and the lower voice immediately follows with D3, the two streams briefly merge — the ear hears "D" twice, not two independent voices both passing through D. When both voices need to arrive at D, fine — but separate them rhythmically so one has already moved on before the other arrives.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Alternation patterns</p>
+        <p>The most natural pattern is strict alternation: upper, lower, upper, lower. But you can also hold in one register for two notes before switching: upper, upper, lower, upper, lower, lower. The brain will still group them correctly as long as the register assignment is consistent. What you can't do is stay in one register for so long that the listener forgets the other voice exists — <span class="key">return to each voice at least every 2–3 notes</span> or the grouping dissolves.</p>
+      </div>
+
+      <div class="principle-box">
+        The register boundary is load-bearing structure. Keep the voices in their lanes and the listener's brain builds the polyphony for free — effortlessly, no extra notes required.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 8: Arpeggiation as Implied Harmony -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">8</div>
+      <div class="card-title">Arpeggiation as Implied Harmony</div>
+    </div>
+    <div class="card-body">
+
+      <p>Beyond two-voice illusion, there's a second way a single line implies something larger: <span class="key">arpeggiation</span>. Play D–F–A in rapid succession and your ear doesn't hear three notes — it hears D minor. The intervals between adjacent notes activate a harmonic template, and the brain stores the whole group as a single unit: a chord.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">Chords spread across time</p>
+        <p>When you arpeggiate through three chord tones — root, third, fifth — in quick succession, the ear integrates them into a harmony even though no two notes sound simultaneously. String several arpeggios together and you have a <span class="key">chord progression</span> implied by a single unaccompanied line. D–F–A → C–E–G → Bb–D–F implies i → VII → VI in D minor. Three chords, one voice, no bass, no pad.</p>
+        <p>This is the "circle" contour shape from <em>phrase-shapes.html</em> — the arpeggio-to-step pattern where you climb through a chord and then step to the next one. Bach uses it constantly in the solo violin and cello works. You'll use it to build self-contained loop patterns that imply a full harmony.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Root on a strong beat</p>
+        <p>For the harmonic implication to be unambiguous, <span class="key">put the chord root on beat 1</span>. Start the D minor arpeggio on D and the bar reads as Dm. Start it on F and the bar might feel like F major or just harmonically ambiguous. The strong-beat rule from Chapter 1 applies at the chord level: the ear accepts the first strong beat as the "label" for what chord it's hearing, and interprets everything that follows in that bar as an elaboration of that harmony.</p>
+      </div>
+
+      <!-- Arpeggio to harmony diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-chord" markerWidth="8" markerHeight="7" refX="4" refY="7" orient="auto">
+              <polygon points="0 0, 8 0, 4 7" fill="#4a4a4a"/>
+            </marker>
+          </defs>
+
+          <!-- y scale (D minor diatonic, 20px per step from top):
+               A4=40, G4=60, F4=80, E4=100, D4=120, C4=140, Bb3=160 -->
+
+          <!-- Grid lines -->
+          <line class="grid-line" x1="20" y1="40"  x2="720" y2="40"/>
+          <line class="grid-line" x1="20" y1="80"  x2="720" y2="80"/>
+          <line class="grid-line" x1="20" y1="120" x2="720" y2="120"/>
+          <line class="grid-line" x1="20" y1="160" x2="720" y2="160"/>
+
+          <!-- pitch labels left -->
+          <text x="14" y="44"  font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">A4</text>
+          <text x="14" y="84"  font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">F4</text>
+          <text x="14" y="124" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">D4</text>
+          <text x="14" y="164" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">Bb3</text>
+
+          <!-- Bar dividers -->
+          <line x1="40"  y1="20" x2="40"  y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="240" y1="20" x2="240" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="440" y1="20" x2="440" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="640" y1="20" x2="640" y2="175" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- BAR 1: Dm — D4(120) F4(80) A4(40), x=80,130,180 -->
+          <polyline points="80,120 130,80 180,40"
+                    stroke="#3d7ec7" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="80"  cy="120" r="6" fill="#3d7ec7"/>
+          <circle cx="130" cy="80"  r="6" fill="#3d7ec7"/>
+          <circle cx="180" cy="40"  r="6" fill="#3d7ec7"/>
+          <text x="80"  y="136" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D4</text>
+          <text x="130" y="96"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">F4</text>
+          <text x="180" y="32"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">A4</text>
+          <!-- chord label box -->
+          <rect x="85" y="176" width="60" height="18" fill="#d6e8f7" rx="3"/>
+          <text x="115" y="188" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" text-anchor="middle" font-weight="700">Dm (i)</text>
+          <!-- arrow from notes to chord -->
+          <line x1="130" y1="86" x2="130" y2="174" stroke="#3d7ec7" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+          <!-- BAR 2: C — C4(140) E4(100) G4(60), x=280,330,380 -->
+          <polyline points="280,140 330,100 380,60"
+                    stroke="#3a9e6e" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="280" cy="140" r="6" fill="#3a9e6e"/>
+          <circle cx="330" cy="100" r="6" fill="#3a9e6e"/>
+          <circle cx="380" cy="60"  r="6" fill="#3a9e6e"/>
+          <text x="280" y="156" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">C4</text>
+          <text x="330" y="116" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">E4</text>
+          <text x="380" y="52"  font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">G4</text>
+          <rect x="285" y="176" width="60" height="18" fill="#d6f0e3" rx="3"/>
+          <text x="315" y="188" font-family="Space Mono,monospace" font-size="10" fill="#3a9e6e" text-anchor="middle" font-weight="700">C (VII)</text>
+          <line x1="330" y1="106" x2="330" y2="174" stroke="#3a9e6e" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+          <!-- BAR 3: Bb — Bb3(160) D4(120) F4(80), x=480,530,580 -->
+          <polyline points="480,160 530,120 580,80"
+                    stroke="#d4842a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="480" cy="160" r="6" fill="#d4842a"/>
+          <circle cx="530" cy="120" r="6" fill="#d4842a"/>
+          <circle cx="580" cy="80"  r="6" fill="#d4842a"/>
+          <text x="480" y="176" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">Bb3</text>
+          <text x="530" y="136" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">D4</text>
+          <text x="580" y="72"  font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">F4</text>
+          <!-- Note: Bb3 label overlaps chord box; shift chord box -->
+          <rect x="482" y="176" width="60" height="18" fill="#f7e8d0" rx="3"/>
+          <text x="512" y="188" font-family="Space Mono,monospace" font-size="10" fill="#d4842a" text-anchor="middle" font-weight="700">Bb (VI)</text>
+          <line x1="530" y1="126" x2="530" y2="174" stroke="#d4842a" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+          <!-- Arrow between bars suggesting the progression -->
+          <line x1="198" y1="38" x2="225" y2="38" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arr-chord)"/>
+          <line x1="398" y1="58" x2="425" y2="58" stroke="#4a4a4a" stroke-width="1.5" marker-end="url(#arr-chord)"/>
+
+          <!-- Progression label -->
+          <text x="380" y="14" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">one voice →  Dm – C – Bb  (i – VII – VI in D minor)</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Why this matters for ambient loops</p>
+        <p>When you build an 8-note arpeggio loop in Ableton, you're not writing a melody — you're writing a <span class="key">chord in motion</span>. The loop will imply a harmony even with no bass, no pad, no second instrument. The loop from Chapter 1 (D–E–F–A–G and its sequences) already contains this: D on beat 1 anchors each bar as Dm. Change one note and you shift the implied chord. This is why single-voice loop music can feel harmonically rich: every note change is also a harmonic statement.</p>
+      </div>
+
+      <div class="principle-box">
+        The arpeggio doesn't decorate a chord — it <em>is</em> the chord, unfolded in time. Your ear integrates the notes into a harmonic unit just as readily as if they were played simultaneously.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD ✦: Build It -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — Compound Melody Version</div>
+    </div>
+    <div class="card-body">
+
+      <p>Open your Ch 01 session. You have a 4-bar single melody line in D minor: the D–E–F–A–G motif sequenced twice, then a break cadencing to D4. Now rewrite the entire thing as a <span class="key">compound melody</span>: the same melodic content but split across octave 5 (upper voice) and octave 3 (lower voice). Keep the original rhythm — quarter, eighth, eighth, quarter, quarter per bar — but assign each note to one of the two register bands. Delete the original version or mute it; this is a replacement, not a layer.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">How to assign the notes</p>
+        <p>Pattern: <strong>melodic notes → octave 5</strong> (transpose up by one octave), <strong>harmonic anchor notes → octave 3</strong> (chord tones that outline the implied bass). In each bar, beats 1, 2+, and 4 go to the upper voice; beats 2 and 3 go to the lower voice. This gives you a strict alternating pattern: upper, lower, upper, lower, upper.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 1 — Dm</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> D5 — quarter (upper voice, root)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 2:</strong> A3 — eighth (lower voice, fifth of Dm)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> E5 — eighth (upper, stepwise)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> G3 — quarter (lower, inner voice)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> F5 — quarter (upper, stepwise)</li>
+        </ul>
+        <p>Upper voice hears: D5–E5–F5 (ascending step). Lower voice hears: A3–G3 (descending step). Two independent motions in one line.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 2 — moving toward C</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> C5 — quarter (upper, sequence step down)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 2:</strong> G3 — eighth (lower, fifth of C)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> D5 — eighth (upper)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> F3 — quarter (lower)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> E5 — quarter (upper)</li>
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 3 — Bb area</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> D5 — quarter (upper)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 2:</strong> Bb3 — eighth (lower, root of Bb)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> C5 — eighth (upper, stepwise)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> F3 — quarter (lower, fifth of Bb)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> E5 — quarter (upper)</li>
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 4 — break and land</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> A5 — quarter (upper, leap up to peak)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 2:</strong> D3 — eighth (lower, root anchor)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2+:</strong> F5 — eighth (upper, stepping down)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 3:</strong> A3 — quarter (lower)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4:</strong> D5 — quarter note (upper, final arrival — hold)</li>
+        </ul>
+        <p>The D5 at the end is the arrival point. Upper voice traces the arc of the original melody, now at full height. Lower voice reinforces D minor at the root. The two-voice illusion should be clear when you play it back.</p>
+      </div>
+
+      <!-- Piano roll diagram: 4 bars, upper band blue, lower band red -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 310" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Background bands -->
+          <rect x="18" y="0"   width="724" height="108" fill="#d6e8f7" opacity="0.25" rx="3"/>
+          <rect x="18" y="178" width="724" height="122" fill="#fde8e8" opacity="0.25" rx="3"/>
+
+          <!-- Band labels -->
+          <text x="26" y="14"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">UPPER — OCT 5</text>
+          <text x="26" y="192" font-family="Space Mono,monospace" font-size="8" fill="#e04848" font-weight="700">LOWER — OCT 3</text>
+
+          <!-- No man's land band -->
+          <rect x="18" y="108" width="724" height="70" fill="#e8e2d8" opacity="0.2"/>
+          <line x1="18" y1="143" x2="742" y2="143" stroke="#d9d4ca" stroke-width="0.8" stroke-dasharray="3 3"/>
+          <text x="380" y="148" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle" font-style="italic">oct 4 — empty</text>
+
+          <!-- Pitch label axis (left side) -->
+          <!-- Upper band y: A5=10, G5=30, F5=50, E5=60, D5=80, C5=100 (10px/semi) -->
+          <!-- Lower band y: Bb3=190, A3=200, G3=220, F3=240, D3=270 -->
+          <text x="16" y="14"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">A5</text>
+          <text x="16" y="34"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">G5</text>
+          <text x="16" y="54"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">F5</text>
+          <text x="16" y="64"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">E5</text>
+          <text x="16" y="84"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">D5</text>
+          <text x="16" y="104" font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">C5</text>
+          <text x="16" y="194" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">Bb3</text>
+          <text x="16" y="204" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">A3</text>
+          <text x="16" y="224" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">G3</text>
+          <text x="16" y="244" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">F3</text>
+          <text x="16" y="274" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">D3</text>
+
+          <!-- Grid lines (horizontal pitch lines in upper band) -->
+          <line class="grid-line" x1="18" y1="10"  x2="742" y2="10"/>
+          <line class="grid-line" x1="18" y1="30"  x2="742" y2="30"/>
+          <line class="grid-line" x1="18" y1="50"  x2="742" y2="50"/>
+          <line class="grid-line" x1="18" y1="60"  x2="742" y2="60"/>
+          <line class="grid-line" x1="18" y1="80"  x2="742" y2="80"/>
+          <line class="grid-line" x1="18" y1="100" x2="742" y2="100"/>
+          <!-- lower band -->
+          <line class="grid-line" x1="18" y1="190" x2="742" y2="190"/>
+          <line class="grid-line" x1="18" y1="200" x2="742" y2="200"/>
+          <line class="grid-line" x1="18" y1="220" x2="742" y2="220"/>
+          <line class="grid-line" x1="18" y1="240" x2="742" y2="240"/>
+          <line class="grid-line" x1="18" y1="270" x2="742" y2="270"/>
+
+          <!-- Bar lines -->
+          <line x1="20"  y1="0" x2="20"  y2="300" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="0" x2="200" y2="300" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="0" x2="380" y2="300" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="0" x2="560" y2="300" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="740" y1="0" x2="740" y2="300" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Beat subdivisions (grid) -->
+          <!-- Bar 1: beat2=65, beat3=110, beat4=155 -->
+          <line class="grid-line" x1="65"  y1="0" x2="65"  y2="300"/>
+          <line class="grid-line" x1="110" y1="0" x2="110" y2="300"/>
+          <line class="grid-line" x1="155" y1="0" x2="155" y2="300"/>
+          <!-- Bar 2: beat2=245, beat3=290, beat4=335 -->
+          <line class="grid-line" x1="245" y1="0" x2="245" y2="300"/>
+          <line class="grid-line" x1="290" y1="0" x2="290" y2="300"/>
+          <line class="grid-line" x1="335" y1="0" x2="335" y2="300"/>
+          <!-- Bar 3: beat2=425, beat3=470, beat4=515 -->
+          <line class="grid-line" x1="425" y1="0" x2="425" y2="300"/>
+          <line class="grid-line" x1="470" y1="0" x2="470" y2="300"/>
+          <line class="grid-line" x1="515" y1="0" x2="515" y2="300"/>
+          <!-- Bar 4: beat2=605, beat3=650, beat4=695 -->
+          <line class="grid-line" x1="605" y1="0" x2="605" y2="300"/>
+          <line class="grid-line" x1="650" y1="0" x2="650" y2="300"/>
+          <line class="grid-line" x1="695" y1="0" x2="695" y2="300"/>
+
+          <!-- Bar labels -->
+          <text x="110" y="296" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar 1 — Dm</text>
+          <text x="290" y="296" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar 2 — C</text>
+          <text x="470" y="296" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar 3 — Bb</text>
+          <text x="650" y="296" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar 4 — cadence</text>
+
+          <!-- ══ NOTE BLOCKS ══ -->
+          <!-- height=8, rx=2; rect y = pitch_y - 4 -->
+
+          <!-- BAR 1 -->
+          <!-- D5 (y=80): beat1 q x=20 w=45 -->
+          <rect x="20"  y="76"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- A3 (y=200): beat2 e x=65 w=22 -->
+          <rect x="65"  y="196" width="22" height="8" rx="2" fill="#e04848"/>
+          <!-- E5 (y=60): beat2+ e x=87 w=22 -->
+          <rect x="87"  y="56"  width="22" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- G3 (y=220): beat3 q x=110 w=45 -->
+          <rect x="110" y="216" width="45" height="8" rx="2" fill="#e04848"/>
+          <!-- F5 (y=50): beat4 q x=155 w=45 -->
+          <rect x="155" y="46"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+
+          <!-- BAR 2 -->
+          <!-- C5 (y=100): beat1 q x=200 w=45 -->
+          <rect x="200" y="96"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- G3 (y=220): beat2 e x=245 w=22 -->
+          <rect x="245" y="216" width="22" height="8" rx="2" fill="#e04848"/>
+          <!-- D5 (y=80): beat2+ e x=267 w=22 -->
+          <rect x="267" y="76"  width="22" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- F3 (y=240): beat3 q x=290 w=45 -->
+          <rect x="290" y="236" width="45" height="8" rx="2" fill="#e04848"/>
+          <!-- E5 (y=60): beat4 q x=335 w=45 -->
+          <rect x="335" y="56"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+
+          <!-- BAR 3 -->
+          <!-- D5 (y=80): beat1 q x=380 w=45 -->
+          <rect x="380" y="76"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Bb3 (y=190): beat2 e x=425 w=22 -->
+          <rect x="425" y="186" width="22" height="8" rx="2" fill="#e04848"/>
+          <!-- C5 (y=100): beat2+ e x=447 w=22 -->
+          <rect x="447" y="96"  width="22" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- F3 (y=240): beat3 q x=470 w=45 -->
+          <rect x="470" y="236" width="45" height="8" rx="2" fill="#e04848"/>
+          <!-- E5 (y=60): beat4 q x=515 w=45 -->
+          <rect x="515" y="56"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+
+          <!-- BAR 4 -->
+          <!-- A5 (y=10): beat1 q x=560 w=45 -->
+          <rect x="560" y="6"   width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- D3 (y=270): beat2 e x=605 w=22 -->
+          <rect x="605" y="266" width="22" height="8" rx="2" fill="#e04848"/>
+          <!-- F5 (y=50): beat2+ e x=627 w=22 -->
+          <rect x="627" y="46"  width="22" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- A3 (y=200): beat3 q x=650 w=45 -->
+          <rect x="650" y="196" width="45" height="8" rx="2" fill="#e04848"/>
+          <!-- D5 (y=80): beat4 q x=695 w=45 — ARRIVAL, yellow -->
+          <rect x="695" y="76"  width="45" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- "arrival" label -->
+          <text x="717" y="70" font-family="Space Mono,monospace" font-size="7" fill="#1a1a1a" text-anchor="middle">D5 ✦</text>
+
+          <!-- Voice grouping labels top-right -->
+          <rect x="565" y="284" width="10" height="8" rx="1" fill="#3d7ec7"/>
+          <text x="580" y="292" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7">upper voice</text>
+          <rect x="650" y="284" width="10" height="8" rx="1" fill="#e04848"/>
+          <text x="665" y="292" font-family="Space Mono,monospace" font-size="8" fill="#e04848">lower voice</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">What to listen for</p>
+        <p>Play it back and listen closely. You should hear:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li>An upper melody descending gradually from D5 through the sequence</li>
+          <li>A lower voice outlining chord tones (A, G, Bb, D) in octave 3</li>
+          <li>The whole thing implying a Dm → C → Bb → Dm progression</li>
+          <li>The huge leap on bar 4 beat 1 (A5) as a climactic peak before the descent to D5</li>
+        </ul>
+        <p>If it sounds like one wide-ranging melody rather than two voices, zoom in and make sure no notes have wandered into octave 4. The gap is what makes the illusion work. Save this session — the compound melody becomes the raw material for Chapter 3, where you'll add a real second voice underneath it.</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="banner">
+  <span class="banner-text">CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
+</div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch01-single-line.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 01 — A Single Line</span>
+  </a>
+  <a class="chapter-nav-item chapter-nav-next" href="ch03-two-voices.html">
+    <span class="chapter-nav-label">Next →</span>
+    <span class="chapter-nav-title">Ch 03 — Adding a Second Voice</span>
+  </a>
+</div>
+
+<div class="footer">
+  <p>AMBIENT COUNTERPOINT — CH 02: MAKING ONE LINE SOUND LIKE TWO — D MINOR</p>
+</div>
+
+</body>
+</html>

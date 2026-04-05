@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 12 — Canons &amp; Rounds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner"><span class="banner-text">CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ </span></div>
+
+<div class="hero">
+  <h1><span>Canons &amp; Rounds</span></h1>
+  <p class="subtitle">The imitative forms between a single motif and a fugue — and why a phase loop is a canon.</p>
+</div>
+
+<div class="intro-box"><div class="inner">Chapter 9 introduced the fugue exposition, but skipped the simpler imitative forms that lead up to it. Chapter 11 built phase loops that are, formally, rhythmic canons. This chapter fills the gap: from the three-voice round where the melody harmonises with itself, through strict two-voice canons at the unison, octave, and fifth, through stretto entries piled so tight they collide — to the moment you recognise Steve Reich's Piano Phase as a canon with a continuously drifting time interval.</div></div>
+
+<div class="content">
+
+  <!-- CARD 62 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">62</div>
+      <div class="card-title">What Is Imitation?</div>
+    </div>
+    <div class="card-body">
+      <p>Imitation is one voice echoing what another voice just played, starting on a different beat. The first voice is the <span class="key">dux</span> (leader); the following voice is the <span class="key">comes</span> (follower). The word <em>canon</em> comes from Latin for "rule" — the rule being that the follower must replicate the leader exactly.</p>
+      <p>Every imitative form — round, canon, ricercar, fugue — is built from this single mechanism. So is Steve Reich's phase music: two performers playing the same material, one entering slightly later. The surface sounds very different; the structural logic is identical.</p>
+      <p>Two parameters define every imitative texture:</p>
+      <ul>
+        <li><strong>Time interval</strong> — how many beats later the follower enters</li>
+        <li><strong>Pitch interval</strong> — at what pitch the follower enters (unison, octave, fifth, etc.)</li>
+      </ul>
+      <div class="diagram-wrap">
+        <!-- Diagram A: Leader enters with D E F A, follower enters 2 beats later at unison -->
+        <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Pitch grid lines -->
+          <line class="grid-line" x1="90" y1="50" x2="660" y2="50"/>
+          <line class="grid-line" x1="90" y1="70" x2="660" y2="70"/>
+          <line class="grid-line" x1="90" y1="90" x2="660" y2="90"/>
+          <line class="grid-line" x1="90" y1="110" x2="660" y2="110"/>
+          <line class="grid-line" x1="90" y1="130" x2="660" y2="130"/>
+          <!-- Pitch labels -->
+          <text x="82" y="54" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">A4</text>
+          <text x="82" y="74" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">G4</text>
+          <text x="82" y="94" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">F4</text>
+          <text x="82" y="114" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">E4</text>
+          <text x="82" y="134" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">D4</text>
+          <!-- Bar lines -->
+          <line x1="100" y1="35" x2="100" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="280" y1="35" x2="280" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="460" y1="35" x2="460" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Beat subdivisions -->
+          <line class="grid-line" x1="145" y1="35" x2="145" y2="142"/>
+          <line class="grid-line" x1="190" y1="35" x2="190" y2="142"/>
+          <line class="grid-line" x1="235" y1="35" x2="235" y2="142"/>
+          <line class="grid-line" x1="325" y1="35" x2="325" y2="142"/>
+          <line class="grid-line" x1="370" y1="35" x2="370" y2="142"/>
+          <line class="grid-line" x1="415" y1="35" x2="415" y2="142"/>
+          <!-- Voice 1 — Leader (blue): D4 E4 F4 A4 -->
+          <rect x="101" y="126" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="146" y="106" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="191" y="86" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="236" y="46" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Voice 2 — Follower (green): same motif, 2 beats later -->
+          <rect x="191" y="126" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="236" y="106" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="281" y="86" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="326" y="46" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <!-- Labels -->
+          <text x="103" y="30" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" font-weight="700">LEADER (dux)</text>
+          <text x="193" y="30" font-family="Space Mono,monospace" font-size="10" fill="#4a8c5c" font-weight="700">FOLLOWER (comes)</text>
+          <!-- Time interval bracket -->
+          <line x1="100" y1="148" x2="190" y2="148" stroke="#999" stroke-width="1"/>
+          <line x1="100" y1="143" x2="100" y2="153" stroke="#999" stroke-width="1"/>
+          <line x1="190" y1="143" x2="190" y2="153" stroke="#999" stroke-width="1"/>
+          <text x="145" y="158" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">time interval: 2 beats</text>
+          <!-- Pitch interval label -->
+          <text x="520" y="134" font-family="Space Mono,monospace" font-size="9" fill="#999">pitch interval: 0 (unison)</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">In the DAW</div>
+        <p>Program D4 E4 F4 A4 as four quarter notes on Track 1. Duplicate the clip to Track 2. Nudge Track 2 two beats to the right. Both tracks now play the same melody with a two-beat lag. The simultaneous note pairs — F4 over D4 (minor third), A4 over E4 (perfect fourth) — appear automatically from the melody's own intervals. You haven't composed the harmony; the melody composed it.</p>
+      </div>
+      <div class="principle-box">The melody is also the harmony. That is the central miracle of imitative counterpoint.</div>
+    </div>
+  </div>
+
+  <!-- CARD 63 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">63</div>
+      <div class="card-title">Rounds: Strict Imitation at the Unison</div>
+    </div>
+    <div class="card-body">
+      <p>A <span class="key">round</span> is the simplest imitative form: all voices enter at the same pitch, separated by a fixed time interval, and the music loops so the piece never ends until voices drop out. "Frère Jacques" is a four-voice round. "Row Your Boat" is a three-voice round. Every voice is singing the same melody but a phrase behind the others.</p>
+      <p>The harmony is self-generated. Because the time offset is not equal to the motif length, each voice is on a different note at every moment — and those notes form the chords. A well-written round produces exclusively thirds, fourths, fifths, and sixths: all the stable consonances.</p>
+      <p>Below: the four-note motif D E F A, three voices, entering three beats apart. At the moment all three voices are active, the simultaneous pitches are F4 (Voice 1), A4 (Voice 2), and D4 (Voice 3) — a D minor triad.</p>
+      <div class="diagram-wrap">
+        <!-- Diagram B: 3-voice round, 4-note motif D E F A, 3-beat stagger -->
+        <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Pitch grid -->
+          <line class="grid-line" x1="90" y1="50" x2="680" y2="50"/>
+          <line class="grid-line" x1="90" y1="90" x2="680" y2="90"/>
+          <line class="grid-line" x1="90" y1="110" x2="680" y2="110"/>
+          <line class="grid-line" x1="90" y1="130" x2="680" y2="130"/>
+          <!-- Pitch labels -->
+          <text x="82" y="54" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">A4</text>
+          <text x="82" y="94" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">F4</text>
+          <text x="82" y="114" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">E4</text>
+          <text x="82" y="134" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">D4</text>
+          <!-- Bar lines -->
+          <line x1="100" y1="35" x2="100" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="280" y1="35" x2="280" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="460" y1="35" x2="460" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="640" y1="35" x2="640" y2="142" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Beat subdivisions -->
+          <line class="grid-line" x1="145" y1="35" x2="145" y2="142"/>
+          <line class="grid-line" x1="190" y1="35" x2="190" y2="142"/>
+          <line class="grid-line" x1="235" y1="35" x2="235" y2="142"/>
+          <line class="grid-line" x1="325" y1="35" x2="325" y2="142"/>
+          <line class="grid-line" x1="370" y1="35" x2="370" y2="142"/>
+          <line class="grid-line" x1="415" y1="35" x2="415" y2="142"/>
+          <line class="grid-line" x1="505" y1="35" x2="505" y2="142"/>
+          <line class="grid-line" x1="550" y1="35" x2="550" y2="142"/>
+          <line class="grid-line" x1="595" y1="35" x2="595" y2="142"/>
+          <!-- Voice 1 (blue) — starts at x=100: D4 E4 F4 A4 -->
+          <rect x="101" y="126" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="146" y="106" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="191" y="86" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="236" y="46" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Voice 1 — bar 2 loop: D4 E4 F4 A4 -->
+          <rect x="281" y="126" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.55"/>
+          <rect x="326" y="106" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.55"/>
+          <rect x="371" y="86" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.55"/>
+          <rect x="416" y="46" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.55"/>
+          <!-- Voice 1 — bar 3 loop -->
+          <rect x="461" y="126" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.3"/>
+          <rect x="506" y="106" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.3"/>
+          <rect x="551" y="86" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.3"/>
+          <rect x="596" y="46" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.3"/>
+          <!-- Voice 2 (green) — enters 3 beats after V1: x=235: D4 E4 F4 A4 -->
+          <rect x="236" y="126" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="281" y="106" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="326" y="86" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="371" y="46" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <!-- Voice 2 — bar 2 loop -->
+          <rect x="416" y="126" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.55"/>
+          <rect x="461" y="106" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.55"/>
+          <rect x="506" y="86" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.55"/>
+          <rect x="551" y="46" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.55"/>
+          <!-- Voice 3 (purple) — enters 6 beats after V1: x=370: D4 E4 F4 A4 -->
+          <rect x="371" y="126" width="43" height="8" rx="2" fill="#7b61c7"/>
+          <rect x="416" y="106" width="43" height="8" rx="2" fill="#7b61c7"/>
+          <rect x="461" y="86" width="43" height="8" rx="2" fill="#7b61c7"/>
+          <rect x="506" y="46" width="43" height="8" rx="2" fill="#7b61c7"/>
+          <!-- Labels for voice entries -->
+          <text x="103" y="30" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" font-weight="700">V1</text>
+          <text x="238" y="30" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c" font-weight="700">V2 enters</text>
+          <text x="373" y="30" font-family="Space Mono,monospace" font-size="9" fill="#7b61c7" font-weight="700">V3 enters → Dm triad</text>
+          <!-- Vertical annotation at x=370: F4(V1) + A4(V2) + D4(V3) = Dm -->
+          <line x1="370" y1="50" x2="370" y2="134" stroke="#e04848" stroke-width="1" stroke-dasharray="3 2"/>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">The self-harmonising rule</div>
+        <p>For a round to work, the melody must form consonances with every time-shifted copy of itself. Bach's canonic writing respects this strictly: test every simultaneous pair of notes before committing to the melody. Dissonances can occur on weak beats (passing motion) but not on strong beats (where the ear listens hardest).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 64 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">64</div>
+      <div class="card-title">Canon at the Unison and Octave</div>
+    </div>
+    <div class="card-body">
+      <p>A <span class="key">canon</span> is a round without the loop: the follower imitates the leader exactly until the piece ends at a written cadence. A <span class="key">canon at the unison</span> has both voices on the same pitch class — same notes, staggered in time. A <span class="key">canon at the octave</span> transposes the follower up or down an octave, separating the voices in register without changing their interval relationship.</p>
+      <p>The craft challenge: write a melody that harmonises with a time-shifted copy of itself at every moment. Below, the motif D E F A (with a two-beat delay) creates exclusively minor thirds and perfect fourths at every simultaneous beat. Not every melody will do this — you have to choose intervals that invert well.</p>
+      <div class="diagram-wrap">
+        <!-- Diagram C: Canon at unison — 2-bar example, 4-note motif, 2-beat offset, interval labels -->
+        <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Pitch grid -->
+          <line class="grid-line" x1="90" y1="50" x2="660" y2="50"/>
+          <line class="grid-line" x1="90" y1="90" x2="660" y2="90"/>
+          <line class="grid-line" x1="90" y1="110" x2="660" y2="110"/>
+          <line class="grid-line" x1="90" y1="130" x2="660" y2="130"/>
+          <!-- Pitch labels -->
+          <text x="82" y="54" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">A4</text>
+          <text x="82" y="94" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">F4</text>
+          <text x="82" y="114" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">E4</text>
+          <text x="82" y="134" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">D4</text>
+          <!-- Bar lines -->
+          <line x1="100" y1="35" x2="100" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="280" y1="35" x2="280" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="460" y1="35" x2="460" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Beats -->
+          <line class="grid-line" x1="145" y1="35" x2="145" y2="148"/>
+          <line class="grid-line" x1="190" y1="35" x2="190" y2="148"/>
+          <line class="grid-line" x1="235" y1="35" x2="235" y2="148"/>
+          <line class="grid-line" x1="325" y1="35" x2="325" y2="148"/>
+          <line class="grid-line" x1="370" y1="35" x2="370" y2="148"/>
+          <line class="grid-line" x1="415" y1="35" x2="415" y2="148"/>
+          <!-- Leader (blue): bar 1 D4 E4 F4 A4, bar 2 D4 E4 F4 A4 -->
+          <rect x="101" y="126" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="146" y="106" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="191" y="86" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="236" y="46" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="281" y="126" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="326" y="106" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="371" y="86" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="416" y="46" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Follower (green): starts 2 beats late at x=190 — D4 E4 F4 A4 D4 E4 -->
+          <rect x="191" y="126" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="236" y="106" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="281" y="86" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="326" y="46" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="371" y="126" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="416" y="106" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <!-- Interval labels at beats 3, 4, bar2 beat1, bar2 beat2 -->
+          <!-- x=191: L=F4(y=86), F=D4(y=126) → m3 -->
+          <text x="214" y="105" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle">m3</text>
+          <!-- x=236: L=A4(y=46), F=E4(y=106) → P4 -->
+          <text x="258" y="80" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle">P4</text>
+          <!-- x=281: L=D4(y=126), F=F4(y=86) → m3 -->
+          <text x="303" y="110" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle">m3</text>
+          <!-- x=326: L=E4(y=106), F=A4(y=46) → P4 -->
+          <text x="348" y="80" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle">P4</text>
+          <!-- Legend labels -->
+          <text x="103" y="30" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" font-weight="700">LEADER</text>
+          <text x="193" y="30" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c" font-weight="700">FOLLOWER (enters 2 beats later)</text>
+          <!-- Time offset bracket -->
+          <line x1="100" y1="152" x2="190" y2="152" stroke="#999" stroke-width="1"/>
+          <line x1="100" y1="147" x2="100" y2="157" stroke="#999" stroke-width="1"/>
+          <line x1="190" y1="147" x2="190" y2="157" stroke="#999" stroke-width="1"/>
+          <text x="145" y="162" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">2-beat delay</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Canon at the octave</div>
+        <p>An octave canon is identical in structure but the follower sounds an octave higher or lower. This is the most common Bach canon type: the upper voice carries the melody while the lower voice, an octave down, provides bass-line support. The interval content is the same — thirds become tenths, fourths become elevenths — but the register separation makes the texture feel like a full two-voice composition rather than one melody doubled.</p>
+      </div>
+      <p>The Build It at the end of this chapter uses canon at the octave: Track 6 (the arpeggio from Ch 11) leads; Track 9 follows one bar later, dropped an octave. The interval content is unchanged but the piece gains depth.</p>
+    </div>
+  </div>
+
+  <!-- CARD 65 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">65</div>
+      <div class="card-title">Canon at the Interval: Fifth, Fourth, and Beyond</div>
+    </div>
+    <div class="card-body">
+      <p>When the follower enters on a different pitch — not the same note or its octave but a fifth up, a fourth down — the canon becomes harmonically richer. This is <span class="key">canon at the interval</span>. Bach's canons at the fifth are the archetype: the follower answers the leader on the dominant, creating an automatic tonic–dominant oscillation on every entry.</p>
+      <p>In tonal music, the canon at the fifth uses a <span class="key">tonal answer</span>: the first note transposes up a fifth, but subsequent intervals are adjusted to stay in the key. A strict transposition would leave the key immediately; a tonal answer keeps the follower grounded in D minor. The rule: map tonic-area notes to the dominant (D→A) and dominant-area notes back to the tonic (A→D), then fill the gaps diatonically. Below, the leader (dux) plays D E F A; the follower (comes) answers on A, with the tonal adjustment producing A Bb C F — all notes of D minor.</p>
+      <div class="diagram-wrap">
+        <!-- Diagram D: Canon at the fifth — leader D4 E4 F4 A4, follower A3 Bb3 C4 F4 (tonal answer, 1-beat offset) -->
+        <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Extended pitch grid (D4 down to A3) -->
+          <line class="grid-line" x1="90" y1="50" x2="560" y2="50"/>
+          <line class="grid-line" x1="90" y1="90" x2="560" y2="90"/>
+          <line class="grid-line" x1="90" y1="110" x2="560" y2="110"/>
+          <line class="grid-line" x1="90" y1="130" x2="560" y2="130"/>
+          <line class="grid-line" x1="90" y1="150" x2="560" y2="150"/>
+          <line class="grid-line" x1="90" y1="170" x2="560" y2="170"/>
+          <line class="grid-line" x1="90" y1="190" x2="560" y2="190"/>
+          <!-- Pitch labels -->
+          <text x="82" y="54" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">A4</text>
+          <text x="82" y="94" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">F4</text>
+          <text x="82" y="114" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">E4</text>
+          <text x="82" y="134" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">D4</text>
+          <text x="82" y="154" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">C4</text>
+          <text x="82" y="174" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">Bb3</text>
+          <text x="82" y="194" font-family="Space Mono,monospace" font-size="10" fill="#999" text-anchor="end">A3</text>
+          <!-- Bar lines -->
+          <line x1="100" y1="35" x2="100" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="280" y1="35" x2="280" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="460" y1="35" x2="460" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Beats -->
+          <line class="grid-line" x1="145" y1="35" x2="145" y2="200"/>
+          <line class="grid-line" x1="190" y1="35" x2="190" y2="200"/>
+          <line class="grid-line" x1="235" y1="35" x2="235" y2="200"/>
+          <line class="grid-line" x1="325" y1="35" x2="325" y2="200"/>
+          <line class="grid-line" x1="370" y1="35" x2="370" y2="200"/>
+          <line class="grid-line" x1="415" y1="35" x2="415" y2="200"/>
+          <!-- LEADER (blue): D4 E4 F4 A4 (bar 1), then loops D4 E4 F4 A4 (bar 2) -->
+          <rect x="101" y="126" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="146" y="106" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="191" y="86" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="236" y="46" width="43" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="281" y="126" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.6"/>
+          <rect x="326" y="106" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.6"/>
+          <rect x="371" y="86" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.6"/>
+          <rect x="416" y="46" width="43" height="8" rx="2" fill="#3d7ec7" opacity="0.6"/>
+          <!-- FOLLOWER (green): A3 Bb3 C4 F4 (tonal answer, enters 1 beat later = x=145) -->
+          <rect x="146" y="186" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="191" y="166" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="236" y="146" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="281" y="86" width="43" height="8" rx="2" fill="#4a8c5c"/>
+          <rect x="326" y="186" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.6"/>
+          <rect x="371" y="166" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.6"/>
+          <rect x="416" y="146" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.6"/>
+          <rect x="461" y="86" width="43" height="8" rx="2" fill="#4a8c5c" opacity="0.6"/>
+          <!-- Interval annotations (where both voices sound simultaneously) -->
+          <!-- x=146: L=E4(y=106), F=A3(y=186) → P5 -->
+          <line x1="168" y1="114" x2="168" y2="186" stroke="#d4842a" stroke-width="1" stroke-dasharray="2 2"/>
+          <text x="174" y="155" font-family="Space Mono,monospace" font-size="9" fill="#d4842a">P5</text>
+          <!-- x=191: L=F4(y=86), F=Bb3(y=166) → P5 -->
+          <line x1="213" y1="94" x2="213" y2="166" stroke="#d4842a" stroke-width="1" stroke-dasharray="2 2"/>
+          <text x="219" y="135" font-family="Space Mono,monospace" font-size="9" fill="#d4842a">P5</text>
+          <!-- x=236: L=A4(y=46), F=C4(y=146) → M6 -->
+          <line x1="258" y1="54" x2="258" y2="146" stroke="#d4842a" stroke-width="1" stroke-dasharray="2 2"/>
+          <text x="264" y="105" font-family="Space Mono,monospace" font-size="9" fill="#d4842a">M6</text>
+          <!-- x=281: L=D4(y=126), F=F4(y=86) → m3 -->
+          <line x1="303" y1="94" x2="303" y2="126" stroke="#d4842a" stroke-width="1" stroke-dasharray="2 2"/>
+          <text x="309" y="115" font-family="Space Mono,monospace" font-size="9" fill="#d4842a">m3</text>
+          <!-- Labels -->
+          <text x="103" y="30" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" font-weight="700">DUX — D minor</text>
+          <text x="103" y="17" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c" font-weight="700">COMES — answers on A (tonal answer)</text>
+          <!-- Tonic/Dominant labels -->
+          <text x="600" y="55" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7">← tonic entry (D)</text>
+          <text x="600" y="195" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">← dominant entry (A)</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Why the fifth?</div>
+        <p>The fifth is the strongest interval after the octave. When the comes enters on the dominant (A), the listener's ear reads it as a harmonic response to the dux's tonic (D). Every subsequent entry alternates tonic and dominant, creating a built-in harmonic rhythm at the entry level — before any chord changes have been written.</p>
+      </div>
+      <div class="principle-box">A canon at the fifth is a piece that generates its own harmonic motion from the act of imitation alone. The composer chooses the melody; the entries choose the harmony.</div>
+    </div>
+  </div>
+
+  <!-- CARD 66 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">66</div>
+      <div class="card-title">Stretto: Canonic Entries Piled Tight</div>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Stretto</span> (Italian: "tight, narrow") is a technique where imitative entries are compressed — the follower enters before the leader has finished stating the idea. In Chapter 8, stretto appeared briefly as a motivic tool. Here it is explained properly: stretto is a canonic technique, and its function is density and pressure.</p>
+      <p>As the time gap between entries shrinks, the overlap grows. A four-beat gap between entries produces a relaxed, sequential texture. A two-beat gap creates overlap and builds momentum. A one-beat gap creates near-simultaneous entries that pile voices on top of each other — maximum harmonic density, used for structural climaxes (and notably in the climax of Bach's fugues).</p>
+      <div class="diagram-wrap">
+        <!-- Diagram E: Stretto — three sections showing decreasing time gaps -->
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- SECTION 1: Sequential (4-beat gap = no overlap) -->
+          <!-- Leader (blue) -->
+          <rect x="80" y="8" width="180" height="18" rx="3" fill="#3d7ec7"/>
+          <!-- Follower (green) — starts after leader ends -->
+          <rect x="260" y="30" width="180" height="18" rx="3" fill="#4a8c5c"/>
+          <text x="74" y="21" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="end">L</text>
+          <text x="74" y="43" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c" text-anchor="end">F</text>
+          <text x="470" y="25" font-family="Space Mono,monospace" font-size="9" fill="#999">4-beat gap — sequential, no overlap</text>
+          <!-- Divider -->
+          <line x1="20" y1="60" x2="740" y2="60" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+          <!-- SECTION 2: Mild stretto (2-beat gap = partial overlap) -->
+          <rect x="80" y="70" width="180" height="18" rx="3" fill="#3d7ec7"/>
+          <rect x="170" y="92" width="180" height="18" rx="3" fill="#4a8c5c"/>
+          <!-- Overlap highlight -->
+          <rect x="170" y="68" width="90" height="44" rx="2" fill="#e04848" opacity="0.12"/>
+          <text x="74" y="83" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="end">L</text>
+          <text x="74" y="105" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c" text-anchor="end">F</text>
+          <text x="370" y="87" font-family="Space Mono,monospace" font-size="9" fill="#999">2-beat stretto — entries overlap</text>
+          <!-- Overlap bracket -->
+          <line x1="170" y1="115" x2="260" y2="115" stroke="#e04848" stroke-width="1"/>
+          <line x1="170" y1="111" x2="170" y2="119" stroke="#e04848" stroke-width="1"/>
+          <line x1="260" y1="111" x2="260" y2="119" stroke="#e04848" stroke-width="1"/>
+          <text x="215" y="125" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">overlap</text>
+          <!-- Divider -->
+          <line x1="20" y1="132" x2="740" y2="132" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+          <!-- SECTION 3: Tight stretto (1-beat gap = heavy overlap) -->
+          <rect x="80" y="142" width="180" height="18" rx="3" fill="#3d7ec7"/>
+          <rect x="125" y="164" width="180" height="18" rx="3" fill="#4a8c5c"/>
+          <!-- Overlap highlight (stronger) -->
+          <rect x="125" y="140" width="135" height="44" rx="2" fill="#e04848" opacity="0.22"/>
+          <text x="74" y="155" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="end">L</text>
+          <text x="74" y="177" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c" text-anchor="end">F</text>
+          <text x="320" y="158" font-family="Space Mono,monospace" font-size="9" fill="#999">1-beat stretto — maximum density</text>
+          <!-- Overlap bracket -->
+          <line x1="125" y1="187" x2="260" y2="187" stroke="#e04848" stroke-width="1"/>
+          <line x1="125" y1="183" x2="125" y2="191" stroke="#e04848" stroke-width="1"/>
+          <line x1="260" y1="183" x2="260" y2="191" stroke="#e04848" stroke-width="1"/>
+          <text x="192" y="197" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">3× overlap</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Stretto in ambient music</div>
+        <p>In an Ableton arrangement, stretto is a nudge. Take two copies of the same clip. On the second copy, drag the start point forward until the clips overlap by the desired amount. The overlap zone is stretto. Automate the overlap amount over time — spacious at the start, tighter as tension builds — and you have a compositional arc using nothing but clip placement.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 67 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">67</div>
+      <div class="card-title">Invertible Counterpoint Revisited</div>
+    </div>
+    <div class="card-body">
+      <p>Chapter 3 introduced contrary motion; Chapter 8 touched on inversion. Here is the principle that makes two-voice canons function: <span class="key">invertible counterpoint</span>. A passage is invertible if, when the two voices swap octave positions (the top voice drops an octave, the bottom voice rises an octave), the result still sounds good — no parallel fifths, no parallel octaves, no unbearable dissonances.</p>
+      <p>Why does this matter for canons? In a two-voice canon, the leader and follower will inevitably trade positions: there will be moments when the leader is above, and moments when the follower is above. If the counterpoint is not invertible, those swapped positions will produce parallel fifths or other errors. The composer must write both voices so that either order works.</p>
+      <div class="sub-section">
+        <div class="sub-title">The invertibility rule</div>
+        <p>When voices invert at the octave, intervals transform as follows:</p>
+        <ul>
+          <li>Thirds ↔ Sixths (both consonant — safe)</li>
+          <li>Fourths ↔ Fifths (both consonant — safe)</li>
+          <li>Seconds ↔ Sevenths (both dissonant — avoid on strong beats)</li>
+          <li>Unisons ↔ Octaves (both perfect — use carefully; avoid parallel motion into these)</li>
+        </ul>
+        <p>The most important rule: <strong>no parallel fifths in either arrangement</strong>. Since fifths and fourths are invertible equivalents, parallel fifths in the original become parallel fourths after inversion (acceptable) — but parallel octaves become parallel unisons (catastrophic). So avoid parallel octaves in either voice arrangement.</p>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">In practice</div>
+        <p>Before committing to a canonic melody, transpose your leader track down an octave (or the follower up an octave) and play both together. If it sounds clean, the counterpoint is invertible and your canon will work at any registral position. If it sounds wrong, adjust the offending interval — usually a second or seventh on a strong beat.</p>
+      </div>
+      <div class="principle-box">A melody that sounds good against a time-shifted, octave-swapped copy of itself is a canon waiting to be written. Check invertibility before you finalise the notes.</div>
+    </div>
+  </div>
+
+  <!-- CARD 68 -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">68</div>
+      <div class="card-title">Phase as Rhythmic Canon</div>
+    </div>
+    <div class="card-body">
+      <p>Steve Reich's <em>Piano Phase</em> (1967) begins with both pianists playing the same 12-note loop in unison. One pianist gradually accelerates until they are exactly one sixteenth note ahead of the other, then locks into tempo. This process repeats until the second pianist has cycled through all 12 offset positions and the two are back in unison. The result is a continuously evolving harmonic and rhythmic texture from a single melodic phrase.</p>
+      <p>This is formally a <span class="key">rhythmic canon</span> — the same melody in two voices with a time offset. The difference from a Bach canon is that the time offset is not fixed but <em>continuously changing</em>. As the offset moves, every possible simultaneous interval pair appears in sequence. The composer does not choose the harmony; the phase process generates it systematically.</p>
+      <p>You built a version of this in Chapter 11: Track 6 (8-note loop) and Track 7 (7-note loop) drift apart by one eighth note per bar. Because the loops are different lengths, the phase relationship changes continuously — exactly as in Reich's pieces. The diagram below shows how the 7-note loop's start position shifts one position each bar relative to the 8-note loop.</p>
+      <div class="diagram-wrap">
+        <!-- Diagram F: Phase drift — 8-note loop vs 7-note loop, drift of 1 eighth/bar over 8 bars -->
+        <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Column headers: 8 bars -->
+          <text x="120" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 1</text>
+          <text x="200" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 2</text>
+          <text x="280" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 3</text>
+          <text x="360" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 4</text>
+          <text x="440" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 5</text>
+          <text x="520" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 6</text>
+          <text x="600" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 7</text>
+          <text x="680" y="14" font-family="Space Mono,monospace" font-size="8" fill="#999" text-anchor="middle">bar 8</text>
+          <!-- Bar lines -->
+          <line x1="80" y1="18" x2="80" y2="150" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="160" y1="18" x2="160" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="240" y1="18" x2="240" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="320" y1="18" x2="320" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="400" y1="18" x2="400" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="480" y1="18" x2="480" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="560" y1="18" x2="560" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="640" y1="18" x2="640" y2="150" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="720" y1="18" x2="720" y2="150" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Row labels -->
+          <text x="74" y="45" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="end">8-note</text>
+          <text x="74" y="53" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="end">loop</text>
+          <text x="74" y="105" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c" text-anchor="end">7-note</text>
+          <text x="74" y="113" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c" text-anchor="end">loop</text>
+          <!-- Row 1: 8-note loop — 8 equally spaced notes per bar, all bars (fixed pattern) -->
+          <!-- Each bar = 80px, each 8th note slot = 10px, note block width=8 -->
+          <!-- Bar 1-8, positions 0-7 in each bar -->
+          <!-- I'll draw all 8 bars × 8 notes = 64 note blocks for row 1 -->
+          <!-- y=36, height=18 -->
+          <!-- Bar 1 (x=80): notes at 80,90,100,110,120,130,140,150 -->
+          <rect x="81" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="91" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="101" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="111" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="121" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="131" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="141" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="151" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 2 (x=160) -->
+          <rect x="161" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="171" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="181" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="191" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="201" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="211" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="221" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="231" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 3 -->
+          <rect x="241" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="251" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="261" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="271" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="281" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="291" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="301" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="311" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 4 -->
+          <rect x="321" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="331" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="341" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="351" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="361" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="371" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="381" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="391" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 5 -->
+          <rect x="401" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="411" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="421" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="431" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="441" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="451" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="461" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="471" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 6 -->
+          <rect x="481" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="491" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="501" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="511" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="521" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="531" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="541" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="551" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 7 -->
+          <rect x="561" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="571" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="581" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="591" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="601" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="611" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="621" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="631" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <!-- Bar 8 -->
+          <rect x="641" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="651" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="661" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="671" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="681" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="691" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="701" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+          <rect x="711" y="36" width="8" height="18" rx="1" fill="#3d7ec7" opacity="0.8"/>
+
+          <!-- Row 2: 7-note loop — start position drifts 1 position (10px) per bar -->
+          <!-- Bar 1: starts at position 0 → notes at 80,90,100,110,120,130,140 (7 notes) -->
+          <rect x="81" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="91" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="101" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="111" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="121" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="131" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="141" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 2: drift 1 → starts at position 1 → notes at 170,180,190,200,210,220,230 -->
+          <rect x="171" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="181" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="191" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="201" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="211" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="221" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="231" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 3: drift 2 → starts at position 2 → 262,272,...,322 -->
+          <rect x="261" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="271" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="281" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="291" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="301" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="311" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="321" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 4: drift 3 → position 3 → 353,...,413 -->
+          <rect x="351" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="361" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="371" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="381" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="391" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="401" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="411" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 5: drift 4 → position 4 → 444,...,504 -->
+          <rect x="441" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="451" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="461" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="471" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="481" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="491" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="501" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 6: drift 5 → position 5 → 535,...,595 -->
+          <rect x="531" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="541" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="551" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="561" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="571" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="581" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="591" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 7: drift 6 → position 6 → 626,...,686 -->
+          <rect x="621" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="631" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="641" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="651" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="661" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="671" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <rect x="681" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Bar 8: drift 7 → position 0 again (8 mod 7 = 1, so still off) → position 7 = 717,...,777 (wraps to next bar) -->
+          <!-- Actually after 7 bars drift, position = 7 mod 7 = 0: back to alignment -->
+          <!-- Position 7*10=70px into bar 8: x=640+70=710 → 711,...,771 -->
+          <rect x="711" y="95" width="8" height="18" rx="1" fill="#4a8c5c" opacity="0.85"/>
+          <!-- Partial bar 8 — only 1 note visible; the rest loop into bar 9 (off-diagram) -->
+
+          <!-- Drift annotation arrows -->
+          <text x="80" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">aligned</text>
+          <text x="160" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+1</text>
+          <text x="240" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+2</text>
+          <text x="320" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+3</text>
+          <text x="400" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+4</text>
+          <text x="480" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+5</text>
+          <text x="560" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+6</text>
+          <text x="640" y="125" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+7 →</text>
+
+          <!-- Explanation text -->
+          <text x="80" y="145" font-family="Space Mono,monospace" font-size="8" fill="#999">drift = 1 eighth/bar (8 mod 7 = 1)</text>
+          <text x="80" y="156" font-family="Space Mono,monospace" font-size="8" fill="#999">after 7 bars: all 7 phase positions covered — loops return to alignment (7 × 1 = 7 = one full 7-note cycle)</text>
+        </svg>
+      </div>
+      <div class="sub-section">
+        <div class="sub-title">Canon vs. phase</div>
+        <p>A Bach canon fixes the time offset and writes harmony explicitly around it. A Reich phase piece lets the offset drift and trusts the process to generate interesting harmony automatically. Both are imitative counterpoint. The difference is whether the composer controls the offset moment-to-moment or releases that control to the phase relationship. Neither is superior — they are tools for different intentions.</p>
+      </div>
+      <div class="principle-box">Phase music is not a metaphor for canon. It <em>is</em> a canon — one whose delay interval is continuously negotiated by the performers rather than fixed by notation.</div>
+    </div>
+  </div>
+
+  <!-- BUILD IT -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — A Two-Voice Canon at the Octave</div>
+    </div>
+    <div class="card-body">
+      <p>Open your Ch 11 session (32 bars, 8 tracks). You will add a 12-bar <strong>canon epilog</strong> as bars 33–44. Bars 1–32 remain unchanged.</p>
+
+      <div class="sub-section">
+        <div class="sub-title">Bar 33 — Re-entry</div>
+        <p>Extend Track 6 (the 8-note arpeggio D4 E4 F4 A4 G4 F4 E4 D4) into bar 33. This is the natural minor version — no C# alteration, no velocity accent pattern. Extend the Track 8 D2 drone into bars 33–44.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Bar 34 — Canon begins (Track 9, new)</div>
+        <p>Create Track 9. Program the same 8 notes as Track 6: D4 E4 F4 A4 G4 F4 E4 D4, eighth notes, 1-bar clip. Place Track 9's first clip at bar 34, beat 1 — one full bar after Track 6 re-entered. This is a <strong>canon at the unison</strong> with a 1-bar delay. Let both tracks loop through bars 34–36. The simultaneous intervals created are fifths, thirds, and fourths — the arpeggio self-harmonises.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Bar 37 — Canon at the octave</div>
+        <p>At bar 37, change Track 9's notes to the octave below: D3 E3 F3 A3 G3 F3 E3 D3. The canon structure is identical but the register separation now gives you a high melodic voice (Track 6) and a deep foundational voice (Track 9). Let both run through bars 37–40. This is the ambient equivalent of a Bach two-voice invention: same material, registral separation, interlocking rhythm.</p>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">Bars 41–44 — Subtraction arc (mirror of Ch 11 ending)</div>
+        <ul>
+          <li><strong>Bar 41</strong> — mute Track 9. The lower canon voice disappears.</li>
+          <li><strong>Bar 42</strong> — replace Track 6's clip with quarter notes: D4 F4 A4 D4 (one per beat). The eighth-note momentum dissolves into long notes.</li>
+          <li><strong>Bar 43</strong> — mute Track 6. Silence except for the drone.</li>
+          <li><strong>Bar 44</strong> — automate Track 8's volume from full to zero across 4 beats. The piece ends on a fading D.</li>
+        </ul>
+      </div>
+
+      <div class="sub-section">
+        <div class="sub-title">What you now have</div>
+        <p>A 44-bar piece in two movements. Bars 1–32: the phase-ambient section from Ch 11, built on loops, drift, subtraction, and chromatic evolution. Bars 33–44: a canon epilog — the same arpeggio material reframed as strict imitative counterpoint, resolved cleanly by subtraction. The piece begins in ambient loop-space and ends in the voice of Bach.</p>
+      </div>
+
+      <div class="principle-box">Track state after this session: Tracks 1–8 unchanged from Ch 11 (bars 1–32). Track 8 extended to bar 44 with fade. Track 6 re-enters bar 33, simplifies bar 42, mutes bar 43. Track 9 (new): canon follower, bars 34–40, D4 version bars 34–36, D3 version bars 37–40.</div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 168" xmlns="http://www.w3.org/2000/svg">
+          <!-- Canon epilog: bars 33-44 (12 bars at 60px each) -->
+          <!-- Bar n starts at x=40+(n-33)*60: bar33=40, 34=100, 35=160, 36=220, 37=280, 38=340, 39=400, 40=460, 41=520, 42=580, 43=640, 44=700 -->
+          <!-- Track rows: T6 (y=50-82), T9 (y=82-114), T8 drone (y=114-146) -->
+
+          <!-- Section header bands (y=0-46) -->
+          <rect x="40"  y="0" width="60"  height="46" fill="#3d7ec718"/>  <!-- T6 re-entry -->
+          <rect x="100" y="0" width="180" height="46" fill="#4caf7920"/>  <!-- Canon unison -->
+          <rect x="280" y="0" width="240" height="46" fill="#8b5cf620"/>  <!-- Canon octave -->
+          <rect x="520" y="0" width="240" height="46" fill="#d4842a18"/>  <!-- Subtraction -->
+
+          <!-- Section labels -->
+          <text x="70"  y="14" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle" font-weight="700">T6 ALONE</text>
+          <text x="70"  y="26" font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">bar 33</text>
+          <text x="190" y="14" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle" font-weight="700">CANON — UNISON</text>
+          <text x="190" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4caf79" text-anchor="middle">bars 34–36, D4 range</text>
+          <text x="400" y="14" font-family="Space Mono,monospace" font-size="8" fill="#7c3aed" text-anchor="middle" font-weight="700">CANON — OCTAVE BELOW</text>
+          <text x="400" y="26" font-family="Space Mono,monospace" font-size="7" fill="#7c3aed" text-anchor="middle">bars 37–40, T9 drops to D3</text>
+          <text x="640" y="14" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle" font-weight="700">SUBTRACTION ARC</text>
+          <text x="640" y="26" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">bars 41–44</text>
+
+          <!-- Bar number labels (y=40) -->
+          <text x="70"  y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">33</text>
+          <text x="130" y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">34</text>
+          <text x="190" y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">35</text>
+          <text x="250" y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">36</text>
+          <text x="310" y="40" font-family="Space Mono,monospace" font-size="7" fill="#7c3aed" text-anchor="middle">37</text>
+          <text x="370" y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">38</text>
+          <text x="430" y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">39</text>
+          <text x="490" y="40" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">40</text>
+          <text x="550" y="40" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">41</text>
+          <text x="610" y="40" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">42</text>
+          <text x="670" y="40" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">43</text>
+          <text x="730" y="40" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">44</text>
+
+          <!-- Bar lines -->
+          <line x1="40"  y1="46" x2="40"  y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="100" y1="46" x2="100" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="160" y1="46" x2="160" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="220" y1="46" x2="220" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="280" y1="46" x2="280" y2="148" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="340" y1="46" x2="340" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="400" y1="46" x2="400" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="460" y1="46" x2="460" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="520" y1="46" x2="520" y2="148" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="580" y1="46" x2="580" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="640" y1="46" x2="640" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="700" y1="46" x2="700" y2="148" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="760" y1="46" x2="760" y2="148" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Track label column -->
+          <text x="8" y="70"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T6</text>
+          <text x="8" y="80"  font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">arpegg.</text>
+          <text x="8" y="100" font-family="Space Mono,monospace" font-size="8" fill="#e04848" font-weight="700">T9</text>
+          <text x="8" y="110" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">canon</text>
+          <text x="8" y="130" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">T8</text>
+          <text x="8" y="140" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">drone</text>
+
+          <!-- T6 track (y=50-82): bars 33-42 active, 43-44 muted -->
+          <rect x="40"  y="51" width="480" height="30" fill="#3d7ec7" opacity="0.55" rx="1"/>  <!-- bars 33-40 -->
+          <rect x="520" y="51" width="60"  height="30" fill="#3d7ec7" opacity="0.35" rx="1"/>  <!-- bar 41 (T9 mutes) -->
+          <rect x="580" y="51" width="60"  height="30" fill="#3d7ec7" opacity="0.25" rx="1"/>  <!-- bar 42 (quarter notes) -->
+          <rect x="640" y="51" width="120" height="30" fill="#e8e4de" rx="1"/>                 <!-- bars 43-44 (muted) -->
+          <text x="280" y="70" font-family="Space Mono,monospace" font-size="7" fill="#fff" text-anchor="middle">D4-E4-F4-A4-G4-F4-E4-D4 loop</text>
+          <text x="550" y="70" font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">solo</text>
+          <text x="610" y="70" font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">♩♩♩♩</text>
+          <text x="700" y="70" font-family="Space Mono,monospace" font-size="7" fill="#a0998f" text-anchor="middle">muted</text>
+
+          <!-- T9 track (y=82-114): off until bar 34, upper reg 34-36, lower 37-40, muted 41+ -->
+          <rect x="40"  y="83" width="60"  height="30" fill="#e8e4de" rx="1"/>                 <!-- bar 33: off -->
+          <rect x="100" y="83" width="180" height="14" fill="#e04848" opacity="0.6" rx="1"/>   <!-- bars 34-36: upper register -->
+          <rect x="280" y="97" width="180" height="14" fill="#9b2335" opacity="0.7" rx="1"/>   <!-- bars 37-40: lower register -->
+          <rect x="460" y="83" width="300" height="30" fill="#e8e4de" rx="1"/>                 <!-- bars 41-44: muted -->
+          <!-- Register labels -->
+          <text x="190" y="93" font-family="Space Mono,monospace" font-size="7" fill="#fff" text-anchor="middle">D4 range — 1 bar behind T6</text>
+          <text x="370" y="108" font-family="Space Mono,monospace" font-size="7" fill="#fff" text-anchor="middle">D3 range — octave below</text>
+          <text x="33"  y="100" font-family="Space Mono,monospace" font-size="7" fill="#a0998f" text-anchor="end">—</text>
+          <!-- Octave drop arrow -->
+          <line x1="280" y1="90" x2="280" y2="104" stroke="#9b2335" stroke-width="1.5" marker-end="url(#arr)"/>
+          <defs><marker id="arr" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto"><polygon points="0,0 5,2.5 0,5" fill="#9b2335"/></marker></defs>
+          <text x="610" y="101" font-family="Space Mono,monospace" font-size="7" fill="#a0998f" text-anchor="middle">muted bar 41</text>
+
+          <!-- T8 drone track (y=114-146) -->
+          <rect x="40"  y="115" width="660" height="30" fill="#3d7ec7" opacity="0.4" rx="1"/>   <!-- bars 33-43 -->
+          <rect x="700" y="115" width="60"  height="30" fill="#3d7ec7" opacity="0.1" rx="1"/>   <!-- bar 44: fade -->
+          <text x="380" y="133" font-family="Space Mono,monospace" font-size="7" fill="#fff" text-anchor="middle">D2 drone — sustained</text>
+          <text x="730" y="133" font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">fade</text>
+
+          <!-- Row separator lines -->
+          <line x1="40" y1="82"  x2="760" y2="82"  stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="40" y1="114" x2="760" y2="114" stroke="#d9d4ca" stroke-width="0.5"/>
+          <line x1="40" y1="146" x2="760" y2="146" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Event annotations -->
+          <text x="100" y="160" font-family="Space Mono,monospace" font-size="7" fill="#4caf79" text-anchor="middle">T9 enters</text>
+          <text x="280" y="160" font-family="Space Mono,monospace" font-size="7" fill="#7c3aed" text-anchor="middle">↓ octave</text>
+          <text x="520" y="160" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">T9 mutes</text>
+          <text x="640" y="160" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">T6 mutes</text>
+          <text x="730" y="160" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">fade out</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner"><span class="banner-text">CANONS &amp; ROUNDS ◇ IMITATION ◇ ROUND ◇ CANON ◇ STRETTO ◇ PHASE ◇ BACH × REICH ◇ CANONS &amp; ROUNDS ◇ IMITATION ◇ ROUND ◇ CANON ◇ STRETTO ◇ PHASE ◇ BACH × REICH ◇ </span></div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch11-ambient-counterpoint.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 11 — From Bach to Ambient</span>
+  </a>
+</div>
+
+<div class="footer"><p>AMBIENT COUNTERPOINT — CH 12: CANONS &amp; ROUNDS — D MINOR</p></div>
+
+</body>
+</html>

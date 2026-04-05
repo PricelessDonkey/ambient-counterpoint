@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 04 — Tension and Release Between Voices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner">
+  <span class="banner-text">CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; ENCLOSURES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CROSS RELATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION & RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; DIMINISHED INTERVALS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
+</div>
+
+<div class="hero">
+  <h1><span>Tension and Release</span></h1>
+  <p class="subtitle">The counterpoint becomes expressive when voices argue — and then agree.</p>
+</div>
+
+<div class="intro-box">
+  <div class="inner">
+    <strong>Dissonance is not a mistake — it is the engine.</strong> Chapters 1–3 gave you two independent voices that coexist politely. Now you make them collide on purpose: hold a note past its welcome, approach a target from both sides, let one voice say F while the other says F#. These techniques are what give counterpoint its emotional charge. Bach uses them constantly; so does Nala Sinephro. The listener's ear leans forward when the tension builds, and exhales when it resolves.
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- CARD 14: Suspensions as melody -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">14</div>
+      <div class="card-title">Suspensions as Melody — The Sigh</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">The three-stage mechanism</p>
+        <p>A <span class="key">suspension</span> is a deliberate dissonance created by holding one note too long. It has exactly three stages: the note arrives on a weak beat as part of a consonant chord (<strong>preparation</strong>), it is held into the next strong beat where the harmony has moved on and it no longer fits (<strong>suspension / clash</strong>), and then it resolves down by step into a consonant note (<strong>resolution</strong>). The ear hears: expectation, denial, relief.</p>
+        <p>The resolution is almost always <strong>downward by step</strong>. Upward resolutions exist but are rare and jarring. The sigh quality comes from this falling motion — the suspended note strains against the harmony and then sinks.</p>
+      </div>
+
+      <!-- Suspension anatomy diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 170" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-blue" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3d7ec7"/>
+            </marker>
+            <marker id="arr-red" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#e04848"/>
+            </marker>
+            <marker id="arr-green" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3a9e6e"/>
+            </marker>
+          </defs>
+
+          <!-- Stage background zones -->
+          <rect x="20"  y="10" width="210" height="130" rx="4" fill="#d6f0e3" opacity="0.4"/>
+          <rect x="270" y="10" width="220" height="130" rx="4" fill="#fde8e8" opacity="0.5"/>
+          <rect x="530" y="10" width="210" height="130" rx="4" fill="#d6f0e3" opacity="0.4"/>
+
+          <!-- Stage labels -->
+          <text x="125" y="28" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#3a9e6e" text-anchor="middle" letter-spacing="1">PREPARATION</text>
+          <text x="380" y="28" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#e04848" text-anchor="middle" letter-spacing="1">SUSPENSION (CLASH)</text>
+          <text x="635" y="28" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#3a9e6e" text-anchor="middle" letter-spacing="1">RESOLUTION</text>
+
+          <!-- Beat labels -->
+          <text x="125" y="152" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">beat 4 — weak</text>
+          <text x="380" y="152" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">beat 1 — STRONG</text>
+          <text x="635" y="152" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">beat 2 — weak</text>
+
+          <!-- Interval labels -->
+          <text x="125" y="165" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">consonant (5th)</text>
+          <text x="380" y="165" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">dissonant (4th)</text>
+          <text x="635" y="165" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">consonant (3rd)</text>
+
+          <!-- Upper voice dots: D5 → D5 → C#5 -->
+          <!-- y: D5=55, C#5=68 -->
+          <circle cx="125" cy="55" r="7" fill="#3d7ec7"/>
+          <text x="125" y="48" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">D5</text>
+          <!-- D5 stays — connected line shows hold -->
+          <line x1="132" y1="55" x2="368" y2="55" stroke="#e04848" stroke-width="2.5" stroke-dasharray="5 3"/>
+          <circle cx="380" cy="55" r="8" fill="#e04848"/>
+          <text x="380" y="48" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">D5</text>
+          <!-- Resolution arrow: D5 → C#5 -->
+          <line x1="388" y1="57" x2="622" y2="70" stroke="#3a9e6e" stroke-width="2.5" marker-end="url(#arr-green)"/>
+          <circle cx="635" cy="72" r="7" fill="#3a9e6e"/>
+          <text x="635" y="65" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">C#5</text>
+
+          <!-- Lower voice — bass A3 (constant) -->
+          <!-- y: A3=115 -->
+          <circle cx="125" cy="115" r="6" fill="#4a4a4a" opacity="0.5"/>
+          <text x="125" y="130" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">A3</text>
+          <line x1="131" y1="115" x2="374" y2="115" stroke="#4a4a4a" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="380" cy="115" r="6" fill="#4a4a4a" opacity="0.5"/>
+          <text x="380" y="130" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">A3</text>
+          <line x1="386" y1="115" x2="629" y2="115" stroke="#4a4a4a" stroke-width="1.5" opacity="0.4"/>
+          <circle cx="635" cy="115" r="6" fill="#4a4a4a" opacity="0.5"/>
+          <text x="635" y="130" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">A3</text>
+
+          <!-- Clash indicator: vertical bracket between D5 and A3 at clash stage -->
+          <line x1="395" y1="60" x2="395" y2="110" stroke="#e04848" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="405" y="91" font-family="Space Mono,monospace" font-size="8" fill="#e04848">4th ↕</text>
+
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The 4-3 suspension in D minor</p>
+        <p>The most common suspension in D minor is <span class="key">4-3 over the dominant</span>. The chord is A major (A–C#–E). The upper voice holds D (the 4th above A) into the strong beat, clashing against C# in the chord, then falls to C# to resolve. Preparation is any consonant arrival on D in the previous beat. The clash is D against C# in the bass — a crunchy half-step rub. The exhale is D slipping down to C#.</p>
+        <p>A second classic: <span class="key">7-6 over the tonic</span>. The chord is Dm (D–F–A). Upper voice holds C (the 7th above D) into the strong beat, resolves down to B♭ (the 6th). Less sharp-edged than 4-3, but creates a beautiful drooping quality — the voice sighs downward.</p>
+      </div>
+
+      <div class="principle-box">
+        The suspension is an emotional mechanism: desire (preparation), frustration (clash), relief (resolution). Delay the resolution by one extra beat and the listener physically leans toward the speakers.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 15: Chains of suspensions -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">15</div>
+      <div class="card-title">Chains of Suspensions</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">The 4-3 chain — descending in thirds</p>
+        <p>A single suspension is satisfying. A <span class="key">chain of suspensions</span> is hypnotic. The trick: the resolution of one suspension immediately becomes the preparation for the next. The upper voice never fully rests — it keeps falling, one suspension after another, as the lower voice descends beneath it. The classic 4-3 chain descends through a sequence of dominants, each resolving down a third before the next clash arrives.</p>
+        <p>In D minor, a 4-3 chain might run: D5→C#5 (over A bass) → B♭4→A4 (over F bass) → G4→F#4 (over D major in 1st inv.) — each resolution immediately becomes the next preparation, the upper voice ratcheting downward without rest. (The final pair briefly leaves D minor: F# is the 3rd of a D major chord used as a passing secondary harmony.)</p>
+        <p>The <span class="key">7-6 chain</span> works the same way but with softer clashes. The upper voice descends by step: C5→B♭4→A4→G4→F4, each note held a beat too long above a descending bass. This creates the famous "sigh chain" in Baroque slow movements — grief rendered in voice-leading.</p>
+      </div>
+
+      <!-- 4-3 chain and 7-6 chain side by side -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-g" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3a9e6e"/>
+            </marker>
+            <marker id="arr-o" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#d4842a"/>
+            </marker>
+          </defs>
+
+          <!-- Left panel: 4-3 chain -->
+          <text x="185" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#3a9e6e" text-anchor="middle" letter-spacing="1">4-3 CHAIN</text>
+          <line class="grid-line" x1="20" y1="22" x2="360" y2="22"/>
+
+          <!-- 4-3 chain: upper voice descends with suspensions
+               Beats: x=50, 110, 170, 230, 290, 350
+               Pitches: D5=45, C#5=55, Bb4=75, A4=85, G4=95, F#4=105 -->
+
+          <!-- Suspension 1: D5 held → C#5 -->
+          <circle cx="50"  cy="45" r="5" fill="#3a9e6e"/>
+          <text x="50" y="38" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">D5</text>
+          <line x1="55" y1="45" x2="103" y2="45" stroke="#e04848" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="110" cy="45" r="5" fill="#e04848"/>
+          <line x1="115" y1="47" x2="158" y2="53" stroke="#3a9e6e" stroke-width="2" marker-end="url(#arr-g)"/>
+          <circle cx="165" cy="55" r="5" fill="#3a9e6e"/>
+          <text x="165" y="48" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">C#5</text>
+
+          <!-- Suspension 2: Bb4 held → A4 -->
+          <line x1="170" y1="55" x2="223" y2="55" stroke="#e04848" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="230" cy="55" r="5" fill="#e04848"/>
+          <line x1="235" y1="57" x2="278" y2="63" stroke="#3a9e6e" stroke-width="2" marker-end="url(#arr-g)"/>
+          <circle cx="285" cy="65" r="5" fill="#3a9e6e"/>
+          <text x="285" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">Bb4</text>
+
+          <!-- Suspension 3: Bb4 held (chain continues) -->
+          <line x1="290" y1="65" x2="343" y2="65" stroke="#e04848" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="350" cy="65" r="5" fill="#e04848"/>
+          <text x="350" y="58" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">Bb4</text>
+
+          <!-- Lower voice (bass descending) for 4-3 chain -->
+          <text x="30" y="138" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">bass:</text>
+          <circle cx="80"  cy="135" r="4" fill="#4a4a4a" opacity="0.6"/>
+          <text x="80"  y="150" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A3</text>
+          <circle cx="200" cy="145" r="4" fill="#4a4a4a" opacity="0.6"/>
+          <text x="200" y="160" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">F3</text>
+          <circle cx="320" cy="155" r="4" fill="#4a4a4a" opacity="0.6"/>
+          <text x="320" y="170" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">D3</text>
+          <polyline points="80,135 200,145 320,155" stroke="#4a4a4a" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+          <!-- Clash labels -->
+          <text x="110" y="88" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">4</text>
+          <text x="230" y="98" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">4</text>
+          <text x="350" y="108" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">4</text>
+          <text x="165" y="88" font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="middle">3</text>
+          <text x="285" y="98" font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="middle">3</text>
+
+          <!-- Divider -->
+          <line x1="380" y1="10" x2="380" y2="180" stroke="#d9d4ca" stroke-width="1.5"/>
+
+          <!-- Right panel: 7-6 chain -->
+          <text x="570" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#d4842a" text-anchor="middle" letter-spacing="1">7-6 CHAIN</text>
+          <line class="grid-line" x1="395" y1="22" x2="745" y2="22"/>
+
+          <!-- 7-6 chain: upper voice C5→Bb4→A4→G4
+               Beats x = 420, 480, 540, 600, 660, 720
+               Pitches: C5=50, Bb4=62, A4=68, G4=80 -->
+
+          <!-- Sus 1: C5 held → Bb4 -->
+          <circle cx="420" cy="50" r="5" fill="#d4842a"/>
+          <text x="420" y="43" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">C5</text>
+          <line x1="425" y1="50" x2="473" y2="50" stroke="#e04848" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="480" cy="50" r="5" fill="#e04848"/>
+          <line x1="485" y1="52" x2="528" y2="60" stroke="#d4842a" stroke-width="2" marker-end="url(#arr-o)"/>
+          <circle cx="535" cy="62" r="5" fill="#d4842a"/>
+          <text x="535" y="55" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">Bb4</text>
+
+          <!-- Sus 2: A4 held → G4 -->
+          <line x1="540" y1="62" x2="593" y2="62" stroke="#e04848" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="600" cy="62" r="5" fill="#e04848"/>
+          <line x1="605" y1="64" x2="648" y2="72" stroke="#d4842a" stroke-width="2" marker-end="url(#arr-o)"/>
+          <circle cx="655" cy="74" r="5" fill="#d4842a"/>
+          <text x="655" y="67" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">A4</text>
+
+          <!-- Sus 3 start: A4 held (chain continues) -->
+          <line x1="660" y1="74" x2="713" y2="74" stroke="#e04848" stroke-width="2" stroke-dasharray="4 2"/>
+          <circle cx="720" cy="74" r="5" fill="#e04848"/>
+          <text x="720" y="67" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">A4</text>
+
+          <!-- Lower voice (descending stepwise) for 7-6 chain -->
+          <text x="398" y="138" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">bass:</text>
+          <circle cx="450" cy="125" r="4" fill="#4a4a4a" opacity="0.6"/>
+          <text x="450" y="140" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">D3</text>
+          <circle cx="568" cy="130" r="4" fill="#4a4a4a" opacity="0.6"/>
+          <text x="568" y="145" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">C3</text>
+          <circle cx="688" cy="135" r="4" fill="#4a4a4a" opacity="0.6"/>
+          <text x="688" y="150" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">Bb2</text>
+          <polyline points="450,125 568,130 688,135" stroke="#4a4a4a" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+          <!-- Clash labels -->
+          <text x="480" y="88" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">7</text>
+          <text x="600" y="98" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">7</text>
+          <text x="720" y="108" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">7</text>
+          <text x="535" y="88" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">6</text>
+          <text x="655" y="98" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">6</text>
+
+          <!-- Dashed = held note legend -->
+          <line x1="20" y1="180" x2="55" y2="180" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 2"/>
+          <text x="60" y="184" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">= suspended note (held)</text>
+
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">How chains feel different from single suspensions</p>
+        <p>A single suspension resolves and relaxes. A chain never fully relaxes — each resolution is immediately captured as the next preparation. The listener keeps waiting for the final landing. This creates a <span class="key">ratcheted descent</span>: the emotional weight builds with each iteration. Bach uses 7-6 chains in slow movements to build enormous tension over just a few bars. In an ambient context, these chains loop beautifully — the ear never quite arrives.</p>
+      </div>
+
+      <div class="principle-box">
+        Chain the resolution of one suspension into the preparation of the next. The voice keeps falling; the ear keeps waiting for the floor.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 16: Chromatic neighbor tones and enclosures -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">16</div>
+      <div class="card-title">Chromatic Neighbor Tones and Enclosures</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">The chromatic lower neighbor</p>
+        <p>A <span class="key">chromatic neighbor tone</span> approaches a chord tone from a half step below, then resolves up to the target. It is not in the diatonic scale — it is borrowed purely for the gravitational pull. In D minor, approaching D from C# (a half step below) instead of C natural intensifies the arrival dramatically. The C# wants to rise; the D is inevitable.</p>
+        <p>Upper neighbors work too: approach D from E♭ (or E natural), then fall. But the chromatic lower neighbor is more powerful because it mimics the leading-tone pull — the same physics that makes C# → D work at cadences.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The enclosure — surrounding the target</p>
+        <p>An <span class="key">enclosure</span> surrounds the target note from both sides: approach from one step above, then drop below by a half step, then land on the target. Or the reverse: below first, then above, then land. The target note is "earned" by circling it twice before arriving. Jazz and Bach both use this shape — it gives melodic lines that characteristic coiling quality.</p>
+        <p>Enclosure to D4: <strong>E4 → C#4 → D4</strong>. The E4 touches the upper neighbor (whole step above), the C#4 touches the chromatic lower neighbor (half step below), then D4 lands with inevitability. You can expand this to a longer figure: E4 → D4 → C#4 → D4, which repeats the upper-lower-land pattern twice.</p>
+      </div>
+
+      <!-- Enclosure diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 155" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-b2" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3d7ec7"/>
+            </marker>
+            <marker id="arr-r2" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#e04848"/>
+            </marker>
+          </defs>
+
+          <!-- Pitch grid lines -->
+          <line class="grid-line" x1="20" y1="45"  x2="740" y2="45"/>
+          <line class="grid-line" x1="20" y1="65"  x2="740" y2="65"/>
+          <line class="grid-line" x1="20" y1="85"  x2="740" y2="85"/>
+          <line class="grid-line" x1="20" y1="105" x2="740" y2="105"/>
+
+          <!-- Pitch labels -->
+          <text x="14" y="49"  font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">E4</text>
+          <text x="14" y="69"  font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">D4</text>
+          <text x="14" y="89"  font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">C#4</text>
+          <text x="14" y="109" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">C4</text>
+
+          <!-- Simple chromatic lower neighbor (left section) -->
+          <text x="200" y="22" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#4a4a4a" text-anchor="middle" letter-spacing="1">CHROMATIC LOWER NEIGHBOR</text>
+
+          <!-- C→C#→D approach: A4 on beat, C# neighbor, D arrival -->
+          <!-- Approach note (some chord tone) -->
+          <circle cx="80"  cy="65" r="6" fill="#3d7ec7" opacity="0.4"/>
+          <text x="80" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle" opacity="0.6">D4</text>
+          <!-- C# lower neighbor -->
+          <line x1="86" y1="65" x2="158" y2="87" stroke="#3d7ec7" stroke-width="2" marker-end="url(#arr-b2)"/>
+          <circle cx="165" cy="87" r="6" fill="#e04848"/>
+          <text x="165" y="100" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">C#4</text>
+          <text x="165" y="110" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">½ step</text>
+          <!-- Resolution up to D4 -->
+          <line x1="171" y1="85" x2="313" y2="67" stroke="#3d7ec7" stroke-width="2.5" marker-end="url(#arr-b2)"/>
+          <circle cx="320" cy="65" r="8" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <text x="320" y="58" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" font-weight="700" text-anchor="middle">D4</text>
+          <text x="320" y="110" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">TARGET</text>
+
+          <!-- Divider -->
+          <line x1="390" y1="15" x2="390" y2="140" stroke="#d9d4ca" stroke-width="1.5"/>
+
+          <!-- Enclosure (right section) -->
+          <text x="572" y="22" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#4a4a4a" text-anchor="middle" letter-spacing="1">ENCLOSURE</text>
+
+          <!-- E4 upper neighbor -->
+          <circle cx="430" cy="45" r="6" fill="#3d7ec7"/>
+          <text x="430" y="38" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">E4</text>
+          <text x="430" y="57" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">above</text>
+          <!-- Drop to C# -->
+          <line x1="436" y1="47" x2="498" y2="83" stroke="#e04848" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arr-r2)"/>
+          <circle cx="505" cy="87" r="6" fill="#e04848"/>
+          <text x="505" y="100" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">C#4</text>
+          <text x="505" y="110" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">below</text>
+          <!-- Land on D -->
+          <line x1="511" y1="85" x2="643" y2="67" stroke="#3d7ec7" stroke-width="2.5" marker-end="url(#arr-b2)"/>
+          <circle cx="650" cy="65" r="8" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <text x="650" y="58" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" font-weight="700" text-anchor="middle">D4</text>
+          <text x="650" y="110" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">TARGET</text>
+
+          <!-- Formula labels -->
+          <text x="200" y="140" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">... → C#4 → D4</text>
+          <text x="572" y="140" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E4 → C#4 → D4</text>
+
+        </svg>
+      </div>
+
+      <div class="principle-box">
+        Enclosures make arrival feel earned. The note you've been circling becomes the resolution of a small drama. Use them to make any important pitch feel inevitable.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 17: Diminished intervals for drama -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">17</div>
+      <div class="card-title">Diminished Intervals for Drama</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">The diminished 7th leap — the most tense interval</p>
+        <p>A <span class="key">diminished 7th</span> (dim7) is a leap of 9 half steps — one half step narrower than a minor 7th. In D harmonic minor, the diminished 7th appears naturally between the raised 7th (C#) and the ♭6 (B♭): C#5 down to E4 or B♭3 up to C#4 (depending on octave register). Your ear hears this as a wrenched, violent interval — it is the signature of the most dramatic moments in Baroque music.</p>
+        <p>The rule: a diminished leap must resolve <strong>inward</strong> — the top note steps down or the bottom note steps up (or both). C#5 leaps down to E4, then E4 resolves up to F4 or down to D4. The leap is dramatic; the resolution is obligatory.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The diminished 4th — the compact version</p>
+        <p>The <span class="key">diminished 4th</span> (e.g. C# up to F natural in D minor — only 4 half steps, one less than a perfect 4th) sounds tense and narrow, like a normal 4th with the air squeezed out. Use it at climactic moments where a perfect 4th would sound too open and stable. The tritone (augmented 4th / diminished 5th) between A and E♭ is the most common version — six half steps, maximum instability — but the dim4 has a particularly plaintive, trapped quality.</p>
+        <p>In your D minor pieces, the dim4 between F natural (♭3) and B natural (the sharp 6, borrowed from D Dorian or D major) creates a particularly arresting color. F up to B = 6 half steps = tritone / augmented 4th. This interval pushes hard toward resolution.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The ° 7 as a melodic gesture</p>
+        <p>The fully diminished 7th chord (E°7 in D harmonic minor: E–G–B♭–C#) is built entirely of stacked minor 3rds. Each note is equidistant from its neighbors. Used melodically, you can leap between any of its four members and the ear accepts it as part of a single gesture. A melodic figure like E4 → C#4 → B♭3 uses two diminished-3rd leaps back to back and functions as a rapid descent through the harmonic tension zone before resolving to A or D.</p>
+      </div>
+
+      <div class="principle-box">
+        Save the dim7 for the single most dramatic moment in a phrase — the point of maximum tension just before the final release. Used too often it loses its charge. Used once, it stops time.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 18: Cross relations -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">18</div>
+      <div class="card-title">Cross Relations</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">What a cross relation is</p>
+        <p>A <span class="key">cross relation</span> (also called a "false relation") occurs when two adjacent or simultaneous beats contain the same pitch class in two different chromatic versions, in different voices. One voice has F natural while another voice has (or just had) F#. One voice has C natural while another has C#. The result is a brief tonal disorientation — the listener's ear does not know which version of the pitch is the real one.</p>
+        <p>In D minor this happens naturally when you mix natural minor (F natural, C natural, B♭) with harmonic or Dorian inflections (C# leading tone, B natural, F# from Dorian). The cross relation is the <em>simultaneous trace</em> of that ambiguity across two voices.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Deliberate use vs. accident</p>
+        <p>Unintentional cross relations muddy the texture — avoid them between strong beats in slow tempos unless you mean it. But a <span class="key">deliberate cross relation</span> is a powerful expressive tool. Bach uses them to signal modal shifts: the natural minor F appears in the lower voice while the upper voice leaps to F# on the very next note, creating a moment of tonal shimmer. The two versions of F coexist for a fraction of a beat before one wins.</p>
+        <p>The most expressive cross relations involve the 3rd and 7th of the mode — the two pitches that define whether you are in natural minor, harmonic minor, or Dorian. Placing F natural in one voice and F# in another at the same moment compresses the ambiguity into a single beat.</p>
+      </div>
+
+      <!-- Cross relation diagram -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Grid lines for pitch reference -->
+          <line class="grid-line" x1="20" y1="40"  x2="740" y2="40"/>
+          <line class="grid-line" x1="20" y1="55"  x2="740" y2="55"/>
+          <line class="grid-line" x1="20" y1="70"  x2="740" y2="70"/>
+          <line class="grid-line" x1="20" y1="85"  x2="740" y2="85"/>
+          <line class="grid-line" x1="20" y1="100" x2="740" y2="100"/>
+          <line class="grid-line" x1="20" y1="115" x2="740" y2="115"/>
+          <line class="grid-line" x1="20" y1="130" x2="740" y2="130"/>
+
+          <!-- Pitch labels -->
+          <text x="14" y="44"  font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">A4</text>
+          <text x="14" y="59"  font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">G4</text>
+          <text x="14" y="74"  font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">F#4</text>
+          <text x="14" y="89"  font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">F4</text>
+          <text x="14" y="104" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">E4</text>
+          <text x="14" y="119" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">D4</text>
+          <text x="14" y="134" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="end">C#4</text>
+
+          <!-- Beat divisions: x = 100, 220, 340, 460, 580, 700 -->
+          <line x1="100"  y1="25" x2="100"  y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="220"  y1="25" x2="220"  y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="340"  y1="25" x2="340"  y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="460"  y1="25" x2="460"  y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="580"  y1="25" x2="580"  y2="155" stroke="#1a1a1a" stroke-width="1"/>
+          <line x1="700"  y1="25" x2="700"  y2="155" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Bar labels -->
+          <text x="220" y="20" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">beat 2</text>
+          <text x="340" y="20" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">beat 3</text>
+          <text x="460" y="20" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle" font-weight="700">CROSS RELATION</text>
+          <text x="580" y="20" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">beat 5</text>
+
+          <!-- Upper voice: G4 → F#4 → A4 → G4 → A4 -->
+          <circle cx="160" cy="57" r="5" fill="#3d7ec7"/>
+          <line x1="165" y1="57" x2="275" y2="72" stroke="#3d7ec7" stroke-width="2" fill="none"/>
+          <circle cx="280" cy="72" r="5" fill="#3d7ec7"/>
+          <line x1="285" y1="70" x2="395" y2="38" stroke="#3d7ec7" stroke-width="2.5" fill="none"/>
+          <circle cx="400" cy="38" r="6" fill="#3d7ec7"/>
+          <text x="400" y="31" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">A4</text>
+          <line x1="405" y1="40" x2="515" y2="57" stroke="#3d7ec7" stroke-width="2" fill="none"/>
+          <circle cx="520" cy="57" r="5" fill="#3d7ec7"/>
+
+          <!-- Upper voice labels -->
+          <text x="160" y="50" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">G4</text>
+          <text x="280" y="65" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">F#4</text>
+
+          <!-- Lower voice: E4 → E4 → F4 (cross!) → E4 → D4 -->
+          <circle cx="160" cy="102" r="5" fill="#e04848" opacity="0.6"/>
+          <line x1="165" y1="102" x2="275" y2="102" stroke="#e04848" stroke-width="2" opacity="0.6"/>
+          <circle cx="280" cy="102" r="5" fill="#e04848" opacity="0.6"/>
+          <!-- F natural appears in lower voice exactly when upper has F# context -->
+          <line x1="285" y1="100" x2="395" y2="86" stroke="#7b61c7" stroke-width="2.5"/>
+          <circle cx="400" cy="84" r="7" fill="#7b61c7"/>
+          <text x="400" y="100" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">F4</text>
+          <line x1="405" y1="86" x2="515" y2="102" stroke="#e04848" stroke-width="2" opacity="0.6"/>
+          <circle cx="520" cy="102" r="5" fill="#e04848" opacity="0.6"/>
+
+          <!-- Lower voice labels -->
+          <text x="160" y="118" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">E4</text>
+          <text x="280" y="118" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">E4</text>
+          <text x="520" y="118" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">E4</text>
+
+          <!-- Cross relation callout: F# in upper context, F natural in lower -->
+          <text x="340" y="148" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">upper voice implies F#</text>
+          <text x="340" y="160" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">lower voice says F ♮ — clash!</text>
+
+          <!-- Legend -->
+          <text x="620" y="148" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">upper voice</text>
+          <text x="620" y="160" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">lower voice</text>
+
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The cross relation in ambient contexts</p>
+        <p>In looping ambient music, cross relations create <span class="key">productive ambiguity</span>. Because the two versions of the pitch keep cycling, the listener can never fully settle on a mode. The piece hovers between D natural minor and D Dorian (or D harmonic minor) indefinitely. Nala Sinephro's harmonically floating sound comes partly from exactly this — the same pitch class appearing as both natural and raised within a short time window, preventing tonal resolution.</p>
+      </div>
+
+      <div class="principle-box">
+        Use the cross relation at the one moment you want to create tonal disorientation — a shimmer, a doubt, a question mark. It should last one beat, not the whole phrase.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD ✦: Build It -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — Add Tension to the Two-Voice Piece</div>
+    </div>
+    <div class="card-body">
+
+      <p>Open your Ch 03 session — the two-voice piece with contrary motion in bars 1–2, pedal freeze in bar 3, and voice exchange at the cadence in bar 4. This session is where the raw counterpoint lives. Now you will add three expressive layers on top: a suspension at the cadence, a chromatic enclosure approaching the final D, and one moment of cross-relation tension between the two voices.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">Modify bar 3 — approach the cadence through suspension</p>
+        <p>In bar 3, the lower voice is a held D3 pedal. The upper voice currently climbs to C5. Make one change to bar 3 so the upper voice prepares a suspension that lands in bar 4:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 1:</strong> Upper F4 / Lower D3 (pedal) — as before</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 2:</strong> Upper G4 / Lower D3 — as before</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 3:</strong> Upper A4 / Lower D3 — as before</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--orange)">Beat 4:</strong> Upper <strong>G4</strong> (change from C5) / Lower D3 — G is the preparation note</li>
+        </ul>
+        <p>By landing on G4 on beat 4 (instead of C5), you set up the 4-3 suspension. G4 is consonant over the D3 pedal (a 4th — which resolves to a 3rd). It becomes dissonant in bar 4 when the harmony focuses on Dm, where G is the suspended 4th above D.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Bar 4 beat 1 — the suspension lands</p>
+        <p>Bar 4 currently opens with a voice exchange: Upper drops to D4 while Lower rises to A3. Adjust the upper voice to hold the suspension first, then resolve:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 1:</strong> Upper <strong>G4</strong> (held from bar 3 beat 4 — this is the suspension clash) / Lower <strong>A3</strong></li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--green)">Beat 2:</strong> Upper <strong>F4</strong> (resolves down by step — the 3rd of Dm) / Lower <strong>A3</strong></li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beats 3–4:</strong> Enclosure into the final D4 (see next step)</li>
+        </ul>
+        <p>G4 held on beat 1 of bar 4 against the A3 lower voice creates an interval of a minor 7th — tense. Against the implied Dm chord it is the suspended 4th. The resolution to F4 on beat 2 is the exhale. The 4-3 suspension is now built into your piece.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Beats 3–4 of bar 4 — chromatic enclosure into the final D</p>
+        <p>After the suspension resolves to F4 on beat 2, guide the upper voice to the final D4 using an enclosure instead of a direct step:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 3:</strong> Upper <strong>E4</strong> (upper neighbor to D — one step above)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Beat 4-and:</strong> Upper <strong>C#4</strong> (chromatic lower neighbor — half step below D) as an eighth note</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Beat 4-and+:</strong> Upper <strong>D4</strong> — arrival, the final note, a second eighth note</li>
+        </ul>
+        <p>The lower voice through beats 3–4: hold <strong>D3</strong> as a half note. The enclosure E4→C#4→D4 in the upper voice against the D3 bass creates a brief C#4/D3 clash (a major 7th) that resolves to D4/D3 (unison octave). The ending is now earned — circled twice before landing.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Add the cross relation — one beat of tonal disorientation</p>
+        <p>In bar 2, the upper voice descends G4→F4→E4→D4 in natural minor. Now add a single moment of modal friction: on bar 2 beat 3, raise the upper voice to <strong>F#4</strong> instead of F4 — a chromatic raised 3rd, borrowed from D major. The lower voice on that same beat is G3 or A3 (natural minor context). The F# in the upper voice against the natural minor surroundings creates a cross relation with the F natural from beat 2. One beat of shimmer, then continue the descent to E4→D4 as before.</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Bar 2 beat 2:</strong> Upper <strong>F4</strong> (natural minor) — normal descent</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--purple)">Bar 2 beat 3:</strong> Upper <strong>F#4</strong> (raised 3rd, from D major) — cross relation moment</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Bar 2 beat 4:</strong> Upper <strong>E4</strong> — cross relation dissolves, descent continues</li>
+        </ul>
+        <p>The F→F# move in consecutive beats in the same voice is not technically a simultaneous cross relation, but it creates the same tonal ambiguity — your ear heard F natural and now hears F#, and the mode has flickered. For a true simultaneous cross relation, try placing the F natural in the lower voice while the upper voice plays F#4 on the same beat. One version shimmers; the other clashes more directly.</p>
+      </div>
+
+      <!-- Piano roll diagram: 4 bars showing all modifications -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 290" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Background bands -->
+          <rect x="18" y="5"   width="724" height="130" fill="#d6e8f7" opacity="0.18" rx="3"/>
+          <rect x="18" y="155" width="724" height="120" fill="#fde8e8" opacity="0.18" rx="3"/>
+
+          <!-- Band labels -->
+          <text x="26" y="19"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" font-weight="700">UPPER VOICE</text>
+          <text x="26" y="165" font-family="Space Mono,monospace" font-size="8" fill="#e04848" font-weight="700">LOWER VOICE</text>
+
+          <!-- Bar lines: x=20, 200, 380, 560, 740 (each bar = 180px, quarter = 45px) -->
+          <line x1="20"  y1="5" x2="20"  y2="280" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="5" x2="200" y2="280" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="5" x2="380" y2="280" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="5" x2="560" y2="280" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="740" y1="5" x2="740" y2="280" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Beat grid lines -->
+          <line class="grid-line" x1="65"  y1="5" x2="65"  y2="280"/>
+          <line class="grid-line" x1="110" y1="5" x2="110" y2="280"/>
+          <line class="grid-line" x1="155" y1="5" x2="155" y2="280"/>
+          <line class="grid-line" x1="245" y1="5" x2="245" y2="280"/>
+          <line class="grid-line" x1="290" y1="5" x2="290" y2="280"/>
+          <line class="grid-line" x1="335" y1="5" x2="335" y2="280"/>
+          <line class="grid-line" x1="425" y1="5" x2="425" y2="280"/>
+          <line class="grid-line" x1="470" y1="5" x2="470" y2="280"/>
+          <line class="grid-line" x1="515" y1="5" x2="515" y2="280"/>
+          <line class="grid-line" x1="605" y1="5" x2="605" y2="280"/>
+          <line class="grid-line" x1="650" y1="5" x2="650" y2="280"/>
+          <line class="grid-line" x1="695" y1="5" x2="695" y2="280"/>
+
+          <!-- Bar labels -->
+          <text x="110" y="278" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar 1 — contrary motion</text>
+          <text x="290" y="278" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">bar 2 — cross relation</text>
+          <text x="470" y="278" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar 3 — pedal + prep</text>
+          <text x="650" y="278" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">bar 4 — suspension + enclosure</text>
+
+          <!-- Pitch y-coords (upper voice zone y=5–135):
+               D5=32, C5=42, B4=52 (unused), A4=62, G4=72, F#4=79, F4=86, E4=96, D4=106
+               Pitch y-coords (lower voice zone y=155–270):
+               A3=168, G3=178, F3=188, E3=198, D3=208 -->
+
+          <!-- ══ BAR 1 ══ Contrary motion: Upper D5/E5/F5/A4, Lower A3/G3/F3/D3 -->
+          <!-- Upper: D5 beat1 -->
+          <rect x="20"  y="28"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="42"  y="24"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">D5</text>
+          <!-- Upper: E5 beat2 -->
+          <rect x="65"  y="18"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="87"  y="14"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">E5</text>
+          <!-- Upper: F5 beat3 -->
+          <rect x="110" y="10"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="132" y="6"   font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">F5</text>
+          <!-- Upper: A4 beat4 -->
+          <rect x="155" y="58"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="177" y="54"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">A4</text>
+          <!-- Lower: A3 beat1 -->
+          <rect x="20"  y="164" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="42"  y="184" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">A3</text>
+          <!-- Lower: G3 beat2 -->
+          <rect x="65"  y="174" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="87"  y="194" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">G3</text>
+          <!-- Lower: F3 beat3 -->
+          <rect x="110" y="184" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="132" y="204" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">F3</text>
+          <!-- Lower: D3 beat4 -->
+          <rect x="155" y="204" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="177" y="224" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">D3</text>
+
+          <!-- ══ BAR 2 ══ Upper: G4/F4/F#4(cross!)/E4, Lower: E3/F3/G3/A3 -->
+          <!-- Upper: G4 beat1 -->
+          <rect x="200" y="68"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="222" y="64"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">G4</text>
+          <!-- Upper: F4 beat2 — normal descent -->
+          <rect x="245" y="82"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="267" y="78"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">F4</text>
+          <!-- Upper: F#4 beat3 — CROSS RELATION (purple) -->
+          <rect x="290" y="75"  width="45" height="8" rx="2" fill="#7b61c7"/>
+          <text x="312" y="71"  font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">F#4</text>
+          <text x="312" y="88"  font-family="Space Mono,monospace" font-size="6" fill="#7b61c7" text-anchor="middle">★</text>
+          <!-- Upper: E4 beat4 — descent continues -->
+          <rect x="335" y="92"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="357" y="88"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">E4</text>
+          <!-- Lower: E3 beat1 -->
+          <rect x="200" y="194" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="222" y="214" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">E3</text>
+          <!-- Lower: F3 beat2 — normal descent -->
+          <rect x="245" y="184" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="267" y="204" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">F3</text>
+          <!-- Lower: G3 beat3 -->
+          <rect x="290" y="174" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="312" y="194" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">G3</text>
+          <!-- Lower: A3 beat4 -->
+          <rect x="335" y="164" width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="357" y="184" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">A3</text>
+
+          <!-- Cross relation label -->
+          <text x="312" y="140" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">F# vs F♮</text>
+
+          <!-- ══ BAR 3 ══ Pedal: Upper F4/G4/A4/G4(prep), Lower D3 whole note -->
+          <!-- Upper: F4 beat1 -->
+          <rect x="380" y="82"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Upper: G4 beat2 -->
+          <rect x="425" y="68"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Upper: A4 beat3 -->
+          <rect x="470" y="58"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Upper: G4 beat4 — SUSPENSION PREPARATION (orange) -->
+          <rect x="515" y="68"  width="45" height="8" rx="2" fill="#d4842a"/>
+          <text x="537" y="64"  font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">G4</text>
+          <text x="537" y="60"  font-family="Space Mono,monospace" font-size="6" fill="#d4842a" text-anchor="middle">prep</text>
+          <!-- Labels for other upper notes -->
+          <text x="402" y="78"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">F4</text>
+          <text x="447" y="64"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">G4</text>
+          <text x="492" y="54"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">A4</text>
+          <!-- Lower: D3 whole note -->
+          <rect x="380" y="204" width="180" height="8" rx="2" fill="#e04848" opacity="0.5"/>
+          <text x="470" y="224" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">D3 — pedal</text>
+
+          <!-- ══ BAR 4 ══ Suspension (G4 clash → F4 resolve), enclosure E4→C#4→D4, Lower A3→D3 -->
+          <!-- Upper: G4 beat1 — SUSPENSION CLASH (red) -->
+          <rect x="560" y="68"  width="45" height="8" rx="2" fill="#e04848"/>
+          <text x="582" y="64"  font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">G4</text>
+          <text x="582" y="60"  font-family="Space Mono,monospace" font-size="6" fill="#e04848" text-anchor="middle">clash</text>
+          <!-- Upper: F4 beat2 — RESOLUTION (green) -->
+          <rect x="605" y="82"  width="45" height="8" rx="2" fill="#3a9e6e"/>
+          <text x="627" y="78"  font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="middle">F4</text>
+          <text x="627" y="74"  font-family="Space Mono,monospace" font-size="6" fill="#3a9e6e" text-anchor="middle">resolve</text>
+          <!-- Upper: E4 beat3 (enclosure upper neighbor) -->
+          <rect x="650" y="92"  width="45" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="672" y="88"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="middle">E4</text>
+          <!-- Upper: C#4 beat4-and (enclosure lower neighbor, eighth note) -->
+          <rect x="695" y="112" width="22" height="8" rx="2" fill="#e04848"/>
+          <text x="706" y="108" font-family="Space Mono,monospace" font-size="6" fill="#e04848" text-anchor="middle">C#4</text>
+          <!-- Upper: D4 landing (eighth note) -->
+          <rect x="717" y="102" width="23" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="728" y="98"  font-family="Space Mono,monospace" font-size="6" fill="#1a1a1a" text-anchor="middle">D4</text>
+          <!-- Lower: A3 beats 1-2 -->
+          <rect x="560" y="164" width="90" height="8" rx="2" fill="#e04848" opacity="0.6"/>
+          <text x="605" y="184" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">A3</text>
+          <!-- Lower: D3 beats 3-4 -->
+          <rect x="650" y="204" width="90" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="695" y="224" font-family="Space Mono,monospace" font-size="7" fill="#1a1a1a" text-anchor="middle">D3</text>
+
+          <!-- Legend -->
+          <rect x="20" y="246" width="10" height="6" rx="1" fill="#d4842a"/>
+          <text x="35" y="253" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">suspension prep/clash</text>
+          <rect x="160" y="246" width="10" height="6" rx="1" fill="#3a9e6e"/>
+          <text x="175" y="253" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">resolution</text>
+          <rect x="280" y="246" width="10" height="6" rx="1" fill="#7b61c7"/>
+          <text x="295" y="253" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">cross relation</text>
+          <rect x="420" y="246" width="10" height="6" rx="1" fill="#ffd200" stroke="#1a1a1a" stroke-width="0.8"/>
+          <text x="435" y="253" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a">final arrival</text>
+
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">What to listen for</p>
+        <p>Play back both voices together and locate these three moments: (1) Beat 4 of bar 3 into beat 1 of bar 4 — you should hear the G4 in the upper voice pulling against the D3/A3 lower, then releasing to F4. (2) Bar 2 beat 2 — the F# should flicker like a brightness in the upper voice against the natural minor lower voice. (3) The final four notes in the upper voice (E4→C#4→D4) — the C# creates a brief half-step crunch against D3, then resolves. The piece now has a shape: tension builds in bar 3, bursts in bar 4, and lands with that earned D.</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="banner">
+  <span class="banner-text">CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
+</div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch03-two-voices.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 03 — Adding a Second Voice</span>
+  </a>
+</div>
+
+<div class="footer">
+  <p>AMBIENT COUNTERPOINT — CH 04: TENSION AND RELEASE — D MINOR</p>
+</div>
+
+</body>
+</html>

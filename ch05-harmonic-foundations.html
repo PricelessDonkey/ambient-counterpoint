@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 05 — Harmonic Foundations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="nav-back"><a href="bach.html">Bach Counterpoint</a></div>
+
+<div class="banner">
+  <span class="banner-text">CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; BASS MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHROMATIC DESCENT &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
+</div>
+
+<div class="hero">
+  <h1><span>Harmonic Foundations</span></h1>
+  <p class="subtitle">The bass line underneath everything — how Bach's chord progressions create inevitable forward momentum.</p>
+</div>
+
+<div class="intro-box">
+  <div class="inner">
+    <strong>Melody without harmony is a river without banks.</strong> The two-voice counterpoint you built in Chapters 1–4 floats above an implied harmony, but that harmony has been vague — inferred from context rather than stated. This chapter makes the harmonic structure explicit: what chord progressions Bach reached for first, why they work, and how to put them under your music in Ableton. A strong bass line doesn't just support melody; it creates the gravitational field that makes melody meaningful.
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- CARD 1: Circle of Fifths Descent -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">1</div>
+      <div class="card-title">Circle of Fifths Descent</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">The fundamental harmonic engine</p>
+        <p>When a chord's root moves down a fifth (or equivalently up a fourth), the ear hears harmonic <span class="key">arrival</span> — a sense of weight settling. One V-I move feels like a cadence. A chain of them feels unstoppable. In D minor, the diatonic circle descends: Dm → Gm → C → Dm (short loop) or the full 8-step journey through all the diatonic roots.</p>
+        <p>Bach uses this as his default engine. When a passage feels purposeful and inevitable, the bass is almost certainly moving in fifths underneath. For an in-depth breakdown with the full circular layout, see <a href="harmonic-engines.html" style="color:var(--blue)">harmonic-engines.html</a>.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 135" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-blue" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3d7ec7"/>
+            </marker>
+          </defs>
+
+          <!-- 8 chord boxes: Dm Gm C F Bb E° Am Dm
+               x positions: 14, 104, 194, 284, 374, 464, 554, 644
+               width 80, height 36, y=18 -->
+
+          <!-- Dm -->
+          <rect x="14"  y="18" width="80" height="36" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="54"  y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#3d7ec7" text-anchor="middle">Dm</text>
+          <text x="54"  y="48" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">i — D3</text>
+
+          <!-- Gm -->
+          <rect x="104" y="18" width="80" height="36" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="144" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#3d7ec7" text-anchor="middle">Gm</text>
+          <text x="144" y="48" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">iv — G2</text>
+
+          <!-- C -->
+          <rect x="194" y="18" width="80" height="36" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="234" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#3a9e6e" text-anchor="middle">C</text>
+          <text x="234" y="48" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">VII — C3</text>
+
+          <!-- F -->
+          <rect x="284" y="18" width="80" height="36" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="324" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#3a9e6e" text-anchor="middle">F</text>
+          <text x="324" y="48" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">III — F2</text>
+
+          <!-- Bb -->
+          <rect x="374" y="18" width="80" height="36" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="414" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#3a9e6e" text-anchor="middle">Bb</text>
+          <text x="414" y="48" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">VI — Bb2</text>
+
+          <!-- E° -->
+          <rect x="464" y="18" width="80" height="36" rx="3" fill="#e8e0f7" stroke="#7b61c7" stroke-width="2"/>
+          <text x="504" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#7b61c7" text-anchor="middle">E°</text>
+          <text x="504" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">ii° — E2</text>
+
+          <!-- Am -->
+          <rect x="554" y="18" width="80" height="36" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="594" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#3d7ec7" text-anchor="middle">Am</text>
+          <text x="594" y="48" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">v — A2</text>
+
+          <!-- Dm (return) -->
+          <rect x="644" y="18" width="80" height="36" rx="3" fill="#ffd200" stroke="#1a1a1a" stroke-width="2"/>
+          <text x="684" y="34" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="middle">Dm</text>
+          <text x="684" y="48" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">i — home</text>
+
+          <!-- Arrows between boxes -->
+          <line x1="96" y1="36" x2="102" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+          <line x1="186" y1="36" x2="192" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+          <line x1="276" y1="36" x2="282" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+          <line x1="366" y1="36" x2="372" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+          <line x1="456" y1="36" x2="462" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+          <line x1="546" y1="36" x2="552" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+          <line x1="636" y1="36" x2="642" y2="36" stroke="#3d7ec7" stroke-width="1.5" marker-end="url(#arr-blue)"/>
+
+          <!-- "↓5th" label -->
+          <text x="96"  y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+          <text x="186" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+          <text x="276" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+          <text x="366" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+          <text x="456" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+          <text x="546" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+          <text x="636" y="26" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">↓5th</text>
+
+          <!-- Note about bass octave -->
+          <text x="380" y="120" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">Bass root shown — in practice, octave 2 or 3 depending on your instrument range</text>
+          <text x="380" y="132" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">Blue = minor &nbsp;&nbsp; Green = major &nbsp;&nbsp; Purple = diminished &nbsp;&nbsp; Yellow = tonic arrival</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Using a short loop vs. the full circle</p>
+        <p>You don't need all eight chords every time. The most common short loops in D minor: <span class="key">Dm–Gm–C–Dm</span> (i–iv–VII–i), <span class="key">Dm–Am–Gm–Am</span> (i–v–iv–v), or <span class="key">Am–Dm–Gm–Am</span> starting on the dominant. The minimum useful circle move is just two chords: any V-I pair drawn from the chain.</p>
+      </div>
+
+      <div class="principle-box">
+        Every time a root moves down a fifth, the ear hears "landing." String enough of these together and you have unstoppable harmonic momentum — each bar becomes an arrival that also launches the next.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 2: The 5-1 Ratchet -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">2</div>
+      <div class="card-title">The 5-1 Ratchet</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">Chromaticizing every link in the chain</p>
+        <p>The diatonic circle of fifths uses the natural minor scale throughout. But you can intensify every step by inserting a <span class="key">secondary dominant</span> — a dominant 7th chord built on the fifth of the target chord — just before you arrive. This injects chromatic tension (a note outside the natural minor scale) that the next chord must resolve.</p>
+        <p>In D minor, approaching Gm: instead of going there directly, play <strong>D7</strong> (D–F#–A–C). The F# is chromatic — D minor has F natural — and it acts as a leading tone that pulls up to G. Then to approach C major: play <strong>G7</strong> (G–B–D–F). The B natural is chromatic — D minor has Bb — and it acts as a leading tone that pulls up to C. Each V7 introduces one chromatic note that makes the arrival feel earned rather than routine.</p>
+        <p>For a detailed visual breakdown of how to build each link, see <a href="harmonic-engines.html" style="color:var(--blue)">harmonic-engines.html — the 5-1 Ratchet section</a>.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-red" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#e04848"/>
+            </marker>
+            <marker id="arr-grn" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#3a9e6e"/>
+            </marker>
+          </defs>
+
+          <!-- Three-link example: D7→Gm → G7→C → A7→Dm
+               Chord boxes at x=20, 140, 260, 380, 500, 620
+               Width=100, height=40, y=55 -->
+
+          <!-- Labels: diatonic vs secondary dominant -->
+          <text x="90"  y="18" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle" font-weight="700">SECONDARY DOM.</text>
+          <text x="310" y="18" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle" font-weight="700">SECONDARY DOM.</text>
+          <text x="570" y="18" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle" font-weight="700">PRIMARY DOM.</text>
+
+          <!-- D7 -->
+          <rect x="20"  y="55" width="100" height="42" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="70"  y="73"  font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#e04848" text-anchor="middle">D7</text>
+          <text x="70"  y="90"  font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">F# chromatic</text>
+
+          <!-- Arrow D7 → Gm -->
+          <line x1="122" y1="76" x2="138" y2="76" stroke="#e04848" stroke-width="1.5" marker-end="url(#arr-red)"/>
+          <text x="130"  y="70" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">V7</text>
+
+          <!-- Gm -->
+          <rect x="140" y="55" width="100" height="42" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="190" y="73"  font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#3d7ec7" text-anchor="middle">Gm</text>
+          <text x="190" y="90"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">arrival → iv</text>
+
+          <!-- Arrow Gm → G7 -->
+          <line x1="242" y1="76" x2="258" y2="76" stroke="#e04848" stroke-width="1.5" marker-end="url(#arr-red)"/>
+          <text x="250"  y="70" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">V7</text>
+
+          <!-- G7 -->
+          <rect x="260" y="55" width="100" height="42" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="310" y="73"  font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#e04848" text-anchor="middle">G7</text>
+          <text x="310" y="90"  font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">B chromatic</text>
+
+          <!-- Arrow G7 → C -->
+          <line x1="362" y1="76" x2="378" y2="76" stroke="#e04848" stroke-width="1.5" marker-end="url(#arr-red)"/>
+          <text x="370"  y="70" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">V7</text>
+
+          <!-- C -->
+          <rect x="380" y="55" width="100" height="42" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="430" y="73"  font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#3a9e6e" text-anchor="middle">C</text>
+          <text x="430" y="90"  font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">arrival → VII</text>
+
+          <!-- Arrow C → A7 -->
+          <line x1="482" y1="76" x2="498" y2="76" stroke="#e04848" stroke-width="1.5" marker-end="url(#arr-red)"/>
+          <text x="490"  y="70" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">V7</text>
+
+          <!-- A7 -->
+          <rect x="500" y="55" width="100" height="42" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="550" y="73"  font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#e04848" text-anchor="middle">A7</text>
+          <text x="550" y="90"  font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">C# chromatic</text>
+
+          <!-- Arrow A7 → Dm -->
+          <line x1="602" y1="76" x2="618" y2="76" stroke="#e04848" stroke-width="1.5" marker-end="url(#arr-red)"/>
+          <text x="610"  y="70" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">V7</text>
+
+          <!-- Dm final -->
+          <rect x="620" y="55" width="100" height="42" rx="3" fill="#ffd200" stroke="#1a1a1a" stroke-width="2"/>
+          <text x="670" y="73"  font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">Dm</text>
+          <text x="670" y="90"  font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">home — i</text>
+
+          <!-- Legend -->
+          <text x="20" y="148" font-family="Space Mono,monospace" font-size="8" fill="#e04848">Red = secondary dominant (chromatic)</text>
+          <text x="250" y="148" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7">Blue = minor chord arrival</text>
+          <text x="450" y="148" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e">Green = major chord arrival</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">The chromatic note in each secondary dominant</p>
+        <p>Each secondary dominant introduces one note outside D natural minor. D7 adds F# (the leading tone to G — D minor has F natural). G7 adds B natural (the leading tone to C — D minor has Bb). C7 adds no chromatic note at all: C–E–G–Bb are all diatonic to D natural minor, so C7 is fully diatonic. A7 adds C# (the leading tone to D — D minor has C natural). These chromatic upper neighbors are what give the ratchet its "winding up" quality: the melody gets pulled tighter before each release.</p>
+      </div>
+
+      <div class="principle-box">
+        The 5-1 ratchet transforms a smooth circle of fifths into a tightening coil. Each secondary dominant charges a capacitor; each diatonic arrival discharges it. Stack three or four in a row and the music feels pulled forward like a current.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 3: Descending Bass / Lament Bass -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number red-num">3</div>
+      <div class="card-title">Descending Bass / The Lament Bass</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">The most emotionally potent bass pattern in Western music</p>
+        <p>The <span class="key">lament bass</span> descends stepwise from the tonic to the dominant: in D minor, <strong>D–C–Bb–A</strong>, one note per bar. This four-note descent has been the foundation of grief, longing, and inexorable fate from Purcell's "Dido's Lament" through countless Baroque and contemporary pieces. The downward motion feels like a weight that cannot be stopped. The dominant arrival on A sets up the return to Dm — the bass sinks to its lowest point and turns around.</p>
+        <p>Over the lament bass, Bach typically alternates between <span class="key">root position</span> and <span class="key">first-inversion</span> chords to keep the upper voices smooth. The bass note doesn't have to be the root of the chord — it just needs to descend.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-dk" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#e04848"/>
+            </marker>
+          </defs>
+
+          <!-- 4 bars: x=20, 200, 380, 560 (bar=180px, quarter=45px) -->
+          <!-- Bar lines -->
+          <line x1="20"  y1="20" x2="20"  y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="20" x2="200" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="20" x2="380" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="20" x2="560" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="740" y1="20" x2="740" y2="195" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Chord labels (above bars) -->
+          <text x="110" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#3d7ec7" text-anchor="middle">Dm</text>
+          <text x="290" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#3a9e6e" text-anchor="middle">C (VII)</text>
+          <text x="470" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#3a9e6e" text-anchor="middle">Bb (VI)</text>
+          <text x="650" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#e04848" text-anchor="middle">A7 (V7)</text>
+
+          <!-- Horizontal pitch guide lines -->
+          <line class="grid-line" x1="20" y1="75"  x2="740" y2="75"/>
+          <line class="grid-line" x1="20" y1="100" x2="740" y2="100"/>
+          <line class="grid-line" x1="20" y1="125" x2="740" y2="125"/>
+          <line class="grid-line" x1="20" y1="150" x2="740" y2="150"/>
+
+          <!-- Pitch labels on left -->
+          <text x="14" y="79"  font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">D3</text>
+          <text x="14" y="104" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">C3</text>
+          <text x="14" y="129" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">Bb2</text>
+          <text x="14" y="154" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">A2</text>
+
+          <!-- Bass note blocks (half note = 90px wide) -->
+          <!-- Bar 1: D3 -->
+          <rect x="20"  y="71" width="90" height="8" rx="2" fill="#e04848"/>
+          <!-- Bar 2: C3 -->
+          <rect x="200" y="96" width="90" height="8" rx="2" fill="#e04848"/>
+          <!-- Bar 3: Bb2 -->
+          <rect x="380" y="121" width="90" height="8" rx="2" fill="#e04848"/>
+          <!-- Bar 4: A2 -->
+          <rect x="560" y="146" width="90" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Descent line connecting note centers -->
+          <polyline points="65,75 245,100 425,125 605,150" stroke="#e04848" stroke-width="2" fill="none" stroke-dasharray="5 3"/>
+
+          <!-- Descent arrow label -->
+          <text x="50"  y="90"  font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">D3</text>
+          <text x="230" y="115" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">C3</text>
+          <text x="410" y="140" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">Bb2</text>
+          <text x="595" y="165" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">A2 ★</text>
+
+          <!-- Footnote about first inversion -->
+          <text x="20"  y="183" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">Chord above: Dm (root) → C major (Gm/C or C) → Bb major → A major (dominant)</text>
+          <text x="20"  y="196" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">The bass descends by step regardless of whether it is the root of the chord above.</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Variants and extensions</p>
+        <p>The basic 4-bar lament can be extended: D–C–Bb–A–G–F#–G–A returns the bass back up, creating a pendulum. Or keep descending: D–C–Bb–A–G–F–E–Dm/F for an 8-bar ground bass. The first-inversion version — <span class="key">D/F–C/E–Bb/D–A/C#</span> — keeps each bass note as the third of the chord above, giving the descent a more mysterious, suspended quality because no single note announces itself as the root.</p>
+      </div>
+
+      <div class="principle-box">
+        The lament bass works because stepwise descent is the simplest possible bass motion — no leaps, no surprises — and yet it is inexorable. Every note confirms the fall. The dominant at the bottom is not an ending; it is a place of reckoning before the turn.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 4: Ascending Bass -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">4</div>
+      <div class="card-title">Ascending Bass Line</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">Against the natural harmonic grain</p>
+        <p>Harmonic weight naturally sinks — roots want to descend by fifths or steps, pulling toward the tonic. An ascending bass fights this tendency, which creates a sense of striving, building, or defying gravity. It is less common than descent in Bach, but when he uses it, it creates momentum of a different kind: not the fatalistic pull of the lament bass but an upward surge.</p>
+        <p>The standard ascending bass in D minor walks up the scale from D3 to A3: <strong>D–E–F–G–A</strong>. To keep the voice-leading smooth, Bach typically puts the upper voices in <span class="key">first-inversion chords</span> over the passing bass notes (E and G). This way the bass movement is independent of the harmonic root movement — the bass climbs while the harmony still progresses in sensible directions.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- 5 chords across ~720px: x=20, 162, 304, 446, 588
+               Width ~120px each (3 beats per chord), height=40 -->
+
+          <!-- Bar line at start -->
+          <line x1="20" y1="20" x2="20" y2="185" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Chord boxes -->
+          <!-- Dm -->
+          <rect x="20"  y="22" width="120" height="36" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="80"  y="38" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#3d7ec7" text-anchor="middle">Dm</text>
+          <text x="80"  y="52" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">i — root pos.</text>
+
+          <!-- Em7b5/E (first inversion passing) -->
+          <rect x="152" y="22" width="120" height="36" rx="3" fill="#e8e0f7" stroke="#7b61c7" stroke-width="2"/>
+          <text x="212" y="38" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#7b61c7" text-anchor="middle">Em7♭5/E</text>
+          <text x="212" y="52" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">ii° 1st inv.</text>
+
+          <!-- F major -->
+          <rect x="284" y="22" width="120" height="36" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="344" y="38" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#3a9e6e" text-anchor="middle">F</text>
+          <text x="344" y="52" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">III — root pos.</text>
+
+          <!-- Gm/G (first inversion) -->
+          <rect x="416" y="22" width="120" height="36" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="476" y="38" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#3d7ec7" text-anchor="middle">Gm/G</text>
+          <text x="476" y="52" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">iv 1st inv.</text>
+
+          <!-- Am/A or A7 -->
+          <rect x="548" y="22" width="120" height="36" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="608" y="38" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#e04848" text-anchor="middle">A7</text>
+          <text x="608" y="52" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">V7 — dominant</text>
+
+          <!-- Horizontal pitch guides -->
+          <line class="grid-line" x1="20" y1="90"  x2="740" y2="90"/>
+          <line class="grid-line" x1="20" y1="110" x2="740" y2="110"/>
+          <line class="grid-line" x1="20" y1="130" x2="740" y2="130"/>
+          <line class="grid-line" x1="20" y1="150" x2="740" y2="150"/>
+          <line class="grid-line" x1="20" y1="170" x2="740" y2="170"/>
+
+          <!-- Pitch labels -->
+          <text x="14" y="94"  font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="end">A3</text>
+          <text x="14" y="114" font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="end">G3</text>
+          <text x="14" y="134" font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="end">F3</text>
+          <text x="14" y="154" font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="end">E3</text>
+          <text x="14" y="174" font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="end">D3</text>
+
+          <!-- Bass note blocks (width ~110px per chord slot) -->
+          <!-- D3 -->
+          <rect x="20"  y="166" width="110" height="8" rx="2" fill="#3a9e6e"/>
+          <!-- E3 -->
+          <rect x="152" y="146" width="110" height="8" rx="2" fill="#3a9e6e"/>
+          <!-- F3 -->
+          <rect x="284" y="126" width="110" height="8" rx="2" fill="#3a9e6e"/>
+          <!-- G3 -->
+          <rect x="416" y="106" width="110" height="8" rx="2" fill="#3a9e6e"/>
+          <!-- A3 -->
+          <rect x="548" y="86"  width="110" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Ascending line -->
+          <polyline points="75,170 207,150 339,130 471,110 603,90" stroke="#3a9e6e" stroke-width="2" fill="none" stroke-dasharray="5 3"/>
+
+          <!-- Note labels -->
+          <text x="75"  y="184" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">D3</text>
+          <text x="207" y="164" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">E3</text>
+          <text x="339" y="144" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">F3</text>
+          <text x="471" y="124" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">G3</text>
+          <text x="603" y="104" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">A3 ★</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">In the DAW</p>
+        <p>In Ableton, an ascending bass line works especially well when your upper voice is <em>also</em> ascending — contrary motion is not required here. Two voices climbing together builds intensity over the phrase. The dominant arrival (A3/A7) at the top naturally calls for a strong downward response in the next bar, whether that is a return to D or a sudden drop into a new texture.</p>
+      </div>
+
+      <div class="principle-box">
+        The ascending bass is rare because it is hard — it works against harmonic gravity. But that resistance is the point. Used sparingly, it creates a sense of building pressure that a descending bass cannot match.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 5: Chromatic Bass Descent -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">5</div>
+      <div class="card-title">Chromatic Bass Descent</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">Every half step instead of diatonic steps</p>
+        <p>The diatonic lament bass skips some chromatic notes (D to C is a whole step; C to Bb is also a whole step). The <span class="key">chromatic bass descent</span> fills in every semitone: D–C#–C–B–Bb–A. Six notes, all half steps. This is darker, slower, and more chromatic than the diatonic version — each step feels reluctant, as if something is being pulled down against its will.</p>
+        <p>In D minor: D3 is the tonic, C# is chromatic (not in natural minor), C is diatonic (VII), B is chromatic (raised 6th — D minor has Bb, not B natural), Bb is the diatonic minor sixth, A is the dominant. The C# and the B each introduce a chromatic pull into the descent — the C# resolves downward to C, and the B gives the line a moment of unexpected brightness before sinking to Bb.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- Two comparison rows
+               Row A: Diatonic (top): y=30-100
+               Row B: Chromatic (bottom): y=140-215 -->
+
+          <!-- Row A label -->
+          <text x="20" y="28" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#3d7ec7">DIATONIC — D C Bb A</text>
+          <text x="600" y="28" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">4 notes (whole, whole, half)</text>
+
+          <!-- Row A bar lines (4 bars × 180px) -->
+          <line x1="20"  y1="35" x2="20"  y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="35" x2="200" y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="35" x2="380" y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="35" x2="560" y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="740" y1="35" x2="740" y2="115" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Pitch guides row A -->
+          <line class="grid-line" x1="20" y1="55"  x2="740" y2="55"/>
+          <line class="grid-line" x1="20" y1="70"  x2="740" y2="70"/>
+          <line class="grid-line" x1="20" y1="85"  x2="740" y2="85"/>
+          <line class="grid-line" x1="20" y1="100" x2="740" y2="100"/>
+
+          <text x="14" y="59"  font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="end">D3</text>
+          <text x="14" y="74"  font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="end">C3</text>
+          <text x="14" y="89"  font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="end">Bb2</text>
+          <text x="14" y="104" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="end">A2</text>
+
+          <!-- Row A diatonic bass notes (full bar = 180px wide) -->
+          <rect x="20"  y="51" width="90" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="200" y="66" width="90" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="380" y="81" width="90" height="8" rx="2" fill="#3d7ec7"/>
+          <rect x="560" y="96" width="90" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+
+          <text x="65"  y="48"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D3</text>
+          <text x="245" y="63"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">C3</text>
+          <text x="425" y="78"  font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">Bb2</text>
+          <text x="605" y="93"  font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">A2</text>
+
+          <!-- Row A dashed step indicators (whole steps) -->
+          <text x="110" y="60" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">whole</text>
+          <text x="290" y="75" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">whole</text>
+          <text x="470" y="90" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle">half</text>
+
+          <!-- Divider -->
+          <line x1="20" y1="128" x2="740" y2="128" stroke="#d9d4ca" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+          <!-- Row B label -->
+          <text x="20" y="143" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#7b61c7">CHROMATIC — D C# C B Bb A</text>
+          <text x="580" y="143" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a">6 steps (all half)</text>
+
+          <!-- Row B bar lines: 6 notes over 3 bars (2 per bar), bar=180px, each note=90px -->
+          <line x1="20"  y1="148" x2="20"  y2="230" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="148" x2="200" y2="230" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="148" x2="380" y2="230" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="148" x2="560" y2="230" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Pitch guides row B: 6 semitone steps from D3 to A2
+               D3=160, C#3=170, C3=180, B2=190, Bb2=200, A2=210 -->
+          <line class="grid-line" x1="20" y1="160" x2="740" y2="160"/>
+          <line class="grid-line" x1="20" y1="170" x2="740" y2="170"/>
+          <line class="grid-line" x1="20" y1="180" x2="740" y2="180"/>
+          <line class="grid-line" x1="20" y1="190" x2="740" y2="190"/>
+          <line class="grid-line" x1="20" y1="200" x2="740" y2="200"/>
+          <line class="grid-line" x1="20" y1="210" x2="740" y2="210"/>
+
+          <text x="14" y="164" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="end">D3</text>
+          <text x="14" y="174" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="end">C#3</text>
+          <text x="14" y="184" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="end">C3</text>
+          <text x="14" y="194" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="end">B2</text>
+          <text x="14" y="204" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="end">Bb2</text>
+          <text x="14" y="214" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="end">A2</text>
+
+          <!-- Row B chromatic bass notes (each = 90px wide)
+               D3: x=20, y=156
+               C#3: x=110, y=166
+               C3: x=200, y=176
+               B2: x=290, y=186
+               Bb2: x=380, y=196
+               A2: x=470, y=206 -->
+          <rect x="20"  y="156" width="88" height="8" rx="2" fill="#7b61c7"/>
+          <rect x="110" y="166" width="88" height="8" rx="2" fill="#e04848"/>
+          <rect x="200" y="176" width="88" height="8" rx="2" fill="#7b61c7"/>
+          <rect x="290" y="186" width="88" height="8" rx="2" fill="#e04848"/>
+          <rect x="380" y="196" width="88" height="8" rx="2" fill="#7b61c7"/>
+          <rect x="470" y="206" width="88" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Labels -->
+          <text x="64"  y="153" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">D3</text>
+          <text x="154" y="163" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">C#3 ★</text>
+          <text x="244" y="173" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">C3</text>
+          <text x="334" y="183" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">B2 ★</text>
+          <text x="424" y="193" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">Bb2</text>
+          <text x="514" y="203" font-family="Space Mono,monospace" font-size="7" fill="#1a1a1a" text-anchor="middle">A2</text>
+
+          <!-- Half-step labels -->
+          <text x="564" y="225" font-family="Space Mono,monospace" font-size="8" fill="#e04848">★ = chromatic note (outside D natural minor)</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Chords over the chromatic bass</p>
+        <p>The tricky notes are C# and B. Over C# bass: you can use <strong>Dm/C#</strong> (D minor chord with C# in the bass — a suspended leading tone beneath), or <strong>A/C#</strong> (A major in first inversion, which is the V chord with its third in the bass). Over B bass: <strong>G/B</strong> (G major first inversion) or <strong>Em7b5/B</strong> work. The goal is to keep the harmonic language coherent while the bass slides chromatically beneath it.</p>
+      </div>
+
+      <div class="principle-box">
+        The chromatic descent is the maximum version of harmonic inevitability — nothing is skipped, nothing escapes. Purcell used it as a ground bass looped throughout "Dido's Lament." In a sequencer, it loops hypnotically; try 6 bars of ground bass with a freely evolving melody above.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CARD 6: Tonicization vs Modulation -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">6</div>
+      <div class="card-title">Tonicization vs. Modulation</div>
+    </div>
+    <div class="card-body">
+
+      <div class="sub-section">
+        <p class="sub-title">A day trip vs. moving house</p>
+        <p><span class="key">Tonicization</span> is when you briefly treat a non-tonic chord as if it were home — one V-I gesture aimed at it, then you move on. The secondary dominant (Card 2 of this chapter) is the tool: play D7→Gm to tonicize Gm for one moment, then continue elsewhere. Your ear registers Gm as momentarily important, but D minor remains the overarching home. No new key has been established.</p>
+        <p><span class="key">Modulation</span> is when you actually leave your home key and set up shop in a new one. Not just one V-I gesture but multiple phrases, full cadences, and melodic content that treats the new key as the reference. The listener forgets D minor for a while. Returning to D minor later feels like a homecoming — because the new key was real enough to generate its own gravitational field.</p>
+      </div>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 185" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- TONICIZATION row y=15-75 -->
+          <text x="20" y="18" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#3d7ec7">TONICIZATION — brief visit</text>
+
+          <!-- D minor blocks (wide) + one small Am blip -->
+          <!-- D minor bar 1: x=20-170 -->
+          <rect x="20"  y="25" width="150" height="40" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="95"  y="42" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3d7ec7" text-anchor="middle">D minor</text>
+          <text x="95"  y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">established</text>
+
+          <!-- A7→Am blip: x=175-265 -->
+          <rect x="175" y="25" width="42" height="40" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="196" y="41" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#e04848" text-anchor="middle">E7</text>
+          <text x="196" y="55" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle">V of Am</text>
+
+          <rect x="219" y="25" width="50" height="40" rx="3" fill="#f7e8d0" stroke="#d4842a" stroke-width="2"/>
+          <text x="244" y="41" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#d4842a" text-anchor="middle">Am</text>
+          <text x="244" y="55" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">tonicized</text>
+
+          <!-- Back to D minor: x=273-580 -->
+          <rect x="273" y="25" width="300" height="40" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="423" y="42" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3d7ec7" text-anchor="middle">D minor</text>
+          <text x="423" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">never left home</text>
+
+          <!-- Brace/label -->
+          <line x1="175" y1="70" x2="269" y2="70" stroke="#d4842a" stroke-width="1.5"/>
+          <text x="222" y="82" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">1 bar max</text>
+
+          <!-- MODULATION row y=100-175 -->
+          <text x="20" y="100" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#3a9e6e">MODULATION — moving house</text>
+
+          <!-- D minor: x=20-140 -->
+          <rect x="20"  y="108" width="120" height="40" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="80"  y="125" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3d7ec7" text-anchor="middle">D minor</text>
+          <text x="80"  y="141" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">phrase 1-2</text>
+
+          <!-- Transition: x=143-165 -->
+          <rect x="143" y="108" width="22" height="40" rx="2" fill="#fde8e8" stroke="#e04848" stroke-width="1.5"/>
+          <text x="154" y="132" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle" transform="rotate(-90 154 132)">C7</text>
+
+          <!-- F major: x=168-460 -->
+          <rect x="168" y="108" width="292" height="40" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="314" y="125" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3a9e6e" text-anchor="middle">F major</text>
+          <text x="314" y="141" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">phrases 3–6 — new home key, own cadences</text>
+
+          <!-- Return: x=463-485 -->
+          <rect x="463" y="108" width="22" height="40" rx="2" fill="#fde8e8" stroke="#e04848" stroke-width="1.5"/>
+          <text x="474" y="132" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="middle" transform="rotate(-90 474 132)">A7</text>
+
+          <!-- Return to Dm: x=488-600 -->
+          <rect x="488" y="108" width="110" height="40" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="2"/>
+          <text x="543" y="125" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3d7ec7" text-anchor="middle">D minor</text>
+          <text x="543" y="141" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">homecoming</text>
+
+          <!-- Brace under F major -->
+          <line x1="168" y1="153" x2="460" y2="153" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="314" y="165" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">multiple phrases — new key is genuinely established</text>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Which relative keys to visit</p>
+        <p>From D minor, the most natural modulations are to the <span class="key">relative major</span> (F major — same key signature, feels like stepping into sunlight), the <span class="key">dominant minor</span> (A minor — shares six of seven pitches with D minor, differs only in B vs Bb, and feels brighter), and occasionally the <span class="key">subdominant minor</span> (G minor — darker, sinking further into shadow). Bach rarely modulates to distant keys in a short piece; he visits the nearest relatives and returns.</p>
+        <p>In ambient and electronic music, modulation works differently: you can spend minutes in a new key, and the return to D minor can hit like a structural event rather than a resolution. Think of Philip Glass moving between modal regions in <em>Glassworks</em> — the key changes are architectural, not cadential.</p>
+      </div>
+
+      <div class="principle-box">
+        Tonicization colors a single chord without changing your address. Modulation packs your bags. The difference is duration and commitment: one V-I is a glance; a full phrase with its own cadence is a conversation.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BUILD IT CARD -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It — Give the Piece a Harmonic Foundation</div>
+    </div>
+    <div class="card-body">
+
+      <p>Open your Ch 04 session — the two-voice piece with contrary motion in bar 1, a cross-relation in bar 2, a pedal freeze and suspension preparation in bar 3, and the 4-3 suspension resolving through a chromatic enclosure to D4 in bar 4. Those two voices now become the <strong>upper</strong> and <strong>middle</strong> voices. This session, you will add a third MIDI track for the bass — and you will try two different bass lines to hear how radically the harmonic context changes the piece's feel.</p>
+
+      <div class="sub-section">
+        <p class="sub-title">New bass track setup</p>
+        <p>Create a new MIDI track in Ableton. Use a bass-range instrument — a sine-wave sub on your Volca Bass, or a low-register pad. Tune it down an octave from your middle voice so the bass lives in octave 2. The upper voice is in octave 4–5, the middle in octave 3–4, the new bass in octave 2–3. All three voices now have their own register lane.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Option A — Circle of Fifths Bass</p>
+        <p>Give each bar its own chord root, moving down by fifths:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Bar 1:</strong> D2 — whole note (Dm, i)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--blue)">Bar 2:</strong> G2 — whole note (Gm, iv — a fifth below D)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--green)">Bar 3:</strong> C3 — whole note (C major, VII — a fifth below G)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Bar 4:</strong> A2 — whole note (A major / A7, V — sets up the Dm return)</li>
+        </ul>
+        <p>The piece now feels purposeful and harmonic — each bar arrives somewhere new. The cross-relation in bar 2 (F# vs F♮) sounds more intentional over Gm because the Gm context makes F natural the expected note, making F# sound like a Dorian shimmer.</p>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Option B — Lament Bass</p>
+        <p>Replace Option A with a stepwise descent:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Bar 1:</strong> D2 — whole note (Dm root)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Bar 2:</strong> C2 — whole note (C major / step down)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Bar 3:</strong> Bb1 — whole note (Bb major / step down)</li>
+          <li><strong style="font-family:'Space Mono',monospace; color:var(--red-accent)">Bar 4:</strong> A1 — whole note (A7 dominant)</li>
+        </ul>
+        <p>The lament bass transforms the piece. Bar 3's pedal freeze in the upper voices now sits over a descending bass — the "stillness" of the pedal is ironic because the ground is sinking beneath it. The suspension and enclosure in bar 4 resolve over the dominant A1, which makes the final D4 arrival feel earned in a way it wasn't before: the bass waited on the dominant while the upper voice resolved.</p>
+      </div>
+
+      <!-- Piano roll diagram: two bass options side by side -->
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg">
+
+          <!-- ── OPTION A (top row) ── -->
+          <text x="20" y="18" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#3d7ec7">OPTION A — CIRCLE OF FIFTHS BASS</text>
+
+          <!-- Bar lines -->
+          <line x1="20"  y1="24" x2="20"  y2="108" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="24" x2="200" y2="108" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="24" x2="380" y2="108" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="24" x2="560" y2="108" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="740" y1="24" x2="740" y2="108" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Chord labels -->
+          <text x="110" y="24" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">Dm — i</text>
+          <text x="290" y="24" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle">Gm — iv</text>
+          <text x="470" y="24" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">C — VII</text>
+          <text x="650" y="24" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">A7 — V7</text>
+
+          <!-- Pitch grid lines (A row) -->
+          <line class="grid-line" x1="20" y1="50"  x2="740" y2="50"/>
+          <line class="grid-line" x1="20" y1="65"  x2="740" y2="65"/>
+          <line class="grid-line" x1="20" y1="80"  x2="740" y2="80"/>
+          <line class="grid-line" x1="20" y1="95"  x2="740" y2="95"/>
+
+          <text x="14" y="54"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">D2</text>
+          <text x="14" y="69"  font-family="Space Mono,monospace" font-size="7" fill="#3d7ec7" text-anchor="end">C2</text>
+          <text x="14" y="84"  font-family="Space Mono,monospace" font-size="7" fill="#3a9e6e" text-anchor="end">G2</text>
+          <text x="14" y="99"  font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">A2</text>
+
+          <!-- Bass notes — circle pattern: D2, G2, C2, A2
+               Note: G2 is higher than D2 because it's only a 5th below in terms of the circle
+               but musically we'd put it below. Let me use: D2=50, G2=82 (↓5th = lower pitch),
+               C3 needs to be even lower. Actually let me show it more simply as pitch blocks:
+               Bar1 D2: y=46 (D2 row)
+               Bar2 G2: y=80 (G2 row — G is below D by a 5th going down)
+               Bar3 C3: y=66 (C is between G2 and D2 going back up via 5th...)
+
+               OK the circle of fifths goes D→G→C→F→... in terms of roots, all going DOWN a 5th each time.
+               D2 is already pretty low. Going DOWN a 5th from D2 gives G1, which is very low.
+               More realistically in a DAW you'd use: D2, G2 (an octave + 5th above D1), C3, A2
+               OR just: D3, G2, C3, A2 (with octave adjustments for playability)
+
+               Let me just show D2→G2 as D2 going lower to G2 (going down), then C3 coming back up a bit,
+               then A2 going down slightly.
+
+               Pitch y positions for Option A (4 notes):
+               D2: y=48 (topmost in bass range)
+               G2: y=80 (lower — going down a 5th)
+               C3: y=65 (between G2 and D2 — up a 4th from G2 back into the range)
+               A2: y=92 (lower)
+          -->
+          <!-- D2 bar 1 -->
+          <rect x="20"  y="44" width="178" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="109" y="41" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D2</text>
+          <!-- G2 bar 2 -->
+          <rect x="200" y="77" width="178" height="8" rx="2" fill="#3d7ec7"/>
+          <text x="289" y="74" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">G2</text>
+          <!-- C3 bar 3 -->
+          <rect x="380" y="61" width="178" height="8" rx="2" fill="#3a9e6e"/>
+          <text x="469" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">C3</text>
+          <!-- A2 bar 4 -->
+          <rect x="560" y="91" width="178" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="649" y="88" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">A2 →V</text>
+
+          <!-- Divider -->
+          <line x1="20" y1="118" x2="740" y2="118" stroke="#d9d4ca" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+          <!-- ── OPTION B (bottom row) ── -->
+          <text x="20" y="133" font-family="Space Mono,monospace" font-size="9" font-weight="700" fill="#e04848">OPTION B — LAMENT BASS</text>
+
+          <!-- Bar lines -->
+          <line x1="20"  y1="138" x2="20"  y2="228" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="200" y1="138" x2="200" y2="228" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="380" y1="138" x2="380" y2="228" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="560" y1="138" x2="560" y2="228" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="740" y1="138" x2="740" y2="228" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Pitch grid lines (B row): D2=158, C2=173, Bb1=188, A1=198 -->
+          <line class="grid-line" x1="20" y1="158" x2="740" y2="158"/>
+          <line class="grid-line" x1="20" y1="173" x2="740" y2="173"/>
+          <line class="grid-line" x1="20" y1="188" x2="740" y2="188"/>
+          <line class="grid-line" x1="20" y1="203" x2="740" y2="203"/>
+
+          <text x="14" y="162" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">D2</text>
+          <text x="14" y="177" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">C2</text>
+          <text x="14" y="192" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">Bb1</text>
+          <text x="14" y="207" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">A1</text>
+
+          <!-- Chord labels -->
+          <text x="110" y="138" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">Dm</text>
+          <text x="290" y="138" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">C major</text>
+          <text x="470" y="138" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">Bb major</text>
+          <text x="650" y="138" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">A7 — V7</text>
+
+          <!-- Lament bass notes: D2, C2, Bb1, A1 — all descending -->
+          <!-- D2 bar 1 -->
+          <rect x="20"  y="154" width="178" height="8" rx="2" fill="#e04848"/>
+          <text x="109" y="151" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">D2</text>
+          <!-- C2 bar 2 -->
+          <rect x="200" y="169" width="178" height="8" rx="2" fill="#e04848"/>
+          <text x="289" y="166" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">C2</text>
+          <!-- Bb1 bar 3 -->
+          <rect x="380" y="184" width="178" height="8" rx="2" fill="#e04848"/>
+          <text x="469" y="181" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">Bb1</text>
+          <!-- A1 bar 4 -->
+          <rect x="560" y="199" width="178" height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="649" y="196" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">A1 →V</text>
+
+          <!-- Descent arrow -->
+          <polyline points="109,158 289,173 469,188 649,203" stroke="#e04848" stroke-width="2" fill="none" stroke-dasharray="5 3"/>
+        </svg>
+      </div>
+
+      <div class="sub-section">
+        <p class="sub-title">Compare and listen</p>
+        <p>Play both versions back-to-back without changing anything else. The upper voices are identical — same notes, same timing, same cross-relation, same suspension. Only the bass changes. Notice:</p>
+        <ul style="margin: 10px 0 10px 20px; color: var(--ink-soft); font-size: 16px; line-height: 2;">
+          <li><strong>Option A (Circle)</strong> feels more harmonically mobile — each bar has a distinct chord identity. The piece travels.</li>
+          <li><strong>Option B (Lament)</strong> feels more inevitable and emotionally weighty. The bass defines the mood; the upper voices become a countermelody to the sinking ground.</li>
+        </ul>
+        <p>Keep whichever resonates, or try a hybrid: use the lament bass for the first loop and the circle bass for a variation, revealing that the same melody can carry different harmonic worlds.</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="banner">
+  <span class="banner-text">CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
+</div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="ch04-tension-release.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">Ch 04 — Tension and Release Between Voices</span>
+  </a>
+</div>
+
+<div class="footer">
+  <p>AMBIENT COUNTERPOINT — CH 05: HARMONIC FOUNDATIONS — D MINOR</p>
+</div>
+
+</body>
+</html>

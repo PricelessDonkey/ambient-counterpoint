@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bach Phrase Shapes — Visual Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ── Visual diagrams ── */
+  .diagram-wrap {
+    margin: 20px 0 8px;
+    background: var(--cream);
+    border: 2px solid var(--ink);
+    padding: 20px 20px 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .diagram-wrap svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* ── Note labels below diagrams ── */
+  .note-sequence {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .note-sequence .step {
+    color: var(--blue);
+  }
+  .note-sequence .leap {
+    color: var(--red-accent);
+    font-weight: 700;
+  }
+
+  /* ── Grid lines inside SVG ── */
+  .grid-line {
+    stroke: #d9d4ca;
+    stroke-width: 0.5;
+  }
+
+  .note-dot {
+    fill: var(--ink);
+    transition: fill 0.2s;
+  }
+  .note-line {
+    stroke: var(--ink);
+    stroke-width: 2;
+    fill: none;
+  }
+  .note-line-leap {
+    stroke: var(--red-accent);
+    stroke-width: 2;
+    stroke-dasharray: 6 3;
+    fill: none;
+  }
+  .note-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    fill: var(--ink-soft);
+  }
+  .voice-upper { fill: var(--blue); }
+  .voice-lower { fill: var(--red-accent); }
+  .line-upper { stroke: var(--blue); stroke-width: 2; fill: none; }
+  .line-lower { stroke: var(--red-accent); stroke-width: 2; fill: none; }
+  .ghost-line { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 3; fill: none; opacity: 0.35; }
+
+  .legend {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+  }
+  .legend span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legend .swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .principle-box {
+    background: var(--cream);
+    border: 2px solid var(--ink);
+    padding: 24px 28px;
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--ink-soft);
+    position: relative;
+    font-size: 16px;
+  }
+  .principle-box::before {
+    content: '✦';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: var(--yellow);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-style: normal;
+    color: var(--ink);
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 40px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .footer p {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 50px 20px 20px; }
+    .hero h1 { font-size: 30px; }
+    .content { padding: 20px 20px 60px; }
+    .card-number { min-width: 56px; font-size: 24px; }
+    .card-title { font-size: 13px; padding: 16px; }
+    .intro-box { padding: 0 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-back"><a href="ch01-single-line.html">A Single Line</a></div>
+
+<div class="banner">
+  <span class="banner-text">
+    PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="hero">
+  <h1><span>Bach Phrase Shapes</span><br>Visual Reference</h1>
+  <p class="subtitle">Seven melodic contour patterns rooted in Bach's voice-leading logic. Each one is a reusable building block for composing melodies that sound inevitable.</p>
+</div>
+
+<div class="intro-box">
+  <div class="inner">
+    <strong>The core pattern:</strong> stepwise ascent then drop — earn the leap by stepping into it. All seven shapes below are variations and extensions of this fundamental principle. <strong>Steps</strong> build connection; <strong>leaps</strong> create drama. The ratio between them is what gives a melody its character.
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- 1. STEP UP, LEAP DOWN (original) -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">01</div>
+      <div class="card-title">Step Up, Leap Down</div>
+    </div>
+    <div class="card-body">
+      <p>The seed motif. Walk up by <span class="key">stepwise motion</span> (seconds), then leap down a fourth or fifth. The steps build expectation, the leap releases it. Three steps earns one leap.</p>
+
+      <div class="diagram-wrap">
+        <!-- D5=high, E5=higher, F5=highest, A4=low -->
+        <svg viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+          <!-- grid -->
+          <line class="grid-line" x1="0" y1="40" x2="600" y2="40"/>
+          <line class="grid-line" x1="0" y1="65" x2="600" y2="65"/>
+          <line class="grid-line" x1="0" y1="90" x2="600" y2="90"/>
+          <line class="grid-line" x1="0" y1="115" x2="600" y2="115"/>
+          <line class="grid-line" x1="0" y1="140" x2="600" y2="140"/>
+
+          <!-- stepwise lines -->
+          <line class="note-line" x1="100" y1="90" x2="230" y2="65"/>
+          <line class="note-line" x1="230" y1="65" x2="360" y2="40"/>
+          <!-- leap line -->
+          <line class="note-line-leap" x1="360" y1="40" x2="490" y2="130"/>
+
+          <!-- dots -->
+          <circle class="note-dot" cx="100" cy="90" r="8"/>
+          <circle class="note-dot" cx="230" cy="65" r="8"/>
+          <circle class="note-dot" cx="360" cy="40" r="8"/>
+          <circle class="note-dot" cx="490" cy="130" r="8"/>
+
+          <!-- labels -->
+          <text class="note-label" x="100" y="115" text-anchor="middle">D5</text>
+          <text class="note-label" x="230" y="88" text-anchor="middle">E5</text>
+          <text class="note-label" x="360" y="30" text-anchor="middle">F5</text>
+          <text class="note-label" x="490" y="152" text-anchor="middle">A4</text>
+
+          <!-- annotations -->
+          <text font-family="Space Mono, monospace" font-size="9" fill="#3d7ec7" x="160" y="70" transform="rotate(-11 160 70)">step</text>
+          <text font-family="Space Mono, monospace" font-size="9" fill="#3d7ec7" x="290" y="44" transform="rotate(-11 290 44)">step</text>
+          <text font-family="Space Mono, monospace" font-size="9" fill="#e04848" x="440" y="72" transform="rotate(35 440 72)">leap ↓</text>
+        </svg>
+      </div>
+      <div class="note-sequence">
+        <span class="step">D → E → F</span> &nbsp;then&nbsp; <span class="leap">↓ A</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. LEAP UP, STEP DOWN -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">02</div>
+      <div class="card-title">Leap Up, Step Down</div>
+    </div>
+    <div class="card-body">
+      <p>The reverse. <span class="key">Jump up</span> a fifth or sixth to grab attention, then <span class="key">walk back down</span> by steps to resolve the tension. The leap creates drama, the descent restores smoothness. Bach uses this to cover wide range without losing lyrical quality.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg">
+          <line class="grid-line" x1="0" y1="40" x2="700" y2="40"/>
+          <line class="grid-line" x1="0" y1="65" x2="700" y2="65"/>
+          <line class="grid-line" x1="0" y1="90" x2="700" y2="90"/>
+          <line class="grid-line" x1="0" y1="115" x2="700" y2="115"/>
+          <line class="grid-line" x1="0" y1="140" x2="700" y2="140"/>
+
+          <!-- leap up -->
+          <line class="note-line-leap" x1="90" y1="130" x2="220" y2="35"/>
+          <!-- steps down -->
+          <line class="note-line" x1="220" y1="35" x2="350" y2="60"/>
+          <line class="note-line" x1="350" y1="60" x2="480" y2="85"/>
+          <line class="note-line" x1="480" y1="85" x2="610" y2="110"/>
+
+          <circle class="note-dot" cx="90" cy="130" r="8"/>
+          <circle class="note-dot" cx="220" cy="35" r="8"/>
+          <circle class="note-dot" cx="350" cy="60" r="8"/>
+          <circle class="note-dot" cx="480" cy="85" r="8"/>
+          <circle class="note-dot" cx="610" cy="110" r="8"/>
+
+          <text class="note-label" x="90" y="152" text-anchor="middle">A4</text>
+          <text class="note-label" x="220" y="27" text-anchor="middle">F5</text>
+          <text class="note-label" x="350" y="52" text-anchor="middle">E5</text>
+          <text class="note-label" x="480" y="77" text-anchor="middle">D5</text>
+          <text class="note-label" x="610" y="132" text-anchor="middle">C5</text>
+
+          <text font-family="Space Mono, monospace" font-size="9" fill="#e04848" x="140" y="70" transform="rotate(-36 140 70)">leap ↑</text>
+          <text font-family="Space Mono, monospace" font-size="9" fill="#3d7ec7" x="280" y="42" transform="rotate(11 280 42)">step</text>
+          <text font-family="Space Mono, monospace" font-size="9" fill="#3d7ec7" x="410" y="67" transform="rotate(11 410 67)">step</text>
+          <text font-family="Space Mono, monospace" font-size="9" fill="#3d7ec7" x="540" y="92" transform="rotate(11 540 92)">step</text>
+        </svg>
+      </div>
+      <div class="note-sequence">
+        <span class="leap">A4 → F5 ↑</span> &nbsp;then&nbsp; <span class="step">E5 → D5 → C5</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. THE ARCH -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">03</div>
+      <div class="card-title">The Arch</div>
+    </div>
+    <div class="card-body">
+      <p>Step up to a peak, then step back down <span class="key">past where you started</span>. The symmetry gives it completeness, and dropping below the origin creates forward momentum into the next phrase. The peak is the emotional center — everything builds toward it and falls away.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+          <line class="grid-line" x1="0" y1="35" x2="800" y2="35"/>
+          <line class="grid-line" x1="0" y1="60" x2="800" y2="60"/>
+          <line class="grid-line" x1="0" y1="85" x2="800" y2="85"/>
+          <line class="grid-line" x1="0" y1="110" x2="800" y2="110"/>
+          <line class="grid-line" x1="0" y1="135" x2="800" y2="135"/>
+
+          <!-- up -->
+          <line class="note-line" x1="80" y1="100" x2="200" y2="72"/>
+          <line class="note-line" x1="200" y1="72" x2="320" y2="42"/>
+          <!-- peak down -->
+          <line class="note-line" x1="320" y1="42" x2="440" y2="72"/>
+          <line class="note-line" x1="440" y1="72" x2="560" y2="100"/>
+          <!-- past origin -->
+          <line class="note-line" x1="560" y1="100" x2="680" y2="128"/>
+
+          <!-- origin reference line -->
+          <line class="ghost-line" x1="60" y1="100" x2="700" y2="100"/>
+
+          <circle class="note-dot" cx="80" cy="100" r="8"/>
+          <circle class="note-dot" cx="200" cy="72" r="8"/>
+          <circle cx="320" cy="42" r="10" fill="none" stroke="#ffd200" stroke-width="3"/>
+          <circle class="note-dot" cx="320" cy="42" r="8"/>
+          <circle class="note-dot" cx="440" cy="72" r="8"/>
+          <circle class="note-dot" cx="560" cy="100" r="8"/>
+          <circle class="note-dot" cx="680" cy="128" r="8"/>
+
+          <text class="note-label" x="80" y="122" text-anchor="middle">D</text>
+          <text class="note-label" x="200" y="65" text-anchor="middle">E</text>
+          <text class="note-label" x="320" y="32" text-anchor="middle">F ★</text>
+          <text class="note-label" x="440" y="65" text-anchor="middle">E</text>
+          <text class="note-label" x="560" y="122" text-anchor="middle">D</text>
+          <text class="note-label" x="680" y="150" text-anchor="middle">C</text>
+
+          <text font-family="Space Mono, monospace" font-size="9" fill="#4a4a4a" x="720" y="103" text-anchor="start" opacity="0.5">origin</text>
+        </svg>
+      </div>
+      <div class="note-sequence">
+        <span class="step">D → E → F</span> <span style="color:#ffd200;font-weight:700;">★ peak</span> <span class="step">→ E → D → C</span> <span style="color:var(--ink-soft);font-size:11px;">(below origin)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. IMPLIED POLYPHONY ZIGZAG -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">04</div>
+      <div class="card-title">Implied Polyphony</div>
+    </div>
+    <div class="card-body">
+      <p>Alternate between high and low registers. Your ear separates the stream into <span class="key">two independent lines</span> — a rising upper voice and a falling lower voice. One melody becomes two. This is the core of Bach's cello suite writing.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+          <line class="grid-line" x1="0" y1="30" x2="800" y2="30"/>
+          <line class="grid-line" x1="0" y1="60" x2="800" y2="60"/>
+          <line class="grid-line" x1="0" y1="90" x2="800" y2="90"/>
+          <line class="grid-line" x1="0" y1="120" x2="800" y2="120"/>
+          <line class="grid-line" x1="0" y1="150" x2="800" y2="150"/>
+
+          <!-- zigzag connecting line (faint) -->
+          <polyline points="80,55 200,120 320,38 440,105 560,22 680,88" fill="none" stroke="#d9d4ca" stroke-width="1.5"/>
+
+          <!-- upper voice connection -->
+          <line class="line-upper" x1="80" y1="55" x2="320" y2="38"/>
+          <line class="line-upper" x1="320" y1="38" x2="560" y2="22"/>
+
+          <!-- lower voice connection -->
+          <line class="line-lower" x1="200" y1="120" x2="440" y2="105"/>
+          <line class="line-lower" x1="440" y1="105" x2="680" y2="88"/>
+
+          <!-- dots -->
+          <circle class="voice-upper" cx="80" cy="55" r="8"/>
+          <circle class="voice-lower" cx="200" cy="120" r="8"/>
+          <circle class="voice-upper" cx="320" cy="38" r="8"/>
+          <circle class="voice-lower" cx="440" cy="105" r="8"/>
+          <circle class="voice-upper" cx="560" cy="22" r="8"/>
+          <circle class="voice-lower" cx="680" cy="88" r="8"/>
+
+          <text class="note-label" x="80" y="48" text-anchor="middle" fill="#3d7ec7">D5</text>
+          <text class="note-label" x="200" y="142" text-anchor="middle" fill="#e04848">A3</text>
+          <text class="note-label" x="320" y="30" text-anchor="middle" fill="#3d7ec7">E5</text>
+          <text class="note-label" x="440" y="128" text-anchor="middle" fill="#e04848">G3</text>
+          <text class="note-label" x="560" y="15" text-anchor="middle" fill="#3d7ec7">F5</text>
+          <text class="note-label" x="680" y="112" text-anchor="middle" fill="#e04848">F3</text>
+        </svg>
+      </div>
+      <div class="legend">
+        <span><span class="swatch" style="background:var(--blue);"></span> upper voice (rising)</span>
+        <span><span class="swatch" style="background:var(--red-accent);"></span> lower voice (falling)</span>
+      </div>
+      <div class="note-sequence" style="margin-top:6px;">
+        D5 → A3 → E5 → G3 → F5 → F3
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. THE CIRCLE -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">05</div>
+      <div class="card-title">The Circle</div>
+    </div>
+    <div class="card-body">
+      <p>Arpeggiate up through one chord, then <span class="key">step down</span> to the root of the next chord and arpeggiate up again. Each arpeggio "bloom" connects to the next by a smooth stepwise link. This is how Bach makes single lines <span class="key">imply full chord progressions</span>.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+          <line class="grid-line" x1="0" y1="30" x2="800" y2="30"/>
+          <line class="grid-line" x1="0" y1="60" x2="800" y2="60"/>
+          <line class="grid-line" x1="0" y1="90" x2="800" y2="90"/>
+          <line class="grid-line" x1="0" y1="120" x2="800" y2="120"/>
+          <line class="grid-line" x1="0" y1="150" x2="800" y2="150"/>
+
+          <!-- Dm arpeggio up -->
+          <line class="note-line" x1="60" y1="130" x2="170" y2="80"/>
+          <line class="note-line" x1="170" y1="80" x2="280" y2="35"/>
+          <!-- step down link -->
+          <line class="note-line-leap" x1="280" y1="35" x2="390" y2="95"/>
+          <!-- G arpeggio up -->
+          <line class="note-line" x1="390" y1="95" x2="500" y2="55"/>
+          <line class="note-line" x1="500" y1="55" x2="610" y2="25"/>
+
+          <!-- chord brackets -->
+          <rect x="35" y="155" width="270" height="18" rx="2" fill="var(--blue-light)" stroke="var(--blue)" stroke-width="1"/>
+          <text font-family="Space Mono, monospace" font-size="10" fill="var(--blue)" x="170" y="168" text-anchor="middle">D MINOR</text>
+
+          <rect x="365" y="155" width="270" height="18" rx="2" fill="#fce8e8" stroke="var(--red-accent)" stroke-width="1"/>
+          <text font-family="Space Mono, monospace" font-size="10" fill="var(--red-accent)" x="500" y="168" text-anchor="middle">G MINOR</text>
+
+          <circle class="note-dot" cx="60" cy="130" r="7"/>
+          <circle class="note-dot" cx="170" cy="80" r="7"/>
+          <circle class="note-dot" cx="280" cy="35" r="7"/>
+          <circle cx="390" cy="95" r="7" fill="var(--yellow)" stroke="var(--ink)" stroke-width="2"/>
+          <circle class="note-dot" cx="500" cy="55" r="7"/>
+          <circle class="note-dot" cx="610" cy="25" r="7"/>
+
+          <text class="note-label" x="60" y="148" text-anchor="middle">D</text>
+          <text class="note-label" x="170" y="75" text-anchor="middle">F</text>
+          <text class="note-label" x="280" y="28" text-anchor="middle">A</text>
+          <text class="note-label" x="390" y="113" text-anchor="middle">G ←</text>
+          <text class="note-label" x="500" y="48" text-anchor="middle">B♭</text>
+          <text class="note-label" x="610" y="18" text-anchor="middle">D</text>
+
+          <text font-family="Space Mono, monospace" font-size="9" fill="#e04848" x="335" y="58" text-anchor="middle" transform="rotate(28 335 58)">step ↓</text>
+        </svg>
+      </div>
+      <div class="note-sequence">
+        <span class="step">D → F → A</span> &nbsp;<span class="leap">↓ G</span>&nbsp; <span class="step">→ B♭ → D</span> &nbsp; <span style="color:var(--ink-soft);font-size:11px;">(repeat for each chord)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. THE SIGH (Suspension) -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">06</div>
+      <div class="card-title">The Sigh</div>
+    </div>
+    <div class="card-body">
+      <p>Hold a note from one beat into the next where it becomes <span class="key">dissonant</span>, then drop by step to resolve. String several together descending and you get that weeping, inevitable Bach character. Each resolution becomes the next suspension.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+          <line class="grid-line" x1="0" y1="35" x2="800" y2="35"/>
+          <line class="grid-line" x1="0" y1="60" x2="800" y2="60"/>
+          <line class="grid-line" x1="0" y1="85" x2="800" y2="85"/>
+          <line class="grid-line" x1="0" y1="110" x2="800" y2="110"/>
+          <line class="grid-line" x1="0" y1="135" x2="800" y2="135"/>
+
+          <!-- beat markers -->
+          <line x1="200" y1="10" x2="200" y2="150" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="400" y1="10" x2="400" y2="150" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 4"/>
+          <line x1="600" y1="10" x2="600" y2="150" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 4"/>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#aaa" x="200" y="10" text-anchor="middle">chord change</text>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#aaa" x="400" y="10" text-anchor="middle">chord change</text>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#aaa" x="600" y="10" text-anchor="middle">chord change</text>
+
+          <!-- hold E5 -->
+          <line x1="80" y1="45" x2="280" y2="45" stroke="var(--ink)" stroke-width="3"/>
+          <!-- tension zone -->
+          <rect x="200" y="37" width="80" height="16" rx="3" fill="#e04848" opacity="0.15"/>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#e04848" x="240" y="34">clash</text>
+          <!-- resolve down -->
+          <line class="note-line" x1="280" y1="45" x2="320" y2="68"/>
+
+          <!-- hold D5 -->
+          <line x1="320" y1="68" x2="480" y2="68" stroke="var(--ink)" stroke-width="3"/>
+          <rect x="400" y="60" width="80" height="16" rx="3" fill="#e04848" opacity="0.15"/>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#e04848" x="440" y="57">clash</text>
+          <!-- resolve down -->
+          <line class="note-line" x1="480" y1="68" x2="520" y2="92"/>
+
+          <!-- hold C5 -->
+          <line x1="520" y1="92" x2="680" y2="92" stroke="var(--ink)" stroke-width="3"/>
+          <rect x="600" y="84" width="80" height="16" rx="3" fill="#e04848" opacity="0.15"/>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#e04848" x="640" y="81">clash</text>
+          <!-- resolve -->
+          <line class="note-line" x1="680" y1="92" x2="720" y2="115"/>
+
+          <!-- dots at key points -->
+          <circle class="note-dot" cx="80" cy="45" r="6"/>
+          <circle class="note-dot" cx="320" cy="68" r="6"/>
+          <circle class="note-dot" cx="520" cy="92" r="6"/>
+          <circle class="note-dot" cx="720" cy="115" r="6"/>
+
+          <text class="note-label" x="80" y="38" text-anchor="middle">E5</text>
+          <text class="note-label" x="320" y="62" text-anchor="middle">D5</text>
+          <text class="note-label" x="520" y="86" text-anchor="middle">C5</text>
+          <text class="note-label" x="720" y="136" text-anchor="middle">B4</text>
+        </svg>
+      </div>
+      <div class="note-sequence">
+        hold → <span style="color:var(--red-accent);">clash</span> → <span class="step">resolve ↓</span> → hold → <span style="color:var(--red-accent);">clash</span> → <span class="step">resolve ↓</span> → …
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. FORTSPINNUNG CHAIN -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">07</div>
+      <div class="card-title">Fortspinnung Chain</div>
+    </div>
+    <div class="card-body">
+      <p>Take the step-step-step-drop shape and use the <span class="key">landing note as the start</span> of the next iteration. Each phrase hands off to the next — nothing repeats exactly, but the shape recurs and the whole thing spirals forward. The tail becomes the head.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 800 190" xmlns="http://www.w3.org/2000/svg">
+          <line class="grid-line" x1="0" y1="20" x2="800" y2="20"/>
+          <line class="grid-line" x1="0" y1="45" x2="800" y2="45"/>
+          <line class="grid-line" x1="0" y1="70" x2="800" y2="70"/>
+          <line class="grid-line" x1="0" y1="95" x2="800" y2="95"/>
+          <line class="grid-line" x1="0" y1="120" x2="800" y2="120"/>
+          <line class="grid-line" x1="0" y1="145" x2="800" y2="145"/>
+          <line class="grid-line" x1="0" y1="170" x2="800" y2="170"/>
+
+          <!-- Phrase 1: D→E→F→(drop)A -->
+          <line class="note-line" x1="50" y1="75" x2="140" y2="55"/>
+          <line class="note-line" x1="140" y1="55" x2="230" y2="35"/>
+          <line class="note-line-leap" x1="230" y1="35" x2="320" y2="95"/>
+
+          <!-- handoff highlight -->
+          <circle cx="320" cy="95" r="14" fill="var(--yellow)" opacity="0.4"/>
+
+          <!-- Phrase 2: A→B→C→(drop)E -->
+          <line class="note-line" x1="320" y1="95" x2="410" y2="75"/>
+          <line class="note-line" x1="410" y1="75" x2="500" y2="55"/>
+          <line class="note-line-leap" x1="500" y1="55" x2="590" y2="115"/>
+
+          <!-- handoff highlight -->
+          <circle cx="590" cy="115" r="14" fill="var(--yellow)" opacity="0.4"/>
+
+          <!-- Phrase 3 start: E→F→G... -->
+          <line class="note-line" x1="590" y1="115" x2="680" y2="95"/>
+          <line class="note-line" x1="680" y1="95" x2="770" y2="75"/>
+
+          <!-- dots -->
+          <circle class="note-dot" cx="50" cy="75" r="7"/>
+          <circle class="note-dot" cx="140" cy="55" r="7"/>
+          <circle class="note-dot" cx="230" cy="35" r="7"/>
+          <circle class="note-dot" cx="320" cy="95" r="7"/>
+          <circle class="note-dot" cx="410" cy="75" r="7"/>
+          <circle class="note-dot" cx="500" cy="55" r="7"/>
+          <circle class="note-dot" cx="590" cy="115" r="7"/>
+          <circle class="note-dot" cx="680" cy="95" r="7"/>
+          <circle class="note-dot" cx="770" cy="75" r="7"/>
+
+          <text class="note-label" x="50" y="94" text-anchor="middle">D</text>
+          <text class="note-label" x="140" y="48" text-anchor="middle">E</text>
+          <text class="note-label" x="230" y="28" text-anchor="middle">F</text>
+          <text class="note-label" x="320" y="114" text-anchor="middle">A</text>
+          <text class="note-label" x="410" y="68" text-anchor="middle">B</text>
+          <text class="note-label" x="500" y="48" text-anchor="middle">C</text>
+          <text class="note-label" x="590" y="135" text-anchor="middle">E</text>
+          <text class="note-label" x="680" y="88" text-anchor="middle">F</text>
+          <text class="note-label" x="770" y="68" text-anchor="middle">G</text>
+
+          <!-- phrase brackets -->
+          <line x1="50" y1="175" x2="320" y2="175" stroke="var(--blue)" stroke-width="2"/>
+          <text font-family="Space Mono, monospace" font-size="9" fill="var(--blue)" x="185" y="188" text-anchor="middle">phrase 1</text>
+
+          <line x1="320" y1="175" x2="590" y2="175" stroke="var(--red-accent)" stroke-width="2"/>
+          <text font-family="Space Mono, monospace" font-size="9" fill="var(--red-accent)" x="455" y="188" text-anchor="middle">phrase 2</text>
+
+          <line x1="590" y1="175" x2="770" y2="175" stroke="var(--ink-soft)" stroke-width="2"/>
+          <text font-family="Space Mono, monospace" font-size="9" fill="var(--ink-soft)" x="680" y="188" text-anchor="middle">phrase 3…</text>
+
+          <!-- handoff arrows -->
+          <text font-family="Space Mono, monospace" font-size="8" fill="#e6bd00" x="320" y="125" text-anchor="middle">handoff</text>
+          <text font-family="Space Mono, monospace" font-size="8" fill="#e6bd00" x="590" y="148" text-anchor="middle">handoff</text>
+        </svg>
+      </div>
+      <div class="note-sequence">
+        D→E→F→<span class="leap">↓A</span> → A→B→C→<span class="leap">↓E</span> → E→F→G→<span class="leap">↓ …</span>
+      </div>
+
+      <div class="principle-box">
+        The landing note of each phrase becomes the launching note of the next. Nothing repeats exactly, but the contour recurs — the whole melody spirals forward with a sense of inevitability. This is the most directly useful extension of the step-step-step-drop shape.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner">
+  <span class="banner-text">
+    EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
+  </span>
+</div>
+
+<div class="footer">
+  <p>VISUAL REFERENCE — BACH PHRASE SHAPES — D MINOR</p>
+</div>
+
+</body>
+</html>
