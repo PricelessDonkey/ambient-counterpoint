@@ -3,5 +3,7 @@
 - applications to ambient/minimal music. How to take lessons learned from Bach and apply them to other musical styles.
 - compositional techniques used by Philip glass and Steve Reich
 - jazz improv tricks (base it on udemy course)
+- view transitions to minimize 'flash' when navigating. 
+- static menu bar on top of page in mobile view
+- reusable components?
 
-Maybe split minimalism/jazz into new main sections

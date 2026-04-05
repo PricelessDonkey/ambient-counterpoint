@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M04 — The Pulse as Foundation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav"><a href="minimalist.html">Ambient Counterpoint</a></nav>
+
+<div class="banner"><span class="banner-text">M04 — THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ M04 — THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ M04 — THE PULSE</span></div>
+
+<div class="hero">
+  <h1><span>The Pulse as Foundation</span></h1>
+  <p class="subtitle">The motor that makes the loop feel inevitable.</p>
+</div>
+
+<div class="intro-box"><div class="inner">Most minimalist music runs over an unbroken subdivision — a mechanical 8th- or 16th-note pulse that everything else floats above. This chapter covers how to build one that feels human without being sloppy: velocity shaping, ghost notes, swing, and the deeper skill of implying a pulse through melody alone, without any percussion at all.</div></div>
+
+<div class="content">
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">01</div>
+      <div class="card-title">The Pulse Grid</div>
+    </div>
+    <div class="card-body">
+      <p>Most minimalist work — Glass, Reich, Riley — runs over a <span class="key">continuous subdivision</span>: an unbroken sequence of 8th or 16th notes at the bottom of the texture. Unlike jazz (which implies the beat) or rock (which hits the downbeat hard), minimalist music makes the subdivision explicit and relentless. Every melodic or harmonic layer floats above this grid.</p>
+      <p>At 100 BPM, a <span class="key">16th-note pulse</span> is 150ms per step — fast enough to feel motorik, slow enough to track consciously. An 8th-note pulse (300ms per step) reads as more meditative, closer to Glass's early keyboard works. Choose based on the density you want your melody to rest above.</p>
+      <p>In Ableton, keep the pulse as a separate percussion track — a hi-hat sample, a closed drum hit, or a Korg Volca Beats. This keeps it independent from your melodic clips and easy to mute, solo, or swap without touching the melody.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number green-num">02</div>
+      <div class="card-title">Velocity Shaping</div>
+    </div>
+    <div class="card-body">
+      <p>A metronomic pulse with identical velocities sounds mechanical — like a click track, not music. The secret to a pulse that feels human is <span class="key">velocity shaping</span>: keep the rhythmic timing identical, but vary how hard each step hits.</p>
+      <p>The general model: beat downbeats hit hardest. Within each beat, the accent follows a curve — first 16th strongest, second softest, third medium, fourth nearly silent (ghost territory). The four beat downbeats themselves vary slightly to prevent a rigid, flat 4/4 feel:</p>
+      <ul>
+        <li>Beat 1 downbeat: <strong>100</strong> (strongest — the anchor)</li>
+        <li>Beat 2 downbeat: <strong>90</strong> (slightly softer)</li>
+        <li>Beat 3 downbeat: <strong>100</strong> (strong return)</li>
+        <li>Beat 4 downbeat: <strong>85</strong> (slightly softer — leading back to beat 1)</li>
+      </ul>
+      <p>The diagram below shows one bar of 16 16th-notes with this shaping applied. Each beat group follows the same internal curve; the four downbeats trace their own gentle shape across the bar.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 170" xmlns="http://www.w3.org/2000/svg">
+          <!-- Baseline -->
+          <line x1="8" y1="120" x2="752" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Beat group separators -->
+          <line x1="192" y1="30" x2="192" y2="120" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="372" y1="30" x2="372" y2="120" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+          <line x1="552" y1="30" x2="552" y2="120" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+          <!-- Beat 1 group (vel: 100, 50, 70, 45) -->
+          <rect x="12" y="40" width="38" height="80" fill="#4d9de0" rx="2"/>
+          <rect x="57" y="80" width="38" height="40" fill="#aaa" rx="2"/>
+          <rect x="102" y="64" width="38" height="56" fill="#5c9e6e" rx="2"/>
+          <rect x="147" y="84" width="38" height="36" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat 2 group (vel: 90, 50, 70, 45) -->
+          <rect x="192" y="48" width="38" height="72" fill="#4d9de0" rx="2"/>
+          <rect x="237" y="80" width="38" height="40" fill="#aaa" rx="2"/>
+          <rect x="282" y="64" width="38" height="56" fill="#5c9e6e" rx="2"/>
+          <rect x="327" y="84" width="38" height="36" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat 3 group (vel: 100, 50, 70, 45) -->
+          <rect x="372" y="40" width="38" height="80" fill="#4d9de0" rx="2"/>
+          <rect x="417" y="80" width="38" height="40" fill="#aaa" rx="2"/>
+          <rect x="462" y="64" width="38" height="56" fill="#5c9e6e" rx="2"/>
+          <rect x="507" y="84" width="38" height="36" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat 4 group (vel: 85, 50, 70, 45) -->
+          <rect x="552" y="52" width="38" height="68" fill="#4d9de0" rx="2"/>
+          <rect x="597" y="80" width="38" height="40" fill="#aaa" rx="2"/>
+          <rect x="642" y="64" width="38" height="56" fill="#5c9e6e" rx="2"/>
+          <rect x="687" y="84" width="38" height="36" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Velocity labels on downbeats -->
+          <text x="31" y="36" text-anchor="middle" fill="#4d9de0" font-family="Space Mono,monospace" font-size="9">100</text>
+          <text x="211" y="44" text-anchor="middle" fill="#4d9de0" font-family="Space Mono,monospace" font-size="9">90</text>
+          <text x="391" y="36" text-anchor="middle" fill="#4d9de0" font-family="Space Mono,monospace" font-size="9">100</text>
+          <text x="571" y="48" text-anchor="middle" fill="#4d9de0" font-family="Space Mono,monospace" font-size="9">85</text>
+          <!-- Beat labels -->
+          <text x="97" y="138" text-anchor="middle" fill="#555" font-family="Space Mono,monospace" font-size="11">BEAT 1</text>
+          <text x="277" y="138" text-anchor="middle" fill="#555" font-family="Space Mono,monospace" font-size="11">BEAT 2</text>
+          <text x="457" y="138" text-anchor="middle" fill="#555" font-family="Space Mono,monospace" font-size="11">BEAT 3</text>
+          <text x="637" y="138" text-anchor="middle" fill="#555" font-family="Space Mono,monospace" font-size="11">BEAT 4</text>
+          <!-- Legend -->
+          <rect x="12" y="152" width="10" height="8" fill="#4d9de0" rx="1"/>
+          <text x="27" y="160" fill="#888" font-family="Space Mono,monospace" font-size="9">DOWNBEAT</text>
+          <rect x="130" y="152" width="10" height="8" fill="#5c9e6e" rx="1"/>
+          <text x="145" y="160" fill="#888" font-family="Space Mono,monospace" font-size="9">MID SUB</text>
+          <rect x="230" y="152" width="10" height="8" fill="#aaa" rx="1"/>
+          <text x="245" y="160" fill="#888" font-family="Space Mono,monospace" font-size="9">SOFT</text>
+          <rect x="310" y="152" width="10" height="8" fill="#f0ece4" rx="1" stroke="#bbb" stroke-width="1.5"/>
+          <text x="325" y="160" fill="#888" font-family="Space Mono,monospace" font-size="9">GHOST</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number purple-num">03</div>
+      <div class="card-title">Ghost Notes</div>
+    </div>
+    <div class="card-body">
+      <p><span class="key">Ghost notes</span> are subdivisions at the threshold of hearing — typically velocity 30–45 — that fill rhythmic space without adding perceived density. The brain registers them as groove rather than consciously processing them as separate hits. Remove them and the pattern feels oddly sparse and stiff; push them above velocity 55 and the texture clutters.</p>
+      <p>In the pattern above, steps 4, 8, 12, and 16 are ghost hits at velocity 45 — the final 16th of each beat, sitting at the "and" of each beat's trailing 16th. They add a subtle forward-rolling feel. In Ableton's piano roll, these appear as small, quiet blocks at the lane floor.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 115" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lane background -->
+          <rect x="10" y="20" width="742" height="65" fill="#f5f3ee" rx="3"/>
+          <!-- Baseline -->
+          <line x1="10" y1="85" x2="752" y2="85" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Beat separators -->
+          <line x1="192" y1="20" x2="192" y2="85" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="372" y1="20" x2="372" y2="85" stroke="#d9d4ca" stroke-width="1"/>
+          <line x1="552" y1="20" x2="552" y2="85" stroke="#d9d4ca" stroke-width="1"/>
+          <!-- Beat 1 group — note blocks bottom-aligned to y=85, height=(vel/100)*55 -->
+          <rect x="12" y="30" width="38" height="55" fill="#4d9de0" rx="2"/>
+          <rect x="57" y="57" width="38" height="28" fill="#aaa" rx="2"/>
+          <rect x="102" y="47" width="38" height="38" fill="#5c9e6e" rx="2"/>
+          <rect x="147" y="60" width="38" height="25" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat 2 group -->
+          <rect x="192" y="35" width="38" height="50" fill="#4d9de0" rx="2"/>
+          <rect x="237" y="57" width="38" height="28" fill="#aaa" rx="2"/>
+          <rect x="282" y="47" width="38" height="38" fill="#5c9e6e" rx="2"/>
+          <rect x="327" y="60" width="38" height="25" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat 3 group -->
+          <rect x="372" y="30" width="38" height="55" fill="#4d9de0" rx="2"/>
+          <rect x="417" y="57" width="38" height="28" fill="#aaa" rx="2"/>
+          <rect x="462" y="47" width="38" height="38" fill="#5c9e6e" rx="2"/>
+          <rect x="507" y="60" width="38" height="25" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat 4 group -->
+          <rect x="552" y="38" width="38" height="47" fill="#4d9de0" rx="2"/>
+          <rect x="597" y="57" width="38" height="28" fill="#aaa" rx="2"/>
+          <rect x="642" y="47" width="38" height="38" fill="#5c9e6e" rx="2"/>
+          <rect x="687" y="60" width="38" height="25" fill="#f0ece4" rx="2" stroke="#bbb" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Ghost note label (pointing at step 4, center x=166) -->
+          <text x="166" y="108" text-anchor="middle" fill="#888" font-family="Space Mono,monospace" font-size="10">↑ ghost note</text>
+        </svg>
+      </div>
+      <p>Ghost notes are the key to a pulse that sounds like a person played it. Velocity 30–45 is the working range. In a step sequencer like the Volca Beats, set these steps at the lowest available velocity. In Ableton's MIDI editor, enter them and manually drag velocity bars down.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">04</div>
+      <div class="card-title">Swing &amp; Microshift</div>
+    </div>
+    <div class="card-body">
+      <p>Even with careful velocity shaping, a fully quantized pulse can feel robotic in a way that draws attention to itself. <span class="key">Swing</span> adds a slight delay to every off-beat 16th — stretching the gap between each downbeat and the following off-beat while compressing the gap from off-beat to the next downbeat. Ableton's Groove Pool applies swing globally to any track assigned to it.</p>
+      <div class="sub-section">
+        <div class="sub-title">Avoid the jazz trap</div>
+        <p>Minimalist pulse is supposed to feel motorik — precise and slightly inhuman. Use swing lightly: 5–12% at most. Too much and the piece loses its characteristic relentless forward motion and starts to feel like jazz, which is a completely different aesthetic. Glass's arpeggio patterns in <em>Metamorphosis</em> feel metronomic, not swung. Reich's phase works have groove from interference patterns, not swing. When in doubt, pull back.</p>
+      </div>
+      <p><span class="key">Microshift</span> is the surgical alternative: nudge individual note onset times in Ableton's clip editor by ±5–15ms. A slight forward push (early) on beat downbeats gives an urgent, pressed feeling. A slight delay (late) gives a settled, grounded feeling. Stay within 15ms — anything more registers as a timing error rather than a feel choice.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number">05</div>
+      <div class="card-title">Pulse as Felt, Not Heard</div>
+    </div>
+    <div class="card-body">
+      <p>The most sophisticated approach: no percussion track at all. A repeating melodic arpeggio in even 8th notes implies a pulse without ever stating it. The listener's motor cortex tracks the regular onset intervals and constructs the beat automatically — this is <span class="key">implied meter</span>, the same mechanism that makes Bach's unaccompanied violin Partitas feel fully metered without a rhythm section.</p>
+      <p>Any evenly-spaced note pattern creates implied pulse. The notes don't need to be loud or percussive — they can be soft, legato, heavily filtered. The timing regularity alone is sufficient.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+          <!-- Implied beat guides (faint vertical dashes behind everything) -->
+          <line x1="115" y1="10" x2="115" y2="172" stroke="#e2ddd5" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <line x1="315" y1="10" x2="315" y2="172" stroke="#e2ddd5" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <line x1="515" y1="10" x2="515" y2="172" stroke="#e2ddd5" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <!-- Horizontal pitch grid lines -->
+          <line x1="60" y1="40" x2="680" y2="40" class="grid-line"/>
+          <line x1="60" y1="65" x2="680" y2="65" class="grid-line"/>
+          <line x1="60" y1="90" x2="680" y2="90" class="grid-line"/>
+          <line x1="60" y1="115" x2="680" y2="115" class="grid-line"/>
+          <line x1="60" y1="140" x2="680" y2="140" class="grid-line"/>
+          <line x1="60" y1="165" x2="680" y2="165" class="grid-line"/>
+          <!-- Pitch labels -->
+          <text x="52" y="44" text-anchor="end" fill="#888" font-family="Space Mono,monospace" font-size="10">D5</text>
+          <text x="52" y="69" text-anchor="end" fill="#888" font-family="Space Mono,monospace" font-size="10">C5</text>
+          <text x="52" y="94" text-anchor="end" fill="#888" font-family="Space Mono,monospace" font-size="10">A4</text>
+          <text x="52" y="119" text-anchor="end" fill="#888" font-family="Space Mono,monospace" font-size="10">G4</text>
+          <text x="52" y="144" text-anchor="end" fill="#888" font-family="Space Mono,monospace" font-size="10">F4</text>
+          <text x="52" y="169" text-anchor="end" fill="#888" font-family="Space Mono,monospace" font-size="10">D4</text>
+          <!-- Connecting line: D4→F4→G4→A4→C5→D5 -->
+          <polyline points="115,165 215,140 315,115 415,90 515,65 615,40" stroke="#4d9de0" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <!-- Note dots -->
+          <circle cx="115" cy="165" r="5" fill="#4d9de0" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="215" cy="140" r="5" fill="#4d9de0" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="315" cy="115" r="5" fill="#4d9de0" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="415" cy="90" r="5" fill="#4d9de0" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="515" cy="65" r="5" fill="#4d9de0" stroke="#1a1a1a" stroke-width="1.5"/>
+          <circle cx="615" cy="40" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Divider -->
+          <line x1="60" y1="175" x2="680" y2="175" stroke="#d9d4ca" stroke-width="1"/>
+          <!-- Implied beat tick marks -->
+          <line x1="115" y1="175" x2="115" y2="188" stroke="#999" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <line x1="315" y1="175" x2="315" y2="188" stroke="#999" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <line x1="515" y1="175" x2="515" y2="188" stroke="#999" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <!-- Beat labels -->
+          <text x="115" y="198" text-anchor="middle" fill="#888" font-family="Space Mono,monospace" font-size="10">BEAT 1</text>
+          <text x="315" y="198" text-anchor="middle" fill="#888" font-family="Space Mono,monospace" font-size="10">BEAT 2</text>
+          <text x="515" y="198" text-anchor="middle" fill="#888" font-family="Space Mono,monospace" font-size="10">BEAT 3</text>
+          <!-- Annotation -->
+          <text x="680" y="186" text-anchor="end" fill="#aaa" font-family="Space Mono,monospace" font-size="9">NO DRUM TRACK</text>
+        </svg>
+      </div>
+      <p>Six notes, no percussion, unambiguous pulse. The evenly-spaced 8th-note arpeggio makes the quarter-note beat inescapable. This is the foundation of Glass's solo keyboard writing — and the reason your M01–M03 melody already implies its own beat without a drum track.</p>
+      <div class="principle-box">
+        <p>The pulse is not a separate layer you add to the music — it is an emergent property of regular note spacing. Every choice you make about rhythm is also a choice about pulse strength. When the melody implies a strong pulse on its own, the percussion track becomes optional. Add it for anchoring and muscle memory, not because the pulse needs help.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-number orange-num">✦</div>
+      <div class="card-title">Build It</div>
+    </div>
+    <div class="card-body">
+      <p>Open your M01 session (with your M03 clips A, A′, and A″ in Arrangement View). Add a second MIDI track and assign it a percussive sound — a Korg Volca Beats, a closed hi-hat sample, or any single-pitch percussion instrument in Ableton.</p>
+      <p>Create a 1-bar MIDI clip on this track. Program all 16 16th-note steps (fill every slot), then set velocities in this exact pattern:</p>
+      <div class="sub-section">
+        <div class="sub-title">Velocity pattern — 1 bar, 4 beat groups of 4</div>
+        <p><strong>Beat 1:</strong> 100 · 50 · 70 · 45 &nbsp;|&nbsp; <strong>Beat 2:</strong> 90 · 50 · 70 · 45 &nbsp;|&nbsp; <strong>Beat 3:</strong> 100 · 50 · 70 · 45 &nbsp;|&nbsp; <strong>Beat 4:</strong> 85 · 50 · 70 · 45</p>
+      </div>
+      <p>Set this clip to loop and run it alongside your M03 arrangement. Adjust the percussion track volume so the pulse feels <em>supportive, not dominant</em> — the melody should still be what you hear first. The pulse is the floor, not the ceiling.</p>
+      <p>Test: mute the percussion track. If the melody still clearly implies a beat (it should from the M03 rhythmic structure), you have achieved pulse as felt, not heard. Leave the percussion unmuted — it's there for listener anchoring, not pulse support.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="banner"><span class="banner-text">THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM</span></div>
+
+<div class="chapter-nav">
+  <a class="chapter-nav-item chapter-nav-prev" href="m03-micro-variation.html">
+    <span class="chapter-nav-label">← Previous</span>
+    <span class="chapter-nav-title">M03 — Micro-Variation</span>
+  </a>
+</div>
+
+<div class="footer"><p>AMBIENT COUNTERPOINT — M 04: THE PULSE — D DORIAN</p></div>
+
+</body>
+</html>

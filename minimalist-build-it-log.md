@@ -32,3 +32,12 @@ Compact record of each chapter's Build It outcome — the exact state of the evo
 - Clip "A″ — rhythm shift": original pitches D4–F4–G4–A4 shifted +1 16th right. Pattern starts one 16th late.
 - Arrangement View layout: A × 8 bars → A′ × 8 → A × 4 → A″ × 8 → A × 4 = 32 bars total.
 - Carry-forward: all three clips A, A′, A″ available for further layering.
+
+## M04 — The Pulse as Foundation
+
+- Session: same Ableton session as M01–M03, 100 BPM.
+- New track: MIDI percussion track (Korg Volca Beats, hi-hat sample, or similar single-pitch instrument).
+- Clip "M04 pulse": 1-bar MIDI clip, 16 16th-note steps at velocities: 100·50·70·45 | 90·50·70·45 | 100·50·70·45 | 85·50·70·45.
+- Percussion track volume balanced so melody (M03 clips A, A′, A″) remains primary.
+- Test: muting percussion still reveals implied beat from melodic rhythm.
+- Carry-forward: M03 melody arrangement + M04 pulse track both active and looping.
