@@ -8,38 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Home</a></nav>
+<site-nav href="index.html" label="Home"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp; VORDERSATZ → FORTSPINNUNG → EPILOG &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>The Baroque Sentence</span></h1>
-  <p class="subtitle">How Bach structures melody at the mid-level — bigger than a motif, smaller than a movement. One continuous flow where the current keeps shifting direction.</p>
-</div>
+<site-hero>
+  <span slot="title">The Baroque Sentence</span>
+  <span slot="subtitle">How Bach structures melody at the mid-level — bigger than a motif, smaller than a movement. One continuous flow where the current keeps shifting direction.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    The Baroque sentence is a <strong>three-part structure</strong>: an opening statement, a spinning-out phase, and a cadential landing. It's Bach's version of a paragraph — a self-contained unit of musical thought that can be chained with others to build larger forms.
-  </div>
-</div>
+<intro-box>The Baroque sentence is a <strong>three-part structure</strong>: an opening statement, a spinning-out phase, and a cadential landing. It's Bach's version of a paragraph — a self-contained unit of musical thought that can be chained with others to build larger forms.</intro-box>
 
 <div class="content">
 
   <!-- ═══ THE THREE PARTS ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">01</div>
-      <div class="card-title">The Three-Part Sentence</div>
-    </div>
-    <div class="card-body">
-      <p>Every Baroque sentence follows this arc. The three parts have different jobs and different energy levels:</p>
+  <content-card number="01" title="The Three-Part Sentence">
+<p>Every Baroque sentence follows this arc. The three parts have different jobs and different energy levels:</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg">
@@ -113,17 +101,11 @@
           </defs>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ HOW THE EPILOG WORKS ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">02</div>
-      <div class="card-title">How the Epilog Lands</div>
-    </div>
-    <div class="card-body">
-      <p>The Epilog works through <span class="key">contrast with everything before it</span>. The Fortspinnung has been running on autopilot — the listener riding the momentum, predicting the next sequence. To signal "we're landing," Bach does three things at once:</p>
+  <content-card number="02" color="orange" title="How the Epilog Lands">
+<p>The Epilog works through <span class="key">contrast with everything before it</span>. The Fortspinnung has been running on autopilot — the listener riding the momentum, predicting the next sequence. To signal "we're landing," Bach does three things at once:</p>
 
       <div class="sub-section">
         <div class="sub-title orange">The sequential pattern stops</div>
@@ -198,17 +180,11 @@
           <text font-family="DM Sans, sans-serif" font-style="italic" font-size="11" fill="var(--ink-soft)" x="400" y="195" text-anchor="middle">In your piano roll: spin 2–3 cycles → interrupt with a longer note → C♯ pulling to D → land on D with finality</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ SENTENCES AS PARAGRAPHS ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">03</div>
-      <div class="card-title">Sentences as Paragraphs</div>
-    </div>
-    <div class="card-body">
-      <p>Each three-part sentence is a <span class="key">building block, not a whole piece</span>. Think of it as Bach's version of a paragraph. A movement chains several sentences together, each one tonicizing a different key:</p>
+  <content-card number="03" color="purple" title="Sentences as Paragraphs">
+<p>Each three-part sentence is a <span class="key">building block, not a whole piece</span>. Think of it as Bach's version of a paragraph. A movement chains several sentences together, each one tonicizing a different key:</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg">
@@ -259,17 +235,11 @@
       </div>
 
       <p style="margin-top:16px;">Notice: the sentences <span class="key">don't have to be the same length</span>. The first might be short — just establishing the idea. The middle ones grow longer with more elaborate spinning. The final one is often the longest, with the most chromatic tension before the big resolution. That asymmetry keeps the form alive.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ THE OVERLAP / NESTING ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">04</div>
-      <div class="card-title">The Nesting Principle</div>
-    </div>
-    <div class="card-body">
-      <p>Fortspinnung feels different from sonata form or verse-chorus because those later forms are about <span class="key">contrast between distinct sections</span>. Bach's approach is more like a river — all one continuous flow, but the current keeps shifting direction.</p>
+  <content-card number="04" title="The Nesting Principle">
+<p>Fortspinnung feels different from sonata form or verse-chorus because those later forms are about <span class="key">contrast between distinct sections</span>. Bach's approach is more like a river — all one continuous flow, but the current keeps shifting direction.</p>
 
       <p>The sentences blur into each other because the Epilog of one can overlap with the Vordersatz of the next, the same way individual motifs overlap within the Fortspinnung itself.</p>
 
@@ -300,17 +270,11 @@
       <div class="principle-box">
         It's nesting — the same principle at every level. Within a phrase, the tail of one motif becomes the head of the next. Within a movement, the cadence of one sentence becomes the opening of the next. The music is always handing off without a seam, a river that never stops flowing but constantly shifts direction.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ QUICK REFERENCE ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">⚡</div>
-      <div class="card-title">Piano Roll Cheatsheet</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="⚡" color="green" title="Piano Roll Cheatsheet">
+<div class="sub-section">
         <div class="sub-title">Start with a 4-note motif</div>
         <p>Three stepwise notes + one leap. This is your Vordersatz. Keep it simple — everything else grows from here.</p>
       </div>
@@ -326,20 +290,13 @@
         <div class="sub-title purple">Chain sentences through keys</div>
         <p>First sentence cadences on i (D minor). Second on III (F major). Third on v (A minor). Final sentence returns home to i with the biggest cadence. Each sentence can reuse the same motif — just transformed for the new key.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    ALL ONE CONTINUOUS FLOW &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE CURRENT KEEPS SHIFTING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; ALL ONE CONTINUOUS FLOW &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE CURRENT KEEPS SHIFTING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; ALL ONE CONTINUOUS FLOW &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE CURRENT KEEPS SHIFTING &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>ALL ONE CONTINUOUS FLOW &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE CURRENT KEEPS SHIFTING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; ALL ONE CONTINUOUS FLOW &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE CURRENT KEEPS SHIFTING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; ALL ONE CONTINUOUS FLOW &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE CURRENT KEEPS SHIFTING &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>VISUAL REFERENCE — BAROQUE SENTENCE STRUCTURE — D MINOR</p>
-</div>
+<site-footer text="VISUAL REFERENCE — BAROQUE SENTENCE STRUCTURE — D MINOR"></site-footer>
 
 </body>
 </html>

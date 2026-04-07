@@ -8,41 +8,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="minimalist.html">Ambient Counterpoint</a></nav>
+<site-nav href="minimalist.html" label="Ambient Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">M04 — THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ M04 — THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ M04 — THE PULSE</span></div>
+<site-banner>M04 — THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ M04 — THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ M04 — THE PULSE</site-banner>
 
-<div class="hero">
-  <h1><span>The Pulse as Foundation</span></h1>
-  <p class="subtitle">The motor that makes the loop feel inevitable.</p>
-</div>
+<site-hero>
+  <span slot="title">The Pulse as Foundation</span>
+  <span slot="subtitle">The motor that makes the loop feel inevitable.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Most minimalist music runs over an unbroken subdivision — a mechanical 8th- or 16th-note pulse that everything else floats above. This chapter covers how to build one that feels human without being sloppy: velocity shaping, ghost notes, swing, and the deeper skill of implying a pulse through melody alone, without any percussion at all.</div></div>
+<intro-box>Most minimalist music runs over an unbroken subdivision — a mechanical 8th- or 16th-note pulse that everything else floats above. This chapter covers how to build one that feels human without being sloppy: velocity shaping, ghost notes, swing, and the deeper skill of implying a pulse through melody alone, without any percussion at all.</intro-box>
 
 <div class="content">
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">01</div>
-      <div class="card-title">The Pulse Grid</div>
-    </div>
-    <div class="card-body">
-      <p>Most minimalist work — Glass, Reich, Riley — runs over a <span class="key">continuous subdivision</span>: an unbroken sequence of 8th or 16th notes at the bottom of the texture. Unlike jazz (which implies the beat) or rock (which hits the downbeat hard), minimalist music makes the subdivision explicit and relentless. Every melodic or harmonic layer floats above this grid.</p>
+  <content-card number="01" title="The Pulse Grid">
+<p>Most minimalist work — Glass, Reich, Riley — runs over a <span class="key">continuous subdivision</span>: an unbroken sequence of 8th or 16th notes at the bottom of the texture. Unlike jazz (which implies the beat) or rock (which hits the downbeat hard), minimalist music makes the subdivision explicit and relentless. Every melodic or harmonic layer floats above this grid.</p>
       <p>At 100 BPM, a <span class="key">16th-note pulse</span> is 150ms per step — fast enough to feel motorik, slow enough to track consciously. An 8th-note pulse (300ms per step) reads as more meditative, closer to Glass's early keyboard works. Choose based on the density you want your melody to rest above.</p>
       <p>In Ableton, keep the pulse as a separate percussion track — a hi-hat sample, a closed drum hit, or a Korg Volca Beats. This keeps it independent from your melodic clips and easy to mute, solo, or swap without touching the melody.</p>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">02</div>
-      <div class="card-title">Velocity Shaping</div>
-    </div>
-    <div class="card-body">
-      <p>A metronomic pulse with identical velocities sounds mechanical — like a click track, not music. The secret to a pulse that feels human is <span class="key">velocity shaping</span>: keep the rhythmic timing identical, but vary how hard each step hits.</p>
+  <content-card number="02" color="green" title="Velocity Shaping">
+<p>A metronomic pulse with identical velocities sounds mechanical — like a click track, not music. The secret to a pulse that feels human is <span class="key">velocity shaping</span>: keep the rhythmic timing identical, but vary how hard each step hits.</p>
       <p>The general model: beat downbeats hit hardest. Within each beat, the accent follows a curve — first 16th strongest, second softest, third medium, fourth nearly silent (ghost territory). The four beat downbeats themselves vary slightly to prevent a rigid, flat 4/4 feel:</p>
       <ul>
         <li>Beat 1 downbeat: <strong>100</strong> (strongest — the anchor)</li>
@@ -100,16 +90,10 @@
           <text x="325" y="160" fill="#888" font-family="Space Mono,monospace" font-size="9">GHOST</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">03</div>
-      <div class="card-title">Ghost Notes</div>
-    </div>
-    <div class="card-body">
-      <p><span class="key">Ghost notes</span> are subdivisions at the threshold of hearing — typically velocity 30–45 — that fill rhythmic space without adding perceived density. The brain registers them as groove rather than consciously processing them as separate hits. Remove them and the pattern feels oddly sparse and stiff; push them above velocity 55 and the texture clutters.</p>
+  <content-card number="03" color="purple" title="Ghost Notes">
+<p><span class="key">Ghost notes</span> are subdivisions at the threshold of hearing — typically velocity 30–45 — that fill rhythmic space without adding perceived density. The brain registers them as groove rather than consciously processing them as separate hits. Remove them and the pattern feels oddly sparse and stiff; push them above velocity 55 and the texture clutters.</p>
       <p>In the pattern above, steps 4, 8, 12, and 16 are ghost hits at velocity 45 — the final 16th of each beat, sitting at the "and" of each beat's trailing 16th. They add a subtle forward-rolling feel. In Ableton's piano roll, these appear as small, quiet blocks at the lane floor.</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 115" xmlns="http://www.w3.org/2000/svg">
@@ -146,31 +130,19 @@
         </svg>
       </div>
       <p>Ghost notes are the key to a pulse that sounds like a person played it. Velocity 30–45 is the working range. In a step sequencer like the Volca Beats, set these steps at the lowest available velocity. In Ableton's MIDI editor, enter them and manually drag velocity bars down.</p>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">04</div>
-      <div class="card-title">Swing &amp; Microshift</div>
-    </div>
-    <div class="card-body">
-      <p>Even with careful velocity shaping, a fully quantized pulse can feel robotic in a way that draws attention to itself. <span class="key">Swing</span> adds a slight delay to every off-beat 16th — stretching the gap between each downbeat and the following off-beat while compressing the gap from off-beat to the next downbeat. Ableton's Groove Pool applies swing globally to any track assigned to it.</p>
+  <content-card number="04" color="orange" title="Swing &amp; Microshift">
+<p>Even with careful velocity shaping, a fully quantized pulse can feel robotic in a way that draws attention to itself. <span class="key">Swing</span> adds a slight delay to every off-beat 16th — stretching the gap between each downbeat and the following off-beat while compressing the gap from off-beat to the next downbeat. Ableton's Groove Pool applies swing globally to any track assigned to it.</p>
       <div class="sub-section">
         <div class="sub-title">Avoid the jazz trap</div>
         <p>Minimalist pulse is supposed to feel motorik — precise and slightly inhuman. Use swing lightly: 5–12% at most. Too much and the piece loses its characteristic relentless forward motion and starts to feel like jazz, which is a completely different aesthetic. Glass's arpeggio patterns in <em>Metamorphosis</em> feel metronomic, not swung. Reich's phase works have groove from interference patterns, not swing. When in doubt, pull back.</p>
       </div>
       <p><span class="key">Microshift</span> is the surgical alternative: nudge individual note onset times in Ableton's clip editor by ±5–15ms. A slight forward push (early) on beat downbeats gives an urgent, pressed feeling. A slight delay (late) gives a settled, grounded feeling. Stay within 15ms — anything more registers as a timing error rather than a feel choice.</p>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">05</div>
-      <div class="card-title">Pulse as Felt, Not Heard</div>
-    </div>
-    <div class="card-body">
-      <p>The most sophisticated approach: no percussion track at all. A repeating melodic arpeggio in even 8th notes implies a pulse without ever stating it. The listener's motor cortex tracks the regular onset intervals and constructs the beat automatically — this is <span class="key">implied meter</span>, the same mechanism that makes Bach's unaccompanied violin Partitas feel fully metered without a rhythm section.</p>
+  <content-card number="05" title="Pulse as Felt, Not Heard">
+<p>The most sophisticated approach: no percussion track at all. A repeating melodic arpeggio in even 8th notes implies a pulse without ever stating it. The listener's motor cortex tracks the regular onset intervals and constructs the beat automatically — this is <span class="key">implied meter</span>, the same mechanism that makes Bach's unaccompanied violin Partitas feel fully metered without a rhythm section.</p>
       <p>Any evenly-spaced note pattern creates implied pulse. The notes don't need to be loud or percussive — they can be soft, legato, heavily filtered. The timing regularity alone is sufficient.</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
@@ -219,16 +191,10 @@
       <div class="principle-box">
         <p>The pulse is not a separate layer you add to the music — it is an emergent property of regular note spacing. Every choice you make about rhythm is also a choice about pulse strength. When the melody implies a strong pulse on its own, the percussion track becomes optional. Add it for anchoring and muscle memory, not because the pulse needs help.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It</div>
-    </div>
-    <div class="card-body">
-      <p>Open your M01 session (with your M03 clips A, A′, and A″ in Arrangement View). Add a second MIDI track and assign it a percussive sound — a Korg Volca Beats, a closed hi-hat sample, or any single-pitch percussion instrument in Ableton.</p>
+  <content-card number="✦" color="orange" title="Build It">
+<p>Open your M01 session (with your M03 clips A, A′, and A″ in Arrangement View). Add a second MIDI track and assign it a percussive sound — a Korg Volca Beats, a closed hi-hat sample, or any single-pitch percussion instrument in Ableton.</p>
       <p>Create a 1-bar MIDI clip on this track. Program all 16 16th-note steps (fill every slot), then set velocities in this exact pattern:</p>
       <div class="sub-section">
         <div class="sub-title">Velocity pattern — 1 bar, 4 beat groups of 4</div>
@@ -236,21 +202,18 @@
       </div>
       <p>Set this clip to loop and run it alongside your M03 arrangement. Adjust the percussion track volume so the pulse feels <em>supportive, not dominant</em> — the melody should still be what you hear first. The pulse is the floor, not the ceiling.</p>
       <p>Test: mute the percussion track. If the melody still clearly implies a beat (it should from the M03 rhythmic structure), you have achieved pulse as felt, not heard. Leave the percussion unmuted — it's there for listener anchoring, not pulse support.</p>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM</span></div>
+<site-banner>THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM ◇ THE PULSE ◇ VELOCITY SHAPING ◇ GHOST NOTES ◇ SWING ◇ IMPLIED RHYTHM</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="m03-micro-variation.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">M03 — Micro-Variation</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="m03-micro-variation.html"
+  prev-title="M03 — Micro-Variation">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — M 04: THE PULSE — D DORIAN</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — M 04: THE PULSE — D DORIAN"></site-footer>
 
 </body>
 </html>

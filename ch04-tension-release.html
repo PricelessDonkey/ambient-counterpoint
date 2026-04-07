@@ -8,37 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; ENCLOSURES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CROSS RELATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION & RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; DIMINISHED INTERVALS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; ENCLOSURES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CROSS RELATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION & RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; DIMINISHED INTERVALS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Tension and Release</span></h1>
-  <p class="subtitle">The counterpoint becomes expressive when voices argue — and then agree.</p>
-</div>
+<site-hero>
+  <span slot="title">Tension and Release</span>
+  <span slot="subtitle">The counterpoint becomes expressive when voices argue — and then agree.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    <strong>Dissonance is not a mistake — it is the engine.</strong> Chapters 1–3 gave you two independent voices that coexist politely. Now you make them collide on purpose: hold a note past its welcome, approach a target from both sides, let one voice say F while the other says F#. These techniques are what give counterpoint its emotional charge. Bach uses them constantly; so does Nala Sinephro. The listener's ear leans forward when the tension builds, and exhales when it resolves.
-  </div>
-</div>
+<intro-box><strong>Dissonance is not a mistake — it is the engine.</strong> Chapters 1–3 gave you two independent voices that coexist politely. Now you make them collide on purpose: hold a note past its welcome, approach a target from both sides, let one voice say F while the other says F#. These techniques are what give counterpoint its emotional charge. Bach uses them constantly; so does Nala Sinephro. The listener's ear leans forward when the tension builds, and exhales when it resolves.</intro-box>
 
 <div class="content">
 
   <!-- CARD 14: Suspensions as melody -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">14</div>
-      <div class="card-title">Suspensions as Melody — The Sigh</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="14" title="Suspensions as Melody — The Sigh">
+<div class="sub-section">
         <p class="sub-title">The three-stage mechanism</p>
         <p>A <span class="key">suspension</span> is a deliberate dissonance created by holding one note too long. It has exactly three stages: the note arrives on a weak beat as part of a consonant chord (<strong>preparation</strong>), it is held into the next strong beat where the harmony has moved on and it no longer fits (<strong>suspension / clash</strong>), and then it resolves down by step into a consonant note (<strong>resolution</strong>). The ear hears: expectation, denial, relief.</p>
         <p>The resolution is almost always <strong>downward by step</strong>. Upward resolutions exist but are rare and jarring. The sigh quality comes from this falling motion — the suspended note strains against the harmony and then sinks.</p>
@@ -119,19 +108,11 @@
       <div class="principle-box">
         The suspension is an emotional mechanism: desire (preparation), frustration (clash), relief (resolution). Delay the resolution by one extra beat and the listener physically leans toward the speakers.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 15: Chains of suspensions -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">15</div>
-      <div class="card-title">Chains of Suspensions</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="15" color="green" title="Chains of Suspensions">
+<div class="sub-section">
         <p class="sub-title">The 4-3 chain — descending in thirds</p>
         <p>A single suspension is satisfying. A <span class="key">chain of suspensions</span> is hypnotic. The trick: the resolution of one suspension immediately becomes the preparation for the next. The upper voice never fully rests — it keeps falling, one suspension after another, as the lower voice descends beneath it. The classic 4-3 chain descends through a sequence of dominants, each resolving down a third before the next clash arrives.</p>
         <p>In D minor, a 4-3 chain might run: D5→C#5 (over A bass) → B♭4→A4 (over F bass) → G4→F#4 (over D major in 1st inv.) — each resolution immediately becomes the next preparation, the upper voice ratcheting downward without rest. (The final pair briefly leaves D minor: F# is the 3rd of a D major chord used as a passing secondary harmony.)</p>
@@ -260,19 +241,11 @@
       <div class="principle-box">
         Chain the resolution of one suspension into the preparation of the next. The voice keeps falling; the ear keeps waiting for the floor.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 16: Chromatic neighbor tones and enclosures -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">16</div>
-      <div class="card-title">Chromatic Neighbor Tones and Enclosures</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="16" title="Chromatic Neighbor Tones and Enclosures">
+<div class="sub-section">
         <p class="sub-title">The chromatic lower neighbor</p>
         <p>A <span class="key">chromatic neighbor tone</span> approaches a chord tone from a half step below, then resolves up to the target. It is not in the diatonic scale — it is borrowed purely for the gravitational pull. In D minor, approaching D from C# (a half step below) instead of C natural intensifies the arrival dramatically. The C# wants to rise; the D is inevitable.</p>
         <p>Upper neighbors work too: approach D from E♭ (or E natural), then fall. But the chromatic lower neighbor is more powerful because it mimics the leading-tone pull — the same physics that makes C# → D work at cadences.</p>
@@ -357,19 +330,11 @@
       <div class="principle-box">
         Enclosures make arrival feel earned. The note you've been circling becomes the resolution of a small drama. Use them to make any important pitch feel inevitable.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 17: Diminished intervals for drama -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">17</div>
-      <div class="card-title">Diminished Intervals for Drama</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="17" color="red" title="Diminished Intervals for Drama">
+<div class="sub-section">
         <p class="sub-title">The diminished 7th leap — the most tense interval</p>
         <p>A <span class="key">diminished 7th</span> (dim7) is a leap of 9 half steps — one half step narrower than a minor 7th. In D harmonic minor, the diminished 7th appears naturally between the raised 7th (C#) and the ♭6 (B♭): C#5 down to E4 or B♭3 up to C#4 (depending on octave register). Your ear hears this as a wrenched, violent interval — it is the signature of the most dramatic moments in Baroque music.</p>
         <p>The rule: a diminished leap must resolve <strong>inward</strong> — the top note steps down or the bottom note steps up (or both). C#5 leaps down to E4, then E4 resolves up to F4 or down to D4. The leap is dramatic; the resolution is obligatory.</p>
@@ -389,19 +354,11 @@
       <div class="principle-box">
         Save the dim7 for the single most dramatic moment in a phrase — the point of maximum tension just before the final release. Used too often it loses its charge. Used once, it stops time.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 18: Cross relations -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">18</div>
-      <div class="card-title">Cross Relations</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="18" color="purple" title="Cross Relations">
+<div class="sub-section">
         <p class="sub-title">What a cross relation is</p>
         <p>A <span class="key">cross relation</span> (also called a "false relation") occurs when two adjacent or simultaneous beats contain the same pitch class in two different chromatic versions, in different voices. One voice has F natural while another voice has (or just had) F#. One voice has C natural while another has C#. The result is a brief tonal disorientation — the listener's ear does not know which version of the pitch is the real one.</p>
         <p>In D minor this happens naturally when you mix natural minor (F natural, C natural, B♭) with harmonic or Dorian inflections (C# leading tone, B natural, F# from Dorian). The cross relation is the <em>simultaneous trace</em> of that ambiguity across two voices.</p>
@@ -498,19 +455,11 @@
       <div class="principle-box">
         Use the cross relation at the one moment you want to create tonal disorientation — a shimmer, a doubt, a question mark. It should last one beat, not the whole phrase.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD ✦: Build It -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Add Tension to the Two-Voice Piece</div>
-    </div>
-    <div class="card-body">
-
-      <p>Open your Ch 03 session — the two-voice piece with contrary motion in bars 1–2, pedal freeze in bar 3, and voice exchange at the cadence in bar 4. This session is where the raw counterpoint lives. Now you will add three expressive layers on top: a suspension at the cadence, a chromatic enclosure approaching the final D, and one moment of cross-relation tension between the two voices.</p>
+  <content-card number="✦" color="orange" title="Build It — Add Tension to the Two-Voice Piece">
+<p>Open your Ch 03 session — the two-voice piece with contrary motion in bars 1–2, pedal freeze in bar 3, and voice exchange at the cadence in bar 4. This session is where the raw counterpoint lives. Now you will add three expressive layers on top: a suspension at the cadence, a chromatic enclosure approaching the final D, and one moment of cross-relation tension between the two voices.</p>
 
       <div class="sub-section">
         <p class="sub-title">Modify bar 3 — approach the cadence through suspension</p>
@@ -718,26 +667,18 @@
         <p class="sub-title">What to listen for</p>
         <p>Play back both voices together and locate these three moments: (1) Beat 4 of bar 3 into beat 1 of bar 4 — you should hear the G4 in the upper voice pulling against the D3/A3 lower, then releasing to F4. (2) Bar 2 beat 2 — the F# should flicker like a brightness in the upper voice against the natural minor lower voice. (3) The final four notes in the upper voice (E4→C#4→D4) — the C# creates a brief half-step crunch against D3, then resolves. The piece now has a shape: tension builds in bar 3, bursts in bar 4, and lands with that earned D.</p>
       </div>
-
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 04 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TENSION &amp; RELEASE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch03-two-voices.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 03 — Adding a Second Voice</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch03-two-voices.html"
+  prev-title="Ch 03 — Adding a Second Voice">
+</chapter-nav>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — CH 04: TENSION AND RELEASE — D MINOR</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 04: TENSION AND RELEASE — D MINOR"></site-footer>
 
 </body>
 </html>

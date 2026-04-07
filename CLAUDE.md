@@ -47,54 +47,52 @@ Every chapter page (`ch01-single-line.html`, etc.) follows this skeleton — do 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<div class="nav-back"><a href="index.html">Ambient Counterpoint</a></div>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 0N — TOPIC — ... repeated ◇ separated ...</span></div>
+<site-banner>CHAPTER 0N ◇ TOPIC ◇ ... repeated ◇ separated ...</site-banner>
 
-<div class="hero">
-  <h1><span>Title</span></h1>
-  <p class="subtitle">One-line italic framing sentence.</p>
-</div>
+<site-hero>
+  <span slot="title">Title</span>
+  <span slot="subtitle">One-line italic framing sentence.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Blue context box — what this chapter covers and why it matters.</div></div>
+<intro-box>Blue context box — what this chapter covers and why it matters.</intro-box>
 
 <div class="content">
   <!-- cards go here -->
+  <content-card number="1" title="Card Title">
+    <!-- sub-sections, diagrams, principle-box, etc. -->
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <!-- exercise content -->
+  </content-card>
 </div>
 
-<div class="banner"><span class="banner-text">... bottom banner ...</span></div>
+<site-banner>... bottom banner ...</site-banner>
 
-<div class="chapter-nav">
-  <!-- If prev chapter exists: -->
-  <a class="chapter-nav-item chapter-nav-prev" href="chNN-previous.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch NN — Previous Title</span>
-  </a>
-  <!-- If no prev chapter, omit the <a> entirely (leave the slot empty or omit) -->
+<chapter-nav
+  prev-href="chNN-previous.html" prev-title="Ch NN — Previous Title"
+  next-href="chNN-next.html"     next-title="Ch NN — Next Title">
+</chapter-nav>
 
-  <!-- If next chapter exists: -->
-  <a class="chapter-nav-item chapter-nav-next" href="chNN-next.html">
-    <span class="chapter-nav-label">Next →</span>
-    <span class="chapter-nav-title">Ch NN — Next Title</span>
-  </a>
-  <!-- If no next chapter, omit the <a> entirely -->
-</div>
-
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 0N: TITLE — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 0N: TITLE — D MINOR"></site-footer>
 
 </body>
 </html>
 ```
 
-**Chapter nav rules:**
-- Always include a `.chapter-nav` div between the bottom banner and footer
-- For the first chapter, only the "Next →" link is present
-- For the last built chapter, only the "← Previous" link is present
-- Link to the adjacent chapter's actual filename. If the next chapter hasn't been built yet, omit that link
-- Derive prev/next titles from `bach-cheatsheet-plan.md`
+**Component usage notes:**
+- `<site-nav href="bach.html" label="Bach Counterpoint">` for Bach chapters; `href="minimalist.html" label="Minimalist Composition"` for minimalist chapters
+- `<content-card number="N" title="...">` — default color is blue. Add `color="green"` / `color="orange"` / `color="purple"` / `color="red"` for non-blue cards
+- Build It card always uses `number="✦" color="orange"`
+- `<chapter-nav>` — omit `prev-href`/`prev-title` for the first chapter; omit `next-href`/`next-title` for the last built chapter
+- Derive prev/next titles from `bach-cheatsheet-plan.md` (or `minimalist-cheatsheet-plan.md`)
+- `<site-footer text="...">` — Bach: `D MINOR`; Minimalist: `D DORIAN`
 
 Each chapter ends with a **Build It** card using `orange-num` on the card number and `✦` as the number symbol. Each Build It should continue from the previous chapter's Build It — same Ableton session, new technique layered on top. Read the prior chapter's Build It before writing a new one.
 

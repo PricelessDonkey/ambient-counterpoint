@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 <style>
 /* chord chain styling */
   .chord-chain {
@@ -87,35 +88,22 @@
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Home</a></nav>
+<site-nav href="index.html" label="Home"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    HARMONIC ENGINES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; TONICIZATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC ENGINES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; TONICIZATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC ENGINES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>HARMONIC ENGINES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; TONICIZATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC ENGINES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; TONICIZATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC ENGINES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Bach's Harmonic</span><br><span>Engines</span></h1>
-  <p class="subtitle">The chord progressions and bass patterns that power Fortspinnung. These are the roads the spinning melody travels on — each one creates a different flavor of inevitability.</p>
-</div>
+<site-hero>
+  <span slot="title">Bach's Harmonic<br>Engines</span>
+  <span slot="subtitle">The chord progressions and bass patterns that power Fortspinnung. These are the roads the spinning melody travels on — each one creates a different flavor of inevitability.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    All of these progressions are in <strong>D minor</strong> for consistency. The melodic sequences from the phrase shapes toolkit ride on top of these harmonic patterns — each sequence repetition lands on the next chord, so <strong>harmonic motion and melodic sequencing reinforce each other</strong>.
-  </div>
-</div>
+<intro-box>All of these progressions are in <strong>D minor</strong> for consistency. The melodic sequences from the phrase shapes toolkit ride on top of these harmonic patterns — each sequence repetition lands on the next chord, so <strong>harmonic motion and melodic sequencing reinforce each other</strong>.</intro-box>
 
 <div class="content">
 
   <!-- ═══ 1. CIRCLE OF FIFTHS ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">01</div>
-      <div class="card-title">Circle of Fifths Descent</div>
-    </div>
-    <div class="card-body">
-      <p>Bach's most fundamental Fortspinnung engine. Each root drops a fifth (or rises a fourth — same thing). Your spinning motif rides this progression down, with each sequence repetition landing on the next chord. You don't need the whole circle — even <span class="key">three or four steps</span> give you the feeling of inevitability.</p>
+  <content-card number="01" title="Circle of Fifths Descent">
+<p>Bach's most fundamental Fortspinnung engine. Each root drops a fifth (or rises a fourth — same thing). Your spinning motif rides this progression down, with each sequence repetition landing on the next chord. You don't need the whole circle — even <span class="key">three or four steps</span> give you the feeling of inevitability.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
@@ -213,17 +201,11 @@
         <span class="chord-arrow">→</span>
         <div><div class="chord-chip highlight">Dm</div><span class="chord-label">i</span></div>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 2. 5-1 RATCHET ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">02</div>
-      <div class="card-title">The 5–1 Ratchet</div>
-    </div>
-    <div class="card-body">
-      <p>The circle of fifths with the screws tightened. You turn each chord into a <span class="key">dominant 7th of the next</span>, adding chromatic leading tones that create half-step magnetism at every link. Each chord gets its own little V→I arrival — this is what tonicization means in practice.</p>
+  <content-card number="02" color="red" title="The 5–1 Ratchet">
+<p>The circle of fifths with the screws tightened. You turn each chord into a <span class="key">dominant 7th of the next</span>, adding chromatic leading tones that create half-step magnetism at every link. Each chord gets its own little V→I arrival — this is what tonicization means in practice.</p>
 
       <p>They're not mutually exclusive — one is the enriched version of the other. Bach blends them: <span class="key">structurally important arrivals</span> get the ratchet treatment, passing chords stay diatonic. That mix of diatonic and chromatic within one sequence is why his harmony sounds fluid rather than mechanical.</p>
 
@@ -406,17 +388,11 @@
       <div class="principle-box">
         Each link only requires changing one or two notes from the diatonic version to tighten the screw. Look at the next chord, realize you're already standing on its dominant, then adjust quality to a dominant 7th. The chromatic note that results — that's your leading tone.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 3. DESCENDING BASS ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">03</div>
-      <div class="card-title">Descending Bass Line</div>
-    </div>
-    <div class="card-body">
-      <p>The bass walks down the scale stepwise while chords alternate between root position and first inversion above it, creating a smooth cascade. This is the engine behind the Chaconne, countless sarabandes, and the <span class="key">lament bass</span> tradition. In the piano roll: put a steady descending scale in the low register and hang your spinning melody over it.</p>
+  <content-card number="03" color="green" title="Descending Bass Line">
+<p>The bass walks down the scale stepwise while chords alternate between root position and first inversion above it, creating a smooth cascade. This is the engine behind the Chaconne, countless sarabandes, and the <span class="key">lament bass</span> tradition. In the piano roll: put a steady descending scale in the low register and hang your spinning melody over it.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 170" xmlns="http://www.w3.org/2000/svg">
@@ -473,17 +449,11 @@
           <text font-family="DM Sans, sans-serif" font-size="9" fill="var(--ink-soft)" x="40" y="160" text-anchor="end">chords:</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 4. DECEPTIVE MOVE ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">04</div>
-      <div class="card-title">The Deceptive Move</div>
-    </div>
-    <div class="card-body">
-      <p>After setting up a strong dominant (A7 heading to D minor), land on <span class="key">B♭ major instead</span>. The bass moves up a half step (A→B♭) rather than down a fifth (A→D). Bach uses this to extend a sentence — you thought the Epilog was about to cadence, but the deceptive resolution kicks you back into another round of Fortspinnung.</p>
+  <content-card number="04" color="orange" title="The Deceptive Move">
+<p>After setting up a strong dominant (A7 heading to D minor), land on <span class="key">B♭ major instead</span>. The bass moves up a half step (A→B♭) rather than down a fifth (A→D). Bach uses this to extend a sentence — you thought the Epilog was about to cadence, but the deceptive resolution kicks you back into another round of Fortspinnung.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
@@ -529,17 +499,11 @@
           <text font-family="DM Sans, sans-serif" font-style="italic" font-size="11" fill="var(--ink-soft)" x="400" y="165" text-anchor="middle">the sentence gets longer than expected — without feeling arbitrary</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 5. NEAPOLITAN DROP ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">05</div>
-      <div class="card-title">The Neapolitan Drop</div>
-    </div>
-    <div class="card-body">
-      <p>In D minor, suddenly hitting <a href="bach_chord_cheat_sheet.html#color" class="chord-ref"><span class="key">E♭ major (Neapolitan)</span></a> — a half step above the tonic — creates a dark, dramatic color. Bach places it right before the final cadence. It functions as a souped-up subdominant: it pulls toward the dominant even harder than Gm because of the half-step tension between E♭ and D.</p>
+  <content-card number="05" color="purple" title="The Neapolitan Drop">
+<p>In D minor, suddenly hitting <a href="bach_chord_cheat_sheet.html#color" class="chord-ref"><span class="key">E♭ major (Neapolitan)</span></a> — a half step above the tonic — creates a dark, dramatic color. Bach places it right before the final cadence. It functions as a souped-up subdominant: it pulls toward the dominant even harder than Gm because of the half-step tension between E♭ and D.</p>
 
       <div class="chord-chain">
         <div><div class="chord-chip">Dm</div><span class="chord-label">i</span></div>
@@ -580,17 +544,11 @@
           <text font-family="DM Sans, sans-serif" font-style="italic" font-size="10" fill="var(--ink-soft)" x="480" y="85" text-anchor="middle">maximum gravitational pull toward home</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 6. PEDAL POINT ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">06</div>
-      <div class="card-title">Pedal Point</div>
-    </div>
-    <div class="card-body">
-      <p>Hold a D in the bass for four or eight bars while upper voices cycle through chords that get <span class="key">increasingly tense</span> — then everything resolves back to D minor in all voices. The pedal creates a gravitational anchor while harmony gets wild above it. Resolution feels massive because the bass has been promising "we're in D" the whole time.</p>
+  <content-card number="06" title="Pedal Point">
+<p>Hold a D in the bass for four or eight bars while upper voices cycle through chords that get <span class="key">increasingly tense</span> — then everything resolves back to D minor in all voices. The pedal creates a gravitational anchor while harmony gets wild above it. Resolution feels massive because the bass has been promising "we're in D" the whole time.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
@@ -632,17 +590,11 @@
           <line x1="715" y1="65" x2="715" y2="110" stroke="var(--ink)" stroke-width="2"/>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ FULL RECIPE ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">⚡</div>
-      <div class="card-title">The Full Recipe</div>
-    </div>
-    <div class="card-body">
-      <p>A practical template for a complete Fortspinnung sentence using these engines together:</p>
+  <content-card number="⚡" color="green" title="The Full Recipe">
+<p>A practical template for a complete Fortspinnung sentence using these engines together:</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 230" xmlns="http://www.w3.org/2000/svg">
@@ -727,20 +679,13 @@
       <div class="principle-box">
         Every chord is being pulled to rather than just appearing. The circle of fifths provides the momentum, the ratchet adds chromatic magnetism, the deceptive move extends the journey, the <a href="bach_chord_cheat_sheet.html#color" class="chord-ref">Neapolitan</a> darkens the final approach, and the pedal point anchors it all. Mix and match — not every sentence needs every tool.
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EVERY CHORD IS PULLED TO, NOT JUST APPEARING &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>VISUAL REFERENCE — BACH'S HARMONIC ENGINES — D MINOR</p>
-</div>
+<site-footer text="VISUAL REFERENCE — BACH'S HARMONIC ENGINES — D MINOR"></site-footer>
 
 </body>
 </html>

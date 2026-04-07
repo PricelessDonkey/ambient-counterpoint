@@ -8,30 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="minimalist.html">Minimalist Composition</a></nav>
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER M01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP AS ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LENGTH &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEAM DESIGN &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER M01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP AS ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LENGTH &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEAM DESIGN &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span></div>
+<site-banner>CHAPTER M01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP AS ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LENGTH &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEAM DESIGN &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER M01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP AS ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LENGTH &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEAM DESIGN &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>The Loop as Architecture</span></h1>
-  <p class="subtitle">Repetition is not laziness. It's structure.</p>
-</div>
+<site-hero>
+  <span slot="title">The Loop as Architecture</span>
+  <span slot="subtitle">Repetition is not laziness. It's structure.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">In Bach, a phrase is a journey — it starts somewhere, develops, and arrives at a cadence. In minimalism, the loop <em>is</em> the destination. There is no development arc, no cadential goal, no sense that the music needs to get anywhere. Instead, the interest comes from what repeats, how it repeats, and what tiny changes accumulate over time. This chapter is about treating the loop not as a convenience but as the fundamental architectural unit — the way Bach treated the phrase.</div></div>
+<intro-box>In Bach, a phrase is a journey — it starts somewhere, develops, and arrives at a cadence. In minimalism, the loop <em>is</em> the destination. There is no development arc, no cadential goal, no sense that the music needs to get anywhere. Instead, the interest comes from what repeats, how it repeats, and what tiny changes accumulate over time. This chapter is about treating the loop not as a convenience but as the fundamental architectural unit — the way Bach treated the phrase.</intro-box>
 
 <div class="content">
 
   <!-- CARD 1: The Loop as the Unit of Composition -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">1</div>
-      <div class="card-title">The Loop as the Unit of Composition</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="1" title="The Loop as the Unit of Composition">
+<div class="sub-section">
         <p>Bach's compositional unit is the <span class="key">phrase</span> — a musical sentence with a beginning, a middle, and a cadential end. Each phrase points forward; the cadence resolves something and opens the next phrase. The music is directional. You always feel that something is being worked out.</p>
         <p>The minimalist's unit is the <span class="key">loop</span>. A loop has no beginning or end by design — it cycles. Instead of pointing forward, it folds back on itself. The listener isn't waiting for a resolution; they're settling into a pattern. The music is centripetal rather than centrifugal.</p>
         <p>This is a fundamental shift in compositional thinking. When you write a loop, you're not asking "where does this go?" — you're asking "what is worth repeating, and for how long?" The loop doesn't lead to the next idea. It <em>is</em> the idea.</p>
@@ -107,17 +103,11 @@
       </div>
 
       <p>The phrase points outward; the loop folds inward. Both are valid compositional strategies — but they require completely different instincts when you're writing.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 2: Loop Length and Structural Weight -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">2</div>
-      <div class="card-title">Loop Length and Structural Weight</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="2" color="green" title="Loop Length and Structural Weight">
+<div class="sub-section">
         <p>Loop length changes how the music <em>feels</em>, even when the notes are identical. A <span class="key">1-bar loop</span> feels like wallpaper — it's so short and so repetitive that the ear stops tracking it and treats it as texture. A <span class="key">4-bar loop</span> feels like a riff — enough content that the ear follows it consciously but familiar enough to feel inevitable. An <span class="key">8-bar loop</span> feels like a section, carrying structural weight.</p>
         <p>This is the minimalist's primary formal tool: not modulation, not development, not contrast — just loop length. Changing the length of a loop changes its role in the hierarchy of the piece.</p>
       </div>
@@ -245,17 +235,11 @@
         <div class="idiom-name">Length rule of thumb</div>
         <p>1 bar = texture. 2–3 bars = motif. 4 bars = riff. 8 bars = section. When you're unsure of your loop's role, try doubling or halving its length and see which frame it fits into.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 3: What Makes a Loop Worth Repeating -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">3</div>
-      <div class="card-title">What Makes a Loop Worth Repeating</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="3" title="What Makes a Loop Worth Repeating">
+<div class="sub-section">
         <p>Most loops fail the <span class="key">16-repetition test</span> — they sound fine the first two times, then become either boring or irritating. The difference between a loop that sustains interest and one that doesn't comes down to internal structure.</p>
         <p>A good loop has two competing qualities in tension: <span class="key">enough repetition within the loop</span> to feel inevitable (so the ear locks on and gets comfortable), and <span class="key">enough asymmetry</span> to stay interesting (so the ear keeps tracking it). Pure repetition is a metronome. Pure irregularity is noise. The sweet spot is a pattern the ear can predict on the macro level but not entirely at the micro level.</p>
       </div>
@@ -273,17 +257,11 @@
       <div class="principle-box">
         <strong>The design question</strong> — before asking "which notes?" ask "does this have a shape?" A loop needs a perceptible center of gravity — a moment where it lands, even briefly. Without that landing point, the loop is formless and quickly tuned out.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 4: Timbre and Velocity as First Dimensions -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">4</div>
-      <div class="card-title">Timbre and Velocity as First Dimensions of Variation</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="4" color="green" title="Timbre and Velocity as First Dimensions of Variation">
+<div class="sub-section">
         <p>When a loop stops feeling interesting, the instinct is to change the notes. Resist this. Before you touch pitch or rhythm, exhaust the two dimensions that are invisible in the MIDI: <span class="key">timbre</span> and <span class="key">velocity</span>.</p>
         <p>A loop played with flat, metronomic velocities sounds mechanical even if it's a beautiful cell. Introduce a velocity curve — accents on beats 1 and 3, softer subdivisions — and suddenly the same loop feels human and alive. The notes haven't changed. The musical feel has completely changed.</p>
       </div>
@@ -302,17 +280,11 @@
         <div class="idiom-name">The order of operations</div>
         <p>1. Get the cell. 2. Shape the velocity. 3. Shape the timbre (filter, envelope). 4. Then — only then — consider changing a note. Most loops that feel finished after step 1 are actually unfinished; the interesting work is in steps 2 and 3.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 5: Designing the Loop Boundary -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">5</div>
-      <div class="card-title">Designing the Loop Boundary</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="5" title="Designing the Loop Boundary">
+<div class="sub-section">
         <p>A Baroque phrase has a clear beginning and a clear cadential end. A loop, by definition, has <em>no</em> beginning and no end — it cycles. But there is still a <span class="key">seam</span>: the invisible point where the last beat of the loop stitches back to the first beat. A poorly designed seam announces itself as a seam. A well-designed seam is inaudible.</p>
         <p>The seam problem has two components: <strong>rhythmic</strong> (does the last note's duration lead naturally into the first beat?) and <strong>melodic</strong> (does the pitch of the last note connect with the pitch of the first note?). Both need to work for the loop to feel seamless.</p>
       </div>
@@ -424,17 +396,11 @@
       </div>
 
       <p>A seamless loop doesn't sound like it starts — it sounds like it's already happening when you tune in. The difference is entirely in how the last beat points to the first.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD ✦: Build It -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Your First Loop</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="✦" color="orange" title="Build It — Your First Loop">
+<div class="sub-section">
         <p class="sub-title orange">Session setup</p>
         <p>Open Ableton. Set tempo to <span class="key">100 BPM</span>, 4/4. Create a new MIDI track and assign a pad or electric keys sound — something with a medium attack and gentle release. This is your working session for the whole series; save it now.</p>
       </div>
@@ -457,17 +423,16 @@
       <div class="principle-box">
         <strong>What you have:</strong> A 1- or 2-bar loop in D Dorian — D4, F4, G4, A4 — at 100 BPM. The cell sits in the upper octave. The second half of the bar (or bars) is open. This open space is the most important thing you built today; future chapters will fill it deliberately.
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP IS THE DESTINATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP IS THE DESTINATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span></div>
+<site-banner>REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP IS THE DESTINATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE LOOP IS THE DESTINATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REPETITION IS STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
 <div class="chapter-nav">
 </div>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — M 01: THE LOOP AS ARCHITECTURE — D DORIAN</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — M 01: THE LOOP AS ARCHITECTURE — D DORIAN"></site-footer>
 
 </body>
 </html>

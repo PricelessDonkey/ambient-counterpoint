@@ -8,29 +8,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 11 — AMBIENT COUNTERPOINT — LOOPS ◇ PHASE ◇ DRIFT ◇ SUBTRACTION ◇ LOOPS ◇ PHASE ◇ DRIFT ◇ SUBTRACTION ◇ LOOPS ◇ PHASE ◇ DRIFT</span></div>
+<site-banner>CHAPTER 11 — AMBIENT COUNTERPOINT — LOOPS ◇ PHASE ◇ DRIFT ◇ SUBTRACTION ◇ LOOPS ◇ PHASE ◇ DRIFT ◇ SUBTRACTION ◇ LOOPS ◇ PHASE ◇ DRIFT</site-banner>
 
-<div class="hero">
-  <h1><span>From Bach to Ambient</span></h1>
-  <p class="subtitle">Every technique from chapters 1–10, dissolved into loops, phase, and space.</p>
-</div>
+<site-hero>
+  <span slot="title">From Bach to Ambient</span>
+  <span slot="subtitle">Every technique from chapters 1–10, dissolved into loops, phase, and space.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Bach's counterpoint and Steve Reich's phase music solve the same problem differently: how do two voices create something greater than their sum? In Bach, voices are shaped by will — leading tones resolve, suspensions release, cadences arrive on schedule. In ambient/phase music, structure emerges from systems — two loops of different lengths drift apart and realign, one note changes per cycle, layers subtract until silence. This chapter translates everything you've built into the looping, evolving, stripping-back language of ambient production.</div></div>
+<intro-box>Bach's counterpoint and Steve Reich's phase music solve the same problem differently: how do two voices create something greater than their sum? In Bach, voices are shaped by will — leading tones resolve, suspensions release, cadences arrive on schedule. In ambient/phase music, structure emerges from systems — two loops of different lengths drift apart and realign, one note changes per cycle, layers subtract until silence. This chapter translates everything you've built into the looping, evolving, stripping-back language of ambient production.</intro-box>
 
 <div class="content">
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">55</div>
-      <div class="card-title">Voice-Leading Inside Arpeggios</div>
-    </div>
-    <div class="card-body">
-      <p>An arpeggio isn't just a broken chord — it's two melodies interleaved. Take any 8-note arpeggio and split it: <span class="key">odd notes (1, 3, 5, 7) = voice 1</span>, <span class="key">even notes (2, 4, 6, 8) = voice 2</span>. Each sub-melody should make sense on its own — good contour, manageable leaps, a sense of going somewhere.</p>
+  <content-card number="55" title="Voice-Leading Inside Arpeggios">
+<p>An arpeggio isn't just a broken chord — it's two melodies interleaved. Take any 8-note arpeggio and split it: <span class="key">odd notes (1, 3, 5, 7) = voice 1</span>, <span class="key">even notes (2, 4, 6, 8) = voice 2</span>. Each sub-melody should make sense on its own — good contour, manageable leaps, a sense of going somewhere.</p>
       <p>Before sequencing any arpeggio, extract each sub-melody and listen to it alone. If voice 1 sounds melodic and voice 2 sounds melodic, the arpeggio has built-in counterpoint. If one voice is jagged noise, reorder the notes until both halves sing.</p>
 
       <div class="diagram-wrap">
@@ -103,16 +99,10 @@
         <div class="sub-title">What Good Sub-Melodies Look Like</div>
         <p>Voice 1 here (D–F–G–E) arcs up a third then steps back down — smooth, singable. Voice 2 (E–A–F–D) leaps a fourth upward then descends by thirds — energetic entry, stable landing. Both are melodically coherent. The arpeggio carries hidden counterpoint at no extra cost.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">56</div>
-      <div class="card-title">One Note Per Cycle</div>
-    </div>
-    <div class="card-body">
-      <p>The most important discipline in loop-based ambient music: <span class="key">change exactly one pitch every 2–4 repetitions</span>. Not two. Not a chord. One. The listener's ear locks onto the pattern first; a single change registers as a meaningful event rather than a reset.</p>
+  <content-card number="56" color="green" title="One Note Per Cycle">
+<p>The most important discipline in loop-based ambient music: <span class="key">change exactly one pitch every 2–4 repetitions</span>. Not two. Not a chord. One. The listener's ear locks onto the pattern first; a single change registers as a meaningful event rather than a reset.</p>
       <p>Alternate which voice evolves. If you changed a note in the top arpeggio on rep 3, change a note in the bottom arpeggio on rep 5. This creates the sensation that the loops are having a slow conversation — each responding to the other's previous move.</p>
 
       <div class="diagram-wrap">
@@ -204,16 +194,10 @@
         <div class="sub-title">Which Note to Change</div>
         <p>Prefer changes to <span class="key">interior notes</span> — the ear anchors to the first and last positions in the loop. Changing note 1 or note 8 signals a major structural shift; save those for turning points. Interior changes (notes 3–6) feel like the music breathing and evolving within a stable frame. Changed notes don't have to stay in the scale: a chromatic note like Eb (the Neapolitan second) or C# (the leading tone) used once can shift the harmonic color of the whole loop without breaking the key center.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">57</div>
-      <div class="card-title">Phase Displacement</div>
-    </div>
-    <div class="card-body">
-      <p>Run <span class="key">two loops of different lengths</span> simultaneously — say 7 and 8 notes. They start together. But because one is shorter, it completes its cycle first and restarts slightly ahead of the other. After every cycle, they drift further apart. After LCM(7, 8) = 56 notes, they re-align and the whole sequence begins again.</p>
+  <content-card number="57" color="purple" title="Phase Displacement">
+<p>Run <span class="key">two loops of different lengths</span> simultaneously — say 7 and 8 notes. They start together. But because one is shorter, it completes its cycle first and restarts slightly ahead of the other. After every cycle, they drift further apart. After LCM(7, 8) = 56 notes, they re-align and the whole sequence begins again.</p>
       <p>The evolving vertical combinations between the two loops are the composition. You wrote two simple patterns; the system generates the harmonic complexity. This is Reich's basic insight: structure through systematic misalignment.</p>
 
       <div class="diagram-wrap">
@@ -291,16 +275,10 @@
         <div class="sub-title">Setting It Up in Ableton</div>
         <p>Clip 1: 7 eighth notes, clip set to loop. Clip 2: 8 eighth notes on a separate track, also looping. Launch both simultaneously. The drift is automatic — no automation needed. Try 5 vs 7 (LCM=35, faster cycling) or 6 vs 7 (LCM=42) for different rates of harmonic change. Smaller LCMs cycle faster and feel more restless; larger ones are meditative.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">58</div>
-      <div class="card-title">Velocity as a Third Voice</div>
-    </div>
-    <div class="card-body">
-      <p>In Bach, three voices means three pitch lines. In loop music, you can run a <span class="key">velocity accent pattern</span> that cycles independently of the pitch pattern — creating a third layer of rhythmic movement without adding any notes.</p>
+  <content-card number="58" color="red" title="Velocity as a Third Voice">
+<p>In Bach, three voices means three pitch lines. In loop music, you can run a <span class="key">velocity accent pattern</span> that cycles independently of the pitch pattern — creating a third layer of rhythmic movement without adding any notes.</p>
       <p>The pitch loop has length N; the velocity pattern has length M. When N ≠ M, the accents fall on different notes each cycle. The composition shifts emphasis constantly without the pitch content ever changing.</p>
 
       <div class="diagram-wrap">
@@ -370,16 +348,10 @@
         <div class="sub-title">In Ableton</div>
         <p>Draw your 8 notes at uniform velocity. Then go note by note and enter a 5-note velocity pattern: 100, 55, 70, 45, 85, repeating. Note 6 gets the same velocity as note 1 (100). In a standard clip this pattern is fixed — it repeats identically each loop. For true independent cycling (where the accent falls on a different pitch each repetition), you need to write a longer clip equal to the LCM of the two lengths: here, 40 notes (LCM of 8 and 5), with the full expanded velocity sequence written out, or use a cycling velocity MIDI effect. Either way, the interplay of accent pattern against pitch loop creates forward motion that isn't in the pitches themselves.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">59</div>
-      <div class="card-title">The Subtraction Arc</div>
-    </div>
-    <div class="card-body">
-      <p>Most music builds toward a peak by adding layers, raising density, arriving at a climax. Ambient music often inverts this: <span class="key">begin in full bloom and subtract</span>, letting the music dissolve. The endpoint is silence — or near-silence — not a triumphant chord.</p>
+  <content-card number="59" color="orange" title="The Subtraction Arc">
+<p>Most music builds toward a peak by adding layers, raising density, arriving at a climax. Ambient music often inverts this: <span class="key">begin in full bloom and subtract</span>, letting the music dissolve. The endpoint is silence — or near-silence — not a triumphant chord.</p>
       <p>The ghost of a removed voice is as important as what remains. Your ear keeps expecting the missing line for several bars after it disappears. This is why subtraction feels intimate — it activates the listener's memory rather than presenting everything at once.</p>
 
       <div class="diagram-wrap">
@@ -433,16 +405,10 @@
         <div class="sub-title">Ghost Voices</div>
         <p>When Loop B disappears at bar 27, your ear keeps expecting it for 2–4 bars afterward. Build your subtraction sequence so that the <span class="key">most recently introduced voice is the first to leave</span>. Listeners mourn what they've just met. The last thing standing should be the oldest — the drone, the original motif, the thing that was there from bar 1.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">60</div>
-      <div class="card-title">The Leading Tone as Emotional Climax</div>
-    </div>
-    <div class="card-body">
-      <p>D natural minor (Aeolian) uses C♮ as its seventh — a whole step below the tonic. No magnetic pull, no urgency. This flatness is exactly what ambient music lives in. Your loops spend the whole piece in this floating territory.</p>
+  <content-card number="60" title="The Leading Tone as Emotional Climax">
+<p>D natural minor (Aeolian) uses C♮ as its seventh — a whole step below the tonic. No magnetic pull, no urgency. This flatness is exactly what ambient music lives in. Your loops spend the whole piece in this floating territory.</p>
       <p>C# is the raised seventh — the leading tone, a half step below D, with powerful upward pull. In classical harmony it's always present in the dominant chord. In ambient music, <span class="key">save it for one single peak moment</span>. When it appears after minutes of natural minor, the harmonic tension is enormous — disproportionate to a single altered note.</p>
 
       <div class="sub-section">
@@ -453,16 +419,10 @@
       <div class="principle-box">
         The leading tone is a one-use weapon. If C# appears in bar 4, it becomes furniture. If C# appears exactly once — at bar 20, on the highest note, inside the fullest texture — it is an event. Guard it accordingly.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">61</div>
-      <div class="card-title">Pedal Point as Drone</div>
-    </div>
-    <div class="card-body">
-      <p>A <span class="key">pedal point</span> is a sustained note — usually in the bass — held steady while harmonies change above it. In Bach it appears at climaxes and cadences: the bass locks onto the dominant or tonic and refuses to move. In ambient music, the pedal is the foundation of the entire piece.</p>
+  <content-card number="61" color="green" title="Pedal Point as Drone">
+<p>A <span class="key">pedal point</span> is a sustained note — usually in the bass — held steady while harmonies change above it. In Bach it appears at climaxes and cadences: the bass locks onto the dominant or tonic and refuses to move. In ambient music, the pedal is the foundation of the entire piece.</p>
       <p>The tension of a pedal comes from harmonic friction. Upper voices move through chords that don't all contain the bass note. When the bass holds D while the upper voice traces F–A–C–Bb–G–D, it passes through consonances and dissonances and back. The drone transforms that journey into something meditative rather than tense — the bass says "we're always home," while the upper voices wander.</p>
 
       <div class="diagram-wrap">
@@ -531,16 +491,10 @@
         <div class="sub-title">Friction Is the Texture</div>
         <p>Against a D drone: D–F–A (D minor chord tones) are fully consonant. E creates a dissonant second. G and C create a fourth and seventh — floating, unresolved. Bb creates a warm minor sixth. <span class="key">All of these are usable in ambient music</span> — none need to resolve. The drone holds the tonal center while the upper voice paints varying degrees of tension above it. The unresolved tensions don't demand resolution; they define color.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — The Ambient Transformation</div>
-    </div>
-    <div class="card-body">
-      <p>Open your Ch 10 session (16 bars, 5 tracks — full counterpoint with texture dropout, register spread, and harmonic freeze). Today you dissolve it into ambient loops. You'll end with a 32-bar piece that moves from dense looping counterpoint to near-silence through systematic subtraction.</p>
+  <content-card number="✦" color="orange" title="Build It — The Ambient Transformation">
+<p>Open your Ch 10 session (16 bars, 5 tracks — full counterpoint with texture dropout, register spread, and harmonic freeze). Today you dissolve it into ambient loops. You'll end with a 32-bar piece that moves from dense looping counterpoint to near-silence through systematic subtraction.</p>
 
       <div class="sub-section">
         <div class="sub-title">Step 1 — Extract the Arpeggio Loop (Track 6)</div>
@@ -686,26 +640,20 @@
           <line x1="600" y1="43" x2="600" y2="163" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="3 2"/>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">AMBIENT COUNTERPOINT ◇ BACH × SINEPHRO × REICH ◇ LOOPS ◇ PHASE ◇ DRIFT ◇ SUBTRACTION ◇ AMBIENT COUNTERPOINT ◇ BACH × SINEPHRO × REICH ◇</span></div>
+<site-banner>AMBIENT COUNTERPOINT ◇ BACH × SINEPHRO × REICH ◇ LOOPS ◇ PHASE ◇ DRIFT ◇ SUBTRACTION ◇ AMBIENT COUNTERPOINT ◇ BACH × SINEPHRO × REICH ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch10-space-breathing.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 10 — Space and Breathing</span>
-  </a>
+<chapter-nav
+  prev-href="ch10-space-breathing.html"
+  prev-title="Ch 10 — Space and Breathing"
+  next-href="ch12-canons-rounds.html"
+  next-title="Ch 12 — Canons &amp; Rounds">
+</chapter-nav>
 
-  <a class="chapter-nav-item chapter-nav-next" href="ch12-canons-rounds.html">
-    <span class="chapter-nav-label">Next →</span>
-    <span class="chapter-nav-title">Ch 12 — Canons &amp; Rounds</span>
-  </a>
-</div>
-
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 11: FROM BACH TO AMBIENT — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 11: FROM BACH TO AMBIENT — D MINOR"></site-footer>
 
 </body>
 </html>

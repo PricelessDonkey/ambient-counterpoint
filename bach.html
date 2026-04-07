@@ -8,140 +8,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  /* ── Series index — shared with landing page style ── */
-  .hero {
-    padding-bottom: 10px;
-  }
-
-  .section-label {
-    max-width: 900px;
-    margin: 40px auto 0;
-    padding: 0 40px;
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-  }
-
-  .page-grid {
-    max-width: 900px;
-    margin: 16px auto 0;
-    padding: 0 40px 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-  }
-
-  .page-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    max-width: calc(50% - 14px);
-  }
-
-  .page-card {
-    border: 2px solid var(--ink);
-    background: white;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 6px 6px 0 var(--ink);
-    transition: transform 0.15s ease;
-  }
-  .page-card:hover {
-    transform: translate(-2px, -2px);
-  }
-
-  .page-card-header {
-    display: flex;
-    align-items: stretch;
-    border-bottom: 2px solid var(--ink);
-  }
-  .page-card-num {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 28px;
-    background: var(--blue-light);
-    color: var(--blue);
-    min-width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 2px solid var(--ink);
-    flex-shrink: 0;
-  }
-  .page-card-title {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding: 16px 18px;
-    display: flex;
-    align-items: center;
-    line-height: 1.4;
-  }
-
-  .page-card-body {
-    padding: 18px 20px 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 14px;
-  }
-  .page-card-desc {
-    color: var(--ink-soft);
-    font-size: 15px;
-    line-height: 1.6;
-    margin: 0;
-  }
-  .page-card-link {
-    font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--blue);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .page-card-link::after {
-    content: '→';
-  }
-
-  @media (max-width: 600px) {
-    .section-label { padding: 0 20px; }
-    .page-grid {
-      grid-template-columns: 1fr;
-      padding: 0 20px 60px;
-      gap: 24px;
-    }
-    .page-card:last-child:nth-child(odd) {
-      grid-column: auto;
-      max-width: none;
-    }
-    .page-card-num { min-width: 56px; font-size: 22px; }
-    .page-card-title { font-size: 12px; padding: 14px 16px; }
-  }
-</style>
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Ambient Counterpoint</a></nav>
+<site-nav href="index.html" label="Ambient Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE LEADING &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE ARCHITECTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Bach Counterpoint</span></h1>
-  <p class="subtitle">A working reference for voice leading, phrase architecture, and harmonic thinking drawn from Bach.</p>
-</div>
+<site-hero compact>
+  <span slot="title">Bach Counterpoint</span>
+  <span slot="subtitle">A working reference for voice leading, phrase architecture, and harmonic thinking drawn from Bach.</span>
+</site-hero>
 
 <div class="section-label">Chapters</div>
 
@@ -281,15 +159,9 @@
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × VOICE LEADING × D MINOR &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — BACH COUNTERPOINT SERIES — D MINOR</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — BACH COUNTERPOINT SERIES — D MINOR"></site-footer>
 
 </body>
 </html>

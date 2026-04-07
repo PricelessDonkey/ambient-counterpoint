@@ -8,6 +8,8 @@ You are reviewing a chapter of the Ambient Counterpoint music theory site at `/U
 
 CLAUDE.md is already loaded. Use it for design conventions if needed, but this skill is about *content correctness*, not style.
 
+**Note on page structure:** Pages have been migrated to Web Components. Structural boilerplate (`<site-nav>`, `<site-banner>`, `<site-hero>`, `<intro-box>`, `<chapter-nav>`, `<site-footer>`, `<content-card>`) is rendered by `components/index.js`. The HTML file contains component tags with attributes/slots rather than raw `<div>` boilerplate — this is correct and expected. Review the *content* inside components, not the component tags themselves.
+
 ## Step 0 — Locate the file
 
 Resolve the argument to a filename:

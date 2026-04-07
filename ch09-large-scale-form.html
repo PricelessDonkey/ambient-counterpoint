@@ -8,29 +8,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 09 — LARGE-SCALE FORM — RITORNELLO — FUGUE — EPISODES — NESTING — ARCH FORM ◇ CHAPTER 09 — LARGE-SCALE FORM — RITORNELLO — FUGUE — EPISODES — NESTING — ARCH FORM ◇ CHAPTER 09 — LARGE-SCALE FORM ◇</span></div>
+<site-banner>CHAPTER 09 — LARGE-SCALE FORM — RITORNELLO — FUGUE — EPISODES — NESTING — ARCH FORM ◇ CHAPTER 09 — LARGE-SCALE FORM — RITORNELLO — FUGUE — EPISODES — NESTING — ARCH FORM ◇ CHAPTER 09 — LARGE-SCALE FORM ◇</site-banner>
 
-<div class="hero">
-  <h1><span>Large-Scale Form</span></h1>
-  <p class="subtitle">How sentences chain into movements — and how the same seam-free logic scales from four notes to four minutes.</p>
-</div>
+<site-hero>
+  <span slot="title">Large-Scale Form</span>
+  <span slot="subtitle">How sentences chain into movements — and how the same seam-free logic scales from four notes to four minutes.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Bach's music feels inevitable because its architecture works at every zoom level. A four-note motif obeys the same handoff logic as a multi-section fugue. This chapter maps the largest structural containers: ritornello form, fugue exposition, episodes, and arch form — then shows how the same nesting principle connects them all from motif to movement.</div></div>
+<intro-box>Bach's music feels inevitable because its architecture works at every zoom level. A four-note motif obeys the same handoff logic as a multi-section fugue. This chapter maps the largest structural containers: ritornello form, fugue exposition, episodes, and arch form — then shows how the same nesting principle connects them all from motif to movement.</intro-box>
 
 <div class="content">
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">43</div>
-      <div class="card-title">Ritornello</div>
-    </div>
-    <div class="card-body">
-      <p>A <span class="key">ritornello</span> is a recurring refrain — a memorable passage that returns between contrasting episodes, each time in a new key. The word means "little return" in Italian. Bach uses it to give listeners a structural anchor: no matter how far the music travels harmonically, the refrain brings them home to familiar material.</p>
+  <content-card number="43" title="Ritornello">
+<p>A <span class="key">ritornello</span> is a recurring refrain — a memorable passage that returns between contrasting episodes, each time in a new key. The word means "little return" in Italian. Bach uses it to give listeners a structural anchor: no matter how far the music travels harmonically, the refrain brings them home to familiar material.</p>
       <p>The pattern: <strong>Rit-A (tonic) → Episode → Rit-A (relative major) → Episode → Rit-A (dominant) → Episode → Rit-A (tonic, final)</strong>. The refrain material is fixed — the key center rotates while the shape stays constant. In practice Bach often presents only an excerpt of the refrain at interior returns rather than the full passage, but the recognizable opening gesture is always there. Listeners locate themselves by shape, not by length.</p>
       <p>For ambient work, a ritornello can be a repeating drone pad, a looped motif, or an unchanging rhythmic texture that anchors a long-form piece. Episodes become zones of evolution; the ritornello is the moment of grounding — arrival without finality, until the last return.</p>
       <div class="diagram-wrap">
@@ -76,16 +72,10 @@
         <span class="idiom-name">Ambient application</span>
         Design your ritornello first — it's the motif or texture that anchors every return. Episodes are where evolution happens; the ritornello is where listeners exhale.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">44</div>
-      <div class="card-title">Fugue Exposition</div>
-    </div>
-    <div class="card-body">
-      <p>A <span class="key">fugue exposition</span> is the opening section where Bach introduces each voice in turn, building texture gradually from silence to full polyphony. Voice 1 states the <span class="key">subject</span> — the main melodic idea. Once it finishes, Voice 2 enters with the <span class="key">answer</span> — the subject transposed up a fifth — while Voice 1 continues with a countersubject. Voice 3 then enters with the subject again while both upper voices continue weaving.</p>
+  <content-card number="44" color="green" title="Fugue Exposition">
+<p>A <span class="key">fugue exposition</span> is the opening section where Bach introduces each voice in turn, building texture gradually from silence to full polyphony. Voice 1 states the <span class="key">subject</span> — the main melodic idea. Once it finishes, Voice 2 enters with the <span class="key">answer</span> — the subject transposed up a fifth — while Voice 1 continues with a countersubject. Voice 3 then enters with the subject again while both upper voices continue weaving.</p>
       <p>The effect is cinematic: each voice addition raises the density. The exposition ends when all voices have entered. What follows is the first episode — the fugue's development zone.</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg">
@@ -138,16 +128,10 @@
         <div class="sub-title">Subject vs Answer</div>
         <p>The <span class="key">subject</span> is the main theme in the tonic key. The <span class="key">answer</span> is the same theme a fifth up — in D minor, a fifth above D is A, so the answer arrives in A minor (the minor dominant). Sometimes the answer is adjusted by a semitone to preserve tonal stability — this adjusted version is called a <span class="key">tonal answer</span>, as opposed to a <span class="key">real answer</span> that transposes exactly. The alternation tonic → dominant → tonic forms the exposition's harmonic arc.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">45</div>
-      <div class="card-title">Episodes</div>
-    </div>
-    <div class="card-body">
-      <p><span class="key">Episodes</span> are the connective tissue between subject entries in a fugue, or between ritornello passages in a concerto. They contain no statement of the main subject — instead they spin freely, typically using <span class="key">sequential patterns</span> (a motif repeated, transposing down or up by step) to carry momentum while traveling through key areas.</p>
+  <content-card number="45" color="orange" title="Episodes">
+<p><span class="key">Episodes</span> are the connective tissue between subject entries in a fugue, or between ritornello passages in a concerto. They contain no statement of the main subject — instead they spin freely, typically using <span class="key">sequential patterns</span> (a motif repeated, transposing down or up by step) to carry momentum while traveling through key areas.</p>
       <p>In a Baroque fugue, the episode functions like the Fortspinnung of a sentence: it extracts a small fragment from the subject or countersubject and sequences it, modulating toward the key where the next subject entry will arrive. The episode is both transition and development — it doesn't state the main idea, but evolves it.</p>
       <div class="sub-section">
         <div class="sub-title">Episode anatomy</div>
@@ -157,16 +141,10 @@
         <span class="idiom-name">Ambient equivalent</span>
         An episode is a texture that evolves between anchor points. Use filter sweeps, rhythmic variation, or gradual pitch drift to create the sense of "traveling" — then snap back to the ritornello for arrival.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">46</div>
-      <div class="card-title">The Nesting Principle</div>
-    </div>
-    <div class="card-body">
-      <p>Bach's music is <span class="key">self-similar</span> at every structural level. The same logic — generate, develop, resolve; statement, contrast, return — operates whether you're looking at a two-bar phrase or a ten-minute movement. This is the <span class="key">nesting principle</span>: smaller units are built from the same handoff logic as larger ones, and each level is contained within the next.</p>
+  <content-card number="46" color="purple" title="The Nesting Principle">
+<p>Bach's music is <span class="key">self-similar</span> at every structural level. The same logic — generate, develop, resolve; statement, contrast, return — operates whether you're looking at a two-bar phrase or a ten-minute movement. This is the <span class="key">nesting principle</span>: smaller units are built from the same handoff logic as larger ones, and each level is contained within the next.</p>
       <p>Motif → Phrase → Sentence → Movement. At each zoom level: a unit begins, develops, and resolves before handing off to the next. Nothing starts until the previous unit completes; nothing ends without preparing what follows.</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 168" xmlns="http://www.w3.org/2000/svg">
@@ -201,16 +179,10 @@
       <div class="principle-box">
         The nesting principle is why you can learn Bach's techniques at the phrase level and apply them at the movement level. The rules are the same — only the timescale changes.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">47</div>
-      <div class="card-title">Arch Form / Palindrome</div>
-    </div>
-    <div class="card-body">
-      <p><span class="key">Arch form</span> (ABCBA) is a palindromic structure where the second half mirrors the first. A → B → C (climax) → B → A. The ending is not just a cadence — it's a full structural echo of the opening, heard now with the memory of the entire journey. The return feels earned rather than imposed.</p>
+  <content-card number="47" color="red" title="Arch Form / Palindrome">
+<p><span class="key">Arch form</span> (ABCBA) is a palindromic structure where the second half mirrors the first. A → B → C (climax) → B → A. The ending is not just a cadence — it's a full structural echo of the opening, heard now with the memory of the entire journey. The return feels earned rather than imposed.</p>
       <p>Bach uses arch structures at multiple levels — individual movements and across multi-movement works. In ambient music, arch form maps perfectly to long-form composition: build texture and harmonic tension toward a peak at C, then systematically subtract back to the opening state. The arc is felt over minutes, not bars.</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 145" xmlns="http://www.w3.org/2000/svg">
@@ -249,16 +221,10 @@
         <div class="sub-title">Why arch form resonates in ambient music</div>
         <p>Works by Arvo Pärt, Stars of the Lid, and Floating Points often use arch-like structures — not through explicit ABCBA design, but through intuitive tension arcs that peak and recede. Learning to design this consciously gives you control over the emotional shape of a long-form piece: build deliberately, peak precisely, and return with intention rather than accident.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Map the Movement</div>
-    </div>
-    <div class="card-body">
-      <p>Open your Ch08 session (16 bars: the 8-bar sentence + 8-bar motivic development episode). You've been building the micro-scale. Now plan the macro.</p>
+  <content-card number="✦" color="orange" title="Build It — Map the Movement">
+<p>Open your Ch08 session (16 bars: the 8-bar sentence + 8-bar motivic development episode). You've been building the micro-scale. Now plan the macro.</p>
       <p><strong>Don't write new notes yet.</strong> Create a structural map — a text document, a grid, or notes in Ableton's arrangement view — for a 3-minute ritornello piece built from your existing material:</p>
       <div class="sub-section">
         <div class="sub-title">The seven-section map</div>
@@ -348,26 +314,20 @@
           <text x="394" y="114" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bar height = texture density — tonal arch: D min → F maj → A min → D min</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">RITORNELLO ◇ FUGUE EXPOSITION ◇ EPISODES ◇ NESTING PRINCIPLE ◇ ARCH FORM ◇ RITORNELLO ◇ FUGUE EXPOSITION ◇ EPISODES ◇ NESTING PRINCIPLE ◇ ARCH FORM ◇</span></div>
+<site-banner>RITORNELLO ◇ FUGUE EXPOSITION ◇ EPISODES ◇ NESTING PRINCIPLE ◇ ARCH FORM ◇ RITORNELLO ◇ FUGUE EXPOSITION ◇ EPISODES ◇ NESTING PRINCIPLE ◇ ARCH FORM ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch08-motivic-development.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 08 — Motivic Development</span>
-  </a>
+<chapter-nav
+  prev-href="ch08-motivic-development.html"
+  prev-title="Ch 08 — Motivic Development"
+  next-href="ch10-space-breathing.html"
+  next-title="Ch 10 — Space and Breathing">
+</chapter-nav>
 
-  <a class="chapter-nav-item chapter-nav-next" href="ch10-space-breathing.html">
-    <span class="chapter-nav-label">Next →</span>
-    <span class="chapter-nav-title">Ch 10 — Space and Breathing</span>
-  </a>
-</div>
-
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 09: LARGE-SCALE FORM — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 09: LARGE-SCALE FORM — D MINOR"></site-footer>
 
 </body>
 </html>

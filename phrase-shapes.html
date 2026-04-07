@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 <style>
 /* ── Visual diagrams ── */
   .diagram-wrap {
@@ -145,35 +146,22 @@
 </head>
 <body>
 
-<nav class="site-nav"><a href="ch01-single-line.html">A Single Line</a></nav>
+<site-nav href="ch01-single-line.html" label="A Single Line"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHRASE SHAPES &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH MELODIC CONTOURS &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Bach Phrase Shapes</span><br>Visual Reference</h1>
-  <p class="subtitle">Seven melodic contour patterns rooted in Bach's voice-leading logic. Each one is a reusable building block for composing melodies that sound inevitable.</p>
-</div>
+<site-hero>
+  <span slot="title">Bach Phrase Shapes<br>Visual Reference</span>
+  <span slot="subtitle">Seven melodic contour patterns rooted in Bach's voice-leading logic. Each one is a reusable building block for composing melodies that sound inevitable.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    <strong>The core pattern:</strong> stepwise ascent then drop — earn the leap by stepping into it. All seven shapes below are variations and extensions of this fundamental principle. <strong>Steps</strong> build connection; <strong>leaps</strong> create drama. The ratio between them is what gives a melody its character.
-  </div>
-</div>
+<intro-box><strong>The core pattern:</strong> stepwise ascent then drop — earn the leap by stepping into it. All seven shapes below are variations and extensions of this fundamental principle. <strong>Steps</strong> build connection; <strong>leaps</strong> create drama. The ratio between them is what gives a melody its character.</intro-box>
 
 <div class="content">
 
   <!-- 1. STEP UP, LEAP DOWN (original) -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">01</div>
-      <div class="card-title">Step Up, Leap Down</div>
-    </div>
-    <div class="card-body">
-      <p>The seed motif. Walk up by <span class="key">stepwise motion</span> (seconds), then leap down a fourth or fifth. The steps build expectation, the leap releases it. Three steps earns one leap.</p>
+  <content-card number="01" title="Step Up, Leap Down">
+<p>The seed motif. Walk up by <span class="key">stepwise motion</span> (seconds), then leap down a fourth or fifth. The steps build expectation, the leap releases it. Three steps earns one leap.</p>
 
       <div class="diagram-wrap">
         <!-- D5=high, E5=higher, F5=highest, A4=low -->
@@ -212,17 +200,11 @@
       <div class="note-sequence">
         <span class="step">D → E → F</span> &nbsp;then&nbsp; <span class="leap">↓ A</span>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- 2. LEAP UP, STEP DOWN -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">02</div>
-      <div class="card-title">Leap Up, Step Down</div>
-    </div>
-    <div class="card-body">
-      <p>The reverse. <span class="key">Jump up</span> a fifth or sixth to grab attention, then <span class="key">walk back down</span> by steps to resolve the tension. The leap creates drama, the descent restores smoothness. Bach uses this to cover wide range without losing lyrical quality.</p>
+  <content-card number="02" title="Leap Up, Step Down">
+<p>The reverse. <span class="key">Jump up</span> a fifth or sixth to grab attention, then <span class="key">walk back down</span> by steps to resolve the tension. The leap creates drama, the descent restores smoothness. Bach uses this to cover wide range without losing lyrical quality.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg">
@@ -260,17 +242,11 @@
       <div class="note-sequence">
         <span class="leap">A4 → F5 ↑</span> &nbsp;then&nbsp; <span class="step">E5 → D5 → C5</span>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- 3. THE ARCH -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">03</div>
-      <div class="card-title">The Arch</div>
-    </div>
-    <div class="card-body">
-      <p>Step up to a peak, then step back down <span class="key">past where you started</span>. The symmetry gives it completeness, and dropping below the origin creates forward momentum into the next phrase. The peak is the emotional center — everything builds toward it and falls away.</p>
+  <content-card number="03" title="The Arch">
+<p>Step up to a peak, then step back down <span class="key">past where you started</span>. The symmetry gives it completeness, and dropping below the origin creates forward momentum into the next phrase. The peak is the emotional center — everything builds toward it and falls away.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
@@ -313,17 +289,11 @@
       <div class="note-sequence">
         <span class="step">D → E → F</span> <span style="color:#ffd200;font-weight:700;">★ peak</span> <span class="step">→ E → D → C</span> <span style="color:var(--ink-soft);font-size:11px;">(below origin)</span>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- 4. IMPLIED POLYPHONY ZIGZAG -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">04</div>
-      <div class="card-title">Implied Polyphony</div>
-    </div>
-    <div class="card-body">
-      <p>Alternate between high and low registers. Your ear separates the stream into <span class="key">two independent lines</span> — a rising upper voice and a falling lower voice. One melody becomes two. This is the core of Bach's cello suite writing.</p>
+  <content-card number="04" title="Implied Polyphony">
+<p>Alternate between high and low registers. Your ear separates the stream into <span class="key">two independent lines</span> — a rising upper voice and a falling lower voice. One melody becomes two. This is the core of Bach's cello suite writing.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
@@ -367,17 +337,11 @@
       <div class="note-sequence" style="margin-top:6px;">
         D5 → A3 → E5 → G3 → F5 → F3
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- 5. THE CIRCLE -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">05</div>
-      <div class="card-title">The Circle</div>
-    </div>
-    <div class="card-body">
-      <p>Arpeggiate up through one chord, then <span class="key">step down</span> to the root of the next chord and arpeggiate up again. Each arpeggio "bloom" connects to the next by a smooth stepwise link. This is how Bach makes single lines <span class="key">imply full chord progressions</span>.</p>
+  <content-card number="05" title="The Circle">
+<p>Arpeggiate up through one chord, then <span class="key">step down</span> to the root of the next chord and arpeggiate up again. Each arpeggio "bloom" connects to the next by a smooth stepwise link. This is how Bach makes single lines <span class="key">imply full chord progressions</span>.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
@@ -423,17 +387,11 @@
       <div class="note-sequence">
         <span class="step">D → F → A</span> &nbsp;<span class="leap">↓ G</span>&nbsp; <span class="step">→ B♭ → D</span> &nbsp; <span style="color:var(--ink-soft);font-size:11px;">(repeat for each chord)</span>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- 6. THE SIGH (Suspension) -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">06</div>
-      <div class="card-title">The Sigh</div>
-    </div>
-    <div class="card-body">
-      <p>Hold a note from one beat into the next where it becomes <span class="key">dissonant</span>, then drop by step to resolve. String several together descending and you get that weeping, inevitable Bach character. Each resolution becomes the next suspension.</p>
+  <content-card number="06" title="The Sigh">
+<p>Hold a note from one beat into the next where it becomes <span class="key">dissonant</span>, then drop by step to resolve. String several together descending and you get that weeping, inevitable Bach character. Each resolution becomes the next suspension.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
@@ -488,17 +446,11 @@
       <div class="note-sequence">
         hold → <span style="color:var(--red-accent);">clash</span> → <span class="step">resolve ↓</span> → hold → <span style="color:var(--red-accent);">clash</span> → <span class="step">resolve ↓</span> → …
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- 7. FORTSPINNUNG CHAIN -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">07</div>
-      <div class="card-title">Fortspinnung Chain</div>
-    </div>
-    <div class="card-body">
-      <p>Take the step-step-step-drop shape and use the <span class="key">landing note as the start</span> of the next iteration. Each phrase hands off to the next — nothing repeats exactly, but the shape recurs and the whole thing spirals forward. The tail becomes the head.</p>
+  <content-card number="07" title="Fortspinnung Chain">
+<p>Take the step-step-step-drop shape and use the <span class="key">landing note as the start</span> of the next iteration. Each phrase hands off to the next — nothing repeats exactly, but the shape recurs and the whole thing spirals forward. The tail becomes the head.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 190" xmlns="http://www.w3.org/2000/svg">
@@ -573,20 +525,13 @@
       <div class="principle-box">
         The landing note of each phrase becomes the launching note of the next. Nothing repeats exactly, but the contour recurs — the whole melody spirals forward with a sense of inevitability. This is the most directly useful extension of the step-step-step-drop shape.
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp; EARN THE LEAP BY STEPPING INTO IT &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>VISUAL REFERENCE — BACH PHRASE SHAPES — D MINOR</p>
-</div>
+<site-footer text="VISUAL REFERENCE — BACH PHRASE SHAPES — D MINOR"></site-footer>
 
 </body>
 </html>

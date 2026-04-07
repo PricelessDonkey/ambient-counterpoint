@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M06 — Phase Shifting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Phase Shifting</span>
+  <span slot="subtitle">Two identical loops drifting out of sync: emergent melody from mechanical process.</span>
+</site-hero>
+
+<intro-box>Phase shifting is Reich's core discovery: when two identical loops play simultaneously and one is nudged slightly ahead, their combined onsets create rhythmic and harmonic patterns that neither loop contains alone. No additional composition required — the process generates the material.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="Two Loops, One Drifting">
+    <div class="sub-section">
+      <div class="sub-title">What phase shifting is</div>
+      <p>Take any repeating loop and copy it to a second track. Both tracks play the same notes. Now nudge one track slightly ahead — by a 16th note, an 8th note, a quarter note. The two identical loops begin to sound like something entirely new: rhythmic combinations and implied melodies that neither loop contains on its own.</p>
+      <p>Reich discovered this in the 1960s using tape loops: two recordings of the same speech fragment, one playing fractionally faster, gradually drifting out of alignment and back into it. The emergent patterns <em>were</em> the composition. This is the mechanism behind <span class="key">Piano Phase</span>, <span class="key">It's Gonna Rain</span>, and <span class="key">Come Out</span>.</p>
+      <p>Phase shifting is a rhythmic form of <span class="key">stretto</span> — the same material overlapping with itself at a time delay. For the Bach counterpart, see the stretto canon section in <a href="ch08-motivic-development.html">Ch 08 — Motivic Development</a> and the phase displacement discussion in <a href="ch11-ambient-counterpoint.html">Ch 11 — Ambient Counterpoint</a>.</p>
+    </div>
+  </content-card>
+
+  <content-card number="2" color="green" title="Gradual vs Stepped Phase">
+    <div class="sub-section">
+      <div class="sub-title">Tape phase: continuous drift</div>
+      <p>In Reich's original technique, phase was <span class="key">gradual</span>: two tape machines running at slightly different speeds. The loop drifted continuously through every possible alignment — from unison to maximum displacement and back. Every intermediate state was heard in sequence, over the course of minutes.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">DAW phase: stepped offsets</div>
+      <p>In a DAW you implement <span class="key">stepped phase</span>: nudge one clip forward by a specific grid increment (one 16th, one 8th, one quarter) and leave it there. You choose a specific alignment and compose with <em>that</em> interference pattern. This trades continuous evolution for precise, repeatable control.</p>
+      <p>The diagram below shows the D–F–G–A seed cell in two tracks. Loop B is shifted forward by one 16th note. Yellow zones mark where both loops play at the same time.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 148" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="offset-arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#e04848"/>
+          </marker>
+        </defs>
+
+        <!-- 8th note grid lines (every 40px from x=90) -->
+        <line x1="130" y1="18" x2="130" y2="105" class="grid-line"/>
+        <line x1="170" y1="18" x2="170" y2="105" class="grid-line"/>
+        <line x1="210" y1="18" x2="210" y2="105" class="grid-line"/>
+        <line x1="250" y1="18" x2="250" y2="105" class="grid-line"/>
+        <line x1="290" y1="18" x2="290" y2="105" class="grid-line"/>
+        <line x1="330" y1="18" x2="330" y2="105" class="grid-line"/>
+        <line x1="370" y1="18" x2="370" y2="105" class="grid-line"/>
+        <line x1="450" y1="18" x2="450" y2="105" class="grid-line"/>
+        <line x1="490" y1="18" x2="490" y2="105" class="grid-line"/>
+        <line x1="530" y1="18" x2="530" y2="105" class="grid-line"/>
+        <line x1="570" y1="18" x2="570" y2="105" class="grid-line"/>
+        <line x1="610" y1="18" x2="610" y2="105" class="grid-line"/>
+        <line x1="650" y1="18" x2="650" y2="105" class="grid-line"/>
+        <line x1="690" y1="18" x2="690" y2="105" class="grid-line"/>
+
+        <!-- Quarter note lines (stronger) -->
+        <line x1="170" y1="18" x2="170" y2="105" stroke="#b8b0a8" stroke-width="1"/>
+        <line x1="250" y1="18" x2="250" y2="105" stroke="#b8b0a8" stroke-width="1"/>
+        <line x1="330" y1="18" x2="330" y2="105" stroke="#b8b0a8" stroke-width="1"/>
+        <line x1="490" y1="18" x2="490" y2="105" stroke="#b8b0a8" stroke-width="1"/>
+        <line x1="570" y1="18" x2="570" y2="105" stroke="#b8b0a8" stroke-width="1"/>
+        <line x1="650" y1="18" x2="650" y2="105" stroke="#b8b0a8" stroke-width="1"/>
+
+        <!-- Bar lines -->
+        <line x1="90" y1="14" x2="90" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="410" y1="14" x2="410" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="730" y1="14" x2="730" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Yellow overlap zones (spans both rows, at each overlapping pair) -->
+        <!-- A-D4 (90-128) & B-D4 (110-148): overlap x=110-128 -->
+        <rect x="110" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="150" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="190" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="230" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="430" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="470" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="510" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+        <rect x="550" y="26" width="18" height="58" fill="#ffd200" opacity="0.3" rx="1"/>
+
+        <!-- Loop A notes (blue, 8th notes: 16th positions 0,2,4,6 → x=90,130,170,210) -->
+        <rect x="90"  y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="130" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="170" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="210" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="410" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="450" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="490" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+        <rect x="530" y="28" width="38" height="18" rx="2" fill="#3b6fd4"/>
+
+        <!-- Loop B notes (green, shifted 1 sixteenth = 20px → x=110,150,190,230) -->
+        <rect x="110" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="150" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="190" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="230" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="430" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="470" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="510" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+        <rect x="550" y="66" width="38" height="18" rx="2" fill="#4a9e6e"/>
+
+        <!-- Note name labels above Loop A (bar 1) -->
+        <text x="109" y="24" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">D</text>
+        <text x="149" y="24" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">F</text>
+        <text x="189" y="24" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">G</text>
+        <text x="229" y="24" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">A</text>
+
+        <!-- Offset indicator arrow: A's D4 start (x=90) → B's D4 start (x=110) -->
+        <line x1="90" y1="15" x2="108" y2="15" stroke="#e04848" stroke-width="1.5" marker-end="url(#offset-arr)"/>
+        <text x="99" y="11" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">1/16</text>
+
+        <!-- Row labels -->
+        <text x="14" y="41" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" font-weight="700">A</text>
+        <text x="14" y="79" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" font-weight="700">B</text>
+
+        <!-- Bar labels -->
+        <text x="250" y="108" font-family="Space Mono,monospace" font-size="10" fill="#9f9891" text-anchor="middle">bar 1</text>
+        <text x="570" y="108" font-family="Space Mono,monospace" font-size="10" fill="#9f9891" text-anchor="middle">bar 2</text>
+
+        <!-- Beat markers -->
+        <text x="94"  y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">1</text>
+        <text x="174" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">2</text>
+        <text x="254" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">3</text>
+        <text x="334" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">4</text>
+        <text x="414" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">1</text>
+        <text x="494" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">2</text>
+        <text x="574" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">3</text>
+        <text x="654" y="120" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">4</text>
+
+        <!-- Legend -->
+        <rect x="90"  y="132" width="10" height="8" fill="#3b6fd4" rx="1"/>
+        <text x="104" y="140" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">Loop A</text>
+        <rect x="163" y="132" width="10" height="8" fill="#4a9e6e" rx="1"/>
+        <text x="177" y="140" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">Loop B (+1 sixteenth)</text>
+        <rect x="358" y="132" width="10" height="8" fill="#ffd200" rx="1"/>
+        <text x="372" y="140" font-family="Space Mono,monospace" font-size="9" fill="#9f9891">both playing simultaneously</text>
+      </svg>
+    </div>
+    <p>The yellow zones show where both loops play simultaneously. At offset 1 sixteenth, each note from Loop B begins halfway through the corresponding note in Loop A — the two voices stack for nearly half the note's duration before Loop B continues alone. Different offset amounts produce different vertical intervals.</p>
+  </content-card>
+
+  <content-card number="3" title="Reading the Interference Pattern">
+    <div class="sub-section">
+      <div class="sub-title">What you hear at each offset</div>
+      <p>Using the D–F–G–A seed cell (four 8th notes followed by four 8th rests, making a 1-bar loop), different offset amounts produce qualitatively different results. The table maps what happens at each offset from 0 to 4 8th notes:</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 198" xmlns="http://www.w3.org/2000/svg">
+        <!-- Header -->
+        <rect x="0" y="0" width="760" height="33" fill="#1a1a1a" rx="3"/>
+        <!-- Alternating row fills -->
+        <rect x="0" y="33"  width="760" height="33" fill="#f5f0ea"/>
+        <rect x="0" y="66"  width="760" height="33" fill="#ffffff"/>
+        <rect x="0" y="99"  width="760" height="33" fill="#f5f0ea"/>
+        <rect x="0" y="132" width="760" height="33" fill="#ffffff"/>
+        <!-- Highlighted row: offset 4 (emergent) -->
+        <rect x="0" y="165" width="760" height="33" fill="#fff3d6"/>
+
+        <!-- Column dividers -->
+        <line x1="120" y1="0" x2="120" y2="198" stroke="#d9d4ca" stroke-width="1"/>
+        <line x1="490" y1="0" x2="490" y2="198" stroke="#d9d4ca" stroke-width="1"/>
+
+        <!-- Header labels -->
+        <text x="60"  y="21" font-family="Space Mono,monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">OFFSET</text>
+        <text x="305" y="21" font-family="Space Mono,monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">NOTES SOUNDING TOGETHER</text>
+        <text x="625" y="21" font-family="Space Mono,monospace" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="700">CHARACTER</text>
+
+        <!-- Row: offset 0 -->
+        <text x="60"  y="55" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">0</text>
+        <text x="305" y="55" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">D+D, F+F, G+G, A+A</text>
+        <text x="625" y="55" font-family="Space Mono,monospace" font-size="10" fill="#6b6560" text-anchor="middle">unison — doubled loop, no change</text>
+
+        <!-- Row: offset 1 8th -->
+        <text x="60"  y="88" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">1 8th</text>
+        <text x="305" y="88" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">F+D, G+F, A+G</text>
+        <text x="625" y="88" font-family="Space Mono,monospace" font-size="10" fill="#6b6560" text-anchor="middle">minor 3rd + seconds — close, dense</text>
+
+        <!-- Row: offset 2 8ths -->
+        <text x="60"  y="121" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">2 8ths</text>
+        <text x="305" y="121" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">G+D, A+F</text>
+        <text x="625" y="121" font-family="Space Mono,monospace" font-size="10" fill="#6b6560" text-anchor="middle">4th + major 3rd — open, floating</text>
+
+        <!-- Row: offset 3 8ths -->
+        <text x="60"  y="154" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">3 8ths</text>
+        <text x="305" y="154" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle">A+D (one moment only)</text>
+        <text x="625" y="154" font-family="Space Mono,monospace" font-size="10" fill="#6b6560" text-anchor="middle">perfect 5th — sparse, resonant</text>
+
+        <!-- Row: offset 4 8ths (special, emergent) -->
+        <text x="60"  y="187" font-family="Space Mono,monospace" font-size="11" fill="#b06a00" text-anchor="middle" font-weight="700">4 8ths</text>
+        <text x="305" y="187" font-family="Space Mono,monospace" font-size="11" fill="#b06a00" text-anchor="middle" font-weight="700">no overlap — pure interlock</text>
+        <text x="625" y="187" font-family="Space Mono,monospace" font-size="10" fill="#b06a00" text-anchor="middle" font-weight="700">new 8-note pattern emerges ★</text>
+      </svg>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">The emergent melody — offset 4 8ths</div>
+      <p>At exactly 4 8th notes offset (half a bar), Loop A and Loop B perfectly interlock: Loop A plays notes on beats 1–2, Loop B fills beats 3–4, and together they create a continuous 8-note stream — <span class="key">D–F–G–A–D–F–G–A</span> — spanning the entire bar without any gaps. This is a pattern that neither loop plays alone.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg">
+        <!-- Title bracket -->
+        <line x1="80" y1="22" x2="640" y2="22" stroke="#4a9e6e" stroke-width="1.5"/>
+        <line x1="80"  y1="22" x2="80"  y2="28" stroke="#4a9e6e" stroke-width="1.5"/>
+        <line x1="640" y1="22" x2="640" y2="28" stroke="#4a9e6e" stroke-width="1.5"/>
+        <text x="360" y="14" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" font-weight="700" text-anchor="middle">emergent: D–F–G–A–D–F–G–A (continuous 8th notes)</text>
+
+        <!-- Note column labels (D F G A D F G A) -->
+        <!-- 8th note = 70px wide, x_start=80, centers at 115,185,255,325,395,465,535,605 -->
+        <text x="115" y="38" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" text-anchor="middle">D</text>
+        <text x="185" y="38" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" text-anchor="middle">F</text>
+        <text x="255" y="38" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" text-anchor="middle">G</text>
+        <text x="325" y="38" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" text-anchor="middle">A</text>
+        <text x="395" y="38" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" text-anchor="middle">D</text>
+        <text x="465" y="38" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" text-anchor="middle">F</text>
+        <text x="535" y="38" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" text-anchor="middle">G</text>
+        <text x="605" y="38" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" text-anchor="middle">A</text>
+
+        <!-- Pitch grid lines (10px per semitone above D4=145) -->
+        <!-- D4=145, F4=115 (3 sem), G4=95 (5 sem), A4=75 (7 sem) -->
+        <line x1="60" y1="145" x2="660" y2="145" class="grid-line"/>
+        <line x1="60" y1="115" x2="660" y2="115" class="grid-line"/>
+        <line x1="60" y1="95"  x2="660" y2="95"  class="grid-line"/>
+        <line x1="60" y1="75"  x2="660" y2="75"  class="grid-line"/>
+
+        <!-- Pitch labels -->
+        <text x="55" y="149" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="end">D4</text>
+        <text x="55" y="119" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="end">F4</text>
+        <text x="55" y="99"  font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="end">G4</text>
+        <text x="55" y="79"  font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="end">A4</text>
+
+        <!-- Bar + midbar lines -->
+        <line x1="80"  y1="44" x2="80"  y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="360" y1="44" x2="360" y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="640" y1="44" x2="640" y2="152" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Beat 2 and beat 4 dividers -->
+        <line x1="220" y1="44" x2="220" y2="152" stroke="#b8b0a8" stroke-width="0.8"/>
+        <line x1="500" y1="44" x2="500" y2="152" stroke="#b8b0a8" stroke-width="0.8"/>
+
+        <!-- Emergent melody polyline (green) -->
+        <polyline
+          points="115,145 185,115 255,95 325,75 395,145 465,115 535,95 605,75"
+          stroke="#4a9e6e" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+        <!-- Note dots — Loop A (blue), Loop B (green) -->
+        <circle cx="115" cy="145" r="6" fill="#3b6fd4" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="185" cy="115" r="6" fill="#3b6fd4" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="255" cy="95"  r="6" fill="#3b6fd4" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="325" cy="75"  r="6" fill="#3b6fd4" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="395" cy="145" r="6" fill="#4a9e6e" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="465" cy="115" r="6" fill="#4a9e6e" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="535" cy="95"  r="6" fill="#4a9e6e" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="605" cy="75"  r="6" fill="#4a9e6e" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Source labels -->
+        <text x="220" y="162" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" text-anchor="middle">← Loop A (beats 1–2) →</text>
+        <text x="500" y="162" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" text-anchor="middle">← Loop B (beats 3–4) →</text>
+
+        <!-- Beat labels -->
+        <text x="80"  y="170" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="middle">1</text>
+        <text x="220" y="170" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="middle">2</text>
+        <text x="360" y="170" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="middle">3</text>
+        <text x="500" y="170" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="middle">4</text>
+      </svg>
+    </div>
+    <p>The ascending D–F–G–A shape appears twice within this single arc — first from Loop A (blue dots, beats 1–2), then from Loop B (green dots, beats 3–4) — producing one continuous 8-note stream. Neither loop plays this on its own; it exists only in their combination. Listen for it: it will feel like a third voice has appeared.</p>
+  </content-card>
+
+  <content-card number="4" color="purple" title="Loop Length &amp; Phase Period">
+    <div class="sub-section">
+      <div class="sub-title">When do two loops realign?</div>
+      <p>Two loops of the same length will always return to unison after exactly one loop cycle — boring. The interesting case is when the loop length doesn't divide evenly into the bar. A <span class="key">7-note loop</span> in an 8-beat grid won't realign with the bar until 7 × 8 = <strong>56 beats</strong> have passed. That's 14 bars of slow drift before the pattern resets.</p>
+      <p>This is the fundamental structure of <em>Piano Phase</em>: a 12-note pattern creates a 12-step phase cycle. For the D minor seed: a 5-note variant (D–F–G–A–G) in a 4-beat bar takes 5 × 4 = 20 beats before both loops align on beat 1 together.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 105" xmlns="http://www.w3.org/2000/svg">
+        <!-- Timeline -->
+        <line x1="80" y1="60" x2="646" y2="60" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- 7-note loop repeats (every 7 beats = 70px) at y=40–60 (blue) -->
+        <!-- beats 0,7,14,21,28,35,42,49,56 → x=80,150,220,290,360,430,500,570,640 -->
+        <line x1="80"  y1="42" x2="80"  y2="60" stroke="#3b6fd4" stroke-width="2.5"/>
+        <line x1="150" y1="46" x2="150" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="220" y1="46" x2="220" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="290" y1="46" x2="290" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="360" y1="46" x2="360" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="430" y1="46" x2="430" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="500" y1="46" x2="500" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="570" y1="46" x2="570" y2="60" stroke="#3b6fd4" stroke-width="2"/>
+        <line x1="640" y1="42" x2="640" y2="60" stroke="#3b6fd4" stroke-width="3"/>
+
+        <!-- 8-beat grid repeats (every 8 beats = 80px) at y=60–80 (green) -->
+        <!-- beats 0,8,16,24,32,40,48,56 → x=80,160,240,320,400,480,560,640 -->
+        <line x1="80"  y1="60" x2="80"  y2="78" stroke="#4a9e6e" stroke-width="2.5"/>
+        <line x1="160" y1="60" x2="160" y2="74" stroke="#4a9e6e" stroke-width="2"/>
+        <line x1="240" y1="60" x2="240" y2="74" stroke="#4a9e6e" stroke-width="2"/>
+        <line x1="320" y1="60" x2="320" y2="74" stroke="#4a9e6e" stroke-width="2"/>
+        <line x1="400" y1="60" x2="400" y2="74" stroke="#4a9e6e" stroke-width="2"/>
+        <line x1="480" y1="60" x2="480" y2="74" stroke="#4a9e6e" stroke-width="2"/>
+        <line x1="560" y1="60" x2="560" y2="74" stroke="#4a9e6e" stroke-width="2"/>
+        <line x1="640" y1="60" x2="640" y2="78" stroke="#4a9e6e" stroke-width="3"/>
+
+        <!-- Yellow convergence circle -->
+        <circle cx="640" cy="60" r="9" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Row labels -->
+        <text x="74" y="37" font-family="Space Mono,monospace" font-size="10" fill="#3b6fd4" text-anchor="end">7-note</text>
+        <text x="74" y="82" font-family="Space Mono,monospace" font-size="10" fill="#4a9e6e" text-anchor="end">8-beat</text>
+
+        <!-- Beat annotations -->
+        <text x="80"  y="97" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="middle">beat 0</text>
+        <text x="360" y="97" font-family="Space Mono,monospace" font-size="9" fill="#9f9891" text-anchor="middle">beat 28</text>
+        <text x="640" y="97" font-family="Space Mono,monospace" font-size="9" fill="#b06a00" text-anchor="middle" font-weight="700">beat 56 ✦</text>
+
+        <!-- "realign" label -->
+        <text x="648" y="52" font-family="Space Mono,monospace" font-size="9" fill="#b06a00">realign</text>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Choosing loop lengths</div>
+      <p>For the longest phase cycle (most variety before reset), choose loop lengths that share no common factors. <span class="key">Prime-length loops</span> (5, 7, 11 notes) resist quick realignment. A 7-note loop against a 4-beat bar: 28 beats. A 5-note loop against a 3-beat bar: 15 beats. For shorter, more predictable structures — like a 4-note loop over a 4-beat bar — the loops realign every single bar, which produces steady periodic motion rather than evolving drift.</p>
+      <p>The loop length and the phase offset should not share obvious common factors. A 4-note loop with a 2-note offset realigns every 2 bars; a 4-note loop with a 3-note offset takes 4 bars. Choose deliberately.</p>
+    </div>
+  </content-card>
+
+  <content-card number="5" color="green" title="Phase in Ableton">
+    <div class="sub-section">
+      <div class="sub-title">Setting up stepped phase</div>
+      <p>In Ableton, stepped phase is simple:</p>
+      <ol>
+        <li>Duplicate your melody MIDI track (Cmd+D on Mac). Rename the copy <strong>Phase B</strong>.</li>
+        <li>Open the Phase B clip. Select all notes (Cmd+A). Use the nudge command to shift them by your chosen offset — hold Option and press ← / → to nudge by the current grid increment. Set the grid to sixteenth notes first to get a one-16th offset.</li>
+        <li>Alternatively: right-click the clip's start marker in the clip view and enter the beat offset manually. This keeps the original MIDI data intact.</li>
+        <li>Route both tracks to different instruments — or to the same instrument with a slightly different reverb tail — to let the two voices breathe separately in the mix.</li>
+      </ol>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Warping for gradual phase</div>
+      <p>To approximate tape-style continuous drift: enable <span class="key">Warp</span> on the Phase B clip and set its tempo to 100.5 BPM while the project runs at 100. Phase B will drift at roughly 0.5% per bar — very slowly, like Reich's original tape technique. Over 200 bars, the loop drifts approximately one full cycle, depending on loop length.</p>
+      <p>For a live arrangement, launch Phase B manually with a deliberate delay after Loop A to lock in your chosen offset. This gives you full control without automation. For the relationship between phase and structural displacement, see the discussion in <a href="ch11-ambient-counterpoint.html">Ch 11 — Ambient Counterpoint</a>.</p>
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Add Phase B to your session</div>
+      <p>Open your M05 session. You have the four additive clips (M05-A1 through M05-A4) and the M04 pulse track running throughout a 32-bar arc.</p>
+      <ol>
+        <li>Duplicate the M05-A4 track (the full D–F–G–A pattern). Rename the duplicate <strong>Phase B</strong>.</li>
+        <li>In the Phase B clip, select all notes and nudge them forward by exactly <strong>one 16th note</strong>. This is your starting offset.</li>
+        <li>Play both tracks — M05-A4 and Phase B — simultaneously in Session View. Listen to what the 1-sixteenth offset produces. Notice the slight delay between corresponding notes: the doubled texture feels wider and more alive than either loop alone.</li>
+        <li>Experiment: nudge Phase B by one more 16th (now 2 total). Then try 4 8ths. At offset 4 8ths, hear the emergent continuous stream that appears — the two loops interlocking to fill the entire bar.</li>
+        <li>Choose the offset that sounds most interesting to you. Leave Phase B at that position.</li>
+      </ol>
+      <p>The pulse track (M04) continues running throughout as rhythmic constant. Your session now has three layers: the M05 additive arc, Phase B running alongside it, and the pulse as anchor. This is the core of your working piece — enough texture for the form-building that starts in M07.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇ M06 ◇ PHASE SHIFTING ◇</site-banner>
+
+<chapter-nav
+  prev-href="m05-additive-subtractive.html" prev-title="M05 — Additive &amp; Subtractive Process">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M06: PHASE SHIFTING — D DORIAN"></site-footer>
+
+</body>
+</html>

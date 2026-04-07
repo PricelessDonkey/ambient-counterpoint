@@ -8,37 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; COMPOUND MELODY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REGISTER SEPARATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; ARPEGGIATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; COMPOUND MELODY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REGISTER SEPARATION &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; COMPOUND MELODY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REGISTER SEPARATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; ARPEGGIATION &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; COMPOUND MELODY &nbsp;&nbsp; ◇ &nbsp;&nbsp; REGISTER SEPARATION &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Making One Line<br>Sound Like Two</span></h1>
-  <p class="subtitle">Still monophonic — but the ear hears polyphony.</p>
-</div>
+<site-hero>
+  <span slot="title">Making One Line<br>Sound Like Two</span>
+  <span slot="subtitle">Still monophonic — but the ear hears polyphony.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    <strong>The ear is a grouping machine.</strong> Give it two streams of pitch information — even interleaved inside a single line — and it will organize them into separate voices automatically. Bach exploits this constantly: one violin or keyboard line zigzags between high and low registers, and the listener hears a melody above and a bass below. This chapter shows you how to write that way, and why it's the foundation for everything that comes next in counterpoint.
-  </div>
-</div>
+<intro-box><strong>The ear is a grouping machine.</strong> Give it two streams of pitch information — even interleaved inside a single line — and it will organize them into separate voices automatically. Bach exploits this constantly: one violin or keyboard line zigzags between high and low registers, and the listener hears a melody above and a bass below. This chapter shows you how to write that way, and why it's the foundation for everything that comes next in counterpoint.</intro-box>
 
 <div class="content">
 
   <!-- CARD 6: Implied Polyphony -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">6</div>
-      <div class="card-title">Implied Polyphony / Compound Melody</div>
-    </div>
-    <div class="card-body">
-
-      <p>A <span class="key">compound melody</span> is a single melodic line that the ear parses as two (or more) independent voices. The mechanism: alternate between two distinct pitch registers quickly enough that the brain groups same-register notes into separate streams. One instrument, two perceived voices — no accompaniment needed.</p>
+  <content-card number="6" title="Implied Polyphony / Compound Melody">
+<p>A <span class="key">compound melody</span> is a single melodic line that the ear parses as two (or more) independent voices. The mechanism: alternate between two distinct pitch registers quickly enough that the brain groups same-register notes into separate streams. One instrument, two perceived voices — no accompaniment needed.</p>
 
       <div class="sub-section">
         <p class="sub-title">Auditory stream segregation</p>
@@ -150,19 +139,11 @@
       <div class="principle-box">
         One line, written as one line — but heard as two. The two-voice illusion is a gift from psychoacoustics. Your only job is to keep the register separation consistent so the brain can do its grouping work.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 7: Register Separation -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">7</div>
-      <div class="card-title">Register Separation</div>
-    </div>
-    <div class="card-body">
-
-      <p>Compound melody stands or falls on <span class="key">register discipline</span>. Assign each implied voice a home octave and keep it there. Notes that stray into shared territory muddy the grouping. Notes that cross — where the "upper" voice dips below the "lower" voice — shatter it entirely.</p>
+  <content-card number="7" title="Register Separation">
+<p>Compound melody stands or falls on <span class="key">register discipline</span>. Assign each implied voice a home octave and keep it there. Notes that stray into shared territory muddy the grouping. Notes that cross — where the "upper" voice dips below the "lower" voice — shatter it entirely.</p>
 
       <div class="sub-section">
         <p class="sub-title">The two-octave gap</p>
@@ -237,19 +218,11 @@
       <div class="principle-box">
         The register boundary is load-bearing structure. Keep the voices in their lanes and the listener's brain builds the polyphony for free — effortlessly, no extra notes required.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 8: Arpeggiation as Implied Harmony -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">8</div>
-      <div class="card-title">Arpeggiation as Implied Harmony</div>
-    </div>
-    <div class="card-body">
-
-      <p>Beyond two-voice illusion, there's a second way a single line implies something larger: <span class="key">arpeggiation</span>. Play D–F–A in rapid succession and your ear doesn't hear three notes — it hears D minor. The intervals between adjacent notes activate a harmonic template, and the brain stores the whole group as a single unit: a chord.</p>
+  <content-card number="8" color="green" title="Arpeggiation as Implied Harmony">
+<p>Beyond two-voice illusion, there's a second way a single line implies something larger: <span class="key">arpeggiation</span>. Play D–F–A in rapid succession and your ear doesn't hear three notes — it hears D minor. The intervals between adjacent notes activate a harmonic template, and the brain stores the whole group as a single unit: a chord.</p>
 
       <div class="sub-section">
         <p class="sub-title">Chords spread across time</p>
@@ -351,19 +324,11 @@
       <div class="principle-box">
         The arpeggio doesn't decorate a chord — it <em>is</em> the chord, unfolded in time. Your ear integrates the notes into a harmonic unit just as readily as if they were played simultaneously.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD ✦: Build It -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Compound Melody Version</div>
-    </div>
-    <div class="card-body">
-
-      <p>Open your Ch 01 session. You have a 4-bar single melody line in D minor: the D–E–F–A–G motif sequenced twice, then a break cadencing to D4. Now rewrite the entire thing as a <span class="key">compound melody</span>: the same melodic content but split across octave 5 (upper voice) and octave 3 (lower voice). Keep the original rhythm — quarter, eighth, eighth, quarter, quarter per bar — but assign each note to one of the two register bands. Delete the original version or mute it; this is a replacement, not a layer.</p>
+  <content-card number="✦" color="orange" title="Build It — Compound Melody Version">
+<p>Open your Ch 01 session. You have a 4-bar single melody line in D minor: the D–E–F–A–G motif sequenced twice, then a break cadencing to D4. Now rewrite the entire thing as a <span class="key">compound melody</span>: the same melodic content but split across octave 5 (upper voice) and octave 3 (lower voice). Keep the original rhythm — quarter, eighth, eighth, quarter, quarter per bar — but assign each note to one of the two register bands. Delete the original version or mute it; this is a replacement, not a layer.</p>
 
       <div class="sub-section">
         <p class="sub-title">How to assign the notes</p>
@@ -566,30 +531,20 @@
         </ul>
         <p>If it sounds like one wide-ranging melody rather than two voices, zoom in and make sure no notes have wandered into octave 4. The gap is what makes the illusion work. Save this session — the compound melody becomes the raw material for Chapter 3, where you'll add a real second voice underneath it.</p>
       </div>
-
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 02 &nbsp;&nbsp; ◇ &nbsp;&nbsp; IMPLIED POLYPHONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch01-single-line.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 01 — A Single Line</span>
-  </a>
-  <a class="chapter-nav-item chapter-nav-next" href="ch03-two-voices.html">
-    <span class="chapter-nav-label">Next →</span>
-    <span class="chapter-nav-title">Ch 03 — Adding a Second Voice</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch01-single-line.html"
+  prev-title="Ch 01 — A Single Line"
+  next-href="ch03-two-voices.html"
+  next-title="Ch 03 — Adding a Second Voice">
+</chapter-nav>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — CH 02: MAKING ONE LINE SOUND LIKE TWO — D MINOR</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 02: MAKING ONE LINE SOUND LIKE TWO — D MINOR"></site-footer>
 
 </body>
 </html>

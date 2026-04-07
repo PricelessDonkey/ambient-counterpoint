@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M08 — Polyrhythm &amp; Cross-Rhythm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇ M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇ M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇ M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Polyrhythm &amp; Cross-Rhythm</span>
+  <span slot="subtitle">Different cycle lengths playing simultaneously — the full rhythmic palette.</span>
+</site-hero>
+
+<intro-box>Displacement shifts a pattern in time; polyrhythm runs two patterns of <em>different lengths</em> at the same time. Where phase shifting produces slow drift, polyrhythm produces a periodic interference pattern — a predictable collision point where both cycles coincide. Understanding coincidence points gives you rhythmic architecture: you know exactly when the ground will reset and everything will line up again.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="Displacement vs Polyrhythm">
+    <div class="sub-section">
+      <div class="sub-title">Two ways to create rhythmic complexity</div>
+      <p><span class="key">Displacement</span> takes a single pattern and shifts it against the grid. The pattern length stays the same; only its position changes. The cycle resets when the displaced version has traveled a full pattern-length — which can be a very long time if the shift is not a simple fraction of the loop.</p>
+      <p><span class="key">Polyrhythm</span> runs two patterns of genuinely different lengths simultaneously. A 3-beat pattern against a 4-beat grid. A 5-beat phrase against an 8-beat bar. Neither pattern changes; they simply run at different speeds or have different period lengths.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The key difference</div>
+      <p>Polyrhythm produces a <span class="key">coincidence point</span> — a moment where both patterns land on beat 1 together — at a predictable interval: the least common multiple (LCM) of the two lengths. A 3-against-4 coincides every 12 beats. A 5-against-8 every 40. That coincidence is your structural anchor: the rhythmic "home base" the listener feels even without consciously counting.</p>
+      <p>Displacement has a coincidence too, but it's usually much longer and less perceptible as a structural event. Polyrhythm makes the coincidence a feature.</p>
+    </div>
+  </content-card>
+
+  <content-card number="2" title="3 Against 4">
+    <div class="sub-section">
+      <div class="sub-title">The foundational cross-rhythm</div>
+      <p>A 3-beat pattern played simultaneously with a 4-beat grid. The combined period is 12 beats (LCM of 3 and 4) — exactly 3 bars of 4/4. The two layers coincide at beat 1, then don't meet again until beat 13. In between, the 3-beat pattern is always slightly ahead of or behind where the 4-beat grid expects an accent.</p>
+      <p>In practice: program a 3-note MIDI clip (e.g., three quarter notes). In a 4/4 session, the clip wraps around the barline on its third repetition. The grid never lets it "sit still."</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- 3-against-4 grid: 3 bars of 4/4 = 12 beats -->
+      <svg viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- yellow coincidence marker -->
+        </defs>
+
+        <!-- bar lines -->
+        <line x1="80" y1="45" x2="80" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="280" y1="45" x2="280" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="480" y1="45" x2="480" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="680" y1="45" x2="680" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- beat subdivision grid lines -->
+        <line class="grid-line" x1="130" y1="50" x2="130" y2="150"/>
+        <line class="grid-line" x1="180" y1="50" x2="180" y2="150"/>
+        <line class="grid-line" x1="230" y1="50" x2="230" y2="150"/>
+        <line class="grid-line" x1="330" y1="50" x2="330" y2="150"/>
+        <line class="grid-line" x1="380" y1="50" x2="380" y2="150"/>
+        <line class="grid-line" x1="430" y1="50" x2="430" y2="150"/>
+        <line class="grid-line" x1="530" y1="50" x2="530" y2="150"/>
+        <line class="grid-line" x1="580" y1="50" x2="580" y2="150"/>
+        <line class="grid-line" x1="630" y1="50" x2="630" y2="150"/>
+
+        <!-- bar labels -->
+        <text x="180" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BAR 1</text>
+        <text x="380" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BAR 2</text>
+        <text x="580" y="30" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BAR 3</text>
+
+        <!-- beat number labels: beats 1–12 at their positions -->
+        <!-- bar 1: beats 1–4 at x=80,130,180,230 (barline + beat offsets of 0,50,100,150) -->
+        <text x="80"  y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">1</text>
+        <text x="130" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">2</text>
+        <text x="180" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">3</text>
+        <text x="230" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">4</text>
+        <!-- bar 2: beats 5–8 -->
+        <text x="280" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">5</text>
+        <text x="330" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">6</text>
+        <text x="380" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">7</text>
+        <text x="430" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">8</text>
+        <!-- bar 3: beats 9–12 -->
+        <text x="480" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">9</text>
+        <text x="530" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">10</text>
+        <text x="580" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">11</text>
+        <text x="630" y="43" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">12</text>
+
+        <!-- Row 1: 4-beat pattern — accents at beats 1, 5, 9 (x=80, 280, 480) -->
+        <text x="40" y="80" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a7fcb">4-BEAT</text>
+        <!-- ghost dots at non-accent beats -->
+        <circle cx="130" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="180" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="230" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="330" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="380" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="430" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="530" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="580" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="630" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <!-- accent dots (blue) -->
+        <circle cx="280" cy="80" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="480" cy="80" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- coincidence: beat 1 yellow -->
+        <circle cx="80" cy="80" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Row 2: 3-beat pattern — accents at beats 1, 4, 7, 10 (x=80, 230, 380, 530) -->
+        <text x="40" y="130" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#4a7fcb">3-BEAT</text>
+        <!-- ghost dots at non-accent beats -->
+        <circle cx="130" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="180" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="280" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="330" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="430" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="480" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="580" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="630" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="680" cy="130" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <!-- accent dots (blue) -->
+        <circle cx="230" cy="130" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="380" cy="130" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="530" cy="130" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- coincidence: beat 1 yellow -->
+        <circle cx="80" cy="130" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- coincidence label -->
+        <text x="80" y="168" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#b88a00">COINCIDENCE</text>
+
+        <!-- next coincidence arrow hint at right edge -->
+        <text x="700" y="100" text-anchor="start" font-family="Space Mono,monospace" font-size="9" fill="#aaa">→ beat 13</text>
+      </svg>
+    </div>
+    <p>The yellow dot marks the <span class="key">coincidence point</span> — beat 1 of the 12-beat cycle, where both patterns land simultaneously. This happens once per 12 beats. The next coincidence is beat 13 (start of the 4th bar).</p>
+  </content-card>
+
+  <content-card number="3" color="green" title="6 Against 8: The Glass Arpeggio Model">
+    <div class="sub-section">
+      <div class="sub-title">A 6-note loop over an 8-beat grid</div>
+      <p>Philip Glass's keyboard arpeggios typically use 6-note patterns cycling against an 8-beat (2-bar) phrase. LCM(6, 8) = 24 beats — 6 bars of 4/4. The two cycles only coincide every 24 beats, which at 120 BPM is exactly 12 seconds. This creates the characteristic Glass texture: always cycling, always slightly "off," with an underlying periodicity that the ear feels but rarely consciously catches.</p>
+      <p>The 6-note loop is the same as saying "the pattern wraps every 6 eighth notes" while the bar wraps every 8 eighth notes. The pattern visits every beat position over 24 beats before resetting.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- 6-note against 8-beat: 24-beat cycle -->
+      <!-- x = 60 + (n-1)*28, beats 1–24 -->
+      <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- 8-beat group barlines (every 8 beats = every 8*28=224px) -->
+        <line x1="60"  y1="45" x2="60"  y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="284" y1="45" x2="284" y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="508" y1="45" x2="508" y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="732" y1="45" x2="732" y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- 4-beat barlines within each group (lighter) -->
+        <line class="grid-line" x1="172" y1="50" x2="172" y2="140"/>
+        <line class="grid-line" x1="396" y1="50" x2="396" y2="140"/>
+        <line class="grid-line" x1="620" y1="50" x2="620" y2="140"/>
+
+        <!-- group labels -->
+        <text x="172" y="32" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">8-BEAT PHRASE 1</text>
+        <text x="396" y="32" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">8-BEAT PHRASE 2</text>
+        <text x="620" y="32" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">8-BEAT PHRASE 3</text>
+
+        <!-- beat position labels (every 2 beats for clarity) -->
+        <text x="60"  y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">1</text>
+        <text x="116" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">3</text>
+        <text x="172" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">5</text>
+        <text x="228" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">7</text>
+        <text x="284" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">9</text>
+        <text x="340" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">11</text>
+        <text x="396" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">13</text>
+        <text x="452" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">15</text>
+        <text x="508" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">17</text>
+        <text x="564" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">19</text>
+        <text x="620" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">21</text>
+        <text x="676" y="44" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#aaa">23</text>
+
+        <!-- Row 1: 8-beat pattern — accents at beats 1, 9, 17 (x=60, 284, 508) -->
+        <text x="35" y="80" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#4a7fcb">8-BEAT</text>
+        <!-- ghost at non-accent even beats -->
+        <circle cx="116" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="172" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="228" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="340" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="396" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="452" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="564" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="620" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="676" cy="80" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <!-- accents -->
+        <circle cx="284" cy="80" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="508" cy="80" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- coincidence beat 1 -->
+        <circle cx="60" cy="80" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Row 2: 6-note pattern — accents at notes 1,7,13,19 (x=60,228,396,564) -->
+        <text x="35" y="125" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#5aab6e">6-NOTE</text>
+        <!-- ghost at non-accent beat positions -->
+        <circle cx="116" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="172" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="284" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="340" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="452" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="508" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="620" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="676" cy="125" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <!-- accents (green) -->
+        <circle cx="228" cy="125" r="7" fill="#5aab6e" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="396" cy="125" r="7" fill="#5aab6e" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="564" cy="125" r="7" fill="#5aab6e" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- coincidence beat 1 -->
+        <circle cx="60" cy="125" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- coincidence label -->
+        <text x="60" y="158" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#b88a00">COINCIDE</text>
+        <!-- next coincidence label -->
+        <text x="732" y="95" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#b88a00">NEXT →</text>
+        <text x="732" y="107" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">beat 25</text>
+      </svg>
+    </div>
+    <p>One coincidence in 24 beats. The 6-note cycle always lands slightly off from the 8-beat phrase boundary — that perpetual near-miss is the Glass texture.</p>
+  </content-card>
+
+  <content-card number="4" title="Choosing Cycle Lengths">
+    <div class="sub-section">
+      <div class="sub-title">What the numbers tell you</div>
+      <p>The LCM of your two cycle lengths determines how long your polyrhythm runs before it resets. Choosing lengths that share no common factors (coprime numbers, especially primes) creates very long periods and dense interference. Choosing lengths that share a common factor creates shorter, more regular coincidences.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Practical guide</div>
+      <p><strong>Short period (frequent coincidence):</strong> 2 against 4, 3 against 6 — coincides every 12 or 6 beats. Feels regular, almost metric. Use when you want periodic cadential weight.</p>
+      <p><strong>Medium period:</strong> 3 against 4 (12 beats), 4 against 6 (12 beats), 3 against 8 (24 beats). The Glass/Reich sweet spot: frequent enough to be felt, rare enough to be eventful.</p>
+      <p><strong>Long period (rare coincidence):</strong> 5 against 8 (40 beats), 7 against 12 (84 beats). The coincidence becomes a structural event — a bar line you've composed into the music rather than placed there. Use for long-form pieces where you need macro-level arrival points.</p>
+      <p><span class="key">Prime cycle lengths</span> maximize period length. A 7-note loop against a 4/4 grid (LCM = 28 beats = 7 bars) gives you an entire 7-bar arc before the reset — essentially a composed phrase length from a mechanical rule.</p>
+    </div>
+  </content-card>
+
+  <content-card number="5" title="Mapping the Resultant Pattern">
+    <div class="sub-section">
+      <div class="sub-title">The composite rhythm is the composition</div>
+      <p>When two polyrhythmic layers play together, the combined set of onset points forms a <span class="key">resultant rhythm</span> — a composite pattern that's usually more interesting than either layer alone. Steve Reich's <em>Clapping Music</em> is built entirely around the resultant: two clappers performing the same pattern, one shifted bar by bar, so the listener hears the shifting composite as the music.</p>
+      <p>For 3-against-4: the 4-beat layer hits beats 1, 5, 9; the 3-beat layer hits beats 1, 4, 7, 10. Combined, the resultant hits at beats 1, 4, 5, 7, 9, 10 — a 6-onset pattern over 12 beats with an irregular but self-consistent rhythm.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Resultant of 3+4: all onset points combined, 12-beat grid -->
+      <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- bar lines -->
+        <line x1="80"  y1="25" x2="80"  y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="280" y1="25" x2="280" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="480" y1="25" x2="480" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="680" y1="25" x2="680" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- subdivision grid lines -->
+        <line class="grid-line" x1="130" y1="28" x2="130" y2="97"/>
+        <line class="grid-line" x1="180" y1="28" x2="180" y2="97"/>
+        <line class="grid-line" x1="230" y1="28" x2="230" y2="97"/>
+        <line class="grid-line" x1="330" y1="28" x2="330" y2="97"/>
+        <line class="grid-line" x1="380" y1="28" x2="380" y2="97"/>
+        <line class="grid-line" x1="430" y1="28" x2="430" y2="97"/>
+        <line class="grid-line" x1="530" y1="28" x2="530" y2="97"/>
+        <line class="grid-line" x1="580" y1="28" x2="580" y2="97"/>
+        <line class="grid-line" x1="630" y1="28" x2="630" y2="97"/>
+
+        <!-- beat labels -->
+        <text x="80"  y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">1</text>
+        <text x="130" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">2</text>
+        <text x="180" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">3</text>
+        <text x="230" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">4</text>
+        <text x="280" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">5</text>
+        <text x="330" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">6</text>
+        <text x="380" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">7</text>
+        <text x="430" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">8</text>
+        <text x="480" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">9</text>
+        <text x="530" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">10</text>
+        <text x="580" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">11</text>
+        <text x="630" y="23" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#aaa">12</text>
+
+        <!-- resultant row label -->
+        <text x="40" y="68" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a">RESULT</text>
+
+        <!-- ghost (silent) beats: 2 (x=130), 3 (x=180), 6 (x=330), 8 (x=430), 11 (x=580), 12 (x=630) -->
+        <circle cx="130" cy="68" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="180" cy="68" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="330" cy="68" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="430" cy="68" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="580" cy="68" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+        <circle cx="630" cy="68" r="4" fill="none" stroke="#ccc" stroke-width="1.5"/>
+
+        <!-- active onsets: beats 1,4,5,7,9,10 -->
+        <!-- beat 1 (coincidence): yellow -->
+        <circle cx="80"  cy="68" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- beats 4,5,7,9,10: blue -->
+        <circle cx="230" cy="68" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="280" cy="68" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="380" cy="68" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="480" cy="68" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="530" cy="68" r="7" fill="#4a7fcb" stroke="#1a1a1a" stroke-width="1.5"/>
+      </svg>
+    </div>
+    <p>Six onsets over 12 beats: densely clustered in the first half (1, 4, 5), sparse in the middle (7), then two in a row at 9–10, then silence. This uneven clustering — not possible from a single repeating pattern — is the emergent personality of the polyrhythm.</p>
+    <div class="principle-box">
+      Program each polyrhythmic layer independently, then bounce or record the combined output to hear the resultant as a single rhythm. That combined rhythm often works well as a third layer — a "conductor" pattern that implies the full texture.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Add a polyrhythmic third voice</div>
+      <p>Open your M07 session. You currently have: the main melody with four displacement clips (Disp-0 through Disp-3), Phase B at its chosen offset, and the M04 pulse track.</p>
+      <ol>
+        <li>Add a third MIDI track. Choose a spare timbre — something distinct from the melody and pulse (a short pluck, a bell, a muted key).</li>
+        <li>Create a 1-bar MIDI clip called <strong>M08 poly</strong>. Program three quarter notes: D4 on beat 1, A4 on beat 2, F4 on beat 3. Leave beat 4 empty. This is a 3-beat pattern inside a 4/4 bar — it wraps around the barline on every repeat.</li>
+        <li>Loop this clip in Session View alongside your existing layers.</li>
+        <li>Find the <span class="key">coincidence point</span>: the moment where M08 poly's D4 and the main melody both land on beat 1 simultaneously. Because the 3-beat pattern fills 3 of 4 beats, the coincidence occurs every 4 bars (beat 1 of bar 5, 9, 13…). Mark that bar in Arrangement View with a locator labeled "POLY ANCHOR."</li>
+        <li>Adjust the M08 poly volume so the polyrhythmic voice is audible but subordinate — it should add rhythmic complexity without overwhelming the melody.</li>
+      </ol>
+      <p>You now have three independent rhythmic layers: melody/displacement, Phase B, and a 3-against-4 polyrhythm. The POLY ANCHOR locator marks your structural reset point — you'll return to it in M15 when building large-scale form.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇ M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇ M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇ M08 ◇ POLYRHYTHM &amp; CROSS-RHYTHM ◇</site-banner>
+
+<chapter-nav
+  prev-href="m07-rhythmic-displacement.html" prev-title="M07 — Rhythmic Displacement"
+  next-href="m09-hocket.html"               next-title="M09 — Hocket: Interlocking Voices">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M08: POLYRHYTHM &amp; CROSS-RHYTHM — D DORIAN"></site-footer>
+
+</body>
+</html>

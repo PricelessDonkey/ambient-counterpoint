@@ -8,38 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    CHAPTER 01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; A SINGLE LINE &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; A SINGLE LINE &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>CHAPTER 01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; A SINGLE LINE &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 01 &nbsp;&nbsp; ◇ &nbsp;&nbsp; A SINGLE LINE &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>A Single Line</span></h1>
-  <p class="subtitle">Before counterpoint, before harmony — just one voice, moving through time with intention.</p>
-</div>
+<site-hero>
+  <span slot="title">A Single Line</span>
+  <span slot="subtitle">Before counterpoint, before harmony — just one voice, moving through time with intention.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    <strong>Everything starts here.</strong> A single melody line is the hardest thing to write well. There's nowhere to hide — no chord stack to fill the space, no second voice to carry the weight. But Bach's melodic thinking is also the most transferable skill in this whole system: the same rules that make a solo line compelling are what make two-voice counterpoint, harmonic progressions, and even ambient loops work. Get this right, and the rest follows.
-  </div>
-</div>
+<intro-box><strong>Everything starts here.</strong> A single melody line is the hardest thing to write well. There's nowhere to hide — no chord stack to fill the space, no second voice to carry the weight. But Bach's melodic thinking is also the most transferable skill in this whole system: the same rules that make a solo line compelling are what make two-voice counterpoint, harmonic progressions, and even ambient loops work. Get this right, and the rest follows.</intro-box>
 
 <div class="content">
 
   <!-- CARD 1: Steps and Leaps -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">1</div>
-      <div class="card-title">Stepwise Motion &amp; Leaps — The 70/30 Ratio</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="1" title="Stepwise Motion &amp; Leaps — The 70/30 Ratio">
+<div class="sub-section">
         <p>Bach's melodies move mostly by step — adjacent scale degrees, one note at a time. Roughly <span class="key">70% stepwise, 30% leaps</span>. That ratio creates the feeling of a line that has somewhere to go without constantly lurching.</p>
         <p>Steps create connection. They feel inevitable — your ear can track them without effort. Leaps create drama. They pull attention, introduce energy that needs to be resolved. The melody earns its leaps by spending the rest of the time stepping.</p>
       </div>
@@ -110,17 +98,11 @@
       <div class="principle-box">
         Steps are the default. Leaps are the event. After the event, return to default — step in the opposite direction. Your ear expects it, and when you deliver, the leap feels resolved.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 2: Five Contour Shapes -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">2</div>
-      <div class="card-title">The Five Contour Shapes</div>
-    </div>
-    <div class="card-body">
-      <p>Every Bach phrase has a shape — a contour you can draw as a silhouette. There are five recurring templates. Internalising these gives you a menu to reach for when starting a new phrase. See <a href="phrase-shapes.html" class="chord-ref">phrase-shapes.html</a> for detailed SVG diagrams of each.</p>
+  <content-card number="2" color="green" title="The Five Contour Shapes">
+<p>Every Bach phrase has a shape — a contour you can draw as a silhouette. There are five recurring templates. Internalising these gives you a menu to reach for when starting a new phrase. See <a href="phrase-shapes.html" class="chord-ref">phrase-shapes.html</a> for detailed SVG diagrams of each.</p>
 
       <!-- Five mini shape diagrams side by side -->
       <div class="diagram-wrap">
@@ -201,17 +183,11 @@
         <p class="sub-title">How to use the shapes</p>
         <p>Pick a shape before you start writing. It gives you a target — you know roughly where the phrase is going before you commit to the first note. The <span class="key">arch</span> is the most universal; it rises to a peak and returns. The <span class="key">leap-step</span> is the most dramatic opener. The <span class="key">circle</span> is your arpeggio shape — chord tones stacked in time, then a step-wise descent to land.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 3: Rhythmic Variety -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">3</div>
-      <div class="card-title">Rhythmic Variety</div>
-    </div>
-    <div class="card-body">
-      <p>Pitch gets most of the attention, but rhythm is what separates a melody from a scale. Three patterns do most of the work in Bach's melodic writing:</p>
+  <content-card number="3" title="Rhythmic Variety">
+<p>Pitch gets most of the attention, but rhythm is what separates a melody from a scale. Three patterns do most of the work in Bach's melodic writing:</p>
 
       <div class="sub-section">
         <p class="sub-title">Long–short–short (♩ ♪♪)</p>
@@ -304,17 +280,11 @@
           <text x="415" y="10" font-family="Space Mono,monospace" font-size="8" fill="#d9d4ca" text-anchor="middle">+</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 4: Sequences -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">4</div>
-      <div class="card-title">Sequences — Same Shape, Different Position</div>
-    </div>
-    <div class="card-body">
-      <p>A sequence takes a short melodic idea — a 2–4 note motif — and repeats it starting on a different scale degree, usually one step down or up. The shape stays the same; only the starting pitch moves. <span class="key">Three repetitions, then break the pattern.</span></p>
+  <content-card number="4" color="green" title="Sequences — Same Shape, Different Position">
+<p>A sequence takes a short melodic idea — a 2–4 note motif — and repeats it starting on a different scale degree, usually one step down or up. The shape stays the same; only the starting pitch moves. <span class="key">Three repetitions, then break the pattern.</span></p>
 
       <div class="sub-section">
         <p>The sequence creates a sense of inevitability — your ear locks onto the pattern after the second repetition and knows where the third is going. Breaking the pattern after the third is what makes the phrase breathe and arrive somewhere. If you never break it, the sequence just continues like wallpaper — your ear stops listening. If you break it on the second repetition, you haven't established the pattern yet.</p>
@@ -393,17 +363,11 @@
       <div class="principle-box">
         The sequence creates the expectation. The break creates the arrival. Without both, you have neither tension nor release — just repetition.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 5: Hidden Structure -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">5</div>
-      <div class="card-title">Constant Motion with Hidden Structure</div>
-    </div>
-    <div class="card-body">
-      <p>Bach's fast runs — strings of sixteenth notes that seem to flow continuously — aren't random. They have a skeleton: <span class="key">chord tones fall on strong beats, passing tones fill the weak beats.</span> Your ear hears the top level (a continuous stream) and the bottom level (the chord) simultaneously, without consciously parsing the difference.</p>
+  <content-card number="5" color="purple" title="Constant Motion with Hidden Structure">
+<p>Bach's fast runs — strings of sixteenth notes that seem to flow continuously — aren't random. They have a skeleton: <span class="key">chord tones fall on strong beats, passing tones fill the weak beats.</span> Your ear hears the top level (a continuous stream) and the bottom level (the chord) simultaneously, without consciously parsing the difference.</p>
 
       <div class="sub-section">
         <p class="sub-title">Strong beats vs weak beats</p>
@@ -480,17 +444,11 @@
       <div class="principle-box">
         The run is a chord in disguise. The strong beats are the chord. The weak beats are the path between them. Your ear strips away the path and hears the skeleton underneath.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 6: Build It -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — 4-Bar Melody in Ableton</div>
-    </div>
-    <div class="card-body">
-      <p>Open a new MIDI clip in Ableton. One MIDI track, no effects, no instrument loaded yet — just map to any piano sound. Set the clip to 4 bars, 120 BPM, 4/4. You're writing the seed motif that will grow into everything in subsequent chapters.</p>
+  <content-card number="✦" color="orange" title="Build It — 4-Bar Melody in Ableton">
+<p>Open a new MIDI clip in Ableton. One MIDI track, no effects, no instrument loaded yet — just map to any piano sound. Set the clip to 4 bars, 120 BPM, 4/4. You're writing the seed motif that will grow into everything in subsequent chapters.</p>
 
       <div class="sub-section">
         <p class="sub-title">The seed motif (step–step–leap–step)</p>
@@ -625,27 +583,18 @@
         <p class="sub-title">What to listen for</p>
         <p>Play the 4 bars back. Notice how bars 1–3 feel like the same phrase spinning — same shape, lower each time, pulling downward. Bar 4 suddenly goes up before stepping down to rest. That upward surprise is the "break." The final D4 is the exhale. <span class="key">This 4-bar phrase is the seed of everything that follows.</span> Save the clip — you'll add to it in every subsequent chapter.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div><!-- /content -->
 
-<div class="banner">
-  <span class="banner-text">
-    STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; ABLETON PIANO ROLL &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; ABLETON PIANO ROLL &nbsp;&nbsp; ◇ &nbsp;&nbsp; STEPS &amp; LEAPS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTOUR &amp; RHYTHM &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEQUENCES &nbsp;&nbsp; ◇ &nbsp;&nbsp; HIDDEN STRUCTURE &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-next" href="ch02-implied-polyphony.html">
-    <span class="chapter-nav-label">Next →</span>
-    <span class="chapter-nav-title">Ch 02 — Making One Line Sound Like Two</span>
-  </a>
-</div>
+<chapter-nav
+  next-href="ch02-implied-polyphony.html"
+  next-title="Ch 02 — Making One Line Sound Like Two">
+</chapter-nav>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — CH 01: A SINGLE LINE — D MINOR</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 01: A SINGLE LINE — D MINOR"></site-footer>
 
 </body>
 </html>

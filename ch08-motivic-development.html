@@ -8,19 +8,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇ CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇ CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇</span></div>
+<site-banner>CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇ CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇ CHAPTER 08 — MOTIVIC DEVELOPMENT — CHAPTER 08 — MOTIVIC DEVELOPMENT ◇</site-banner>
 
-<div class="hero">
-  <h1><span>Motivic Development</span></h1>
-  <p class="subtitle">Getting maximum mileage from minimum material.</p>
-</div>
+<site-hero>
+  <span slot="title">Motivic Development</span>
+  <span slot="subtitle">Getting maximum mileage from minimum material.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Bach never threw away a motif — he put it through a transformation machine. Inversion, retrograde, fragmentation, augmentation, stretto: these are not tricks but a systematic toolkit for deriving an entire movement from a single seed idea. The four-note figure you wrote in Chapter 1 already contains everything you need to fill any length of music.</div></div>
+<intro-box>Bach never threw away a motif — he put it through a transformation machine. Inversion, retrograde, fragmentation, augmentation, stretto: these are not tricks but a systematic toolkit for deriving an entire movement from a single seed idea. The four-note figure you wrote in Chapter 1 already contains everything you need to fill any length of music.</intro-box>
 
 <div class="content">
 
@@ -574,16 +575,14 @@
 
 </div>
 
-<div class="banner"><span class="banner-text">INVERSION ◇ RETROGRADE ◇ FRAGMENTATION ◇ AUGMENTATION ◇ STRETTO ◇ INVERTIBLE COUNTERPOINT ◇ INVERSION ◇ RETROGRADE ◇ FRAGMENTATION ◇ AUGMENTATION ◇ STRETTO ◇ INVERTIBLE COUNTERPOINT ◇</span></div>
+<site-banner>INVERSION ◇ RETROGRADE ◇ FRAGMENTATION ◇ AUGMENTATION ◇ STRETTO ◇ INVERTIBLE COUNTERPOINT ◇ INVERSION ◇ RETROGRADE ◇ FRAGMENTATION ◇ AUGMENTATION ◇ STRETTO ◇ INVERTIBLE COUNTERPOINT ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch07-the-sentence.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 07 — The Sentence</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch07-the-sentence.html"
+  prev-title="Ch 07 — The Sentence">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 08: MOTIVIC DEVELOPMENT — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 08: MOTIVIC DEVELOPMENT — D MINOR"></site-footer>
 
 </body>
 </html>

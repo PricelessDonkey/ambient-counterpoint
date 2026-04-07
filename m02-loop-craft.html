@@ -8,46 +8,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="minimalist.html">Ambient Counterpoint</a></nav>
+<site-nav href="minimalist.html" label="Ambient Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER M02 — LOOP CRAFT — NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ THE 16-REP TEST ◇ NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ THE 16-REP TEST</span></div>
+<site-banner>CHAPTER M02 — LOOP CRAFT — NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ THE 16-REP TEST ◇ NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ THE 16-REP TEST</site-banner>
 
-<div class="hero">
-  <h1><span>Loop Craft</span></h1>
-  <p class="subtitle">The secret sauce. Most loops fail here.</p>
-</div>
+<site-hero>
+  <span slot="title">Loop Craft</span>
+  <span slot="subtitle">The secret sauce. Most loops fail here.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">A loop is not just any repeating fragment — it's a precisely designed object. This chapter focuses on the internal mechanics that separate a loop worth repeating from one that collapses on itself: note choice, rhythmic variation, strategic silence, register, and the 16-repetition stress test.</div></div>
+<intro-box>A loop is not just any repeating fragment — it's a precisely designed object. This chapter focuses on the internal mechanics that separate a loop worth repeating from one that collapses on itself: note choice, rhythmic variation, strategic silence, register, and the 16-repetition stress test.</intro-box>
 
 <div class="content">
 
   <!-- Card 6: Note Choice -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">6</div>
-      <div class="card-title">Note Choice Inside a Small Cell</div>
-    </div>
-    <div class="card-body">
-      <p>Pick notes that <span class="key">imply</span> something without stating it. Two or three pitches from a chord, one just outside it. In D Dorian, a cell built on D–F–A states the tonic triad outright — too complete. Try D–F–C instead: the minor third plus a minor seventh creates ambiguity, pulling toward resolution without settling there.</p>
+  <content-card number="6" title="Note Choice Inside a Small Cell">
+<p>Pick notes that <span class="key">imply</span> something without stating it. Two or three pitches from a chord, one just outside it. In D Dorian, a cell built on D–F–A states the tonic triad outright — too complete. Try D–F–C instead: the minor third plus a minor seventh creates ambiguity, pulling toward resolution without settling there.</p>
       <p>The outside note does the heavy lifting. It creates tension that keeps the loop from feeling self-contained and closed. The ear wants to hear that tension move somewhere — but the loop just keeps repeating, so the ear stays perpetually engaged.</p>
       <div class="sub-section">
         <div class="sub-title">Leave Room for Interpretation</div>
         <p>A cell that spells out the full chord leaves nothing for the ear to supply. A cell with one ambiguous note invites the listener to complete it mentally. That mental completion is what creates the feeling of depth in minimal music — you're hearing <em>and</em> imagining simultaneously.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 7: Internal Rhythm -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">7</div>
-      <div class="card-title">Internal Rhythm</div>
-    </div>
-    <div class="card-body">
-      <p>The 4-note cell doesn't have to be four equal notes. Mix durations: a dotted 8th, a 16th, a rest. <span class="key">Internal rhythmic contrast</span> makes the loop feel alive rather than metronomic — the same reason a walking figure feels different from a marching figure.</p>
+  <content-card number="7" color="green" title="Internal Rhythm">
+<p>The 4-note cell doesn't have to be four equal notes. Mix durations: a dotted 8th, a 16th, a rest. <span class="key">Internal rhythmic contrast</span> makes the loop feel alive rather than metronomic — the same reason a walking figure feels different from a marching figure.</p>
       <p>A common Glass pattern: dotted 8th + 16th + 8th rest + quarter. This groups the four slots unequally, creating a sense of lilt even within a strict tempo. The dotted value stretches forward; the 16th snaps back; the rest breathes; the quarter lands with weight.</p>
 
       <div class="diagram-wrap">
@@ -113,17 +103,11 @@
       </div>
 
       <p>Cell (A) sounds mechanical — the equal durations give the ear nothing to hold onto. Cell (B) introduces rhythmic contrast: the dotted eighth creates forward lean, the 16th snaps in, the rest breathes, and the quarter lands with weight. Cell (C) uses the same rhythm as (B) — what changes is the final destination (A4 rather than G4) and the visual focus on the rest, showing how that silence turns the arrival from a next-note into a destination.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 8: Negative Space -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">8</div>
-      <div class="card-title">Negative Space</div>
-    </div>
-    <div class="card-body">
-      <p>Strategic silence. A rest inside the loop gives the ear a moment to process what just happened. <span class="key">The rest is not absence — it's anticipation.</span> It sets up the next note as an arrival rather than just the next event in a sequence.</p>
+  <content-card number="8" color="purple" title="Negative Space">
+<p>Strategic silence. A rest inside the loop gives the ear a moment to process what just happened. <span class="key">The rest is not absence — it's anticipation.</span> It sets up the next note as an arrival rather than just the next event in a sequence.</p>
       <p>In Glass's music, internal rests function almost like punctuation: the music exhales, and the listener fills that space with what they just heard. The loop doesn't stop — the silence is part of the loop's identity.</p>
 
       <div class="diagram-wrap">
@@ -170,33 +154,21 @@
         <div class="idiom-name">The Rest Creates the Arrival</div>
         Silence is not the absence of the loop. It is the moment that makes the next note feel inevitable.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 9: Register -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">9</div>
-      <div class="card-title">Register</div>
-    </div>
-    <div class="card-body">
-      <p>Where in the octave the cell lives changes everything. <span class="key">Low cells feel foundational</span> — they establish harmonic context and create a sense of weight. <span class="key">High cells feel melodic</span> — the ear tracks them as foreground elements, melody rather than texture. <span class="key">Mid cells feel ambiguous</span> — they hover between harmonic and melodic function.</p>
+  <content-card number="9" title="Register">
+<p>Where in the octave the cell lives changes everything. <span class="key">Low cells feel foundational</span> — they establish harmonic context and create a sense of weight. <span class="key">High cells feel melodic</span> — the ear tracks them as foreground elements, melody rather than texture. <span class="key">Mid cells feel ambiguous</span> — they hover between harmonic and melodic function.</p>
       <p>Know which function you want before you commit to a register. A loop that's meant to provide a harmonic bed but lives too high in the octave will compete with whatever melody sits above it. A loop meant to be the main voice that sits too low gets lost in the mix.</p>
       <div class="sub-section">
         <div class="sub-title">Register in Layered Textures</div>
         <p>When building multiple layers (which you will in M04 onwards), register becomes a spatial tool. Each layer should occupy a distinct register, creating a clear vertical hierarchy: bass (D2–D3), mid (D3–D4), melodic (D4–D5), upper color (D5+). Loops that share a register create muddiness, not density.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 10: The 16-Repetition Test -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">10</div>
-      <div class="card-title">The 16-Repetition Test</div>
-    </div>
-    <div class="card-body">
-      <p>A loop that feels good after 2 repetitions may collapse after 16. <span class="key">Test every design decision by looping 16+ times.</span> If you get bored, the cell is either too simple (nothing for the ear to track) or too busy (everything already stated, nothing to discover).</p>
+  <content-card number="10" color="red" title="The 16-Repetition Test">
+<p>A loop that feels good after 2 repetitions may collapse after 16. <span class="key">Test every design decision by looping 16+ times.</span> If you get bored, the cell is either too simple (nothing for the ear to track) or too busy (everything already stated, nothing to discover).</p>
       <p>The ideal loop sits at the edge: enough information to reward continued listening, not so much that it's been fully processed in the first pass. The ear should still be finding things at repetition 10 that it missed at repetition 2.</p>
 
       <div class="diagram-wrap">
@@ -245,17 +217,11 @@
       <div class="principle-box">
         The 16-repetition test is not optional. You cannot know if a loop works until you've heard it at scale. Two repetitions is a preview; sixteen is the truth.
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Build It Card -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It</div>
-    </div>
-    <div class="card-body">
-      <p><strong>Open your M01 session.</strong> Your "M01 seed" clip contains D4–F4–G4–A4 as equal 8th notes.</p>
+  <content-card number="✦" color="orange" title="Build It">
+<p><strong>Open your M01 session.</strong> Your "M01 seed" clip contains D4–F4–G4–A4 as equal 8th notes.</p>
       <p>Redesign the rhythmic content of that clip:</p>
       <ol>
         <li>Change the four equal 8th notes to: dotted 8th + 16th + 8th rest + quarter (a common Glass pattern).</li>
@@ -264,21 +230,18 @@
       </ol>
       <p>Now run the redesigned loop for 16 repetitions. Then recall the original (create a duplicate clip first). Compare: does the new version hold attention longer? Is there a feeling of lilt that the original lacked?</p>
       <p>Save both versions as separate clips in the session — label them <code>M01 seed original</code> and <code>M02 rhythm redesign</code>. You will build from the M02 version in the next chapter.</p>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ 16-REP TEST ◇ NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ 16-REP TEST ◇</span></div>
+<site-banner>NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ 16-REP TEST ◇ NOTE CHOICE ◇ INTERNAL RHYTHM ◇ NEGATIVE SPACE ◇ REGISTER ◇ 16-REP TEST ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="m01-the-loop-as-architecture.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">M01 — The Loop as Architecture</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="m01-the-loop-as-architecture.html"
+  prev-title="M01 — The Loop as Architecture">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — M02: LOOP CRAFT — D DORIAN</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — M02: LOOP CRAFT — D DORIAN"></site-footer>
 
 </body>
 </html>

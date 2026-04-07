@@ -8,37 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTRARY MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE EXCHANGE &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTRARY MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE EXCHANGE &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTRARY MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE EXCHANGE &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; CONTRARY MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; VOICE EXCHANGE &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Adding a Second Voice</span></h1>
-  <p class="subtitle">Real counterpoint begins the moment two independent lines think for themselves.</p>
-</div>
+<site-hero>
+  <span slot="title">Adding a Second Voice</span>
+  <span slot="subtitle">Real counterpoint begins the moment two independent lines think for themselves.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    <strong>Chapter 2 gave you one line that sounded like two.</strong> Now you add the real second voice — a separate MIDI track with its own pitch, rhythm, and trajectory. The craft here is keeping those two voices genuinely independent: each one should make melodic sense on its own, and together they should create something neither could say alone. Four motion types govern how two voices can move relative to each other — knowing them by ear is the whole skill.
-  </div>
-</div>
+<intro-box><strong>Chapter 2 gave you one line that sounded like two.</strong> Now you add the real second voice — a separate MIDI track with its own pitch, rhythm, and trajectory. The craft here is keeping those two voices genuinely independent: each one should make melodic sense on its own, and together they should create something neither could say alone. Four motion types govern how two voices can move relative to each other — knowing them by ear is the whole skill.</intro-box>
 
 <div class="content">
 
   <!-- CARD 1: Motion Types -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">1</div>
-      <div class="card-title">The Four Motion Types</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="1" title="The Four Motion Types">
+<div class="sub-section">
         <p class="sub-title">How any two voices can move</p>
         <p>At any moment, two voices can relate to each other in exactly four ways. <span class="key">Contrary motion</span> is the default — when in doubt, send them in opposite directions. The other three are tools for specific musical effects.</p>
       </div>
@@ -132,19 +121,11 @@
       <p style="font-size:15px; color:var(--ink-soft); margin-top:12px;">
         In practice: use contrary motion whenever both voices need to move. Use parallel when you want warmth (see card 2). Use oblique when one voice should freeze and listen (card 3). Use voice exchange at cadences for a fresh harmonic perspective without new notes (card 4).
       </p>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 2: Parallel Thirds and Sixths -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">2</div>
-      <div class="card-title">Parallel Thirds and Sixths</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="2" color="green" title="Parallel Thirds and Sixths">
+<div class="sub-section">
         <p class="sub-title">The sweet-sounding exception</p>
         <p>Parallel motion is usually discouraged — but parallel <span class="key">thirds</span> and <span class="key">sixths</span> are the exception. When two voices move in the same direction while staying a third or sixth apart, the effect is warm, sweet, and full. Bach uses it constantly for expressive high points.</p>
       </div>
@@ -221,19 +202,11 @@
       <div class="principle-box">
         Parallel thirds and sixths are the sound of agreement without merger. The voices stay distinct in pitch but move as a unit — use them for passages where the two voices share an emotional intention.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 3: Oblique Motion / Pedal Freeze -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">3</div>
-      <div class="card-title">Oblique Motion — The Pedal Freeze</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="3" title="Oblique Motion — The Pedal Freeze">
+<div class="sub-section">
         <p class="sub-title">One voice holds, one voice moves</p>
         <p>In oblique motion, one voice sustains a single pitch — the <span class="key">pedal point</span> — while the other voice moves freely above or below it. The name comes from organ playing: the organist's foot holds a low bass note while the hands spin out melody and harmony above.</p>
       </div>
@@ -301,19 +274,11 @@
       <div class="principle-box">
         The pedal point does nothing — and that nothing says everything. Freeze the bass and the upper voice suddenly has all the attention. Every clash against the drone earns its resolution.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 4: Voice Exchange -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">4</div>
-      <div class="card-title">Voice Exchange</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="4" color="purple" title="Voice Exchange">
+<div class="sub-section">
         <p class="sub-title">Turning the chord inside out</p>
         <p>A <span class="key">voice exchange</span> happens when two voices swap their notes: whatever pitch was in the top voice moves to the bottom, and vice versa. The harmony stays the same — same notes, same chord — but the perspective rotates completely. Bach uses this at cadence points to refresh a phrase without introducing new harmonic material.</p>
       </div>
@@ -366,19 +331,11 @@
       <div class="principle-box">
         Voice exchange refreshes a phrase without adding new notes — same chord, turned inside out. Use it at cadence points when the harmony needs to breathe before the final landing.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 5: What to Avoid -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">5</div>
-      <div class="card-title">What to Avoid — Parallel Fifths and Octaves</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="5" color="red" title="What to Avoid — Parallel Fifths and Octaves">
+<div class="sub-section">
         <p class="sub-title">Why parallel fifths and octaves collapse the voices</p>
         <p>When two voices move in parallel <span class="key">perfect fifths</span> or <span class="key">perfect octaves</span>, they stop sounding like independent lines and merge into a single doubled voice. The counterpoint collapses — instead of two characters in conversation, you get one character speaking in unison with its echo. The voices lose their identities.</p>
       </div>
@@ -459,19 +416,11 @@
       <div class="principle-box">
         If you can't hear two separate voices, the counterpoint has collapsed into one. Parallel P5s and P8s are the sound of that collapse — they don't just break a rule, they defeat the whole point of writing two voices.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD ✦: Build It -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Add the Second Voice</div>
-    </div>
-    <div class="card-body">
-
-      <p>Open your Ch 02 session — the 4-bar compound melody zigzagging between octave 3 and octave 5. Now split it into two real MIDI tracks: <strong>Track 1 (Upper Voice)</strong> gets the octave-5 notes, <strong>Track 2 (Lower Voice)</strong> gets the octave-3 notes. You already have the material; the task now is to treat them as two genuinely independent voices and shape the lower voice to respond to the upper using the techniques from this chapter.</p>
+  <content-card number="✦" color="orange" title="Build It — Add the Second Voice">
+<p>Open your Ch 02 session — the 4-bar compound melody zigzagging between octave 3 and octave 5. Now split it into two real MIDI tracks: <strong>Track 1 (Upper Voice)</strong> gets the octave-5 notes, <strong>Track 2 (Lower Voice)</strong> gets the octave-3 notes. You already have the material; the task now is to treat them as two genuinely independent voices and shape the lower voice to respond to the upper using the techniques from this chapter.</p>
 
       <div class="sub-section">
         <p class="sub-title">Bars 1–2 — Contrary motion</p>
@@ -653,30 +602,20 @@
       <p style="margin-top:16px; font-size:15px; color:var(--ink-soft);">
         Two tracks, two voices, one idea. When you loop this 4-bar piece, you should hear the lower voice as a distinct musical personality — not just a bass note under a melody, but a line that has its own direction and intention. That's counterpoint.
       </p>
-
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 03 &nbsp;&nbsp; ◇ &nbsp;&nbsp; TWO VOICES &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch02-implied-polyphony.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 02 — Making One Line Sound Like Two</span>
-  </a>
-  <a class="chapter-nav-item chapter-nav-next" href="ch04-tension-release.html">
-    <span class="chapter-nav-label">Next →</span>
-    <span class="chapter-nav-title">Ch 04 — Tension and Release Between Voices</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch02-implied-polyphony.html"
+  prev-title="Ch 02 — Making One Line Sound Like Two"
+  next-href="ch04-tension-release.html"
+  next-title="Ch 04 — Tension and Release Between Voices">
+</chapter-nav>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — CH 03: ADDING A SECOND VOICE — D MINOR</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 03: ADDING A SECOND VOICE — D MINOR"></site-footer>
 
 </body>
 </html>

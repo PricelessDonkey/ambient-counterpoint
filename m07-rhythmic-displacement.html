@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M07 — Rhythmic Displacement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>M07 ◇ RHYTHMIC DISPLACEMENT ◇ M07 ◇ RHYTHMIC DISPLACEMENT ◇ M07 ◇ RHYTHMIC DISPLACEMENT ◇ M07 ◇ RHYTHMIC DISPLACEMENT ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Rhythmic Displacement</span>
+  <span slot="subtitle">Shifting the whole phrase against the grid — polyrhythm without changing a note.</span>
+</site-hero>
+
+<intro-box>The same four notes, shifted one subdivision at a time. Displacement creates new melodic emphasis, syncopated energy, and rhythmic variety from a single motif — no new pitches required. This chapter covers what displacement is, how it differs from syncopation and phase shifting, and how the reset point determines the length of your variation cycle.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="Displacement, Syncopation, and Phase">
+    <div class="sub-section">
+      <div class="sub-title">What rhythmic displacement is</div>
+      <p>Rhythmic displacement takes a complete motif and shifts its start point by one subdivision per repetition or section. The <em>notes</em> stay identical — only their relationship to the metric grid changes. A displaced cell is still the same sequence; it just arrives earlier or later than the bar expects.</p>
+      <p>This is different from <span class="key">phase shifting</span> (M06), which uses two simultaneous tracks drifting against each other. Displacement is a single voice that you explicitly move to a new grid position. You control when and how far it shifts — the process is composed, not mechanical.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Syncopation vs. displacement</div>
+      <p><span class="key">Syncopation</span> is a stable off-beat accent — the pattern stays fixed, but an accent falls between beats. It has a regular, predictable relationship to the bar. Displacement is a <em>moving</em> accent: as the shifted cell cycles through the bar, the strong note rotates through different positions. Over time, every note in the cell will serve as the downbeat arrival.</p>
+      <p>Syncopation feels groovy and settled. Displacement feels unsettled and generative — like the phrase is searching for its footing while the grid holds firm underneath.</p>
+    </div>
+  </content-card>
+
+  <content-card number="2" title="Displacement as Variation">
+    <div class="sub-section">
+      <div class="sub-title">Rotating which note feels like the downbeat</div>
+      <p>In the seed cell <strong>D–F–G–A</strong>, D normally falls on beat 1 — it functions as the root arrival. Each displacement variant brings a different note to beat 1: the +0 offset keeps D there, the +1 8th offset puts A there, +2 8ths puts G, and +3 8ths puts F. Across the four variants, beat 1 rotates through all four pitches — D→A→G→F. Because the 4-note cell (4 eighth notes) divides evenly into the 4-beat bar (2 cycles per bar), within any single displaced clip the same note always falls on beat 1 every bar — the rotation only becomes audible when you move between displacement variants.</p>
+      <p>This creates a subtle form of variation that sounds like reharmonization — the same four notes, but the ear latches onto different ones as structural. No new material needed.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Displacement sequence: 4 rows, same D-F-G-A cell shifted by 0/1/2/3 8ths.
+           Beat 1 of bar 2 (x=291) highlighted yellow in each row.
+           Row 1: D lands on beat 1 | Row 2: A | Row 3: G | Row 4: F -->
+      <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg">
+        <rect width="760" height="240" fill="#f5f0ea" rx="4"/>
+
+        <!-- Bar labels at top -->
+        <text x="203" y="13" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">bar 1</text>
+        <text x="379" y="13" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">bar 2</text>
+
+        <!-- 8th-note grid lines (very light, every 22px from x=115) -->
+        <line x1="137" y1="16" x2="137" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="159" y1="16" x2="159" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="181" y1="16" x2="181" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="203" y1="16" x2="203" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="225" y1="16" x2="225" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="247" y1="16" x2="247" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="269" y1="16" x2="269" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="313" y1="16" x2="313" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="335" y1="16" x2="335" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="357" y1="16" x2="357" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="379" y1="16" x2="379" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="401" y1="16" x2="401" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="423" y1="16" x2="423" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="445" y1="16" x2="445" y2="218" stroke="#ddd" stroke-width="0.5"/>
+        <line x1="467" y1="16" x2="467" y2="218" stroke="#ddd" stroke-width="0.5"/>
+
+        <!-- Quarter-note beat lines (medium, every 44px) -->
+        <line x1="159" y1="16" x2="159" y2="218" stroke="#c5c0b8" stroke-width="0.8"/>
+        <line x1="203" y1="16" x2="203" y2="218" stroke="#c5c0b8" stroke-width="0.8"/>
+        <line x1="247" y1="16" x2="247" y2="218" stroke="#c5c0b8" stroke-width="0.8"/>
+        <line x1="335" y1="16" x2="335" y2="218" stroke="#c5c0b8" stroke-width="0.8"/>
+        <line x1="379" y1="16" x2="379" y2="218" stroke="#c5c0b8" stroke-width="0.8"/>
+        <line x1="423" y1="16" x2="423" y2="218" stroke="#c5c0b8" stroke-width="0.8"/>
+
+        <!-- Bar lines (x=115 and x=291) -->
+        <line x1="115" y1="16" x2="115" y2="218" stroke="#b06a00" stroke-width="2"/>
+        <line x1="291" y1="16" x2="291" y2="218" stroke="#b06a00" stroke-width="2"/>
+
+        <!-- Beat 1 labels at top -->
+        <text x="115" y="12" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">1</text>
+        <text x="159" y="12" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2</text>
+        <text x="203" y="12" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">3</text>
+        <text x="247" y="12" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">4</text>
+        <text x="291" y="12" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">1</text>
+        <text x="335" y="12" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2</text>
+        <text x="379" y="12" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">3</text>
+        <text x="423" y="12" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">4</text>
+
+        <!-- Row labels (left side) -->
+        <text x="5" y="30" font-family="Space Mono,monospace" font-size="8" fill="#555" font-weight="700">clip 1</text>
+        <text x="5" y="41" font-family="Space Mono,monospace" font-size="8" fill="#888">+0 8th</text>
+        <text x="5" y="87" font-family="Space Mono,monospace" font-size="8" fill="#555" font-weight="700">clip 2</text>
+        <text x="5" y="98" font-family="Space Mono,monospace" font-size="8" fill="#888">+1 8th</text>
+        <text x="5" y="144" font-family="Space Mono,monospace" font-size="8" fill="#555" font-weight="700">clip 3</text>
+        <text x="5" y="155" font-family="Space Mono,monospace" font-size="8" fill="#888">+2 8ths</text>
+        <text x="5" y="201" font-family="Space Mono,monospace" font-size="8" fill="#555" font-weight="700">clip 4</text>
+        <text x="5" y="212" font-family="Space Mono,monospace" font-size="8" fill="#888">+3 8ths</text>
+
+        <!-- ROW 1 (y=24, offset=0): D F G A D F G A D★ F G A D F G A -->
+        <!-- Pitches: index%4 → 0=D 1=F 2=G 3=A. Starts at x=115. -->
+        <rect x="115" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="125" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="137" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="147" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="159" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="169" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="181" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="191" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="203" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="213" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="225" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="235" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="247" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="257" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="269" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="279" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <!-- D at x=291 = beat 1 bar 2: highlighted -->
+        <rect x="291" y="24" width="20" height="18" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/><text x="301" y="36" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">D</text>
+        <rect x="313" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="323" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="335" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="345" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="357" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="367" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="379" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="389" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="401" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="411" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="423" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="433" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="445" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="455" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+
+        <!-- ROW 2 (y=81, offset=22): starts at x=137. Beat 1 bar 2 = A at x=291 -->
+        <rect x="137" y="81" width="20" height="18" rx="2" fill="#2a6090"/><text x="147" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="159" y="81" width="20" height="18" rx="2" fill="#4a90c0"/><text x="169" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="181" y="81" width="20" height="18" rx="2" fill="#6aabcc"/><text x="191" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="203" y="81" width="20" height="18" rx="2" fill="#8abdd8"/><text x="213" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="225" y="81" width="20" height="18" rx="2" fill="#2a6090"/><text x="235" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="247" y="81" width="20" height="18" rx="2" fill="#4a90c0"/><text x="257" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="269" y="81" width="20" height="18" rx="2" fill="#6aabcc"/><text x="279" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <!-- A at x=291 = beat 1 bar 2: highlighted -->
+        <rect x="291" y="81" width="20" height="18" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/><text x="301" y="93" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">A</text>
+        <rect x="313" y="81" width="20" height="18" rx="2" fill="#2a6090"/><text x="323" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="335" y="81" width="20" height="18" rx="2" fill="#4a90c0"/><text x="345" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="357" y="81" width="20" height="18" rx="2" fill="#6aabcc"/><text x="367" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="379" y="81" width="20" height="18" rx="2" fill="#8abdd8"/><text x="389" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="401" y="81" width="20" height="18" rx="2" fill="#2a6090"/><text x="411" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="423" y="81" width="20" height="18" rx="2" fill="#4a90c0"/><text x="433" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="445" y="81" width="20" height="18" rx="2" fill="#6aabcc"/><text x="455" y="93" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+
+        <!-- ROW 3 (y=138, offset=44): starts at x=159. Beat 1 bar 2 = G at x=291 -->
+        <rect x="159" y="138" width="20" height="18" rx="2" fill="#2a6090"/><text x="169" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="181" y="138" width="20" height="18" rx="2" fill="#4a90c0"/><text x="191" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="203" y="138" width="20" height="18" rx="2" fill="#6aabcc"/><text x="213" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="225" y="138" width="20" height="18" rx="2" fill="#8abdd8"/><text x="235" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="247" y="138" width="20" height="18" rx="2" fill="#2a6090"/><text x="257" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="269" y="138" width="20" height="18" rx="2" fill="#4a90c0"/><text x="279" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <!-- G at x=291 = beat 1 bar 2: highlighted -->
+        <rect x="291" y="138" width="20" height="18" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/><text x="301" y="150" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">G</text>
+        <rect x="313" y="138" width="20" height="18" rx="2" fill="#8abdd8"/><text x="323" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="335" y="138" width="20" height="18" rx="2" fill="#2a6090"/><text x="345" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="357" y="138" width="20" height="18" rx="2" fill="#4a90c0"/><text x="367" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="379" y="138" width="20" height="18" rx="2" fill="#6aabcc"/><text x="389" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="401" y="138" width="20" height="18" rx="2" fill="#8abdd8"/><text x="411" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="423" y="138" width="20" height="18" rx="2" fill="#2a6090"/><text x="433" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="445" y="138" width="20" height="18" rx="2" fill="#4a90c0"/><text x="455" y="150" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+
+        <!-- ROW 4 (y=195, offset=66): starts at x=181. Beat 1 bar 2 = F at x=291 -->
+        <rect x="181" y="195" width="20" height="18" rx="2" fill="#2a6090"/><text x="191" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="203" y="195" width="20" height="18" rx="2" fill="#4a90c0"/><text x="213" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="225" y="195" width="20" height="18" rx="2" fill="#6aabcc"/><text x="235" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="247" y="195" width="20" height="18" rx="2" fill="#8abdd8"/><text x="257" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="269" y="195" width="20" height="18" rx="2" fill="#2a6090"/><text x="279" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <!-- F at x=291 = beat 1 bar 2: highlighted -->
+        <rect x="291" y="195" width="20" height="18" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/><text x="301" y="207" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">F</text>
+        <rect x="313" y="195" width="20" height="18" rx="2" fill="#6aabcc"/><text x="323" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="335" y="195" width="20" height="18" rx="2" fill="#8abdd8"/><text x="345" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="357" y="195" width="20" height="18" rx="2" fill="#2a6090"/><text x="367" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="379" y="195" width="20" height="18" rx="2" fill="#4a90c0"/><text x="389" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="401" y="195" width="20" height="18" rx="2" fill="#6aabcc"/><text x="411" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="423" y="195" width="20" height="18" rx="2" fill="#8abdd8"/><text x="433" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <rect x="445" y="195" width="20" height="18" rx="2" fill="#2a6090"/><text x="455" y="207" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+
+        <!-- Legend (right side) -->
+        <rect x="490" y="108" width="12" height="10" rx="1" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="506" y="118" font-family="Space Mono,monospace" font-size="8" fill="#555">= note landing on beat 1</text>
+        <text x="490" y="132" font-family="Space Mono,monospace" font-size="8" fill="#888">same cell, four offsets</text>
+        <text x="490" y="143" font-family="Space Mono,monospace" font-size="8" fill="#888">beat 1 cycles through D→A→G→F</text>
+      </svg>
+    </div>
+    <p>Each 8-note cycle (four 8th-note pitches × two cycles per bar at 88px per cycle in a 176px bar) causes the alignment with beat 1 to shift by one cell-note position. Over four displacement variants, every note in the cell has served as the beat-1 arrival.</p>
+  </content-card>
+
+  <content-card number="3" color="green" title="Reset Points">
+    <div class="sub-section">
+      <div class="sub-title">How many steps before the phrase realigns</div>
+      <p>Every displaced cell will eventually return to its original position relative to the bar — this is the <span class="key">reset point</span>. The length of the journey depends on the cell length relative to the bar length. Specifically: reset = LCM(cell length, bar length), measured in the smallest subdivision you're working with.</p>
+      <p>A 3-beat cell in a 4/4 bar (4-beat bar) resets after <strong>12 beats — 3 bars</strong>. The cell repeats 4 times; the bar repeats 3 times; they coincide once at beat 13. A longer reset means a longer, more unpredictable journey before the phrase "settles."</p>
+      <p>This is why odd-length cells are interesting: a 3-note cell in 4/4, a 5-note cell in a 16-step loop, a 7-step phrase over a 4-bar form. The longer the reset, the more variety from a single motif.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Reset point: 3-beat cell over 4-beat bars.
+           Bar row (top) and cell row (bottom), 30px per beat.
+           Both rows start at x=80. Reset/coincidence at x=440 (12 beats × 30px = 360px). -->
+      <svg viewBox="0 0 760 155" xmlns="http://www.w3.org/2000/svg">
+        <rect width="760" height="155" fill="#f5f0ea" rx="4"/>
+
+        <!-- Row labels -->
+        <text x="5" y="43" font-family="Space Mono,monospace" font-size="9" fill="#4a7fa5" font-weight="700">4-beat</text>
+        <text x="5" y="54" font-family="Space Mono,monospace" font-size="9" fill="#4a7fa5" font-weight="700">bar</text>
+        <text x="5" y="88" font-family="Space Mono,monospace" font-size="9" fill="#4a9a4a" font-weight="700">3-beat</text>
+        <text x="5" y="99" font-family="Space Mono,monospace" font-size="9" fill="#4a9a4a" font-weight="700">cell</text>
+
+        <!-- BAR ROW: y=32, h=24. 3 bars of 4 beats each.
+             Bar 1: x=80–200, Bar 2: x=200–320, Bar 3: x=320–440 -->
+        <rect x="80" y="32" width="120" height="24" rx="2" fill="#deeaf8" stroke="#4a7fa5" stroke-width="1.2"/>
+        <rect x="200" y="32" width="120" height="24" rx="2" fill="#deeaf8" stroke="#4a7fa5" stroke-width="1.2"/>
+        <rect x="320" y="32" width="120" height="24" rx="2" fill="#deeaf8" stroke="#4a7fa5" stroke-width="1.2"/>
+        <!-- Beat labels inside bars -->
+        <text x="95" y="48" font-family="Space Mono,monospace" font-size="8" fill="#4a7fa5" text-anchor="middle">1</text>
+        <text x="125" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">2</text>
+        <text x="155" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">3</text>
+        <text x="185" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">4</text>
+        <text x="215" y="48" font-family="Space Mono,monospace" font-size="8" fill="#4a7fa5" text-anchor="middle">1</text>
+        <text x="245" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">2</text>
+        <text x="275" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">3</text>
+        <text x="305" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">4</text>
+        <text x="335" y="48" font-family="Space Mono,monospace" font-size="8" fill="#4a7fa5" text-anchor="middle">1</text>
+        <text x="365" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">2</text>
+        <text x="395" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">3</text>
+        <text x="425" y="48" font-family="Space Mono,monospace" font-size="8" fill="#7aaaca" text-anchor="middle">4</text>
+
+        <!-- CELL ROW: y=72, h=24. 4 cells of 3 beats each (90px each).
+             Cell 1: x=80–170, Cell 2: x=170–260, Cell 3: x=260–350, Cell 4: x=350–440 -->
+        <!-- Cell 1: D F G -->
+        <rect x="80" y="72" width="29" height="24" rx="1" fill="#3a7bbf" stroke="#2a5a8a" stroke-width="0.8"/>
+        <text x="94" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="110" y="72" width="29" height="24" rx="1" fill="#5a9fd0" stroke="#3a7aaa" stroke-width="0.8"/>
+        <text x="124" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="140" y="72" width="29" height="24" rx="1" fill="#7ab5d8" stroke="#5a95b8" stroke-width="0.8"/>
+        <text x="154" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <!-- Cell 2 -->
+        <rect x="170" y="72" width="29" height="24" rx="1" fill="#3a7bbf" stroke="#2a5a8a" stroke-width="0.8"/>
+        <text x="184" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="200" y="72" width="29" height="24" rx="1" fill="#5a9fd0" stroke="#3a7aaa" stroke-width="0.8"/>
+        <text x="214" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="230" y="72" width="29" height="24" rx="1" fill="#7ab5d8" stroke="#5a95b8" stroke-width="0.8"/>
+        <text x="244" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <!-- Cell 3 -->
+        <rect x="260" y="72" width="29" height="24" rx="1" fill="#3a7bbf" stroke="#2a5a8a" stroke-width="0.8"/>
+        <text x="274" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="290" y="72" width="29" height="24" rx="1" fill="#5a9fd0" stroke="#3a7aaa" stroke-width="0.8"/>
+        <text x="304" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="320" y="72" width="29" height="24" rx="1" fill="#7ab5d8" stroke="#5a95b8" stroke-width="0.8"/>
+        <text x="334" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <!-- Cell 4 -->
+        <rect x="350" y="72" width="29" height="24" rx="1" fill="#3a7bbf" stroke="#2a5a8a" stroke-width="0.8"/>
+        <text x="364" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="380" y="72" width="29" height="24" rx="1" fill="#5a9fd0" stroke="#3a7aaa" stroke-width="0.8"/>
+        <text x="394" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="410" y="72" width="29" height="24" rx="1" fill="#7ab5d8" stroke="#5a95b8" stroke-width="0.8"/>
+        <text x="424" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+
+        <!-- Reset marker at x=440 -->
+        <line x1="440" y1="28" x2="440" y2="100" stroke="#b06a00" stroke-width="2"/>
+        <circle cx="440" cy="62" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="444" y="58" font-family="Space Mono,monospace" font-size="7" fill="#1a1a1a" font-weight="700">✦</text>
+        <text x="448" y="30" font-family="Space Mono,monospace" font-size="9" fill="#b06a00" font-weight="700">reset</text>
+        <text x="448" y="42" font-family="Space Mono,monospace" font-size="8" fill="#888">beat 13</text>
+        <text x="448" y="53" font-family="Space Mono,monospace" font-size="8" fill="#888">bar 4 = cell 5</text>
+
+        <!-- Span arrow: 12 beats -->
+        <defs>
+          <marker id="arr-span-l" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto">
+            <path d="M6,0 L0,3 L6,6 Z" fill="#888"/>
+          </marker>
+          <marker id="arr-span-r" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#888"/>
+          </marker>
+        </defs>
+        <line x1="83" y1="118" x2="437" y2="118" stroke="#888" stroke-width="1" marker-start="url(#arr-span-l)" marker-end="url(#arr-span-r)"/>
+        <text x="260" y="131" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="middle">12 beats = LCM(3, 4)</text>
+        <text x="260" y="144" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">cell repeats 4×, bar repeats 3× — one coincidence point</text>
+      </svg>
+    </div>
+    <p>Changing the cell length changes the reset period entirely. A 5-note cell over a 4-beat bar (5 8ths against 8 8ths) resets after LCM(5,8) = 40 8th notes — 5 bars. More notes, longer journey, more variation before the pattern returns to its original alignment.</p>
+  </content-card>
+
+  <content-card number="4" title="Velocity as Anchor During Displacement">
+    <div class="sub-section">
+      <div class="sub-title">Hold the metric grid with dynamics</div>
+      <p>When the pitch pattern shifts, the listener can lose track of where beat 1 is. One solution: keep a <strong>strong velocity accent on beat 1 of the bar</strong> regardless of which cell note happens to fall there. The pitch content feels displaced and wandering; the velocity accent provides a stable pulse reference.</p>
+      <p>This creates <span class="key">polyrhythmic tension</span>: the melodic shape implies one kind of downbeat (wherever D falls) and the metric accent insists on another (wherever beat 1 is). When they align — at the reset point — there's a momentary sense of resolution.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Displacement + accent tension.
+           Row 1: displaced cell, +2 8ths offset (cells at x=144, 232, 320, 408 from bar 1 at x=100).
+           Row 2: metric accent markers at beat 1 of each bar (x=100, x=276).
+           G lands on beat 1 of bar 2 (x=276) — highlighted yellow. -->
+      <svg viewBox="0 0 760 155" xmlns="http://www.w3.org/2000/svg">
+        <rect width="760" height="155" fill="#f5f0ea" rx="4"/>
+
+        <!-- Beat grid lines (44px per beat from x=100) -->
+        <!-- Very light 8th subdivisions (22px) -->
+        <line x1="122" y1="18" x2="122" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="166" y1="18" x2="166" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="188" y1="18" x2="188" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="210" y1="18" x2="210" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="232" y1="18" x2="232" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="254" y1="18" x2="254" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="298" y1="18" x2="298" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="320" y1="18" x2="320" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="342" y1="18" x2="342" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="364" y1="18" x2="364" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="386" y1="18" x2="386" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="408" y1="18" x2="408" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="430" y1="18" x2="430" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <line x1="452" y1="18" x2="452" y2="125" stroke="#e8e4de" stroke-width="0.5"/>
+        <!-- Quarter beat lines -->
+        <line x1="144" y1="18" x2="144" y2="125" stroke="#d0cbc3" stroke-width="0.8"/>
+        <line x1="188" y1="18" x2="188" y2="125" stroke="#d0cbc3" stroke-width="0.8"/>
+        <line x1="232" y1="18" x2="232" y2="125" stroke="#d0cbc3" stroke-width="0.8"/>
+        <line x1="320" y1="18" x2="320" y2="125" stroke="#d0cbc3" stroke-width="0.8"/>
+        <line x1="364" y1="18" x2="364" y2="125" stroke="#d0cbc3" stroke-width="0.8"/>
+        <line x1="408" y1="18" x2="408" y2="125" stroke="#d0cbc3" stroke-width="0.8"/>
+        <!-- Bar lines (x=100 and x=276): orange/gold -->
+        <line x1="100" y1="18" x2="100" y2="125" stroke="#b06a00" stroke-width="2"/>
+        <line x1="276" y1="18" x2="276" y2="125" stroke="#b06a00" stroke-width="2"/>
+
+        <!-- Beat number labels -->
+        <text x="100" y="14" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">1</text>
+        <text x="144" y="14" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2</text>
+        <text x="188" y="14" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">3</text>
+        <text x="232" y="14" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">4</text>
+        <text x="276" y="14" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">1</text>
+        <text x="320" y="14" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2</text>
+        <text x="364" y="14" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">3</text>
+        <text x="408" y="14" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">4</text>
+
+        <!-- Row label -->
+        <text x="5" y="35" font-family="Space Mono,monospace" font-size="8" fill="#555">melody</text>
+        <text x="5" y="104" font-family="Space Mono,monospace" font-size="8" fill="#555">metric</text>
+        <text x="5" y="114" font-family="Space Mono,monospace" font-size="8" fill="#555">accent</text>
+
+        <!-- ROW 1 (y=24): displaced cell at +2 8ths (44px from beat 1)
+             Cells start at: 144(bar1), 232(bar1 beat4), 320(bar2 beat2), 408(bar2 beat4) -->
+        <!-- Cell 1: D(144) F(166) G(188) A(210) -->
+        <rect x="144" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="154" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="166" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="176" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="188" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="198" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="210" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="220" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <!-- Cell 2: D(232) F(254) G(276★) A(298) -->
+        <rect x="232" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="242" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="254" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="264" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <!-- G at x=276 lands exactly on beat 1 of bar 2 -->
+        <rect x="276" y="24" width="20" height="18" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/><text x="286" y="36" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle" font-weight="700">G</text>
+        <rect x="298" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="308" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <!-- Cell 3: D(320) F(342) G(364) A(386) -->
+        <rect x="320" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="330" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="342" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="352" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="364" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="374" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+        <rect x="386" y="24" width="20" height="18" rx="2" fill="#8abdd8"/><text x="396" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">A</text>
+        <!-- Cell 4: D(408) -->
+        <rect x="408" y="24" width="20" height="18" rx="2" fill="#2a6090"/><text x="418" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">D</text>
+        <rect x="430" y="24" width="20" height="18" rx="2" fill="#4a90c0"/><text x="440" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">F</text>
+        <rect x="452" y="24" width="20" height="18" rx="2" fill="#6aabcc"/><text x="462" y="36" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">G</text>
+
+        <!-- "D starts here" annotation -->
+        <defs>
+          <marker id="arr-up" markerWidth="6" markerHeight="6" refX="3" refY="6" orient="auto">
+            <path d="M0,6 L3,0 L6,6 Z" fill="#4a9a4a"/>
+          </marker>
+        </defs>
+        <line x1="154" y1="55" x2="154" y2="46" stroke="#4a9a4a" stroke-width="1.2" marker-end="url(#arr-up)"/>
+        <text x="154" y="66" font-family="Space Mono,monospace" font-size="7" fill="#4a9a4a" text-anchor="middle">D enters</text>
+        <text x="154" y="75" font-family="Space Mono,monospace" font-size="7" fill="#4a9a4a" text-anchor="middle">(beat 2)</text>
+
+        <!-- "G on beat 1" annotation -->
+        <text x="286" y="55" font-family="Space Mono,monospace" font-size="7" fill="#b06a00" text-anchor="middle">G on beat 1</text>
+
+        <!-- ROW 2: metric accent markers at y=97 -->
+        <line x1="100" y1="88" x2="452" y2="88" stroke="#ccc" stroke-width="1"/>
+        <!-- Beat 1 markers (strong downward triangles) -->
+        <polygon points="100,95 94,110 106,110" fill="#b06a00"/>
+        <polygon points="276,95 270,110 282,110" fill="#b06a00"/>
+        <!-- Other beat marks (small ticks) -->
+        <line x1="144" y1="90" x2="144" y2="98" stroke="#aaa" stroke-width="1.2"/>
+        <line x1="188" y1="90" x2="188" y2="98" stroke="#aaa" stroke-width="1.2"/>
+        <line x1="232" y1="90" x2="232" y2="98" stroke="#aaa" stroke-width="1.2"/>
+        <line x1="320" y1="90" x2="320" y2="98" stroke="#aaa" stroke-width="1.2"/>
+        <line x1="364" y1="90" x2="364" y2="98" stroke="#aaa" stroke-width="1.2"/>
+        <line x1="408" y1="90" x2="408" y2="98" stroke="#aaa" stroke-width="1.2"/>
+        <!-- Beat 1 labels below triangles -->
+        <text x="100" y="125" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">beat 1</text>
+        <text x="100" y="136" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">(no note)</text>
+        <text x="276" y="125" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">beat 1</text>
+        <text x="276" y="136" font-family="Space Mono,monospace" font-size="8" fill="#b06a00" text-anchor="middle">→ G sounds</text>
+      </svg>
+    </div>
+    <p>When velocity accent and pitch content align — when D finally lands on beat 1 — the moment feels like a resolution. You can use this compositionally: displace the melody for several bars, then let the reset bring D back to beat 1 at a structural moment in the arrangement.</p>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Four displacement variants from one clip</div>
+      <p>Open your M06 session. You now have three layers: the M05 additive arc (32-bar arrangement), Phase B (a duplicate of the full D–F–G–A pattern at your chosen phase offset), and the M04 pulse track as a rhythmic constant.</p>
+      <ol>
+        <li>Duplicate the main melody clip (not Phase B). Rename the copies: <strong>Disp-0</strong>, <strong>Disp-1</strong>, <strong>Disp-2</strong>, <strong>Disp-3</strong>.</li>
+        <li>In <strong>Disp-1</strong>: select all notes and nudge them right by <strong>1 8th note</strong>. The clip now starts at beat 1.5.</li>
+        <li>In <strong>Disp-2</strong>: nudge all notes right by <strong>2 8th notes</strong> (beat 2).</li>
+        <li>In <strong>Disp-3</strong>: nudge all notes right by <strong>3 8th notes</strong> (beat 2.5).</li>
+        <li>In Arrangement View, lay out the four clips as 4-bar blocks in sequence: Disp-0 × 4 bars → Disp-1 × 4 bars → Disp-2 × 4 bars → Disp-3 × 4 bars.</li>
+        <li>Run Phase B simultaneously across all 16 bars. Listen to how the phase offset and the displacement interact — the combination produces rhythmic patterns neither track creates alone.</li>
+        <li>Keep the M04 pulse track running throughout as a reference grid. Notice which displacement variants create the most tension with beat 1, and which feel most "resolved."</li>
+      </ol>
+      <p>Your session now has four displacement variants cycling through the melodic material, layered against Phase B and the pulse. This is enough material to begin thinking about large-scale form — the subject of later chapters.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>M07 ◇ RHYTHMIC DISPLACEMENT ◇ M07 ◇ RHYTHMIC DISPLACEMENT ◇ M07 ◇ RHYTHMIC DISPLACEMENT ◇ M07 ◇ RHYTHMIC DISPLACEMENT ◇</site-banner>
+
+<chapter-nav
+  prev-href="m06-phase-shifting.html" prev-title="M06 — Phase Shifting">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M07: RHYTHMIC DISPLACEMENT — D DORIAN"></site-footer>
+
+</body>
+</html>

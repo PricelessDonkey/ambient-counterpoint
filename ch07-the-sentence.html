@@ -8,29 +8,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 07 — THE SENTENCE — VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇ KEY JOURNEY ◇ ASYMMETRIC LENGTHS ◇ VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇</span></div>
+<site-banner>CHAPTER 07 — THE SENTENCE — VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇ KEY JOURNEY ◇ ASYMMETRIC LENGTHS ◇ VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇</site-banner>
 
-<div class="hero">
-  <h1><span>The Sentence</span></h1>
-  <p class="subtitle">How motifs grow into paragraphs — presentation, development, and cadential landing.</p>
-</div>
+<site-hero>
+  <span slot="title">The Sentence</span>
+  <span slot="subtitle">How motifs grow into paragraphs — presentation, development, and cadential landing.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">A single sentence is the smallest unit of musical narrative: a motif is stated, spun out through sequences, then brought to rest at a cadence. Bach deploys the same three zones — Vordersatz, Fortspinnung, Epilog — at every scale, from a 4-bar phrase to a 40-bar movement. This chapter maps the structure, shows how sentences chain into journeys across keys, and reveals the deceptive resolution as a tool for extending and deepening the arc.</div></div>
+<intro-box>A single sentence is the smallest unit of musical narrative: a motif is stated, spun out through sequences, then brought to rest at a cadence. Bach deploys the same three zones — Vordersatz, Fortspinnung, Epilog — at every scale, from a 4-bar phrase to a 40-bar movement. This chapter maps the structure, shows how sentences chain into journeys across keys, and reveals the deceptive resolution as a tool for extending and deepening the arc.</intro-box>
 
 <div class="content">
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">31</div>
-      <div class="card-title">Vordersatz → Fortspinnung → Epilog</div>
-    </div>
-    <div class="card-body">
-      <p>Every Baroque sentence has three zones. The <span class="key">Vordersatz</span> (front phrase) presents the motif clearly — typically 2 bars, on stable harmony. The <span class="key">Fortspinnung</span> (spinning out) develops that motif through sequential repetition, pushing through related harmonies. The <span class="key">Epilog</span> stops the pattern, decelerates, and lands on a cadence.</p>
+  <content-card number="31" title="Vordersatz → Fortspinnung → Epilog">
+<p>Every Baroque sentence has three zones. The <span class="key">Vordersatz</span> (front phrase) presents the motif clearly — typically 2 bars, on stable harmony. The <span class="key">Fortspinnung</span> (spinning out) develops that motif through sequential repetition, pushing through related harmonies. The <span class="key">Epilog</span> stops the pattern, decelerates, and lands on a cadence.</p>
       <div class="sub-section">
         <div class="sub-title">Three-Zone Overview</div>
         <div class="diagram-wrap">
@@ -67,16 +63,10 @@
         </div>
       </div>
       <p>The three zones need not be equal. A sentence of 8 bars might be 2 + 4 + 2, or 1 + 5 + 2, or even 2 + 2 + 4 if the cadence needs room to breathe. What matters is that each zone has a clear character and function.</p>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">32</div>
-      <div class="card-title">How the Epilog Lands</div>
-    </div>
-    <div class="card-body">
-      <p>The Epilog is not just "the end" — it is a deliberate gear-change. Four things happen simultaneously: (1) the sequential pattern <span class="key">stops</span>; (2) the rhythm <span class="key">decelerates</span> (shorter notes give way to longer ones); (3) the harmony <span class="key">funnels</span> toward dominant then tonic; (4) a <span class="key">4–3 suspension</span> marks the final approach.</p>
+  <content-card number="32" title="How the Epilog Lands">
+<p>The Epilog is not just "the end" — it is a deliberate gear-change. Four things happen simultaneously: (1) the sequential pattern <span class="key">stops</span>; (2) the rhythm <span class="key">decelerates</span> (shorter notes give way to longer ones); (3) the harmony <span class="key">funnels</span> toward dominant then tonic; (4) a <span class="key">4–3 suspension</span> marks the final approach.</p>
       <div class="sub-section">
         <div class="sub-title">The 4–3 Suspension Signature</div>
         <p>The 4–3 suspension is the Epilog's calling card: the upper voice holds the 4th above the bass while the harmony moves to the dominant, then resolves down to the 3rd. It creates a moment of held breath before the cadence exhales. In D minor over an A bass: upper voice D5 (held — the perfect 4th above A) → resolves to C♯5 (the major 3rd, harmonic minor leading tone).</p>
@@ -85,16 +75,10 @@
         <div class="idiom-name">Epilog checklist</div>
         Last sequential repetition ends → rhythm lengthens → bass moves to dominant → upper voice suspends 4th → resolves to 3rd → tonic arrival
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">33</div>
-      <div class="card-title">The Deceptive Resolution</div>
-    </div>
-    <div class="card-body">
-      <p>When the dominant arrives at the end of the Epilog and the listener expects tonic — give them <span class="key">VI</span> instead (in D minor: the dominant A resolves to B♭ major, the diatonic major chord on the 6th degree). This is a <span class="key">deceptive cadence</span>. The sentence does not end; instead it pivots into a new phrase or a cadential extension.</p>
+  <content-card number="33" color="orange" title="The Deceptive Resolution">
+<p>When the dominant arrives at the end of the Epilog and the listener expects tonic — give them <span class="key">VI</span> instead (in D minor: the dominant A resolves to B♭ major, the diatonic major chord on the 6th degree). This is a <span class="key">deceptive cadence</span>. The sentence does not end; instead it pivots into a new phrase or a cadential extension.</p>
       <div class="sub-section">
         <div class="sub-title">The Rewind Technique</div>
         <p>After a deceptive cadence, Bach often "rewinds" — he restates the Epilog approach from a slightly earlier point, as if correcting a false start. The second attempt at the cadence lands harder because the listener has already felt the near-miss.</p>
@@ -104,31 +88,19 @@
         Epilog arrives at V → resolves to VI (deceptive) → brief restatement of V approach → resolves to i (true cadence)
       </div>
       <p>In ambient music this pattern is invaluable: the deceptive cadence extends the piece without simply repeating material, and the rewind creates the sense that resolution was always coming — it just needed more space.</p>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">34</div>
-      <div class="card-title">Sentences as Paragraphs</div>
-    </div>
-    <div class="card-body">
-      <p>A Baroque sentence is a self-contained unit of musical thought — equivalent to a paragraph in prose. It has a topic (the motif), development (Fortspinnung), and a conclusion (Epilog). Like a paragraph, it can stand alone or chain with others.</p>
+  <content-card number="34" color="green" title="Sentences as Paragraphs">
+<p>A Baroque sentence is a self-contained unit of musical thought — equivalent to a paragraph in prose. It has a topic (the motif), development (Fortspinnung), and a conclusion (Epilog). Like a paragraph, it can stand alone or chain with others.</p>
       <p>Crucially, a sentence is <em>not</em> a whole piece. It is a building block. A short piece has 2–3 sentences; a fugue movement has many. Each sentence advances the narrative: it establishes a key, explores tension, and resolves — then the next sentence picks up at a new pitch level.</p>
       <div class="idiom">
         <div class="idiom-name">Sentence = paragraph rule</div>
         End of sentence = full cadence. End of piece = final sentence in home key. Mid-piece sentences end on related keys (III, v, VI) — never a dead stop, always a handoff.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">35</div>
-      <div class="card-title">The Key Journey</div>
-    </div>
-    <div class="card-body">
-      <p>A multi-sentence movement travels through a sequence of related keys — one key center per sentence. In D minor the standard journey moves through the relative major and parallel minor before returning home:</p>
+  <content-card number="35" color="purple" title="The Key Journey">
+<p>A multi-sentence movement travels through a sequence of related keys — one key center per sentence. In D minor the standard journey moves through the relative major and parallel minor before returning home:</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 130" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -163,16 +135,10 @@
         </svg>
       </div>
       <p>Each new key is reached by treating the final chord of the preceding Epilog as a <span class="key">pivot</span> — a chord that belongs to both the old key and the new. The move to III (F major) is seamless because D minor and F major share nearly all pitches. The move to v (A minor) tightens tension before the home return.</p>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">36</div>
-      <div class="card-title">Asymmetric Sentence Lengths</div>
-    </div>
-    <div class="card-body">
-      <p>Sentences in a movement are almost never the same length. The first sentence is short — it establishes, nothing more. Later sentences expand as material develops and tensions accumulate. The final sentence is the longest: it needs room for a full Fortspinnung, a deceptive cadence, the rewind, and the true cadence.</p>
+  <content-card number="36" title="Asymmetric Sentence Lengths">
+<p>Sentences in a movement are almost never the same length. The first sentence is short — it establishes, nothing more. Later sentences expand as material develops and tensions accumulate. The final sentence is the longest: it needs room for a full Fortspinnung, a deceptive cadence, the rewind, and the true cadence.</p>
       <div class="diagram-wrap">
         <svg viewBox="0 0 760 152" xmlns="http://www.w3.org/2000/svg">
           <!-- Row labels -->
@@ -217,16 +183,10 @@
       </div>
       <p>The pattern: <strong>establish short, develop longer, resolve longest</strong>. A final sentence shorter than the preceding ones feels rushed. A final sentence that sprawls longest feels earned.</p>
       <div class="principle-box">Short sentence to open, longer to develop, longest to close — with a deceptive cadence and rewind that earn the final resolution.</div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — The First Full Sentence</div>
-    </div>
-    <div class="card-body">
-      <p>Open your Ch 06 session (4 bars, 3 tracks: upper voice, lower voice, bass — ending with Neapolitan → dominant → Picardy third). You are expanding this into a full 8-bar Baroque sentence.</p>
+  <content-card number="✦" color="orange" title="Build It — The First Full Sentence">
+<p>Open your Ch 06 session (4 bars, 3 tracks: upper voice, lower voice, bass — ending with Neapolitan → dominant → Picardy third). You are expanding this into a full 8-bar Baroque sentence.</p>
       <div class="sub-section">
         <div class="sub-title">Step 1 — Extend to 8 bars</div>
         <p>In your DAW, extend all three tracks to 8 bars. Your Ch 06 bars 1–2 become the <strong>Vordersatz</strong>. Bars 3–4 (from Ch 06) begin the <strong>Fortspinnung</strong>. Now you will add bars 5–8.</p>
@@ -312,21 +272,18 @@
           <line x1="40" y1="125" x2="760" y2="125" stroke="#d9d4ca" stroke-width="0.5"/>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇ KEY JOURNEY ◇ ASYMMETRIC LENGTHS ◇ VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇</span></div>
+<site-banner>VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇ KEY JOURNEY ◇ ASYMMETRIC LENGTHS ◇ VORDERSATZ ◇ FORTSPINNUNG ◇ EPILOG ◇ DECEPTIVE RESOLUTION ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch06-harmonic-color.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 06 — Harmonic Color</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch06-harmonic-color.html"
+  prev-title="Ch 06 — Harmonic Color">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 07: THE SENTENCE — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 07: THE SENTENCE — D MINOR"></site-footer>
 
 </body>
 </html>

@@ -8,32 +8,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Home</a></nav>
+<site-nav href="index.html" label="Home"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp; MELODIC TOOLKIT &nbsp;&nbsp; ◇ &nbsp;&nbsp; AMBIENT COUNTERPOINT &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Ambient Counterpoint</span><br>Melodic Toolkit</h1>
-  <p class="subtitle">Compositional idioms for music that blends Bach-style voice-leading rigor with minimalist loop evolution. Beauty through the interaction of simple things.</p>
-</div>
+<site-hero>
+  <span slot="title">Ambient Counterpoint<br>Melodic Toolkit</span>
+  <span slot="subtitle">Compositional idioms for music that blends Bach-style voice-leading rigor with minimalist loop evolution. Beauty through the interaction of simple things.</span>
+</site-hero>
 
 <div class="content">
 
   <!-- CARD 1 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">01</div>
-      <div class="card-title">Voices Inside Arpeggios</div>
-    </div>
-    <div class="card-body">
-      <div class="idiom">
+  <content-card number="01" title="Voices Inside Arpeggios">
+<div class="idiom">
         <div class="idiom-name">Voice-Leading Inside Arpeggios</div>
         <p>Every arpeggio pattern is actually two or more melodies happening simultaneously. When you write an 8-note loop, the <span class="key">odd-numbered notes</span> should form a coherent melody and the <span class="key">even-numbered notes</span> should form a different one. Test by soloing each — if each line moves by steps, has contour, and implies harmony on its own, the arpeggio will sound rich. If either sounds random, the whole pattern will feel hollow.</p>
       </div>
@@ -41,17 +33,11 @@
         <div class="idiom-name">Register as Structure</div>
         <p>Assign each voice its own octave range and keep it there. Upper voice in octave 5, lower voice in octave 3, middle voice (if any) in octave 4. Don't let them cross. The vertical separation lets the ear parse a single stream as multiple voices. When you eventually <span class="key">let the voices converge</span> into the same octave, it sounds like arrival — save it for the end.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 2 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">02</div>
-      <div class="card-title">Evolution &amp; Drift</div>
-    </div>
-    <div class="card-body">
-      <div class="idiom">
+  <content-card number="02" title="Evolution &amp; Drift">
+<div class="idiom">
         <div class="idiom-name">One Note Per Cycle</div>
         <p>When evolving a loop, change <span class="key">exactly one note</span> every 2–4 repetitions. Not two notes, not a rhythm change — one pitch. Alternate between changing a note in the upper voice and the lower voice, so the two implied melodies evolve at different rates. The mismatch in their evolution speeds is where the interest lives.</p>
       </div>
@@ -59,17 +45,11 @@
         <div class="idiom-name">Sequence as Meditation</div>
         <p>Take any short figure and repeat it starting one scale step lower (or higher). Do this <span class="key">three times maximum</span>. Three descending statements create momentum and expectation. On the fourth iteration, break the pattern. In a looping context, spread a three-step sequence across 12–16 bars so the descent is felt rather than heard.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 3 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">03</div>
-      <div class="card-title">Motion &amp; Counterpoint</div>
-    </div>
-    <div class="card-body">
-      <div class="idiom">
+  <content-card number="03" title="Motion &amp; Counterpoint">
+<div class="idiom">
         <div class="idiom-name">Contrary Motion as Default</div>
         <p>Whenever you're unsure which direction to move a note, <span class="key">move it opposite</span> to whatever the other voice just did. Upper voice stepped up? Lower voice steps down. Make this the default and break it intentionally when you want convergence or divergence for dramatic effect.</p>
       </div>
@@ -81,17 +61,11 @@
         <div class="idiom-name">Suspension Across Loops</div>
         <p>When a note in one loop clashes with a note in another, <span class="key">don't fix it</span> — let it ring and resolve naturally on the next cycle. These momentary dissonances are <a href="bach_chord_cheat_sheet.html#suspend" class="chord-ref">Bach's suspensions</a> happening organically through phasing rather than composed beat by beat. If both loops move by steps, most collisions resolve themselves within a beat or two.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 4 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">04</div>
-      <div class="card-title">Harmonic Color</div>
-    </div>
-    <div class="card-body">
-      <div class="idiom">
+  <content-card number="04" title="Harmonic Color">
+<div class="idiom">
         <div class="idiom-name">Chromatic Visitors, Not Residents</div>
         <p>Notes outside the scale should appear in a <span class="key">weak rhythmic position</span> (an "and," not a downbeat) and resolve by step to a chord tone on the next strong beat. One chromatic note per pattern is enough. Two sounds bebop. Zero sounds folk.</p>
       </div>
@@ -99,17 +73,11 @@
         <div class="idiom-name">The Leading Tone as Emotional Climax</div>
         <p>Save the <a href="bach_chord_cheat_sheet.html#seventh" class="chord-ref">raised 7th</a> (C♯ in D minor) for the <span class="key">moment of highest tension</span>. Everything before it should be natural minor or Dorian — no raised 7th anywhere. When it finally appears, it transforms the mood by introducing a gravitational pull that didn't exist before. One note, deployed once, at the right moment.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 5 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">05</div>
-      <div class="card-title">Texture &amp; Phasing</div>
-    </div>
-    <div class="card-body">
-      <div class="idiom">
+  <content-card number="05" title="Texture &amp; Phasing">
+<div class="idiom">
         <div class="idiom-name">Phase Displacement for Free Complexity</div>
         <p>Layer two loops of <span class="key">different lengths</span>. A 7-note loop against an 8-note loop takes 56 notes before exact realignment. Minutes of unique vertical combinations from two simple patterns. Both loops must be harmonically compatible in most alignments — stick to the same scale or mode.</p>
       </div>
@@ -117,17 +85,11 @@
         <div class="idiom-name">Velocity as a Third Voice</div>
         <p>Alternate loud and soft notes so accented notes form their own <span class="key">rhythmic pattern independent of pitch</span>. If your pitch loop is 8 notes and your accent pattern is 3 (loud, soft, soft…), the accents cycle against the pitches and create a third evolving layer. Sinephro gets this naturally from harp technique — emphasis drifts.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 6 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">06</div>
-      <div class="card-title">Structure &amp; Form</div>
-    </div>
-    <div class="card-body">
-      <div class="idiom">
+  <content-card number="06" title="Structure &amp; Form">
+<div class="idiom">
         <div class="idiom-name">The Subtraction Arc</div>
         <p>Structure a piece by <span class="key">removing</span> rather than adding. Start with all loops running, let the listener absorb the full texture, then pull voices out one at a time. The ghost of the removed voice lingers in memory. Alternatively: add voices in the first half, subtract in reverse order in the second half. Arch form — the ending mirrors the beginning but sounds completely different.</p>
       </div>
@@ -135,20 +97,13 @@
       <div class="principle-box">
         Complexity comes from the interaction of simple things rather than from any single part being complex. Every individual element should be almost boring on its own. The music lives in the relationships between them.
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × SINEPHRO × REICH &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>REFERENCE TOOLKIT — D MINOR — ABLETON LIVE + KORG VOLCA</p>
-</div>
+<site-footer text="REFERENCE TOOLKIT — D MINOR — ABLETON LIVE + KORG VOLCA"></site-footer>
 
 </body>
 </html>

@@ -8,140 +8,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  /* ── Series index — shared with landing page style ── */
-  .hero {
-    padding-bottom: 10px;
-  }
-
-  .section-label {
-    max-width: 900px;
-    margin: 40px auto 0;
-    padding: 0 40px;
-    font-family: 'Space Mono', monospace;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-  }
-
-  .page-grid {
-    max-width: 900px;
-    margin: 16px auto 0;
-    padding: 0 40px 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px;
-  }
-
-  .page-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    max-width: calc(50% - 14px);
-  }
-
-  .page-card {
-    border: 2px solid var(--ink);
-    background: white;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 6px 6px 0 var(--ink);
-    transition: transform 0.15s ease;
-  }
-  .page-card:hover {
-    transform: translate(-2px, -2px);
-  }
-
-  .page-card-header {
-    display: flex;
-    align-items: stretch;
-    border-bottom: 2px solid var(--ink);
-  }
-  .page-card-num {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 28px;
-    background: var(--green-light);
-    color: var(--green);
-    min-width: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 2px solid var(--ink);
-    flex-shrink: 0;
-  }
-  .page-card-title {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    padding: 16px 18px;
-    display: flex;
-    align-items: center;
-    line-height: 1.4;
-  }
-
-  .page-card-body {
-    padding: 18px 20px 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 14px;
-  }
-  .page-card-desc {
-    color: var(--ink-soft);
-    font-size: 15px;
-    line-height: 1.6;
-    margin: 0;
-  }
-  .page-card-link {
-    font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--green);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .page-card-link::after {
-    content: '→';
-  }
-
-  @media (max-width: 600px) {
-    .section-label { padding: 0 20px; }
-    .page-grid {
-      grid-template-columns: 1fr;
-      padding: 0 20px 60px;
-      gap: 24px;
-    }
-    .page-card:last-child:nth-child(odd) {
-      grid-column: auto;
-      max-width: none;
-    }
-    .page-card-num { min-width: 56px; font-size: 22px; }
-    .page-card-title { font-size: 12px; padding: 14px 16px; }
-  }
-</style>
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Ambient Counterpoint</a></nav>
+<site-nav href="index.html" label="Ambient Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    MINIMALIST COMPOSITION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LOGIC &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHASE SHIFTING &nbsp;&nbsp; ◇ &nbsp;&nbsp; MODAL HARMONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; MINIMALIST COMPOSITION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LOGIC &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHASE SHIFTING &nbsp;&nbsp; ◇ &nbsp;&nbsp; MODAL HARMONY &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>MINIMALIST COMPOSITION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LOGIC &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHASE SHIFTING &nbsp;&nbsp; ◇ &nbsp;&nbsp; MODAL HARMONY &nbsp;&nbsp; ◇ &nbsp;&nbsp; MINIMALIST COMPOSITION &nbsp;&nbsp; ◇ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ◇ &nbsp;&nbsp; LOOP LOGIC &nbsp;&nbsp; ◇ &nbsp;&nbsp; PHASE SHIFTING &nbsp;&nbsp; ◇ &nbsp;&nbsp; MODAL HARMONY &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Minimalist Composition</span></h1>
-  <p class="subtitle">A working reference for Glass, Reich, and Riley techniques applied in Ableton Live.</p>
-</div>
+<site-hero compact>
+  <span slot="title">Minimalist Composition</span>
+  <span slot="subtitle">A working reference for Glass, Reich, and Riley techniques applied in Ableton Live.</span>
+</site-hero>
 
 <div class="section-label">Chapters</div>
 
@@ -149,59 +27,97 @@
 
   <a class="page-card" href="m01-the-loop-as-architecture.html">
     <div class="page-card-header">
-      <div class="page-card-num">01</div>
+      <div class="page-card-num green-num">01</div>
       <div class="page-card-title">The Loop as Architecture</div>
     </div>
     <div class="page-card-body">
       <p class="page-card-desc">Repetition is not laziness — it's structure. Loop length, what makes a cell worth repeating, timbre and velocity as first dimensions, and how to design an invisible seam.</p>
-      <span class="page-card-link">Open</span>
+      <span class="page-card-link green-link">Open</span>
     </div>
   </a>
 
   <a class="page-card" href="m02-loop-craft.html">
     <div class="page-card-header">
-      <div class="page-card-num">02</div>
+      <div class="page-card-num green-num">02</div>
       <div class="page-card-title">Loop Craft</div>
     </div>
     <div class="page-card-body">
       <p class="page-card-desc">The secret sauce. Note choice, internal rhythm, negative space, register, and the 16-repetition stress test — what separates a loop worth repeating from one that collapses.</p>
-      <span class="page-card-link">Open</span>
+      <span class="page-card-link green-link">Open</span>
     </div>
   </a>
 
   <a class="page-card" href="m03-micro-variation.html">
     <div class="page-card-header">
-      <div class="page-card-num">03</div>
+      <div class="page-card-num green-num">03</div>
       <div class="page-card-title">Micro-Variation</div>
     </div>
     <div class="page-card-body">
       <p class="page-card-desc">The art of the almost-identical loop. One pitch changed, one note shifted, one note removed — how Glass sustains attention across minutes without ever breaking the spell.</p>
-      <span class="page-card-link">Open</span>
+      <span class="page-card-link green-link">Open</span>
     </div>
   </a>
 
   <a class="page-card" href="m04-the-pulse.html">
     <div class="page-card-header">
-      <div class="page-card-num">04</div>
+      <div class="page-card-num green-num">04</div>
       <div class="page-card-title">The Pulse as Foundation</div>
     </div>
     <div class="page-card-body">
       <p class="page-card-desc">Velocity shaping, ghost notes, swing, and implied pulse — the techniques that make a mechanical 16th-note grid feel like it was played by a human.</p>
-      <span class="page-card-link">Open</span>
+      <span class="page-card-link green-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="m05-additive-subtractive.html">
+    <div class="page-card-header">
+      <div class="page-card-num green-num">05</div>
+      <div class="page-card-title">Additive &amp; Subtractive Process</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Reich's core technique: grow a texture from one note to full density, then dissolve it back to silence. The process answers "what next?" so you don't have to.</p>
+      <span class="page-card-link green-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="m06-phase-shifting.html">
+    <div class="page-card-header">
+      <div class="page-card-num green-num">06</div>
+      <div class="page-card-title">Phase Shifting</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Two identical loops drifting out of sync: emergent melody from mechanical process. Reich's core discovery — the interference patterns are the composition.</p>
+      <span class="page-card-link green-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="m07-rhythmic-displacement.html">
+    <div class="page-card-header">
+      <div class="page-card-num green-num">07</div>
+      <div class="page-card-title">Rhythmic Displacement</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Shift the whole phrase against the grid — the same four notes rotating through every metric position. New emphasis, new energy, no new pitches required.</p>
+      <span class="page-card-link green-link">Open</span>
+    </div>
+  </a>
+
+  <a class="page-card" href="m08-polyrhythm.html">
+    <div class="page-card-header">
+      <div class="page-card-num green-num">08</div>
+      <div class="page-card-title">Polyrhythm &amp; Cross-Rhythm</div>
+    </div>
+    <div class="page-card-body">
+      <p class="page-card-desc">Two patterns of different lengths running simultaneously — coincidence points, 3-against-4, the Glass arpeggio model, and the emergent resultant rhythm.</p>
+      <span class="page-card-link green-link">Open</span>
     </div>
   </a>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp; GLASS × REICH × RILEY × SINEPHRO &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — MINIMALIST COMPOSITION SERIES</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — MINIMALIST COMPOSITION SERIES"></site-footer>
 
 </body>
 </html>

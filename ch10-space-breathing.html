@@ -8,29 +8,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 10 — SPACE AND BREATHING — TEXTURE — REGISTER — HARMONIC RHYTHM — REST ◇ CHAPTER 10 — SPACE AND BREATHING — TEXTURE — REGISTER — HARMONIC RHYTHM — REST ◇ CHAPTER 10 — SPACE AND BREATHING ◇</span></div>
+<site-banner>CHAPTER 10 — SPACE AND BREATHING — TEXTURE — REGISTER — HARMONIC RHYTHM — REST ◇ CHAPTER 10 — SPACE AND BREATHING — TEXTURE — REGISTER — HARMONIC RHYTHM — REST ◇ CHAPTER 10 — SPACE AND BREATHING ◇</site-banner>
 
-<div class="hero">
-  <h1><span>Space and Breathing</span></h1>
-  <p class="subtitle">Making dense music feel open — the art of controlled silence, register, and harmonic stillness.</p>
-</div>
+<site-hero>
+  <span slot="title">Space and Breathing</span>
+  <span slot="subtitle">Making dense music feel open — the art of controlled silence, register, and harmonic stillness.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Dense counterpoint earns its power from contrast. Without space, tension has nowhere to breathe and release loses its impact. This chapter covers seven techniques Bach uses to create breathing room inside otherwise continuous music: dropping voices, stretching duration, cycling sequences, slowing harmonic rhythm, widening register, resting individual voices, and cadential breathing. These are not pauses — they are active compositional choices that make the dense moments land harder.</div></div>
+<intro-box>Dense counterpoint earns its power from contrast. Without space, tension has nowhere to breathe and release loses its impact. This chapter covers seven techniques Bach uses to create breathing room inside otherwise continuous music: dropping voices, stretching duration, cycling sequences, slowing harmonic rhythm, widening register, resting individual voices, and cadential breathing. These are not pauses — they are active compositional choices that make the dense moments land harder.</intro-box>
 
 <div class="content">
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">48</div>
-      <div class="card-title">Texture Reduction</div>
-    </div>
-    <div class="card-body">
-      <p>The most immediate way to create space is to <span class="key">drop voices</span>. A passage with three or four voices moving in parallel feels dense by default. Remove two and the physical room in the frequency spectrum opens up — listeners can hear through to the remaining voices instead of processing a wall of sound.</p>
+  <content-card number="48" title="Texture Reduction">
+<p>The most immediate way to create space is to <span class="key">drop voices</span>. A passage with three or four voices moving in parallel feels dense by default. Remove two and the physical room in the frequency spectrum opens up — listeners can hear through to the remaining voices instead of processing a wall of sound.</p>
       <p>Bach does this instinctively between sections. An Epilog often reduces from full texture to two voices or even one, giving the cadence room to land. The transition into a new Vordersatz frequently strips back to a single line — the same pattern as the very opening of the piece. Returning material sounds fresh precisely because texture dropped before it arrived.</p>
       <p>For ambient work, voice dropout is your most powerful fader. Muting a track mid-phrase creates room. The ear, trained by prior density, fills in the missing voice for a bar or two even after it leaves — ghost voices are still heard in absence.</p>
       <div class="diagram-wrap">
@@ -95,16 +91,10 @@
         <span class="idiom-name">Ableton application</span>
         Mute tracks cleanly at a bar boundary using clip automation. The abruptness of a voice disappearing reads as structural intent. A crossfade here would soften the impact — avoid it unless you want the reduction to feel gradual.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">49</div>
-      <div class="card-title">Long Notes Amid Motion</div>
-    </div>
-    <div class="card-body">
-      <p>A single <span class="key">long note</span> inside continuous motion functions as a rest even though sound continues. After eight bars of eighth notes, a half note landing feels like the music exhaling — not stopping, but releasing the tension of constant movement. The mechanism is relative: duration contrast is what registers, not absolute silence.</p>
+  <content-card number="49" color="green" title="Long Notes Amid Motion">
+<p>A single <span class="key">long note</span> inside continuous motion functions as a rest even though sound continues. After eight bars of eighth notes, a half note landing feels like the music exhaling — not stopping, but releasing the tension of constant movement. The mechanism is relative: duration contrast is what registers, not absolute silence.</p>
       <p>Bach uses this at the pivot point of sequences: a held note punctuates the sequence before the next step begins, giving the listener a moment to absorb their harmonic position before the line moves on. The long note says "we are here now" before the journey resumes.</p>
       <p>In piano roll terms: a note block four times longer than its neighbors draws the eye and the ear. It marks arrival. The phrase that follows will feel like it begins from solid ground rather than a moving stream.</p>
       <div class="diagram-wrap">
@@ -147,16 +137,10 @@
         <span class="idiom-name">Duration contrast rule</span>
         After eight or more consecutive short notes, a note at least 3× longer registers as a landing, not just a longer note. Below a 3× ratio, the difference reads as rhythm variation rather than arrival.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">50</div>
-      <div class="card-title">Sequences as Cognitive Rest</div>
-    </div>
-    <div class="card-body">
-      <p>A <span class="key">sequence</span> is a pattern repeated at a different pitch level. Once the listener's ear recognizes the pattern — usually after two repetitions — the brain shifts from active tracking to passive prediction. That shift feels like rest even though notes are still flowing at the same speed and density.</p>
+  <content-card number="50" color="green" title="Sequences as Cognitive Rest">
+<p>A <span class="key">sequence</span> is a pattern repeated at a different pitch level. Once the listener's ear recognizes the pattern — usually after two repetitions — the brain shifts from active tracking to passive prediction. That shift feels like rest even though notes are still flowing at the same speed and density.</p>
       <p>This is why Bach's Fortspinnung sections (see <a href="ch07-the-sentence.html">ch07-the-sentence.html</a>) feel spacious despite continuous eighth-note motion. The sequences create a predictable trajectory. The ear stops parsing new information and instead rides the pattern's momentum toward its expected resolution.</p>
       <div class="sub-section">
         <div class="sub-title">Why it works</div>
@@ -171,16 +155,10 @@
         <span class="idiom-name">Break the fourth step</span>
         After three sequence steps, diverting on the fourth creates maximum surprise. The ear predicted step four — deviating at exactly that moment exploits the cognitive rest you just built.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">51</div>
-      <div class="card-title">Harmonic Rhythm Slowing</div>
-    </div>
-    <div class="card-body">
-      <p><span class="key">Harmonic rhythm</span> is how often the chord changes. Fast harmonic rhythm — one chord per beat — feels urgent and mobile. Slow harmonic rhythm — one chord per two or four bars — feels hovering and spacious, even when the melody keeps moving at the same speed above it.</p>
+  <content-card number="51" title="Harmonic Rhythm Slowing">
+<p><span class="key">Harmonic rhythm</span> is how often the chord changes. Fast harmonic rhythm — one chord per beat — feels urgent and mobile. Slow harmonic rhythm — one chord per two or four bars — feels hovering and spacious, even when the melody keeps moving at the same speed above it.</p>
       <p>Bach creates breathing space by holding a single harmony for multiple bars while the upper voice sequences or runs through passing tones. The listener's sense of harmonic travel stops; the music hovers in place. When harmony finally moves, the motion registers as more significant than if changes had been constant throughout.</p>
       <p>For ambient production: a sustained pad or drone under a running arpeggio creates the same effect. The arpeggio provides rhythmic motion; the pad provides harmonic stasis. The combination feels alive but spacious — motion without travel.</p>
       <div class="diagram-wrap">
@@ -252,16 +230,10 @@
         <span class="idiom-name">Hovering vs traveling</span>
         Frequent harmony = traveling (ear tracks each move). Slow harmony = hovering (ear settles into the color). Ambient music lives in the hovering register. Save frequent changes for moments of arrival or deliberate disruption.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">52</div>
-      <div class="card-title">Register as Openness</div>
-    </div>
-    <div class="card-body">
-      <p><span class="key">Register</span> is where in the pitch spectrum a voice sits. When all voices cluster in the same octave, the sound feels dense — every voice occupies overlapping frequency space. When voices spread across two or more octaves, the same chord feels spacious even at identical dynamic levels. The chord quality is the same; only the vertical span changes.</p>
+  <content-card number="52" color="purple" title="Register as Openness">
+<p><span class="key">Register</span> is where in the pitch spectrum a voice sits. When all voices cluster in the same octave, the sound feels dense — every voice occupies overlapping frequency space. When voices spread across two or more octaves, the same chord feels spacious even at identical dynamic levels. The chord quality is the same; only the vertical span changes.</p>
       <p>Bach's cathedral effect: in large-scale climaxes, the bass drops to the lowest register while the upper voice reaches its highest point. The physical span of the voicing creates the feeling of a room expanding around the listener. The same D minor chord, voiced D3–A4–D5, fills a space that D4–F4–A4 does not.</p>
       <p>The technique works in reverse too: compressing all voices into a tight cluster creates intimacy and density — set up a wide-register release and compress first to maximize the contrast.</p>
       <div class="diagram-wrap">
@@ -318,16 +290,10 @@
         <span class="idiom-name">Cathedral technique</span>
         In Ableton: transpose your bass track down one octave and your lead up one octave while holding the middle voice static. Same notes — but the frequency spread changes the perceived room size immediately.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">53</div>
-      <div class="card-title">Rests in Individual Voices</div>
-    </div>
-    <div class="card-body">
-      <p>A voice can breathe without the whole piece stopping. When one voice <span class="key">rests</span> while others continue, the texture thins locally — a density shift without a structural break. The result is more subtle than dropping all voices at once: one part of the harmonic space opens while others maintain continuity.</p>
+  <content-card number="53" color="red" title="Rests in Individual Voices">
+<p>A voice can breathe without the whole piece stopping. When one voice <span class="key">rests</span> while others continue, the texture thins locally — a density shift without a structural break. The result is more subtle than dropping all voices at once: one part of the harmonic space opens while others maintain continuity.</p>
       <p>Bach uses this constantly in two-voice counterpoint: the upper voice will rest for a bar or two while the lower voice holds, then the upper voice re-enters. Each voice takes turns as the rhythmically active one. The relationship between them breathes rather than both voices always filling every beat.</p>
       <p>In ambient layered sessions: mute one track in a specific bar range while others loop unchanged. The re-entry of the resting voice two or four bars later becomes a moment of renewed density — the opposite of dropout, a small arrival.</p>
       <div class="diagram-wrap">
@@ -365,16 +331,10 @@
         <span class="idiom-name">Voice-level breathing</span>
         Two bars of rest followed by a clear re-entry registers as a small arrival event. The listener notices — not consciously, but the density increase lands. Use it before the moment you want to emphasize.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">54</div>
-      <div class="card-title">Cadential Breathing</div>
-    </div>
-    <div class="card-body">
-      <p>The <span class="key">Epilog</span> (see <a href="ch07-the-sentence.html">ch07-the-sentence.html</a>) is not just a closing formula — it is the piece's structural exhale. Where the Fortspinnung built momentum through sequences and chromatic color, the Epilog releases it: rhythm slows, texture reduces, harmonic motion simplifies to a single dominant-to-tonic cadence. The music breathes out before landing.</p>
+  <content-card number="54" color="orange" title="Cadential Breathing">
+<p>The <span class="key">Epilog</span> (see <a href="ch07-the-sentence.html">ch07-the-sentence.html</a>) is not just a closing formula — it is the piece's structural exhale. Where the Fortspinnung built momentum through sequences and chromatic color, the Epilog releases it: rhythm slows, texture reduces, harmonic motion simplifies to a single dominant-to-tonic cadence. The music breathes out before landing.</p>
       <p>Every section boundary is an opportunity for cadential breathing. The transition between a dense episode and a returning ritornello typically involves a short Epilog-style exhale: a bar or two of dominant pedal, thinned texture, a suspension resolving. The new section enters a cleared space.</p>
       <p>In ambient terms, this translates to a transition zone between loops or sections — a moment where complexity drops before the next structural idea arrives. Without it, sections feel abrupt. With it, the listener is carried across.</p>
       <div class="diagram-wrap">
@@ -463,16 +423,10 @@
       <div class="principle-box">
         Every structural section boundary benefits from a micro-exhale before the new idea enters. The listener needs a cleared space to hear the return as fresh. The Epilog is Bach's formal solution; your session's transition zones are the same mechanism scaled down.
       </div>
-    </div>
-  </div>
+</content-card>
 
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Breathing Version</div>
-    </div>
-    <div class="card-body">
-      <p>Open your 16-bar Ableton session from Ch08 — 5 MIDI tracks, development episode in bars 9–16. (The Ch09 structural map was a planning document; your MIDI session is still 16 bars.) Apply three breathing edits to create a piece that arcs: full → sparse → wide → hovering.</p>
+  <content-card number="✦" color="orange" title="Build It — Breathing Version">
+<p>Open your 16-bar Ableton session from Ch08 — 5 MIDI tracks, development episode in bars 9–16. (The Ch09 structural map was a planning document; your MIDI session is still 16 bars.) Apply three breathing edits to create a piece that arcs: full → sparse → wide → hovering.</p>
       <div class="sub-section">
         <div class="sub-title">Edit 1 — Bars 5–8: texture dropout</div>
         <p>In bars 5–8, mute tracks 2, 3, 4, and 5 — keep only Track 1 (Upper voice) playing. Do this with empty clips or clip automation, not a global mute. After 4 bars of full texture, the sudden single voice opens the room. The listener has heard the material; one voice is enough to carry it forward.</p>
@@ -591,21 +545,18 @@
           <text x="680" y="179" font-family="Space Mono,monospace" font-size="8" fill="#4caf79" text-anchor="middle">active</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">TEXTURE ◇ LONG NOTES ◇ SEQUENCES ◇ HARMONIC RHYTHM ◇ REGISTER ◇ VOICE RESTS ◇ CADENTIAL BREATHING ◇ TEXTURE ◇ LONG NOTES ◇ SEQUENCES ◇ HARMONIC RHYTHM ◇ REGISTER ◇ VOICE RESTS ◇ CADENTIAL BREATHING ◇</span></div>
+<site-banner>TEXTURE ◇ LONG NOTES ◇ SEQUENCES ◇ HARMONIC RHYTHM ◇ REGISTER ◇ VOICE RESTS ◇ CADENTIAL BREATHING ◇ TEXTURE ◇ LONG NOTES ◇ SEQUENCES ◇ HARMONIC RHYTHM ◇ REGISTER ◇ VOICE RESTS ◇ CADENTIAL BREATHING ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch09-large-scale-form.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 09 — Large-Scale Form</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch09-large-scale-form.html"
+  prev-title="Ch 09 — Large-Scale Form">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 10: SPACE AND BREATHING — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 10: SPACE AND BREATHING — D MINOR"></site-footer>
 
 </body>
 </html>

@@ -77,11 +77,12 @@ Run these reads in parallel based on the detected section:
 Follow the chapter page skeleton in CLAUDE.md exactly. Key reminders:
 - All styles come from `styles.css` — no inline `<style>` blocks
 - All diagrams are inline SVG inside `.diagram-wrap` — no image files
-- Card number color classes: `green-num`, `orange-num`, `purple-num`, `red-num`
-- Build It card always uses `orange-num` and `✦` as the number
-- Chapter nav: prev link if prev chapter exists, next link **only if that HTML file already exists** (check your Glob result)
-- **nav-back link and href:** use the section-specific link from Step 0 (Bach → `bach.html` or `index.html`; Minimalist → `minimalist.html`)
-- **Footer text:** `AMBIENT COUNTERPOINT — CH NN: TITLE — D MINOR` for Bach; `AMBIENT COUNTERPOINT — M NN: TITLE — D DORIAN` for Minimalist
+- Include `<script src="components/index.js" defer></script>` in `<head>` after the stylesheet link
+- Use `<site-nav>`, `<site-banner>`, `<site-hero>`, `<intro-box>`, `<content-card>`, `<chapter-nav>`, `<site-footer>` components (see CLAUDE.md skeleton for syntax)
+- `<content-card>` color values: `color="green"`, `color="orange"`, `color="purple"`, `color="red"` (default = blue). Build It card always uses `number="✦" color="orange"`
+- Chapter nav: omit `prev-href`/`prev-title` for first chapter; omit `next-href`/`next-title` if the next HTML file doesn't exist yet (check your Glob result)
+- **`<site-nav>` href and label:** Bach → `href="bach.html" label="Bach Counterpoint"`; Minimalist → `href="minimalist.html" label="Minimalist Composition"`
+- **`<site-footer>` text:** `AMBIENT COUNTERPOINT — CH NN: TITLE — D MINOR` for Bach; `AMBIENT COUNTERPOINT — M NN: TITLE — D DORIAN` for Minimalist
 
 **Cross-references:** Where a minimalist technique has a Bach counterpart (or vice versa), include a `<p>` cross-reference in the relevant card pointing to the other chapter's HTML file. The plan files list the expected cross-references.
 

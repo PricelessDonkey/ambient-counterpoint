@@ -8,30 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="minimalist.html">Ambient Counterpoint</a></nav>
+<site-nav href="minimalist.html" label="Ambient Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER M03 — MICRO-VARIATION — CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇ CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇</span></div>
+<site-banner>CHAPTER M03 — MICRO-VARIATION — CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇ CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇</site-banner>
 
-<div class="hero">
-  <h1><span>Micro-Variation</span></h1>
-  <p class="subtitle">Glass does this constantly — the listener shouldn't consciously notice, but they should feel it.</p>
-</div>
+<site-hero>
+  <span slot="title">Micro-Variation</span>
+  <span slot="subtitle">Glass does this constantly — the listener shouldn't consciously notice, but they should feel it.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">A loop repeated without change eventually disappears into the background. Micro-variation keeps the listener present without breaking the spell: one note changed, one note shifted, one note removed. The change should be felt, not analyzed. This chapter shows you how to introduce variation so subtle the listener experiences it as texture rather than event.</div></div>
+<intro-box>A loop repeated without change eventually disappears into the background. Micro-variation keeps the listener present without breaking the spell: one note changed, one note shifted, one note removed. The change should be felt, not analyzed. This chapter shows you how to introduce variation so subtle the listener experiences it as texture rather than event.</intro-box>
 
 <div class="content">
 
   <!-- Card 11 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">11</div>
-      <div class="card-title">What Counts as Micro-Variation</div>
-    </div>
-    <div class="card-body">
-      <p>Micro-variation operates within a single loop. The change is small enough that the loop still feels like the same loop. Four operations qualify:</p>
+  <content-card number="11" title="What Counts as Micro-Variation">
+<p>Micro-variation operates within a single loop. The change is small enough that the loop still feels like the same loop. Four operations qualify:</p>
       <div class="sub-section">
         <div class="sub-title">The Four Operations</div>
         <div class="idiom">
@@ -126,34 +122,22 @@
           <text x="617" y="190" font-family="Space Mono,monospace" font-size="9" fill="#9b7fce" text-anchor="middle">rhythm shifted +¹⁄₁₆</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 12 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">12</div>
-      <div class="card-title">The Illusion of Development</div>
-    </div>
-    <div class="card-body">
-      <p>String micro-variants together and something remarkable happens: the listener perceives development even though the material barely moves. This is the perceptual magic of Glass's <em>Metamorphosis</em> and <em>Music in Similar Motion</em>.</p>
+  <content-card number="12" title="The Illusion of Development">
+<p>String micro-variants together and something remarkable happens: the listener perceives development even though the material barely moves. This is the perceptual magic of Glass's <em>Metamorphosis</em> and <em>Music in Similar Motion</em>.</p>
       <p>The illusion depends on the listener internalizing the original loop so fully that even a tiny change registers as a meaningful event. A single pitch shift in bar 9 feels larger than it is because it violates the expectation built by bars 1–8. The brain hears movement; the material has barely changed.</p>
       <div class="sub-section">
         <div class="sub-title">Why it works</div>
         <p>Repetition writes a stable pattern into working memory. Any deviation from that pattern — however small — activates the brain's change-detection system. Attention briefly re-engages. Then the variant is absorbed, a new baseline forms, and the process is ready to repeat.</p>
         <p>This is fundamentally different from conventional development, which creates interest by introducing genuinely new material. Micro-variation creates interest by exploiting the contrast between what was memorized and what is actually heard.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 13 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">13</div>
-      <div class="card-title">How Long to Stay Before Varying</div>
-    </div>
-    <div class="card-body">
-      <p>The variant is only meaningful if the listener has internalized the original. This takes time. The rule of thumb: <span class="key">minimum 4 repetitions, optimal 8–16</span>, before the first variation.</p>
+  <content-card number="13" title="How Long to Stay Before Varying">
+<p>The variant is only meaningful if the listener has internalized the original. This takes time. The rule of thumb: <span class="key">minimum 4 repetitions, optimal 8–16</span>, before the first variation.</p>
       <p>Fewer than 4 repetitions and the change reads as a mistake or a new idea — the original wasn't established. At 8–16 reps the loop is wallpaper; the variant cuts through cleanly.</p>
 
       <div class="diagram-wrap">
@@ -210,17 +194,11 @@
       </div>
 
       <p>These numbers are calibrations, not rules. A slower loop (longer bars, sparser notes) may need fewer repetitions because each pass takes more clock time. A faster loop may need more. Trust your ears over the count.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 14 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">14</div>
-      <div class="card-title">Returning to the Original</div>
-    </div>
-    <div class="card-body">
-      <p>Variants are most powerful when they return to the original afterward. The sequence <span class="key">A → A′ → A</span> creates a sense of inhale and exhale — departure and homecoming — that a one-directional series A → A′ → A″ → A‴ doesn't.</p>
+  <content-card number="14" title="Returning to the Original">
+<p>Variants are most powerful when they return to the original afterward. The sequence <span class="key">A → A′ → A</span> creates a sense of inhale and exhale — departure and homecoming — that a one-directional series A → A′ → A″ → A‴ doesn't.</p>
       <p>The return to A is not stagnation. After experiencing A′, the original loop lands differently — the listener hears it with fresh attention, colored by the contrast just passed. The same notes feel reaffirmed rather than merely repeated.</p>
       <div class="sub-section">
         <div class="sub-title">The return as structural resolution</div>
@@ -230,17 +208,11 @@
         <div class="idiom-name">The inhale / exhale principle</div>
         <p>A → A′ → A: inhale (expectation built), exhale (deviation and return). A → A′ → A″ never exhales — tension accumulates without release. Build returns into your arrangement — they are structural, not redundant.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- Card 15 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">15</div>
-      <div class="card-title">Micro-Variation vs Development</div>
-    </div>
-    <div class="card-body">
-      <p>Bach and Glass both sustain interest over long durations, but they solve the problem in opposite ways.</p>
+  <content-card number="15" title="Micro-Variation vs Development">
+<p>Bach and Glass both sustain interest over long durations, but they solve the problem in opposite ways.</p>
       <div class="sub-section">
         <div class="sub-title">Two strategies, one problem</div>
         <div class="idiom">
@@ -254,17 +226,11 @@
       </div>
       <p>Neither approach is better. Bach's development builds argument; Glass's micro-variation builds hypnosis. Choose based on what the moment needs.</p>
       <p>For Bach's strategies — inversion, retrograde, augmentation, and fragmentation — see <a href="ch08-motivic-development.html">Ch 08 — Motivic Development</a>. Micro-variation is the minimalist answer to the same question: how do you sustain one idea for multiple minutes?</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- Build It -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Three Variants</div>
-    </div>
-    <div class="card-body">
-      <p>Open your M02 session. Your working clip is "M02 rhythm redesign" — D4, F4, G4, A4 with the dotted-8th/16th rhythm. You'll create three variants and arrange them across 32 bars.</p>
+  <content-card number="✦" color="orange" title="Build It — Three Variants">
+<p>Open your M02 session. Your working clip is "M02 rhythm redesign" — D4, F4, G4, A4 with the dotted-8th/16th rhythm. You'll create three variants and arrange them across 32 bars.</p>
 
       <div class="sub-section">
         <div class="sub-title">Step 1 — Duplicate and label</div>
@@ -330,21 +296,18 @@
       <div class="principle-box">
         After this session you have 32 bars: three variants of the same idea in dialogue, with returns built in as structural beats. This is all of Glass's compositional logic in miniature.
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇ CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇</span></div>
+<site-banner>CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇ CHANGE ONE THING ◇ STAY LONG ENOUGH ◇ RETURN TO THE ORIGINAL ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="m02-loop-craft.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">M02 — Loop Craft</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="m02-loop-craft.html"
+  prev-title="M02 — Loop Craft">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — M 03: MICRO-VARIATION — D DORIAN</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — M 03: MICRO-VARIATION — D DORIAN"></site-footer>
 
 </body>
 </html>

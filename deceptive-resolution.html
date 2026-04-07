@@ -8,38 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Home</a></nav>
+<site-nav href="index.html" label="Home"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp; THE DECEPTIVE RESOLUTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; DELAY THE ENDING &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>The Deceptive</span><br><span>Resolution</span></h1>
-  <p class="subtitle">How to deny a cadence, rewind the sequence, and make the eventual arrival feel earned. The deceptive move isn't an ending — it's a way to delay one.</p>
-</div>
+<site-hero>
+  <span slot="title">The Deceptive<br>Resolution</span>
+  <span slot="subtitle">How to deny a cadence, rewind the sequence, and make the eventual arrival feel earned. The deceptive move isn't an ending — it's a way to delay one.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    The setup is everything. A deceptive move only works because your ear has been <strong>trained to expect a specific resolution</strong> — within the piece and across a lifetime of listening. You build tension on the dominant, the listener's brain already hears the tonic landing, and then you put something else there. The surprise isn't random — it's a <strong>very specific substitution</strong>.
-  </div>
-</div>
+<intro-box>The setup is everything. A deceptive move only works because your ear has been <strong>trained to expect a specific resolution</strong> — within the piece and across a lifetime of listening. You build tension on the dominant, the listener's brain already hears the tonic landing, and then you put something else there. The surprise isn't random — it's a <strong>very specific substitution</strong>.</intro-box>
 
 <div class="content">
 
   <!-- ═══ 1. THE CLASSIC DECEPTION ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">01</div>
-      <div class="card-title">The Classic: V → ♭VI</div>
-    </div>
-    <div class="card-body">
-      <p>In D minor: you arrive on <a href="bach_chord_cheat_sheet.html#seventh" class="chord-ref">A7 (the dominant)</a>. A7 has C♯ in it, pulling up to D. Your ear is screaming "D minor is next." Instead, the bass moves <span class="key">up a half step to B♭</span>, and you land on B♭ major.</p>
+  <content-card number="01" color="orange" title="The Classic: V → ♭VI">
+<p>In D minor: you arrive on <a href="bach_chord_cheat_sheet.html#seventh" class="chord-ref">A7 (the dominant)</a>. A7 has C♯ in it, pulling up to D. Your ear is screaming "D minor is next." Instead, the bass moves <span class="key">up a half step to B♭</span>, and you land on B♭ major.</p>
 
       <p>It works because B♭ major shares two notes with D minor (D and F), so it doesn't sound wrong — it sounds like arriving somewhere <span class="key">warm but unexpected</span>, like turning a corner and finding a different room than you thought.</p>
 
@@ -101,17 +89,11 @@
           <text font-family="DM Sans, sans-serif" font-size="10" fill="var(--ink-soft)" x="400" y="276" text-anchor="middle">Not wrong — warm but unexpected. A different room than you thought.</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 2. THE REWIND ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">02</div>
-      <div class="card-title">The Rewind — Extending Fortspinnung</div>
-    </div>
-    <div class="card-body">
-      <p>This is where the deceptive resolution becomes a <span class="key">structural tool</span> rather than just a colorful moment. When you're spinning through the circle of fifths heading toward a cadence and you land on B♭ instead of Dm, you've essentially <span class="key">rewound the sequence</span> — B♭ is earlier in the circle, so you can start spinning again from there.</p>
+  <content-card number="02" color="green" title="The Rewind — Extending Fortspinnung">
+<p>This is where the deceptive resolution becomes a <span class="key">structural tool</span> rather than just a colorful moment. When you're spinning through the circle of fifths heading toward a cadence and you land on B♭ instead of Dm, you've essentially <span class="key">rewound the sequence</span> — B♭ is earlier in the circle, so you can start spinning again from there.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
@@ -210,17 +192,11 @@
       </div>
 
       <p style="margin-top: 16px;">The listener wanted resolution, got denied, and now <span class="key">wants it even more</span> the second time around. Bach uses this to make sentences longer without it feeling like padding.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 3. THE BASS MOTION ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">03</div>
-      <div class="card-title">Why the Bass Motion Matters</div>
-    </div>
-    <div class="card-body">
-      <p>The real resolution (A→D) drops a fifth — the strongest, most final-sounding motion in tonal music. The deceptive resolution moves up a half step — almost the <span class="key">opposite gesture</span>: small, gentle, upward instead of large and down. It deflects the energy rather than grounding it.</p>
+  <content-card number="03" title="Why the Bass Motion Matters">
+<p>The real resolution (A→D) drops a fifth — the strongest, most final-sounding motion in tonal music. The deceptive resolution moves up a half step — almost the <span class="key">opposite gesture</span>: small, gentle, upward instead of large and down. It deflects the energy rather than grounding it.</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
@@ -278,17 +254,11 @@
           </g>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 4. FLAVORS ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">04</div>
-      <div class="card-title">Other Flavors</div>
-    </div>
-    <div class="card-body">
-      <div class="sub-section">
+  <content-card number="04" color="purple" title="Other Flavors">
+<div class="sub-section">
         <div class="sub-title orange">Major Key: V → vi (the sigh)</div>
         <p>In C major: <a href="bach_chord_cheat_sheet.html#seventh" class="chord-ref">G7</a> resolves to Am instead of C. Bass rises a step (G→A) instead of falling a fifth (G→C). The <span class="key">minor chord</span> after all that dominant tension creates a bittersweet quality — the music sighs instead of arriving.</p>
 
@@ -341,17 +311,11 @@
           </svg>
         </div>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- ═══ 5. THE PATTERN ═══ -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">05</div>
-      <div class="card-title">The Overall Pattern</div>
-    </div>
-    <div class="card-body">
-      <p>A deceptive resolution <span class="key">always creates an obligation</span> to try the cadence again. You almost never hear just one. The pattern is always:</p>
+  <content-card number="05" title="The Overall Pattern">
+<p>A deceptive resolution <span class="key">always creates an obligation</span> to try the cadence again. You almost never hear just one. The pattern is always:</p>
 
       <div class="diagram-wrap">
         <svg viewBox="0 0 800 140" xmlns="http://www.w3.org/2000/svg">
@@ -399,20 +363,13 @@
       <div class="principle-box">
         The deceptive move isn't an ending — it's a way to delay an ending. The deception makes the eventual real arrival feel earned. The listener wanted resolution, was denied, and now wants it even more. That amplified desire is what gives the final cadence its weight.
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp; THE DECEPTION MAKES THE ARRIVAL FEEL EARNED &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>VISUAL REFERENCE — DECEPTIVE RESOLUTIONS — D MINOR</p>
-</div>
+<site-footer text="VISUAL REFERENCE — DECEPTIVE RESOLUTIONS — D MINOR"></site-footer>
 
 </body>
 </html>

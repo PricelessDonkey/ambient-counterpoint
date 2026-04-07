@@ -8,37 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; BASS MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHROMATIC DESCENT &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; BASS MOTION &nbsp;&nbsp; ◇ &nbsp;&nbsp; LAMENT BASS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; CIRCLE OF FIFTHS &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHROMATIC DESCENT &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Harmonic Foundations</span></h1>
-  <p class="subtitle">The bass line underneath everything — how Bach's chord progressions create inevitable forward momentum.</p>
-</div>
+<site-hero>
+  <span slot="title">Harmonic Foundations</span>
+  <span slot="subtitle">The bass line underneath everything — how Bach's chord progressions create inevitable forward momentum.</span>
+</site-hero>
 
-<div class="intro-box">
-  <div class="inner">
-    <strong>Melody without harmony is a river without banks.</strong> The two-voice counterpoint you built in Chapters 1–4 floats above an implied harmony, but that harmony has been vague — inferred from context rather than stated. This chapter makes the harmonic structure explicit: what chord progressions Bach reached for first, why they work, and how to put them under your music in Ableton. A strong bass line doesn't just support melody; it creates the gravitational field that makes melody meaningful.
-  </div>
-</div>
+<intro-box><strong>Melody without harmony is a river without banks.</strong> The two-voice counterpoint you built in Chapters 1–4 floats above an implied harmony, but that harmony has been vague — inferred from context rather than stated. This chapter makes the harmonic structure explicit: what chord progressions Bach reached for first, why they work, and how to put them under your music in Ableton. A strong bass line doesn't just support melody; it creates the gravitational field that makes melody meaningful.</intro-box>
 
 <div class="content">
 
   <!-- CARD 1: Circle of Fifths Descent -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">1</div>
-      <div class="card-title">Circle of Fifths Descent</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="1" title="Circle of Fifths Descent">
+<div class="sub-section">
         <p class="sub-title">The fundamental harmonic engine</p>
         <p>When a chord's root moves down a fifth (or equivalently up a fourth), the ear hears harmonic <span class="key">arrival</span> — a sense of weight settling. One V-I move feels like a cadence. A chain of them feels unstoppable. In D minor, the diatonic circle descends: Dm → Gm → C → Dm (short loop) or the full 8-step journey through all the diatonic roots.</p>
         <p>Bach uses this as his default engine. When a passage feels purposeful and inevitable, the bass is almost certainly moving in fifths underneath. For an in-depth breakdown with the full circular layout, see <a href="harmonic-engines.html" style="color:var(--blue)">harmonic-engines.html</a>.</p>
@@ -128,19 +117,11 @@
       <div class="principle-box">
         Every time a root moves down a fifth, the ear hears "landing." String enough of these together and you have unstoppable harmonic momentum — each bar becomes an arrival that also launches the next.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 2: The 5-1 Ratchet -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">2</div>
-      <div class="card-title">The 5-1 Ratchet</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="2" title="The 5-1 Ratchet">
+<div class="sub-section">
         <p class="sub-title">Chromaticizing every link in the chain</p>
         <p>The diatonic circle of fifths uses the natural minor scale throughout. But you can intensify every step by inserting a <span class="key">secondary dominant</span> — a dominant 7th chord built on the fifth of the target chord — just before you arrive. This injects chromatic tension (a note outside the natural minor scale) that the next chord must resolve.</p>
         <p>In D minor, approaching Gm: instead of going there directly, play <strong>D7</strong> (D–F#–A–C). The F# is chromatic — D minor has F natural — and it acts as a leading tone that pulls up to G. Then to approach C major: play <strong>G7</strong> (G–B–D–F). The B natural is chromatic — D minor has Bb — and it acts as a leading tone that pulls up to C. Each V7 introduces one chromatic note that makes the arrival feel earned rather than routine.</p>
@@ -232,19 +213,11 @@
       <div class="principle-box">
         The 5-1 ratchet transforms a smooth circle of fifths into a tightening coil. Each secondary dominant charges a capacitor; each diatonic arrival discharges it. Stack three or four in a row and the music feels pulled forward like a current.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 3: Descending Bass / Lament Bass -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">3</div>
-      <div class="card-title">Descending Bass / The Lament Bass</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="3" color="red" title="Descending Bass / The Lament Bass">
+<div class="sub-section">
         <p class="sub-title">The most emotionally potent bass pattern in Western music</p>
         <p>The <span class="key">lament bass</span> descends stepwise from the tonic to the dominant: in D minor, <strong>D–C–Bb–A</strong>, one note per bar. This four-note descent has been the foundation of grief, longing, and inexorable fate from Purcell's "Dido's Lament" through countless Baroque and contemporary pieces. The downward motion feels like a weight that cannot be stopped. The dominant arrival on A sets up the return to Dm — the bass sinks to its lowest point and turns around.</p>
         <p>Over the lament bass, Bach typically alternates between <span class="key">root position</span> and <span class="key">first-inversion</span> chords to keep the upper voices smooth. The bass note doesn't have to be the root of the chord — it just needs to descend.</p>
@@ -317,19 +290,11 @@
       <div class="principle-box">
         The lament bass works because stepwise descent is the simplest possible bass motion — no leaps, no surprises — and yet it is inexorable. Every note confirms the fall. The dominant at the bottom is not an ending; it is a place of reckoning before the turn.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 4: Ascending Bass -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">4</div>
-      <div class="card-title">Ascending Bass Line</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="4" color="green" title="Ascending Bass Line">
+<div class="sub-section">
         <p class="sub-title">Against the natural harmonic grain</p>
         <p>Harmonic weight naturally sinks — roots want to descend by fifths or steps, pulling toward the tonic. An ascending bass fights this tendency, which creates a sense of striving, building, or defying gravity. It is less common than descent in Bach, but when he uses it, it creates momentum of a different kind: not the fatalistic pull of the lament bass but an upward surge.</p>
         <p>The standard ascending bass in D minor walks up the scale from D3 to A3: <strong>D–E–F–G–A</strong>. To keep the voice-leading smooth, Bach typically puts the upper voices in <span class="key">first-inversion chords</span> over the passing bass notes (E and G). This way the bass movement is independent of the harmonic root movement — the bass climbs while the harmony still progresses in sensible directions.</p>
@@ -416,19 +381,11 @@
       <div class="principle-box">
         The ascending bass is rare because it is hard — it works against harmonic gravity. But that resistance is the point. Used sparingly, it creates a sense of building pressure that a descending bass cannot match.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 5: Chromatic Bass Descent -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">5</div>
-      <div class="card-title">Chromatic Bass Descent</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="5" color="purple" title="Chromatic Bass Descent">
+<div class="sub-section">
         <p class="sub-title">Every half step instead of diatonic steps</p>
         <p>The diatonic lament bass skips some chromatic notes (D to C is a whole step; C to Bb is also a whole step). The <span class="key">chromatic bass descent</span> fills in every semitone: D–C#–C–B–Bb–A. Six notes, all half steps. This is darker, slower, and more chromatic than the diatonic version — each step feels reluctant, as if something is being pulled down against its will.</p>
         <p>In D minor: D3 is the tonic, C# is chromatic (not in natural minor), C is diatonic (VII), B is chromatic (raised 6th — D minor has Bb, not B natural), Bb is the diatonic minor sixth, A is the dominant. The C# and the B each introduce a chromatic pull into the descent — the C# resolves downward to C, and the B gives the line a moment of unexpected brightness before sinking to Bb.</p>
@@ -543,19 +500,11 @@
       <div class="principle-box">
         The chromatic descent is the maximum version of harmonic inevitability — nothing is skipped, nothing escapes. Purcell used it as a ground bass looped throughout "Dido's Lament." In a sequencer, it loops hypnotically; try 6 bars of ground bass with a freely evolving melody above.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 6: Tonicization vs Modulation -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">6</div>
-      <div class="card-title">Tonicization vs. Modulation</div>
-    </div>
-    <div class="card-body">
-
-      <div class="sub-section">
+  <content-card number="6" color="orange" title="Tonicization vs. Modulation">
+<div class="sub-section">
         <p class="sub-title">A day trip vs. moving house</p>
         <p><span class="key">Tonicization</span> is when you briefly treat a non-tonic chord as if it were home — one V-I gesture aimed at it, then you move on. The secondary dominant (Card 2 of this chapter) is the tool: play D7→Gm to tonicize Gm for one moment, then continue elsewhere. Your ear registers Gm as momentarily important, but D minor remains the overarching home. No new key has been established.</p>
         <p><span class="key">Modulation</span> is when you actually leave your home key and set up shop in a new one. Not just one V-I gesture but multiple phrases, full cadences, and melodic content that treats the new key as the reference. The listener forgets D minor for a while. Returning to D minor later feels like a homecoming — because the new key was real enough to generate its own gravitational field.</p>
@@ -632,19 +581,11 @@
       <div class="principle-box">
         Tonicization colors a single chord without changing your address. Modulation packs your bags. The difference is duration and commitment: one V-I is a glance; a full phrase with its own cadence is a conversation.
       </div>
-
-    </div>
-  </div>
+</content-card>
 
   <!-- BUILD IT CARD -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — Give the Piece a Harmonic Foundation</div>
-    </div>
-    <div class="card-body">
-
-      <p>Open your Ch 04 session — the two-voice piece with contrary motion in bar 1, a cross-relation in bar 2, a pedal freeze and suspension preparation in bar 3, and the 4-3 suspension resolving through a chromatic enclosure to D4 in bar 4. Those two voices now become the <strong>upper</strong> and <strong>middle</strong> voices. This session, you will add a third MIDI track for the bass — and you will try two different bass lines to hear how radically the harmonic context changes the piece's feel.</p>
+  <content-card number="✦" color="orange" title="Build It — Give the Piece a Harmonic Foundation">
+<p>Open your Ch 04 session — the two-voice piece with contrary motion in bar 1, a cross-relation in bar 2, a pedal freeze and suspension preparation in bar 3, and the 4-3 suspension resolving through a chromatic enclosure to D4 in bar 4. Those two voices now become the <strong>upper</strong> and <strong>middle</strong> voices. This session, you will add a third MIDI track for the bass — and you will try two different bass lines to hear how radically the harmonic context changes the piece's feel.</p>
 
       <div class="sub-section">
         <p class="sub-title">New bass track setup</p>
@@ -799,26 +740,18 @@
         </ul>
         <p>Keep whichever resonates, or try a hybrid: use the lament bass for the first loop and the circle bass for a variation, revealing that the same melody can carry different harmonic worlds.</p>
       </div>
-
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner">
-  <span class="banner-text">CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</span>
-</div>
+<site-banner>CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp; CHAPTER 05 &nbsp;&nbsp; ◇ &nbsp;&nbsp; HARMONIC FOUNDATIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; D MINOR &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch04-tension-release.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 04 — Tension and Release Between Voices</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch04-tension-release.html"
+  prev-title="Ch 04 — Tension and Release Between Voices">
+</chapter-nav>
 
-<div class="footer">
-  <p>AMBIENT COUNTERPOINT — CH 05: HARMONIC FOUNDATIONS — D MINOR</p>
-</div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 05: HARMONIC FOUNDATIONS — D MINOR"></site-footer>
 
 </body>
 </html>

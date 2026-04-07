@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M05 — Additive &amp; Subtractive Process</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>CHAPTER 05 ◇ ADDITIVE & SUBTRACTIVE PROCESS ◇ CHAPTER 05 ◇ ADDITIVE & SUBTRACTIVE PROCESS ◇ CHAPTER 05 ◇ ADDITIVE & SUBTRACTIVE PROCESS</site-banner>
+
+<site-hero>
+  <span slot="title">Additive &amp; Subtractive Process</span>
+  <span slot="subtitle">Building and dissolving: the loop as a process, not a product.</span>
+</site-hero>
+
+<intro-box>Reich's additive process turns composition into a game with one rule: add one note per cycle. This chapter shows how to grow a texture from silence to density — and then take it back apart — using nothing but clip duplication and careful note ordering. The process answers "what next?" so you don't have to.</intro-box>
+
+<div class="content">
+
+  <content-card number="21" title="Reich's Additive Process">
+    <p>Start with one note. Repeat it N times. Add one note. Repeat. Add one more. Continue until the texture is full. The <span class="key">additive process</span> turns the act of composition into a rule: the music grows from almost nothing to complete density, and the listener hears every step of the journey.</p>
+    <p>This is the technique behind Reich's <em>Drumming</em> and many of Glass's keyboard works — the process itself is the composition. You don't need to decide what happens next: the rule decides for you.</p>
+    <div class="sub-section">
+      <div class="sub-title">Why it works</div>
+      <p>Repetition builds expectation. When a new note arrives, the ear hears it against the accumulated pattern and experiences it as arrival — even a single added pitch feels like an event. The longer you wait before adding, the more weight each addition carries.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <line x1="140" y1="0" x2="140" y2="200" class="grid-line"/>
+        <line x1="230" y1="0" x2="230" y2="200" class="grid-line"/>
+        <line x1="320" y1="0" x2="320" y2="200" class="grid-line"/>
+        <line x1="410" y1="0" x2="410" y2="200" class="grid-line"/>
+        <line x1="500" y1="0" x2="500" y2="200" class="grid-line"/>
+        <line x1="590" y1="0" x2="590" y2="200" class="grid-line"/>
+        <line x1="680" y1="0" x2="680" y2="200" class="grid-line"/>
+        <!-- Row labels -->
+        <text x="10" y="38" font-family="Space Mono,monospace" font-size="11" fill="#666">Clip 1</text>
+        <text x="10" y="88" font-family="Space Mono,monospace" font-size="11" fill="#666">Clip 2</text>
+        <text x="10" y="138" font-family="Space Mono,monospace" font-size="11" fill="#666">Clip 3</text>
+        <text x="10" y="188" font-family="Space Mono,monospace" font-size="11" fill="#666">Clip 4</text>
+        <!-- Pitch labels -->
+        <text x="115" y="38" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D4</text>
+        <text x="115" y="88" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D4 F A</text>
+        <text x="115" y="138" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D4 A4</text>
+        <text x="115" y="188" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D F G A</text>
+        <!-- Row 1: D only -->
+        <rect x="145" y="22" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="185" y="35" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <!-- Row 2: D + F -->
+        <rect x="145" y="72" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="185" y="85" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="235" y="72" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="275" y="85" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <!-- Row 3: D + F + G -->
+        <rect x="145" y="122" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="185" y="135" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="235" y="122" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="275" y="135" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <rect x="325" y="122" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="365" y="135" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">G4</text>
+        <!-- Row 4: D + F + G + A -->
+        <rect x="145" y="172" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="185" y="185" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="235" y="172" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="275" y="185" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <rect x="325" y="172" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="365" y="185" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">G4</text>
+        <rect x="415" y="172" width="80" height="18" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="455" y="185" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">A4</text>
+        <!-- Arrow showing growth direction -->
+        <line x1="720" y1="30" x2="720" y2="180" stroke="#4a90d9" stroke-width="2"/>
+        <polygon points="715,175 720,188 725,175" fill="#4a90d9"/>
+        <text x="745" y="110" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle" transform="rotate(90,745,110)">ADD</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="22" color="red" title="Subtractive Process">
+    <p>The reverse journey: start with the full texture and remove one note every N repetitions. <span class="key">Subtractive process</span> tends to feel more emotionally powerful than addition — something is being taken away. The listener experiences loss, not gain.</p>
+    <p>Silence earned by subtraction has more weight than silence from the start. By the time you arrive at a single note, that note carries the memory of everything that preceded it.</p>
+    <div class="sub-section">
+      <div class="sub-title">What to remove first</div>
+      <p>Remove <strong>color notes first</strong> (the ones farthest from the root/fifth), and save the root for last. This mirrors tonal gravity: the center survives while the ornamentation dissolves. Reversing this (removing root first) creates disorientation — use intentionally.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <line x1="140" y1="0" x2="140" y2="200" class="grid-line"/>
+        <line x1="230" y1="0" x2="230" y2="200" class="grid-line"/>
+        <line x1="320" y1="0" x2="320" y2="200" class="grid-line"/>
+        <line x1="410" y1="0" x2="410" y2="200" class="grid-line"/>
+        <line x1="500" y1="0" x2="500" y2="200" class="grid-line"/>
+        <!-- Row labels -->
+        <text x="10" y="38" font-family="Space Mono,monospace" font-size="11" fill="#666">Full</text>
+        <text x="10" y="88" font-family="Space Mono,monospace" font-size="11" fill="#666">−G4</text>
+        <text x="10" y="138" font-family="Space Mono,monospace" font-size="11" fill="#666">−F4</text>
+        <text x="10" y="188" font-family="Space Mono,monospace" font-size="11" fill="#666">Root</text>
+        <!-- Row 1: Full D+F+G+A -->
+        <rect x="145" y="22" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="181" y="35" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="227" y="22" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="263" y="35" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <rect x="309" y="22" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="345" y="35" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">G4</text>
+        <rect x="391" y="22" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="427" y="35" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">A4</text>
+        <!-- Row 2: D+F+A (G removed) -->
+        <rect x="145" y="72" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="181" y="85" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="227" y="72" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="263" y="85" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <rect x="309" y="72" width="72" height="18" rx="2" fill="#e04848" opacity="0.20" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="345" y="85" font-family="Space Mono,monospace" font-size="10" fill="#e04848" opacity="0.5" text-anchor="middle">—</text>
+        <rect x="391" y="72" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="427" y="85" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">A4</text>
+        <!-- Row 3: D+A (F removed) -->
+        <rect x="145" y="122" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="181" y="135" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="227" y="122" width="72" height="18" rx="2" fill="#e04848" opacity="0.20" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="263" y="135" font-family="Space Mono,monospace" font-size="10" fill="#e04848" opacity="0.5" text-anchor="middle">—</text>
+        <rect x="309" y="122" width="72" height="18" rx="2" fill="#e04848" opacity="0.20" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="345" y="135" font-family="Space Mono,monospace" font-size="10" fill="#e04848" opacity="0.5" text-anchor="middle">—</text>
+        <rect x="391" y="122" width="72" height="18" rx="2" fill="#e04848" opacity="0.85"/>
+        <text x="427" y="135" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">A4</text>
+        <!-- Row 4: D only -->
+        <rect x="145" y="172" width="72" height="18" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="181" y="185" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle">D4</text>
+        <rect x="227" y="172" width="72" height="18" rx="2" fill="#e04848" opacity="0.20" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <rect x="309" y="172" width="72" height="18" rx="2" fill="#e04848" opacity="0.20" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <rect x="391" y="172" width="72" height="18" rx="2" fill="#e04848" opacity="0.20" stroke="#e04848" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <!-- Arrow showing loss direction -->
+        <line x1="720" y1="30" x2="720" y2="180" stroke="#e04848" stroke-width="2"/>
+        <polygon points="715,175 720,188 725,175" fill="#e04848"/>
+        <text x="745" y="110" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle" transform="rotate(90,745,110)">REMOVE</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="23" title="What to Add (and When)">
+    <p>The order of addition and removal is a compositional decision. The rule tells you <em>how many</em> notes to add each cycle; you still choose <em>which</em> note and <em>when</em> the cycle turns.</p>
+    <div class="sub-section">
+      <div class="sub-title">Addition order — ascending scale</div>
+      <p>Add notes in <span class="key">ascending scale order</span> from the root: root (D), then third (F), then G, then fifth (A). This creates a smooth, stepwise contour — each addition is the next note up the scale, so the texture grows naturally rather than leaping around. The listener hears it as a gradual filling-in.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Cycle length — how patient are you?</div>
+      <p>A cycle of 4 repetitions per clip feels fast and mechanical. 8 or 16 repetitions feels meditative. 32+ begins to feel like actual time passing. Most Reich and Glass additive passages use 8–16 repetitions per stage. Match the cycle length to the tempo: at 100 BPM, 8 bars of 4/4 = about 20 seconds per stage.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Subtraction order — color notes first</div>
+      <p>When subtracting, remove color notes first — the notes that create harmonic interest rather than the tonal backbone. From D F G A, subtract in this order: G → F → A → D. Color note G goes first; the fifth (A) survives until nearly the end; the root (D) is last. The final D has earned its isolation.</p>
+    </div>
+  </content-card>
+
+  <content-card number="24" color="green" title="Process Notation in Ableton">
+    <p>Two ways to build additive/subtractive sequences in Ableton Live:</p>
+    <div class="sub-section">
+      <div class="sub-title">Method 1: Separate clips (recommended)</div>
+      <p>Create one MIDI clip per stage. Each clip contains one more (or one fewer) note than the previous. Arrange these clips sequentially in <span class="key">Arrangement View</span>, each repeated N times. This is the cleanest method: every stage is explicit, easy to edit, and can be different lengths.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Method 2: Note mute automation</div>
+      <p>Use a single clip with all notes present. In the MIDI clip editor, draw <span class="key">velocity automation</span> or use the note-mute feature to silence notes at specific bars. Less transparent than Method 1 but useful if you want the option to vary the rhythm of existing notes while adding new ones.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Clip naming convention</div>
+      <p>Name clips clearly: <code>M05-A1 [D]</code>, <code>M05-A2 [D F]</code>, <code>M05-A3 [D F G]</code>, <code>M05-A4 [D F G A]</code>. The bracket notation makes the clip contents readable at a glance in the Arrangement timeline without having to open each clip.</p>
+    </div>
+  </content-card>
+
+  <content-card number="25" color="purple" title="Semi-Process: Rules with Freedom">
+    <p>You don't need to be mechanically strict. <span class="key">Semi-process</span> uses the additive/subtractive structure as a skeleton and makes expressive choices within it. This is Glass's approach: the process provides the answer to "what next?" but the composer still controls dynamics, articulation, and pacing.</p>
+    <div class="sub-section">
+      <div class="sub-title">What the rule gives you</div>
+      <p>The rule eliminates decision fatigue. Because you know <em>what</em> will change next, you can focus entirely on <em>when</em> to change it and <em>how</em> to prepare the listener. The constraint is liberating: it narrows the infinite possibility space to a single dimension.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Expressive choices within the rule</div>
+      <p>Vary the number of repetitions per stage (don't always use 8). Introduce a dynamic swell before adding a new note — make the arrival feel earned. Allow a stage to last longer than planned if it feels right. The rule says add one note; it doesn't say when.</p>
+    </div>
+    <p>Cross-reference: additive process is the minimalist analogue of <strong>Fortspinnung</strong> — spinning material out from a seed. For the Bach counterpart and how a sentence grows from its opening gesture, see <a href="ch07-the-sentence.html">Ch 07 — The Sentence</a>.</p>
+
+    <div class="principle-box">
+      The process answers "what next?" — your job is to answer "when." Strict or semi-strict, the rule gives you forward motion without requiring constant invention.
+    </div>
+  </content-card>
+
+  <!-- Process as composition timeline diagram -->
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open your M04 session (100 BPM, melody clips A/A′/A″, pulse track). You'll build a 32-bar additive-then-subtractive sequence on a new track.</p>
+    <div class="sub-section">
+      <div class="sub-title">Step 1 — Create four additive clips</div>
+      <p>Add a new MIDI track. Create four 1-bar clips:</p>
+      <ul>
+        <li><strong>M05-A1 [D]:</strong> D4, quarter note, beat 1 only.</li>
+        <li><strong>M05-A2 [D F]:</strong> D4 beat 1, F4 beat 3.</li>
+        <li><strong>M05-A3 [D F G]:</strong> D4 beat 1, F4 beat 3, G4 beat 2.</li>
+        <li><strong>M05-A4 [D F G A]:</strong> D4 beat 1, F4 beat 3, G4 beat 2, A4 beat 4.</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 2 — Arrange in Arrangement View</div>
+      <p>Place each clip repeated 4 times (4 bars each): A1 × 4 bars → A2 × 4 bars → A3 × 4 bars → A4 × 4 bars. That's 16 bars of addition. Then reverse the sequence for the subtractive return: A3 × 4 → A2 × 4 → A1 × 4 = 12 more bars. Total: 28 bars. Add 4 bars of silence at the end for arrival weight.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 3 — Listen with the pulse</div>
+      <p>Keep the M04 pulse track running throughout. Notice how the pulse gives each addition a rhythmic context — D alone sounds sparse against a pulse; D+F+G+A sounds full. The pulse is the constant that makes the addition audible.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- Timeline bars: 32 total. Each bar = 22px. Starting x=80 -->
+        <!-- Label -->
+        <text x="10" y="30" font-family="Space Mono,monospace" font-size="10" fill="#666">Add →</text>
+        <text x="10" y="75" font-family="Space Mono,monospace" font-size="10" fill="#666">Notes</text>
+        <text x="10" y="105" font-family="Space Mono,monospace" font-size="10" fill="#666">← Sub</text>
+        <!-- Bar grid lines (every 4 bars) -->
+        <line x1="80" y1="10" x2="80" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="168" y1="10" x2="168" y2="120" stroke="#d9d4ca" stroke-width="1"/>
+        <line x1="256" y1="10" x2="256" y2="120" stroke="#d9d4ca" stroke-width="1"/>
+        <line x1="344" y1="10" x2="344" y2="120" stroke="#d9d4ca" stroke-width="1"/>
+        <line x1="432" y1="10" x2="432" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="520" y1="10" x2="520" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="608" y1="10" x2="608" y2="120" stroke="#d9d4ca" stroke-width="1"/>
+        <line x1="696" y1="10" x2="696" y2="120" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Additive phase bars (A1–A4, 4 bars each) -->
+        <!-- A1: bars 1-4, 1 note -->
+        <rect x="80" y="55" width="88" height="18" rx="2" fill="#4a90d9" opacity="0.4"/>
+        <text x="124" y="68" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">D</text>
+        <!-- A2: bars 5-8, 2 notes -->
+        <rect x="168" y="46" width="88" height="27" rx="2" fill="#4a90d9" opacity="0.6"/>
+        <text x="212" y="63" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">D F</text>
+        <!-- A3: bars 9-12, 3 notes -->
+        <rect x="256" y="37" width="88" height="36" rx="2" fill="#4a90d9" opacity="0.75"/>
+        <text x="300" y="59" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">D F G</text>
+        <!-- A4: bars 13-16, 4 notes (peak) -->
+        <rect x="344" y="22" width="88" height="51" rx="2" fill="#4a90d9" opacity="0.9"/>
+        <text x="388" y="51" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">D F G A</text>
+        <!-- Subtractive phase bars -->
+        <!-- A3: bars 17-20, 3 notes -->
+        <rect x="432" y="37" width="88" height="36" rx="2" fill="#e04848" opacity="0.75"/>
+        <text x="476" y="59" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">D F G</text>
+        <!-- A2: bars 21-24, 2 notes -->
+        <rect x="520" y="46" width="88" height="27" rx="2" fill="#e04848" opacity="0.6"/>
+        <text x="564" y="63" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">D F</text>
+        <!-- A1: bars 25-28, 1 note -->
+        <rect x="608" y="55" width="88" height="18" rx="2" fill="#e04848" opacity="0.4"/>
+        <text x="652" y="68" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">D</text>
+        <!-- Silence: bars 29-32 -->
+        <rect x="696" y="68" width="55" height="5" rx="2" fill="#888" opacity="0.3"/>
+        <!-- Bar labels -->
+        <text x="80" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">1</text>
+        <text x="168" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">5</text>
+        <text x="256" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">9</text>
+        <text x="344" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">13</text>
+        <text x="432" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">17</text>
+        <text x="520" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">21</text>
+        <text x="608" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">25</text>
+        <text x="696" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888">29</text>
+        <!-- Density curve label -->
+        <text x="388" y="17" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9" text-anchor="middle">PEAK DENSITY</text>
+      </svg>
+    </div>
+    <p>Carry-forward: you now have 4 additive clips (M05-A1 through M05-A4) arranged in a 32-bar arc. Keep them — next chapter's phase work will run a duplicate of this track against itself.</p>
+  </content-card>
+
+</div>
+
+<site-banner>ADDITIVE & SUBTRACTIVE ◇ D DORIAN ◇ ADDITIVE & SUBTRACTIVE ◇ D DORIAN ◇ ADDITIVE & SUBTRACTIVE ◇ D DORIAN</site-banner>
+
+<chapter-nav
+  prev-href="m04-the-pulse.html" prev-title="M04 — The Pulse as Foundation"
+  next-href="m06-phase-shifting.html" next-title="M06 — Phase Shifting">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M 05: ADDITIVE & SUBTRACTIVE PROCESS — D DORIAN"></site-footer>
+
+</body>
+</html>

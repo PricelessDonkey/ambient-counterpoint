@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 <style>
 /* ── Map site tokens onto the chord sheet's color variables ── */
 .chord-sheet {
@@ -211,18 +212,14 @@
 </head>
 <body>
 
-<nav class="site-nav"><a href="index.html">Home</a></nav>
+<site-nav href="index.html" label="Home"></site-nav>
 
-<div class="banner">
-  <span class="banner-text">
-    BACH CHORD CHEAT SHEET &nbsp;&nbsp; ◇ &nbsp;&nbsp; TRIADS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEVENTH CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; COLOUR CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH CHORD CHEAT SHEET &nbsp;&nbsp; ◇ &nbsp;&nbsp; TRIADS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEVENTH CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; COLOUR CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>BACH CHORD CHEAT SHEET &nbsp;&nbsp; ◇ &nbsp;&nbsp; TRIADS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEVENTH CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; COLOUR CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp; BACH CHORD CHEAT SHEET &nbsp;&nbsp; ◇ &nbsp;&nbsp; TRIADS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SEVENTH CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; COLOUR CHORDS &nbsp;&nbsp; ◇ &nbsp;&nbsp; SUSPENSIONS &nbsp;&nbsp; ◇ &nbsp;&nbsp;</site-banner>
 
-<div class="hero">
-  <h1><span>Bach Chord Cheat Sheet</span></h1>
-  <p class="subtitle">Every chord type Bach uses — what it sounds like, how it functions, and where it sits in the harmony.</p>
-</div>
+<site-hero>
+  <span slot="title">Bach Chord Cheat Sheet</span>
+  <span slot="subtitle">Every chord type Bach uses — what it sounds like, how it functions, and where it sits in the harmony.</span>
+</site-hero>
 
 <div class="content">
   <div class="chord-sheet">
@@ -237,15 +234,9 @@
   </div>
 </div>
 
-<div class="banner">
-  <span class="banner-text">
-    BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp;
-  </span>
-</div>
+<site-banner>BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp; BACH × HARMONY × FUNCTION &nbsp;&nbsp; ⚡ &nbsp;&nbsp;</site-banner>
 
-<div class="footer">
-  <p>BACH CHORD REFERENCE — TRIADS, SEVENTHS, COLOUR CHORDS, SUSPENSIONS</p>
-</div>
+<site-footer text="BACH CHORD REFERENCE — TRIADS, SEVENTHS, COLOUR CHORDS, SUSPENSIONS"></site-footer>
 
 <script>
 const chords = [

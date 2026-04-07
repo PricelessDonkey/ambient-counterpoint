@@ -8,30 +8,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
 </head>
 <body>
 
-<nav class="site-nav"><a href="bach.html">Bach Counterpoint</a></nav>
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
 
-<div class="banner"><span class="banner-text">CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ </span></div>
+<site-banner>CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇ CHAPTER 12 — CANONS &amp; ROUNDS — IMITATION — ROUND — CANON — STRETTO — PHASE ◇</site-banner>
 
-<div class="hero">
-  <h1><span>Canons &amp; Rounds</span></h1>
-  <p class="subtitle">The imitative forms between a single motif and a fugue — and why a phase loop is a canon.</p>
-</div>
+<site-hero>
+  <span slot="title">Canons &amp; Rounds</span>
+  <span slot="subtitle">The imitative forms between a single motif and a fugue — and why a phase loop is a canon.</span>
+</site-hero>
 
-<div class="intro-box"><div class="inner">Chapter 9 introduced the fugue exposition, but skipped the simpler imitative forms that lead up to it. Chapter 11 built phase loops that are, formally, rhythmic canons. This chapter fills the gap: from the three-voice round where the melody harmonises with itself, through strict two-voice canons at the unison, octave, and fifth, through stretto entries piled so tight they collide — to the moment you recognise Steve Reich's Piano Phase as a canon with a continuously drifting time interval.</div></div>
+<intro-box>Chapter 9 introduced the fugue exposition, but skipped the simpler imitative forms that lead up to it. Chapter 11 built phase loops that are, formally, rhythmic canons. This chapter fills the gap: from the three-voice round where the melody harmonises with itself, through strict two-voice canons at the unison, octave, and fifth, through stretto entries piled so tight they collide — to the moment you recognise Steve Reich's Piano Phase as a canon with a continuously drifting time interval.</intro-box>
 
 <div class="content">
 
   <!-- CARD 62 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">62</div>
-      <div class="card-title">What Is Imitation?</div>
-    </div>
-    <div class="card-body">
-      <p>Imitation is one voice echoing what another voice just played, starting on a different beat. The first voice is the <span class="key">dux</span> (leader); the following voice is the <span class="key">comes</span> (follower). The word <em>canon</em> comes from Latin for "rule" — the rule being that the follower must replicate the leader exactly.</p>
+  <content-card number="62" title="What Is Imitation?">
+<p>Imitation is one voice echoing what another voice just played, starting on a different beat. The first voice is the <span class="key">dux</span> (leader); the following voice is the <span class="key">comes</span> (follower). The word <em>canon</em> comes from Latin for "rule" — the rule being that the follower must replicate the leader exactly.</p>
       <p>Every imitative form — round, canon, ricercar, fugue — is built from this single mechanism. So is Steve Reich's phase music: two performers playing the same material, one entering slightly later. The surface sounds very different; the structural logic is identical.</p>
       <p>Two parameters define every imitative texture:</p>
       <ul>
@@ -91,17 +87,11 @@
         <p>Program D4 E4 F4 A4 as four quarter notes on Track 1. Duplicate the clip to Track 2. Nudge Track 2 two beats to the right. Both tracks now play the same melody with a two-beat lag. The simultaneous note pairs — F4 over D4 (minor third), A4 over E4 (perfect fourth) — appear automatically from the melody's own intervals. You haven't composed the harmony; the melody composed it.</p>
       </div>
       <div class="principle-box">The melody is also the harmony. That is the central miracle of imitative counterpoint.</div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 63 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">63</div>
-      <div class="card-title">Rounds: Strict Imitation at the Unison</div>
-    </div>
-    <div class="card-body">
-      <p>A <span class="key">round</span> is the simplest imitative form: all voices enter at the same pitch, separated by a fixed time interval, and the music loops so the piece never ends until voices drop out. "Frère Jacques" is a four-voice round. "Row Your Boat" is a three-voice round. Every voice is singing the same melody but a phrase behind the others.</p>
+  <content-card number="63" color="green" title="Rounds: Strict Imitation at the Unison">
+<p>A <span class="key">round</span> is the simplest imitative form: all voices enter at the same pitch, separated by a fixed time interval, and the music loops so the piece never ends until voices drop out. "Frère Jacques" is a four-voice round. "Row Your Boat" is a three-voice round. Every voice is singing the same melody but a phrase behind the others.</p>
       <p>The harmony is self-generated. Because the time offset is not equal to the motif length, each voice is on a different note at every moment — and those notes form the chords. A well-written round produces exclusively thirds, fourths, fifths, and sixths: all the stable consonances.</p>
       <p>Below: the four-note motif D E F A, three voices, entering three beats apart. At the moment all three voices are active, the simultaneous pitches are F4 (Voice 1), A4 (Voice 2), and D4 (Voice 3) — a D minor triad.</p>
       <div class="diagram-wrap">
@@ -174,17 +164,11 @@
         <div class="sub-title">The self-harmonising rule</div>
         <p>For a round to work, the melody must form consonances with every time-shifted copy of itself. Bach's canonic writing respects this strictly: test every simultaneous pair of notes before committing to the melody. Dissonances can occur on weak beats (passing motion) but not on strong beats (where the ear listens hardest).</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 64 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number">64</div>
-      <div class="card-title">Canon at the Unison and Octave</div>
-    </div>
-    <div class="card-body">
-      <p>A <span class="key">canon</span> is a round without the loop: the follower imitates the leader exactly until the piece ends at a written cadence. A <span class="key">canon at the unison</span> has both voices on the same pitch class — same notes, staggered in time. A <span class="key">canon at the octave</span> transposes the follower up or down an octave, separating the voices in register without changing their interval relationship.</p>
+  <content-card number="64" title="Canon at the Unison and Octave">
+<p>A <span class="key">canon</span> is a round without the loop: the follower imitates the leader exactly until the piece ends at a written cadence. A <span class="key">canon at the unison</span> has both voices on the same pitch class — same notes, staggered in time. A <span class="key">canon at the octave</span> transposes the follower up or down an octave, separating the voices in register without changing their interval relationship.</p>
       <p>The craft challenge: write a melody that harmonises with a time-shifted copy of itself at every moment. Below, the motif D E F A (with a two-beat delay) creates exclusively minor thirds and perfect fourths at every simultaneous beat. Not every melody will do this — you have to choose intervals that invert well.</p>
       <div class="diagram-wrap">
         <!-- Diagram C: Canon at unison — 2-bar example, 4-note motif, 2-beat offset, interval labels -->
@@ -250,17 +234,11 @@
         <p>An octave canon is identical in structure but the follower sounds an octave higher or lower. This is the most common Bach canon type: the upper voice carries the melody while the lower voice, an octave down, provides bass-line support. The interval content is the same — thirds become tenths, fourths become elevenths — but the register separation makes the texture feel like a full two-voice composition rather than one melody doubled.</p>
       </div>
       <p>The Build It at the end of this chapter uses canon at the octave: Track 6 (the arpeggio from Ch 11) leads; Track 9 follows one bar later, dropped an octave. The interval content is unchanged but the piece gains depth.</p>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 65 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number purple-num">65</div>
-      <div class="card-title">Canon at the Interval: Fifth, Fourth, and Beyond</div>
-    </div>
-    <div class="card-body">
-      <p>When the follower enters on a different pitch — not the same note or its octave but a fifth up, a fourth down — the canon becomes harmonically richer. This is <span class="key">canon at the interval</span>. Bach's canons at the fifth are the archetype: the follower answers the leader on the dominant, creating an automatic tonic–dominant oscillation on every entry.</p>
+  <content-card number="65" color="purple" title="Canon at the Interval: Fifth, Fourth, and Beyond">
+<p>When the follower enters on a different pitch — not the same note or its octave but a fifth up, a fourth down — the canon becomes harmonically richer. This is <span class="key">canon at the interval</span>. Bach's canons at the fifth are the archetype: the follower answers the leader on the dominant, creating an automatic tonic–dominant oscillation on every entry.</p>
       <p>In tonal music, the canon at the fifth uses a <span class="key">tonal answer</span>: the first note transposes up a fifth, but subsequent intervals are adjusted to stay in the key. A strict transposition would leave the key immediately; a tonal answer keeps the follower grounded in D minor. The rule: map tonic-area notes to the dominant (D→A) and dominant-area notes back to the tonic (A→D), then fill the gaps diatonically. Below, the leader (dux) plays D E F A; the follower (comes) answers on A, with the tonal adjustment producing A Bb C F — all notes of D minor.</p>
       <div class="diagram-wrap">
         <!-- Diagram D: Canon at the fifth — leader D4 E4 F4 A4, follower A3 Bb3 C4 F4 (tonal answer, 1-beat offset) -->
@@ -336,17 +314,11 @@
         <p>The fifth is the strongest interval after the octave. When the comes enters on the dominant (A), the listener's ear reads it as a harmonic response to the dux's tonic (D). Every subsequent entry alternates tonic and dominant, creating a built-in harmonic rhythm at the entry level — before any chord changes have been written.</p>
       </div>
       <div class="principle-box">A canon at the fifth is a piece that generates its own harmonic motion from the act of imitation alone. The composer chooses the melody; the entries choose the harmony.</div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 66 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number red-num">66</div>
-      <div class="card-title">Stretto: Canonic Entries Piled Tight</div>
-    </div>
-    <div class="card-body">
-      <p><span class="key">Stretto</span> (Italian: "tight, narrow") is a technique where imitative entries are compressed — the follower enters before the leader has finished stating the idea. In Chapter 8, stretto appeared briefly as a motivic tool. Here it is explained properly: stretto is a canonic technique, and its function is density and pressure.</p>
+  <content-card number="66" color="red" title="Stretto: Canonic Entries Piled Tight">
+<p><span class="key">Stretto</span> (Italian: "tight, narrow") is a technique where imitative entries are compressed — the follower enters before the leader has finished stating the idea. In Chapter 8, stretto appeared briefly as a motivic tool. Here it is explained properly: stretto is a canonic technique, and its function is density and pressure.</p>
       <p>As the time gap between entries shrinks, the overlap grows. A four-beat gap between entries produces a relaxed, sequential texture. A two-beat gap creates overlap and builds momentum. A one-beat gap creates near-simultaneous entries that pile voices on top of each other — maximum harmonic density, used for structural climaxes (and notably in the climax of Bach's fugues).</p>
       <div class="diagram-wrap">
         <!-- Diagram E: Stretto — three sections showing decreasing time gaps -->
@@ -395,17 +367,11 @@
         <div class="sub-title">Stretto in ambient music</div>
         <p>In an Ableton arrangement, stretto is a nudge. Take two copies of the same clip. On the second copy, drag the start point forward until the clips overlap by the desired amount. The overlap zone is stretto. Automate the overlap amount over time — spacious at the start, tighter as tension builds — and you have a compositional arc using nothing but clip placement.</p>
       </div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 67 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">67</div>
-      <div class="card-title">Invertible Counterpoint Revisited</div>
-    </div>
-    <div class="card-body">
-      <p>Chapter 3 introduced contrary motion; Chapter 8 touched on inversion. Here is the principle that makes two-voice canons function: <span class="key">invertible counterpoint</span>. A passage is invertible if, when the two voices swap octave positions (the top voice drops an octave, the bottom voice rises an octave), the result still sounds good — no parallel fifths, no parallel octaves, no unbearable dissonances.</p>
+  <content-card number="67" color="orange" title="Invertible Counterpoint Revisited">
+<p>Chapter 3 introduced contrary motion; Chapter 8 touched on inversion. Here is the principle that makes two-voice canons function: <span class="key">invertible counterpoint</span>. A passage is invertible if, when the two voices swap octave positions (the top voice drops an octave, the bottom voice rises an octave), the result still sounds good — no parallel fifths, no parallel octaves, no unbearable dissonances.</p>
       <p>Why does this matter for canons? In a two-voice canon, the leader and follower will inevitably trade positions: there will be moments when the leader is above, and moments when the follower is above. If the counterpoint is not invertible, those swapped positions will produce parallel fifths or other errors. The composer must write both voices so that either order works.</p>
       <div class="sub-section">
         <div class="sub-title">The invertibility rule</div>
@@ -423,17 +389,11 @@
         <p>Before committing to a canonic melody, transpose your leader track down an octave (or the follower up an octave) and play both together. If it sounds clean, the counterpoint is invertible and your canon will work at any registral position. If it sounds wrong, adjust the offending interval — usually a second or seventh on a strong beat.</p>
       </div>
       <div class="principle-box">A melody that sounds good against a time-shifted, octave-swapped copy of itself is a canon waiting to be written. Check invertibility before you finalise the notes.</div>
-    </div>
-  </div>
+</content-card>
 
   <!-- CARD 68 -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number green-num">68</div>
-      <div class="card-title">Phase as Rhythmic Canon</div>
-    </div>
-    <div class="card-body">
-      <p>Steve Reich's <em>Piano Phase</em> (1967) begins with both pianists playing the same 12-note loop in unison. One pianist gradually accelerates until they are exactly one sixteenth note ahead of the other, then locks into tempo. This process repeats until the second pianist has cycled through all 12 offset positions and the two are back in unison. The result is a continuously evolving harmonic and rhythmic texture from a single melodic phrase.</p>
+  <content-card number="68" color="green" title="Phase as Rhythmic Canon">
+<p>Steve Reich's <em>Piano Phase</em> (1967) begins with both pianists playing the same 12-note loop in unison. One pianist gradually accelerates until they are exactly one sixteenth note ahead of the other, then locks into tempo. This process repeats until the second pianist has cycled through all 12 offset positions and the two are back in unison. The result is a continuously evolving harmonic and rhythmic texture from a single melodic phrase.</p>
       <p>This is formally a <span class="key">rhythmic canon</span> — the same melody in two voices with a time offset. The difference from a Bach canon is that the time offset is not fixed but <em>continuously changing</em>. As the offset moves, every possible simultaneous interval pair appears in sequence. The composer does not choose the harmony; the phase process generates it systematically.</p>
       <p>You built a version of this in Chapter 11: Track 6 (8-note loop) and Track 7 (7-note loop) drift apart by one eighth note per bar. Because the loops are different lengths, the phase relationship changes continuously — exactly as in Reich's pieces. The diagram below shows how the 7-note loop's start position shifts one position each bar relative to the 8-note loop.</p>
       <div class="diagram-wrap">
@@ -624,17 +584,11 @@
         <p>A Bach canon fixes the time offset and writes harmony explicitly around it. A Reich phase piece lets the offset drift and trusts the process to generate interesting harmony automatically. Both are imitative counterpoint. The difference is whether the composer controls the offset moment-to-moment or releases that control to the phase relationship. Neither is superior — they are tools for different intentions.</p>
       </div>
       <div class="principle-box">Phase music is not a metaphor for canon. It <em>is</em> a canon — one whose delay interval is continuously negotiated by the performers rather than fixed by notation.</div>
-    </div>
-  </div>
+</content-card>
 
   <!-- BUILD IT -->
-  <div class="card">
-    <div class="card-header">
-      <div class="card-number orange-num">✦</div>
-      <div class="card-title">Build It — A Two-Voice Canon at the Octave</div>
-    </div>
-    <div class="card-body">
-      <p>Open your Ch 11 session (32 bars, 8 tracks). You will add a 12-bar <strong>canon epilog</strong> as bars 33–44. Bars 1–32 remain unchanged.</p>
+  <content-card number="✦" color="orange" title="Build It — A Two-Voice Canon at the Octave">
+<p>Open your Ch 11 session (32 bars, 8 tracks). You will add a 12-bar <strong>canon epilog</strong> as bars 33–44. Bars 1–32 remain unchanged.</p>
 
       <div class="sub-section">
         <div class="sub-title">Bar 33 — Re-entry</div>
@@ -770,21 +724,18 @@
           <text x="730" y="160" font-family="Space Mono,monospace" font-size="7" fill="#d4842a" text-anchor="middle">fade out</text>
         </svg>
       </div>
-    </div>
-  </div>
+</content-card>
 
 </div>
 
-<div class="banner"><span class="banner-text">CANONS &amp; ROUNDS ◇ IMITATION ◇ ROUND ◇ CANON ◇ STRETTO ◇ PHASE ◇ BACH × REICH ◇ CANONS &amp; ROUNDS ◇ IMITATION ◇ ROUND ◇ CANON ◇ STRETTO ◇ PHASE ◇ BACH × REICH ◇ </span></div>
+<site-banner>CANONS &amp; ROUNDS ◇ IMITATION ◇ ROUND ◇ CANON ◇ STRETTO ◇ PHASE ◇ BACH × REICH ◇ CANONS &amp; ROUNDS ◇ IMITATION ◇ ROUND ◇ CANON ◇ STRETTO ◇ PHASE ◇ BACH × REICH ◇</site-banner>
 
-<div class="chapter-nav">
-  <a class="chapter-nav-item chapter-nav-prev" href="ch11-ambient-counterpoint.html">
-    <span class="chapter-nav-label">← Previous</span>
-    <span class="chapter-nav-title">Ch 11 — From Bach to Ambient</span>
-  </a>
-</div>
+<chapter-nav
+  prev-href="ch11-ambient-counterpoint.html"
+  prev-title="Ch 11 — From Bach to Ambient">
+</chapter-nav>
 
-<div class="footer"><p>AMBIENT COUNTERPOINT — CH 12: CANONS &amp; ROUNDS — D MINOR</p></div>
+<site-footer text="AMBIENT COUNTERPOINT — CH 12: CANONS &amp; ROUNDS — D MINOR"></site-footer>
 
 </body>
 </html>
