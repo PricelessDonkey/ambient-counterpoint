@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 13 — Case Study: Schubert D334</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
+
+<site-banner>CASE STUDY ◇ SCHUBERT D334 ◇ A MAJOR ◇ MOTIF X ◇ MOTIF Y ◇ ANTECEDENT ◇ CONSEQUENT ◇ VIIø7/V ◇ SECONDARY DOMINANT ◇ CADENTIAL SIX-FOUR ◇ CASE STUDY ◇ SCHUBERT D334 ◇ A MAJOR ◇ MOTIF X ◇ MOTIF Y ◇ ANTECEDENT ◇ CONSEQUENT ◇ VIIø7/V ◇ SECONDARY DOMINANT ◇ CADENTIAL SIX-FOUR ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Case Study: Schubert D334</span>
+  <span slot="subtitle">Twelve chapters of technique, alive in two phrases of a Minuet.</span>
+</site-hero>
+
+<intro-box>Everything in this series — leap versus step, antecedent and consequent, chromatic color chords, inner-voice dialogue, tension and cadential release — is abstract until you see it working in a real piece. Schubert's Minuet D334 packs all of it into sixteen bars. We move through the A section phrase by phrase, naming each technique as it appears and pointing back to where you've already studied it in depth.</intro-box>
+
+<div class="content">
+
+  <!-- CARD 1: The Piece at a Glance -->
+  <content-card number="1" title="The Piece at a Glance">
+    <p><span class="key">Schubert Minuet D334</span> is an early piano minuet in <span class="key">A major</span>, 3/4 time, Allegretto — elegant, dance-like, brisk without rushing. The A section runs sixteen bars to the first repeat and divides cleanly into two eight-bar phrases. The B section (after the repeat) modulates and returns; we focus on the A section, where the core techniques are concentrated.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Form: Parallel Period</div>
+      <p>The A section is built as a <span class="key">parallel period</span>: two phrases that open with identical or near-identical material but close differently. The first phrase is the <span class="key">antecedent</span> — it ends unresolved on a half cadence (V), leaving the ear suspended. The second phrase is the <span class="key">consequent</span> — it recycles the same opening idea, then closes with a perfect authentic cadence (V→I), completing the thought.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 96" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Antecedent band -->
+          <rect x="20" y="16" width="340" height="56" rx="4" fill="#d6e8f7" opacity="0.6"/>
+          <text x="190" y="34" font-family="Space Mono,monospace" font-size="10" fill="#3d7ec7" font-weight="700" text-anchor="middle">ANTECEDENT — mm. 1–8</text>
+          <text x="190" y="50" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">motif x + y → ... → half cadence</text>
+          <rect x="270" y="57" width="82" height="10" rx="2" fill="#e04848" opacity="0.8"/>
+          <text x="311" y="66" font-family="Space Mono,monospace" font-size="7.5" fill="white" text-anchor="middle" font-weight="700">→ V (open)</text>
+
+          <!-- Consequent band -->
+          <rect x="400" y="16" width="340" height="56" rx="4" fill="#d6f0e3" opacity="0.6"/>
+          <text x="570" y="34" font-family="Space Mono,monospace" font-size="10" fill="#3a9e6e" font-weight="700" text-anchor="middle">CONSEQUENT — mm. 9–16</text>
+          <text x="570" y="50" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">same opening → colorful chords → cadence</text>
+          <rect x="618" y="57" width="114" height="10" rx="2" fill="#3a9e6e" opacity="0.9"/>
+          <text x="675" y="66" font-family="Space Mono,monospace" font-size="7.5" fill="white" text-anchor="middle" font-weight="700">→ I (closed)</text>
+
+          <!-- Baseline label -->
+          <line x1="20" y1="86" x2="740" y2="86" stroke="#ccc" stroke-width="0.8"/>
+          <text x="380" y="95" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">same question — answered the second time</text>
+        </svg>
+      </div>
+      <p>This antecedent-consequent pairing is the backbone of Classical phrase writing. It's built on the same call-and-response logic as the Vordersatz-Epilog structure from <em>Ch 07</em>, scaled down to eight bars each. Bach would recognise the architecture immediately.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Two Motifs: x and y</div>
+      <p>The entire melody grows from two small ideas. <span class="key">Motif x</span> is an <em>expressive upward leap</em> — bold, open, directional. It launches each phrase on the pickup beat. <span class="key">Motif y</span> is a <em>falling stepwise figure</em> — smooth, graceful, descending through three or four steps after the leap. Together they give the melody its characteristic shape: surge upward, then pour back down.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 138" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <defs>
+            <marker id="arr-blue" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#3d7ec7"/>
+            </marker>
+            <marker id="arr-red" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#e04848"/>
+            </marker>
+          </defs>
+
+          <!-- Pitch grid lines -->
+          <line class="grid-line" x1="50" y1="30" x2="720" y2="30"/>
+          <line class="grid-line" x1="50" y1="55" x2="720" y2="55"/>
+          <line class="grid-line" x1="50" y1="80" x2="720" y2="80"/>
+          <line class="grid-line" x1="50" y1="105" x2="720" y2="105"/>
+
+          <!-- Pitch labels -->
+          <text x="44" y="33" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">E5</text>
+          <text x="44" y="58" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">C#5</text>
+          <text x="44" y="83" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">A4</text>
+          <text x="44" y="108" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">E4</text>
+
+          <!-- MOTIF X (first occurrence): pickup A4 → leap to E5 -->
+          <circle cx="90" cy="80" r="5" fill="#3d7ec7"/>
+          <line x1="90" y1="80" x2="155" y2="30" stroke="#3d7ec7" stroke-width="2.5" stroke-dasharray="7 3" marker-end="url(#arr-blue)"/>
+          <circle cx="160" cy="30" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- MOTIF Y (first occurrence): E5 → D#5 → C#5 → B4 → A4 (stepwise fall) -->
+          <polyline points="160,30 230,42 300,55 370,67 430,80" stroke="#e04848" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="230" cy="42" r="5" fill="#e04848"/>
+          <circle cx="300" cy="55" r="5" fill="#e04848"/>
+          <circle cx="370" cy="67" r="5" fill="#e04848"/>
+          <circle cx="430" cy="80" r="5" fill="#e04848"/>
+
+          <!-- Bracket: motif x -->
+          <line x1="70" y1="120" x2="172" y2="120" stroke="#3d7ec7" stroke-width="1.5"/>
+          <line x1="70" y1="115" x2="70" y2="125" stroke="#3d7ec7" stroke-width="1.5"/>
+          <line x1="172" y1="115" x2="172" y2="125" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="121" y="133" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">x (leap)</text>
+
+          <!-- Bracket: motif y -->
+          <line x1="172" y1="120" x2="445" y2="120" stroke="#e04848" stroke-width="1.5"/>
+          <line x1="445" y1="115" x2="445" y2="125" stroke="#e04848" stroke-width="1.5"/>
+          <text x="308" y="133" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle" font-weight="700">y (stepwise fall)</text>
+
+          <!-- SECOND OCCURRENCE (consequent, faded): same shape recycled -->
+          <circle cx="510" cy="80" r="4" fill="#3d7ec7" opacity="0.4"/>
+          <line x1="510" y1="80" x2="558" y2="30" stroke="#3d7ec7" stroke-width="1.8" stroke-dasharray="7 3" opacity="0.4"/>
+          <circle cx="562" cy="30" r="5" fill="#3d7ec7" opacity="0.35"/>
+          <polyline points="562,30 607,44 650,57 693,70 720,80" stroke="#e04848" stroke-width="1.8" fill="none" stroke-linejoin="round" opacity="0.4"/>
+          <text x="615" y="110" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle" opacity="0.6">recycled in consequent</text>
+        </svg>
+      </div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 115" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <text x="380" y="10" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">PIANO ROLL — SOPRANO — PICKUP + MM. 1–2</text>
+
+          <!-- Pitch grid lines at note centers -->
+          <line class="grid-line" x1="70" y1="24" x2="640" y2="24"/>
+          <line class="grid-line" x1="70" y1="36" x2="640" y2="36"/>
+          <line class="grid-line" x1="70" y1="42" x2="640" y2="42"/>
+          <line class="grid-line" x1="70" y1="54" x2="640" y2="54"/>
+          <line class="grid-line" x1="70" y1="66" x2="640" y2="66"/>
+
+          <!-- Pitch labels -->
+          <text x="66" y="27" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">E5</text>
+          <text x="66" y="39" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">D5</text>
+          <text x="66" y="45" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">C♯5</text>
+          <text x="66" y="57" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">B4</text>
+          <text x="66" y="69" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">A4</text>
+
+          <!-- Barlines -->
+          <line x1="150" y1="14" x2="150" y2="72" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="390" y1="14" x2="390" y2="72" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Beat subdivisions -->
+          <line class="grid-line" x1="230" y1="14" x2="230" y2="72"/>
+          <line class="grid-line" x1="310" y1="14" x2="310" y2="72"/>
+          <line class="grid-line" x1="470" y1="14" x2="470" y2="72"/>
+          <line class="grid-line" x1="550" y1="14" x2="550" y2="72"/>
+
+          <!-- Notes: 80px per beat, 3 beats per bar -->
+          <!-- Pickup beat: A4 — blue (structural, launches phrase) -->
+          <rect x="70"  y="62" width="80"  height="8" rx="2" fill="#3d7ec7"/>
+          <!-- Bar 1 beat 1: E5 — motif x peak (yellow arrival) -->
+          <rect x="150" y="20" width="80"  height="8" rx="2" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+          <!-- Bar 1 beat 2: D5 — motif y begins -->
+          <rect x="230" y="32" width="80"  height="8" rx="2" fill="#e04848"/>
+          <!-- Bar 1 beat 3: C♯5 -->
+          <rect x="310" y="38" width="80"  height="8" rx="2" fill="#e04848"/>
+          <!-- Bar 2 beat 1: B4 -->
+          <rect x="390" y="50" width="80"  height="8" rx="2" fill="#e04848"/>
+          <!-- Bar 2 beats 2–3: A4 — green (resolution, phrase lands) -->
+          <rect x="470" y="62" width="160" height="8" rx="2" fill="#3a9e6e"/>
+
+          <!-- Motif x bracket (pickup A4 → E5 leap) -->
+          <line x1="70"  y1="76" x2="230" y2="76" stroke="#3d7ec7" stroke-width="1.5"/>
+          <line x1="70"  y1="73" x2="70"  y2="79" stroke="#3d7ec7" stroke-width="1.5"/>
+          <line x1="230" y1="73" x2="230" y2="79" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="150" y="90" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle" font-weight="700">x — leap A4 → E5</text>
+
+          <!-- Motif y bracket (stepwise fall) -->
+          <line x1="230" y1="76" x2="630" y2="76" stroke="#e04848" stroke-width="1.5"/>
+          <line x1="630" y1="73" x2="630" y2="79" stroke="#e04848" stroke-width="1.5"/>
+          <text x="430" y="90" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle" font-weight="700">y — stepwise fall E5 → A4</text>
+
+          <!-- Bar labels -->
+          <text x="110" y="108" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">pickup</text>
+          <text x="270" y="108" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">m.1 — I</text>
+          <text x="510" y="108" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">m.2 — V⁴₃</text>
+        </svg>
+      </div>
+      <p>This is the <span class="key">leap-step contour</span> from <em>Ch 01</em> — the same logic that drives Bach's single-line writing. The leap (motif x) injects energy and direction; the stepwise fall (motif y) releases it smoothly. Schubert recycles both across the consequent phrase, providing unity while the harmony shifts underneath.</p>
+    </div>
+  </content-card>
+
+  <!-- CARD 2: Antecedent Phrase -->
+  <content-card number="2" title="Antecedent: I → Half Cadence on V">
+    <p>The antecedent phrase is kept harmonically direct — the accompaniment is described as <span class="key">simple and unobtrusive</span>, never competing with the melody. The bass moves by step or by root motion (4th/5th leaps), and the inner parts fill in chord tones quietly. Eight bars, tonic to dominant.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">I → V43 → I6 → I: The Breathing Tonic</div>
+      <p>The phrase opens on <span class="key">I</span> (A major: A–C#–E). The first harmonic move is to <span class="key">V43</span> — the dominant seventh (E7) in second inversion, with B in the bass. The bass line descends: A→B is actually an ascent, but V43 is often used as a <em>passing chord</em> where the bass moves stepwise, here B moving to C# → A. The phrase immediately returns via <span class="key">I6</span> (first-inversion tonic, C# in bass) back to root-position <span class="key">I</span>.</p>
+      <p>The effect is a brief excursion that returns to tonic within two or three bars — the harmony breathes out and back in. I6 (first inversion) is the key tool here, from <em>Ch 05</em>: it keeps the bass moving stepwise rather than leaping, maintaining momentum. Bach uses I6 constantly in his descending bass lines for exactly this reason.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 118" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <text x="380" y="10" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">PIANO ROLL — BASS — MM. 1–4 (STEPWISE ASCENT A→B→C♯, RETURN TO A)</text>
+
+          <!-- Pitch grid lines at note centers -->
+          <line class="grid-line" x1="60" y1="37" x2="665" y2="37"/>
+          <line class="grid-line" x1="60" y1="61" x2="665" y2="61"/>
+          <line class="grid-line" x1="60" y1="85" x2="665" y2="85"/>
+
+          <!-- Pitch labels -->
+          <text x="56" y="40" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">C♯3</text>
+          <text x="56" y="64" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">B2</text>
+          <text x="56" y="88" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">A2</text>
+
+          <!-- Barlines (4 bars × 150px = 600px) -->
+          <line x1="60"  y1="14" x2="60"  y2="94" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="210" y1="14" x2="210" y2="94" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="360" y1="14" x2="360" y2="94" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="510" y1="14" x2="510" y2="94" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="660" y1="14" x2="660" y2="94" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Bass notes (height=10) -->
+          <!-- Bar 1: A2 — tonic root -->
+          <rect x="60"  y="80" width="150" height="10" rx="2" fill="#e04848"/>
+          <!-- Bar 2: B2 — V43 bass (stepwise up) -->
+          <rect x="210" y="56" width="150" height="10" rx="2" fill="#d4842a"/>
+          <!-- Bar 3: C♯3 — I6 bass (stepwise up again) -->
+          <rect x="360" y="32" width="150" height="10" rx="2" fill="#d4842a"/>
+          <!-- Bar 4: A2 — tonic returns -->
+          <rect x="510" y="80" width="150" height="10" rx="2" fill="#e04848"/>
+
+          <!-- Chord labels above each bar -->
+          <text x="135" y="24" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">I</text>
+          <text x="285" y="24" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle" font-weight="700">V⁴₃</text>
+          <text x="435" y="24" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">I⁶</text>
+          <text x="585" y="24" font-family="Space Mono,monospace" font-size="9" fill="#3d7ec7" text-anchor="middle" font-weight="700">I</text>
+
+          <!-- Chord identities -->
+          <text x="135" y="108" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="middle">A2 (root)</text>
+          <text x="285" y="108" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="middle">B2 (5th of E7)</text>
+          <text x="435" y="108" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="middle">C♯3 (3rd of A)</text>
+          <text x="585" y="108" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="middle">A2 (root)</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">V7 → I → viiø7/V → V: Toward the Half Cadence</div>
+      <p>The phrase intensifies through a second V7 → I exchange, then arrives at its most dramatic moment: <span class="key">viiø7/V</span>. This is a <em>half-diminished seventh chord built on the leading tone of the dominant</em>. In A major, V = E major; the leading tone of E is D#. So viiø7/V = D#–F##–A–C# (F## = enharmonic G♮). The F## is chromatic to A major and creates a fierce pull toward E, which arrives immediately.</p>
+      <p>Schubert marks this chord <span class="key">fz</span> (sforzando — a sudden, sharp accent) to underscore the surprise. This is the chromatic leading-tone seventh from <em>Ch 06</em>, applied to a secondary target: instead of pulling to I, it pulls to V. The same logic as viiø7 → I, shifted up a fifth. The moment is brief but arresting — exactly the "harmonic color" technique of Ch 06, placed strategically at the phrase's highest tension point.</p>
+      <p>The phrase closes on <span class="key">V</span> (E major) — the <span class="key">half cadence</span>. The ear hangs in suspension. The antecedent has asked its question; only the consequent can answer it.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Chord blocks -->
+          <rect x="14" y="20" width="64" height="46" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="46" y="39" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" text-anchor="middle" font-weight="700">I</text>
+          <text x="46" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A maj</text>
+
+          <rect x="86" y="20" width="66" height="46" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1.5"/>
+          <text x="119" y="39" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle" font-weight="700">V43</text>
+          <text x="119" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E7/B</text>
+
+          <rect x="160" y="20" width="66" height="46" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="193" y="39" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" text-anchor="middle" font-weight="700">I6</text>
+          <text x="193" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A/C#</text>
+
+          <rect x="234" y="20" width="56" height="46" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="262" y="39" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" text-anchor="middle" font-weight="700">I</text>
+          <text x="262" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A maj</text>
+
+          <rect x="298" y="20" width="64" height="46" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1.5"/>
+          <text x="330" y="39" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle" font-weight="700">V7</text>
+          <text x="330" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E7</text>
+
+          <rect x="370" y="20" width="56" height="46" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="398" y="39" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" text-anchor="middle" font-weight="700">I</text>
+          <text x="398" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A maj</text>
+
+          <!-- viiø7/V — prominent -->
+          <rect x="434" y="12" width="100" height="62" rx="3" fill="#e8e0f7" stroke="#7b61c7" stroke-width="2"/>
+          <text x="484" y="32" font-family="Space Mono,monospace" font-size="9" fill="#7b61c7" text-anchor="middle" font-weight="700">viiø7/V</text>
+          <text x="484" y="47" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="middle">D#ø7</text>
+          <text x="484" y="60" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7" text-anchor="middle">fz !</text>
+
+          <!-- V — half cadence -->
+          <rect x="542" y="20" width="80" height="46" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="582" y="39" font-family="Space Mono,monospace" font-size="12" fill="#e04848" text-anchor="middle" font-weight="700">V</text>
+          <text x="582" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E maj</text>
+
+          <!-- IV (pickup to consequent) -->
+          <rect x="630" y="20" width="112" height="46" rx="3" fill="#f7e8d0" stroke="#d4842a" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <text x="686" y="39" font-family="Space Mono,monospace" font-size="11" fill="#d4842a" text-anchor="middle" font-weight="700">IV</text>
+          <text x="686" y="54" font-family="Space Mono,monospace" font-size="7.5" fill="#4a4a4a" text-anchor="middle">→ consequent</text>
+
+          <!-- Half cadence marker -->
+          <text x="582" y="86" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">↑ half cadence</text>
+
+          <!-- Timeline base -->
+          <line x1="14" y1="94" x2="742" y2="94" stroke="#d9d4ca" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <text x="380" y="11" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">CHORD VOICING — viiø7/V = D♯ø7 — M. 7 (fz)</text>
+
+          <!-- Note blocks: chord tones stacked top to bottom (inner voices) -->
+          <rect x="260" y="20" width="240" height="22" rx="3" fill="#e8e0f7" stroke="#7b61c7" stroke-width="1.5"/>
+          <text x="380" y="36" font-family="Space Mono,monospace" font-size="12" fill="#7b61c7" text-anchor="middle" font-weight="700">C♯5</text>
+
+          <rect x="260" y="48" width="240" height="22" rx="3" fill="#e8e0f7" stroke="#7b61c7" stroke-width="1.5"/>
+          <text x="380" y="64" font-family="Space Mono,monospace" font-size="12" fill="#7b61c7" text-anchor="middle" font-weight="700">A4</text>
+
+          <rect x="260" y="76" width="240" height="22" rx="3" fill="#e8e0f7" stroke="#7b61c7" stroke-width="1.5"/>
+          <text x="380" y="92" font-family="Space Mono,monospace" font-size="12" fill="#7b61c7" text-anchor="middle" font-weight="700">F♯4</text>
+
+          <!-- Register gap indicator -->
+          <line x1="260" y1="106" x2="500" y2="106" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="380" y="117" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">· · · register gap · · ·</text>
+
+          <!-- D♯3 bass note (slightly darker) -->
+          <rect x="260" y="124" width="240" height="22" rx="3" fill="#d6c5f7" stroke="#7b61c7" stroke-width="2"/>
+          <text x="380" y="140" font-family="Space Mono,monospace" font-size="12" fill="#7b61c7" text-anchor="middle" font-weight="700">D♯3</text>
+
+          <!-- Resolution labels on right -->
+          <text x="508" y="36" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7">→ falls to B (5th of V)</text>
+          <text x="508" y="64" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7">→ falls to G♯ (3rd of V)</text>
+          <text x="508" y="92" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7">→ falls to E (root of V)</text>
+          <text x="508" y="140" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7">→ leading tone — rises to E</text>
+
+          <!-- Left bracket -->
+          <line x1="252" y1="20" x2="252" y2="146" stroke="#7b61c7" stroke-width="1.5"/>
+          <line x1="252" y1="20"  x2="260" y2="20"  stroke="#7b61c7" stroke-width="1.5"/>
+          <line x1="252" y1="146" x2="260" y2="146" stroke="#7b61c7" stroke-width="1.5"/>
+
+          <!-- fz label -->
+          <text x="380" y="158" font-family="Space Mono,monospace" font-size="9" fill="#7b61c7" text-anchor="middle" font-weight="700">fz — every voice has a half-step resolution into the arriving V</text>
+        </svg>
+      </div>
+    </div>
+  </content-card>
+
+  <!-- CARD 3: Consequent Phrase -->
+  <content-card number="3" color="green" title="Consequent: Secondary Dominant → Perfect Cadence">
+    <p>The consequent phrase opens with the same motifs as the antecedent — but Schubert immediately introduces a new harmonic colour. The phrase uses two techniques not seen in the antecedent: a <span class="key">secondary dominant</span> that briefly tonicizes a new chord, and a <span class="key">cadential six-four</span> that suspends the final resolution before releasing it.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">V43/ii: A Colourful Secondary Dominant</div>
+      <p>The consequent opens on <span class="key">V43/ii</span> — the dominant seventh of the supertonic (ii = B minor in A major), in second inversion. In A major, V of B minor = F# major. The full F#7 chord is F#–A#–C#–E. In second inversion, C# sits in the bass with E, F#, and <span class="key">A#</span> above. That A# — a semitone above A natural — is chromatic to A major and gives the chord its striking colour. Your ear briefly hears it pulling toward B minor.</p>
+      <p>This is <span class="key">tonicization</span> from <em>Ch 05</em>: one V–i move in a secondary key, then immediately out. V43/ii resolves to <span class="key">ii</span> (B minor), treating that chord as a temporary home for a single beat before the progression pulls back to A major. The result is a momentary harmonic surprise — the same opening material sounds completely different over this chord. Schubert gets maximum effect from a single chromatic note.</p>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <text x="380" y="11" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">CHORD VOICING — V⁴₃/ii = F♯7/C♯ — M. 9</text>
+
+          <!-- A♯4 — chromatic, highlighted in orange -->
+          <rect x="260" y="20" width="240" height="22" rx="3" fill="#f7e8d0" stroke="#d4842a" stroke-width="2"/>
+          <text x="380" y="36" font-family="Space Mono,monospace" font-size="12" fill="#d4842a" text-anchor="middle" font-weight="700">A♯4 ← chromatic</text>
+
+          <rect x="260" y="48" width="240" height="22" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="380" y="64" font-family="Space Mono,monospace" font-size="12" fill="#3a9e6e" text-anchor="middle" font-weight="700">F♯4</text>
+
+          <rect x="260" y="76" width="240" height="22" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="380" y="92" font-family="Space Mono,monospace" font-size="12" fill="#3a9e6e" text-anchor="middle" font-weight="700">E4</text>
+
+          <!-- Register gap -->
+          <line x1="260" y1="106" x2="500" y2="106" stroke="#ccc" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="380" y="117" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">· · · register gap · · ·</text>
+
+          <!-- C♯3 bass note -->
+          <rect x="260" y="124" width="240" height="22" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="380" y="140" font-family="Space Mono,monospace" font-size="12" fill="#e04848" text-anchor="middle" font-weight="700">C♯3</text>
+
+          <!-- Function labels on right -->
+          <text x="508" y="36" font-family="Space Mono,monospace" font-size="8" fill="#d4842a">A♯ = chromatic 3rd of F♯7</text>
+          <text x="508" y="50" font-family="Space Mono,monospace" font-size="8" fill="#d4842a">A natural is in A major — A♯ is not</text>
+          <text x="508" y="64" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e">root of F♯7</text>
+          <text x="508" y="92" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e">7th of F♯7</text>
+          <text x="508" y="140" font-family="Space Mono,monospace" font-size="8" fill="#e04848">5th of F♯7 — 2nd inversion bass</text>
+
+          <!-- Left bracket -->
+          <line x1="252" y1="20"  x2="252" y2="146" stroke="#4a4a4a" stroke-width="1.5"/>
+          <line x1="252" y1="20"  x2="260" y2="20"  stroke="#4a4a4a" stroke-width="1.5"/>
+          <line x1="252" y1="146" x2="260" y2="146" stroke="#4a4a4a" stroke-width="1.5"/>
+
+          <!-- Chord label -->
+          <text x="380" y="158" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle">F♯7 in 2nd inversion → resolves to B minor (ii) — A♯ is the only non-diatonic note</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Reply in the Tenor</div>
+      <p>During the <span class="key">V7</span> bar in the consequent, the <em>tenor voice</em> — an inner voice in the bass staff — echoes motif x from the melody: the same upward leap, in the same rhythm, a third or sixth lower. The melody stated its idea eight bars ago; now an inner voice picks it up. This is the simplest form of imitation — not a strict canon, but a one-bar <span class="key">voice dialogue</span>.</p>
+      <p>The effect is a brief opening of the texture: for one bar the piece feels like two voices speaking rather than melody plus backdrop. This is exactly the contrapuntal independence of <em>Ch 03</em> and the proto-imitation of <em>Ch 12</em>. Schubert keeps it short — one bar of response, then the texture returns to its supporting role — but it's enough to make the consequent feel richer than the antecedent.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">I6/4 → V7 → I: The Cadential Six-Four</div>
+      <p>The phrase culminates in the most powerful tension-release move in tonal music. Before resolving to I, Schubert inserts a <span class="key">cadential six-four</span> — the tonic chord in second inversion (A/E: E in the bass, A a perfect fourth above, C# a major sixth above). This chord looks like tonic but sounds like dominant: the bass sits on E (the dominant pitch) while the upper voices hold A and C#, which are dissonant against the bass and must resolve downward.</p>
+      <p>A falls to G# and C# stays as V7 forms (E–G#–B–D). Then the leading tone G# rises to A and D resolves down to C# as the phrase lands on <span class="key">I</span>. The resolution is total — every voice moves into the tonic chord by half step or whole step, with no loose ends. This is the suspension logic of <em>Ch 04</em> operating at the phrase level: prepare the dissonance (I6/4), clash (V7), resolve (I).</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 148" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <!-- Harmonic block: ii -->
+          <rect x="14" y="18" width="100" height="50" rx="3" fill="#d6e8f7" stroke="#3d7ec7" stroke-width="1.5"/>
+          <text x="64" y="39" font-family="Space Mono,monospace" font-size="11" fill="#3d7ec7" text-anchor="middle" font-weight="700">ii</text>
+          <text x="64" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">B minor</text>
+
+          <!-- V7 -->
+          <rect x="124" y="18" width="100" height="50" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1.5"/>
+          <text x="174" y="39" font-family="Space Mono,monospace" font-size="11" fill="#e04848" text-anchor="middle" font-weight="700">V7</text>
+          <text x="174" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E7</text>
+
+          <!-- I6/4 — TENSION -->
+          <rect x="234" y="10" width="130" height="66" rx="3" fill="#f7e8d0" stroke="#d4842a" stroke-width="2.5"/>
+          <text x="299" y="33" font-family="Space Mono,monospace" font-size="11" fill="#d4842a" text-anchor="middle" font-weight="700">I 6/4</text>
+          <text x="299" y="49" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A/E — E in bass</text>
+          <text x="299" y="64" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">⚡ Tension!</text>
+
+          <!-- V7 again -->
+          <rect x="374" y="18" width="100" height="50" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="2"/>
+          <text x="424" y="39" font-family="Space Mono,monospace" font-size="11" fill="#e04848" text-anchor="middle" font-weight="700">V7</text>
+          <text x="424" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">E7</text>
+
+          <!-- I — Resolution -->
+          <rect x="484" y="18" width="260" height="50" rx="3" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="2"/>
+          <text x="614" y="39" font-family="Space Mono,monospace" font-size="11" fill="#3a9e6e" text-anchor="middle" font-weight="700">I</text>
+          <text x="614" y="56" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">A major — perfect cadence ✓</text>
+
+          <!-- Voice leading arrows (I6/4 → V7 → I) -->
+          <!-- Upper voice A → G# (falls to leading tone of V) -->
+          <text x="299" y="94" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">A (4th) → G# (3rd of V7)</text>
+          <text x="424" y="94" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">G# → A (rises to tonic)</text>
+          <text x="614" y="94" font-family="Space Mono,monospace" font-size="8" fill="#3a9e6e" text-anchor="middle">D → C# (7th resolves down)</text>
+
+          <!-- Suspension arc -->
+          <path d="M 234 8 Q 299 2 364 8" stroke="#d4842a" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+          <text x="299" y="6" font-family="Space Mono,monospace" font-size="7.5" fill="#d4842a" text-anchor="middle">tonic pitches, dominant bass</text>
+
+          <!-- Resolution arc -->
+          <path d="M 484 12 Q 614 4 744 12" stroke="#3a9e6e" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+          <text x="614" y="110" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">all voices resolve by step — clean landing</text>
+
+          <!-- Timeline -->
+          <line x1="14" y1="140" x2="744" y2="140" stroke="#d9d4ca" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <text x="380" y="11" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">PIANO ROLL — SOPRANO + BASS — MM. 13–15 (CADENTIAL 6/4 → V7 → I)</text>
+
+          <!-- Track backgrounds -->
+          <rect x="70" y="17" width="450" height="24" rx="2" fill="#f5f3ef"/>
+          <rect x="70" y="47" width="450" height="24" rx="2" fill="#f5f3ef"/>
+
+          <!-- Track labels -->
+          <text x="66" y="33" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">SOPRANO</text>
+          <text x="66" y="63" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="end">BASS</text>
+
+          <!-- Chord labels above -->
+          <text x="145" y="13" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle" font-weight="700">I⁶₄</text>
+          <text x="295" y="13" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle" font-weight="700">V⁷</text>
+          <text x="445" y="13" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle" font-weight="700">I</text>
+
+          <!-- Barlines -->
+          <line x1="70"  y1="15" x2="70"  y2="73" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="220" y1="15" x2="220" y2="73" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="370" y1="15" x2="370" y2="73" stroke="#1a1a1a" stroke-width="1.5"/>
+          <line x1="520" y1="15" x2="520" y2="73" stroke="#1a1a1a" stroke-width="1.5"/>
+
+          <!-- Soprano notes -->
+          <!-- m.13 I6/4: A4 (dissonant 4th above bass) — orange (tension) -->
+          <rect x="72"  y="19" width="146" height="20" rx="2" fill="#f7e8d0" stroke="#d4842a" stroke-width="1.5"/>
+          <text x="145" y="33" font-family="Space Mono,monospace" font-size="9" fill="#d4842a" text-anchor="middle">A4 (4th over E)</text>
+          <!-- m.14 V7: G♯4 — resolution of the 4th downward -->
+          <rect x="222" y="19" width="146" height="20" rx="2" fill="#fde8e8" stroke="#e04848" stroke-width="1"/>
+          <text x="295" y="33" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">G♯4 ↓ half-step</text>
+          <!-- m.15 I: A4 — resolution complete (green) -->
+          <rect x="372" y="19" width="146" height="20" rx="2" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="445" y="33" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">A4 ✓</text>
+
+          <!-- Bass notes -->
+          <!-- E2 sustained across m.13 AND m.14 — key visual point -->
+          <rect x="72"  y="49" width="296" height="20" rx="2" fill="#e04848" stroke="#c03030" stroke-width="1"/>
+          <text x="220" y="63" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">E2 — sustained through I⁶₄ and V⁷</text>
+          <!-- m.15: A2 drops to tonic -->
+          <rect x="372" y="49" width="146" height="20" rx="2" fill="#d6f0e3" stroke="#3a9e6e" stroke-width="1.5"/>
+          <text x="445" y="63" font-family="Space Mono,monospace" font-size="9" fill="#3a9e6e" text-anchor="middle">A2 ↓ drops to I</text>
+
+          <!-- Bar labels -->
+          <text x="145" y="86" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">m. 13</text>
+          <text x="295" y="86" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">m. 14</text>
+          <text x="445" y="86" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">m. 15</text>
+
+          <!-- Key insight -->
+          <text x="380" y="100" font-family="Space Mono,monospace" font-size="8" fill="#4a4a4a" text-anchor="middle">bass anchors on E for two bars — A4 above it creates the dissonant 4th that defines the cadential 6/4</text>
+        </svg>
+      </div>
+
+      <p>The cadential six-four works by <em>occupying the same bass note as V</em> while holding the tonic chord's upper pitches. The listener expects I — they hear I's notes — but the bass says V. The resolution of A→G# (upper voice falls) and the bass staying on E into full V7 is the moment the dissonance crystallises. Then V7→I completes the cadence. The ear has been stretched and released in the space of two bars. See <em>Ch 04</em> for the full suspension anatomy.</p>
+    </div>
+  </content-card>
+
+  <!-- CARD 4: Voice Leading and Texture -->
+  <content-card number="4" title="Voice Leading: The Texture Below the Melody">
+    <p>The accompaniment in D334 is deliberately restrained. The inner voices never try to be interesting on their own terms — except for the one bar of tenor reply, they exist purely to support the melody with chord tones and smooth bass motion. This restraint is itself a technique.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Contrary Motion at Every Cadence</div>
+      <p>At each V→I resolution, watch the outer voices: the <em>bass</em> moves downward (E→A, dominant root to tonic root) while the <em>soprano</em> moves upward or inward into the tonic chord. These two outer voices converge from opposite directions, creating the sense of arrival that makes a cadence feel inevitable. This is <span class="key">contrary motion</span> at the cadence point, the most basic rule from <em>Ch 03</em> — and it works identically in Bach's chorales, in Classical sonatas, and in Schubert's minuets.</p>
+      <p>The contrary motion is not a special effect — it's the default. When both voices move in the same direction into a cadence, the arrival feels coincidental. When they converge, it feels inevitable. Same technique, same logic, three centuries of composers.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Unobtrusive Accompaniment as a Compositional Choice</div>
+      <p>The inner voices in D334 play block chords — no independent melodic lines, no rhythmic interest, no competing motion. This is not laziness; it is <span class="key">strategic restraint</span>. A melody this lyrical and directional needs acoustic space around it. The accompaniment's job is to make the chord structure audible without drawing attention to itself.</p>
+      <p>Bach knew this in his slower movements and aria accompaniments: when the melody carries the structural weight, inner voices provide harmonic clarity without crowding the texture. Dense accompaniment texture would dilute the expressive power of motifs x and y. The restraint <em>is</em> the craft. See <em>Ch 10</em> on space and breathing.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Smooth Inner Voice Motion</div>
+      <p>Even while staying quiet, the inner voices move by step wherever possible — no leaps, no awkward jumps. When the bass moves by fourth or fifth (root motion), the inner parts compensate with stepwise or common-tone movement, maintaining smooth voice leading throughout. This is the <em>Ch 03</em> principle of voice independence: each voice has its own smooth melodic logic, even if that logic is simply "move as little as possible." The V43 → I6 bass motion (B→C#→A) is exactly this: the bass keeps moving stepwise instead of leaping, keeping the texture fluid even as harmonies change.</p>
+    </div>
+  </content-card>
+
+  <!-- CARD 5: The Full Technique Map -->
+  <content-card number="5" color="purple" title="Every Chapter, One Piece">
+    <p>D334's A section is sixteen bars. Here is the complete inventory of techniques — where each one appears in this piece, and where it appeared earlier in this series.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Melody and Phrase Architecture</div>
+      <p><strong>Ch 01 — Single Line:</strong> Motif x is a leap; motif y is stepwise fall. The 70/30 ratio (mostly steps, some leaps) holds exactly. The pickup note (anacrusis) launches the phrase on an upbeat. Contour shape: leap up, pour down — a compact arch.</p>
+      <p><strong>Ch 07 — The Sentence:</strong> The parallel period is the Classical equivalent of the Baroque sentence. Antecedent = the Vordersatz's opening statement. Half cadence = the hinge point. Consequent = the Epilog that completes the resolution. The structural logic is identical; only the surface style differs between Bach and Schubert.</p>
+      <p><strong>Ch 08 — Motivic Development:</strong> The consequent phrase reuses motifs x and y over different harmony. Same material, new harmonic context — the simplest form of development. No new notes required; just change what's underneath.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Harmony and Chromaticism</div>
+      <p><strong>Ch 05 — Harmonic Foundations:</strong> I6 keeps the bass stepwise. V7→I is the structural spine. The ii chord in the consequent is the pre-dominant gathering energy for V. First-inversion chords are the smoothing mechanism throughout.</p>
+      <p><strong>Ch 05 — Tonicization:</strong> V43/ii treats B minor as a local tonic for one bar. One V–i move in the secondary key, no commitment, immediately out. The A# in that chord is the chromatic fingerprint that signals "we are briefly elsewhere."</p>
+      <p><strong>Ch 06 — Harmonic Color:</strong> viiø7/V (D#ø7) is the chromatic leading-tone seventh of the dominant — a close relative of the augmented sixth chords in Ch 06. The fz accent is Schubert telling the performer: this chord is supposed to surprise you. The A# in V43/ii is modal color from outside the key signature. Both serve exactly the same function as Ch 06's color chords: momentary disorientation before snapping back into focus.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Voice Leading and Texture</div>
+      <p><strong>Ch 03 — Two Voices:</strong> Contrary motion at cadences. Smooth inner voices. Tenor reply as one-bar imitation — voice exchange and dialogue in miniature.</p>
+      <p><strong>Ch 04 — Tension and Release:</strong> The cadential six-four (I6/4) is the central tension device of this chapter's vocabulary. The 4th above the bass (A over E) creates a dissonance that must resolve to the 3rd (G#). The resolution — I6/4 → V7 → I — is the most structurally powerful tension-release in tonal music.</p>
+      <p><strong>Ch 10 — Space and Breathing:</strong> The unobtrusive accompaniment gives the melody room. Restraint in the inner voices is not absence — it is control of density. The one moment of textural richness (tenor reply) stands out precisely because everything else is so quiet.</p>
+      <p><strong>Ch 12 — Canons and Rounds:</strong> The tenor reply is proto-imitation: melody states a shape, inner voice echoes it one or two beats later. Even one bar of imitation creates the sensation of contrapuntal dialogue. A full canon is just this moment extended and made structural.</p>
+    </div>
+
+    <principle-box>A great short piece does not need to introduce new techniques — it needs to place familiar ones with perfect timing. The viiø7/V lands just as the ear has settled into routine, right before the half cadence. The V43/ii opens the consequent with the same motifs but freshly coloured harmony. The cadential six-four suspends the resolution the listener has been expecting for eight bars. Every technique is positioned where it will register: not too early, not buried, not piled on top of another surprise. The craft is in the placement.</principle-box>
+  </content-card>
+
+  <!-- BUILD IT -->
+  <content-card number="✦" color="orange" title="Build It: A Parallel Period in D Minor">
+    <p>The session is now 44 bars. Add a <span class="key">parallel period</span> as bars 45–60, applying D334's phrase architecture to your D minor material. Antecedent: bars 45–52. Consequent: bars 53–60.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Bars 45–52: Antecedent (half cadence on V)</div>
+      <p>Open bar 45 on the pickup beat with a single note — your motif x equivalent. Choose a note from the tonic chord (D, F, or A) and leap up a 5th or 6th on beat 1 of bar 46. Let motif y fall back stepwise over bars 46–47.</p>
+      <p>Harmonise bars 45–50 with: <strong>i → V43 → i6 → i → V7 → i</strong>. In D minor: i = D minor (D–F–A), V43 = A7/E (E in bass, G–A–C# above), i6 = Dm/F (F in bass). Keep the accompanying track chords simple — beats 1 and 2, no independent motion.</p>
+      <p>Bars 50–52: push toward the <span class="key">half cadence on A (V)</span>. Add viiø7/V — in D minor, V = A major, so viiø7/V = G#ø7 (G#–B–D–F). Write it as a chord on beat 1 of bar 51, velocity 110 (your fz). Resolve to A major on bar 52. End the antecedent there — leave it open.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Bars 53–60: Consequent (secondary dominant → perfect cadence)</div>
+      <p>Open bar 53 with motif x and y again — same shape. But this time harmonise bar 53 with <span class="key">V43/iv</span>: in D minor, iv = G minor; V of G minor = D major; D7 in second inversion = A in the bass (D7/A: A–C–D–F#). The F# is your chromatic colour note — it isn't in D minor's natural scale. Let the listener feel it.</p>
+      <p>Bar 54: resolve to <span class="key">iv</span> (G minor: G–B♭–D). Then bars 55–56: <strong>V7</strong> (A7). During this bar, add a <span class="key">tenor reply</span>: have an existing inner track play the motif x leap — just two notes, the leap up — at a lower octave. One bar of imitation is enough.</p>
+      <p>Bar 57: <span class="key">cadential six-four</span> — i6/4 in D minor: A in the bass (V scale degree), D a 4th above, F a 6th above. Hold it a full beat — feel the suspension. Bar 58: V7 (A7), with G# in the melody resolving the tension. Bars 59–60: <strong>i</strong> (D minor) — the perfect cadence. The question asked in bar 52 is finally answered.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>CASE STUDY ◇ SCHUBERT D334 ◇ A MAJOR ◇ MOTIF X ◇ MOTIF Y ◇ ANTECEDENT ◇ CONSEQUENT ◇ VIIø7/V ◇ SECONDARY DOMINANT ◇ CADENTIAL SIX-FOUR ◇ CASE STUDY ◇ SCHUBERT D334 ◇ A MAJOR ◇ MOTIF X ◇ MOTIF Y ◇ ANTECEDENT ◇ CONSEQUENT ◇ VIIø7/V ◇ SECONDARY DOMINANT ◇ CADENTIAL SIX-FOUR ◇</site-banner>
+
+<chapter-nav
+  prev-href="ch12-canons-rounds.html" prev-title="Ch 12 — Canons &amp; Rounds">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — CH 13: CASE STUDY — D MINOR"></site-footer>
+
+</body>
+</html>

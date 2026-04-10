@@ -5,9 +5,12 @@ class SiteNav extends HTMLElement {
   connectedCallback() {
     const href  = this.getAttribute('href');
     const label = this.getAttribute('label') || 'Ambient Counterpoint';
-    this.innerHTML = href
-      ? `<nav class="site-nav"><a href="${href}">${label}</a></nav>`
-      : `<nav class="site-nav"><span class="site-nav-home">Ambient Counterpoint</span></nav>`;
+    const isChordFinder = window.location.pathname.includes('chord-finder');
+    const toolLink = isChordFinder ? '' : `<a href="chord-finder.html" target="_blank" class="site-nav-tool">Harmonic Navigator ↗</a>`;
+    const left = href
+      ? `<a href="${href}">${label}</a>`
+      : `<span class="site-nav-home">Ambient Counterpoint</span>`;
+    this.innerHTML = `<nav class="site-nav">${left}${toolLink}</nav>`;
   }
 }
 customElements.define('site-nav', SiteNav);

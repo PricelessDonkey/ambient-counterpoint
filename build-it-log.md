@@ -108,6 +108,14 @@ Arc: full (bars 1–4) → sparse (5–8) → wide register (9–12) → hoverin
 
 ---
 
+## Ch13 — Case Study: Schubert D334
+**Session state:** Same 9 tracks from Ch12 (44 bars unchanged). New parallel period added as bars 45–60 — a 16-bar antecedent-consequent phrase in D minor.
+- Bars 45–52 (antecedent): motif x leap on pickup into bar 46, motif y stepwise fall. Harmony: i → V43 (A7/E) → i6 (Dm/F) → i → V7 → i → viiø7/V (G#ø7, vel 110) → V (A major) half cadence.
+- Bars 53–60 (consequent): same motifs over V43/iv (D7/A, F# as chromatic colour note) → iv (G minor) → V7 (A7) with tenor reply on beat 1 (inner track echoes motif x leap at lower octave) → i6/4 (A in bass, D+F above, 1 full beat) → V7 (A7) → i (D minor, perfect cadence).
+- Piece is now 60 bars.
+
+---
+
 ## Ch11 — From Bach to Ambient Counterpoint
 **Session state:** Three new tracks added to Ch10 session, expanded to 32 bars.
 - Track 6: 8-note arpeggio loop — D4 E4 F4 A4 G4 F4 E4 D4 (eighth notes, 1-bar loop)

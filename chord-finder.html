@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmonic Navigator — Ambient Counterpoint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="index.html" label="Ambient Counterpoint"></site-nav>
+
+<site-banner>HARMONIC NAVIGATOR ◇ SCALE DEGREES ◇ SECONDARY DOMINANTS ◇ AUG 6TH ◇ DIATONIC CIRCLE ◇ DECEPTIVE EXIT ◇ HARMONIC NAVIGATOR ◇ SCALE DEGREES ◇ SECONDARY DOMINANTS ◇ AUG 6TH ◇ DIATONIC CIRCLE ◇ DECEPTIVE EXIT ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Harmonic Navigator</span>
+  <span slot="subtitle">Pick a tonic and scale, then click any degree to see how to approach it, what it contains, and where it can go.</span>
+</site-hero>
+
+<div class="content">
+
+  <div class="hn-controls">
+    <select id="tonic-select" class="hn-select"></select>
+    <select id="scale-select" class="hn-select"></select>
+  </div>
+
+  <div id="scale-display" class="hn-scale"></div>
+
+  <div id="navigator" class="hn-grid" style="display:none">
+
+    <!-- COLUMN 1: ARRIVAL -->
+    <div class="hn-panel">
+      <div class="hn-panel-header">The Past — Arrival</div>
+      <div class="hn-panel-body">
+
+        <div class="hn-flow diatonic">
+          <span class="hn-flow-label">Diatonic Circle</span>
+          <div id="arr-dia" class="hn-chord-name">—</div>
+          <span class="hn-hint">In-key approach via circle of fifths</span>
+        </div>
+
+        <div class="hn-flow chromatic">
+          <span class="hn-flow-label">Secondary Dominant</span>
+          <div id="arr-sec" class="hn-chord-name">—</div>
+          <span id="arr-sec-notes" class="hn-notes">—</span>
+          <span class="hn-hint">Chromatic V7 that pulls into this chord</span>
+        </div>
+
+        <div id="aug6-panel" class="hn-flow special" style="display:none">
+          <span class="hn-flow-label">Chromatic Pre-Dominants (→ V)</span>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px;">
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;">Italian Aug 6th</span>
+              <span id="arr-aug-it" class="hn-notes" style="display:block;">—</span>
+            </div>
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;">French Aug 6th</span>
+              <span id="arr-aug-fr" class="hn-notes" style="display:block;">—</span>
+            </div>
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;">German Aug 6th</span>
+              <span id="arr-aug-gr" class="hn-notes" style="display:block;">—</span>
+            </div>
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;">Neapolitan (♭II)</span>
+              <span id="arr-nap" class="hn-notes" style="display:block;">—</span>
+            </div>
+          </div>
+          <span class="hn-hint">All four resolve into V — pick by voice-leading need</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COLUMN 2: THE CHORD -->
+    <div class="hn-panel present">
+      <div class="hn-panel-header">Now — This Chord</div>
+      <div class="hn-panel-body">
+
+        <div id="current-title" class="hn-current-note">—</div>
+        <span id="cur-function" class="hn-badge hn-badge-t" style="display:none;align-self:flex-start;">—</span>
+
+        <div>
+          <span class="hn-flow-label" style="color:var(--ink-soft);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;">Diatonic Triad</span>
+          <div id="cur-triad" class="hn-chord-name">—</div>
+          <span id="cur-notes" class="hn-notes">—</span>
+        </div>
+
+        <div>
+          <span class="hn-flow-label" style="color:var(--ink-soft);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;">Diatonic 7th</span>
+          <span id="cur-7th-notes" class="hn-notes">—</span>
+        </div>
+
+        <div>
+          <span class="hn-flow-label" style="color:var(--ink-soft);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;">Parallel Counterpoint</span>
+          <div class="hn-harmonize-row"><span class="hn-har-label">3rd ↑ / 6th ↓</span><span id="cur-third-above" class="hn-har-note">—</span></div>
+          <div class="hn-harmonize-row"><span class="hn-har-label">6th ↑ / 3rd ↓</span><span id="cur-sixth-above" class="hn-har-note">—</span></div>
+          <span class="hn-hint">Run a second voice in parallel 3rds or 6ths</span>
+        </div>
+
+        <div>
+          <span class="hn-flow-label" style="color:var(--ink-soft);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;">Inversions</span>
+          <div class="hn-inversion-row"><span class="hn-inv-label">Root (5-3)</span><span id="inv-root" class="hn-inv-bass">—</span><span class="hn-inv-sym">in bass</span></div>
+          <div class="hn-inversion-row"><span class="hn-inv-label">1st inv (6-3)</span><span id="inv-first" class="hn-inv-bass">—</span><span class="hn-inv-sym">in bass</span></div>
+          <div class="hn-inversion-row"><span class="hn-inv-label">2nd inv (6-4)</span><span id="inv-second" class="hn-inv-bass">—</span><span class="hn-inv-sym">in bass</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COLUMN 3: DESTINATION -->
+    <div class="hn-panel">
+      <div class="hn-panel-header">The Future — Destination</div>
+      <div class="hn-panel-body">
+
+        <div class="hn-flow diatonic">
+          <span class="hn-flow-label">Diatonic Resolve</span>
+          <div id="dest-dia" class="hn-chord-name">—</div>
+          <span class="hn-hint">Natural circle-of-fifths resolution</span>
+        </div>
+
+        <div class="hn-flow chromatic">
+          <span class="hn-flow-label">Dominant Departure</span>
+          <div id="dest-dom-title" class="hn-chord-name">—</div>
+          <span id="dest-dom-notes" class="hn-notes">—</span>
+          <span class="hn-hint">Treat this chord as V7 — forces resolution</span>
+        </div>
+
+        <div class="hn-flow deceptive">
+          <span class="hn-flow-label">Deceptive Exit</span>
+          <div id="dest-dec" class="hn-chord-name">—</div>
+          <span class="hn-hint">Surprise in-key change — subverts expectation</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div id="idiom-box" class="hn-idiom-box" style="display:none">
+    <span class="hn-flow-label" style="color:var(--purple);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;">Bach Idiom</span>
+    <p id="idiom-text"></p>
+    <a id="idiom-link" href="#" class="hn-idiom-link">Read chapter →</a>
+  </div>
+
+</div>
+
+<site-banner>HARMONIC NAVIGATOR ◇ SCALE DEGREES ◇ SECONDARY DOMINANTS ◇ AUG 6TH ◇ DIATONIC CIRCLE ◇ DECEPTIVE EXIT ◇ HARMONIC NAVIGATOR ◇ SCALE DEGREES ◇ SECONDARY DOMINANTS ◇ AUG 6TH ◇ DIATONIC CIRCLE ◇ DECEPTIVE EXIT ◇</site-banner>
+
+<site-footer text="AMBIENT COUNTERPOINT — HARMONIC NAVIGATOR — TOOL"></site-footer>
+
+<script>
+  const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+  const DEGREE_LABELS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
+  const SCALES = {
+    'Major':         [0, 2, 4, 5, 7, 9, 11],
+    'Natural Minor': [0, 2, 3, 5, 7, 8, 10],
+    'Harmonic Minor':[0, 2, 3, 5, 7, 8, 11],
+    'Dorian':        [0, 2, 3, 5, 7, 9, 10]
+  };
+
+  // Harmonic function per degree: 't' = tonic, 'pd' = pre-dominant, 'd' = dominant
+  const FUNCTIONS = {
+    'Major':         ['t','pd','t','pd','d','t','d'],
+    'Natural Minor': ['t','pd','t','pd','d','t','d'],
+    'Harmonic Minor':['t','pd','t','pd','d','t','d'],
+    'Dorian':        ['t','pd','t','pd','d','t','d']
+  };
+  const FUNCTION_LABELS = { t: 'Tonic', pd: 'Pre-Dominant', d: 'Dominant' };
+
+  const IDIOMS = [
+    { tip: 'Tonic is rest — everything earns the return. A raised 7th (leading tone) gives maximum magnetic pull into this arrival.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+    { tip: 'The supertonic (ii°) is the weakest link in the circle — brief and transitional. Use it stepping toward V, not as a resting point.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+    { tip: 'The mediant (III) is the relative major — a lift of mood using the same pitches. A natural modulation target in ritornello and episode sections.', ch: 'ch09-large-scale-form.html', label: 'Ch 09 — Large-Scale Form' },
+    { tip: 'Subdominant is gravity before the fall. Pair with a suspended 4th resolving to 3rd over V for the classic cadential approach.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+    { tip: 'Dominant hunger: the leading tone pulls to tonic with magnetic force. Extend tension with a 4–3 suspension, or escape via deceptive cadence to VI.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+    { tip: 'Submediant (VI) is the classic surprise after V — the deceptive cadence. After V→VI the music is denied; it must rewind and try again to reach tonic.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+    { tip: 'Natural VII (whole step) is a gentle lean; raised VII (half step, harmonic minor) creates a diminished chord with urgent pull. Save the leading tone for your climactic moment.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' }
+  ];
+
+  const tonicSelect = document.getElementById('tonic-select');
+  const scaleSelect = document.getElementById('scale-select');
+  let currentScale = [];
+
+  NOTES.forEach(n => tonicSelect.innerHTML += `<option value="${n}">${n}</option>`);
+  Object.keys(SCALES).forEach(s => scaleSelect.innerHTML += `<option value="${s}">${s}</option>`);
+
+  // Default to D natural minor
+  tonicSelect.value = 'D';
+  scaleSelect.value = 'Natural Minor';
+
+  function getNote(rootIdx, semi) { return NOTES[(rootIdx + semi + 120) % 12]; }
+
+  function getQual(root, third) {
+    const diff = (NOTES.indexOf(third) - NOTES.indexOf(root) + 12) % 12;
+    return diff === 3 ? 'm' : diff === 6 ? 'dim' : '';
+  }
+
+  function update() {
+    const rootIdx = NOTES.indexOf(tonicSelect.value);
+    const pattern = SCALES[scaleSelect.value];
+    currentScale = pattern.map(p => ({ name: getNote(rootIdx, p), abs: (rootIdx + p) % 12 }));
+
+    const display = document.getElementById('scale-display');
+    display.innerHTML = '';
+    currentScale.forEach((n, i) => {
+      const card = document.createElement('div');
+      card.className = `hn-note-card${i === 4 ? ' is-v' : ''}`;
+      card.innerHTML = `<span class="hn-note-name">${n.name}</span><span class="hn-degree">${DEGREE_LABELS[i]}</span>`;
+      card.onclick = () => selectNote(i);
+      display.appendChild(card);
+    });
+    document.getElementById('navigator').style.display = 'none';
+    document.getElementById('idiom-box').style.display = 'none';
+  }
+
+  function selectNote(index) {
+    document.getElementById('navigator').style.display = 'grid';
+    document.querySelectorAll('.hn-note-card').forEach((c, i) => c.classList.toggle('active', i === index));
+
+    const cur = currentScale[index];
+    const curRootIdx = NOTES.indexOf(cur.name);
+    const tonicIdx = NOTES.indexOf(currentScale[0].name);
+    const scaleName = scaleSelect.value;
+
+    // Present — chord
+    document.getElementById('current-title').innerText = cur.name;
+    const d3 = currentScale[(index + 2) % 7].name;
+    const d5 = currentScale[(index + 4) % 7].name;
+    const d7 = currentScale[(index + 6) % 7].name;
+    document.getElementById('cur-triad').innerText = `${cur.name}${getQual(cur.name, d3)}`;
+    document.getElementById('cur-notes').innerText = `${cur.name}, ${d3}, ${d5}`;
+    document.getElementById('cur-7th-notes').innerText = `${cur.name}, ${d3}, ${d5}, ${d7}`;
+
+    // Present — function badge
+    const fn = FUNCTIONS[scaleName][index];
+    const badge = document.getElementById('cur-function');
+    badge.className = `hn-badge hn-badge-${fn}`;
+    badge.innerText = FUNCTION_LABELS[fn];
+    badge.style.display = 'inline-block';
+
+    // Present — parallel harmonizations (3rd/6th above)
+    const d6 = currentScale[(index + 5) % 7].name;
+    document.getElementById('cur-third-above').innerText = d3;
+    document.getElementById('cur-sixth-above').innerText = d6;
+
+    // Present — inversions
+    document.getElementById('inv-root').innerText   = cur.name;
+    document.getElementById('inv-first').innerText  = d3;
+    document.getElementById('inv-second').innerText = d5;
+
+    // Arrival (past)
+    const aIdx = (index + 4) % 7;
+    const aNote = currentScale[aIdx].name;
+    document.getElementById('arr-dia').innerText = `${aNote}${getQual(aNote, currentScale[(aIdx + 2) % 7].name)} → ${cur.name}`;
+
+    const sDomRoot = getNote(curRootIdx, 7);
+    const sDomRootIdx = NOTES.indexOf(sDomRoot);
+    const sDomNotes = [sDomRoot, getNote(sDomRootIdx, 4), getNote(sDomRootIdx, 7), getNote(sDomRootIdx, 10)];
+    document.getElementById('arr-sec').innerText = `${sDomRoot}7 → ${cur.name}`;
+    document.getElementById('arr-sec-notes').innerText = sDomNotes.join(', ');
+
+    // Arrival — chromatic pre-dominants (V only)
+    const augBox = document.getElementById('aug6-panel');
+    if (index === 4) {
+      augBox.style.display = 'block';
+      const b6     = getNote(tonicIdx, 8);   // minor 6th above tonic
+      const tonic  = currentScale[0].name;
+      const b3     = getNote(tonicIdx, 3);   // minor 3rd above tonic
+      const maj2   = getNote(tonicIdx, 2);   // major 2nd above tonic
+      const sharp4 = getNote(curRootIdx, -1);// semitone below V = aug 4th above tonic
+      const nap    = getNote(tonicIdx, 1);   // semitone above tonic = ♭II root
+      const napMid = getNote(tonicIdx, 5);   // perfect 4th above tonic = ♭IV
+      document.getElementById('arr-aug-it').innerText = `${b6}, ${tonic}, ${sharp4}`;
+      document.getElementById('arr-aug-fr').innerText = `${b6}, ${tonic}, ${maj2}, ${sharp4}`;
+      document.getElementById('arr-aug-gr').innerText = `${b6}, ${tonic}, ${b3}, ${sharp4}`;
+      document.getElementById('arr-nap').innerText    = `${nap}, ${napMid}, ${b6}`;
+    } else {
+      augBox.style.display = 'none';
+    }
+
+    // Destination (future)
+    const dIdx = (index + 3) % 7;
+    const targetNote = currentScale[dIdx].name;
+    document.getElementById('dest-dia').innerText = `${cur.name} → ${targetNote}${getQual(targetNote, currentScale[(dIdx + 2) % 7].name)}`;
+
+    const dom7Notes = [cur.name, getNote(curRootIdx, 4), getNote(curRootIdx, 7), getNote(curRootIdx, 10)];
+    const resolutionTarget = getNote(curRootIdx, 5); // up a 4th = same as down a 5th
+    document.getElementById('dest-dom-title').innerText = `${cur.name}7 → ${resolutionTarget}`;
+    document.getElementById('dest-dom-notes').innerText = dom7Notes.join(', ');
+
+    const decNote = currentScale[(index + 5) % 7].name;
+    document.getElementById('dest-dec').innerText = `${cur.name} → ${decNote}${getQual(decNote, currentScale[(index + 7) % 7].name)}`;
+
+    // Bach idiom
+    const idiom = IDIOMS[index];
+    document.getElementById('idiom-text').innerText = idiom.tip;
+    const link = document.getElementById('idiom-link');
+    link.href = idiom.ch;
+    link.innerText = `Read: ${idiom.label} →`;
+    document.getElementById('idiom-box').style.display = 'flex';
+  }
+
+  tonicSelect.onchange = update;
+  scaleSelect.onchange = update;
+  update();
+</script>
+</body>
+</html>
