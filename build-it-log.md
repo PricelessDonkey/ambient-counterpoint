@@ -116,6 +116,17 @@ Arc: full (bars 1–4) → sparse (5–8) → wide register (9–12) → hoverin
 
 ---
 
+## Ch14 — Augmented Sixths
+**Session state:** Same 9 tracks from Ch13 (60 bars). Edits to bars 58–60 of the consequent phrase:
+- Bar 58 beat 3: Italian 6th inserted — Bb4/G#4 in upper voice, Bb2 in bass
+- Bar 59 beat 1: Cadential I⁶₄ — D4+F4 upper, A1 bass (1 beat)
+- Bar 59 beat 2: V⁷ (A7) — G4 in upper voice (7th ready to resolve)
+- Bar 60 beat 1: i (D minor) — G4→F4 (7th sigh), C#4→D4 (leading tone pull), bass D1
+- Optional Picardy: F4→F#4 in final chord (D major ending)
+Session remains 60 bars, 9 tracks. Cadential sequence now reads: It⁶ → I⁶₄ → V⁷ → i.
+
+---
+
 ## Ch11 — From Bach to Ambient Counterpoint
 **Session state:** Three new tracks added to Ch10 session, expanded to 32 bars.
 - Track 6: 8-note arpeggio loop — D4 E4 F4 A4 G4 F4 E4 D4 (eighth notes, 1-bar loop)

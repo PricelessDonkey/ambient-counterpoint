@@ -6,7 +6,7 @@ class SiteNav extends HTMLElement {
     const href  = this.getAttribute('href');
     const label = this.getAttribute('label') || 'Ambient Counterpoint';
     const isChordFinder = window.location.pathname.includes('chord-finder');
-    const toolLink = isChordFinder ? '' : `<a href="chord-finder.html" target="_blank" class="site-nav-tool">Harmonic Navigator ↗</a>`;
+    const toolLink = isChordFinder ? '' : `<a href="chord-finder.html" target="_blank" class="site-nav-tool">Harmonic Navigator</a>`;
     const left = href
       ? `<a href="${href}">${label}</a>`
       : `<span class="site-nav-home">Ambient Counterpoint</span>`;
