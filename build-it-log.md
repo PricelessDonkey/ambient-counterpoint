@@ -127,6 +127,18 @@ Session remains 60 bars, 9 tracks. Cadential sequence now reads: It⁶ → I⁶�
 
 ---
 
+## Ch15 — Bach's Blueprint for Pop
+**Session state:** Same 9 tracks from Ch14 (60 bars). No new MIDI added — arrangement reorganized using locators and clip copies in arrangement view:
+- Locator "HOOK": bars 1–4 (seed motif + lower voice, original material)
+- Locator "VERSE 1": bars 5–16 (Fortspinnung sequences + motivic development)
+- Track 10 (new): 4-bar pre-chorus fragment — D4 E4 repeating, accelerating density (q→q→e→s), harmony V→bVI→V→V, final beat A major held
+- Locator "CHORUS": bars 45–52 copied to after pre-chorus; voices spread to max register (upper +1 oct, bass –1 oct)
+- Locator "BRIDGE": bars 33–40 (canon) copied after first chorus; transposed +3 semitones (F major); final 2 bars bass-only A1 dominant pedal
+- Locator "FINAL CHORUS": second chorus copy at full register, 8 bars then cut to silence
+- Arrangement arc: Hook(4) → Verse(12) → Pre-ch(4) → Chorus(8) → Bridge(10) → Final Chorus(8) = ~46 bars
+
+---
+
 ## Ch11 — From Bach to Ambient Counterpoint
 **Session state:** Three new tracks added to Ch10 session, expanded to 32 bars.
 - Track 6: 8-note arpeggio loop — D4 E4 F4 A4 G4 F4 E4 D4 (eighth notes, 1-bar loop)
