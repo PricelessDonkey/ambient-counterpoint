@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M09 — Hocket: Interlocking Voices</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>CHAPTER 09 ◇ HOCKET ◇ INTERLOCKING VOICES ◇ CHAPTER 09 ◇ HOCKET ◇ INTERLOCKING VOICES ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Hocket: Interlocking Voices</span>
+  <span slot="subtitle">Two tracks, one melody — together they become more than either.</span>
+</site-hero>
+
+<intro-box>Hocket is the art of splitting a single melody between two voices so that neither plays it complete. Notes alternate: voice A plays the odd ones, voice B plays the even ones. The result is density from sparseness — a medieval contrapuntal trick that sits at the heart of Reich's minimalism.</intro-box>
+
+<div class="content">
+
+  <content-card number="41" title="What Is Hocket?">
+    <div class="sub-section">
+      <div class="sub-title">The Medieval-Modern Technique</div>
+      <p>The word <span class="key">hocket</span> (from French <em>hoquet</em>, hiccup) names a technique as old as the 13th century: two voices share a single melody by taking turns, one resting when the other sounds. Neither voice plays the whole melody alone. Together they interlock perfectly — notes dovetailed so that every beat is covered, every gap filled by the other voice.</p>
+      <p>Reich rediscovered this logic and made it central to minimalism. His piano, marimba, and keyboard works often split melodic material across two players who interlock like gears. The technique scales naturally to two Ableton tracks.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Why Hocket Sounds Different from Unison</div>
+      <p>When both voices play the same melody in unison, the ear hears one thing. When they hocket — alternating notes, different timbres — the ear hears <em>two independent streams</em> and <em>the combined melody</em> at the same time. The split creates a perceptual doubling that unison cannot. This is density produced by subtraction, not addition.</p>
+      <p>The effect is strongest when the two voices have distinct timbres: pad vs. plucked, bell vs. bass, breath vs. string. The timbre contrast lets the ear track each stream separately while it reconstructs the whole.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 1: Split melody — original shown, then split into Hocket A (odd/blue) and Hocket B (even/red) -->
+      <svg viewBox="0 0 760 295" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+        <defs>
+          <marker id="arrowR" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 Z" fill="#999"/>
+          </marker>
+        </defs>
+
+        <!-- Section separators -->
+        <line x1="0" y1="98" x2="760" y2="98" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="0" y1="196" x2="760" y2="196" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- ── SECTION 1: Original melody ── -->
+        <!-- Pitch grid lines -->
+        <line x1="80" y1="22" x2="470" y2="22" class="grid-line"/>
+        <line x1="80" y1="39" x2="470" y2="39" class="grid-line"/>
+        <line x1="80" y1="56" x2="470" y2="56" class="grid-line"/>
+        <line x1="80" y1="73" x2="470" y2="73" class="grid-line"/>
+
+        <!-- Pitch labels -->
+        <text x="72" y="27" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">A4</text>
+        <text x="72" y="44" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">G4</text>
+        <text x="72" y="61" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">F4</text>
+        <text x="72" y="78" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D4</text>
+
+        <!-- Note number labels -->
+        <text x="113" y="11" font-family="Space Mono,monospace" font-size="10" fill="#bbb" text-anchor="middle">1</text>
+        <text x="183" y="11" font-family="Space Mono,monospace" font-size="10" fill="#bbb" text-anchor="middle">2</text>
+        <text x="253" y="11" font-family="Space Mono,monospace" font-size="10" fill="#bbb" text-anchor="middle">3</text>
+        <text x="323" y="11" font-family="Space Mono,monospace" font-size="10" fill="#bbb" text-anchor="middle">4</text>
+
+        <!-- Original notes: D4(1,blue), F4(2,red), G4(3,blue), A4(4,red) -->
+        <rect x="85" y="67" width="55" height="12" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <rect x="155" y="50" width="55" height="12" rx="3" fill="#e04848" opacity="0.9"/>
+        <rect x="225" y="33" width="55" height="12" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <rect x="295" y="16" width="55" height="12" rx="3" fill="#e04848" opacity="0.9"/>
+
+        <!-- Section label -->
+        <text x="530" y="50" font-family="Space Mono,monospace" font-size="11" fill="#666" font-weight="700">Original</text>
+        <text x="530" y="64" font-family="Space Mono,monospace" font-size="10" fill="#888">all 4 notes</text>
+
+        <!-- ── SECTION 2: Hocket A (odd notes, blue) ── -->
+        <!-- Pitch grid lines -->
+        <line x1="80" y1="120" x2="470" y2="120" class="grid-line"/>
+        <line x1="80" y1="137" x2="470" y2="137" class="grid-line"/>
+        <line x1="80" y1="154" x2="470" y2="154" class="grid-line"/>
+        <line x1="80" y1="171" x2="470" y2="171" class="grid-line"/>
+
+        <!-- Pitch labels -->
+        <text x="72" y="125" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">A4</text>
+        <text x="72" y="142" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">G4</text>
+        <text x="72" y="159" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">F4</text>
+        <text x="72" y="176" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D4</text>
+
+        <!-- Hocket A: note 1 (D4, blue), ghost 2 (F4), note 3 (G4, blue), ghost 4 (A4) -->
+        <rect x="85" y="165" width="55" height="12" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <rect x="155" y="148" width="55" height="12" rx="3" fill="none" stroke="#c8c0b0" stroke-width="1" stroke-dasharray="4 3"/>
+        <rect x="225" y="131" width="55" height="12" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <rect x="295" y="114" width="55" height="12" rx="3" fill="none" stroke="#c8c0b0" stroke-width="1" stroke-dasharray="4 3"/>
+
+        <!-- Section label -->
+        <text x="530" y="143" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" font-weight="700">Hocket A</text>
+        <text x="530" y="157" font-family="Space Mono,monospace" font-size="10" fill="#888">odd notes (1, 3)</text>
+
+        <!-- ── SECTION 3: Hocket B (even notes, red) ── -->
+        <!-- Pitch grid lines -->
+        <line x1="80" y1="218" x2="470" y2="218" class="grid-line"/>
+        <line x1="80" y1="235" x2="470" y2="235" class="grid-line"/>
+        <line x1="80" y1="252" x2="470" y2="252" class="grid-line"/>
+        <line x1="80" y1="269" x2="470" y2="269" class="grid-line"/>
+
+        <!-- Pitch labels -->
+        <text x="72" y="223" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">A4</text>
+        <text x="72" y="240" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">G4</text>
+        <text x="72" y="257" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">F4</text>
+        <text x="72" y="274" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">D4</text>
+
+        <!-- Hocket B: ghost 1 (D4), note 2 (F4, red), ghost 3 (G4), note 4 (A4, red) -->
+        <rect x="85" y="263" width="55" height="12" rx="3" fill="none" stroke="#c8c0b0" stroke-width="1" stroke-dasharray="4 3"/>
+        <rect x="155" y="246" width="55" height="12" rx="3" fill="#e04848" opacity="0.9"/>
+        <rect x="225" y="229" width="55" height="12" rx="3" fill="none" stroke="#c8c0b0" stroke-width="1" stroke-dasharray="4 3"/>
+        <rect x="295" y="212" width="55" height="12" rx="3" fill="#e04848" opacity="0.9"/>
+
+        <!-- Section label -->
+        <text x="530" y="241" font-family="Space Mono,monospace" font-size="11" fill="#e04848" font-weight="700">Hocket B</text>
+        <text x="530" y="255" font-family="Space Mono,monospace" font-size="10" fill="#888">even notes (2, 4)</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="42" color="green" title="Hocket in Ableton">
+    <div class="sub-section">
+      <div class="sub-title">Splitting the MIDI Clip</div>
+      <p>The mechanical process is simple. Take any MIDI clip containing a looped melody. Duplicate the track. Rename them <span class="key">Hocket A</span> and <span class="key">Hocket B</span>. In Hocket A's clip, delete every even-numbered note (2nd, 4th, 6th, …). In Hocket B's clip, delete every odd-numbered note (1st, 3rd, 5th, …). Both clips remain the same total length — they just each carry half the notes.</p>
+      <p>A few mechanical details to get right: both clips must have <em>identical loop lengths</em> so they stay in sync. Mute the original track. Play A and B together — together they should reproduce the original melody exactly, but now split across two timbres.</p>
+    </div>
+
+    <div class="idiom">
+      <div class="idiom-name">The Process</div>
+      1. Duplicate the melody track<br>
+      2. Rename → "Hocket A" and "Hocket B"<br>
+      3. Hocket A: delete notes 2, 4, 6, 8 …<br>
+      4. Hocket B: delete notes 1, 3, 5, 7 …<br>
+      5. Assign different timbres to each track<br>
+      6. Play both together
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 2: Hocket A + B → Combined result -->
+      <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+
+        <!-- Track labels on left -->
+        <text x="72" y="48" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" text-anchor="end" font-weight="700">A</text>
+        <text x="72" y="103" font-family="Space Mono,monospace" font-size="11" fill="#e04848" text-anchor="end" font-weight="700">B</text>
+        <text x="72" y="168" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="end" font-weight="700">A+B</text>
+
+        <!-- Track background strips -->
+        <rect x="80" y="25" width="390" height="30" rx="3" fill="#f5f0e8"/>
+        <rect x="80" y="80" width="390" height="30" rx="3" fill="#f5f0e8"/>
+        <rect x="80" y="145" width="390" height="30" rx="3" fill="#f5f0e8"/>
+
+        <!-- Hocket A: notes 1 (x=90) and 3 (x=230), blue -->
+        <rect x="90" y="30" width="55" height="20" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <text x="117" y="44" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="160" y="30" width="55" height="20" rx="3" fill="none" stroke="#c8c0b0" stroke-dasharray="4 3" stroke-width="1"/>
+        <rect x="230" y="30" width="55" height="20" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <text x="257" y="44" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">G4</text>
+        <rect x="300" y="30" width="55" height="20" rx="3" fill="none" stroke="#c8c0b0" stroke-dasharray="4 3" stroke-width="1"/>
+
+        <!-- Hocket B: notes 2 (x=160) and 4 (x=300), red -->
+        <rect x="90" y="85" width="55" height="20" rx="3" fill="none" stroke="#c8c0b0" stroke-dasharray="4 3" stroke-width="1"/>
+        <rect x="160" y="85" width="55" height="20" rx="3" fill="#e04848" opacity="0.9"/>
+        <text x="187" y="99" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <rect x="230" y="85" width="55" height="20" rx="3" fill="none" stroke="#c8c0b0" stroke-dasharray="4 3" stroke-width="1"/>
+        <rect x="300" y="85" width="55" height="20" rx="3" fill="#e04848" opacity="0.9"/>
+        <text x="327" y="99" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">A4</text>
+
+        <!-- Equals sign / arrow -->
+        <text x="470" y="118" font-family="Space Mono,monospace" font-size="22" fill="#888" text-anchor="middle">=</text>
+        <line x1="80" y1="130" x2="470" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- Combined: all 4 notes, colored by source -->
+        <rect x="90" y="150" width="55" height="20" rx="3" fill="#4a90d9" opacity="0.7"/>
+        <text x="117" y="164" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">D4</text>
+        <rect x="160" y="150" width="55" height="20" rx="3" fill="#e04848" opacity="0.7"/>
+        <text x="187" y="164" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">F4</text>
+        <rect x="230" y="150" width="55" height="20" rx="3" fill="#4a90d9" opacity="0.7"/>
+        <text x="257" y="164" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">G4</text>
+        <rect x="300" y="150" width="55" height="20" rx="3" fill="#e04848" opacity="0.7"/>
+        <text x="327" y="164" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">A4</text>
+
+        <!-- Timbre note on right -->
+        <text x="520" y="40" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">Track A: pad</text>
+        <text x="520" y="95" font-family="Space Mono,monospace" font-size="10" fill="#e04848">Track B: pluck</text>
+        <text x="520" y="165" font-family="Space Mono,monospace" font-size="10" fill="#888">ear hears both +</text>
+        <text x="520" y="178" font-family="Space Mono,monospace" font-size="10" fill="#888">the full melody</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="43" color="purple" title="Hocket Variables">
+    <div class="sub-section">
+      <div class="sub-title">Register as a Hocket Variable</div>
+      <p>The simplest hocket keeps both voices at the same pitch register. But a more interesting variant shifts one voice up (or down) an octave. If Hocket A plays D4 and G4, and Hocket B plays F5 and A5 (an octave higher), the combined melody leaps between registers — exactly the <span class="key">compound melody</span> and <span class="key">implied polyphony</span> technique from the Bach series.</p>
+      <p>The ear now hears three things simultaneously: the low voice, the high voice, and the implied melody that stitches them together across the octave gap. One of the richest textures available from two MIDI tracks.</p>
+      <p>For the Bach counterpart — how register separation implies two independent voices from a single line — see <a href="ch02-implied-polyphony.html">Ch 02 — Implied Polyphony</a>.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 3: Register variant — Hocket B shifted up an octave, zigzag compound melody -->
+      <svg viewBox="0 0 760 215" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+
+        <!-- Octave region labels -->
+        <text x="72" y="50" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">Octave 5</text>
+        <text x="72" y="155" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">Octave 4</text>
+
+        <!-- Octave divider -->
+        <line x1="80" y1="100" x2="470" y2="100" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="6 4"/>
+
+        <!-- Pitch grid lines — octave 5 region (top) -->
+        <line x1="80" y1="20" x2="470" y2="20" class="grid-line"/>
+        <line x1="80" y1="37" x2="470" y2="37" class="grid-line"/>
+        <line x1="80" y1="54" x2="470" y2="54" class="grid-line"/>
+
+        <!-- Pitch labels — octave 5 -->
+        <text x="72" y="25" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">A5</text>
+        <text x="72" y="42" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">G5</text>
+        <text x="72" y="59" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">F5</text>
+
+        <!-- Pitch grid lines — octave 4 region (bottom) -->
+        <line x1="80" y1="115" x2="470" y2="115" class="grid-line"/>
+        <line x1="80" y1="132" x2="470" y2="132" class="grid-line"/>
+        <line x1="80" y1="149" x2="470" y2="149" class="grid-line"/>
+        <line x1="80" y1="166" x2="470" y2="166" class="grid-line"/>
+
+        <!-- Pitch labels — octave 4 -->
+        <text x="72" y="120" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">A4</text>
+        <text x="72" y="137" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">G4</text>
+        <text x="72" y="154" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">F4</text>
+        <text x="72" y="171" font-family="Space Mono,monospace" font-size="9" fill="#bbb" text-anchor="end">D4</text>
+
+        <!-- Hocket A notes (odd, blue) — stay in octave 4 -->
+        <!-- Note 1: D4 at x=90, y=160 -->
+        <rect x="90" y="160" width="55" height="12" rx="3" fill="#4a90d9" opacity="0.9"/>
+        <!-- Note 3: G4 at x=230, y=126 -->
+        <rect x="230" y="126" width="55" height="12" rx="3" fill="#4a90d9" opacity="0.9"/>
+
+        <!-- Hocket B notes (even, red) — shifted to octave 5 -->
+        <!-- Note 2: F5 at x=160, y=48 -->
+        <rect x="160" y="48" width="55" height="12" rx="3" fill="#e04848" opacity="0.9"/>
+        <!-- Note 4: A5 at x=300, y=14 -->
+        <rect x="300" y="14" width="55" height="12" rx="3" fill="#e04848" opacity="0.9"/>
+
+        <!-- Zigzag connection line — compound melody implied -->
+        <polyline
+          points="117,160 187,54 257,132 327,20"
+          stroke="#666" stroke-width="1.5" fill="none" stroke-dasharray="5 3"
+          stroke-linejoin="round"/>
+
+        <!-- Note center dots -->
+        <circle cx="117" cy="166" r="4" fill="#4a90d9"/>
+        <circle cx="187" cy="54" r="4" fill="#e04848"/>
+        <circle cx="257" cy="132" r="4" fill="#4a90d9"/>
+        <circle cx="327" cy="20" r="4" fill="#e04848"/>
+
+        <!-- Track labels -->
+        <text x="530" y="168" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" font-weight="700">Hocket A</text>
+        <text x="530" y="181" font-family="Space Mono,monospace" font-size="10" fill="#888">D4, G4 (octave 4)</text>
+        <text x="530" y="60" font-family="Space Mono,monospace" font-size="10" fill="#e04848" font-weight="700">Hocket B</text>
+        <text x="530" y="73" font-family="Space Mono,monospace" font-size="10" fill="#888">F5, A5 (octave 5)</text>
+        <text x="530" y="120" font-family="Space Mono,monospace" font-size="10" fill="#666">zigzag = implied</text>
+        <text x="530" y="133" font-family="Space Mono,monospace" font-size="10" fill="#666">compound melody</text>
+      </svg>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Velocity Hocket</div>
+      <p>There is a softer version that requires only one track. Keep all notes in a single MIDI clip but alternate velocities: odd notes at full velocity (90–100), even notes at ghost velocity (25–35). The loud notes pop as melody; the ghost notes drop into background accompaniment. The ear parses this as two layers even though it is one. This is the <span class="key">velocity hocket</span> — useful when you want the effect without doubling your track count.</p>
+    </div>
+
+    <div class="principle-box">
+      Hocket is the inverse of counterpoint: instead of adding a second independent voice, you split a single voice across two tracks. The independence is built in by subtraction.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Session State After M08</div>
+      <p>Your session has four active layers: the melody displacement arc (Disp-0 through Disp-3), Phase B, the M08 polyrhythm pattern, and the pulse. The melody displacement arc is the primary melodic voice.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">This Session</div>
+      <p>Open your M08 session. Locate the <strong>main melody track</strong> — the one containing the Disp-0 clip (or whichever displacement clip is currently active as your primary melody). Mute it for now.</p>
+      <p><strong>Step 1.</strong> Duplicate the melody track twice. Rename the two duplicates <strong>Hocket A</strong> and <strong>Hocket B</strong>. Delete the original melody track (or leave it muted — your choice).</p>
+      <p><strong>Step 2.</strong> Open the MIDI clip in Hocket A. Delete every even-numbered note — 2nd, 4th, 6th, and so on through the loop. Open the MIDI clip in Hocket B and delete every odd-numbered note — 1st, 3rd, 5th. Both clips stay the same bar length.</p>
+      <p><strong>Step 3.</strong> Assign different timbres: Hocket A gets the <strong>pad</strong> sound (soft, sustained), Hocket B gets a <strong>plucked or staccato</strong> sound (bell, kalimba, muted key). Play them together alongside Phase B and the pulse. The original melody is there — but now it shimmers between two voices.</p>
+      <p><strong>Step 4 (optional but recommended).</strong> In Hocket B's MIDI clip, transpose all notes up one octave. Now the melody leaps between registers — the register-hocket compound melody from Card 43. Listen for the implied zigzag line the ear traces between the two voices.</p>
+      <p>When you are satisfied: save your session. You now have five active layers — Hocket A, Hocket B, Phase B, M08 poly, and pulse — each carved from the same D-minor material.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>HOCKET ◇ INTERLOCKING VOICES ◇ D DORIAN ◇ HOCKET ◇ INTERLOCKING VOICES ◇ D DORIAN ◇</site-banner>
+
+<chapter-nav
+  prev-href="m08-polyrhythm.html" prev-title="M08 — Polyrhythm &amp; Cross-Rhythm">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M 09: HOCKET — D DORIAN"></site-footer>
+
+</body>
+</html>

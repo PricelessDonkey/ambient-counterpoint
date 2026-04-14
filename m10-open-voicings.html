@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M10 — Open Voicings & Modal Chords</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>OPEN 5THS ◇ SUS CHORDS ◇ MODAL VOICINGS ◇ OPEN 5THS ◇ SUS CHORDS ◇ MODAL VOICINGS ◇ OPEN 5THS ◇ SUS CHORDS ◇ MODAL VOICINGS ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Open Voicings &amp; Modal Chords</span>
+  <span slot="subtitle">The actual vocabulary: sus chords, added 9ths, open 5ths, avoiding the leading tone.</span>
+</site-hero>
+
+<intro-box>Minimalist harmony sounds different not because of exotic scales but because of voicing choices. Dense triads "land" — they have a root-third-fifth logic that pulls toward function. Open voicings hover. This chapter is the harmonic vocabulary behind the sound: what notes, which order, which registers, and why C# is mostly off-limits in D Dorian.</intro-box>
+
+<div class="content">
+
+  <content-card number="46" title="Why Minimalist Harmony Sounds Different">
+    <div class="sub-section">
+      <div class="sub-title">The Problem with Dense Triads</div>
+      <p>A close-position D minor triad (D3–F3–A3) is three notes stacked in thirds with no gaps. It's acoustically complete — the ear hears it as a resolved, named thing. That sense of "named completion" is exactly what minimalism avoids.</p>
+      <p>Instead, minimalist harmony uses voicings that don't resolve to a clear chord identity: <span class="key">open 5ths</span> (D + A, no third), <span class="key">sus2</span> (D + E + A), <span class="key">sus4</span> (D + G + A), <span class="key">added 9th</span> (D + F + A + E). These voicings <em>hover</em> — the ear can't decide if they're major, minor, or something else entirely.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Voicing comparison: close triad, open 5th, sus2 -->
+      <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- staff lines are ornamental here; we use note clusters -->
+        </defs>
+        <!-- labels -->
+        <text x="130" y="25" font-family="Space Mono,monospace" font-size="12" fill="#1a1a1a" text-anchor="middle">(A) Close Triad</text>
+        <text x="130" y="40" font-family="Space Mono,monospace" font-size="10" fill="#666" text-anchor="middle">D3–F3–A3</text>
+        <text x="380" y="25" font-family="Space Mono,monospace" font-size="12" fill="#1a1a1a" text-anchor="middle">(B) Open 5th</text>
+        <text x="380" y="40" font-family="Space Mono,monospace" font-size="10" fill="#666" text-anchor="middle">D3–A3</text>
+        <text x="630" y="25" font-family="Space Mono,monospace" font-size="12" fill="#1a1a1a" text-anchor="middle">(C) Sus2</text>
+        <text x="630" y="40" font-family="Space Mono,monospace" font-size="10" fill="#666" text-anchor="middle">D3–E3–A3</text>
+
+        <!-- grid lines -->
+        <line x1="30" y1="60" x2="230" y2="60" class="grid-line"/>
+        <line x1="30" y1="80" x2="230" y2="80" class="grid-line"/>
+        <line x1="30" y1="100" x2="230" y2="100" class="grid-line"/>
+        <line x1="30" y1="120" x2="230" y2="120" class="grid-line"/>
+        <line x1="30" y1="140" x2="230" y2="140" class="grid-line"/>
+        <line x1="280" y1="60" x2="480" y2="60" class="grid-line"/>
+        <line x1="280" y1="80" x2="480" y2="80" class="grid-line"/>
+        <line x1="280" y1="100" x2="480" y2="100" class="grid-line"/>
+        <line x1="280" y1="120" x2="480" y2="120" class="grid-line"/>
+        <line x1="280" y1="140" x2="480" y2="140" class="grid-line"/>
+        <line x1="530" y1="60" x2="730" y2="60" class="grid-line"/>
+        <line x1="530" y1="80" x2="730" y2="80" class="grid-line"/>
+        <line x1="530" y1="100" x2="730" y2="100" class="grid-line"/>
+        <line x1="530" y1="120" x2="730" y2="120" class="grid-line"/>
+        <line x1="530" y1="140" x2="730" y2="140" class="grid-line"/>
+
+        <!-- pitch labels left column -->
+        <text x="28" y="63" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">A3</text>
+        <text x="28" y="83" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">G3</text>
+        <text x="28" y="103" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">F3</text>
+        <text x="28" y="123" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">E3</text>
+        <text x="28" y="143" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">D3</text>
+
+        <!-- (A) Close Triad: D3=140, F3=100, A3=60 -->
+        <circle cx="130" cy="140" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="130" cy="100" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="130" cy="60" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="130" y="168" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9" text-anchor="middle">minor triad</text>
+
+        <!-- (B) Open 5th: D3=140, A3=60 — gap where F would be -->
+        <circle cx="380" cy="140" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="380" cy="60" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- ghost where F3 would be -->
+        <circle cx="380" cy="100" r="6" fill="none" stroke="#ccc" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <text x="395" y="104" font-family="Space Mono,monospace" font-size="8" fill="#bbb">F?</text>
+        <text x="380" y="168" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9" text-anchor="middle">major or minor?</text>
+
+        <!-- (C) Sus2: D3=140, E3=120, A3=60 -->
+        <circle cx="630" cy="140" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="630" cy="120" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="630" cy="60" r="7" fill="#4a90d9" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="630" y="168" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9" text-anchor="middle">no third at all</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="47" color="red" title="The Leading Tone Problem">
+    <div class="sub-section">
+      <div class="sub-title">Why C# Is (Mostly) Off-Limits</div>
+      <p>In D harmonic minor, C# sits a half step below D — a powerful magnetic pull. The ear hears it and <em>waits</em> for D. That waiting is functional harmony: tension demanding resolution. Minimalism is about removing that demand.</p>
+      <p><span class="key">D Dorian</span> uses C natural instead of C#. C natural is a whole step below D, which doesn't create the same urgency. The ear can rest on a C without feeling compelled to resolve it upward.</p>
+      <p>The rule: avoid C# unless you explicitly want tonal gravity at that moment. A C# can be a powerful arrival tool precisely because you've avoided it everywhere else — use it sparingly.</p>
+    </div>
+  </content-card>
+
+  <content-card number="48" title="Open 5th as the Foundation Chord">
+    <div class="sub-section">
+      <div class="sub-title">D + A: The Ambiguous Core</div>
+      <p>The open 5th — D and A with no third — is the most neutral harmonic statement available. The ear cannot determine major or minor. Arvo Pärt builds entire pieces on open 5ths, using their ambiguity to create a timeless, bell-like quality.</p>
+      <p>In practice: D2 in the bass, D3 + A3 above. Or D1 + D2 + A2 for a thicker version. The third (F) is deliberately absent. Adding it would commit the ear to minor; the open 5th commits to nothing.</p>
+      <p>This isn't emptiness — it's space. The listener's imagination fills in the missing third differently on each hearing.</p>
+    </div>
+  </content-card>
+
+  <content-card number="49" title="Stacking from the Bass">
+    <div class="sub-section">
+      <div class="sub-title">Register Logic for Minimalist Voicings</div>
+      <p>Minimalist voicings follow a consistent register logic: bass notes carry the root, middle register carries the structural 5th, and color notes float in the upper register. Color notes — extensions like the 7th, 9th, or 4th — only work when placed above the structural core.</p>
+      <p>A typical stack: <span class="key">D2</span> (bass drone) → <span class="key">D3 + A3</span> (open 5th in the middle) → <span class="key">F4 + C5</span> (color notes floating above). The color notes are heard as additions, not as the chord's identity.</p>
+      <p>The rule: <strong>never put color notes in the bass.</strong> A C5 floating above a D2 bass reads as an added 7th. A C2 in the bass with D above reads as a C chord with an added 9th — completely different harmonic meaning.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Stack diagram: D2 bass, D3+A3, F4+C5 -->
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- vertical register zones -->
+        <rect x="60" y="10" width="160" height="40" rx="4" fill="#f0f5ff" stroke="#4a90d9" stroke-width="1"/>
+        <text x="140" y="28" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle" font-weight="700">COLOR NOTES</text>
+        <text x="140" y="42" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">F4 + C5 (upper register)</text>
+
+        <rect x="60" y="75" width="160" height="40" rx="4" fill="#f0fff4" stroke="#5ba85a" stroke-width="1"/>
+        <text x="140" y="93" font-family="Space Mono,monospace" font-size="10" fill="#5ba85a" text-anchor="middle" font-weight="700">STRUCTURAL 5TH</text>
+        <text x="140" y="107" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">D3 + A3 (middle register)</text>
+
+        <rect x="60" y="140" width="160" height="40" rx="4" fill="#fff8f0" stroke="#c87941" stroke-width="1"/>
+        <text x="140" y="158" font-family="Space Mono,monospace" font-size="10" fill="#c87941" text-anchor="middle" font-weight="700">BASS DRONE</text>
+        <text x="140" y="172" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">D2 (never move this)</text>
+
+        <!-- arrows showing stacking -->
+        <line x1="140" y1="52" x2="140" y2="73" stroke="#999" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+        <line x1="140" y1="117" x2="140" y2="138" stroke="#999" stroke-width="1.5" marker-end="url(#arrowDown)"/>
+
+        <defs>
+          <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto">
+            <path d="M2,2 L4,6 L6,2" stroke="#999" stroke-width="1.5" fill="none"/>
+          </marker>
+        </defs>
+
+        <!-- Rule annotation -->
+        <line x1="260" y1="30" x2="700" y2="30" class="grid-line"/>
+        <line x1="260" y1="95" x2="700" y2="95" class="grid-line"/>
+        <line x1="260" y1="160" x2="700" y2="160" class="grid-line"/>
+
+        <text x="280" y="22" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">extensions, color, ambiguity</text>
+        <text x="280" y="87" font-family="Space Mono,monospace" font-size="10" fill="#5ba85a">stability, the "chord"</text>
+        <text x="280" y="152" font-family="Space Mono,monospace" font-size="10" fill="#c87941">root identity — never a color note here</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="50" color="purple" title="Parallel Motion">
+    <div class="sub-section">
+      <div class="sub-title">The Deliberate Break from Bach</div>
+      <p>Bach forbids parallel fifths and octaves — they collapse voice independence into a single thick line, erasing the counterpoint's reason for existing. In minimalism, that collapse is the point.</p>
+      <p><span class="key">Parallel motion</span> — both voices moving in the same direction by the same interval — creates a homogenous, wash-like texture. Philip Glass's keyboard music (Metamorphosis, Glassworks) is built on it. Two hands, same intervals, moving together.</p>
+      <p>Use parallel motion when you want that immersive, undifferentiated wash. Use contrary or oblique motion when you want independence and tension. Both choices are valid — the difference is intentional.</p>
+      <p>Cross-reference: For Bach's rules against parallel fifths/octaves and the reasoning behind them, see <a href="ch03-two-voices.html">Ch 03 — Two Voices</a>. Understanding why Bach forbids them makes the minimalist choice to use them deliberate rather than ignorant.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Parallel motion vs contrary motion -->
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr10" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" stroke="#4a90d9" stroke-width="1.2" fill="none"/>
+          </marker>
+          <marker id="arr10r" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6" stroke="#e04848" stroke-width="1.2" fill="none"/>
+          </marker>
+        </defs>
+
+        <!-- LEFT: Parallel motion (Glass-style) -->
+        <text x="190" y="18" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">PARALLEL (Glass)</text>
+
+        <!-- grid -->
+        <line x1="30" y1="40" x2="350" y2="40" class="grid-line"/>
+        <line x1="30" y1="60" x2="350" y2="60" class="grid-line"/>
+        <line x1="30" y1="80" x2="350" y2="80" class="grid-line"/>
+        <line x1="30" y1="100" x2="350" y2="100" class="grid-line"/>
+        <line x1="30" y1="120" x2="350" y2="120" class="grid-line"/>
+
+        <!-- Voice 1 (upper): A3→B3→C4→D4 -->
+        <circle cx="80" cy="60" r="5" fill="#4a90d9"/>
+        <circle cx="160" cy="40" r="5" fill="#4a90d9"/>
+        <circle cx="240" cy="120" r="5" fill="#4a90d9"/>
+        <circle cx="320" cy="100" r="5" fill="#4a90d9"/>
+        <polyline points="80,60 160,40 240,120 320,100" stroke="#4a90d9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+        <!-- Voice 2 (lower): D3→E3→F3→G3 — moves same direction, same intervals -->
+        <circle cx="80" cy="100" r="5" fill="#4a90d9"/>
+        <circle cx="160" cy="80" r="5" fill="#4a90d9"/>
+        <circle cx="240" cy="140" r="5" fill="none" stroke="#4a90d9" stroke-width="2"/>
+        <circle cx="320" cy="120" r="5" fill="none" stroke="#4a90d9" stroke-width="2"/>
+        <polyline points="80,100 160,80 240,140 320,120" stroke="#4a90d9" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-dasharray="6 3"/>
+
+        <text x="190" y="155" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9" text-anchor="middle">both voices, same direction</text>
+
+        <!-- RIGHT: Contrary motion (Bach-style) -->
+        <text x="570" y="18" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">CONTRARY (Bach)</text>
+
+        <!-- grid -->
+        <line x1="410" y1="40" x2="730" y2="40" class="grid-line"/>
+        <line x1="410" y1="60" x2="730" y2="60" class="grid-line"/>
+        <line x1="410" y1="80" x2="730" y2="80" class="grid-line"/>
+        <line x1="410" y1="100" x2="730" y2="100" class="grid-line"/>
+        <line x1="410" y1="120" x2="730" y2="120" class="grid-line"/>
+
+        <!-- Voice 1 (upper): rises -->
+        <circle cx="460" cy="100" r="5" fill="#4a90d9"/>
+        <circle cx="540" cy="80" r="5" fill="#4a90d9"/>
+        <circle cx="620" cy="60" r="5" fill="#4a90d9"/>
+        <circle cx="700" cy="40" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <polyline points="460,100 540,80 620,60 700,40" stroke="#4a90d9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+        <!-- Voice 2 (lower): falls -->
+        <circle cx="460" cy="80" r="5" fill="#e04848"/>
+        <circle cx="540" cy="100" r="5" fill="#e04848"/>
+        <circle cx="620" cy="120" r="5" fill="#e04848"/>
+        <circle cx="700" cy="120" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <polyline points="460,80 540,100 620,120 700,120" stroke="#e04848" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-dasharray="6 3"/>
+
+        <text x="570" y="155" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">voices move in opposite directions</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Add a Chord Track</div>
+      <p>Open your M09 session. You have five active layers: Hocket A, Hocket B, Phase B, the M08 poly pattern, and the pulse.</p>
+      <p><strong>Create a new MIDI track</strong> — use a pad or sustained synth timbre (longer attack, long sustain, slow release). Name it "M10 chords".</p>
+      <p><strong>Create a 4-bar chord clip:</strong></p>
+      <ul>
+        <li>Bar 1–2: D open 5th — D3 + A3, half notes (two notes per bar)</li>
+        <li>Bar 3–4: Gsus4 — G3 + C4 + D4, half notes</li>
+      </ul>
+      <p>This two-chord vamp (Dm i → Gsus4 IV) is the <span class="key">D Dorian fingerprint</span>. The G chord's B natural (implied by the Gsus4 context) against the D chord's C natural creates the characteristic modal color.</p>
+      <p><strong>Balance the mix:</strong> Play all existing tracks against the new chord layer. The chords should sit <em>underneath</em> the hocket melody — reduce chord velocity to around 60–70 if it competes. The hocket voices should remain primary.</p>
+    </div>
+    <div class="principle-box">
+      You now have six layers: pulse, Phase B, poly pattern, Hocket A, Hocket B, and a sustained chord vamp. The chord layer gives the floating hocket notes a harmonic home without locking them into functional progressions.
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>OPEN 5THS ◇ SUS CHORDS ◇ MODAL VOICINGS ◇ OPEN 5THS ◇ SUS CHORDS ◇ MODAL VOICINGS ◇ OPEN 5THS ◇ SUS CHORDS ◇ MODAL VOICINGS ◇</site-banner>
+
+<chapter-nav
+  prev-href="m09-hocket.html" prev-title="M09 — Hocket: Interlocking Voices"
+  next-href="m11-diatonic-stasis.html" next-title="M11 — Diatonic Stasis & Modal Color">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M10: OPEN VOICINGS — D DORIAN"></site-footer>
+
+</body>
+</html>

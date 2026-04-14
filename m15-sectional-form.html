@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M15 — Sectional Form & The Art of Staying</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>CHAPTER M15 ◇ SECTIONAL FORM ◇ THE ART OF STAYING ◇ SECTIONS AS STATES ◇ CONTRAST TYPES ◇ TRANSITIONS ◇ SECTIONAL FORM ◇ THE ART OF STAYING ◇ SECTIONS AS STATES ◇ CONTRAST TYPES ◇ TRANSITIONS</site-banner>
+
+<site-hero>
+  <span slot="title">Sectional Form &amp; The Art of Staying</span>
+  <span slot="subtitle">Large-scale structure in minimalism: sequences of states rather than narrative arcs.</span>
+</site-hero>
+
+<intro-box>In Bach, a new section means new material and a new harmonic destination. In minimalism, a new section is a different <em>state</em> — a shift in texture, register, or chord — while the underlying material barely changes. This chapter is about how to sequence those states, when to move between them, and how to resist the most common mistake in minimalist composition: changing too soon.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="Sections as States, Not Events">
+    <div class="sub-section">
+      <div class="sub-title">The Minimalist Redefinition</div>
+      <p>In Bach's language, a new section has new thematic material and advances the harmonic narrative — the <span class="key">Fortspinnung</span> moves forward, new episodes develop old motifs, and the final cadence resolves a long-range tension. Each section <em>does</em> something.</p>
+      <p>In minimalism, a new section is often just a different <em>state</em> of the same material: the same notes in a thinner texture, the same loop against a different chord, the same arpeggios in a new register. The material barely changes — the <em>environment</em> changes.</p>
+      <p>This is not a lesser form. It is a different contract with the listener. Instead of "what happens next?", minimalism asks "how does this feel now?" The listener's attention shifts from narrative tracking to perceptual absorption. Section changes are environmental shifts — like moving from one room to another in the same building.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The Bach Parallel</div>
+      <p>For Bach's approach to large-scale form — ritornello structure, fugue exposition, and arch form — see <a href="ch09-large-scale-form.html">Ch 09 — Large-Scale Form</a>. The nesting principle applies in both worlds: the same structural logic operates at every level, whether you're shaping 4 bars or 64.</p>
+    </div>
+  </content-card>
+
+  <content-card number="2" color="green" title="When to Change Sections">
+    <div class="sub-section">
+      <div class="sub-title">Perceptual Pacing</div>
+      <p>In minimalism, a section change is not driven by "I need new material." It is driven by <span class="key">perceptual pacing</span>: the listener needs a change of environment every N bars to stay engaged. Stay too long and interest declines. Change too soon and the new section feels arbitrary. The sweet spot is when the listener has <em>completely settled in</em> — and you can feel the moment tipping toward restlessness.</p>
+      <p><strong>16–32 bars per section is the common range</strong>, but this depends entirely on how much micro-variation is happening within the loop. A highly varied loop with rhythmic displacement and pitch changes can sustain a section for 32 bars. A static, simple pattern may need to change at 16.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Perceptual engagement curve over time -->
+      <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-eng" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <polygon points="0 0, 7 3.5, 0 7" fill="#1a1a1a"/>
+          </marker>
+        </defs>
+
+        <!-- Grid lines -->
+        <line x1="60" y1="160" x2="720" y2="160" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="120" x2="720" y2="120" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="80" x2="720" y2="80" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="40" x2="720" y2="40" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- Section dividers -->
+        <line x1="225" y1="30" x2="225" y2="165" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+        <line x1="390" y1="30" x2="390" y2="165" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+        <line x1="555" y1="30" x2="555" y2="165" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="4 3"/>
+
+        <!-- Section labels -->
+        <text x="140" y="22" font-family="Space Mono,monospace" font-size="10" fill="#4a9edd" text-anchor="middle">SECTION A</text>
+        <text x="307" y="22" font-family="Space Mono,monospace" font-size="10" fill="#5cb85c" text-anchor="middle">SECTION A'</text>
+        <text x="472" y="22" font-family="Space Mono,monospace" font-size="10" fill="#e07d2e" text-anchor="middle">SECTION B</text>
+        <text x="637" y="22" font-family="Space Mono,monospace" font-size="10" fill="#4a9edd" text-anchor="middle">A-RETURN</text>
+
+        <!-- Engagement curve: section A declines, spike at change, A' declines, spike at B, B declines, spike at return -->
+        <!-- Section A: 60→225, starts high (y=50), declines to (y=130) -->
+        <!-- Spike at 225: jumps to y=48 -->
+        <!-- Section A': 225→390, starts at 48, declines to y=125 -->
+        <!-- Spike at 390: jumps to y=45 -->
+        <!-- Section B: 390→555, starts at 45, declines to y=120 -->
+        <!-- Spike at 555: jumps to y=50 -->
+        <!-- A-return: 555→720, starts at 50, declines gently to y=110 -->
+        <polyline
+          points="60,52 100,58 140,72 180,95 215,125 225,48 270,57 320,80 365,115 385,128 390,47 430,54 475,75 520,105 550,122 555,48 600,58 645,78 685,100 720,115"
+          stroke="#4a9edd" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+        <!-- Spike markers at section changes -->
+        <circle cx="225" cy="48" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="390" cy="47" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="555" cy="48" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Spike annotations -->
+        <text x="225" y="42" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">section change</text>
+        <text x="390" y="41" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">section change</text>
+        <text x="555" y="42" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">section change</text>
+
+        <!-- Axes -->
+        <line x1="60" y1="165" x2="725" y2="165" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arr-eng)"/>
+        <line x1="60" y1="165" x2="60" y2="28" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arr-eng)"/>
+
+        <!-- Axis labels -->
+        <text x="390" y="185" font-family="Space Mono,monospace" font-size="10" fill="#666" text-anchor="middle">TIME (BARS)</text>
+        <text x="14" y="100" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle" transform="rotate(-90,14,100)">LISTENER INTEREST</text>
+
+        <!-- Bar numbers -->
+        <text x="60" y="178" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">1</text>
+        <text x="225" y="178" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">17</text>
+        <text x="390" y="178" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">33</text>
+        <text x="555" y="178" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">49</text>
+        <text x="720" y="178" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">64</text>
+
+        <!-- Annotation: "well-timed change" -->
+        <text x="226" y="200" font-family="Space Mono,monospace" font-size="9" fill="#e07d2e" text-anchor="middle">satisfaction ∝ how long you waited</text>
+      </svg>
+    </div>
+    <p>The satisfaction of a well-timed section change is directly proportional to how long you stayed. If you change at bar 8 and again at bar 16, the listener never settles — the piece feels restless. If you wait until the listener is on the edge of boredom, the change feels like relief. That relief is a compositional reward you earned by being patient.</p>
+  </content-card>
+
+  <content-card number="3" title="Types of Contrast">
+    <div class="sub-section">
+      <div class="sub-title">Four Contrast Dimensions</div>
+      <p>Minimalist section changes operate along four contrast dimensions. Effective form uses these selectively — changing two or three dimensions at once creates a strong shift; changing all four can feel like starting over.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Texture Contrast</div>
+      <p><strong>Full → Sparse → Full.</strong> The most common arc: all layers active, then strip to one or two, then restore. The stripped-back section creates relief from density and makes the full return feel earned. In Ableton, this is as simple as muting tracks at a section boundary.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Harmonic Contrast</div>
+      <p><strong>Vamp 1 → Vamp 2.</strong> Two chords that share notes (e.g. Dm7 → Gsus4, or Dm → F) allow a harmonic shift without leaving the modal field. The listener feels the ground shift under the same melodic material. In D Dorian, moving from Dm7 to Gsus4 changes the tonal center of gravity without introducing any chromatic notes.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Register Contrast</div>
+      <p><strong>Mid → High or Bass Emphasis.</strong> Shifting the primary melodic activity into the high register (above D5) or dropping emphasis to the bass creates a spatial shift without changing harmonic content. This is how Glass creates the sense of "zooming in" or "zooming out" while the same loop runs underneath.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Dynamic Contrast</div>
+      <p><strong>Loud → Soft, or Soft → Loud.</strong> A volume drop or rise across all tracks, or a dramatic reduction in the number of active layers, signals a section boundary even when nothing else changes. In electronic music, this is often paired with a long reverb tail on the outgoing material.</p>
+    </div>
+
+    <!-- Sectional form timeline diagram -->
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Section blocks -->
+        <!-- A: x=10, w=180 -->
+        <rect x="10" y="40" width="180" height="60" rx="3" fill="#4a9edd" opacity="0.85"/>
+        <!-- A': x=197, w=180 -->
+        <rect x="197" y="60" width="180" height="40" rx="3" fill="#4a9edd" opacity="0.35"/>
+        <!-- B: x=384, w=180 -->
+        <rect x="384" y="50" width="180" height="50" rx="3" fill="#e07d2e" opacity="0.80"/>
+        <!-- A-return: x=571, w=179 -->
+        <rect x="571" y="40" width="179" height="60" rx="3" fill="#4a9edd" opacity="0.85"/>
+
+        <!-- Section labels inside blocks -->
+        <text x="100" y="68" font-family="Space Mono,monospace" font-size="12" font-weight="bold" fill="white" text-anchor="middle">A</text>
+        <text x="100" y="84" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">FULL TEXTURE</text>
+        <text x="100" y="96" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">Dm7 vamp</text>
+
+        <text x="287" y="78" font-family="Space Mono,monospace" font-size="12" font-weight="bold" fill="#4a9edd" text-anchor="middle">A'</text>
+        <text x="287" y="91" font-family="Space Mono,monospace" font-size="9" fill="#4a9edd" text-anchor="middle">SPARSE</text>
+
+        <text x="474" y="72" font-family="Space Mono,monospace" font-size="12" font-weight="bold" fill="white" text-anchor="middle">B</text>
+        <text x="474" y="86" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">CONTRAST</text>
+        <text x="474" y="98" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">Gsus4 only</text>
+
+        <text x="660" y="68" font-family="Space Mono,monospace" font-size="12" font-weight="bold" fill="white" text-anchor="middle">A</text>
+        <text x="660" y="84" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">FULL RETURN</text>
+        <text x="660" y="96" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">Dm7 → Gsus4</text>
+
+        <!-- Bar labels -->
+        <text x="10" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999">1</text>
+        <text x="181" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">16</text>
+        <text x="197" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999">17</text>
+        <text x="368" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">32</text>
+        <text x="384" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999">33</text>
+        <text x="555" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">48</text>
+        <text x="571" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999">49</text>
+        <text x="750" y="115" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="end">64</text>
+
+        <!-- Texture density bars (under sections) -->
+        <!-- A: full = tall bar 12px -->
+        <rect x="10" y="122" width="180" height="12" rx="1" fill="#4a9edd" opacity="0.5"/>
+        <!-- A': sparse = thin bar 4px -->
+        <rect x="197" y="126" width="180" height="4" rx="1" fill="#4a9edd" opacity="0.3"/>
+        <!-- B: medium = 8px -->
+        <rect x="384" y="124" width="180" height="8" rx="1" fill="#e07d2e" opacity="0.5"/>
+        <!-- A-return: full = 12px -->
+        <rect x="571" y="122" width="179" height="12" rx="1" fill="#4a9edd" opacity="0.5"/>
+
+        <!-- Density legend -->
+        <text x="10" y="152" font-family="Space Mono,monospace" font-size="9" fill="#666">TEXTURE DENSITY →</text>
+        <rect x="175" y="144" width="30" height="10" rx="1" fill="#666" opacity="0.4"/>
+        <text x="210" y="153" font-family="Space Mono,monospace" font-size="9" fill="#666">full</text>
+        <rect x="245" y="148" width="30" height="4" rx="1" fill="#666" opacity="0.25"/>
+        <text x="280" y="153" font-family="Space Mono,monospace" font-size="9" fill="#666">sparse</text>
+
+        <!-- Contrast labels below -->
+        <text x="100" y="175" font-family="Space Mono,monospace" font-size="9" fill="#4a9edd" text-anchor="middle">4 layers + pulse</text>
+        <text x="287" y="175" font-family="Space Mono,monospace" font-size="9" fill="#4a9edd" text-anchor="middle">bass + arpeggio</text>
+        <text x="474" y="175" font-family="Space Mono,monospace" font-size="9" fill="#e07d2e" text-anchor="middle">hocket variant</text>
+        <text x="660" y="175" font-family="Space Mono,monospace" font-size="9" fill="#4a9edd" text-anchor="middle">all 4 layers</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="4" color="purple" title="Transitions">
+    <div class="sub-section">
+      <div class="sub-title">The Most Interesting Moment</div>
+      <p>In minimalist music, the <span class="key">transition</span> between sections is often the most interesting moment in the piece. It is the only point where the structure itself becomes audible — where the listener can hear the composer making a decision. How you cross the threshold defines the character of the form.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Four transition type mini-diagrams: 2×2 layout -->
+      <svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Labels -->
+        <text x="190" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#1a1a1a" text-anchor="middle">HARD CUT</text>
+        <text x="570" y="18" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#1a1a1a" text-anchor="middle">FILTER SWEEP</text>
+        <text x="190" y="148" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#1a1a1a" text-anchor="middle">SUBTRACTION → ENTRY</text>
+        <text x="570" y="148" font-family="Space Mono,monospace" font-size="10" font-weight="bold" fill="#1a1a1a" text-anchor="middle">REVERSE-ADDITIVE</text>
+
+        <!-- 1. Hard cut -->
+        <!-- Section A block -->
+        <rect x="20" y="26" width="150" height="50" rx="2" fill="#4a9edd" opacity="0.75"/>
+        <text x="95" y="55" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">SECTION A</text>
+        <!-- Section B block immediately after -->
+        <rect x="210" y="26" width="150" height="50" rx="2" fill="#e07d2e" opacity="0.75"/>
+        <text x="285" y="55" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle">SECTION B</text>
+        <!-- Hard boundary line -->
+        <line x1="210" y1="20" x2="210" y2="84" stroke="#1a1a1a" stroke-width="2.5"/>
+        <text x="210" y="92" font-family="Space Mono,monospace" font-size="8" fill="#666" text-anchor="middle">abrupt — dramatic</text>
+        <!-- Transition arrow labels -->
+        <text x="210" y="14" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">▼</text>
+
+        <!-- 2. Filter sweep -->
+        <!-- Section A with gradient -->
+        <defs>
+          <linearGradient id="sweep-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4a9edd;stop-opacity:0.9"/>
+            <stop offset="60%" style="stop-color:#4a9edd;stop-opacity:0.4"/>
+            <stop offset="100%" style="stop-color:#e07d2e;stop-opacity:0.1"/>
+          </linearGradient>
+          <linearGradient id="sweep-grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4a9edd;stop-opacity:0.1"/>
+            <stop offset="40%" style="stop-color:#e07d2e;stop-opacity:0.4"/>
+            <stop offset="100%" style="stop-color:#e07d2e;stop-opacity:0.9"/>
+          </linearGradient>
+        </defs>
+        <rect x="400" y="26" width="140" height="50" rx="2" fill="url(#sweep-grad)"/>
+        <rect x="540" y="26" width="140" height="50" rx="2" fill="url(#sweep-grad2)"/>
+        <text x="470" y="48" font-family="Space Mono,monospace" font-size="9" fill="#4a9edd" text-anchor="middle">A (filtering)</text>
+        <text x="610" y="48" font-family="Space Mono,monospace" font-size="9" fill="#e07d2e" text-anchor="middle">B (opening)</text>
+        <!-- Sweep arrow under -->
+        <line x1="400" y1="82" x2="680" y2="82" stroke="#666" stroke-width="1.5"/>
+        <polygon points="680,79 686,82 680,85" fill="#666"/>
+        <text x="540" y="96" font-family="Space Mono,monospace" font-size="8" fill="#666" text-anchor="middle">gradual timbre shift</text>
+
+        <!-- 3. Subtraction → Entry -->
+        <!-- Section A stripping down to one voice -->
+        <rect x="20" y="160" width="100" height="50" rx="2" fill="#4a9edd" opacity="0.75"/>
+        <text x="70" y="183" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">SECTION A</text>
+        <text x="70" y="195" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">full</text>
+        <!-- Thin strip = one voice -->
+        <rect x="128" y="178" width="50" height="14" rx="1" fill="#4a9edd" opacity="0.4"/>
+        <text x="153" y="189" font-family="Space Mono,monospace" font-size="7" fill="#4a9edd" text-anchor="middle">1 voice</text>
+        <!-- B enters -->
+        <rect x="186" y="160" width="150" height="50" rx="2" fill="#e07d2e" opacity="0.75"/>
+        <text x="261" y="183" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">SECTION B</text>
+        <text x="261" y="195" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">enters</text>
+        <!-- Arrows showing flow -->
+        <line x1="120" y1="185" x2="128" y2="185" stroke="#666" stroke-width="1.5"/>
+        <line x1="178" y1="185" x2="186" y2="185" stroke="#666" stroke-width="1.5"/>
+        <polygon points="178,182 184,185 178,188" fill="#666"/>
+        <text x="190" y="224" font-family="Space Mono,monospace" font-size="8" fill="#666" text-anchor="middle">strip to one voice, then new section enters</text>
+
+        <!-- 4. Reverse-additive -->
+        <!-- A full → strips to near-nothing → B builds up from nothing -->
+        <rect x="400" y="160" width="90" height="50" rx="2" fill="#4a9edd" opacity="0.75"/>
+        <text x="445" y="183" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">A full</text>
+        <!-- Diminishing wedge shape approximated by stacked thin rects -->
+        <rect x="498" y="172" width="35" height="26" rx="1" fill="#4a9edd" opacity="0.3"/>
+        <rect x="498" y="178" width="25" height="14" rx="1" fill="#4a9edd" opacity="0.2"/>
+        <rect x="498" y="184" width="12" height="3" rx="1" fill="#4a9edd" opacity="0.2"/>
+        <!-- B builds -->
+        <rect x="540" y="187" width="12" height="3" rx="1" fill="#e07d2e" opacity="0.2"/>
+        <rect x="540" y="178" width="25" height="12" rx="1" fill="#e07d2e" opacity="0.25"/>
+        <rect x="540" y="166" width="40" height="24" rx="1" fill="#e07d2e" opacity="0.3"/>
+        <rect x="588" y="160" width="90" height="50" rx="2" fill="#e07d2e" opacity="0.75"/>
+        <text x="633" y="183" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">B full</text>
+        <text x="540" y="224" font-family="Space Mono,monospace" font-size="8" fill="#666" text-anchor="middle">strip to one note, rebuild with new material</text>
+      </svg>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Choosing Your Transition</div>
+      <p><strong>Hard cut:</strong> Abrupt and dramatic. Works best for the most structurally significant section change (e.g., the shift into Section B). Use sparingly — too many hard cuts make the piece feel choppy.</p>
+      <p><strong>Filter sweep:</strong> A low-pass filter gradually opens or closes over 4–8 bars, shifting the timbre rather than the notes. The section change becomes a slow tide rather than a cliff edge. In Ableton, automate a filter cutoff on a bus or individual track.</p>
+      <p><strong>Subtraction then entry:</strong> Strip the current section down to a single voice, let it run for 2–4 bars alone, then bring the new section in underneath. The brief solo moment creates expectation — the listener hears the one voice and waits for what follows.</p>
+      <p><strong>Reverse-additive:</strong> The most elaborate option. Strip the current section down to almost nothing, then rebuild from scratch using the new section's material. Creates the sensation of starting over while preserving continuity. Glass uses this in <em>Music in Twelve Parts</em>.</p>
+    </div>
+  </content-card>
+
+  <content-card number="5" color="orange" title="The Art of Staying">
+    <div class="sub-section">
+      <div class="sub-title">The Hardest Skill in Minimalism</div>
+      <p>The biggest challenge in minimalist composition is <span class="key">resisting the urge to change too soon</span>. The composer feels the section more acutely than the listener — you have heard it 40 times in the DAW; the listener is hearing it for the first time. What feels stale to you is still settling for them.</p>
+      <p>The rule: stay in a section until the listener has <em>completely settled in</em>. Not until the groove is established — until the listener has stopped tracking the loop consciously and is simply inside it. Then change. The transition will feel like the ground moving, not like a new track.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">How to Know When to Stay</div>
+      <p>A useful heuristic: play your section at low volume in another room while you do something else. If you forget it's playing, you've stayed long enough. If you start checking on it, waiting for the change, you've probably run it at the right length — or slightly past. That slight "overstay" is where the release of a well-timed change lives.</p>
+      <p>In the studio, if your instinct says "this needs to change at bar 8," try 16. If it says 16, try 24. You will often find that the longer version has more gravity. Steve Reich's <em>Music for 18 Musicians</em> holds single sections for minutes at a time. The patience is the technique.</p>
+    </div>
+    <div class="principle-box">
+      The satisfaction of a section change is proportional to how long you waited. Patience is not passive — it is the active work of staying when everything in you wants to move.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Design a 64-Bar Arrangement</div>
+      <p>Open your M14 session (4 active layers: bass drone D2, arpeggiated Dm7/Gsus4 vamp, Hocket A + Hocket B, shimmer, plus the M04 pulse track). Switch to <strong>Arrangement View</strong>.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Section A — Bars 1–16: Full Texture</div>
+      <p>Place all 4 layers + pulse running from bar 1 through bar 16. This is the full-texture statement. All tracks active. Dm7 vamp cycling. Use the M14 clip lengths as-is — they will loop naturally across 16 bars.</p>
+      <p>Label the Arrangement View locator at bar 1: <strong>"A — FULL"</strong>.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Section A' — Bars 17–32: Sparse</div>
+      <p>At bar 17, mute (or don't place clips for) the Hocket A, Hocket B, and shimmer tracks. Leave only the bass drone and the arpeggiated vamp running, plus the pulse. Two voices carrying the texture.</p>
+      <p>Label the locator: <strong>"A' — BASS + ARP"</strong>.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Transition Into Section B — Filter Sweep</div>
+      <p>In bars 31–32 (the last two bars of A'), automate a low-pass filter on the arpeggio track: cutoff starts fully open (~10kHz) at bar 31, closes to ~800Hz by bar 33, then opens fully again by bar 35. This creates a brief muffled threshold-crossing as Section B begins.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Section B — Bars 33–48: Harmonic Contrast</div>
+      <p>Switch the harmony to <strong>Gsus4 only</strong> — no Dm7 in this section. Create a new version of the Hocket A or Hocket B clip with a small micro-variant: change one note (e.g., the third note of the cell from A4 to G4, landing on the sus4 chord tone). Keep the rhythm identical.</p>
+      <p>Layers active in B: pulse + Hocket micro-variant (single track, mid register) + arpeggiated Gsus4 vamp. Bass drone continues at −6dB.</p>
+      <p>Label the locator: <strong>"B — Gsus4 / HOCKET VAR"</strong>.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Section A-Return — Bars 49–64: Full Texture</div>
+      <p>Restore all 4 layers. This time run the full Dm7 → Gsus4 vamp (the 8-bar harmonic cycle from M11/M12) across the 16 bars, so the return covers both chords. Bring the shimmer track back in at the original low velocity (40–55).</p>
+      <p>Label the locator: <strong>"A — RETURN / FULL"</strong>.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Name Your Clips</div>
+      <p>Rename each clip in Arrangement View to reflect its section role: "A-bass-drone", "A'-arpeggio-only", "B-hocket-var", "A-return-full", etc. When you look at the timeline, the structure should be readable at a glance.</p>
+    </div>
+    <div class="principle-box">
+      You now have a structured 64-bar arrangement with four sections, a filter sweep transition, and harmonic contrast. This is the foundation for the final chapter — where automation turns this structure into a complete arc.
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>SECTIONAL FORM ◇ STATES NOT EVENTS ◇ WHEN TO CHANGE ◇ TYPES OF CONTRAST ◇ TRANSITIONS ◇ ART OF STAYING ◇ SECTIONAL FORM ◇ STATES NOT EVENTS ◇ WHEN TO CHANGE</site-banner>
+
+<chapter-nav
+  prev-href="m14-textural-layering.html" prev-title="M14 — Textural Layering">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M 15: SECTIONAL FORM — D DORIAN"></site-footer>
+
+</body>
+</html>

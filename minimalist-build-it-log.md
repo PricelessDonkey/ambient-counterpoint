@@ -75,3 +75,73 @@ Compact record of each chapter's Build It outcome — the exact state of the evo
 - Clip loops in Session View alongside Disp-0 through Disp-3, Phase B, and M04 pulse.
 - Coincidence point (D4 + melody both on beat 1) occurs every 4 bars; locator "POLY ANCHOR" placed in Arrangement View.
 - Carry-forward: 3 active layers (melody/displacement arc, Phase B, M08 poly) + pulse. POLY ANCHOR marks structural reset for M15.
+
+## M09 — Hocket: Interlocking Voices
+
+- Session: same Ableton session as M01–M08, 100 BPM.
+- Main melody track duplicated into two new tracks: "Hocket A" (pad timbre) and "Hocket B" (plucked/staccato timbre).
+- Hocket A clip: odd-numbered notes only (1st, 3rd, 5th…); Hocket B clip: even-numbered notes only (2nd, 4th, 6th…).
+- Both clips same loop length as original melody. Original melody track muted or deleted.
+- Optional register variant: Hocket B transposed up one octave, creating register-leaping compound melody.
+- Carry-forward: 5 active layers — Hocket A, Hocket B, Phase B, M08 poly, pulse.
+
+## M10 — Open Voicings & Modal Chords
+
+- Session: same Ableton session as M01–M09, 100 BPM.
+- New MIDI track: "M10 chords" — pad or sustained synth, long attack/release.
+- Clip: 4-bar chord loop. Bars 1–2: D open 5th (D3 + A3, half notes). Bars 3–4: Gsus4 (G3 + C4 + D4, half notes).
+- Chord velocity balanced to 60–70 so hocket voices remain primary.
+- Carry-forward: 6 active layers — Hocket A, Hocket B, Phase B, M08 poly, pulse, M10 chord vamp.
+
+## M11 — Diatonic Stasis & Modal Color
+
+- Session: same Ableton session as M01–M10, 100 BPM.
+- M10 chord track replaced/extended: 8-bar loop. Bars 1–4: Dm7 (D3, F3, A3, C4, whole notes). Bars 5–8: Gsus4 (G3, C4, D4, whole notes).
+- Chord velocity reduced to 55–65 so hocket voices remain primary.
+- Dorian color confirmed: C natural in Dm7, B natural implied by G chord — neither chord "wins."
+- Carry-forward: 6 active layers — Hocket A, Hocket B, Phase B, M08 poly, pulse, 8-bar Dm7→Gsus4 vamp.
+
+## M12 — The Arpeggiated Field
+
+- Session: same Ableton session as M01–M11, 100 BPM.
+- M11 chord track replaced/supplemented with arpeggiated MIDI track (bright, medium-attack timbre).
+- Dm7 arpeggio clip (4 bars): D4–F4–A4–C5–A4–F4, 8th notes, cycling.
+- Gsus4 arpeggio clip (4 bars): G3–C4–D4–G4–C4–D4, 8th notes, cycling.
+- 8th-note pulse continuous and unbroken across chord boundary.
+- Arpeggio velocity set to 65–75 so hocket voices remain primary foreground.
+- Carry-forward: 6 active layers — Hocket A, Hocket B, Phase B, M08 poly, pulse, 8-bar arpeggiated vamp.
+
+## M14 — Textural Layering
+
+- Session: same Ableton session as M01–M13, 100 BPM.
+- Phase B and M08 poly tracks muted or deleted (consolidation step).
+- New MIDI track: "M14 bass drone" — sustained sub-bass/bass pad timbre, 16-bar MIDI clip, D2 whole notes, volume −6dB.
+- M12 arpeggio vamp (8-bar Dm7/Gsus4 cycling 8th-note pattern) set to −3dB.
+- Hocket A and Hocket B tracks set to 0dB (foreground reference level).
+- New MIDI track: "M14 shimmer" — sparse high timbre (bell, music box, or filtered synth), 4-bar clip: D5 on beat 1 of bar 1, A5 on beat 1 of bar 3, velocity 40–55, barely audible.
+- Carry-forward: 4-layer texture (bass drone, arpeggio, hocket A+B, shimmer) + pulse, playing across the 16-bar Dm7→Gsus4 chord cycle.
+
+---
+
+## M15 — Sectional Form & The Art of Staying
+
+- Session: same Ableton session as M01–M14, 100 BPM, Arrangement View.
+- 64-bar arrangement with four sections and Arrangement View locators.
+- Section A (bars 1–16): all 4 layers + pulse. Dm7 vamp cycling. Locator: "A — FULL".
+- Section A' (bars 17–32): bass drone + arpeggiated vamp only. Hocket and shimmer muted. Locator: "A' — BASS + ARP".
+- Filter sweep transition (bars 31–32): LP filter on arpeggio track closes to ~800Hz at bar 33, reopens by bar 35.
+- Section B (bars 33–48): Gsus4 vamp only, hocket micro-variant (one pitch change to chord tone), bass drone at −6dB. Locator: "B — Gsus4 / HOCKET VAR".
+- Section A-return (bars 49–64): full texture restored, 8-bar Dm7→Gsus4 harmonic cycle, shimmer back at velocity 40–55. Locator: "A — RETURN / FULL".
+- All clips named to reflect section role.
+- Carry-forward: structured 64-bar arrangement ready for automation in M16.
+
+---
+
+## M13 — Slow Harmonic Rhythm
+
+- Session: same Ableton session as M01–M12, 100 BPM.
+- Arpeggiated vamp clip extended to 16 bars: Dm7 arpeggio (D4–F4–A4–C5–A4–F4) for bars 1–8, Gsus4 arpeggio (G3–C4–D4–G4–C4–D4) for bars 9–16. 8th-note pulse continuous and unbroken.
+- Hocket A or Hocket B clip: small pitch change introduced in bars 9–12 (mid-point of Gsus4) — one note altered by a step, grace note, or rest.
+- Original melody returns unchanged for bars 13–16.
+- Shape: Dm7 (8 bars, static) → Gsus4 (4 bars, micro-variation) → Gsus4 (4 bars, original melody returns).
+- Carry-forward: 6 active layers over a 16-bar chord cycle demonstrating harmonic patience + melodic service.

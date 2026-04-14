@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M16 — Evolution Without Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>CHAPTER M16 ◇ EVOLUTION WITHOUT DEVELOPMENT ◇ CHAPTER M16 ◇ EVOLUTION WITHOUT DEVELOPMENT ◇ CHAPTER M16 ◇ EVOLUTION WITHOUT DEVELOPMENT ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Evolution Without Development</span>
+  <span slot="subtitle">How to make a 5-minute piece feel purposeful without Fortspinnung or Sonata form.</span>
+</site-hero>
+
+<intro-box>Minimalist music doesn't develop themes — it <em>evolves states</em>. The tools are automation, timbral drift, and the deliberate construction of a macro arc: a large-scale shape that gives the listener a sense of journey without ever changing the underlying loop logic. This final chapter brings everything together into a complete, structured ambient composition.</intro-box>
+
+<div class="content">
+
+  <content-card number="76" title="The Macro Arc">
+    <div class="sub-section">
+      <p class="sub-title">Shape Over Time</p>
+      <p>Even a piece built from near-identical loops needs an overall shape. The most common minimalist arc: <span class="key">sparse opening</span> → <span class="key">gradual build</span> → <span class="key">full-texture peak</span> → <span class="key">gradual dissolution</span> → <span class="key">quiet ending</span>. This is not development in the Bach sense — the motivic material never transforms. The <em>density and brightness</em> transform.</p>
+      <p>Your ear maps the macro arc the same way it maps a melody: as a contour. A piece that is always at peak intensity has no contour — the ear treats it as static texture. A piece that rises and falls creates a felt shape, even if the harmonic content is identical throughout.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 178" xmlns="http://www.w3.org/2000/svg">
+        <!-- Section background fills -->
+        <rect x="60" y="20" width="165" height="110" fill="#5b8dd9" opacity="0.04"/>
+        <rect x="225" y="20" width="165" height="110" fill="#7c6ea8" opacity="0.04"/>
+        <rect x="390" y="20" width="165" height="110" fill="#5a9e6f" opacity="0.04"/>
+        <rect x="555" y="20" width="165" height="110" fill="#5b8dd9" opacity="0.04"/>
+        <!-- Section divider lines -->
+        <line x1="60" y1="20" x2="60" y2="130" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="225" y1="20" x2="225" y2="130" class="grid-line"/>
+        <line x1="390" y1="20" x2="390" y2="130" class="grid-line"/>
+        <line x1="555" y1="20" x2="555" y2="130" class="grid-line"/>
+        <line x1="720" y1="20" x2="720" y2="130" stroke="#1a1a1a" stroke-width="1"/>
+        <!-- Horizontal axis -->
+        <line x1="60" y1="130" x2="720" y2="130" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Section labels -->
+        <text x="143" y="16" font-family="Space Mono,monospace" font-size="8" fill="#5b8dd9" text-anchor="middle">A</text>
+        <text x="308" y="16" font-family="Space Mono,monospace" font-size="8" fill="#7c6ea8" text-anchor="middle">A′</text>
+        <text x="473" y="16" font-family="Space Mono,monospace" font-size="8" fill="#5a9e6f" text-anchor="middle">B</text>
+        <text x="638" y="16" font-family="Space Mono,monospace" font-size="8" fill="#5b8dd9" text-anchor="middle">A-RETURN</text>
+        <!-- Filled envelope area -->
+        <polygon points="60,112 143,98 225,85 320,58 390,36 473,40 555,62 638,88 720,112 720,130 60,130"
+                 fill="#5b8dd9" opacity="0.12"/>
+        <!-- Envelope curve -->
+        <polyline points="60,112 143,98 225,85 320,58 390,36 473,40 555,62 638,88 720,112"
+                  stroke="#5b8dd9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <!-- Peak dot -->
+        <circle cx="390" cy="36" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Y-axis labels -->
+        <text x="52" y="40" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="end">peak</text>
+        <text x="52" y="116" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="end">soft</text>
+        <!-- Bar markers -->
+        <text x="60" y="144" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">1</text>
+        <text x="225" y="144" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">17</text>
+        <text x="390" y="144" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">33</text>
+        <text x="555" y="144" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">49</text>
+        <text x="720" y="144" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">65</text>
+        <!-- Annotation labels -->
+        <text x="90" y="164" font-family="Space Mono,monospace" font-size="7" fill="#e04848">filter closed</text>
+        <text x="348" y="164" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">filter open / peak</text>
+        <text x="638" y="164" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">dissolving</text>
+        <!-- Annotation connector lines -->
+        <line x1="105" y1="160" x2="78" y2="124" stroke="#e04848" stroke-width="0.8" stroke-dasharray="3 2"/>
+        <line x1="390" y1="160" x2="390" y2="48" stroke="#5b8dd9" stroke-width="0.8" stroke-dasharray="3 2"/>
+        <line x1="638" y1="160" x2="638" y2="98" stroke="#777" stroke-width="0.8" stroke-dasharray="3 2"/>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <p>The peak doesn't have to fall at the midpoint. A peak in the first third feels like energy that never settles. A peak in the final third feels like long-delayed arrival. Both are valid — choose based on the emotional shape you want the listener to feel.</p>
+    </div>
+  </content-card>
+
+  <content-card number="77" color="green" title="Automation as Composition">
+    <div class="sub-section">
+      <p class="sub-title">The Filter is a Phrase</p>
+      <p>In Ableton, automation is not mixing — it is <span class="key">phrasing</span>. A low-pass filter opening from 200Hz to 8kHz over 32 bars is a structural event equivalent to a melodic line resolving to the tonic. The ear hears it as arrival. Three automation parameters that function as compositional tools:</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Filter Cutoff</p>
+      <p>Opening a low-pass filter over time is the most reliable macro-arc tool in electronic music. The ear associates brightness with energy — a filter opening creates a sense of building toward something without any change in pitch or rhythm. Closing it creates dissolution. The arc of a single filter can serve as the entire large-scale shape of a piece.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Volume Envelopes</p>
+      <p>A track that rises from silence over 16 bars is a <em>phrase</em>. Its entry is not an event — it's a gradual arrival the ear anticipates. Similarly, a track that fades over 16 bars is a <em>departure</em>. Volume automation in Arrangement View lets you compose layer entries and exits as structural events.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Reverb Decay Time</p>
+      <p>Changing reverb decay time changes the <em>space</em> the music inhabits. Short reverb (0.5s) feels close. Long reverb (3.5s) feels vast. Automating reverb decay across sections changes the perceived scale of the room — a purely timbral event that reads as structural contrast.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 232" xmlns="http://www.w3.org/2000/svg">
+        <!-- Timeline: x=65 to x=720, 655px, 64 bars, ~10.23px/bar -->
+        <!-- Section x: bar1=65, bar17=229, bar33=392, bar49=556, bar65=720 -->
+
+        <!-- Section dividers -->
+        <line x1="65" y1="8" x2="65" y2="215" class="grid-line"/>
+        <line x1="229" y1="8" x2="229" y2="215" class="grid-line"/>
+        <line x1="392" y1="8" x2="392" y2="215" class="grid-line"/>
+        <line x1="556" y1="8" x2="556" y2="215" class="grid-line"/>
+        <line x1="720" y1="8" x2="720" y2="215" class="grid-line"/>
+
+        <!-- Section header labels -->
+        <text x="147" y="10" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">A (1–16)</text>
+        <text x="310" y="10" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">A′ (17–32)</text>
+        <text x="474" y="10" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">B (33–48)</text>
+        <text x="638" y="10" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">A-RET (49–64)</text>
+
+        <!-- Lane 1: Filter Cutoff (y band 18–65) -->
+        <rect x="65" y="18" width="655" height="47" rx="2" fill="#5b8dd9" opacity="0.06"/>
+        <text x="58" y="38" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="end">FILTER</text>
+        <text x="58" y="48" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="end">CUTOFF</text>
+        <!-- Triangle: low(y=60) → peak at bar33(y=24) → low(y=60) -->
+        <polygon points="65,60 392,24 720,60 720,63 65,63" fill="#5b8dd9" opacity="0.18"/>
+        <polyline points="65,60 392,24 720,60" stroke="#5b8dd9" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <text x="78" y="68" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9">200Hz</text>
+        <text x="375" y="22" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9">8kHz</text>
+        <text x="672" y="68" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9">200Hz</text>
+
+        <!-- Lane 2: Shimmer Volume (y band 82–132) -->
+        <rect x="65" y="80" width="655" height="47" rx="2" fill="#f5a623" opacity="0.06"/>
+        <text x="58" y="100" font-family="Space Mono,monospace" font-size="7" fill="#f5a623" text-anchor="end">SHIMMER</text>
+        <text x="58" y="110" font-family="Space Mono,monospace" font-size="7" fill="#f5a623" text-anchor="end">VOLUME</text>
+        <!-- silent 1-16, rise 17-32, peak 33-48, fade 49-64 -->
+        <polygon points="65,127 229,127 392,88 556,88 720,127 720,130 65,130" fill="#f5a623" opacity="0.18"/>
+        <polyline points="65,127 229,127 392,88 556,88 720,127" stroke="#f5a623" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <text x="147" y="125" font-family="Space Mono,monospace" font-size="7" fill="#f5a623" text-anchor="middle">silent</text>
+        <text x="474" y="86" font-family="Space Mono,monospace" font-size="7" fill="#f5a623" text-anchor="middle">peak</text>
+
+        <!-- Lane 3: Reverb Decay (y band 148–198) -->
+        <rect x="65" y="146" width="655" height="47" rx="2" fill="#5a9e6f" opacity="0.06"/>
+        <text x="58" y="166" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="end">REVERB</text>
+        <text x="58" y="176" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="end">DECAY</text>
+        <!-- stepped: short in A+A' (y=190), long in B (y=155), medium in A-ret (y=173) -->
+        <line x1="65" y1="190" x2="392" y2="190" stroke="#5a9e6f" stroke-width="2.5"/>
+        <line x1="392" y1="190" x2="392" y2="155" stroke="#5a9e6f" stroke-width="1" stroke-dasharray="3 2"/>
+        <line x1="392" y1="155" x2="556" y2="155" stroke="#5a9e6f" stroke-width="2.5"/>
+        <line x1="556" y1="155" x2="556" y2="173" stroke="#5a9e6f" stroke-width="1" stroke-dasharray="3 2"/>
+        <line x1="556" y1="173" x2="720" y2="173" stroke="#5a9e6f" stroke-width="2.5"/>
+        <text x="147" y="188" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="middle">0.5s (short)</text>
+        <text x="474" y="153" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="middle">3.5s (long)</text>
+        <text x="638" y="171" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="middle">1.5s (med)</text>
+
+        <!-- Bar markers -->
+        <text x="65" y="222" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">1</text>
+        <text x="229" y="222" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">17</text>
+        <text x="392" y="222" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">33</text>
+        <text x="556" y="222" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">49</text>
+        <text x="720" y="222" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">65</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="78" color="green" title="Timbral Drift">
+    <div class="sub-section">
+      <p class="sub-title">Change the Color, Not the Notes</p>
+      <p><span class="key">Timbral drift</span> is the technique of gradually changing the character of a sound without changing its pitch or rhythm. The piece evolves, but the MIDI content stays identical. The listener experiences change — but can't point to any note that changed.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Filter Sweep</p>
+      <p>Opening a low-pass filter over 32 bars transforms a pad from dark and formless into something bell-like and present. No notes change. Glass uses this constantly in <em>Glassworks</em> — the same arpeggiated patterns repeat while the timbral foreground rotates.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Reverb Decay Automation</p>
+      <p>A melody with 0.5s reverb sits in a room. The same melody with 3.5s reverb sits in a cathedral. Automating this over 8 bars changes the perceived scale of the piece without any compositional change. Reich's tape pieces achieve timbral evolution through the physical degradation of magnetic tape — a process you can simulate with subtle distortion automation.</p>
+    </div>
+    <div class="sub-section">
+      <p>Timbral drift is the minimalist answer to development: instead of transforming themes, you transform the <em>light</em> they are heard in. The notes are the same notes. The world around them has shifted.</p>
+    </div>
+  </content-card>
+
+  <content-card number="79" color="orange" title="Dynamic Arc vs Additive Arc">
+    <div class="sub-section">
+      <p class="sub-title">Two Ways to Build</p>
+      <p>There are two primary mechanisms for creating a sense of building toward something in minimalist music:</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">The Additive Arc</p>
+      <p>Build tension by <span class="key">adding layers</span>. Start with bass drone alone, add arpeggio, add hocket, add shimmer — each entry is a structural event. The ear counts layers and anticipates what might arrive next. This is Reich's primary technique in <em>Music for 18 Musicians</em>: the piece builds by accumulating voices until the texture reaches maximum density.</p>
+      <p>Risk: if you add everything by bar 24 of a 64-bar piece, there is nowhere left to go.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">The Dynamic Arc</p>
+      <p>Build tension by <span class="key">increasing volume and brightness</span> without adding layers. The same 4 tracks, louder and brighter over time. The ear reads this as intensification even when the texture is constant. Sinephro's <em>Space 1.8</em> uses this approach — the same modal vamp growing brighter and warmer across 20 minutes.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Combining Both</p>
+      <p>The most powerful approach is to <em>stagger</em> the two arcs. Use additive layering in the first half (building layers), then dynamic arc in the second half (same layers, increasing brightness). This gives the piece two distinct phases of growth.</p>
+      <p>Warning: if both arcs peak simultaneously, the drop must be equally dramatic — or the piece feels deflated. Consider a <span class="key">post-peak plateau</span>: maintain full brightness for 8–16 bars before beginning dissolution.</p>
+    </div>
+  </content-card>
+
+  <content-card number="80" title="The Ending">
+    <div class="sub-section">
+      <p class="sub-title">The Hardest Problem in Minimalism</p>
+      <p>Minimalist music is structurally anti-conclusive — a loop, by definition, wants to continue. Endings require a deliberate override: a signal that the repetition is stopping, not just pausing. Three primary strategies:</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 152" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-cb" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#5b8dd9"/>
+          </marker>
+        </defs>
+
+        <!-- Panel 1: Subtraction to Silence (x=10–245) -->
+        <rect x="10" y="8" width="235" height="136" rx="4" fill="none" stroke="#d9d4ca" stroke-width="1"/>
+        <text x="128" y="23" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">SUBTRACTION TO SILENCE</text>
+        <!-- 4 layers, each ending progressively earlier -->
+        <rect x="22" y="32" width="140" height="10" rx="2" fill="#5b8dd9" opacity="0.4"/>
+        <text x="166" y="40" font-family="Space Mono,monospace" font-size="7" fill="#777">shimmer</text>
+        <rect x="22" y="48" width="160" height="10" rx="2" fill="#5b8dd9" opacity="0.5"/>
+        <text x="186" y="56" font-family="Space Mono,monospace" font-size="7" fill="#777">hocket</text>
+        <rect x="22" y="64" width="180" height="10" rx="2" fill="#5b8dd9" opacity="0.6"/>
+        <text x="206" y="72" font-family="Space Mono,monospace" font-size="7" fill="#777">arp</text>
+        <rect x="22" y="80" width="200" height="10" rx="2" fill="#5b8dd9" opacity="0.7"/>
+        <text x="226" y="88" font-family="Space Mono,monospace" font-size="7" fill="#777">bass</text>
+        <text x="128" y="112" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">honest / earned</text>
+        <text x="128" y="126" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">each layer says goodbye</text>
+
+        <!-- Panel 2: Held Final Chord (x=263–498) -->
+        <rect x="263" y="8" width="235" height="136" rx="4" fill="none" stroke="#d9d4ca" stroke-width="1"/>
+        <text x="381" y="23" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">HELD FINAL CHORD</text>
+        <!-- Layers running, then stopping for sustained chord -->
+        <rect x="275" y="32" width="115" height="10" rx="2" fill="#5b8dd9" opacity="0.5"/>
+        <rect x="275" y="48" width="115" height="10" rx="2" fill="#5b8dd9" opacity="0.5"/>
+        <rect x="275" y="64" width="115" height="10" rx="2" fill="#5b8dd9" opacity="0.5"/>
+        <rect x="275" y="80" width="115" height="10" rx="2" fill="#5b8dd9" opacity="0.5"/>
+        <!-- Vertical stop line -->
+        <line x1="390" y1="28" x2="390" y2="94" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="3 2"/>
+        <!-- Held chord block -->
+        <rect x="393" y="44" width="90" height="36" rx="2" fill="#ffd200" opacity="0.8" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="438" y="65" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">Dm</text>
+        <!-- Decay tail -->
+        <line x1="483" y1="62" x2="495" y2="62" stroke="#999" stroke-width="1.5" stroke-dasharray="2 2"/>
+        <text x="381" y="112" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">creates arrival</text>
+        <text x="381" y="126" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">loops stop, one chord rings</text>
+
+        <!-- Panel 3: Structural Callback (x=516–750) -->
+        <rect x="516" y="8" width="235" height="136" rx="4" fill="none" stroke="#d9d4ca" stroke-width="1"/>
+        <text x="634" y="23" font-family="Space Mono,monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">STRUCTURAL CALLBACK</text>
+        <!-- Small seed at start -->
+        <rect x="528" y="44" width="52" height="36" rx="2" fill="#5b8dd9" opacity="0.3"/>
+        <text x="554" y="65" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">seed</text>
+        <!-- Full texture in middle -->
+        <rect x="585" y="32" width="75" height="58" rx="2" fill="#5b8dd9" opacity="0.6"/>
+        <text x="622" y="64" font-family="Space Mono,monospace" font-size="7" fill="#eef2fb" text-anchor="middle">full</text>
+        <!-- Seed returns at end -->
+        <rect x="665" y="44" width="75" height="36" rx="2" fill="#5b8dd9" opacity="0.3"/>
+        <text x="702" y="65" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">seed</text>
+        <!-- Callback arc arrow -->
+        <path d="M 554 84 Q 628 105 702 84" stroke="#5b8dd9" stroke-width="1.2" fill="none" stroke-dasharray="3 2" marker-end="url(#arr-cb)"/>
+        <text x="634" y="112" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">satisfying / circular</text>
+        <text x="634" y="126" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">absent layer returns</text>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <p>The <span class="key">subtraction ending</span> is the most honest — layers drop out one by one until silence; the ear hears each departure as a small goodbye. The <span class="key">held chord ending</span> creates arrival — the loops stop and one sustained chord rings into silence, answering the question the loop has been asking. The <span class="key">structural callback</span> is the most architectural — a layer absent for a long stretch returns briefly at the end, making the piece feel composed rather than generated.</p>
+      <p>A loop fade — playing the final loop and fading the master volume — is the weakest ending. Use it only when ambiguity is deliberately part of the concept.</p>
+    </div>
+    <p>For Bach's approach to the same problem — the <em>Epilog</em> and the earned final cadence — see <a href="ch07-the-sentence.html">Ch 07 — The Sentence</a>. The goal is identical: signal that the motion is complete. The tools are entirely different.</p>
+    <div class="principle-box">
+      In minimalist music, the ending is a compositional decision, not a production decision. Choose the strategy before you arrange. The piece's ending should feel as inevitable as its opening loop.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It — Final Session: Add Automation">
+    <div class="sub-section">
+      <p>Open your M15 Ableton session. You have a 64-bar arrangement with four sections (A, A′, B, A-return), all layer clips named and positioned. This session adds the automation layer that gives the piece its macro arc.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 282" xmlns="http://www.w3.org/2000/svg">
+        <!-- Full piece structure map -->
+        <!-- x scale: bars 1-64, x=110 to x=720, 610px, 9.53px/bar -->
+        <!-- Section x: bar1=110, bar17=263, bar33=415, bar49=568, bar65=720 -->
+
+        <!-- Background section fills -->
+        <rect x="110" y="14" width="153" height="238" fill="#5b8dd9" opacity="0.04"/>
+        <rect x="263" y="14" width="152" height="238" fill="#7c6ea8" opacity="0.04"/>
+        <rect x="415" y="14" width="153" height="238" fill="#5a9e6f" opacity="0.04"/>
+        <rect x="568" y="14" width="152" height="238" fill="#5b8dd9" opacity="0.04"/>
+
+        <!-- Section dividers -->
+        <line x1="110" y1="14" x2="110" y2="252" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="263" y1="14" x2="263" y2="252" class="grid-line"/>
+        <line x1="415" y1="14" x2="415" y2="252" class="grid-line"/>
+        <line x1="568" y1="14" x2="568" y2="252" class="grid-line"/>
+        <line x1="720" y1="14" x2="720" y2="252" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Section labels -->
+        <text x="187" y="11" font-family="Space Mono,monospace" font-size="8" fill="#5b8dd9" text-anchor="middle">A — FULL</text>
+        <text x="339" y="11" font-family="Space Mono,monospace" font-size="8" fill="#7c6ea8" text-anchor="middle">A′ — BASS+ARP</text>
+        <text x="492" y="11" font-family="Space Mono,monospace" font-size="8" fill="#5a9e6f" text-anchor="middle">B — Gsus4</text>
+        <text x="644" y="11" font-family="Space Mono,monospace" font-size="8" fill="#5b8dd9" text-anchor="middle">A-RET — FULL</text>
+
+        <!-- Row 1: FILTER automation (y=18–34) -->
+        <text x="105" y="30" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="end">FILTER</text>
+        <polyline points="110,34 415,18 720,34" stroke="#5b8dd9" stroke-width="1.5" fill="none" stroke-dasharray="4 2"/>
+        <text x="115" y="32" font-family="Space Mono,monospace" font-size="6" fill="#5b8dd9">200Hz→</text>
+        <text x="400" y="16" font-family="Space Mono,monospace" font-size="6" fill="#5b8dd9">8kHz</text>
+        <text x="675" y="32" font-family="Space Mono,monospace" font-size="6" fill="#5b8dd9">→200Hz</text>
+
+        <!-- Row 2: REVERB automation (y=40–54) -->
+        <text x="105" y="51" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="end">REVERB</text>
+        <line x1="110" y1="52" x2="415" y2="52" stroke="#5a9e6f" stroke-width="1.5" stroke-dasharray="4 2"/>
+        <line x1="415" y1="52" x2="415" y2="42" stroke="#5a9e6f" stroke-width="1" stroke-dasharray="2 2"/>
+        <line x1="415" y1="42" x2="568" y2="42" stroke="#5a9e6f" stroke-width="1.5" stroke-dasharray="4 2"/>
+        <line x1="568" y1="42" x2="568" y2="47" stroke="#5a9e6f" stroke-width="1" stroke-dasharray="2 2"/>
+        <line x1="568" y1="47" x2="720" y2="47" stroke="#5a9e6f" stroke-width="1.5" stroke-dasharray="4 2"/>
+        <text x="185" y="50" font-family="Space Mono,monospace" font-size="6" fill="#5a9e6f" text-anchor="middle">0.5s</text>
+        <text x="492" y="40" font-family="Space Mono,monospace" font-size="6" fill="#5a9e6f" text-anchor="middle">3.5s</text>
+        <text x="644" y="45" font-family="Space Mono,monospace" font-size="6" fill="#5a9e6f" text-anchor="middle">1.5s</text>
+
+        <!-- Divider -->
+        <line x1="105" y1="62" x2="720" y2="62" class="grid-line"/>
+
+        <!-- Row 3: SHIMMER (y=66–84) -->
+        <text x="105" y="78" font-family="Space Mono,monospace" font-size="7" fill="#f5a623" text-anchor="end">SHIMMER</text>
+        <!-- silent bars 1-16 -->
+        <line x1="110" y1="75" x2="263" y2="75" stroke="#d9d4ca" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="187" y="73" font-family="Space Mono,monospace" font-size="6" fill="#aaa" text-anchor="middle">silent</text>
+        <!-- rising bars 17-32 -->
+        <rect x="263" y="66" width="152" height="18" rx="2" fill="#f5a623" opacity="0.35"/>
+        <text x="339" y="78" font-family="Space Mono,monospace" font-size="6" fill="#f5a623" text-anchor="middle">rising</text>
+        <!-- peak bars 33-48 -->
+        <rect x="415" y="66" width="153" height="18" rx="2" fill="#f5a623" opacity="0.65"/>
+        <text x="492" y="78" font-family="Space Mono,monospace" font-size="6" fill="#7a4500" text-anchor="middle">peak vel.40–55</text>
+        <!-- fading bars 49-64 -->
+        <rect x="568" y="66" width="152" height="18" rx="2" fill="#f5a623" opacity="0.25"/>
+        <text x="644" y="78" font-family="Space Mono,monospace" font-size="6" fill="#f5a623" text-anchor="middle">fading</text>
+
+        <!-- Row 4: HOCKET A+B (y=90–108) -->
+        <text x="105" y="102" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="end">HOCKET A+B</text>
+        <!-- Full in A -->
+        <rect x="110" y="90" width="153" height="18" rx="2" fill="#5b8dd9" opacity="0.7"/>
+        <text x="187" y="102" font-family="Space Mono,monospace" font-size="6" fill="#eef2fb" text-anchor="middle">D–F–G–A</text>
+        <!-- Muted in A' -->
+        <rect x="263" y="90" width="152" height="18" rx="2" fill="#ccc" opacity="0.3"/>
+        <text x="339" y="102" font-family="Space Mono,monospace" font-size="6" fill="#999" text-anchor="middle">muted</text>
+        <!-- Micro-variant in B -->
+        <rect x="415" y="90" width="153" height="18" rx="2" fill="#5b8dd9" opacity="0.45"/>
+        <text x="492" y="102" font-family="Space Mono,monospace" font-size="6" fill="#5b8dd9" text-anchor="middle">micro-variant</text>
+        <!-- Restored in A-return -->
+        <rect x="568" y="90" width="152" height="18" rx="2" fill="#5b8dd9" opacity="0.7"/>
+        <text x="644" y="102" font-family="Space Mono,monospace" font-size="6" fill="#eef2fb" text-anchor="middle">restored</text>
+
+        <!-- Row 5: ARPEGGIO (y=114–132) -->
+        <text x="105" y="126" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="end">ARPEGGIO</text>
+        <!-- Active throughout — Dm7 in A+A', Gsus4 in B, Dm7→Gsus4 in A-ret -->
+        <rect x="110" y="114" width="305" height="18" rx="2" fill="#5a9e6f" opacity="0.55"/>
+        <text x="265" y="126" font-family="Space Mono,monospace" font-size="6" fill="#fff" text-anchor="middle">Dm7 — 8th pulse</text>
+        <rect x="415" y="114" width="153" height="18" rx="2" fill="#5a9e6f" opacity="0.75"/>
+        <text x="492" y="126" font-family="Space Mono,monospace" font-size="6" fill="#fff" text-anchor="middle">Gsus4 vamp</text>
+        <rect x="568" y="114" width="152" height="18" rx="2" fill="#5a9e6f" opacity="0.55"/>
+        <text x="644" y="126" font-family="Space Mono,monospace" font-size="6" fill="#fff" text-anchor="middle">Dm7→Gsus4</text>
+
+        <!-- Row 6: BASS DRONE (y=138–156) -->
+        <text x="105" y="150" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="end">BASS DRONE</text>
+        <rect x="110" y="138" width="153" height="18" rx="2" fill="#5b8dd9" opacity="0.45"/>
+        <rect x="263" y="138" width="152" height="18" rx="2" fill="#5b8dd9" opacity="0.45"/>
+        <rect x="415" y="138" width="153" height="18" rx="2" fill="#5b8dd9" opacity="0.35"/>
+        <rect x="568" y="138" width="152" height="18" rx="2" fill="#5b8dd9" opacity="0.45"/>
+        <text x="265" y="150" font-family="Space Mono,monospace" font-size="6" fill="#eef2fb" text-anchor="middle">D2 whole notes</text>
+        <text x="492" y="150" font-family="Space Mono,monospace" font-size="6" fill="#eef2fb" text-anchor="middle">D2 −6dB</text>
+
+        <!-- Row 7: PULSE (y=162–180) -->
+        <text x="105" y="174" font-family="Space Mono,monospace" font-size="7" fill="#e04848" text-anchor="end">PULSE</text>
+        <rect x="110" y="162" width="610" height="18" rx="2" fill="#e04848" opacity="0.45"/>
+        <text x="415" y="174" font-family="Space Mono,monospace" font-size="6" fill="#fff" text-anchor="middle">16th-note pulse — continuous throughout</text>
+
+        <!-- Divider -->
+        <line x1="105" y1="186" x2="720" y2="186" class="grid-line"/>
+
+        <!-- Harmony row -->
+        <text x="105" y="200" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="end">HARMONY</text>
+        <text x="187" y="200" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">Dm7</text>
+        <text x="339" y="200" font-family="Space Mono,monospace" font-size="7" fill="#7c6ea8" text-anchor="middle">Dm7</text>
+        <text x="492" y="200" font-family="Space Mono,monospace" font-size="7" fill="#5a9e6f" text-anchor="middle">Gsus4</text>
+        <text x="644" y="200" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">Dm7 → Gsus4</text>
+
+        <!-- Bar markers -->
+        <text x="110" y="218" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">1</text>
+        <text x="263" y="218" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">17</text>
+        <text x="415" y="218" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">33</text>
+        <text x="568" y="218" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">49</text>
+        <text x="720" y="218" font-family="Space Mono,monospace" font-size="8" fill="#777" text-anchor="middle">65</text>
+
+        <!-- Automation annotation -->
+        <text x="113" y="234" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9">■ filter opens →</text>
+        <text x="415" y="234" font-family="Space Mono,monospace" font-size="7" fill="#5b8dd9" text-anchor="middle">peak</text>
+        <text x="660" y="234" font-family="Space Mono,monospace" font-size="7" fill="#777">← filter closes ■</text>
+
+        <!-- Footer label -->
+        <text x="720" y="252" font-family="Space Mono,monospace" font-size="7" fill="#aaa" text-anchor="end">100 BPM — D DORIAN — M01–M16</text>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Step 1 — Filter Envelope (Master Channel)</p>
+      <p>Select the master channel in Arrangement View. Add an Auto Filter device (low-pass). Draw a triangle automation curve on the filter cutoff:</p>
+      <ul>
+        <li>Bar 1: 200Hz (closed, dark)</li>
+        <li>Bar 33: 8kHz (fully open, bright) — linear ramp from bar 1</li>
+        <li>Bar 65: 200Hz (closed again) — linear ramp from bar 33</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Step 2 — Shimmer Volume Automation</p>
+      <p>Select the M14 shimmer track. Draw volume automation:</p>
+      <ul>
+        <li>Bars 1–16: −∞ (silent)</li>
+        <li>Bar 16 to bar 32: linear ramp up to −6dB</li>
+        <li>Bars 33–48: hold at −6dB (peak through section B)</li>
+        <li>Bar 49 to bar 65: linear ramp down to −∞</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Step 3 — Reverb Decay on Arpeggio</p>
+      <p>Select the M12 arpeggio track. Add a reverb device. Draw step automation on the Decay Time parameter:</p>
+      <ul>
+        <li>Bars 1–32 (A and A′): 0.5s — close and dry</li>
+        <li>Bar 33 (start of B): jump to 3.5s — the Gsus4 section becomes cavernous</li>
+        <li>Bar 49 (A-return): step down to 1.5s — space contracts, return feels grounded</li>
+      </ul>
+      <p>Use step automation (not ramps) for reverb — abrupt transitions read as structural shifts.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Step 4 — Export</p>
+      <p>Ensure no tracks are clipping. Export: File → Export Audio/Video → 44.1kHz, 24-bit WAV. Name it <em>ambient-d-dorian-m01-m16.wav</em>. You now have a complete structured ambient composition built from a single 4-note D Dorian seed.</p>
+    </div>
+    <div class="principle-box">
+      The seed cell from M01 — four notes, D–F–G–A — became a full piece across sixteen chapters. Every technique in this series (loop logic, phase, hocket, modal harmony, layering, sectional form, automation) was applied to the same material. This is how minimalism works: depth through limitation, evolution through process.
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>GLASS × REICH × RILEY × SINEPHRO ◇ EVOLUTION WITHOUT DEVELOPMENT ◇ GLASS × REICH × RILEY × SINEPHRO ◇ EVOLUTION WITHOUT DEVELOPMENT ◇</site-banner>
+
+<chapter-nav
+  prev-href="m15-sectional-form.html" prev-title="M15 — Sectional Form & The Art of Staying">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M 16: EVOLUTION WITHOUT DEVELOPMENT — D DORIAN"></site-footer>
+
+</body>
+</html>

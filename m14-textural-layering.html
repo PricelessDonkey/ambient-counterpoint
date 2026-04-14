@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M14 — Textural Layering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>CHAPTER 14 ◇ TEXTURAL LAYERING ◇ CHAPTER 14 ◇ TEXTURAL LAYERING ◇ CHAPTER 14 ◇ TEXTURAL LAYERING ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Textural Layering</span>
+  <span slot="subtitle">Each new layer adds a dimension — register, timbre, or rhythm — not a new melody.</span>
+</site-hero>
+
+<intro-box>Glass and Reich never pile up melodies. When a new voice enters, it brings something new to the texture — a different register, a different timbre, a different rhythmic density. The result is richness without complexity. This chapter covers how to assign each layer its own territory, how to sequence their entries, and why removing a layer can be the most dramatic event in a minimalist piece.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="The Layering Principle">
+    <div class="sub-section">
+      <div class="sub-title">One dimension per layer</div>
+      <p>In a minimalist texture, each new layer brings exactly one new thing: a different register, a new timbre, or a new rhythmic density. It does not bring a new melody. The loop material may be derived from the same cell as every other layer — just displaced, transposed, or thinned.</p>
+      <p>The goal is <span class="key">density without clutter</span>. When every layer occupies its own territory, the listener can hold the full texture in mind. When two layers compete for the same space, the texture collapses into mud.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Register assignment</div>
+      <p>Decide in advance which octave range each layer owns. A four-layer texture in D Dorian divides naturally:</p>
+      <ul>
+        <li><strong>Bass drone</strong> — D1–D2 (felt more than heard; establishes the root)</li>
+        <li><strong>Arpeggiated field</strong> — D3–D4 (mid-background harmonic motion)</li>
+        <li><strong>Melodic hocket</strong> — D4–D5 (foreground; the listener's ear follows this)</li>
+        <li><strong>High shimmer</strong> — D5–D6 (sparse ornament at the edge of attention)</li>
+      </ul>
+      <p>Layers may cross registers at deliberate moments — a descending arpeggio dipping into the bass range, a hocket note reaching into shimmer territory — but these crossings should be intentional events, not accidents of voicing.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 1: Layer Stack — register ranges and rhythmic densities -->
+      <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Row backgrounds -->
+        <rect x="0" y="14" width="760" height="43" fill="#f5f2ec" rx="2"/>
+        <rect x="0" y="58" width="760" height="43" fill="#ede9e0" rx="2"/>
+        <rect x="0" y="102" width="760" height="43" fill="#f5f2ec" rx="2"/>
+        <rect x="0" y="146" width="760" height="43" fill="#ede9e0" rx="2"/>
+
+        <!-- Bar header labels -->
+        <text x="168" y="11" font-family="Space Mono,monospace" font-size="8" fill="#888">BAR 1</text>
+        <text x="368" y="11" font-family="Space Mono,monospace" font-size="8" fill="#888">BAR 2</text>
+
+        <!-- Label column divider -->
+        <line x1="158" y1="5" x2="158" y2="205" stroke="#ccc" stroke-width="1"/>
+
+        <!-- Bar lines -->
+        <line x1="165" y1="10" x2="165" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="365" y1="10" x2="365" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="565" y1="10" x2="565" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Row 1: Shimmer (D5–D6, 1 note per bar) -->
+        <text x="8" y="33" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#7c4daa">SHIMMER</text>
+        <text x="8" y="48" font-family="Space Mono,monospace" font-size="9" fill="#888">D5–D6</text>
+        <rect x="167" y="23" width="48" height="24" rx="2" fill="#7c4daa" opacity="0.8"/>
+        <rect x="367" y="23" width="48" height="24" rx="2" fill="#7c4daa" opacity="0.8"/>
+        <text x="575" y="32" font-family="Space Mono,monospace" font-size="9" fill="#888">D5 A5 · 1/bar</text>
+
+        <!-- Row 2: Hocket (D4–D5, 8th notes alternating A/B) -->
+        <text x="8" y="77" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#2d5fa6">HOCKET</text>
+        <text x="8" y="92" font-family="Space Mono,monospace" font-size="9" fill="#888">D4–D5</text>
+        <!-- A/B row label -->
+        <text x="167" y="64" font-family="Space Mono,monospace" font-size="7" fill="#2d5fa6">A   B   A   B   A   B   A   B</text>
+        <!-- Bar 1: alternating A (solid) / B (light) -->
+        <rect x="167" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="192" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="217" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="242" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="267" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="292" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="317" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="342" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <!-- Bar 2 -->
+        <rect x="367" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="392" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="417" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="442" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="467" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="492" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="517" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="542" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <text x="575" y="77" font-family="Space Mono,monospace" font-size="9" fill="#888">alternating · 8th notes</text>
+
+        <!-- Row 3: Arpeggio (D3–D4, continuous 8th notes) -->
+        <text x="8" y="121" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3e8b4c">ARPEGGIO</text>
+        <text x="8" y="136" font-family="Space Mono,monospace" font-size="9" fill="#888">D3–D4</text>
+        <!-- Bar 1 -->
+        <rect x="167" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="192" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="217" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="242" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="267" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="292" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="317" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="342" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <!-- Bar 2 -->
+        <rect x="367" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="392" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="417" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="442" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="467" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="492" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="517" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <rect x="542" y="111" width="22" height="24" rx="2" fill="#3e8b4c" opacity="0.85"/>
+        <text x="575" y="121" font-family="Space Mono,monospace" font-size="9" fill="#888">6-note cell · 8th notes</text>
+
+        <!-- Row 4: Bass (D1–D2, whole notes) -->
+        <text x="8" y="165" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#b03030">BASS</text>
+        <text x="8" y="180" font-family="Space Mono,monospace" font-size="9" fill="#888">D1–D2</text>
+        <rect x="167" y="155" width="194" height="24" rx="2" fill="#b03030" opacity="0.75"/>
+        <rect x="367" y="155" width="194" height="24" rx="2" fill="#b03030" opacity="0.75"/>
+        <text x="575" y="165" font-family="Space Mono,monospace" font-size="9" fill="#888">D2 · whole notes</text>
+
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="2" title="Rhythmic Differentiation">
+    <p>If two layers share a similar register, they must have clearly different rhythms to stay distinct. The ear separates tracks by register, timbre, and rhythmic profile. When two of those three factors match, the layers blur together.</p>
+    <div class="sub-section">
+      <div class="sub-title">Compatible pairs</div>
+      <ul>
+        <li><strong>Whole notes vs. 8th notes</strong> — maximal contrast; the sustained note creates a harmonic bed while the 8th notes carry motion</li>
+        <li><strong>Sparse (1 note/bar) vs. dense (8 notes/bar)</strong> — the sparse layer sounds like punctuation against the dense layer's continuous motion</li>
+        <li><strong>Quarter notes vs. a displaced triplet</strong> — rhythmic contrast without register separation</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Problematic pairs</div>
+      <ul>
+        <li><strong>Two 8th-note arpeggios in the same octave</strong> — they fight for the same space and merge into a muddy mass. Fix: move one up an octave, or change one to quarter notes.</li>
+        <li><strong>Two sustained pads in overlapping registers</strong> — indistinct. Fix: assign non-overlapping registers or differentiate timbres dramatically.</li>
+      </ul>
+    </div>
+    <p>When in doubt: <span class="key">if two tracks sound like one track, collapse them or separate them</span>. There is no middle ground.</p>
+  </content-card>
+
+  <content-card number="3" color="green" title="Entry Order & Build Strategy">
+    <p>The order in which layers enter is a compositional decision. It shapes what the listener hears as "foundation," "motion," and "ornament." A standard minimalist entry sequence:</p>
+    <ol>
+      <li><strong>Bass first</strong> — establishes the root and the modal center. Nothing else can be heard as "high" or "low" until the bass is present.</li>
+      <li><strong>Arpeggio or pulse</strong> — establishes the rhythmic grid and harmonic color. The listener's internal clock locks onto this layer.</li>
+      <li><strong>Melodic voice (hocket)</strong> — now that foundation and motion are present, the melody has a context to emerge from.</li>
+      <li><strong>Shimmer last</strong> — the highest, sparsest voice floats above a texture that is already stable. It needs that stability to register as an addition rather than a distraction.</li>
+    </ol>
+    <p>Each entry should be an event — something the listener notices. <span class="key">Don't slip layers in underneath the listener's attention.</span> A sudden quiet entrance should be felt.</p>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 2: Entry Timeline — 32-bar arrangement view -->
+      <svg viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Row backgrounds -->
+        <rect x="0" y="12" width="760" height="24" fill="#ede9e0" rx="2"/>
+        <rect x="0" y="40" width="760" height="24" fill="#f5f2ec" rx="2"/>
+        <rect x="0" y="68" width="760" height="24" fill="#ede9e0" rx="2"/>
+        <rect x="0" y="96" width="760" height="24" fill="#f5f2ec" rx="2"/>
+
+        <!-- Grid lines at every 4 bars (bars 1,5,9,13,17,21,25,29,33) -->
+        <!-- x = 120 + (N-1)*20 -->
+        <line x1="120" y1="8" x2="120" y2="128" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="200" y1="8" x2="200" y2="128" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="280" y1="8" x2="280" y2="128" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="360" y1="8" x2="360" y2="128" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="440" y1="8" x2="440" y2="128" stroke="#ccc" stroke-width="0.5"/>
+        <line x1="520" y1="8" x2="520" y2="128" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="600" y1="8" x2="600" y2="128" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="680" y1="8" x2="680" y2="128" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="760" y1="8" x2="760" y2="128" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Layer labels -->
+        <text x="4" y="28" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#b03030">BASS</text>
+        <text x="4" y="56" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#3e8b4c">ARPEGGIO</text>
+        <text x="4" y="84" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2d5fa6">HOCKET</text>
+        <text x="4" y="112" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#7c4daa">SHIMMER</text>
+
+        <!-- Entry bands (layer enters, band continues to end) -->
+        <rect x="120" y="14" width="640" height="20" rx="1" fill="#b03030" opacity="0.3"/>
+        <rect x="200" y="42" width="560" height="20" rx="1" fill="#3e8b4c" opacity="0.3"/>
+        <rect x="280" y="70" width="480" height="20" rx="1" fill="#2d5fa6" opacity="0.3"/>
+        <rect x="440" y="98" width="320" height="20" rx="1" fill="#7c4daa" opacity="0.3"/>
+
+        <!-- Entry markers (dark block at entry bar) -->
+        <rect x="120" y="14" width="19" height="20" rx="1" fill="#b03030" opacity="0.9"/>
+        <rect x="200" y="42" width="19" height="20" rx="1" fill="#3e8b4c" opacity="0.9"/>
+        <rect x="280" y="70" width="19" height="20" rx="1" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="440" y="98" width="19" height="20" rx="1" fill="#7c4daa" opacity="0.9"/>
+
+        <!-- Entry bar labels (above timeline) -->
+        <text x="121" y="9" font-family="Space Mono,monospace" font-size="8" fill="#555">BAR 1</text>
+        <text x="201" y="9" font-family="Space Mono,monospace" font-size="8" fill="#555">5</text>
+        <text x="281" y="9" font-family="Space Mono,monospace" font-size="8" fill="#555">9</text>
+        <text x="441" y="9" font-family="Space Mono,monospace" font-size="8" fill="#555">17</text>
+
+        <!-- Bottom axis bar numbers -->
+        <text x="120" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">1</text>
+        <text x="200" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">5</text>
+        <text x="280" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">9</text>
+        <text x="360" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">13</text>
+        <text x="440" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">17</text>
+        <text x="520" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">21</text>
+        <text x="600" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">25</text>
+        <text x="680" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">29</text>
+        <text x="745" y="138" font-family="Space Mono,monospace" font-size="8" fill="#888">33</text>
+
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="4" color="orange" title="Texture Reduction">
+    <p>Adding a layer is obvious. Removing one is counterintuitive — and often more powerful. In a dense minimalist texture, the ear quickly adjusts to what is present. When a layer drops out, the remaining layers suddenly sound clearer, more exposed, more intimate. <span class="key">The silence a removed layer leaves behind becomes foreground.</span></p>
+    <p>Philip Glass uses this constantly: a full four-layer texture plays for 16 bars, the arpeggio drops out for 8, and the bass and hocket suddenly feel raw and direct. When the arpeggio re-enters, it sounds fresh — as if heard for the first time again.</p>
+    <div class="sub-section">
+      <div class="sub-title">Reduction strategies</div>
+      <ul>
+        <li><strong>Drop the densest layer</strong> — removing the arpeggio (the most rhythmically busy voice) immediately opens up space. Bass and shimmer, which were nearly inaudible in the full texture, become clearly defined.</li>
+        <li><strong>Drop to a single voice</strong> — a moment of solo bass or solo melody before a new section is one of the most effective transitions in minimalist music.</li>
+        <li><strong>Stagger removals</strong> — remove layers one at a time over 8–16 bars. The texture thins gradually, building tension by subtraction.</li>
+      </ul>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 3: Texture Reduction — same stack, arpeggio removed -->
+      <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Row backgrounds -->
+        <rect x="0" y="14" width="760" height="43" fill="#f5f2ec" rx="2"/>
+        <rect x="0" y="58" width="760" height="43" fill="#ede9e0" rx="2"/>
+        <!-- Arpeggio row: grayed out -->
+        <rect x="0" y="102" width="760" height="43" fill="#f0ede8" rx="2"/>
+        <rect x="0" y="146" width="760" height="43" fill="#ede9e0" rx="2"/>
+
+        <!-- Bar header labels -->
+        <text x="168" y="11" font-family="Space Mono,monospace" font-size="8" fill="#888">BAR 1</text>
+        <text x="368" y="11" font-family="Space Mono,monospace" font-size="8" fill="#888">BAR 2</text>
+
+        <!-- Label column divider -->
+        <line x1="158" y1="5" x2="158" y2="205" stroke="#ccc" stroke-width="1"/>
+
+        <!-- Bar lines -->
+        <line x1="165" y1="10" x2="165" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="365" y1="10" x2="365" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="565" y1="10" x2="565" y2="200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Row 1: Shimmer (active) -->
+        <text x="8" y="33" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#7c4daa">SHIMMER</text>
+        <text x="8" y="48" font-family="Space Mono,monospace" font-size="9" fill="#888">D5–D6</text>
+        <rect x="167" y="23" width="48" height="24" rx="2" fill="#7c4daa" opacity="0.8"/>
+        <rect x="367" y="23" width="48" height="24" rx="2" fill="#7c4daa" opacity="0.8"/>
+
+        <!-- Row 2: Hocket (active) -->
+        <text x="8" y="77" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#2d5fa6">HOCKET</text>
+        <text x="8" y="92" font-family="Space Mono,monospace" font-size="9" fill="#888">D4–D5</text>
+        <rect x="167" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="192" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="217" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="242" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="267" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="292" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="317" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="342" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="367" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="392" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="417" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="442" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="467" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="492" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+        <rect x="517" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.9"/>
+        <rect x="542" y="67" width="22" height="24" rx="2" fill="#2d5fa6" opacity="0.35"/>
+
+        <!-- Row 3: Arpeggio (REMOVED) -->
+        <text x="8" y="121" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#c0bbaf">ARPEGGIO</text>
+        <text x="8" y="136" font-family="Space Mono,monospace" font-size="9" fill="#ccc">D3–D4</text>
+        <!-- Dashed ghost outline across visualization area -->
+        <rect x="167" y="111" width="396" height="24" rx="2" fill="none" stroke="#c8c3bb" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="360" y="127" font-family="Space Mono,monospace" font-size="9" fill="#c0bbaf" text-anchor="middle">— REMOVED —</text>
+        <!-- Annotation: gap is now audible -->
+        <text x="575" y="119" font-family="Space Mono,monospace" font-size="9" fill="#e04848">← this gap is now</text>
+        <text x="575" y="132" font-family="Space Mono,monospace" font-size="9" fill="#e04848">audible foreground</text>
+
+        <!-- Row 4: Bass (active) -->
+        <text x="8" y="165" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#b03030">BASS</text>
+        <text x="8" y="180" font-family="Space Mono,monospace" font-size="9" fill="#888">D1–D2</text>
+        <rect x="167" y="155" width="194" height="24" rx="2" fill="#b03030" opacity="0.75"/>
+        <rect x="367" y="155" width="194" height="24" rx="2" fill="#b03030" opacity="0.75"/>
+
+      </svg>
+    </div>
+
+    <p>For Bach's equivalent technique — giving voices rhythmic breathing room so individual lines remain audible — see <a href="ch10-space-breathing.html">Ch 10: Space &amp; Breathing</a>. The principle is structurally identical; the time scale is different.</p>
+
+    <div class="principle-box">
+      In minimalism, subtraction is composition. The moment when a layer drops out is as carefully chosen as the moment it entered. A texture you can add to is a texture you can subtract from — and the subtraction often lands harder.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open your M13 session (100 BPM, with Hocket A, Hocket B, Phase B, M08 poly, pulse, and the 16-bar arpeggiated Dm7→Gsus4 chord cycle). Today you assemble a clean 4-layer texture and hear the full architecture you've been building toward.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 1 — Consolidate the session</div>
+      <p>Mute or delete Phase B and the M08 poly track. Those layers served their purpose in earlier chapters; today you're building a cleaner, hierarchical texture. Keep active: Hocket A, Hocket B, the M12 arpeggio vamp, and the M04 pulse (or mute the pulse if the arpeggio's rhythm is sufficient).</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 2 — Add the bass drone</div>
+      <p>Create a new MIDI track below the arpeggio. Choose a sustained sub-bass or bass pad timbre (low sine, bass synth, or muted sub). Create a 16-bar MIDI clip: D2 whole notes, one per bar. Set the track volume to −6dB relative to your other tracks — the bass should be felt more than heard, a low-end presence rather than a melody.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 3 — Set the arpeggio as mid-background</div>
+      <p>Your M12 arpeggio (the 6-note Dm7/Gsus4 cycling 8th-note pattern over 8 bars per chord) is already present. Pull it back to −3dB relative to the hocket. It provides the harmonic weather; the listener should sense it rather than consciously follow it.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 4 — Confirm the hocket as foreground</div>
+      <p>Your interlocking Hocket A and Hocket B tracks are the melody. Set them to 0dB (your reference level). Everything else serves the hocket. Check that it is clearly the loudest and most present voice.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 5 — Add the high shimmer</div>
+      <p>Create a new MIDI track at the top of the stack. Choose a sparse, high timbre: a bell, music box, or filtered high synth. Create a 4-bar clip: D5 on beat 1 of bar 1, A5 on beat 1 of bar 3, silence for bars 3–4. Set note velocity to 40–55 (very soft). Set volume so it barely registers — a detail that rewards close listening, not a statement.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 6 — Balance and test</div>
+      <p>Run all four layers over the full 16-bar chord progression. Ask: can you hear each layer as distinct? Is the hocket clearly the foreground? Does the bass feel like a foundation rather than a melody? Now mute the arpeggio for 8 bars — notice how the texture changes, how the bass and hocket suddenly feel exposed. Restore the arpeggio and listen again. That gap is the technique.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>TEXTURAL LAYERING ◇ D DORIAN ◇ TEXTURAL LAYERING ◇ D DORIAN ◇ TEXTURAL LAYERING ◇ D DORIAN ◇</site-banner>
+
+<chapter-nav
+  prev-href="m13-slow-harmonic-rhythm.html" prev-title="M13 — Slow Harmonic Rhythm">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M14: TEXTURAL LAYERING — D DORIAN"></site-footer>
+
+</body>
+</html>

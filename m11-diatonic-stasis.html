@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M11 — Diatonic Stasis & Modal Color</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="minimalist.html" label="Minimalist Composition"></site-nav>
+
+<site-banner>DIATONIC STASIS ◇ MODAL COLOR ◇ TWO-CHORD VAMP ◇ DIATONIC STASIS ◇ MODAL COLOR ◇ TWO-CHORD VAMP ◇ DIATONIC STASIS ◇ MODAL COLOR ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Diatonic Stasis &amp; Modal Color</span>
+  <span slot="subtitle">Avoiding functional harmony in favour of modal ambiguity.</span>
+</site-hero>
+
+<intro-box>Functional harmony is a story with a destination — every chord points toward the next, and the whole piece is a journey toward rest. Modal harmony is a room. You're not going anywhere; you're inhabiting a sound-world. This chapter covers the shift from narrative to immersive listening, the two-chord vamp as a complete compositional universe, and the D Dorian voicings that make it work.</intro-box>
+
+<div class="content">
+
+  <content-card number="51" title="Functional vs Modal Harmony">
+    <div class="sub-section">
+      <div class="sub-title">The Difference in Listening Mode</div>
+      <p>Functional harmony — Bach, jazz, most pop — uses <span class="key">tension and resolution</span>. The V chord wants to go to I. Every chord in the progression is either building tension or releasing it. The listener's ear tracks this narrative: "Where are we going? Are we there yet?"</p>
+      <p>Modal harmony sets up a tonal center (D) and moves between chords without creating strong directional pull. There's no "wanting." <span class="key">D Dorian</span> gives you seven notes and a set of chords that can all coexist without any of them urgently demanding to go somewhere else.</p>
+      <p>The perceptual shift this enables: once the listener stops waiting for resolution, they start listening to texture, timbre, and rhythm instead of harmonic narrative. That shift is the compositional goal.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Functional vs modal: two timelines -->
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrowR" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+            <path d="M0,0 L9,4 L0,8" fill="#e04848"/>
+          </marker>
+          <marker id="arrowBL" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+            <path d="M0,0 L9,4 L0,8" fill="#4a90d9"/>
+          </marker>
+          <marker id="arrowBR" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="180">
+            <path d="M9,0 L0,4 L9,8" fill="#4a90d9"/>
+          </marker>
+        </defs>
+
+        <!-- TOP ROW: Functional -->
+        <text x="30" y="20" font-family="Space Mono,monospace" font-size="11" fill="#e04848" font-weight="700">FUNCTIONAL (narrative)</text>
+
+        <!-- chord boxes flowing left to right -->
+        <rect x="30" y="30" width="44" height="26" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1"/>
+        <text x="52" y="47" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle">Dm</text>
+
+        <line x1="75" y1="43" x2="92" y2="43" stroke="#e04848" stroke-width="1.5" marker-end="url(#arrowR)"/>
+
+        <rect x="94" y="30" width="44" height="26" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1"/>
+        <text x="116" y="47" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle">Am</text>
+
+        <line x1="139" y1="43" x2="156" y2="43" stroke="#e04848" stroke-width="1.5" marker-end="url(#arrowR)"/>
+
+        <rect x="158" y="30" width="44" height="26" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1"/>
+        <text x="180" y="47" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle">Bb</text>
+
+        <line x1="203" y1="43" x2="220" y2="43" stroke="#e04848" stroke-width="1.5" marker-end="url(#arrowR)"/>
+
+        <rect x="222" y="30" width="44" height="26" rx="3" fill="#fde8e8" stroke="#e04848" stroke-width="1"/>
+        <text x="244" y="47" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle">A7</text>
+
+        <!-- big resolution arrow -->
+        <line x1="268" y1="43" x2="318" y2="43" stroke="#e04848" stroke-width="3" marker-end="url(#arrowR)"/>
+        <text x="293" y="38" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">RESOLVES</text>
+
+        <rect x="320" y="26" width="56" height="34" rx="3" fill="#e04848" stroke="#b03030" stroke-width="2"/>
+        <text x="348" y="47" font-family="Space Mono,monospace" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">Dm</text>
+
+        <text x="400" y="47" font-family="Space Mono,monospace" font-size="10" fill="#999">— destination reached</text>
+
+        <!-- BOTTOM ROW: Modal -->
+        <text x="30" y="100" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" font-weight="700">MODAL (oscillation)</text>
+
+        <rect x="30" y="110" width="60" height="26" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1.5"/>
+        <text x="60" y="127" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle">Dm7</text>
+
+        <!-- bidirectional arrows -->
+        <line x1="92" y1="123" x2="148" y2="123" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowBL)"/>
+        <line x1="148" y1="129" x2="92" y2="129" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowBR)"/>
+
+        <rect x="150" y="110" width="60" height="26" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1.5"/>
+        <text x="180" y="127" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle">Gsus4</text>
+
+        <!-- loop arrow -->
+        <path d="M 212 110 Q 230 90 240 100 Q 250 110 230 123" stroke="#4a90d9" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+        <text x="260" y="127" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">— no destination, just oscillation</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="52" color="green" title="The Two-Chord Vamp as a Complete World">
+    <div class="sub-section">
+      <div class="sub-title">Oscillation, Not Progression</div>
+      <p>Dm7 → G is not a progression going somewhere. It's an <span class="key">oscillation</span> — two states alternating, neither winning. The listener's ear eventually stops tracking the change as movement and starts hearing it as texture.</p>
+      <p>This oscillation can sustain an entire piece. Glass's *Metamorphosis* uses essentially two harmonic states for extended periods. Reich's *Music for 18 Musicians* moves between a small set of chords over 90 minutes. The two-chord vamp isn't a limitation — it's a compositional commitment to depth over breadth.</p>
+      <p>Other viable two-chord pairs in D Dorian: Dm → C, Dm → F, Dm → Am. Each pair has a different color and a different amount of distance between the two states. The further apart (harmonically) the two chords, the more the oscillation "breathes."</p>
+    </div>
+  </content-card>
+
+  <content-card number="53" title="Why Modal Harmony Works">
+    <div class="sub-section">
+      <div class="sub-title">The Perceptual Shift</div>
+      <p>Functional listening is an active, goal-directed process. The ear tracks harmonic narrative the way the eye tracks a moving object. It's engaged but slightly anxious — always waiting for the next move.</p>
+      <p><span class="key">Immersive listening</span> is different. Once the listener gives up waiting for resolution (usually after 16–32 bars of modal stasis), the attention shifts to texture, timbre, internal motion, and the subtle changes happening inside the loop. The same four bars become richer, not more boring.</p>
+      <p>Glass counts on this perceptual shift. His early works — *Einstein on the Beach*, *Music in 12 Parts* — train the listener into immersive mode through sheer duration. Shorter works (5–10 minutes) rely on setting up the modal world quickly and trusting the listener to follow.</p>
+    </div>
+  </content-card>
+
+  <content-card number="54" color="purple" title="D Dorian Vamp Options">
+    <div class="sub-section">
+      <div class="sub-title">Four Common Two-Chord Pairs</div>
+      <p>D Dorian's characteristic note is <span class="key">B natural</span> — the major 6th that distinguishes it from D natural minor (which has B♭). Any chord that includes B natural signals Dorian clearly. The i → IV vamp (Dm → G) is the strongest signal: the G major chord contains B natural.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- D Dorian scale with B natural highlighted -->
+      <svg viewBox="0 0 760 80" xmlns="http://www.w3.org/2000/svg">
+        <text x="30" y="18" font-family="Space Mono,monospace" font-size="10" fill="#666">D DORIAN SCALE</text>
+        <!-- scale degrees -->
+        <rect x="30" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="65" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle" font-weight="700">D</text>
+        <text x="65" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">1</text>
+
+        <rect x="110" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="145" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle">E</text>
+        <text x="145" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">2</text>
+
+        <rect x="190" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="225" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle">F</text>
+        <text x="225" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">b3</text>
+
+        <rect x="270" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="305" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle">G</text>
+        <text x="305" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">4</text>
+
+        <rect x="350" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="385" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle">A</text>
+        <text x="385" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">5</text>
+
+        <!-- B natural — highlighted as characteristic -->
+        <rect x="430" y="22" width="70" height="36" rx="3" fill="#ffd200" stroke="#1a1a1a" stroke-width="2"/>
+        <text x="465" y="44" font-family="Space Mono,monospace" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="700">B♮</text>
+        <text x="465" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">6 ★</text>
+
+        <rect x="510" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="545" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle">C</text>
+        <text x="545" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">b7</text>
+
+        <rect x="590" y="25" width="70" height="30" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="625" y="44" font-family="Space Mono,monospace" font-size="12" fill="#4a90d9" text-anchor="middle">D</text>
+        <text x="625" y="68" font-family="Space Mono,monospace" font-size="9" fill="#999" text-anchor="middle">8</text>
+
+        <text x="700" y="44" font-family="Space Mono,monospace" font-size="9" fill="#999">★ = Dorian</text>
+        <text x="700" y="56" font-family="Space Mono,monospace" font-size="9" fill="#999">fingerprint</text>
+      </svg>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Vamp options grid: 4 rows, common tones marked -->
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <text x="30" y="18" font-family="Space Mono,monospace" font-size="10" fill="#666">D DORIAN VAMP OPTIONS</text>
+
+        <!-- column headers -->
+        <text x="30" y="38" font-family="Space Mono,monospace" font-size="9" fill="#999">VAMP</text>
+        <text x="130" y="38" font-family="Space Mono,monospace" font-size="9" fill="#999">CHORD i TONES</text>
+        <text x="340" y="38" font-family="Space Mono,monospace" font-size="9" fill="#999">CHORD ii TONES</text>
+        <text x="560" y="38" font-family="Space Mono,monospace" font-size="9" fill="#999">CHARACTER</text>
+
+        <!-- row 1: Dm → G -->
+        <rect x="30" y="44" width="88" height="28" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="74" y="62" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" text-anchor="middle" font-weight="700">i → IV</text>
+        <text x="130" y="62" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a">D · F · A · C</text>
+        <text x="340" y="62" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a">G · <tspan fill="#ffd200" font-weight="700">B</tspan> · D</text>
+        <text x="560" y="56" font-family="Space Mono,monospace" font-size="9" fill="#666">Classic Dorian. B natural</text>
+        <text x="560" y="68" font-family="Space Mono,monospace" font-size="9" fill="#666">signals mode clearly.</text>
+
+        <!-- row 2: Dm → C -->
+        <rect x="30" y="82" width="88" height="28" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="74" y="100" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" text-anchor="middle" font-weight="700">i → VII</text>
+        <text x="130" y="100" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a">D · F · A · C</text>
+        <text x="340" y="100" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a"><tspan fill="#5ba85a" font-weight="700">C</tspan> · E · G</text>
+        <text x="560" y="94" font-family="Space Mono,monospace" font-size="9" fill="#666">Gentle. C is shared. Less</text>
+        <text x="560" y="106" font-family="Space Mono,monospace" font-size="9" fill="#666">characteristic, more neutral.</text>
+
+        <!-- row 3: Dm → F -->
+        <rect x="30" y="120" width="88" height="28" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="74" y="138" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" text-anchor="middle" font-weight="700">i → III</text>
+        <text x="130" y="138" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a">D · <tspan fill="#5ba85a" font-weight="700">F</tspan> · <tspan fill="#5ba85a" font-weight="700">A</tspan> · C</text>
+        <text x="340" y="138" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a"><tspan fill="#5ba85a" font-weight="700">F</tspan> · <tspan fill="#5ba85a" font-weight="700">A</tspan> · C</text>
+        <text x="560" y="132" font-family="Space Mono,monospace" font-size="9" fill="#666">Warm. Three shared tones.</text>
+        <text x="560" y="144" font-family="Space Mono,monospace" font-size="9" fill="#666">Moves toward relative major.</text>
+
+        <!-- row 4: Dm → Am -->
+        <rect x="30" y="158" width="88" height="28" rx="3" fill="#e8f0fd" stroke="#4a90d9" stroke-width="1"/>
+        <text x="74" y="176" font-family="Space Mono,monospace" font-size="11" fill="#4a90d9" text-anchor="middle" font-weight="700">i → v</text>
+        <text x="130" y="176" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a">D · F · <tspan fill="#5ba85a" font-weight="700">A</tspan> · C</text>
+        <text x="340" y="176" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a"><tspan fill="#5ba85a" font-weight="700">A</tspan> · C · E</text>
+        <text x="560" y="170" font-family="Space Mono,monospace" font-size="9" fill="#666">Soft. Minor v avoids leading</text>
+        <text x="560" y="182" font-family="Space Mono,monospace" font-size="9" fill="#666">tone pull. Very ambiguous.</text>
+
+        <!-- legend -->
+        <circle cx="30" cy="197" r="4" fill="#5ba85a"/>
+        <text x="38" y="200" font-family="Space Mono,monospace" font-size="8" fill="#5ba85a">= shared tone between chords</text>
+        <circle cx="200" cy="197" r="4" fill="#ffd200" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="208" y="200" font-family="Space Mono,monospace" font-size="8" fill="#999">= Dorian characteristic note</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="55" color="green" title="Static Bass with Changing Upper Harmony">
+    <div class="sub-section">
+      <div class="sub-title">The Mildest Possible Harmonic Change</div>
+      <p>Root motion — moving the bass from one note to another — is the strongest kind of harmonic change. When the bass moves from D to G, every listener hears it as a chord change regardless of what's happening above.</p>
+      <p>The <span class="key">static bass</span> technique removes root motion entirely: hold D2 as a drone and move upper voices through chord tones only. The harmony changes (the color shifts from Dm7 to Gsus4) but the bass never moves. The listener hears harmonic color changes without the harmonic momentum that root motion creates.</p>
+      <p>This is the mildest possible harmonic motion — a step below the two-chord vamp in terms of harmonic restlessness. Use it when you want the texture to feel nearly static while still shifting color subtly. Bach uses the same technique as <span class="key">pedal point</span>; see <a href="harmonic-engines.html">Harmonic Engines</a> for the contrapuntal context. Minimalism extends this from a brief technique to the entire harmonic language.</p>
+    </div>
+    <div class="principle-box">
+      The D Dorian two-chord vamp is not a stepping stone to more complex harmony — it is complete in itself. Glass built a career on it. The richness comes from what happens inside the loop, not from adding chords.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Upgrade the Chord Track to a Full Vamp</div>
+      <p>Open your M10 session. You have six active layers: Hocket A, Hocket B, Phase B, the M08 poly pattern, the pulse, and the M10 chord track (D open 5th / Gsus4, 4 bars).</p>
+      <p><strong>Replace or extend the M10 chord clip</strong> with a full 8-bar vamp:</p>
+      <ul>
+        <li>Bars 1–4: <span class="key">Dm7</span> — D3, F3, A3, C4 (whole notes, one per bar)</li>
+        <li>Bars 5–8: <span class="key">Gsus4</span> — G3, C4, D4 (whole notes, one per bar)</li>
+      </ul>
+      <p>Loop this 8-bar chord progression. Run all other tracks over it.</p>
+      <p><strong>Listen for the Dorian color:</strong> The G chord brings B natural into the harmony (implied in the Gsus4 context, clearly present if you expand to G major — G3, B3, D4). The Dm7 has C natural. Neither chord wins — they oscillate. That ambiguity is the target sound.</p>
+      <p>If the chords compete with the hocket melody, bring chord velocity down to 55–65. The chords should be felt more than heard — a foundation, not a feature.</p>
+    </div>
+    <div class="principle-box">
+      You now have six layers built on a full 8-bar Dorian vamp. The chord track has graduated from open voicings to a complete harmonic statement. Future chapters will add arpeggios and textural evolution over this foundation.
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>DIATONIC STASIS ◇ MODAL COLOR ◇ TWO-CHORD VAMP ◇ DIATONIC STASIS ◇ MODAL COLOR ◇ TWO-CHORD VAMP ◇ DIATONIC STASIS ◇ MODAL COLOR ◇</site-banner>
+
+<chapter-nav
+  prev-href="m10-open-voicings.html" prev-title="M10 — Open Voicings & Modal Chords">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — M11: DIATONIC STASIS — D DORIAN"></site-footer>
+
+</body>
+</html>
