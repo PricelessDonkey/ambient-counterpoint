@@ -30,6 +30,12 @@
 
   <div id="scale-display" class="hn-scale"></div>
 
+  <div id="relative-scale" class="hn-relative" style="display:none">
+    <span class="hn-relative-label">Relative Scale:</span>
+    <span id="rel-name" class="hn-relative-name">—</span>
+    <span id="rel-notes" class="hn-relative-notes">—</span>
+  </div>
+
   <div id="navigator" class="hn-grid" style="display:none">
 
     <!-- COLUMN 1: ARRIVAL -->
@@ -235,6 +241,24 @@
 
   function getNote(rootIdx, semi) { return NOTES[(rootIdx + semi + 120) % 12]; }
 
+  function getRelative(tonicName, scaleName) {
+    const rootIdx = NOTES.indexOf(tonicName);
+    let offset, relScaleName, label;
+    if (scaleName === 'Major') {
+      offset = 9; relScaleName = 'Natural Minor'; label = 'Relative Minor';
+    } else if (scaleName === 'Natural Minor' || scaleName === 'Harmonic Minor') {
+      offset = 3; relScaleName = 'Major'; label = 'Relative Major';
+    } else if (scaleName === 'Dorian') {
+      offset = 10; relScaleName = 'Major'; label = 'Relative Major';
+    } else {
+      return null;
+    }
+    const relRoot = getNote(rootIdx, offset);
+    const relRootIdx = NOTES.indexOf(relRoot);
+    const relNotes = SCALES[relScaleName].map(p => getNote(relRootIdx, p));
+    return { label, name: `${relRoot} ${relScaleName}`, notes: relNotes };
+  }
+
   function getQual(root, third) {
     const diff = (NOTES.indexOf(third) - NOTES.indexOf(root) + 12) % 12;
     return diff === 3 ? 'm' : diff === 6 ? 'dim' : '';
@@ -256,6 +280,16 @@
     });
     document.getElementById('navigator').style.display = 'none';
     document.getElementById('idiom-box').style.display = 'none';
+
+    const rel = getRelative(tonicSelect.value, scaleSelect.value);
+    const relBox = document.getElementById('relative-scale');
+    if (rel) {
+      document.getElementById('rel-name').innerText = `${rel.label}: ${rel.name}`;
+      document.getElementById('rel-notes').innerText = `(${rel.notes.join(' – ')})`;
+      relBox.style.display = 'block';
+    } else {
+      relBox.style.display = 'none';
+    }
   }
 
   function selectNote(index) {
