@@ -142,9 +142,21 @@
   </div>
 
   <div id="idiom-box" class="hn-idiom-box" style="display:none">
-    <span class="hn-flow-label" style="color:var(--purple);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;">Bach Idiom</span>
-    <p id="idiom-text"></p>
-    <a id="idiom-link" href="#" class="hn-idiom-link">Read chapter →</a>
+    <div class="hn-idiom-section">
+      <span class="hn-flow-label" style="color:var(--purple);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;">Bach — Function</span>
+      <p id="idiom-bach-text"></p>
+      <a id="idiom-bach-link" href="#" class="hn-idiom-link">Read chapter →</a>
+    </div>
+    <div class="hn-idiom-section">
+      <span class="hn-flow-label" style="color:var(--blue);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;">Voice-Leading</span>
+      <p id="idiom-voice-text"></p>
+      <a id="idiom-voice-link" href="#" class="hn-idiom-link blue">Read chapter →</a>
+    </div>
+    <div class="hn-idiom-section">
+      <span class="hn-flow-label" style="color:var(--green);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;">Ambient / Minimalist</span>
+      <p id="idiom-ambient-text"></p>
+      <a id="idiom-ambient-link" href="#" class="hn-idiom-link green">Read chapter →</a>
+    </div>
   </div>
 
 </div>
@@ -173,13 +185,41 @@
   const FUNCTION_LABELS = { t: 'Tonic', pd: 'Pre-Dominant', d: 'Dominant' };
 
   const IDIOMS = [
-    { tip: 'Tonic is rest — everything earns the return. A raised 7th (leading tone) gives maximum magnetic pull into this arrival.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
-    { tip: 'The supertonic (ii°) is the weakest link in the circle — brief and transitional. Use it stepping toward V, not as a resting point.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
-    { tip: 'The mediant (III) is the relative major — a lift of mood using the same pitches. A natural modulation target in ritornello and episode sections.', ch: 'ch09-large-scale-form.html', label: 'Ch 09 — Large-Scale Form' },
-    { tip: 'Subdominant is gravity before the fall. Pair with a suspended 4th resolving to 3rd over V for the classic cadential approach.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
-    { tip: 'Dominant hunger: the leading tone pulls to tonic with magnetic force. Extend tension with a 4–3 suspension, or escape via deceptive cadence to VI.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
-    { tip: 'Submediant (VI) is the classic surprise after V — the deceptive cadence. After V→VI the music is denied; it must rewind and try again to reach tonic.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
-    { tip: 'Natural VII (whole step) is a gentle lean; raised VII (half step, harmonic minor) creates a diminished chord with urgent pull. Save the leading tone for your climactic moment.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' }
+    {
+      bach:    { tip: 'Tonic is rest — everything earns the return. A raised 7th (leading tone) gives maximum magnetic pull into this arrival.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+      voice:   { tip: 'Classic tonic arrival: 7-6 suspension (upper voice holds the minor 7th, resolves down to the 6th) creates a sigh just before landing. Or close a final cadence with a Picardy third — raise the 3rd for a major I chord as the last word.', ch: 'ch04-tension-release.html', label: 'Ch 04 — Tension & Release' },
+      ambient: { tip: 'Commit to tonic. In minimalist music, i is the home loop — hold 8–16 bars before any motion. Let texture, timbre, and inner voices carry the music while harmony stays still.', ch: 'm11-diatonic-stasis.html', label: 'M11 — Diatonic Stasis' }
+    },
+    {
+      bach:    { tip: 'The supertonic (ii°) is the weakest link in the circle — brief and transitional. Use it stepping toward V, not as a resting point.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+      voice:   { tip: 'The diminished 5th in ii° resolves inward by contrary motion: the upper note steps up to the 5th of V, the lower note steps down to the root of V. Never leap away from this chord — let it dissolve into the dominant.', ch: 'ch04-tension-release.html', label: 'Ch 04 — Tension & Release' },
+      ambient: { tip: 'ii° is too unstable to sustain. Drop it in as a single-bar event inside a longer i→iv oscillation. Its harmonic tension works as rhythmic punctuation, not as a held state.', ch: 'm11-diatonic-stasis.html', label: 'M11 — Diatonic Stasis' }
+    },
+    {
+      bach:    { tip: 'The mediant (III) is the relative major — a lift of mood using the same pitches. A natural modulation target in ritornello and episode sections.', ch: 'ch09-large-scale-form.html', label: 'Ch 09 — Large-Scale Form' },
+      voice:   { tip: 'Approach III via the subtonic 7th chord (a 7th built on VII) — three shared notes make the move seamless. In harmonic minor, the raised leading tone creates brief chromatic friction before III absorbs it.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+      ambient: { tip: 'i → III is the bright two-chord pair: same pitch set, different tonal center. Glass and Nala Sinephro exploit this — minimal harmonic distance, maximum emotional contrast. Hold each chord 8+ bars and let the shift register as mood, not motion.', ch: 'm11-diatonic-stasis.html', label: 'M11 — Diatonic Stasis' }
+    },
+    {
+      bach:    { tip: 'Subdominant is gravity before the fall. Pair with a suspended 4th resolving to 3rd over V for the classic cadential approach.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+      voice:   { tip: 'The lament bass runs through IV: the root descends by step i–VII–VI–V. IV (the subdominant) is the gate of this engine — hold the bass note through the bar and let upper voices supply the interest while the foundation descends beneath them.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
+      ambient: { tip: 'i→iv is the archetypal minimalist oscillation. Hold each chord 8+ bars. Neither wins; the ear eventually stops tracking harmonic change and hears texture instead. This is the target state: structural harmony that disappears into atmosphere.', ch: 'm11-diatonic-stasis.html', label: 'M11 — Diatonic Stasis' }
+    },
+    {
+      bach:    { tip: 'Dominant hunger: the leading tone pulls to tonic with magnetic force. Extend tension with a 4–3 suspension, or escape via deceptive cadence to VI.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+      voice:   { tip: '4-3 suspension over V: hold the 4th above the root into the strong beat, clashing against the major 3rd in the chord, then release down by half step. Delay the resolution one beat and the listener physically leans in. This is Bach\'s single most common cadential gesture.', ch: 'ch04-tension-release.html', label: 'Ch 04 — Tension & Release' },
+      ambient: { tip: 'V implies obligation — it tells the listener a cadence is coming. Use it sparingly. If you place V, let it sit 4+ bars before deciding: resolve to i for closure, or escape to VI for an extension loop. Either way, V earns its keep.', ch: 'm13-slow-harmonic-rhythm.html', label: 'M13 — Slow Harmonic Rhythm' }
+    },
+    {
+      bach:    { tip: 'Submediant (VI) is the classic surprise after V — the deceptive cadence. After V→VI the music is denied; it must rewind and try again to reach tonic.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+      voice:   { tip: 'After V→VI, the bass leaps up a half step. That tiny leap is the entire surprise — the ear expected the bass to fall a fifth to tonic and gets a semitone rise instead. Let upper voices hold common tones; the bass note does all the harmonic work.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+      ambient: { tip: 'VI is the ambient plot twist. After V arrives, give the listener VI instead — the loop lifts emotionally, the texture brightens, then slowly winds back through V to home. The denied cadence becomes architecture: the delay is the form.', ch: 'm13-slow-harmonic-rhythm.html', label: 'M13 — Slow Harmonic Rhythm' }
+    },
+    {
+      bach:    { tip: 'Natural VII (whole step) is a gentle lean; raised VII (half step, harmonic minor) creates a diminished chord with urgent pull. Save the leading tone for your climactic moment.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+      voice:   { tip: 'Natural VII (e.g. C major in D Dorian) passes softly with no dominant pressure — no leading tone, no obligation. Harmonic minor VII is the opposite: raised leading tone makes a diminished chord that demands half-step resolution upward. Choose which VII by how much tension the moment needs.', ch: 'ch06-harmonic-color.html', label: 'Ch 06 — Harmonic Color' },
+      ambient: { tip: 'The subtonic VII (natural whole step below tonic) is the most peaceful non-tonic chord in ambient music. i→VII oscillates without resolution pressure — no dominant pull, no implied cadence. A floating shimmer. Reich\'s phasing pieces hover in this subtonic zone.', ch: 'm11-diatonic-stasis.html', label: 'M11 — Diatonic Stasis' }
+    }
   ];
 
   const tonicSelect = document.getElementById('tonic-select');
@@ -296,12 +336,20 @@
     const decNote = currentScale[(index + 5) % 7].name;
     document.getElementById('dest-dec').innerText = `${cur.name} → ${decNote}${getQual(decNote, currentScale[(index + 7) % 7].name)}`;
 
-    // Bach idiom
+    // Idioms
     const idiom = IDIOMS[index];
-    document.getElementById('idiom-text').innerText = idiom.tip;
-    const link = document.getElementById('idiom-link');
-    link.href = idiom.ch;
-    link.innerText = `Read: ${idiom.label} →`;
+    document.getElementById('idiom-bach-text').innerText    = idiom.bach.tip;
+    const bachLink = document.getElementById('idiom-bach-link');
+    bachLink.href = idiom.bach.ch;
+    bachLink.innerText = `Read: ${idiom.bach.label} →`;
+    document.getElementById('idiom-voice-text').innerText   = idiom.voice.tip;
+    const voiceLink = document.getElementById('idiom-voice-link');
+    voiceLink.href = idiom.voice.ch;
+    voiceLink.innerText = `Read: ${idiom.voice.label} →`;
+    document.getElementById('idiom-ambient-text').innerText = idiom.ambient.tip;
+    const ambientLink = document.getElementById('idiom-ambient-link');
+    ambientLink.href = idiom.ambient.ch;
+    ambientLink.innerText = `Read: ${idiom.ambient.label} →`;
     document.getElementById('idiom-box').style.display = 'flex';
   }
 

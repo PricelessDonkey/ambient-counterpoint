@@ -796,6 +796,11 @@ body {
   gap: 6px;
 }
 .hn-idiom-box p { margin: 0; font-size: 14px; line-height: 1.5; }
+.hn-idiom-section + .hn-idiom-section {
+  border-top: 1px dashed rgba(123,97,199,0.35);
+  padding-top: 10px;
+  margin-top: 4px;
+}
 .hn-idiom-link {
   font-family: 'Space Mono', monospace;
   font-size: 10px;
@@ -803,4 +808,6 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
 }
+.hn-idiom-link.blue  { color: var(--blue); }
+.hn-idiom-link.green { color: var(--green); }
 .hn-idiom-link:hover { text-decoration: underline; }

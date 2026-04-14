@@ -137,6 +137,18 @@ Compact record of each chapter's Build It outcome — the exact state of the evo
 
 ---
 
+## M16 — Evolution Without Development
+
+- Session: same Ableton session as M01–M15, 100 BPM, Arrangement View.
+- Auto Filter added to master channel: cutoff automation triangle — 200Hz at bar 1, linearly opens to 8kHz at bar 33, linearly closes back to 200Hz at bar 65.
+- M14 shimmer track volume automated: −∞ bars 1–16, linear ramp to −6dB by bar 32, holds at −6dB bars 33–48, fades to −∞ by bar 65.
+- M12 arpeggio track reverb decay automated (step, not ramp): 0.5s bars 1–32, 3.5s bars 33–48, 1.5s bars 49–64.
+- All tracks routed to master; no clipping.
+- Exported: ambient-d-dorian-m01-m16.wav (44.1kHz, 24-bit WAV).
+- Final piece: 64-bar structured ambient composition, D Dorian, built from D–F–G–A seed across M01–M16.
+
+---
+
 ## M13 — Slow Harmonic Rhythm
 
 - Session: same Ableton session as M01–M12, 100 BPM.
