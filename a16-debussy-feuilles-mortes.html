@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch A16 — Feuilles mortes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Sound"></site-nav>
+
+<site-banner>CHAPTER A16 ◇ FEUILLES MORTES ◇ DEBUSSY ◇ CHAPTER A16 ◇ FEUILLES MORTES ◇ DEBUSSY ◇ CHAPTER A16 ◇ FEUILLES MORTES ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Feuilles mortes</span>
+  <span slot="subtitle">Claude Debussy, 1913 — dead leaves, drooping melody, and the shimmer of whole-tone color.</span>
+</site-hero>
+
+<intro-box><em>Feuilles mortes</em> — Dead Leaves. Debussy chose the most autumnal possible title for No. 2 of his <em>Préludes Book II</em>, and then wrote music to match it: extremely slow (♩ = 52), extremely quiet (pp throughout), with a melody that droops rather than develops, a bass that barely moves, and harmony that refuses to resolve. It is the autumnal palette applied at the highest level of craft.</intro-box>
+
+<div class="content">
+
+  <content-card number="76" title="Lent et mélancolique">
+    <div class="sub-section">
+      <p class="sub-title">Slow and Melancholy — the Score's Instructions</p>
+      <p>The score's opening direction is <span class="key">Lent et mélancolique</span> — slow and melancholy — at ♩ = 52. At this tempo, one bar of 4/4 lasts 4.6 seconds. A four-bar phrase takes nearly 20 seconds to complete. This is not slow for expressive effect on top of a normal tempo — this <em>is</em> the tempo. The piece lives entirely inside this speed.</p>
+      <p>The key signature is four flats (Ab major / F minor), but Debussy does not stay in F minor. He uses the key signature as a tonal center of gravity, then freely adds accidentals to create modal color, whole-tone shimmer, and suspended chords that belong to no functional key. The four flats are a starting point, not a commitment.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- A drooping phrase contour, stylized from the opening melody -->
+        <!-- Pitch grid lines -->
+        <line x1="60" y1="35" x2="700" y2="35" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="60" x2="700" y2="60" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="85" x2="700" y2="85" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="110" x2="700" y2="110" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="60" y1="130" x2="700" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <!-- Pitch labels (in F minor/Ab context) -->
+        <text x="52" y="38" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="end">Eb5</text>
+        <text x="52" y="63" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="end">C5</text>
+        <text x="52" y="88" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="end">Ab4</text>
+        <text x="52" y="113" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="end">F4</text>
+        <text x="52" y="133" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="end">Db4</text>
+        <!-- Opening phrase: enters mid-high, droops down -->
+        <!-- Note 1: upper register entry, long held -->
+        <circle cx="100" cy="55" r="5" fill="#7b61c7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="105" y1="55" x2="175" y2="55" stroke="#7b61c7" stroke-width="2" stroke-dasharray="4 2" opacity="0.5"/>
+        <!-- Note 2: step down -->
+        <polyline points="175,55 200,67" stroke="#7b61c7" stroke-width="2.5" fill="none"/>
+        <circle cx="200" cy="67" r="5" fill="#7b61c7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Note 3: chromatic inflection — the Debussy slide -->
+        <polyline points="200,67 235,79 255,84" stroke="#7b61c7" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <circle cx="255" cy="84" r="5" fill="#7b61c7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="235" y="72" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">chromatic</text>
+        <!-- Note 4: continue falling -->
+        <polyline points="255,84 290,95 320,107" stroke="#7b61c7" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <circle cx="290" cy="95" r="4" fill="#7b61c7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="320" cy="107" r="5" fill="#7b61c7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Note 5: land on held lower note -->
+        <polyline points="320,107 360,122" stroke="#7b61c7" stroke-width="2.5" fill="none"/>
+        <circle cx="360" cy="122" r="6" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="366" y1="122" x2="480" y2="122" stroke="#7b61c7" stroke-width="2" stroke-dasharray="4 2" opacity="0.45"/>
+        <!-- Labels -->
+        <text x="100" y="148" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">entry</text>
+        <text x="360" y="148" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">arrival</text>
+        <!-- Silence zone -->
+        <text x="590" y="92" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" opacity="0.35">— silence —</text>
+        <text x="590" y="148" font-family="Space Mono,monospace" font-size="7" fill="#777" text-anchor="middle">silence</text>
+        <!-- Overall descent arrow -->
+        <line x1="95" y1="152" x2="355" y2="152" stroke="#7b61c7" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.4"/>
+        <text x="225" y="160" font-family="Space Mono,monospace" font-size="7" fill="#7b61c7" text-anchor="middle">overall descent</text>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <p>The opening melody droops from an upper register entry down to a held lower tone, with a characteristic chromatic inflection mid-phrase — a half-step slide that is neither purely diatonic nor fully chromatic, just briefly ambiguous. The phrase ends, holds, and then there is silence. This is the piece's melodic DNA: it droops, it holds, it stops.</p>
+    </div>
+  </content-card>
+
+  <content-card number="77" title="The Deep Bass Pedal">
+    <div class="sub-section">
+      <p class="sub-title">8va bassa — Going Further Down Than Expected</p>
+      <p>The score's bass clef is marked with <span class="key">8va bassa</span> (8ba) throughout — meaning the already-low bass notes are played an octave lower still. The fundamental bass pitches sit very deep in the piano's register, below the range where pitch is distinctly perceived. You hear them as warmth and depth rather than as specific notes.</p>
+      <p>This is the same pedal principle as Evans's left-hand ostinato, but pushed to an extreme: the bass is so low it functions almost as a subwoofer — a physical presence rather than a harmonic statement. The upper harmony floats above a vast empty register with this deep warmth below it. The gap between the bass and the melody is as important as either.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Register zones -->
+        <!-- Melody zone (top) -->
+        <rect x="40" y="15" width="680" height="55" fill="#7b61c7" opacity="0.05"/>
+        <text x="46" y="11" font-family="Space Mono,monospace" font-size="8" fill="#7b61c7">MELODY — upper register, suspended harmony</text>
+        <!-- Empty middle zone -->
+        <rect x="40" y="78" width="680" height="60" fill="#f0ebe1" opacity="0.5"/>
+        <text x="380" y="112" font-family="Space Mono,monospace" font-size="9" fill="#4a4a4a" text-anchor="middle" opacity="0.3">— empty register — depth —</text>
+        <!-- Deep bass zone -->
+        <rect x="40" y="146" width="680" height="42" fill="#3d7ec7" opacity="0.06"/>
+        <text x="46" y="200" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7">BASS — 8va bassa — physical warmth, barely pitched</text>
+        <!-- Zone dividers -->
+        <line x1="40" y1="74" x2="720" y2="74" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="40" y1="140" x2="720" y2="140" stroke="#d9d4ca" stroke-width="0.5"/>
+        <!-- Melody: suspended chord blocks in upper zone -->
+        <!-- Bar 1 -->
+        <rect x="60" y="22" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.5"/>
+        <rect x="60" y="32" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.4"/>
+        <rect x="60" y="42" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.3"/>
+        <!-- Bar 2: slight shift (suspended chord changes) -->
+        <rect x="225" y="25" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.5"/>
+        <rect x="225" y="35" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.4"/>
+        <rect x="225" y="45" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.3"/>
+        <!-- Bar 3 -->
+        <rect x="390" y="20" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.5"/>
+        <rect x="390" y="30" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.4"/>
+        <rect x="390" y="40" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.3"/>
+        <!-- Bar 4 -->
+        <rect x="555" y="23" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.5"/>
+        <rect x="555" y="33" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.4"/>
+        <rect x="555" y="43" width="120" height="7" rx="2" fill="#7b61c7" opacity="0.3"/>
+        <!-- Deep bass: very long sustained low notes -->
+        <rect x="60" y="152" width="270" height="9" rx="2" fill="#3d7ec7" opacity="0.6"/>
+        <rect x="390" y="152" width="310" height="9" rx="2" fill="#3d7ec7" opacity="0.6"/>
+        <!-- 8ba label -->
+        <text x="700" y="162" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" opacity="0.7">8ba</text>
+        <!-- Gap arrow showing the distance between zones -->
+        <line x1="730" y1="70" x2="730" y2="144" stroke="#4a4a4a" stroke-width="1" stroke-dasharray="2 2"/>
+        <text x="746" y="110" font-family="Space Mono,monospace" font-size="7" fill="#4a4a4a" text-anchor="middle" transform="rotate(90,746,110)">the gap is the depth</text>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <p>The gap between the deep bass and the suspended upper harmony is not empty space — it is the acoustic depth of the piece. The bass occupies the lowest register; the melody occupies the upper register; the middle is left open. This spread creates a sense of physical space, like a large room, that gives every note room to resonate. Our piece has been building this same principle since Chapter 11.</p>
+    </div>
+  </content-card>
+
+  <content-card number="78" title="Whole-Tone Color">
+    <div class="sub-section">
+      <p class="sub-title">The Scale With No Home</p>
+      <p>The whole-tone scale divides the octave into six equal whole steps: <span class="key">C – D – E – F♯ – G♯ – A♯ – C</span>. Every interval is identical. This has a disorienting consequence: no note feels more like home than any other. There is no leading tone pulling toward a resolution, no perfect 4th or 5th providing a sense of arrival. The mode floats. Every step leads to another equally-weighted step.</p>
+      <p>Debussy uses this floating quality for specific moments in <em>Feuilles mortes</em> — not as the home mode (the piece would evaporate entirely) but as a chromatic inflection that briefly suspends the sense of tonal gravity. A single whole-tone run or chord lends a shimmer — what we called in Chapter 6 the "late-afternoon light" quality.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+        <!-- Two scale comparisons: Aeolian (unequal) vs Whole-tone (equal) -->
+        <!-- Labels -->
+        <text x="46" y="15" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7">D AEOLIAN — unequal steps (W H W W H W W)</text>
+        <text x="46" y="85" font-family="Space Mono,monospace" font-size="8" fill="#d4842a">D WHOLE-TONE — all whole steps (W W W W W W)</text>
+        <!-- Aeolian row: D E F G A Bb C D -->
+        <!-- Step sizes: D-E=W(2), E-F=H(1), F-G=W(2), G-A=W(2), A-Bb=H(1), Bb-C=W(2), C-D=W(2) -->
+        <!-- Total semitones: 12. Let's map this across ~600px (x=80 to 680) -->
+        <!-- Positions: D=80, E=80+100=180, F=180+50=230, G=230+100=330, A=330+100=430, Bb=430+50=480, C=480+100=580, D=580+100=680 -->
+        <circle cx="80" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="180" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="230" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="330" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="430" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="480" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="580" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="680" cy="38" r="6" fill="#3d7ec7" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Connecting lines -->
+        <line x1="86" y1="38" x2="174" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <line x1="186" y1="38" x2="224" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <line x1="236" y1="38" x2="324" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <line x1="336" y1="38" x2="424" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <line x1="436" y1="38" x2="474" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <line x1="486" y1="38" x2="574" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <line x1="586" y1="38" x2="674" y2="38" stroke="#3d7ec7" stroke-width="1.5" opacity="0.4"/>
+        <!-- Note names -->
+        <text x="80" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D</text>
+        <text x="180" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">E</text>
+        <text x="230" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">F</text>
+        <text x="330" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">G</text>
+        <text x="430" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">A</text>
+        <text x="480" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">B♭</text>
+        <text x="580" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">C</text>
+        <text x="680" y="58" font-family="Space Mono,monospace" font-size="8" fill="#3d7ec7" text-anchor="middle">D</text>
+        <!-- Half-step brackets -->
+        <line x1="180" y1="28" x2="230" y2="28" stroke="#e04848" stroke-width="1.5"/>
+        <text x="205" y="24" font-family="Space Mono,monospace" font-size="6" fill="#e04848" text-anchor="middle">H</text>
+        <line x1="430" y1="28" x2="480" y2="28" stroke="#e04848" stroke-width="1.5"/>
+        <text x="455" y="24" font-family="Space Mono,monospace" font-size="6" fill="#e04848" text-anchor="middle">H</text>
+        <!-- Whole-tone row: D E F# G# A# C D — all equally spaced -->
+        <!-- 6 equal steps across ~600px: each = 100px. D=80, E=180, F#=280, G#=380, A#=480, C=580, D=680 -->
+        <circle cx="80" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="180" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="280" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="380" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="480" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="580" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="680" cy="108" r="6" fill="#d4842a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Connecting lines, all equal length -->
+        <line x1="86" y1="108" x2="174" y2="108" stroke="#d4842a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="186" y1="108" x2="274" y2="108" stroke="#d4842a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="286" y1="108" x2="374" y2="108" stroke="#d4842a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="386" y1="108" x2="474" y2="108" stroke="#d4842a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="486" y1="108" x2="574" y2="108" stroke="#d4842a" stroke-width="1.5" opacity="0.4"/>
+        <line x1="586" y1="108" x2="674" y2="108" stroke="#d4842a" stroke-width="1.5" opacity="0.4"/>
+        <!-- Note names -->
+        <text x="80" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">D</text>
+        <text x="180" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">E</text>
+        <text x="280" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">F♯</text>
+        <text x="380" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">G♯</text>
+        <text x="480" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">A♯</text>
+        <text x="580" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">C</text>
+        <text x="680" y="128" font-family="Space Mono,monospace" font-size="8" fill="#d4842a" text-anchor="middle">D</text>
+      </svg>
+    </div>
+    <div class="sub-section">
+      <p>The unequal spacing of D Aeolian creates a felt hierarchy among the notes — some feel more stable (D, A), some create tension (C, Bb), some pull toward resolution (C toward D). The equal spacing of the whole-tone scale creates no such hierarchy. Every note is equally weighted. This is the source of the floating, directionless quality — and why it is effective only in small doses before it becomes disorienting.</p>
+    </div>
+  </content-card>
+
+  <content-card number="79" title="The Drifting Melody">
+    <div class="sub-section">
+      <p class="sub-title">Phrases That Don't Develop</p>
+      <p>Debussy's melody in <em>Feuilles mortes</em> does not develop motivically. There is no transformation, no sequence, no inversion or augmentation. The phrases appear, fall, and dissolve. A new phrase begins — different in shape, not derived from the previous one — and it too falls and dissolves. The piece is a series of independent events, each complete in itself, none leading anywhere.</p>
+      <p>This is the opposite of Bach's approach (every phrase develops from the previous) and different from Glass (where the material is the same but the process transforms it). Debussy's method is closer to Grouper's: <span class="key">themes emerge from the texture and recede back into it</span>. They are visitors, not arguments.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">The Second Section: Un peu plus allant</p>
+      <p>The score's second section is marked <span class="key">Un peu plus allant et plus gravement expressif</span> — a little more moving and more gravely expressive. The texture thickens: the right hand becomes denser, the harmony more chromatic. But even at this peak density, the dynamic marking stays at pp or ppp. The entire emotional range of the piece lives between very quiet and extremely quiet. There is no forte. The climax is felt, not heard loudly.</p>
+      <p>This restraint is perhaps Debussy's most important lesson for autumnal music production: the emotional peak of an autumnal piece should feel like a slight increase in intimacy, not a volume swell. The listener leans in — they are not pushed back.</p>
+    </div>
+  </content-card>
+
+  <content-card number="80" color="green" title="What Feuilles mortes Teaches">
+    <div class="sub-section">
+      <p class="sub-title">Four Transferable Principles</p>
+      <p><strong>1. Tempo as a compositional choice, not a performance choice.</strong> ♩ = 52 is not "played slowly" — it is the piece's fundamental environment. At this speed, a single note lasts long enough to exist as an experience rather than as a gesture. Choosing a very slow tempo is not timidity; it is deciding what kind of time the piece lives in.</p>
+      <p><strong>2. The climax is a lean-in, not a push-back.</strong> The entire dynamic range of <em>Feuilles mortes</em> lives between pp and ppp. The most intense moment is the quietest climax imaginable. In autumnal music, intensity comes from density and harmonic richness, not from volume. The listener moves toward the music; it does not come at them.</p>
+      <p><strong>3. Whole-tone color as a shimmer, not a mode.</strong> One or two whole-tone moments are enough to introduce the floating, directionless quality. More than that and the piece loses its tonal anchor. Debussy uses it like a glaze — a thin layer over diatonic material, not the material itself.</p>
+      <p><strong>4. Phrases are visitors, not arguments.</strong> The melody does not develop from bar to bar. Each phrase arrives, completes itself, and leaves. There is no accumulation of motivic material, no payoff at the end. The piece is a sequence of individual moments of beauty, each self-contained. This is a radically different relationship to musical time than what Bach or even Glass uses.</p>
+    </div>
+    <div class="principle-box">
+      The title says everything: dead leaves. They fall one by one, each complete in its falling, none connected to the previous by anything except the season that made them. <em>Feuilles mortes</em> is not a narrative. It is a condition.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It — A Whole-Tone Shimmer">
+    <div class="sub-section">
+      <p class="sub-title">One Debussy Moment in Your Piece</p>
+      <p>Your piece now has four layers: harmonic bed, textural pad, bass pedal, and the Peace Piece voice from Chapter 15. Add a single <span class="key">whole-tone moment</span> — one brief passage where the Peace Piece voice traces a partial whole-tone scale before returning to D Aeolian.</p>
+      <p>The D whole-tone scale: <strong>D – E – F♯ – G♯ – A♯ – C – D</strong>. Your piece mostly uses D Aeolian (with F natural, G natural, Bb). For the whole-tone shimmer, you will temporarily use F♯ and G♯ instead of F and G.</p>
+      <p>Here is a specific 4-note gesture that works:</p>
+      <ul>
+        <li>D5 (bar 48, beat 1 — start of the Lydian episode area from Ch 6)</li>
+        <li>E5 (bar 48, beat 3)</li>
+        <li>F♯5 (bar 49, beat 1)</li>
+        <li>G♯5 (bar 49, beat 2) — the "shimmer" note; G♯ does not exist in any mode we've used</li>
+        <li>Then: silence for 2 bars, then return to D Aeolian</li>
+      </ul>
+      <p>The G♯ is the Debussy note. It doesn't belong to D Aeolian, D Dorian, or F Lydian. It floats. One note is enough.</p>
+      <p>Apply the behind-the-beat nudge to these notes as well (12ms). Keep the dynamic low — this gesture should feel discovered, not announced. It is the moment in your piece where, as Debussy put it, you briefly stop knowing which way is home.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>CHAPTER A16 ◇ FEUILLES MORTES ◇ DEBUSSY ◇ CHAPTER A16 ◇ FEUILLES MORTES ◇ DEBUSSY ◇ CHAPTER A16 ◇ FEUILLES MORTES ◇</site-banner>
+
+<chapter-nav
+  prev-href="a15-bill-evans-peace-piece.html" prev-title="Ch A15 — Peace Piece">
+</chapter-nav>
+
+<site-footer text="AUTUMNAL SOUND — CH A16: FEUILLES MORTES — D MINOR"></site-footer>
+
+</body>
+</html>

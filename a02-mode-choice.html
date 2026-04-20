@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A02 — Mode Choice: Aeolian, Dorian, and the Bittersweet Spectrum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Sound"></site-nav>
+
+<site-banner>CHAPTER A02 ◇ MODE CHOICE ◇ AEOLIAN · DORIAN · BITTERSWEET SPECTRUM ◇ CHAPTER A02 ◇ MODE CHOICE ◇ AEOLIAN · DORIAN · BITTERSWEET SPECTRUM ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Mode Choice</span>
+  <span slot="subtitle">Not all minor modes are equal. The wrong one sounds dramatic; the right one sounds like October.</span>
+</site-hero>
+
+<intro-box>The autumnal palette lives in a narrow zone of the minor mode spectrum — between Aeolian's subdued darkness and Dorian's unexpected warmth. This chapter maps that zone, explains what makes each mode feel the way it does, and shows how hovering between them creates the modal ambiguity at the heart of autumnal music. You'll build the harmonic skeleton that carries the rest of the series.</intro-box>
+
+<div class="content">
+
+  <content-card number="6" title="The Minor Mode Spectrum">
+    <div class="sub-section">
+      <div class="sub-title">From Darkest to Brightest</div>
+      <p>Not every minor mode works for autumnal music. The spectrum runs from <span class="key">Phrygian</span> (too dramatic, too Spanish) through <span class="key">Aeolian</span> (natural minor — the autumnal home) and <span class="key">Dorian</span> (raised 6th — warmer, the Bill Evans mode) to <span class="key">Lydian</span> (floating, bright — available only as a brief episode). The autumnal zone sits squarely between Aeolian and Dorian.</p>
+      <p>The differences between these modes come down to one or two notes. In D minor: Phrygian adds E♭ (too much drama), Aeolian uses B♭ and C♮, Dorian raises the 6th from B♭ to B♮, and Lydian (F as a new root) adds the shimmering B♮ above it. Each substitution changes the emotional temperature. D Lydian itself (D E F♯ G♯ A B C♯) is too remote from D minor to be useful here — but treating the ♭III (F) as a temporary Lydian center borrows just one note from the D minor world and adds the shimmer without leaving it entirely.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Modal spectrum: horizontal scale Phrygian → Lydian with autumnal zone highlighted -->
+      <svg viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+        <!-- Autumnal zone highlight -->
+        <rect x="220" y="30" width="280" height="50" rx="4" fill="#e8f0e8" stroke="#7ab87a" stroke-width="1.5"/>
+
+        <!-- Spectrum bar segments -->
+        <rect x="60" y="40" width="160" height="30" rx="3" fill="#c8b0d0" opacity="0.6"/>
+        <rect x="220" y="40" width="130" height="30" rx="0" fill="#b0c8e0" opacity="0.7"/>
+        <rect x="350" y="40" width="150" height="30" rx="0" fill="#a8cca8" opacity="0.7"/>
+        <rect x="500" y="40" width="200" height="30" rx="3" fill="#e8dca0" opacity="0.6"/>
+
+        <!-- Mode labels -->
+        <text x="140" y="62" font-family="Space Mono,monospace" font-size="11" fill="#5a3a6a" text-anchor="middle" font-weight="bold">PHRYGIAN</text>
+        <text x="285" y="62" font-family="Space Mono,monospace" font-size="11" fill="#1a4a6a" text-anchor="middle" font-weight="bold">AEOLIAN</text>
+        <text x="425" y="62" font-family="Space Mono,monospace" font-size="11" fill="#2a5a2a" text-anchor="middle" font-weight="bold">DORIAN</text>
+        <text x="600" y="62" font-family="Space Mono,monospace" font-size="11" fill="#7a6a1a" text-anchor="middle" font-weight="bold">LYDIAN</text>
+
+        <!-- Autumnal zone label -->
+        <text x="360" y="23" font-family="Space Mono,monospace" font-size="10" fill="#3a6a3a" text-anchor="middle">autumnal zone</text>
+        <line x1="220" y1="26" x2="500" y2="26" stroke="#7ab87a" stroke-width="1" stroke-dasharray="3 2"/>
+
+        <!-- Descriptor labels below -->
+        <text x="140" y="93" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">dramatic</text>
+        <text x="285" y="93" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="middle">dark + still</text>
+        <text x="425" y="93" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="middle">warm + minor</text>
+        <text x="600" y="93" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">floating / bright</text>
+
+        <!-- Characteristic note labels -->
+        <text x="140" y="110" font-family="Space Mono,monospace" font-size="9" fill="#5a3a6a" text-anchor="middle">♭II = E♭</text>
+        <text x="285" y="110" font-family="Space Mono,monospace" font-size="9" fill="#1a4a6a" text-anchor="middle">♭6 = B♭</text>
+        <text x="425" y="110" font-family="Space Mono,monospace" font-size="9" fill="#2a5a2a" text-anchor="middle">♮6 = B♮</text>
+        <text x="600" y="110" font-family="Space Mono,monospace" font-size="9" fill="#7a6a1a" text-anchor="middle">#4 above root</text>
+
+        <!-- Darkness → brightness arrow -->
+        <line x1="60" y1="127" x2="700" y2="127" stroke="#ccc" stroke-width="1"/>
+        <text x="60" y="138" font-family="Space Mono,monospace" font-size="8" fill="#aaa">darker</text>
+        <text x="700" y="138" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="end">brighter</text>
+        <polygon points="700,124 706,127 700,130" fill="#ccc"/>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="7" title="What Makes Aeolian Autumnal" color="blue">
+    <div class="sub-section">
+      <div class="sub-title">The ♭6 and the ♭7</div>
+      <p>D Aeolian is D natural minor: D–E–F–G–A–B♭–C. The two notes that define its autumnal character are the <span class="key">B♭</span> (♭6) and the <span class="key">C♮</span> (♭7). Together they pull the ear toward the tonic without any leading-tone drama — there is gravity here but no urgency.</p>
+      <p>The ♭VI chord (B♭ major in D Aeolian) is the most autumnal sound in the palette: warm, slightly sad, and completely without direction. It doesn't want to go anywhere. The ♭VII chord (C major) drifts even more gently — a soft exhale that settles back to Dm without effort.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Subdominant Gravity</div>
+      <p>In Aeolian, the harmonic motion tends toward the <span class="key">subdominant</span> side — chords built on the ♭VI and ♭VII feel like the natural direction of travel. This is the opposite of tonal music's dominant pull. There is no chord demanding resolution; chords simply drift and settle. That is the Aeolian autumnal mechanism.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Why ♭VI Feels Warm: The Shared-Note Mechanism</div>
+      <p><span class="key">♭VI</span> in D Aeolian is B♭ major: B♭–D–F. Notice that D and F are already in the Dm tonic chord. When you move from Dm to B♭ major, two of the three notes stay in place — D moves from being the root of Dm to being the third of B♭; F stays as it was. Only one pitch changes: A (the 5th of Dm) drops a semitone to B♭.</p>
+      <p>This shared-note relationship is why the chord feels warm rather than distant. It isn't a sound arriving from somewhere else — it's the tonic chord seen from a slightly different angle. The B♭ underneath changes the emotional temperature without replacing the tonic's content. You feel the sadness of D minor (D and F are still present), but a major chord is now underneath them. Warm and slightly sad simultaneously — that is the autumnal mechanism.</p>
+      <p>And crucially: B♭ major has no note that wants to move anywhere. No leading tone, no tritone, no directional interval. The chord is harmonically inert. It can sit for two bars or eight bars and make no demand. It will simply be there until you decide to leave it.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Why ♭VII Feels Like a Drift: The Absent Leading Tone</div>
+      <p><span class="key">♭VII</span> in D Aeolian is C major: C–E–G. The C here is the <span class="key">subtonic</span> — the 7th scale degree when it sits a whole step below the tonic. This is distinct from the <span class="key">leading tone</span> (C#, a half step below D), which creates urgent upward pull toward the root. C natural has no such pull. It can drift back to Dm, stay on C, or move somewhere else entirely. There is no obligation.</p>
+      <p>A half-step interval is directional: C# almost forces resolution up to D, the way a stretched rubber band wants to snap back. A whole step is just two notes apart — no tension, no implication. This is why the progression i → ♭VII → i (Dm → C major → Dm) reads as a sigh rather than a cadence. You leave the tonic, the chord drifts to C, and it drifts back. Nothing is resolved because nothing was in tension.</p>
+      <p>The warmth of C major in a D context comes from its major quality arriving with no expectation attached. It's the sound of a door left open rather than closed — present, undemanding, unhurried.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The Three Basic Autumnal Progressions</div>
+      <p>These two chords combine into the three moves that form the backbone of autumnal harmony:</p>
+      <div class="idiom">
+        <div class="idiom-name">i → ♭VII → i (Dm → C → Dm)</div>
+        The drift. C major arrives with no weight, hangs in the air, and returns to Dm. The listener barely registers it as a harmonic event — it feels like a texture shift, not a chord change. This is the most frictionless move in the palette.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">i → ♭VI → i (Dm → B♭ → Dm)</div>
+        The warm hold. B♭ major carries D and F inside it, so the return to Dm feels like returning to the same space from a nearby angle. The emotional color shifts — the minor sadness of Dm gives way to the bittersweet warmth of B♭ — and then the tonic resumes, unchanged. You never really left.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">i → ♭VI → ♭VII → i (Dm → B♭ → C → Dm)</div>
+        The full autumnal arc. B♭ adds warmth; C relaxes and drifts; Dm is just home. No drama at any point. The three chords form a slow circle that could repeat indefinitely — and in autumnal music, it often does. This four-chord loop (with a plain Dm at the start) is the harmonic template for a large proportion of the repertoire.
+      </div>
+    </div>
+  </content-card>
+
+  <content-card number="8" title="What Makes Dorian Also Autumnal" color="green">
+    <div class="sub-section">
+      <div class="sub-title">The Raised 6th</div>
+      <p>D Dorian changes one note from Aeolian: B♭ becomes B♮. That single substitution lifts the emotional temperature. Dorian is still minor — still dark — but there is unexpected warmth in it, the way a shaft of light comes through clouds without dispersing them.</p>
+      <p>The IV major chord (G major in D Dorian) is Dorian's sonic fingerprint: a major chord built on the 4th scale degree in a minor context. It feels like relief without resolution. Bill Evans's <em>Peace Piece</em> captures this quality — it is in C (a C modal pedal on C and G), but its note collection is identical to D Dorian. The same seven pitches, with C as the anchor instead of D. What Evans creates in C is exactly the warmth this chapter describes in D: the natural 6th hovering over a static bass, with no harmonic obligation.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Scale Comparison: Aeolian vs Dorian</div>
+      <p>The two scales are identical except for the 6th degree. That single note is the difference between the darker and warmer autumnal shades.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Aeolian vs Dorian scale comparison: two rows of note dots, 6th degree highlighted -->
+      <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Column x positions for D E F G A 6th C D -->
+        <!-- x: 60, 140, 220, 300, 380, 460, 540, 620 -->
+
+        <!-- Grid lines -->
+        <line x1="40" y1="60" x2="720" y2="60" class="grid-line" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="40" y1="120" x2="720" y2="120" class="grid-line" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- Row labels -->
+        <text x="20" y="64" font-family="Space Mono,monospace" font-size="10" fill="#1a4a6a" text-anchor="middle">Aeo</text>
+        <text x="20" y="124" font-family="Space Mono,monospace" font-size="10" fill="#2a5a2a" text-anchor="middle">Dor</text>
+
+        <!-- Note names header row -->
+        <text x="60"  y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">D</text>
+        <text x="140" y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">E</text>
+        <text x="220" y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">F</text>
+        <text x="300" y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">G</text>
+        <text x="380" y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">A</text>
+        <text x="460" y="22" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="middle" font-weight="bold">6th</text>
+        <text x="540" y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">C</text>
+        <text x="620" y="22" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">D</text>
+
+        <!-- Aeolian row (blue) — shared notes -->
+        <circle cx="60"  cy="60" r="5" fill="#4a7ab5"/>
+        <circle cx="140" cy="60" r="5" fill="#4a7ab5"/>
+        <circle cx="220" cy="60" r="5" fill="#4a7ab5"/>
+        <circle cx="300" cy="60" r="5" fill="#4a7ab5"/>
+        <circle cx="380" cy="60" r="5" fill="#4a7ab5"/>
+        <circle cx="540" cy="60" r="5" fill="#4a7ab5"/>
+        <circle cx="620" cy="60" r="5" fill="#4a7ab5"/>
+        <!-- Aeolian 6th: Bb — highlighted orange/red -->
+        <circle cx="460" cy="60" r="7" fill="#e04848" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Aeolian note label for 6th -->
+        <text x="460" y="46" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">B♭</text>
+        <text x="460" y="80" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">dark</text>
+
+        <!-- Connector lines Aeolian -->
+        <polyline points="60,60 140,60 220,60 300,60 380,60 460,60 540,60 620,60" stroke="#4a7ab5" stroke-width="2" fill="none"/>
+
+        <!-- Dorian row (green) — shared notes -->
+        <circle cx="60"  cy="120" r="5" fill="#3a7a3a"/>
+        <circle cx="140" cy="120" r="5" fill="#3a7a3a"/>
+        <circle cx="220" cy="120" r="5" fill="#3a7a3a"/>
+        <circle cx="300" cy="120" r="5" fill="#3a7a3a"/>
+        <circle cx="380" cy="120" r="5" fill="#3a7a3a"/>
+        <circle cx="540" cy="120" r="5" fill="#3a7a3a"/>
+        <circle cx="620" cy="120" r="5" fill="#3a7a3a"/>
+        <!-- Dorian 6th: B natural — highlighted gold/warm -->
+        <circle cx="460" cy="120" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Dorian note label for 6th -->
+        <text x="460" y="106" font-family="Space Mono,monospace" font-size="9" fill="#7a6a1a" text-anchor="middle">B♮</text>
+        <text x="460" y="140" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">warm</text>
+
+        <!-- Connector lines Dorian -->
+        <polyline points="60,120 140,120 220,120 300,120 380,120 460,120 540,120 620,120" stroke="#3a7a3a" stroke-width="2" fill="none"/>
+
+        <!-- Difference arrow between the two -->
+        <line x1="460" y1="70" x2="460" y2="107" stroke="#888" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <text x="478" y="93" font-family="Space Mono,monospace" font-size="8" fill="#888">one note</text>
+      </svg>
+    </div>
+    <p>Cross-reference: D Dorian is also the home mode of the Minimalist Composition series — see <a href="minimalist.html">Minimalist chapters</a> for loop-based applications of the same modal warmth.</p>
+  </content-card>
+
+  <content-card number="9" title="Leaning Into Each Mode" color="green">
+    <div class="sub-section">
+      <div class="sub-title">The mode is only as strong as the notes you choose to feature</div>
+      <p>Scales don't produce moods — specific notes and chords within scales do. To get the full character of a mode, you need to actively feature its defining interval in both the melody and the harmony. Playing diatonic chords is not enough; you have to put the characteristic note somewhere the ear will notice it.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">D Aeolian — Feature the B♭</div>
+      <div class="idiom">
+        <div class="idiom-name">Lead melody through B♭</div>
+        The ♭6 (B♭ in D Aeolian) is the mode's fingerprint. Put it in the melody on a strong beat or at a phrase peak — not just buried in an inner voice. A descending line through A–B♭–G–F–E–D makes the mode unmistakable.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Hold the ♭VI chord long</div>
+        B♭ major (♭VI) is the single most autumnal chord. Give it two or four bars — long enough to feel like a destination, not a passing color. The longer you sit on it, the more the mood registers.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Use soft v, not dramatic V</div>
+        Keep the fifth degree as Am (minor v) rather than A major (V). A major introduces C# — a leading tone that creates urgency and instantly breaks the Aeolian stillness. Am7 drifts back to Dm with no obligation.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Let ♭VII breathe</div>
+        C major (♭VII) is a soft exhale. Follow it back to Dm without hurry — give it 2–4 bars of its own. The motion i → ♭VII → i is the Aeolian equivalent of a sigh. It goes nowhere, and that is the point.
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">D Dorian — Feature the B♮</div>
+      <div class="idiom">
+        <div class="idiom-name">Put B♮ at the top of a phrase</div>
+        The raised 6th (B♮) sounds most distinctive when it arrives at a melodic peak — after climbing up from A, or as the highest note of a phrase before descending. If it stays in the middle of a phrase, the ear may miss it.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Hold G major for warmth</div>
+        G major (IV) is the Dorian fingerprint chord. Hold it for four or more bars. The longer it lasts, the more the ear adjusts to it as a temporary resting point — the shift from dark to warm becomes a quality of the whole piece, not just a passing chord.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Use Em7 for gentle yearning</div>
+        Em7 (ii in D Dorian) contains B♮ and has a soft forward lean without drama. A Dm → Em7 → G → Dm loop is almost entirely self-contained — no cadence, no obligation, just a cycle of mild warmth. This is the Bill Evans fingerprint.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Avoid B♭ for the duration</div>
+        Once you're in Dorian, avoid B♭ entirely for at least 8–16 bars. If B♭ appears too soon, the mode collapses back to Aeolian before it's had time to establish its warmth. Let B♮ land, hold it, then decide whether to introduce ambiguity.
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">F Lydian — Episode Only</div>
+      <div class="idiom">
+        <div class="idiom-name">Feature the #4 (B♮ above F) in the melody</div>
+        The raised 4th is the only thing that distinguishes Lydian from major. To get the shimmer, put B♮ prominently in the melodic line — as an unexpected note that resolves gently back to A or C rather than down to B♭. The surprise is the whole effect.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Use Fmaj7(#11) as the chord</div>
+        F–A–C–E–B♮ voiced with the B♮ on top in a high register is the full Lydian shimmer. The B♮ above the Fmaj7 creates a floating tension that doesn't resolve — it just glows. One instance of this chord is usually enough.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Exit before the listener expects it</div>
+        Lydian loses its magic the moment it starts to feel like home. Use it for 2–4 bars maximum, then return to Aeolian or Dorian. The contrast — darker mode → Lydian shimmer → darker mode — is where the effect lives.
+        <br><br>
+        Example: <span style="font-family:'Space Mono',monospace; font-size:0.9em;">Dm × 4 → Fmaj7(#11) × 2 → Dm × 4</span>. The Dm establishes the dark home; the Fmaj7(#11) arrives at bar 5 as a surprise shimmer; returning to Dm at bar 7 — before the Lydian has had 4 full bars — makes the exit feel like the light went behind a cloud. If you wait until bar 9, the shimmer has already settled and the return sounds like a modulation rather than a moment.
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Inserting the Shimmer: Gateways from ♭VI and ♭VII</div>
+      <p>The Lydian episode doesn't live outside the autumnal progressions — it lives inside them. The key is that <span class="key">F major is the ♭III of D minor</span>: it's already on the flat side of the mode, already a familiar color in the palette. Fmaj7(#11) isn't arriving from somewhere foreign. It's the ♭III chord with a shimmer added to its top.</p>
+      <p>The smoothest entry point is through <span class="key">♭VI (B♭ major)</span>. B♭ major contains F as its fifth — so the bass moving B♭ → F is a natural 4th upward, a root motion the ear accepts without effort. The B♭ sets up the flat-side warmth; the F extends it into shimmer. You're not changing direction — you're going deeper into the same side of the mode.</p>
+      <div class="idiom">
+        <div class="idiom-name">Bridge: ♭VI → Lydian → ♭VII → i</div>
+        The Lydian episode sits between the two subdominant chords, replacing the moment where you'd otherwise move straight from B♭ to C:
+        <br><br>
+        <span style="font-family:'Space Mono',monospace; font-size:0.85em; line-height:2;">
+          Dm × 4 → B♭ × 2 → Fmaj7(#11) × 2 → C × 2 → Dm × 4
+        </span>
+        <br><br>
+        B♭ provides warmth; Fmaj7(#11) adds the shimmer (the B♮ on top glows); C major brings you back down with its soft exhale; Dm closes. The Lydian episode is fully contained — it neither opens the progression nor ends it. It's a shaft of light in the middle of the phrase.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Substitute: replace the second half of ♭VI</div>
+        If your loop dwells on B♭ for 4 bars, swap the final 2 bars for Fmaj7(#11) instead:
+        <br><br>
+        <span style="font-family:'Space Mono',monospace; font-size:0.85em; line-height:2;">
+          Dm × 4 → B♭ × 2 → Fmaj7(#11) × 2 → Dm × 4
+        </span>
+        <br><br>
+        The listener expects more B♭ and gets shimmer instead. Because B♭ and Fmaj7(#11) share two notes (F and A), the surprise is soft — recognisable as related to what came before. The shimmer is then absorbed by the return to Dm, leaving no trace.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">The B♮ connection: Lydian and Dorian share the shimmer note</div>
+        The raised note in Fmaj7(#11) is B♮ — the same B♮ that defines D Dorian's warmth. This is not a coincidence: F Lydian and D Dorian are <span class="key">relative modes</span> that share all seven pitches. If your piece has already been leaning Dorian (B♮ appearing in the melody or in G major), the Lydian shimmer uses a pitch the ear already knows. It doesn't land as foreign — it lands as familiar light, suddenly intensified.
+        <br><br>
+        This means the smoothest sequence of all is: hint at Dorian (B♮ in the melody) → move to B♭ major (♭VI) → resolve to Fmaj7(#11) (Lydian shimmer, B♮ now featured in the chord) → drift through C major → home to Dm. The B♮ threads through the whole episode as a single pitch being heard in progressively brighter light.
+      </div>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Bridge progression diagram: Dm → Bb → Fmaj7#11 → C → Dm with annotations -->
+      <svg viewBox="0 0 760 130" xmlns="http://www.w3.org/2000/svg">
+        <!-- Five chord boxes -->
+        <!-- widths: Dm=120, Bb=110, Fmaj7#11=150(wider, featured), C=110, Dm=120 -->
+        <!-- x: 30, 160, 280, 444, 564 -->
+
+        <!-- i: Dm (opening) -->
+        <rect x="30" y="18" width="120" height="60" rx="4" fill="#dde8f4" stroke="#4a7ab5" stroke-width="1.5"/>
+        <text x="90" y="43" font-family="Space Mono,monospace" font-size="12" fill="#1a3a5a" text-anchor="middle" font-weight="bold">i</text>
+        <text x="90" y="60" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5" text-anchor="middle">Dm</text>
+        <text x="90" y="93" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">4 bars</text>
+
+        <!-- arrow -->
+        <line x1="154" y1="48" x2="162" y2="48" stroke="#ccc" stroke-width="1.5"/>
+        <polygon points="162,44 168,48 162,52" fill="#ccc"/>
+
+        <!-- ♭VI: Bb major -->
+        <rect x="168" y="18" width="104" height="60" rx="4" fill="#f0e4ec" stroke="#8a4a7a" stroke-width="1.5"/>
+        <text x="220" y="43" font-family="Space Mono,monospace" font-size="12" fill="#5a1a4a" text-anchor="middle" font-weight="bold">♭VI</text>
+        <text x="220" y="60" font-family="Space Mono,monospace" font-size="9" fill="#8a4a7a" text-anchor="middle">B♭ maj</text>
+        <text x="220" y="93" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2 bars</text>
+
+        <!-- arrow -->
+        <line x1="276" y1="48" x2="284" y2="48" stroke="#ccc" stroke-width="1.5"/>
+        <polygon points="284,44 290,48 284,52" fill="#ccc"/>
+
+        <!-- ♭III#11: Fmaj7(#11) — featured, golden shimmer -->
+        <rect x="290" y="10" width="148" height="76" rx="4" fill="#fdf6e0" stroke="#c8a000" stroke-width="2.5"/>
+        <text x="364" y="38" font-family="Space Mono,monospace" font-size="11" fill="#7a6000" text-anchor="middle" font-weight="bold">♭III♯11</text>
+        <text x="364" y="55" font-family="Space Mono,monospace" font-size="9" fill="#a08000" text-anchor="middle">Fmaj7(#11)</text>
+        <text x="364" y="71" font-family="Space Mono,monospace" font-size="8" fill="#c8a000" text-anchor="middle" font-style="italic">B♮ shimmers</text>
+        <text x="364" y="101" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2 bars</text>
+
+        <!-- arrow -->
+        <line x1="442" y1="48" x2="450" y2="48" stroke="#ccc" stroke-width="1.5"/>
+        <polygon points="450,44 456,48 450,52" fill="#ccc"/>
+
+        <!-- ♭VII: C major -->
+        <rect x="456" y="18" width="104" height="60" rx="4" fill="#e8f0e0" stroke="#5a8a5a" stroke-width="1.5"/>
+        <text x="508" y="43" font-family="Space Mono,monospace" font-size="12" fill="#2a4a2a" text-anchor="middle" font-weight="bold">♭VII</text>
+        <text x="508" y="60" font-family="Space Mono,monospace" font-size="9" fill="#3a7a3a" text-anchor="middle">C maj</text>
+        <text x="508" y="93" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">2 bars</text>
+
+        <!-- arrow -->
+        <line x1="564" y1="48" x2="572" y2="48" stroke="#ccc" stroke-width="1.5"/>
+        <polygon points="572,44 578,48 572,52" fill="#ccc"/>
+
+        <!-- i: Dm (return) -->
+        <rect x="578" y="18" width="120" height="60" rx="4" fill="#dde8f4" stroke="#4a7ab5" stroke-width="1.5"/>
+        <text x="638" y="43" font-family="Space Mono,monospace" font-size="12" fill="#1a3a5a" text-anchor="middle" font-weight="bold">i</text>
+        <text x="638" y="60" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5" text-anchor="middle">Dm</text>
+        <text x="638" y="93" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">4 bars</text>
+
+        <!-- Annotation: B♮ thread -->
+        <line x1="290" y1="120" x2="438" y2="120" stroke="#c8a000" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="364" y="116" font-family="Space Mono,monospace" font-size="7" fill="#c8a000" text-anchor="middle">B♮ on top</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="10" title="Hovering Between Modes" color="purple">
+    <div class="sub-section">
+      <div class="sub-title">Modal Ambiguity as a Technique</div>
+      <p>The most autumnal pieces don't commit to either Aeolian or Dorian. They use B♭ sometimes and B♮ other times — often within a few bars of each other. This <span class="key">modal ambiguity</span> prevents the listener from naming the mode. They feel a quality rather than identifying a scale. That unnameable quality is part of what makes autumnal music feel like October: it has a character that doesn't fit a category.</p>
+      <p>Bill Evans's <em>Peace Piece</em> does this. The left-hand ostinato stays on C and G while the right hand wanders through phrases that sometimes imply B♮ and sometimes don't. The mode is never stated; it is implied, withheld, and suggested.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The ♭VI Chord: Warm and Sad</div>
+      <p>B♭ major in a D minor context (the ♭VI chord) is the most emotionally specific sound in the autumnal palette. It contains the B♭ that defines Aeolian, and the D–F–A of the tonic chord is still present in the ear. The result is warm and slightly sad — not tragic, not despairing, just the feeling of late afternoon in November.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- ♭VI moment: four-bar chord sequence showing the Bb major arrival -->
+      <svg viewBox="0 0 760 110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Four chord boxes: i → ♭VII → i → ♭VI -->
+        <!-- Box width: 160px each, spacing 10px, start x=40 -->
+
+        <!-- i: Dm -->
+        <rect x="40" y="20" width="150" height="60" rx="4" fill="#dde8f4" stroke="#4a7ab5" stroke-width="1.5"/>
+        <text x="115" y="46" font-family="Space Mono,monospace" font-size="13" fill="#1a3a5a" text-anchor="middle" font-weight="bold">i</text>
+        <text x="115" y="63" font-family="Space Mono,monospace" font-size="10" fill="#4a7ab5" text-anchor="middle">Dm</text>
+        <text x="115" y="96" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">4 bars — tonic</text>
+
+        <!-- ♭VII: C major -->
+        <rect x="205" y="20" width="150" height="60" rx="4" fill="#e8f0e0" stroke="#5a8a5a" stroke-width="1.5"/>
+        <text x="280" y="46" font-family="Space Mono,monospace" font-size="13" fill="#2a4a2a" text-anchor="middle" font-weight="bold">♭VII</text>
+        <text x="280" y="63" font-family="Space Mono,monospace" font-size="10" fill="#3a7a3a" text-anchor="middle">C major</text>
+        <text x="280" y="96" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">2 bars — drift</text>
+
+        <!-- i: Dm again -->
+        <rect x="370" y="20" width="150" height="60" rx="4" fill="#dde8f4" stroke="#4a7ab5" stroke-width="1.5"/>
+        <text x="445" y="46" font-family="Space Mono,monospace" font-size="13" fill="#1a3a5a" text-anchor="middle" font-weight="bold">i</text>
+        <text x="445" y="63" font-family="Space Mono,monospace" font-size="10" fill="#4a7ab5" text-anchor="middle">Dm</text>
+        <text x="445" y="96" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">2 bars — return</text>
+
+        <!-- ♭VI: Bb major — highlighted as special -->
+        <rect x="535" y="14" width="180" height="72" rx="4" fill="#f0e4ec" stroke="#8a4a7a" stroke-width="2"/>
+        <text x="625" y="46" font-family="Space Mono,monospace" font-size="13" fill="#5a1a4a" text-anchor="middle" font-weight="bold">♭VI</text>
+        <text x="625" y="63" font-family="Space Mono,monospace" font-size="10" fill="#8a4a7a" text-anchor="middle">B♭ major</text>
+        <text x="625" y="96" font-family="Space Mono,monospace" font-size="9" fill="#8a4a7a" text-anchor="middle" font-style="italic">warm + sad</text>
+      </svg>
+    </div>
+    <p>Cross-reference: Modal mixture and the active choice between B♭ and B♮ is explored further in <strong>A05</strong> (Slow Harmonic Rhythm). The use of borrowed chords from parallel modes in a Bach context — see <a href="ch06-harmonic-color.html">Ch 06 — Harmonic Color</a>.</p>
+  </content-card>
+
+  <content-card number="11" title="Avoiding Phrygian and Harmonic Minor" color="red">
+    <div class="sub-section">
+      <div class="sub-title">Modes That Fight the Autumnal Mood</div>
+      <p>Two modal flavors are anti-autumnal and should be treated with caution:</p>
+      <p><span class="key">Phrygian</span> — The ♭II chord (E♭ major in D Phrygian) has a Spanish/film-score dramatic quality. It implies flamenco, or darkness with a theatrical edge. The moment that chord arrives the music stops being still. Phrygian also has a strong directional pull: its ♭II chord leads back forcefully to the tonic. That forcefulness contradicts the unhurried autumnal quality.</p>
+      <p><span class="key">Harmonic minor</span> — Raising the 7th to C# creates a leading tone — a note that urgently wants to resolve up to D. That urgency is the opposite of autumnal. The augmented second between B♭ and C# also creates an exotic interval that draws attention to itself. Use harmonic minor only for a single moment of arrival; never as a sustained color.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The Test</div>
+      <p>If a chord or passage sounds like a film score, flamenco guitar, or Spanish classical guitar, you have gone Phrygian. If a melodic line sounds like it is "arriving" urgently, you have introduced a leading tone. Both break the stillness. Return to Aeolian or Dorian — find the drift, not the drive.</p>
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It: The Harmonic Skeleton">
+    <div class="sub-section">
+      <div class="sub-title">Starting the Session</div>
+      <p>Open Ableton Live. Create a new Arrangement View session. Set the tempo to <strong>70 BPM</strong>. This is your autumnal session — it lives here for the rest of the series.</p>
+      <p>On a warm pad sound (a slow-attack synth pad, or a soft piano with reverb), place a single chord: <strong>Dm(add9)</strong> — D3, F3, A3, E4. Set it to sustain for 8 bars. Hit play and listen. That's the seed. That's where everything starts.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Three Shades</div>
+      <p>After bar 8, try each of these chords in turn — just one chord for 4 bars each, listening to the shift in mood:</p>
+      <ul>
+        <li><strong>C major</strong> (♭VII) — Aeolian drift. A soft exhale. Notice how it doesn't feel like a resolution, just a breath.</li>
+        <li><strong>G major</strong> (IV, Dorian) — Unexpected warmth. A shaft of light. This is what B♮ does in a minor context.</li>
+        <li><strong>B♭ major</strong> (♭VI) — Warm and slightly sad. The most autumnal sound. Notice how it feels complete without going anywhere.</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Build the Skeleton</div>
+      <p>Now lay out the full 16-bar harmonic skeleton in the Arrangement View, one chord per track clip:</p>
+      <p style="font-family: 'Space Mono', monospace; font-size: 0.85em; line-height: 1.8;">
+        Dm(add9) × 4 bars → Cmaj7 × 2 → Dm × 2 → G major × 2 → Dm × 4 → B♭maj7 × 2
+      </p>
+      <p>Keep all chords on the same pad track. All voicings close — no wide spreads. The 9th or maj7 stays in the upper register. Listen through once without touching anything. <strong>Save as "Autumnal v1 — Harmonic Skeleton."</strong></p>
+      <p>This skeleton is not a composition yet — it is the harmonic space the piece will inhabit. Every subsequent chapter adds something on top of or underneath it.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>CHAPTER A02 ◇ MODE CHOICE ◇ AEOLIAN · DORIAN · BITTERSWEET SPECTRUM ◇ CHAPTER A02 ◇ MODE CHOICE ◇ AEOLIAN · DORIAN · BITTERSWEET SPECTRUM ◇</site-banner>
+
+<chapter-nav
+  prev-href="a01-what-is-autumnal.html" prev-title="A01 — What Is Autumnal?">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A02: MODE CHOICE — D AEOLIAN"></site-footer>
+
+</body>
+</html>

@@ -176,17 +176,21 @@
   const DEGREE_LABELS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'];
   const SCALES = {
     'Major':         [0, 2, 4, 5, 7, 9, 11],
-    'Natural Minor': [0, 2, 3, 5, 7, 8, 10],
+    'Aeolian': [0, 2, 3, 5, 7, 8, 10],
     'Harmonic Minor':[0, 2, 3, 5, 7, 8, 11],
-    'Dorian':        [0, 2, 3, 5, 7, 9, 10]
+    'Dorian':        [0, 2, 3, 5, 7, 9, 10],
+    'Phrygian':      [0, 1, 3, 5, 7, 8, 10],
+    'Lydian':        [0, 2, 4, 6, 7, 9, 11]
   };
 
   // Harmonic function per degree: 't' = tonic, 'pd' = pre-dominant, 'd' = dominant
   const FUNCTIONS = {
     'Major':         ['t','pd','t','pd','d','t','d'],
-    'Natural Minor': ['t','pd','t','pd','d','t','d'],
+    'Aeolian': ['t','pd','t','pd','d','t','d'],
     'Harmonic Minor':['t','pd','t','pd','d','t','d'],
-    'Dorian':        ['t','pd','t','pd','d','t','d']
+    'Dorian':        ['t','pd','t','pd','d','t','d'],
+    'Phrygian':      ['t','pd','t','pd','d','t','d'],
+    'Lydian':        ['t','d','t','pd','d','pd','pd']
   };
   const FUNCTION_LABELS = { t: 'Tonic', pd: 'Pre-Dominant', d: 'Dominant' };
 
@@ -237,7 +241,7 @@
 
   // Default to D natural minor
   tonicSelect.value = 'D';
-  scaleSelect.value = 'Natural Minor';
+  scaleSelect.value = 'Aeolian';
 
   function getNote(rootIdx, semi) { return NOTES[(rootIdx + semi + 120) % 12]; }
 
@@ -245,11 +249,15 @@
     const rootIdx = NOTES.indexOf(tonicName);
     let offset, relScaleName, label;
     if (scaleName === 'Major') {
-      offset = 9; relScaleName = 'Natural Minor'; label = 'Relative Minor';
-    } else if (scaleName === 'Natural Minor' || scaleName === 'Harmonic Minor') {
+      offset = 9; relScaleName = 'Aeolian'; label = 'Relative Minor';
+    } else if (scaleName === 'Aeolian' || scaleName === 'Harmonic Minor') {
       offset = 3; relScaleName = 'Major'; label = 'Relative Major';
     } else if (scaleName === 'Dorian') {
       offset = 10; relScaleName = 'Major'; label = 'Relative Major';
+    } else if (scaleName === 'Phrygian') {
+      offset = 8; relScaleName = 'Major'; label = 'Parent Major';
+    } else if (scaleName === 'Lydian') {
+      offset = 7; relScaleName = 'Major'; label = 'Parent Major';
     } else {
       return null;
     }
