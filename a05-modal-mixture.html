@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A05 — Modal Mixture: Borrowed Warmth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Sound"></site-nav>
+
+<site-banner>CHAPTER A05 ◇ MODAL MIXTURE ◇ BORROWED WARMTH ◇ CHAPTER A05 ◇ MODAL MIXTURE ◇ BORROWED WARMTH ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Modal Mixture</span>
+  <span slot="subtitle">Chords borrowed from a parallel mode — warmth, displacement, and the bittersweet formula.</span>
+</site-hero>
+
+<intro-box>Modal mixture reaches across to a parallel mode and borrows its chords. In a D-center piece, a chord from D Aeolian inside a D major passage creates a flash of shadow; in D Aeolian, a chord from D Dorian introduces a shaft of warmth. These borrowed chords do not modulate — the tonic stays on D — but they shift the emotional color. This chapter maps the most autumnal borrowed chords and shows how to combine them into the bittersweet formula that defines October music.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="What Modal Mixture Is">
+    <div class="sub-section">
+      <div class="sub-title">Parallel modes, shared root</div>
+      <p>Modal mixture borrows chords from a <span class="key">parallel mode</span> — a different mode on the same root. D major and D Aeolian share the same tonic, but diverge on three scale degrees: the third (F♯ vs F), the sixth (B vs B♭), and the seventh (C♯ vs C). Any chord built on those diverging notes can be imported across the modal border.</p>
+      <p>In D major, borrowing from D Aeolian gives: <span class="key">♭III</span> (F major), <span class="key">♭VI</span> (B♭ major), and <span class="key">♭VII</span> (C major). In D Aeolian, borrowing from D Dorian gives: <span class="key">IV major</span> (G major, using the raised B natural). These borrowed chords create color without modulation — the tonic center stays on D.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-borrow" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="90">
+            <path d="M2,1 L4,7 L6,1" stroke="#9b59b6" stroke-width="1.5" fill="none"/>
+          </marker>
+        </defs>
+        <!-- Row dividers -->
+        <line x1="0" y1="100" x2="760" y2="100" class="grid-line"/>
+
+        <!-- Column headers for scale degrees -->
+        <!-- x positions: D=75, E=170, F=255, G=335, A=415, B=500, C=590, D=680 -->
+
+        <!-- D MAJOR label -->
+        <text x="8" y="40" font-family="Space Mono,monospace" font-size="9" fill="#3b82f6" font-weight="700">D MAJOR</text>
+
+        <!-- D Major notes (top row) -->
+        <circle cx="75"  cy="55" r="5" fill="#3b82f6"/>
+        <text x="75"  y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">D</text>
+
+        <circle cx="170" cy="55" r="5" fill="#3b82f6"/>
+        <text x="170" y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">E</text>
+
+        <!-- F# — diverges from Aeolian -->
+        <circle cx="255" cy="55" r="7" fill="#3b82f6" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="255" y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">F♯</text>
+
+        <circle cx="335" cy="55" r="5" fill="#3b82f6"/>
+        <text x="335" y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">G</text>
+
+        <circle cx="415" cy="55" r="5" fill="#3b82f6"/>
+        <text x="415" y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">A</text>
+
+        <!-- B — diverges -->
+        <circle cx="500" cy="55" r="7" fill="#3b82f6" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="500" y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">B</text>
+
+        <!-- C# — diverges -->
+        <circle cx="590" cy="55" r="7" fill="#3b82f6" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="590" y="42" font-family="Space Mono,monospace" font-size="11" fill="#3b82f6" text-anchor="middle">C♯</text>
+
+        <!-- D AEOLIAN label -->
+        <text x="8" y="130" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6" font-weight="700">D AEOLIAN</text>
+
+        <!-- D Aeolian notes (bottom row) -->
+        <circle cx="75"  cy="145" r="5" fill="#9b59b6"/>
+        <text x="75"  y="185" font-family="Space Mono,monospace" font-size="11" fill="#9b59b6" text-anchor="middle">D</text>
+
+        <circle cx="170" cy="145" r="5" fill="#9b59b6"/>
+        <text x="170" y="185" font-family="Space Mono,monospace" font-size="11" fill="#9b59b6" text-anchor="middle">E</text>
+
+        <!-- F — diverges, borrowed as ♭III -->
+        <circle cx="255" cy="145" r="7" fill="#9b59b6" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="255" y="185" font-family="Space Mono,monospace" font-size="10" fill="#9b59b6" text-anchor="middle">F (♭III)</text>
+
+        <circle cx="335" cy="145" r="5" fill="#9b59b6"/>
+        <text x="335" y="185" font-family="Space Mono,monospace" font-size="11" fill="#9b59b6" text-anchor="middle">G</text>
+
+        <circle cx="415" cy="145" r="5" fill="#9b59b6"/>
+        <text x="415" y="185" font-family="Space Mono,monospace" font-size="11" fill="#9b59b6" text-anchor="middle">A</text>
+
+        <!-- Bb — diverges, borrowed as ♭VI -->
+        <circle cx="500" cy="145" r="7" fill="#9b59b6" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="500" y="185" font-family="Space Mono,monospace" font-size="10" fill="#9b59b6" text-anchor="middle">B♭ (♭VI)</text>
+
+        <!-- C — diverges, borrowed as ♭VII -->
+        <circle cx="590" cy="145" r="7" fill="#9b59b6" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="590" y="185" font-family="Space Mono,monospace" font-size="10" fill="#9b59b6" text-anchor="middle">C (♭VII)</text>
+
+        <!-- Borrow arrows: Aeolian → major context (upward dashed) -->
+        <line x1="255" y1="137" x2="255" y2="64" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="5 3"/>
+        <polygon points="251,65 255,57 259,65" fill="#9b59b6"/>
+
+        <line x1="500" y1="137" x2="500" y2="64" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="5 3"/>
+        <polygon points="496,65 500,57 504,65" fill="#9b59b6"/>
+
+        <line x1="590" y1="137" x2="590" y2="64" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="5 3"/>
+        <polygon points="586,65 590,57 594,65" fill="#9b59b6"/>
+
+        <!-- "borrow" label near center -->
+        <text x="680" y="100" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6" text-anchor="middle">← borrow</text>
+      </svg>
+    </div>
+    <p>The three scale degrees where D major and D Aeolian diverge (F vs F♯, B♭ vs B, C vs C♯) are the crossing points. When any of the Aeolian-native chords — F major, B♭ major, C major — appear in a D-center piece, the mode is momentarily in question.</p>
+    <p>For modal mixture in the context of Bach's harmonic color vocabulary, see <a href="ch06-harmonic-color.html">Ch 06 — Harmonic Color</a>.</p>
+  </content-card>
+
+  <content-card number="2" color="purple" title="The ♭VII Chord — C Major's Modal Blur">
+    <div class="sub-section">
+      <div class="sub-title">Ambiguity without drama</div>
+      <p>In a D-centered piece, a <span class="key">♭VII chord</span> (C major) is the most frictionless of the borrowed chords. C major carries no dominant-function urgency — it contains no leading tone (C♯) and no tritone pull toward D. When C major arrives, the ear cannot determine whether the piece is in D major (borrowing), D Aeolian (native), or D Mixolydian (where C is the diatonic ♭VII). The piece is suddenly <em>somewhere between modes</em>.</p>
+      <p>This ambiguity is the autumnal quality itself: you're not quite sure where you are. The <span class="key">♭VII–i</span> resolution (C major → Dm) is the gentlest settling motion — a drift inward rather than a pull. This is the drift cadence from A04. It drifts precisely because C major belongs to multiple modes and commits to none.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Cmaj7 — the modal blur chord</div>
+      <p>Adding a major seventh yields <span class="key">Cmaj7</span> (C–E–G–B). Now the B natural inside the chord pulls toward D Dorian (raised 6th), while the C natural root belongs to D Aeolian. The chord is located between two minor modes at once — its modal address is blurred entirely. This is exactly the quality we placed in the A02 and A03 sessions, and it is the reason Cmaj7 feels so characteristic of this sound.</p>
+    </div>
+  </content-card>
+
+  <content-card number="3" color="purple" title="The ♭III Chord — Fmaj7 and Warmth">
+    <div class="sub-section">
+      <div class="sub-title">The relative major as color</div>
+      <p>F major is the <span class="key">relative major</span> of D minor — same key signature, many of the same tones. But as a chord root inside a D-centered piece, F major feels slightly displaced: warm, like sunlight through a different window. The tonic center seems to hover. You are still in D's orbit but the gravitational pull has shifted sideways.</p>
+      <p>The chord most useful for autumnal writing is not plain F major but <span class="key">Fmaj7</span> (F–A–C–E). The major seventh (E) is the leading tone of F major and the second scale degree of D minor — it creates a delicate connection back to D. Fmaj7 feels warmer and less settled than F major because the E at the top has nowhere urgent to go.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Fmaj7 as the warmth anchor</div>
+      <p>In most autumnal progressions, <span class="key">Fmaj7 is the warmth anchor</span> — the moment of brightness before the return to shadow. If Cmaj7 is drift and B♭maj7 is wistfulness, Fmaj7 is warmth. Building all three colors into a single piece gives a complete autumnal palette before the bittersweet formula assembles them into an arc.</p>
+    </div>
+  </content-card>
+
+  <content-card number="4" color="green" title="Aeolian vs Dorian — Mixture Within Minor">
+    <div class="sub-section">
+      <div class="sub-title">The subtler move: B♭ vs B natural</div>
+      <p>The most characteristic autumnal modal maneuver is not borrowing from a different mode family but <span class="key">oscillating between Aeolian and Dorian within the same piece</span>. In D minor, D Aeolian uses B♭ (the ♭6) and D Dorian uses B natural (the raised 6). These two versions of the same degree create radically different emotional shadings on the same tonic.</p>
+      <p>B♭maj7 (the ♭VI, native to D Aeolian) and G major (the IV, native to D Dorian) are in direct tension. Using B♭ at some moments and B natural at others creates modal ambiguity from inside the minor family — more subtle than borrowing from major, and more characteristic of the specifically autumnal sound. Evans, Debussy, and Ravel all exploit this half-step oscillation.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 170" xmlns="http://www.w3.org/2000/svg">
+        <!-- Modal spectrum bar -->
+        <defs>
+          <linearGradient id="modal-grad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"   stop-color="#3b82f6" stop-opacity="0.25"/>
+            <stop offset="50%"  stop-color="#5eaa6f" stop-opacity="0.35"/>
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.25"/>
+          </linearGradient>
+        </defs>
+        <rect x="80" y="60" width="600" height="30" rx="4" fill="url(#modal-grad)" stroke="#d9d4ca" stroke-width="1"/>
+
+        <!-- Labels at ends -->
+        <text x="80"  y="55" font-family="Space Mono,monospace" font-size="10" fill="#3b82f6" text-anchor="middle">D AEOLIAN</text>
+        <text x="680" y="55" font-family="Space Mono,monospace" font-size="10" fill="#5eaa6f" text-anchor="middle">D DORIAN</text>
+
+        <!-- Chord pins along bar -->
+        <!-- Cmaj7 (♭VII) sits far Aeolian side -->
+        <line x1="160" y1="60" x2="160" y2="42" stroke="#9b59b6" stroke-width="1.5"/>
+        <circle cx="160" cy="40" r="4" fill="#9b59b6"/>
+        <text x="160" y="30" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6" text-anchor="middle">Cmaj7</text>
+        <text x="160" y="110" font-family="Space Mono,monospace" font-size="8" fill="#9b59b6" text-anchor="middle">♭VII</text>
+
+        <!-- Bbmaj7 (♭VI) — Aeolian side -->
+        <line x1="240" y1="60" x2="240" y2="42" stroke="#9b59b6" stroke-width="1.5"/>
+        <circle cx="240" cy="40" r="4" fill="#9b59b6"/>
+        <text x="240" y="30" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6" text-anchor="middle">B♭maj7</text>
+        <text x="240" y="110" font-family="Space Mono,monospace" font-size="8" fill="#9b59b6" text-anchor="middle">♭VI</text>
+
+        <!-- Dm — center tonic -->
+        <line x1="380" y1="90" x2="380" y2="112" stroke="#1a1a1a" stroke-width="2"/>
+        <circle cx="380" cy="114" r="5" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="380" y="130" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle">Dm</text>
+        <text x="380" y="143" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">tonic</text>
+
+        <!-- Fmaj7 (♭III) — between center and Aeolian -->
+        <line x1="300" y1="60" x2="300" y2="42" stroke="#e07b39" stroke-width="1.5"/>
+        <circle cx="300" cy="40" r="4" fill="#e07b39"/>
+        <text x="300" y="30" font-family="Space Mono,monospace" font-size="9" fill="#e07b39" text-anchor="middle">Fmaj7</text>
+        <text x="300" y="110" font-family="Space Mono,monospace" font-size="8" fill="#e07b39" text-anchor="middle">♭III</text>
+
+        <!-- G major (IV) — Dorian side -->
+        <line x1="560" y1="60" x2="560" y2="42" stroke="#5eaa6f" stroke-width="1.5"/>
+        <circle cx="560" cy="40" r="4" fill="#5eaa6f"/>
+        <text x="560" y="30" font-family="Space Mono,monospace" font-size="9" fill="#5eaa6f" text-anchor="middle">G(add9)</text>
+        <text x="560" y="110" font-family="Space Mono,monospace" font-size="8" fill="#5eaa6f" text-anchor="middle">IV — B♮</text>
+
+        <!-- Pull arrows -->
+        <text x="200" y="160" font-family="Space Mono,monospace" font-size="9" fill="#9b59b6" text-anchor="middle">← B♭ pulls Aeolian</text>
+        <text x="580" y="160" font-family="Space Mono,monospace" font-size="9" fill="#5eaa6f" text-anchor="middle">B♮ pulls Dorian →</text>
+      </svg>
+    </div>
+    <p>The modal spectrum runs from D Aeolian (B♭) through the ambiguous center to D Dorian (B natural). Using B♭maj7 pulls the piece toward the Aeolian end; using G(add9) pulls it toward Dorian. The tonic Dm sits at the center of both. Fmaj7 (♭III) adds a third pull — toward the relative major.</p>
+    <div class="sub-section">
+      <div class="sub-title">How to apply it in your session</div>
+      <p>In your pad voicings: let B♭ appear during B♭maj7 passages (Aeolian coloring) and B natural during G(add9) passages (Dorian coloring). The upper voice moves B♭ → B natural or B natural → B♭ at chord changes. This single half-step shift creates the feeling that the mode is deciding something — darkening or softening with each chord change.</p>
+    </div>
+  </content-card>
+
+  <content-card number="5" color="orange" title="The Bittersweet Formula">
+    <div class="sub-section">
+      <div class="sub-title">Warmth → wistful → catch → home</div>
+      <p>The most effective autumnal harmonic sequence assembles the borrowed chords into a four-step emotional arc: <span class="key">Fmaj7 → B♭maj7 → Gm7 → Dm(add9)</span>.</p>
+      <p>Fmaj7 is <em>warmth</em> — the borrowed ♭III, displaced but bright. B♭maj7 is <em>wistfulness</em> — the Aeolian ♭VI, soft and unresolved. Gm7 is <em>the catch in the chest</em> — the minor iv with a minor seventh, a fourth above the tonic with nowhere dramatic to go. Dm(add9) is <em>home</em> — the tonic, arrived at by settling rather than by being pulled.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 155" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-bs" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7" stroke="#e07b39" stroke-width="1.5" fill="none"/>
+          </marker>
+        </defs>
+
+        <!-- Fmaj7 box -->
+        <rect x="18"  y="35" width="148" height="62" rx="4" fill="#fdebd0" stroke="#e07b39" stroke-width="1.5"/>
+        <text x="92"  y="62" font-family="Space Mono,monospace" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Fmaj7</text>
+        <text x="92"  y="82" font-family="Space Mono,monospace" font-size="10" fill="#e07b39" text-anchor="middle">warmth</text>
+        <text x="92"  y="116" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">♭III</text>
+
+        <line x1="168" y1="66" x2="198" y2="66" stroke="#e07b39" stroke-width="1.5" marker-end="url(#arr-bs)"/>
+
+        <!-- Bbmaj7 box -->
+        <rect x="200" y="35" width="148" height="62" rx="4" fill="#f5eef8" stroke="#9b59b6" stroke-width="1.5"/>
+        <text x="274" y="62" font-family="Space Mono,monospace" font-size="14" font-weight="700" fill="#1a1a1a" text-anchor="middle">B♭maj7</text>
+        <text x="274" y="82" font-family="Space Mono,monospace" font-size="10" fill="#9b59b6" text-anchor="middle">wistful</text>
+        <text x="274" y="116" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">♭VI</text>
+
+        <line x1="350" y1="66" x2="380" y2="66" stroke="#e07b39" stroke-width="1.5" marker-end="url(#arr-bs)"/>
+
+        <!-- Gm7 box -->
+        <rect x="382" y="35" width="148" height="62" rx="4" fill="#e8f4f8" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="456" y="62" font-family="Space Mono,monospace" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Gm7</text>
+        <text x="456" y="82" font-family="Space Mono,monospace" font-size="10" fill="#3b82f6" text-anchor="middle">catch</text>
+        <text x="456" y="116" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">iv7</text>
+
+        <line x1="532" y1="66" x2="562" y2="66" stroke="#e07b39" stroke-width="1.5" marker-end="url(#arr-bs)"/>
+
+        <!-- Dm(add9) box -->
+        <rect x="564" y="35" width="178" height="62" rx="4" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="653" y="62" font-family="Space Mono,monospace" font-size="13" font-weight="700" fill="#1a1a1a" text-anchor="middle">Dm(add9)</text>
+        <text x="653" y="82" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">home</text>
+        <text x="653" y="116" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">i</text>
+      </svg>
+    </div>
+    <p>All four chords avoid dominant function. There is no V chord, no leading tone pulling urgently to the tonic, no resolution-as-arrival. The Dm(add9) at the end is reached by <em>settling</em> — by subdominant gravity, not dominant push. You don't arrive at home because you were compelled. You arrive because you were tired, and it was time.</p>
+    <div class="sub-section">
+      <div class="sub-title">The three-chord simplification</div>
+      <p>If the full four-chord arc is too busy for a slow passage, the <span class="key">three-chord kernel</span> strips out B♭maj7: Fmaj7 → Gm7 → Dm. Warmth goes directly to the catch, then to home. Both versions work — the four-chord version has more room to breathe; the three-chord version has more directness.</p>
+    </div>
+    <div class="principle-box">The bittersweet formula — Fmaj7 → B♭maj7 → Gm7 → Dm(add9) — is the complete autumnal harmonic statement. Use it once per piece as the emotional center of gravity. Everything else orbits around it.</div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It: The Bittersweet Episode">
+    <div class="sub-section">
+      <div class="sub-title">Session: "Autumnal Harmony v2"</div>
+      <p>Open your <span class="key">"Autumnal v1 — Subdominant Loop"</span> session from A04. You have an 8-bar subdominant loop at 70 BPM on one pad track. Now expand it into a 32-bar piece with a harmonic arc.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 1 — Establish the 16-bar opening</div>
+      <p>Duplicate the 8-bar subdominant loop twice to create a 16-bar opening: bars 1–16 are the established harmonic world (Dm, Cmaj7, G add9, B♭maj7). This is the world before the bittersweet episode. Let it play and feel settled before the arc begins.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 2 — Build the bittersweet arc (bars 17–32)</div>
+      <p>Program a new 8-bar episode using the bittersweet formula, then repeat it:</p>
+      <p>Bars 17–18: <span class="key">Fmaj7</span> — F3, A3, C4, E4. Warmth.</p>
+      <p>Bars 19–20: <span class="key">B♭maj7</span> — B♭2, D3, F3, A3. Wistfulness.</p>
+      <p>Bars 21–22: <span class="key">Gm7</span> — G3, B♭3, D4, F4. The catch in the chest.</p>
+      <p>Bars 23–24: <span class="key">Dm(add9)</span> — D3, F3, A3, E4. Home.</p>
+      <p>Bars 25–32: Repeat the same 8-bar episode. Your piece is now 32 bars with two large sections.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 3 — Listen for the arc</div>
+      <p>Play bars 1–32 from the beginning without stopping. Notice: bars 1–16 feel familiar and grounded. Bar 17 (Fmaj7) is a shift — warmer, slightly displaced from the established world. Bar 21 (Gm7) is the emotional hinge — the catch. Bar 23 (Dm add9) is the exhale. The piece now has a large-scale harmonic shape: establishment → departure → return.</p>
+    </div>
+    <p>Save as <span class="key">"Autumnal Harmony v2."</span> The bittersweet arc is in place. Future chapters add melody, register, and texture — but the harmonic structure is now complete.</p>
+  </content-card>
+
+</div>
+
+<site-banner>CHAPTER A05 ◇ MODAL MIXTURE ◇ THE BITTERSWEET FORMULA ◇ CHAPTER A05 ◇ MODAL MIXTURE ◇ THE BITTERSWEET FORMULA ◇</site-banner>
+
+<chapter-nav
+  prev-href="a04-subdominant-motion.html" prev-title="A04 — Subdominant Motion">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A05: MODAL MIXTURE — D AEOLIAN"></site-footer>
+
+</body>
+</html>

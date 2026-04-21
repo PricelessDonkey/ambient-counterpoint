@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A06 — Lydian Light: The Raised 4th as Late-Afternoon Color</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Sound"></site-nav>
+
+<site-banner>CHAPTER A06 ◇ LYDIAN LIGHT ◇ THE RAISED 4TH AS LATE-AFTERNOON COLOR ◇ CHAPTER A06 ◇ LYDIAN LIGHT ◇ THE RAISED 4TH AS LATE-AFTERNOON COLOR ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Lydian Light</span>
+  <span slot="subtitle">The raised 4th as late-afternoon color — use it once, and the shimmer disappears.</span>
+</site-hero>
+
+<intro-box>F Lydian is not a home mode — it's a single window that opens briefly onto late-afternoon light before October closes it again. The raised 4th degree (B natural above F) creates a tritone that doesn't resolve, doesn't demand, and doesn't darken. It simply hovers. This chapter explains what makes the Lydian quality distinct from the Dorian warmth and Aeolian depth already in your palette, how F Lydian relates to the D-root pieces you've been building, and when to deploy it. The rule is simple: once per piece, sparingly, and always followed by a return to shadow.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="What Makes Lydian Autumnal">
+    <div class="sub-section">
+      <div class="sub-title">The tritone that shimmers instead of resolving</div>
+      <p>Every mode has a characteristic interval. Phrygian has the ♭2 (the dramatic Spanish step). Dorian has the major 6th (the shaft of warmth in a minor key). Lydian has the <span class="key">tritone</span> between its root and its raised 4th. In F Lydian, the notes F and B natural are a tritone apart.</p>
+      <p>In most tonal contexts, a tritone is unstable — it wants to resolve. But in Lydian, the tritone doesn't resolve because the mode gives it no resolution target. The B natural isn't a leading tone pointing anywhere. It just sits at the raised 4th, creating a suspended shimmer. The ear keeps expecting a resolution that never comes, and that suspended expectation is the Lydian quality: <span class="key">floating</span>, <span class="key">dreamy</span>, <span class="key">late-afternoon</span>.</p>
+      <p>This is distinct from the other autumnal qualities. Aeolian is still and dark. Dorian is still and warm. Lydian is still and <em>luminous</em> — but briefly, like sun through a gap in clouds. The full F Lydian scale: F–G–A–B–C–D–E. The B natural is the only note that differs from F major.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- F Lydian scale: 7 note dots, B natural highlighted in orange -->
+      <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Horizontal guideline -->
+        <line x1="70" y1="70" x2="680" y2="70" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- Label: F LYDIAN -->
+        <text x="30" y="75" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">F</text>
+        <text x="30" y="86" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">LYD</text>
+
+        <!-- F -->
+        <circle cx="90" cy="70" r="5" fill="#4a7ab5"/>
+        <text x="90" y="93" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">F</text>
+
+        <!-- G -->
+        <circle cx="185" cy="70" r="5" fill="#4a7ab5"/>
+        <text x="185" y="93" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">G</text>
+
+        <!-- A -->
+        <circle cx="280" cy="70" r="5" fill="#4a7ab5"/>
+        <text x="280" y="93" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">A</text>
+
+        <!-- B natural — #4, orange and emphasized -->
+        <circle cx="375" cy="70" r="7" fill="#e07820"/>
+        <text x="375" y="93" font-family="Space Mono,monospace" font-size="10" fill="#e07820" text-anchor="middle" font-weight="bold">B♮</text>
+        <text x="375" y="107" font-family="Space Mono,monospace" font-size="9" fill="#e07820" text-anchor="middle">#4</text>
+
+        <!-- Annotation: "late-afternoon light" -->
+        <line x1="375" y1="61" x2="375" y2="42" stroke="#e07820" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <text x="375" y="36" font-family="Space Mono,monospace" font-size="9" fill="#e07820" text-anchor="middle">late-afternoon light</text>
+
+        <!-- C -->
+        <circle cx="470" cy="70" r="5" fill="#4a7ab5"/>
+        <text x="470" y="93" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">C</text>
+
+        <!-- D -->
+        <circle cx="565" cy="70" r="5" fill="#4a7ab5"/>
+        <text x="565" y="93" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">D</text>
+
+        <!-- E -->
+        <circle cx="650" cy="70" r="5" fill="#4a7ab5"/>
+        <text x="650" y="93" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">E</text>
+
+        <!-- Connecting line (blue, then orange at B, then blue again) -->
+        <polyline points="90,70 185,70 280,70" stroke="#4a7ab5" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <polyline points="280,70 375,70" stroke="#e07820" stroke-width="2" fill="none"/>
+        <polyline points="375,70 470,70 565,70 650,70" stroke="#4a7ab5" stroke-width="2" fill="none" stroke-linejoin="round"/>
+
+      </svg>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Why it's distinctly autumnal and not just bright</div>
+      <p>Lydian is sometimes described simply as "the bright mode" — but that framing misses what makes it useful here. The brightness of Lydian is <em>suspended</em> brightness, not grounded brightness. Major keys are bright and planted; Lydian is bright and floating. Because the raised 4th can't settle into a subdominant, the mode has no gravitational center — it drifts upward without landing.</p>
+      <p>That hovering quality is what puts Lydian in the autumnal palette at all. It doesn't feel safe or warm in the way Dorian does. It feels like light that hasn't decided where to fall. Debussy reaches for it in exactly those moments — a bar or two of shimmer before the piece returns to its Aeolian depth.</p>
+    </div>
+  </content-card>
+
+  <content-card number="2" color="green" title="Lydian vs Major">
+    <div class="sub-section">
+      <div class="sub-title">One note is the difference — but it changes everything</div>
+      <p>F Lydian and F major share six of their seven notes. The only difference is the 4th degree: F major has B♭ (a perfect 4th above F); F Lydian has B♮ (an augmented 4th — the tritone). That single substitution completely shifts the mode's character.</p>
+      <p>In F major, the B♭ creates strong subdominant pull. The note wants to resolve down to A or up to C. The mode is grounded because that subdominant gravity anchors it. Remove the B♭ and replace it with B♮ — a note that resists resolution in either direction — and the anchor disappears. The mode floats.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- F major vs F Lydian: two rows of note dots, differing 4th highlighted -->
+      <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Row labels -->
+        <text x="28" y="57" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5" text-anchor="middle">F MAJ</text>
+        <text x="28" y="122" font-family="Space Mono,monospace" font-size="9" fill="#e07820" text-anchor="middle">F LYD</text>
+
+        <!-- Row 1 guide -->
+        <line x1="70" y1="55" x2="680" y2="55" stroke="#d9d4ca" stroke-width="0.5"/>
+        <!-- Row 2 guide -->
+        <line x1="70" y1="120" x2="680" y2="120" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- ROW 1: F major — F G A Bb C D E -->
+        <!-- F -->
+        <circle cx="90"  cy="55" r="5" fill="#4a7ab5"/>
+        <text x="90"  y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">F</text>
+        <!-- G -->
+        <circle cx="185" cy="55" r="5" fill="#4a7ab5"/>
+        <text x="185" y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">G</text>
+        <!-- A -->
+        <circle cx="280" cy="55" r="5" fill="#4a7ab5"/>
+        <text x="280" y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">A</text>
+        <!-- Bb — the grounded 4th -->
+        <circle cx="375" cy="55" r="6" fill="#4a7ab5"/>
+        <text x="375" y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">B♭</text>
+        <text x="375" y="86" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">nat. 4 — grounded</text>
+        <!-- C -->
+        <circle cx="470" cy="55" r="5" fill="#4a7ab5"/>
+        <text x="470" y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">C</text>
+        <!-- D -->
+        <circle cx="565" cy="55" r="5" fill="#4a7ab5"/>
+        <text x="565" y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">D</text>
+        <!-- E -->
+        <circle cx="650" cy="55" r="5" fill="#4a7ab5"/>
+        <text x="650" y="74" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">E</text>
+
+        <!-- Row 1 connecting line -->
+        <polyline points="90,55 185,55 280,55 375,55 470,55 565,55 650,55" stroke="#4a7ab5" stroke-width="2" fill="none" stroke-linejoin="round"/>
+
+        <!-- ROW 2: F Lydian — F G A B♮ C D E -->
+        <!-- F -->
+        <circle cx="90"  cy="120" r="5" fill="#4a7ab5"/>
+        <text x="90"  y="139" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">F</text>
+        <!-- G -->
+        <circle cx="185" cy="120" r="5" fill="#4a7ab5"/>
+        <text x="185" y="139" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">G</text>
+        <!-- A -->
+        <circle cx="280" cy="120" r="5" fill="#4a7ab5"/>
+        <text x="280" y="139" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">A</text>
+        <!-- B natural — the raised 4th (orange) -->
+        <circle cx="375" cy="120" r="7" fill="#e07820"/>
+        <text x="375" y="139" font-family="Space Mono,monospace" font-size="10" fill="#e07820" text-anchor="middle" font-weight="bold">B♮</text>
+        <text x="375" y="151" font-family="Space Mono,monospace" font-size="8" fill="#e07820" text-anchor="middle">#4 — floating</text>
+        <!-- C -->
+        <circle cx="470" cy="120" r="5" fill="#4a7ab5"/>
+        <text x="470" y="139" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">C</text>
+        <!-- D -->
+        <circle cx="565" cy="120" r="5" fill="#4a7ab5"/>
+        <text x="565" y="139" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">D</text>
+        <!-- E -->
+        <circle cx="650" cy="120" r="5" fill="#4a7ab5"/>
+        <text x="650" y="139" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">E</text>
+
+        <!-- Row 2 connecting line (orange at the raised 4th) -->
+        <polyline points="90,120 185,120 280,120" stroke="#4a7ab5" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <polyline points="280,120 375,120" stroke="#e07820" stroke-width="2" fill="none"/>
+        <polyline points="375,120 470,120 565,120 650,120" stroke="#4a7ab5" stroke-width="2" fill="none" stroke-linejoin="round"/>
+
+        <!-- Vertical bracket between the two 4th degrees -->
+        <line x1="407" y1="60" x2="407" y2="115" stroke="#888" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="415" y="92" font-family="Space Mono,monospace" font-size="8" fill="#888">+1</text>
+
+      </svg>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The subdominant you removed</div>
+      <p>In tonal harmony, the subdominant (IV chord) is built on the 4th degree. In F major, the IV chord is B♭ major — a powerful anchor. Remove the B♭ and that anchor disappears. F Lydian has no IV chord in the usual sense. The chord built on B♮ would be B diminished — unstable, and rarely heard in Lydian contexts. In practice, Lydian music simply doesn't use IV. It hovers between I and II (which in F Lydian is G major — a major chord built on the 2nd, also unusual). The absence of subdominant pull is precisely what creates the floating quality.</p>
+    </div>
+  </content-card>
+
+  <content-card number="3" title="F Lydian Inside a D-Root Piece">
+    <div class="sub-section">
+      <div class="sub-title">Five shared notes — a color shift, not a modulation</div>
+      <p>F Lydian and D Dorian share all seven of their notes:</p>
+      <p>F Lydian: F–G–A–<strong>B</strong>–C–D–E<br>
+      D Dorian:  D–E–F–G–A–<strong>B</strong>–C</p>
+      <p>The only difference is which root the music is centered on. Both modes contain B natural, C natural, D, E, F, G, and A. When you shift the tonal center from D to F, you're not changing the scale — you're changing which note feels like home. The listener stays in familiar harmonic territory; only the angle of light shifts.</p>
+      <p>This is why a brief F Lydian episode in a D-centered piece feels related and displaced at the same time. You haven't left the modal world — you've moved to a different window inside it. When the music returns to D Aeolian or D Dorian, the listener understands both where they went and where they came back.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">B natural as pivot</div>
+      <p>The <span class="key">pivot note</span> between D Dorian and F Lydian is B natural. In D Dorian, B natural is the raised 6th — the Dorian characteristic tone, the note that makes the IV chord major, the warmth in the mode. In F Lydian, B natural is the raised 4th — the Lydian characteristic tone, the shimmer.</p>
+      <p>This pivot is why moving from D Dorian to F Lydian sounds smooth rather than jarring. The B natural is already in the air; you're just recontextualizing it. The same note that warmed the Dorian passage now floats the Lydian one. When the B natural disappears on return (replaced by B♭ in Aeolian, or kept but recentered on D in Dorian), the shimmer closes.</p>
+    </div>
+  </content-card>
+
+  <content-card number="4" color="orange" title="When to Use Lydian">
+    <div class="sub-section">
+      <div class="sub-title">Once per piece. Briefly. Before darkness returns.</div>
+      <p>Lydian is the most powerful color in the autumnal palette precisely because it's the rarest. Use it twice in a piece and it starts to feel like a new home. Use it once, and it feels like a shaft of late-afternoon light — which is exactly what it is.</p>
+      <p>The structural role of a Lydian episode is to interrupt the settled darkness briefly, create a moment of unexpected brightness, and then resolve back to shadow. That arc — <span class="key">shadow → light → shadow</span> — is what makes the return to Aeolian or Dorian feel like acceptance rather than failure. The listener needed to see that it was possible for the sun to come through before they could accept that it went away again.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Debussy's model</div>
+      <p>In <em>Feuilles mortes</em> (Dead Leaves), Debussy uses Lydian color exactly once, as a brief shimmer in the middle section, before returning to the Aeolian depth of the opening. Satie does something similar in the Gymnopédies. In both cases, the Lydian moment is short enough to feel like a memory of light rather than an actual change of scene. <strong>Two to four bars is usually enough.</strong> Longer than that and it stops being an episode and starts feeling like a new piece.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Placement</div>
+      <p>The most effective placement for a Lydian episode is at the <span class="key">formal midpoint</span> — after the harmonic material has been established, and before the final section. The listener knows the world well enough to feel the contrast; the piece still has time to settle back into shadow and close there. Placing it too early (before the home mode is established) means there's nothing to contrast with. Placing it too late (near the end) prevents the return to shadow.</p>
+    </div>
+  </content-card>
+
+  <content-card number="5" color="purple" title="The ♯11 Chord">
+    <div class="sub-section">
+      <div class="sub-title">Lydian color without a full modal commitment</div>
+      <p>You don't have to sustain a full F Lydian passage to get the Lydian quality. The <span class="key">major 7th chord with a ♯11</span> — written Fmaj7(♯11) — contains five of the seven notes of F Lydian in a single chord voicing:</p>
+      <p>Fmaj7(♯11) = F–A–C–E–B♮</p>
+      <p>The B natural (the ♯11, the tritone above F) is the Lydian color tone. When it appears in the upper register of a chord voicing — high above the other tones — it creates the shimmer effect without the mode needing to be spelled out melodically or sustained over multiple bars. Even one note, the B natural on top of an otherwise familiar Fmaj7, evokes the quality. (The chord captures five of the seven notes of F Lydian; only G and D are absent.)</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Fmaj7(#11) piano-roll voicing: F3, A3, C4, E4, B4 -->
+      <!-- 14px per semitone. B4=y20 (ref), E4=y118, C4=y174, A3=y216, F3=y272 -->
+      <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Pitch grid lines -->
+        <line x1="90" y1="20"  x2="680" y2="20"  stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="90" y1="118" x2="680" y2="118" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="90" y1="174" x2="680" y2="174" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="90" y1="216" x2="680" y2="216" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="90" y1="272" x2="680" y2="272" stroke="#d9d4ca" stroke-width="0.5"/>
+
+        <!-- Pitch labels -->
+        <text x="82" y="24"  font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">B4</text>
+        <text x="82" y="122" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">E4</text>
+        <text x="82" y="178" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">C4</text>
+        <text x="82" y="220" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">A3</text>
+        <text x="82" y="276" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">F3</text>
+
+        <!-- Bar line at left edge -->
+        <line x1="120" y1="8" x2="120" y2="284" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Note blocks (whole note = 300px wide) -->
+        <!-- F3 — root — blue -->
+        <rect x="120" y="266" width="300" height="10" rx="2" fill="#4a7ab5"/>
+        <!-- A3 — major 3rd — blue -->
+        <rect x="120" y="210" width="300" height="10" rx="2" fill="#4a7ab5"/>
+        <!-- C4 — perfect 5th — blue -->
+        <rect x="120" y="168" width="300" height="10" rx="2" fill="#4a7ab5"/>
+        <!-- E4 — major 7th — blue -->
+        <rect x="120" y="112" width="300" height="10" rx="2" fill="#4a7ab5"/>
+        <!-- B4 — #11 — orange (the Lydian color) -->
+        <rect x="120" y="14"  width="300" height="10" rx="2" fill="#e07820"/>
+
+        <!-- Labels right of each block -->
+        <text x="432" y="24"  font-family="Space Mono,monospace" font-size="9" fill="#e07820">♯11 — the shimmer</text>
+        <text x="432" y="122" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5">major 7th</text>
+        <text x="432" y="178" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5">perfect 5th</text>
+        <text x="432" y="220" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5">major 3rd</text>
+        <text x="432" y="276" font-family="Space Mono,monospace" font-size="9" fill="#4a7ab5">root</text>
+
+        <!-- Chord label (watermark) -->
+        <text x="270" y="200" font-family="Space Mono,monospace" font-size="13" fill="#1a1a1a" text-anchor="middle" opacity="0.1" font-weight="bold">Fmaj7(♯11)</text>
+
+      </svg>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Voicing the ♯11</div>
+      <p>The B natural needs to sit above the other tones for the ♯11 effect to read clearly. If it's buried in the middle of the voicing, it blurs with the other partials and loses its shimmering character. Keep it in the upper octave — above E4 — so it can float above the harmonic foundation.</p>
+      <p>In Ableton: program the Fmaj7 chord normally (F3–A3–C4–E4), then add B4 as a separate upper note. You can give it a slightly lighter velocity (perhaps 10–15 velocity points lower than the other chord tones) so it sits above the chord without dominating. The effect is a chord that sounds familiar but faintly lit — like sunlight on water.</p>
+      <p>You can also use the ♯11 note in the melody rather than the chord: sustain a plain Fmaj7 in the pad, and play a B4 as a melody note above it. The harmonic effect is the same; the approach just gives you more control over the note's duration and dynamics.</p>
+    </div>
+    <div class="principle-box">
+      One note is enough. The B natural above an Fmaj7 chord creates the Lydian quality without the mode. Place it on top, give it space, and let it hover.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It: The Lydian Episode">
+    <div class="sub-section">
+      <div class="sub-title">Four bars of late-afternoon light</div>
+      <p>Open your <strong>"Autumnal Harmony v2"</strong> session from Ch 5. You have 32 bars: the subdominant skeleton in bars 1–16 and the bittersweet modal mixture episode in bars 17–32.</p>
+      <p>Add a <span class="key">Lydian episode</span> at bar 33:</p>
+      <ol>
+        <li>Bars 33–34: Program <strong>Fmaj7(♯11)</strong> — F3, A3, C4, E4, B4. Give the B4 about 80% of the velocity of the other notes. Let it sustain for the full 2 bars. This is the shimmer opening.</li>
+        <li>Bars 35–36: Remove the B4 and drop back to <strong>Dm(add9)</strong> — D3, F3, A3, E4. The shimmer disappears; October returns. Let the Dm(add9) settle quietly.</li>
+      </ol>
+      <p>Play bars 29–36 in sequence: Gm7 (yearning) → Dm(add9) (home) → Fmaj7(♯11) (shimmer) → Dm(add9) (return). Notice that the Lydian moment only works because it's brief, and the return to Dm(add9) lands more heavily after it — the contrast deepens both the light and the shadow.</p>
+      <p>Your piece is now 36 bars. The Lydian episode sits at bars 33–34, about two-thirds through. Save as <strong>"Autumnal Harmony v3."</strong></p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">What you have in the session</div>
+      <p>Bars 1–16: subdominant skeleton — Dm(add9), Cmaj7, Dm, G(add9), Bbmaj7 cycling through three settling cadences.<br>
+      Bars 17–32: bittersweet episode — Fmaj7 → Bbmaj7 → Gm7 → Dm(add9), the warmth/sadness/yearning/home arc.<br>
+      Bars 33–34: Lydian shimmer — Fmaj7(♯11), late-afternoon light.<br>
+      Bars 35–36: return — Dm(add9), October settles back in.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>CHAPTER A06 ◇ LYDIAN LIGHT ◇ THE RAISED 4TH AS LATE-AFTERNOON COLOR ◇ CHAPTER A06 ◇ LYDIAN LIGHT ◇ THE RAISED 4TH AS LATE-AFTERNOON COLOR ◇</site-banner>
+
+<chapter-nav
+  prev-href="a05-modal-mixture.html" prev-title="A05 — Modal Mixture">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A06: LYDIAN LIGHT — D AEOLIAN"></site-footer>
+
+</body>
+</html>

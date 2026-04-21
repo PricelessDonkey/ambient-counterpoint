@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A04 — Subdominant Motion: Cadences That Settle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Sound"></site-nav>
+
+<site-banner>CHAPTER A04 ◇ SUBDOMINANT MOTION ◇ CADENCES THAT SETTLE ◇ CHAPTER A04 ◇ SUBDOMINANT MOTION ◇ CADENCES THAT SETTLE ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Subdominant Motion</span>
+  <span slot="subtitle">Instead of tension–resolution, try weight–rest.</span>
+</site-hero>
+
+<intro-box>The dominant chord (V) creates urgency — a pull that demands resolution. Subdominant-direction cadences (♭VII–i, IV–i, ♭VI–i) do something different: they let the tonic arrive without drama. This chapter is about replacing the expectation-fulfillment loop with the gentler sensation of settling — a stone coming to rest, not a resolution.</intro-box>
+
+<div class="content">
+
+  <content-card number="16" title="Subdominant vs Dominant Gravity">
+    <div class="sub-section">
+      <div class="sub-title">Two kinds of pull</div>
+      <p>The <span class="key">dominant chord</span> (A major or A7 in D) exerts a specific kind of harmonic pressure: it contains C#, the leading tone that wants to rise to D by a half step. This creates an expectation that must be resolved. The tension is felt physically.</p>
+      <p>The <span class="key">subdominant direction</span> — chords built on or around the IV, ♭VI, and ♭VII — creates a different pull. It gravitates toward the tonic not by tension but by weight. There is no leading tone, no half-step urgency. The tonic feels like a place to rest, not a place to fall to.</p>
+      <p>This distinction is the harmonic engine of autumnal music. Every technique in this series exploits subdominant gravity. If your piece feels too dramatic or too resolved, check whether a V chord snuck in.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- Three cadence types: V–I (tense), ♭VII–I (drift), IV–I (arch) -->
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#e04848"/>
+          </marker>
+          <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#4a90d9"/>
+          </marker>
+          <marker id="arr-green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#4caf7d"/>
+          </marker>
+        </defs>
+
+        <!-- V–I panel -->
+        <text x="130" y="20" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">V – i (dominant)</text>
+        <text x="80" y="60" font-family="Space Mono,monospace" font-size="13" fill="#e04848" text-anchor="middle">A maj</text>
+        <text x="180" y="100" font-family="Space Mono,monospace" font-size="13" fill="#e04848" text-anchor="middle">Dm</text>
+        <line x1="100" y1="62" x2="162" y2="96" stroke="#e04848" stroke-width="2.5" marker-end="url(#arr-red)"/>
+        <text x="130" y="140" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle" font-style="italic">tense fall</text>
+
+        <!-- ♭VII–I panel -->
+        <text x="380" y="20" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">♭VII – i (drift)</text>
+        <text x="330" y="80" font-family="Space Mono,monospace" font-size="13" fill="#4a90d9" text-anchor="middle">C maj</text>
+        <text x="430" y="80" font-family="Space Mono,monospace" font-size="13" fill="#4a90d9" text-anchor="middle">Dm</text>
+        <line x1="360" y1="80" x2="408" y2="80" stroke="#4a90d9" stroke-width="2.5" marker-end="url(#arr-blue)"/>
+        <text x="380" y="140" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle" font-style="italic">horizontal drift</text>
+
+        <!-- IV–I panel -->
+        <text x="630" y="20" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">IV – i (plagal)</text>
+        <text x="580" y="60" font-family="Space Mono,monospace" font-size="13" fill="#4caf7d" text-anchor="middle">G maj</text>
+        <text x="680" y="100" font-family="Space Mono,monospace" font-size="13" fill="#4caf7d" text-anchor="middle">Dm</text>
+        <path d="M 600,68 Q 630,50 660,92" stroke="#4caf7d" stroke-width="2.5" fill="none" marker-end="url(#arr-green)"/>
+        <text x="630" y="140" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle" font-style="italic">gentle arch</text>
+
+        <!-- dividers -->
+        <line x1="255" y1="10" x2="255" y2="150" class="grid-line"/>
+        <line x1="505" y1="10" x2="505" y2="150" class="grid-line"/>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="17" color="blue" title="The ♭VII–i Motion: Drift">
+    <div class="sub-section">
+      <div class="sub-title">C major → Dm in D</div>
+      <p>C major to Dm is the most common autumnal cadence. C natural has no leading-tone relationship to D — there is no C# pulling upward, no half-step urgency. The motion feels <span class="key">horizontal</span>: the chord shifts rather than resolves.</p>
+      <p>The sensation is of sitting down. The tonic arrives, but without drama. This is why ♭VII–i is ubiquitous in ambient music, post-rock, and folk — it signals arrival without the formal weight of a perfect cadence.</p>
+      <p>In D Aeolian, C major is the ♭VII chord. In D Dorian it occupies the same structural position. Either way, the motion is gentle. Use it to close phrases, return to tonic after excursions, or end a section without announcing it.</p>
+    </div>
+  </content-card>
+
+  <content-card number="18" color="green" title="The IV–i Motion: Plagal (Amen)">
+    <div class="sub-section">
+      <div class="sub-title">G major → Dm in D</div>
+      <p>The <span class="key">plagal cadence</span> — IV to i — is the amen cadence of church music. Moving from the major IV to the minor tonic has a quality of gentleness and completion. It is warm rather than melancholy, resolved rather than floating.</p>
+      <p>In D Dorian (where G major is the diatonic IV), this cadence is native and common. In D Aeolian, G minor is the diatonic IV — so using G major here is already a touch of modal colour, a slightly warmer light before the Aeolian darkness of Dm.</p>
+      <p>The plagal arch is slightly more settled than ♭VII–i. Where the drift feels like a gentle landing, the plagal feels like a hand placed gently on a surface. Use it for moments of warmth and rest, especially after active passages.</p>
+      <p>See <a href="ch05-cadences.html">Ch 05 — Cadential Types</a> for a full taxonomy of Bach cadences, including how he avoids the plagal in favour of the perfect authentic.</p>
+    </div>
+  </content-card>
+
+  <content-card number="19" color="purple" title="The ♭VI–i Motion: Wistful Arrival">
+    <div class="sub-section">
+      <div class="sub-title">B♭ major → Dm in D</div>
+      <p>The darkest of the subdominant cadences. B♭ major to Dm has a slight downward pull: the root Bb descends by half step to A — the fifth of Dm — a genuine semitone resolution that gives the motion its <span class="key">melancholy quality</span>. D and F are common tones shared between both chords, making the voice leading exceptionally smooth. Neither ♭VII–i nor IV–i has this half-step root pull.</p>
+      <p>Use ♭VI–i for moments of wistful or bittersweet arrival — the emotional equivalent of exhaling slowly. It is sadder than the plagal, more introspective than the drift. In extended progressions, it makes the finest closing gesture before the final tonic.</p>
+      <p>B♭ major is native to D Aeolian (the ♭VI chord). It is slightly foreign in D Dorian, which raises the sixth degree to B natural. This means ♭VI–i in a Dorian context carries a faint borrowed quality — a hint of darkness from the parallel minor.</p>
+    </div>
+  </content-card>
+
+  <content-card number="20" color="red" title="Avoiding V–i: When the Leading Tone Is the Enemy">
+    <div class="sub-section">
+      <div class="sub-title">What A major does to the mood</div>
+      <p>A major (or A7) contains C#, the leading tone a half step below D. This note wants to resolve upward, and the ear hears it as a <span class="key">directed tension</span>. When the dominant resolves to tonic, the effect is functional: drama fulfilled, expectation met.</p>
+      <p>In autumnal music, this is usually wrong. The fulfilled expectation pulls the listener out of stasis and into narrative. The piece suddenly has a climax, a before and after. This is the opposite of the environmental quality we are building.</p>
+      <p>The softened dominant — <span class="key">A minor</span> or <span class="key">Am7</span> — is acceptable. Without C# the leading-tone urgency disappears. Am7 (A–C–E–G) functions more like a colour chord than a functional dominant; the C natural softens the pull entirely.</p>
+      <p>Reserve A major for an explicit climax moment — a single point of arrival, if the piece has one. Most autumnal pieces should have at most one, and some should have none. If your progression contains multiple A major chords, the mood will tip toward the dramatic regardless of how slow your harmonic rhythm is.</p>
+      <p>For the minimalist analogue — how drone and pedal points absorb dominant tension — see <a href="m11-drone-and-pedal.html">M11 — Drone and Pedal</a>.</p>
+    </div>
+  </content-card>
+
+  <content-card number="21" title="The 8-Bar Subdominant Loop">
+    <div class="sub-section">
+      <div class="sub-title">Settling vs resolving — a visual comparison</div>
+      <p>The harmonic rhythm map below shows the 8-bar loop from the Build It exercise. Each block is one bar. Notice that Dm appears four times — but it arrives differently each time depending on which chord precedes it.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <!-- 8-bar harmonic rhythm map -->
+      <svg viewBox="0 0 760 120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bar grid lines -->
+        <line x1="30" y1="30" x2="730" y2="30" class="grid-line"/>
+        <line x1="30" y1="80" x2="730" y2="80" class="grid-line"/>
+
+        <!-- Bar labels -->
+        <text x="10" y="60" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">bars</text>
+
+        <!-- Block widths: 8 bars across 700px = 87.5px each; 2 bars = 175px -->
+        <!-- Dm(add9) × 2 bars -->
+        <rect x="30" y="35" width="175" height="40" rx="4" fill="#4a90d9" opacity="0.8"/>
+        <text x="117" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">Dm(add9) ×2</text>
+
+        <!-- Cmaj7 × 1 bar -->
+        <rect x="205" y="35" width="87" height="40" rx="4" fill="#8b6fb5" opacity="0.8"/>
+        <text x="249" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">Cmaj7</text>
+
+        <!-- Dm × 1 bar -->
+        <rect x="292" y="35" width="87" height="40" rx="4" fill="#4a90d9" opacity="0.6"/>
+        <text x="336" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">Dm</text>
+
+        <!-- G(add9) × 1 bar -->
+        <rect x="379" y="35" width="87" height="40" rx="4" fill="#4caf7d" opacity="0.8"/>
+        <text x="423" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">G(add9)</text>
+
+        <!-- Dm × 1 bar -->
+        <rect x="466" y="35" width="87" height="40" rx="4" fill="#4a90d9" opacity="0.6"/>
+        <text x="510" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">Dm</text>
+
+        <!-- Bbmaj7 × 1 bar -->
+        <rect x="553" y="35" width="87" height="40" rx="4" fill="#e09a3a" opacity="0.8"/>
+        <text x="597" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">Bbmaj7</text>
+
+        <!-- Dm × 1 bar -->
+        <rect x="640" y="35" width="87" height="40" rx="4" fill="#4a90d9" opacity="0.6"/>
+        <text x="684" y="60" font-family="Space Mono,monospace" font-size="10" fill="#fff" text-anchor="middle">Dm</text>
+
+        <!-- Bar number labels -->
+        <text x="117" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">1–2</text>
+        <text x="249" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">3</text>
+        <text x="336" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">4</text>
+        <text x="423" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">5</text>
+        <text x="510" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">6</text>
+        <text x="597" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">7</text>
+        <text x="684" y="100" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">8</text>
+
+        <!-- Cadence type labels at top -->
+        <text x="249" y="22" font-family="Space Mono,monospace" font-size="8" fill="#8b6fb5" text-anchor="middle">♭VII–i drift</text>
+        <text x="423" y="22" font-family="Space Mono,monospace" font-size="8" fill="#4caf7d" text-anchor="middle">IV–i plagal</text>
+        <text x="597" y="22" font-family="Space Mono,monospace" font-size="8" fill="#e09a3a" text-anchor="middle">♭VI–i wistful</text>
+      </svg>
+    </div>
+
+    <div class="sub-section">
+      <p>Each of the three subdominant cadences occurs once in the loop. The ♭VII (Cmaj7) drifts to Dm at bar 4. The IV (G add9) arches gently to Dm at bar 6. The ♭VI (Bbmaj7) closes with wistful weight at bar 8. All three return to the same tonic — but the emotional character of each arrival is different.</p>
+      <p>Notice that there is no A major anywhere in the loop. The absence of the leading tone is why it doesn't feel like it's going anywhere. It simply turns.</p>
+    </div>
+
+    <div class="principle-box">
+      Subdominant cadences don't resolve — they settle. The distinction is felt rather than heard: one has a destination, the other has a resting place. Autumnal music lives in the resting place.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It: Redesign the Progression">
+    <div class="sub-section">
+      <div class="sub-title">Open your A03 session</div>
+      <p>Open "Autumnal v1 — Harmonic Skeleton" — the 16-bar session from A03 with five re-voiced chord clips (Dm add9, Cmaj7, Dm plain, G add9, Bbmaj7). You will rebuild the arrangement around a new 8-bar loop that uses only subdominant-direction motion.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The 8-bar subdominant loop</div>
+      <p>Replace your 16-bar arrangement with this loop (whole-note chord changes, one chord every 2 bars at 70 BPM — but for bars 3–8 use single-bar changes to keep the loop moving):</p>
+      <p>Dm(add9) × 2 bars → Cmaj7 × 1 → Dm × 1 → G(add9) × 1 → Dm × 1 → Bbmaj7 × 1 → Dm × 1</p>
+      <p>You already have all five clips voiced from A03. Arrange them in this order in a new Scene. Keep the same warm pad sound, same voicings.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Listen for the absence of urgency</div>
+      <p>Loop the 8 bars and let it run for 3–4 minutes. Notice what doesn't happen: there is no moment of arrival, no fulfilled expectation. The tonic appears three times in 8 bars — each time with a different quality (after drift, after arch, after wistful weight) — but none of them feel like endings.</p>
+      <p>If anything feels too dramatic, check whether the pad voicing is placing a leading-tone (C#) in the upper register by accident. Remove it if found.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Save</div>
+      <p>Save as "Autumnal v1 — Subdominant Loop." This 8-bar loop is your new harmonic skeleton for the rest of the series. A05 will add modal mixture on top of it.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>CHAPTER A04 ◇ SUBDOMINANT MOTION ◇ WEIGHT NOT DRAMA ◇ CHAPTER A04 ◇ SUBDOMINANT MOTION ◇ WEIGHT NOT DRAMA ◇</site-banner>
+
+<chapter-nav
+  prev-href="a03-extended-chords.html" prev-title="A03 — Extended Chords"
+  next-href="a05-modal-mixture.html"   next-title="A05 — Modal Mixture">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A04: SUBDOMINANT MOTION — D AEOLIAN"></site-footer>
+
+</body>
+</html>

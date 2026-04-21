@@ -36,6 +36,13 @@
     <span id="rel-notes" class="hn-relative-notes">—</span>
   </div>
 
+  <div id="lydian-episode" class="hn-relative" style="display:none">
+    <span class="hn-relative-label">Lydian Episode:</span>
+    <span id="lyd-name" class="hn-relative-name">—</span>
+    <span id="lyd-notes" class="hn-relative-notes">—</span>
+    <span class="hn-hint" style="display:block;margin-top:4px;">Brief late-afternoon shimmer — use once per piece before returning to shadow</span>
+  </div>
+
   <div id="navigator" class="hn-grid" style="display:none">
 
     <!-- COLUMN 1: ARRIVAL -->
@@ -208,7 +215,7 @@
     {
       bach:    { tip: 'The mediant (III) is the relative major — a lift of mood using the same pitches. A natural modulation target in ritornello and episode sections.', ch: 'ch09-large-scale-form.html', label: 'Ch 09 — Large-Scale Form' },
       voice:   { tip: 'Approach III via the subtonic 7th chord (a 7th built on VII) — three shared notes make the move seamless. In harmonic minor, the raised leading tone creates brief chromatic friction before III absorbs it.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
-      ambient: { tip: 'i → III is the bright two-chord pair: same pitch set, different tonal center. Glass and Nala Sinephro exploit this — minimal harmonic distance, maximum emotional contrast. Hold each chord 8+ bars and let the shift register as mood, not motion.', ch: 'm11-diatonic-stasis.html', label: 'M11 — Diatonic Stasis' }
+      ambient: { tip: 'i → ♭III is the bright two-chord pair: same pitch set, different tonal center. Glass and Nala Sinephro exploit this — minimal harmonic distance, maximum emotional contrast. Hold each chord 8+ bars and let the shift register as mood. For a late-afternoon shimmer, treat ♭III as a Lydian episode chord: add the #11 (raised 4th above ♭III) in the upper register — one note evokes the full Lydian float without committing to the mode.', ch: 'a06-lydian-light.html', label: 'A06 — Lydian Light' }
     },
     {
       bach:    { tip: 'Subdominant is gravity before the fall. Pair with a suspended 4th resolving to 3rd over V for the classic cadential approach.', ch: 'ch05-harmonic-foundations.html', label: 'Ch 05 — Harmonic Foundations' },
@@ -267,6 +274,23 @@
     return { label, name: `${relRoot} ${relScaleName}`, notes: relNotes };
   }
 
+  function getLydianEpisode(tonicName, scaleName) {
+    if (scaleName === 'Lydian') return null;
+    const rootIdx = NOTES.indexOf(tonicName);
+    let offset, label;
+    if (scaleName === 'Aeolian' || scaleName === 'Harmonic Minor' || scaleName === 'Dorian' || scaleName === 'Phrygian') {
+      offset = 3; label = '♭III Lydian';
+    } else if (scaleName === 'Major') {
+      offset = 5; label = 'IV Lydian';
+    } else {
+      return null;
+    }
+    const lydRoot = getNote(rootIdx, offset);
+    const lydRootIdx = NOTES.indexOf(lydRoot);
+    const lydNotes = SCALES['Lydian'].map(p => getNote(lydRootIdx, p));
+    return { label, name: `${lydRoot} Lydian`, notes: lydNotes };
+  }
+
   function getQual(root, third) {
     const diff = (NOTES.indexOf(third) - NOTES.indexOf(root) + 12) % 12;
     return diff === 3 ? 'm' : diff === 6 ? 'dim' : '';
@@ -297,6 +321,16 @@
       relBox.style.display = 'block';
     } else {
       relBox.style.display = 'none';
+    }
+
+    const lyd = getLydianEpisode(tonicSelect.value, scaleSelect.value);
+    const lydBox = document.getElementById('lydian-episode');
+    if (lyd) {
+      document.getElementById('lyd-name').innerText = `${lyd.label}: ${lyd.name}`;
+      document.getElementById('lyd-notes').innerText = `(${lyd.notes.join(' – ')})`;
+      lydBox.style.display = 'block';
+    } else {
+      lydBox.style.display = 'none';
     }
   }
 
