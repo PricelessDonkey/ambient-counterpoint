@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A08 — Behind the Beat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Aesthetics"></site-nav>
+
+<site-banner>CHAPTER A08 ◇ BEHIND THE BEAT ◇ RUBATO ◇ THE SIGHING PHRASE ◇ BEHIND THE BEAT ◇ RUBATO ◇ THE SIGHING PHRASE ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Behind the Beat</span>
+  <span slot="subtitle">Slightly late is more expressive than exactly on time. But only slightly.</span>
+</site-hero>
+
+<intro-box>A note nudged 12ms after the grid sounds considered. A phrase that settles behind the beat at its end sounds like a sigh. This chapter covers intentional lateness — how to place notes slightly after the metric grid in a DAW, how phrases breathe through micro-tempo variation (rubato), and why the last note of an autumnal phrase often arrives just a little late. The goal is a melody that sounds felt rather than programmed.</intro-box>
+
+<div class="content">
+
+  <content-card number="36" title="What 'Behind the Beat' Means">
+    <div class="sub-section">
+      <div class="sub-title">Note onset timing</div>
+      <p>A note placed exactly on the metric grid is quantized — mathematically correct, emotionally neutral. A note placed slightly <span class="key">after</span> the grid is behind the beat. This is not sloppy playing; it is a deliberate expressive choice. The difference between a phrase that sounds <em>composed</em> and one that sounds <em>felt</em> is often found in this 8–15ms gap.</p>
+      <p>Too far behind (50ms or more) and it sounds like a missed beat. Too far ahead and it sounds rushed. The autumnal sweet spot is a gentle tardiness — the note arrives just after you expected it, like a sentence ending with a pause before the last word.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Three timing positions</div>
+      <p>In DAW production there are three effective positions for note onset: <span class="key">ahead of the beat</span> (urgent, anxious), <span class="key">on the beat</span> (neutral, mechanical), and <span class="key">behind the beat</span> (settled, considered). Most MIDI sequencers quantize to exactly on the beat. Autumnal melody lives in the third position.</p>
+      <p>This is not swing quantize, which creates a patterned offset across all notes. It is individual, note-by-note intent. The same offset applied thoughtfully to a select few notes — particularly phrase-ending notes — is all that is needed.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Grid vs nudged: note exactly on grid vs 12ms after -->
+      <svg viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr08a" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#1a1a1a"/>
+          </marker>
+          <marker id="arr08b" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#e04848"/>
+          </marker>
+        </defs>
+        <!-- background -->
+        <rect x="0" y="0" width="760" height="140" fill="#f5f0e8"/>
+        <!-- grid lines -->
+        <line x1="80" y1="10" x2="80" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="260" y1="10" x2="260" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="440" y1="10" x2="440" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="620" y1="10" x2="620" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <!-- beat labels -->
+        <text x="80" y="24" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BEAT 1</text>
+        <text x="260" y="24" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BEAT 2</text>
+        <text x="440" y="24" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BEAT 3</text>
+        <text x="620" y="24" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" fill="#888">BEAT 4</text>
+        <!-- row labels -->
+        <text x="10" y="65" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a">ON GRID</text>
+        <text x="10" y="105" font-family="Space Mono,monospace" font-size="10" fill="#e04848">+12ms</text>
+        <!-- on-grid note block -->
+        <rect x="80" y="52" width="90" height="16" rx="2" fill="#4a7fa5" opacity="0.9"/>
+        <!-- nudged note block -->
+        <rect x="107" y="92" width="90" height="16" rx="2" fill="#e04848" opacity="0.85"/>
+        <!-- vertical beat-1 marker line -->
+        <line x1="80" y1="40" x2="80" y2="120" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <!-- offset arrow -->
+        <line x1="80" y1="84" x2="105" y2="84" stroke="#e04848" stroke-width="1.5" marker-end="url(#arr08b)"/>
+        <text x="88" y="79" font-family="Space Mono,monospace" font-size="9" fill="#e04848">+12ms</text>
+        <!-- labels -->
+        <text x="125" y="48" font-family="Space Mono,monospace" font-size="9" fill="#4a7fa5">quantized — correct, neutral</text>
+        <text x="152" y="88" font-family="Space Mono,monospace" font-size="9" fill="#e04848">nudged — late, considered</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="37" color="green" title="Rubato: Phrases That Breathe">
+    <div class="sub-section">
+      <div class="sub-title">Tempo flexibility as expression</div>
+      <p><span class="key">Rubato</span> (from Italian <em>rubare</em>, to steal) means flexible tempo where the phrase breathes — slightly faster through moments of urgency, slightly slower at moments of rest. This is not random tempo fluctuation. A phrase "inhales" (gentle acceleration) and "exhales" (gentle retardation at the end). This is how Debussy, Bill Evans, and Sibelius shape time.</p>
+      <p>In autumnal music, rubato is subtle: a 2–5 BPM tempo variance over a 2–4 bar phrase is enough. The listener does not notice the tempo shifting; they notice that the music feels alive.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Macro rubato in a DAW</div>
+      <p>Ableton Live's tempo automation allows per-bar tempo control. A 4-bar phrase at 70 BPM might look like: bars 1–2 gradually rise to 72 BPM (slight lean forward), bars 3–4 return to 68 BPM (retardation, settling). The ear hears a phrase that gathered and released — not a tempo map.</p>
+      <p>This technique is most effective at phrase boundaries — the last bar of a phrase before a silence or new section is the best place for retardation. The music arrives at the end of the phrase the same way a sentence arrives at a period: with a slight slowing of delivery.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Macro rubato: tempo curve over 4 bars -->
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr08c" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+          </marker>
+        </defs>
+        <rect x="0" y="0" width="760" height="160" fill="#f5f0e8"/>
+        <!-- grid -->
+        <line x1="60" y1="20" x2="60" y2="140" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="230" y1="20" x2="230" y2="140" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="400" y1="20" x2="400" y2="140" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="570" y1="20" x2="570" y2="140" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="720" y1="20" x2="720" y2="140" stroke="#d9d4ca" stroke-width="0.5"/>
+        <!-- bar labels -->
+        <text x="60" y="155" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BAR 1</text>
+        <text x="230" y="155" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BAR 2</text>
+        <text x="400" y="155" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BAR 3</text>
+        <text x="570" y="155" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BAR 4</text>
+        <text x="720" y="155" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BAR 5</text>
+        <!-- BPM axis labels -->
+        <text x="10" y="44" font-family="Space Mono,monospace" font-size="9" fill="#888">72</text>
+        <text x="10" y="84" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a">70</text>
+        <text x="10" y="124" font-family="Space Mono,monospace" font-size="9" fill="#888">68</text>
+        <!-- baseline 70 BPM -->
+        <line x1="40" y1="80" x2="740" y2="80" stroke="#d9d4ca" stroke-width="1"/>
+        <!-- tempo curve: start 70, rise to 72 by bar 2, drop to 68 by bar 4, return 70 by bar 5 -->
+        <polyline points="60,80 230,40 400,80 570,120 720,80"
+                  stroke="#4a8c5c" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <!-- filled area under curve (subtle) -->
+        <polygon points="60,80 230,40 400,80 570,120 720,80 720,80 60,80"
+                 fill="#4a8c5c" fill-opacity="0.08"/>
+        <!-- labels -->
+        <text x="240" y="36" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">lean forward</text>
+        <text x="460" y="130" font-family="Space Mono,monospace" font-size="9" fill="#4a8c5c">settle, exhale</text>
+        <!-- BPM axis arrow -->
+        <line x1="40" y1="130" x2="40" y2="20" stroke="#888" stroke-width="1" marker-end="url(#arr08c)"/>
+        <text x="12" y="16" font-family="Space Mono,monospace" font-size="9" fill="#888">BPM</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="38" title="Behind the Beat in a DAW">
+    <div class="sub-section">
+      <div class="sub-title">Manual note nudging in Ableton</div>
+      <p>In Ableton's MIDI editor, select a note and shift its start position by dragging its left edge slightly to the right. This is not the Groove Pool (which applies patterned swing); it is <span class="key">individual note offset</span>. A note nudged 12ms late sounds considered rather than mechanical.</p>
+      <p>The exact method: zoom in to the MIDI clip so individual notes are large, then drag the note's left edge (the onset) slightly to the right. Quantize the note first to get a clean starting position, then nudge manually. This preserves the pitch and duration while shifting only the onset.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Which notes to nudge</div>
+      <p>Not every note needs an offset. Target <span class="key">phrase-ending notes</span> (the last note before a rest or a new phrase starts), <span class="key">harmonically significant arrivals</span> (the note that lands on the tonic or on a chord change), and any note that currently feels mechanical after playing it back. Nudging two or three notes per phrase is enough. Nudging every note creates an illusion of humanization that still sounds programmed — just offset.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Recommended offsets</div>
+      <div class="idiom">
+        <div class="idiom-name">Phrase-opening note</div>
+        +8ms — barely perceptible ease, sets a relaxed tone
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Mid-phrase note</div>
+        0–8ms — neutral or gently late, preserve momentum
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Phrase-ending note</div>
+        +10–15ms — clearly late, the phrase sighs to a close
+      </div>
+    </div>
+  </content-card>
+
+  <content-card number="39" color="green" title="The Sighing Phrase Shape">
+    <div class="sub-section">
+      <div class="sub-title">Micro-tempo arc</div>
+      <p>An autumnal phrase often has a <span class="key">sighing shape</span>: a slight forward lean at the beginning (urgency, the phrase moving toward something), then a settling behind the beat at the end (relief, surrender). The last note of the phrase arrives later than the first. The phrase inhales through its motion and exhales at its resolution.</p>
+      <p>This is not rubato at the tempo automation level — it is note-by-note timing within the fixed tempo. The phrase-opening note might land exactly on the beat or even 5ms early; the phrase-closing note lands 12–15ms late. The arc between these two positions is the sigh.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Application to autumnal melody</div>
+      <p>Autumnal phrases are short — often two to four notes. This makes the sighing arc easier to implement and hear. A two-note phrase (root, then fifth) where the root is on the beat and the fifth arrives 10ms late already has this quality. The ear hears the first note as a statement and the second as a release.</p>
+    </div>
+    <div class="diagram-wrap">
+      <!-- Sighing arc: note onsets over 4-beat phrase with curved envelope -->
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr08d" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+          </marker>
+        </defs>
+        <rect x="0" y="0" width="760" height="160" fill="#f5f0e8"/>
+        <!-- beat positions -->
+        <line x1="120" y1="20" x2="120" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="280" y1="20" x2="280" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="440" y1="20" x2="440" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="600" y1="20" x2="600" y2="130" stroke="#d9d4ca" stroke-width="0.5"/>
+        <!-- beat labels -->
+        <text x="120" y="145" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BEAT 1</text>
+        <text x="280" y="145" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BEAT 2</text>
+        <text x="440" y="145" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BEAT 3</text>
+        <text x="600" y="145" text-anchor="middle" font-family="Space Mono,monospace" font-size="9" fill="#888">BEAT 4</text>
+        <!-- notes: beat1 on grid, beat2 slightly late, beat3 slightly more late, beat4 most late -->
+        <!-- note 1: on grid (x=120) -->
+        <circle cx="120" cy="80" r="7" fill="#4a7fa5" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="120" y="105" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a7fa5">0ms</text>
+        <!-- note 2: +5ms (x≈289) -->
+        <circle cx="289" cy="68" r="5" fill="#4a7fa5" opacity="0.85"/>
+        <text x="289" y="60" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a7fa5">+5ms</text>
+        <!-- note 3: +8ms (x≈453) -->
+        <circle cx="453" cy="72" r="5" fill="#4a8c5c" opacity="0.85"/>
+        <text x="453" y="60" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#4a8c5c">+8ms</text>
+        <!-- note 4: +13ms (x≈629) — phrase-ending, most late -->
+        <circle cx="629" cy="92" r="7" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="629" y="110" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#e04848">+13ms</text>
+        <!-- sighing arc curve -->
+        <path d="M 120,80 C 200,50 380,55 453,72 C 530,88 580,95 629,92"
+              stroke="#e04848" stroke-width="1.5" fill="none" stroke-dasharray="5 3"/>
+        <!-- exhale label -->
+        <text x="520" y="52" font-family="Space Mono,monospace" font-size="10" fill="#e04848" font-style="italic">exhale</text>
+        <!-- arrow along curve -->
+        <line x1="560" y1="56" x2="580" y2="65" stroke="#e04848" stroke-width="1" marker-end="url(#arr08d)"/>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="40" title="Intentional vs Sloppy Lateness">
+    <div class="sub-section">
+      <div class="sub-title">The test: does the lateness feel meant?</div>
+      <p>There is a perceptible difference between lateness that sounds intentional and lateness that sounds like a missed beat. The test is <span class="key">internal consistency</span>: similar notes in similar positions should have similar offsets. If the phrase-ending note is 12ms late in bar 1, the phrase-ending note in bar 3 should also be 10–14ms late. Inconsistent lateness (5ms here, 40ms there, right on the beat elsewhere) feels uncontrolled.</p>
+      <p>Intentional lateness has a pattern, even if that pattern is subtle. The listener does not consciously hear the timing; they feel a quality — ease, thoughtfulness, physical presence. If you can consciously hear the note as "late," the offset is probably too large.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Diagnosing sloppy vs intentional</div>
+      <div class="idiom">
+        <div class="idiom-name">Sounds sloppy</div>
+        Random offsets — 3ms here, 22ms there, on the beat next. No pattern. Feels uncontrolled, like missed input.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Sounds mechanical</div>
+        All notes exactly on the beat. Correct but lifeless. Feels programmed, not felt.
+      </div>
+      <div class="idiom">
+        <div class="idiom-name">Sounds intentional</div>
+        Consistent offsets in consistent positions. Phrase-ending notes consistently 10–15ms late. The pattern is legible as a choice.
+      </div>
+    </div>
+    <div class="principle-box">
+      The autumnal quality in timing is not randomness or humanization — it is <em>considered lateness</em>. The note arrives when it means to arrive, and that moment is just after the grid expected it.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Add the first two melody notes</div>
+      <p>Open your "Autumnal Harmony v4 — Slow" session (72 bars, one pad track, all chord durations doubled, 70 BPM). You are adding a melody track on top of the existing harmonic bed.</p>
+      <p><strong>1. Create a new MIDI track.</strong> Choose a soft, simple tone — a sine-wave pad, a piano with light sustain, or a muted Rhodes. This is a melody voice, not a pad. It should be lighter in timbre than the harmonic bed.</p>
+      <p><strong>2. Place D5 on beat 1 of bar 1.</strong> Make it a half note (2 beats, sustaining into beat 2). Leave it exactly on the grid, or nudge it +5ms at most: zoom in to the MIDI clip, drag the left edge just barely to the right. This is the opening note — it should feel like a statement, arriving on time or just slightly late.</p>
+      <p><strong>3. Place A4 on beat 1 of bar 3</strong> (or beat 3 of bar 2 if you prefer the shorter gap — let your ear decide). Make it a quarter note. <span class="key">Nudge the onset +10ms.</span></p>
+      <p><strong>4. Play both notes over the harmonic bed.</strong> D5 held, then A4 settling. These are the first two notes of the melody: the root held on or near the beat, then the fifth arriving clearly late. This is the sighing arc in miniature — the opening lands as a statement, the closing sigh arrives behind it. Notice the difference from placing both notes exactly on the grid.</p>
+      <p>Save as "Autumnal v5 — First Melody Notes."</p>
+    </div>
+    <div class="principle-box">
+      You now have a 72-bar harmonic bed with two melody notes placed behind the beat. The melody is not yet a phrase — it is two arrivals. A08 ends here. A09 will add timbre and texture to support these notes.
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>◇ BEHIND THE BEAT ◇ RUBATO ◇ SIGHING PHRASE ◇ INTENTIONAL LATENESS ◇ AUTUMNAL AESTHETICS ◇</site-banner>
+
+<chapter-nav
+  prev-href="a07-slow-harmonic-rhythm.html" prev-title="A07 — Slow Harmonic Rhythm">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A08: BEHIND THE BEAT — D MINOR"></site-footer>
+
+</body>
+</html>

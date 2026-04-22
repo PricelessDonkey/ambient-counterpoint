@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A09 — Timbral Palette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Aesthetics"></site-nav>
+
+<site-banner>CHAPTER A09 ◇ TIMBRAL PALETTE ◇ INSTRUMENTS THAT SOUND LIKE OCTOBER ◇ WARM MIDRANGE ◇ ROLLED-OFF HIGHS ◇ NO HARSH BRIGHTNESS</site-banner>
+
+<site-hero>
+  <span slot="title">Timbral Palette</span>
+  <span slot="subtitle">The notes can be right and the sound can still be wrong.</span>
+</site-hero>
+
+<intro-box>Autumnal music has a characteristic frequency range: warm midrange from about 200Hz to 2kHz, with rolled-off highs and no harsh brightness. The instruments that naturally live there — cello, Rhodes, organ, warm analog pad — sound autumnal because of physics, not styling. This chapter covers how to choose, shape, and layer sounds so that the timbral environment matches the harmonic and melodic language of the preceding chapters.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="The Autumnal Frequency Range">
+    <p>Autumnal music occupies a specific part of the frequency spectrum: the <span class="key">warm midrange</span>, roughly 200Hz to 2kHz. This is the range of a cello's fundamental tones, a Rhodes in its natural register, a slow organ chord, an analog pad with the filter partially closed. Bright sounds — shimmery hi-hats, piercing violins, sharp FM synthesis transients — live above 2kHz. They feel alert and present. Rolled-off sounds feel distant and slightly past.</p>
+    <p>The autumnal quality is in large part a frequency quality. A bright, wide-open pad playing the exact same Dm(add9) voicing sounds energetic rather than reflective. The <span class="key">same chord, filtered</span> sounds contemplative. This is why instrument choice and EQ are not afterthoughts in autumnal production — they are the primary carriers of the emotional quality.</p>
+    <p>The practical rule: no harsh brightness above 8kHz, minimal sibilant energy above 4kHz, warmth concentrated in the 300Hz–1.5kHz range — the presence-without-brightness core that sits within the broader 200Hz–2kHz zone. If you can hear high-frequency air and shimmer, the sound is not autumnal.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">FREQUENCY WARMTH MAP</div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow-freq" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+              <polygon points="0 0, 7 3.5, 0 7" fill="#1a1a1a"/>
+            </marker>
+          </defs>
+
+          <!-- Full spectrum bar -->
+          <rect x="50" y="90" width="660" height="28" rx="4" fill="#d9d4ca"/>
+
+          <!-- Autumnal zone: 200Hz (x≈270) to 2kHz (x≈490) -->
+          <rect x="270" y="90" width="220" height="28" rx="2" fill="#e8734a" opacity="0.85"/>
+          <text x="380" y="109" font-family="Space Mono,monospace" font-size="10" fill="white" text-anchor="middle" font-weight="700">AUTUMNAL ZONE</text>
+          <text x="380" y="122" font-family="Space Mono,monospace" font-size="9" fill="white" text-anchor="middle">200 Hz – 2 kHz</text>
+
+          <!-- Cold zone label -->
+          <text x="160" y="109" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">sub / low bass</text>
+
+          <!-- Bright zone label -->
+          <text x="600" y="109" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">highs / air</text>
+
+          <!-- Frequency tick marks and labels -->
+          <!-- 20Hz x=50 -->
+          <line x1="50" y1="118" x2="50" y2="130" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="50" y="143" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">20</text>
+
+          <!-- 100Hz x≈204 -->
+          <line x1="204" y1="118" x2="204" y2="130" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="204" y="143" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">100</text>
+
+          <!-- 200Hz x=270 -->
+          <line x1="270" y1="88" x2="270" y2="130" stroke="#e8734a" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="270" y="143" font-family="Space Mono,monospace" font-size="9" fill="#e8734a" text-anchor="middle">200</text>
+
+          <!-- 1kHz x≈424 -->
+          <line x1="424" y1="88" x2="424" y2="90" stroke="#666" stroke-width="0.5"/>
+          <line x1="424" y1="118" x2="424" y2="130" stroke="#666" stroke-width="1"/>
+          <text x="424" y="143" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">1k</text>
+
+          <!-- 2kHz x=490 -->
+          <line x1="490" y1="88" x2="490" y2="130" stroke="#e8734a" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <text x="490" y="143" font-family="Space Mono,monospace" font-size="9" fill="#e8734a" text-anchor="middle">2k</text>
+
+          <!-- 8kHz x≈622 -->
+          <line x1="622" y1="118" x2="622" y2="130" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="622" y="143" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">8k</text>
+
+          <!-- 20kHz x=710 -->
+          <line x1="710" y1="118" x2="710" y2="130" stroke="#1a1a1a" stroke-width="1"/>
+          <text x="710" y="143" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a" text-anchor="middle">20k</text>
+
+          <!-- Hz label -->
+          <text x="380" y="160" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">Hz</text>
+
+          <!-- Instrument range markers above the bar -->
+          <!-- Cello: ~65Hz–1kHz fundamentals, sweet range ~200–600Hz -->
+          <line x1="270" y1="70" x2="424" y2="70" stroke="#5b7fa6" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="270" cy="70" r="3" fill="#5b7fa6"/>
+          <circle cx="424" cy="70" r="3" fill="#5b7fa6"/>
+          <text x="347" y="63" font-family="Space Mono,monospace" font-size="9" fill="#5b7fa6" text-anchor="middle">CELLO</text>
+
+          <!-- Rhodes: ~130Hz–1.5kHz -->
+          <line x1="236" y1="52" x2="458" y2="52" stroke="#5b7fa6" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="236" cy="52" r="3" fill="#5b7fa6"/>
+          <circle cx="458" cy="52" r="3" fill="#5b7fa6"/>
+          <text x="347" y="45" font-family="Space Mono,monospace" font-size="9" fill="#5b7fa6" text-anchor="middle">RHODES</text>
+
+          <!-- Organ / analog pad: ~65Hz–2kHz -->
+          <line x1="204" y1="34" x2="490" y2="34" stroke="#5b7fa6" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="204" cy="34" r="3" fill="#5b7fa6"/>
+          <circle cx="490" cy="34" r="3" fill="#5b7fa6"/>
+          <text x="347" y="27" font-family="Space Mono,monospace" font-size="9" fill="#5b7fa6" text-anchor="middle">ORGAN / ANALOG PAD</text>
+
+          <!-- Unit label for x-axis -->
+          <text x="50" y="160" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">←</text>
+          <text x="710" y="160" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">→</text>
+          <text x="50" y="175" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">low</text>
+          <text x="710" y="175" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">high</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">COLD VS WARM TIMBRE</div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+          <!-- Cold panel -->
+          <rect x="50" y="20" width="290" height="120" rx="6" fill="#f4f1ec" stroke="#d9d4ca" stroke-width="1"/>
+          <text x="195" y="45" font-family="Space Mono,monospace" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">COLD TIMBRE</text>
+          <text x="195" y="60" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">bright highs intact</text>
+
+          <!-- Cold frequency shape: rises in the highs -->
+          <polyline points="80,120 120,115 160,108 200,98 240,80 290,55 310,48" stroke="#888" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Cold fill under curve -->
+          <polygon points="80,120 120,115 160,108 200,98 240,80 290,55 310,48 310,130 80,130" fill="#d9d4ca" opacity="0.4"/>
+          <!-- Cold: bright zone highlight -->
+          <rect x="260" y="48" width="60" height="82" rx="2" fill="#888" opacity="0.15"/>
+          <text x="290" y="42" font-family="Space Mono,monospace" font-size="8" fill="#888" text-anchor="middle">bright</text>
+
+          <!-- Warm panel -->
+          <rect x="420" y="20" width="290" height="120" rx="6" fill="#fdf8f2" stroke="#e8734a" stroke-width="1" opacity="0.8"/>
+          <text x="565" y="45" font-family="Space Mono,monospace" font-size="11" fill="#e8734a" text-anchor="middle" font-weight="700">WARM TIMBRE</text>
+          <text x="565" y="60" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">highs rolled off</text>
+
+          <!-- Warm frequency shape: peaks in midrange, rolls off in highs -->
+          <polyline points="450,120 490,112 530,95 570,88 610,96 640,108 660,120" stroke="#e8734a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Warm fill under curve -->
+          <polygon points="450,120 490,112 530,95 570,88 610,96 640,108 660,120 660,130 450,130" fill="#e8734a" opacity="0.2"/>
+          <!-- Warm: autumnal zone highlight -->
+          <rect x="510" y="85" width="80" height="45" rx="2" fill="#e8734a" opacity="0.15"/>
+          <text x="550" y="80" font-family="Space Mono,monospace" font-size="8" fill="#e8734a" text-anchor="middle">warm zone</text>
+
+          <!-- x-axis labels -->
+          <text x="80" y="148" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">low</text>
+          <text x="310" y="148" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">high</text>
+          <text x="450" y="148" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">low</text>
+          <text x="660" y="148" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">high</text>
+        </svg>
+      </div>
+    </div>
+  </content-card>
+
+  <content-card number="2" color="green" title="Acoustic &amp; Keyboard Instruments">
+    <p>Certain instruments are autumnal by nature. They occupy the warm midrange without having to be corrected.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">KEYBOARD INSTRUMENTS</div>
+      <p>The <span class="key">Rhodes electric piano</span> is the central autumnal keyboard. Its tines produce warmth without percussive attack snap; the tone blooms rather than strikes. It sits in the 200Hz–2kHz range naturally and requires minimal EQ. The <span class="key">upright piano with felt damper</span> attenuates attack transients and high partials — a soft, slightly muffled quality, as if heard through a wall. The <span class="key">Wurlitzer</span> is similar to Rhodes but slightly brighter; a gentle low-pass reduces it to the autumnal register. A <span class="key">slow-attack organ</span> with its sustained, vowel-like quality is ideal for autumnal harmony — no percussive onset, pure sustained color.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">STRING INSTRUMENTS</div>
+      <p>Choose <span class="key">cello or viola</span>, not violin. The violin's upper register is too bright; its fundamental lies in a range that cuts through rather than settles. The cello's fundamental range (65Hz–1kHz) sits in the warm zone, and its upper harmonics reach 1–2kHz without exceeding it. A <span class="key">string pad</span> should have slow attack and long release — no pizzicato, no short articulations. The legato, sustained string quality is the autumnal string texture. When a string pad has too much high-frequency shimmer, a gentle high-shelf cut at 2–2.5kHz brings it into the autumnal register.</p>
+    </div>
+
+    <div class="idiom">
+      <span class="idiom-name">the brightness test</span>
+      Close your eyes and listen. If your attention is drawn upward — if the sound feels like it lives in the head or sinuses — it is too bright. Autumnal sound settles in the chest, not the skull.
+    </div>
+  </content-card>
+
+  <content-card number="3" color="purple" title="Synthesizers &amp; Electronic Textures">
+    <p>The autumnal synth is a <span class="key">warm analog pad</span>: slightly detuned oscillators, heavy low-pass filtering with a cutoff below 2kHz, long attack and release. OB-style pads (Oberheim/Prophet character) are well-suited — they have a particular warmth in the low-mid frequencies and a gentle softening in the highs even before filtering. Avoid bright FM synthesis and wavetable sounds with sharp high-frequency content; their harmonic stacks extend well above 4kHz and create a clarity that works against autumnal reflection.</p>
+
+    <p>The broader principle: <span class="key">any sound can be made autumnal</span> by removing its brightness. A Korg Volca run through a hardware low-pass filter becomes an autumnal texture. A field recording of rain, filtered and slowed, can sit in the warmth zone. The source matters less than the processing. Roll off the highs and almost any timbre settles into the warm midrange register.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">THREE-LAYER SETUP</div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 170" xmlns="http://www.w3.org/2000/svg">
+          <!-- Lane 1: Harmonic bed -->
+          <rect x="30" y="20" width="700" height="38" rx="5" fill="#fdf8f2" stroke="#e8734a" stroke-width="1.5"/>
+          <rect x="30" y="20" width="160" height="38" rx="5" fill="#e8734a" opacity="0.25"/>
+          <text x="110" y="37" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">HARMONIC BED</text>
+          <text x="110" y="51" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">Rhodes / organ / warm pad</text>
+          <text x="490" y="37" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">Low-pass cutoff: 2 kHz — primary harmonic color</text>
+          <text x="490" y="51" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">Carries the chord voicings. Loudest layer (but not loud).</text>
+
+          <!-- Lane 2: Textural layer -->
+          <rect x="30" y="68" width="700" height="38" rx="5" fill="#f4f1ec" stroke="#d9d4ca" stroke-width="1.5"/>
+          <rect x="30" y="68" width="160" height="38" rx="5" fill="#5b7fa6" opacity="0.15"/>
+          <text x="110" y="85" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">TEXTURAL LAYER</text>
+          <text x="110" y="99" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">string pad / filtered analog</text>
+          <text x="490" y="85" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">Low-pass cutoff: 1.5 kHz — environmental warmth</text>
+          <text x="490" y="99" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">Fills space around the harmonic bed. Quieter.</text>
+
+          <!-- Lane 3: Bass voice -->
+          <rect x="30" y="116" width="700" height="38" rx="5" fill="#f4f1ec" stroke="#d9d4ca" stroke-width="1.5"/>
+          <rect x="30" y="116" width="160" height="38" rx="5" fill="#1a1a1a" opacity="0.08"/>
+          <text x="110" y="133" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">BASS VOICE</text>
+          <text x="110" y="147" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">low pad / soft bass instrument</text>
+          <text x="490" y="133" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">Low-pass cutoff: 500 Hz — grounding tone</text>
+          <text x="490" y="147" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">Felt more than heard. Anchors the harmony to a register.</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="principle-box">
+      Three layers, one warm environment: when the balance is right, you should not hear three separate tracks — you should hear a single timbre that happens to have multiple voices. Blend until it feels like one instrument with a wide range.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open your <strong>Autumnal v5 — First Melody Notes</strong> session (72 bars, harmonic bed, melody track with D5 and A4, 70 BPM). This exercise adds three new tracks replacing or augmenting the single pad track with a proper three-layer timbral setup.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">STEP 1 — CHOOSE YOUR THREE SOUNDS</div>
+      <p>Select:</p>
+      <ul>
+        <li><strong>Harmonic bed:</strong> Rhodes, warm organ, or a soft analog pad</li>
+        <li><strong>Textural layer:</strong> String pad or filtered analog with slow attack</li>
+        <li><strong>Bass voice:</strong> Low pad or soft bass instrument in the D1–D2 range</li>
+      </ul>
+      <p>Program the same chord sequence on each track (or copy from the existing pad track). The bass voice plays only the root notes.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">STEP 2 — APPLY LOW-PASS FILTERS</div>
+      <p>On each track, insert a low-pass filter (Ableton's Auto Filter or EQ Eight high-cut):</p>
+      <ul>
+        <li><strong>Harmonic bed:</strong> cutoff at 2 kHz</li>
+        <li><strong>Textural layer:</strong> cutoff at 1.5 kHz</li>
+        <li><strong>Bass voice:</strong> cutoff at 500 Hz</li>
+      </ul>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">STEP 3 — BALANCE THE MIX</div>
+      <p>Play the full 72-bar arrangement. Adjust volume faders until the three tracks feel like a single warm environment. The textural layer should be quieter than the harmonic bed. The bass voice should be felt, not prominent.</p>
+      <p>If you can still hear three separate things, the textural layer is too loud or the bass voice has too much attack. Reduce velocity on the bass to 60–70.</p>
+    </div>
+
+    <p>Save as <strong>"Autumnal v6 — Timbral Layers."</strong></p>
+  </content-card>
+
+</div>
+
+<site-banner>TIMBRAL PALETTE ◇ 200 Hz – 2 kHz ◇ WARM MIDRANGE ◇ ROLLED-OFF HIGHS ◇ HARMONIC BED ◇ TEXTURAL LAYER ◇ BASS VOICE</site-banner>
+
+<chapter-nav
+  prev-href="a08-behind-the-beat.html" prev-title="A08 — Behind the Beat"
+  next-href="a10-filtering-imperfection.html" next-title="A10 — Filtering & Imperfection">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A09: TIMBRAL PALETTE — D MINOR"></site-footer>
+
+</body>
+</html>

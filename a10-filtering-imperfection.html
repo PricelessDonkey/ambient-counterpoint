@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A10 — Filtering & Imperfection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Aesthetics"></site-nav>
+
+<site-banner>CHAPTER A10 ◇ FILTERING & IMPERFECTION ◇ ROLLOFF ◇ TAPE ◇ WORN WARMTH ◇ PRISTINE IS NOT AUTUMNAL ◇ SLIGHTLY WORN IS</site-banner>
+
+<site-hero>
+  <span slot="title">Filtering &amp; Imperfection</span>
+  <span slot="subtitle">Pristine is not autumnal. Slightly worn is.</span>
+</site-hero>
+
+<intro-box>Autumnal music sounds like it is being remembered as it happens. That quality is partly harmonic, partly rhythmic — and partly spectral. High-frequency rolloff, subtle tape saturation, a quiet noise floor: these are the tools that move a sound from the immediate present to the near-past. This chapter covers how to process your three-layer arrangement so that the timbral environment feels warm, slightly worn, and physically present.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="The Case for High-Frequency Rolloff">
+    <p>Bright highs feel alert and present. Rolled-off highs feel distant and slightly past. This is not a subjective impression — it is how the ear processes reflections in a room. Sound that has travelled through air or reflected off walls loses high frequencies first. A sound with open, brilliant highs reads as <span class="key">close</span>. A sound with rolled-off highs reads as <span class="key">across the room</span>, or <span class="key">some time ago</span>.</p>
+    <p>The practical implication: a high-shelf cut above 8kHz moves a sound from the immediate present to the near-past. This is exactly the quality autumnal music needs. The listener isn't inside the sound; they are slightly removed from it, observing it at a small temporal distance — like a memory that hasn't fully faded yet.</p>
+    <p>A cut of –3 to –5dB at 8kHz with a broad shelf is usually enough. You aren't removing the high frequencies entirely; you are reducing their presence so the sound feels less alert. The ear should not consciously notice the cut. It should only notice that the sound feels warmer and less demanding.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-eq" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#888"/>
+          </marker>
+        </defs>
+        <!-- Grid lines -->
+        <line class="grid-line" x1="80" y1="30" x2="720" y2="30"/>
+        <line class="grid-line" x1="80" y1="70" x2="720" y2="70"/>
+        <line class="grid-line" x1="80" y1="110" x2="720" y2="110"/>
+        <line class="grid-line" x1="80" y1="150" x2="720" y2="150"/>
+        <!-- Frequency axis labels -->
+        <text x="80" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">100Hz</text>
+        <text x="200" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">500Hz</text>
+        <text x="360" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">2kHz</text>
+        <text x="520" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">8kHz</text>
+        <text x="680" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">18kHz</text>
+        <!-- dB axis labels -->
+        <text x="70" y="34" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">+3dB</text>
+        <text x="70" y="74" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">0dB</text>
+        <text x="70" y="114" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">-3dB</text>
+        <text x="70" y="154" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">-6dB</text>
+        <!-- 0dB reference line -->
+        <line x1="80" y1="70" x2="720" y2="70" stroke="#999" stroke-width="1" stroke-dasharray="4 4"/>
+        <!-- Flat (no rolloff) curve — ghost -->
+        <polyline points="80,70 520,70 680,70 720,70" stroke="#ccc" stroke-width="1.5" fill="none" stroke-dasharray="5 3"/>
+        <!-- Autumnal EQ curve: low shelf boost at 120Hz, flat through midrange, high shelf cut above 8kHz -->
+        <!-- Low shelf: gentle rise from 80 to 200Hz, then flat -->
+        <!-- High shelf: begins rolling off around 520, reaches -4dB at 680 -->
+        <polyline points="80,43 140,55 200,67 280,70 360,70 440,83 480,100 520,123 600,124 680,124 720,124"
+          stroke="#4a90d9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <!-- Autumnal zone highlight -->
+        <rect x="100" y="30" width="280" height="140" fill="#4a90d9" fill-opacity="0.05" rx="2"/>
+        <text x="240" y="48" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle">AUTUMNAL ZONE</text>
+        <text x="240" y="60" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9" text-anchor="middle">200Hz – 2kHz</text>
+        <!-- Low shelf annotation -->
+        <text x="130" y="40" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">+2dB shelf</text>
+        <text x="130" y="50" font-family="Space Mono,monospace" font-size="9" fill="#4a90d9">@ 120Hz</text>
+        <!-- High shelf annotation -->
+        <line x1="598" y1="65" x2="526" y2="118" stroke="#888" stroke-width="1" marker-end="url(#arr-eq)"/>
+        <text x="636" y="52" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">–4dB shelf</text>
+        <text x="636" y="62" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">@ 8kHz</text>
+      </svg>
+    </div>
+    <p>The blue curve shows the autumnal EQ shape: a gentle low-shelf boost at 120Hz (+2dB) adds body, and a high-shelf cut at 8kHz (–4dB) moves the sound into the near-past. The grey dashed line is flat for comparison. The shaded zone is the autumnal frequency region the curve preserves.</p>
+  </content-card>
+
+  <content-card number="2" title="Low-Pass Filter Automation as Compositional Arc" color="green">
+    <p>A low-pass filter is not just a mixing tool. Used over time, it is a <span class="key">compositional arc</span>. A filter that slowly closes over 32 bars changes the character of a sound not through note choice or chord change but through gradual timbral darkening. The sound seems to settle into itself, like the afternoon light changing.</p>
+    <p>The technique: set a slow low-pass filter automation on the harmonic bed, with the cutoff descending from around 3kHz to 800Hz across 32 bars. Nothing else changes — same chords, same rhythm, same voicings. But the listener's relationship to the sound shifts. At the opening, the pad is present and clear. By bar 32, it has darkened and withdrawn. This is <span class="key">form through timbre</span>, not through chord changes.</p>
+    <p>The automation curve should be smooth and gradual — not stepped, not sudden. A linear or very gently curved descent sounds most autumnal. Any noticeable inflection point in the curve becomes a structural event, which may or may not be what you want.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid: bar markers -->
+        <line class="grid-line" x1="80" y1="20" x2="720" y2="20"/>
+        <line class="grid-line" x1="80" y1="60" x2="720" y2="60"/>
+        <line class="grid-line" x1="80" y1="100" x2="720" y2="100"/>
+        <!-- Vertical bar markers every 8 bars -->
+        <line class="grid-line" x1="80" y1="15" x2="80" y2="110"/>
+        <line class="grid-line" x1="240" y1="15" x2="240" y2="110"/>
+        <line class="grid-line" x1="400" y1="15" x2="400" y2="110"/>
+        <line class="grid-line" x1="560" y1="15" x2="560" y2="110"/>
+        <line class="grid-line" x1="720" y1="15" x2="720" y2="110"/>
+        <!-- Bar number labels -->
+        <text x="80" y="126" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">Bar 1</text>
+        <text x="240" y="126" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">Bar 9</text>
+        <text x="400" y="126" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">Bar 17</text>
+        <text x="560" y="126" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">Bar 25</text>
+        <text x="720" y="126" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">Bar 33</text>
+        <!-- Y axis labels -->
+        <text x="70" y="23" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">3kHz</text>
+        <text x="70" y="63" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">1.8kHz</text>
+        <text x="70" y="103" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">800Hz</text>
+        <!-- LPF automation curve: smooth linear descent from 3kHz to 800Hz over 32 bars -->
+        <polyline points="80,20 720,100"
+          stroke="#5ab87a" stroke-width="2.5" fill="none"/>
+        <!-- Start dot -->
+        <circle cx="80" cy="20" r="5" fill="#5ab87a"/>
+        <!-- End dot -->
+        <circle cx="720" cy="100" r="5" fill="#5ab87a"/>
+        <!-- Annotation -->
+        <text x="88" y="16" font-family="Space Mono,monospace" font-size="9" fill="#5ab87a">cutoff opens (present)</text>
+        <text x="580" y="114" font-family="Space Mono,monospace" font-size="9" fill="#5ab87a">cutoff closes (withdrawn)</text>
+        <!-- Lane label -->
+        <text x="390" y="55" font-family="Space Mono,monospace" font-size="10" fill="#5ab87a" text-anchor="middle">LPF CUTOFF AUTOMATION</text>
+      </svg>
+    </div>
+    <p>The automation lane shows the LPF cutoff descending gradually from 3kHz at bar 1 to 800Hz at bar 33. No sudden changes — just continuous timbral darkening. The chord sequence is unchanged. The form is carried entirely by the filter movement.</p>
+  </content-card>
+
+  <content-card number="3" title="Tape Saturation and Harmonic Warmth">
+    <p>Tape emulation plugins (RC-20, Waves J37, a soft saturator) add <span class="key">subtle harmonic distortion</span> to the low-mid range while gently compressing the highs. The result is a sound that feels analog, slightly worn, and physically present — as if the music was recorded to tape and the tape has been played many times.</p>
+    <p>What tape saturation actually does: it adds even-order harmonics (2nd, 4th) to the signal, which the ear perceives as warmth and body. It also slightly compresses transient peaks, making the sound feel less sharp and more settled. The highs are gently rolled off by the tape's frequency response — which compounds with your EQ cuts to deepen the autumnal quality.</p>
+    <p>The dosage matters enormously. At 10–15% tape effect, the warmth is audible but the source character is preserved. At 30% or more, the tape effect starts to be heard <em>as</em> tape — and it stops being autumnal and starts being lo-fi. The goal is for the listener to feel warmth, not to notice the plugin. If you can hear the saturation as an effect, you have gone too far.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid -->
+        <line class="grid-line" x1="80" y1="30" x2="720" y2="30"/>
+        <line class="grid-line" x1="80" y1="80" x2="720" y2="80"/>
+        <line class="grid-line" x1="80" y1="130" x2="720" y2="130"/>
+        <!-- Frequency labels -->
+        <text x="140" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">100Hz</text>
+        <text x="260" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">500Hz</text>
+        <text x="400" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">2kHz</text>
+        <text x="560" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">8kHz</text>
+        <text x="700" y="170" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">18kHz</text>
+        <!-- dB labels -->
+        <text x="70" y="34" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">+4dB</text>
+        <text x="70" y="84" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">0dB</text>
+        <text x="70" y="134" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">-4dB</text>
+        <!-- 0dB line -->
+        <line x1="80" y1="80" x2="720" y2="80" stroke="#999" stroke-width="1" stroke-dasharray="4 4"/>
+        <!-- BEFORE tape: mostly flat with gentle high rolloff -->
+        <polyline points="80,80 140,80 260,80 400,80 480,80 560,82 620,88 700,100 720,108"
+          stroke="#ccc" stroke-width="2" fill="none" stroke-linejoin="round"/>
+        <!-- AFTER tape: low-mid harmonic addition, high rolloff -->
+        <polyline points="80,80 140,74 200,70 260,72 320,76 400,78 480,80 560,86 620,96 700,118 720,130"
+          stroke="#e8834a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <!-- Legend -->
+        <line x1="90" y1="18" x2="130" y2="18" stroke="#ccc" stroke-width="2"/>
+        <text x="135" y="22" font-family="Space Mono,monospace" font-size="10" fill="#888">before tape</text>
+        <line x1="260" y1="18" x2="300" y2="18" stroke="#e8834a" stroke-width="2.5"/>
+        <text x="305" y="22" font-family="Space Mono,monospace" font-size="10" fill="#e8834a">after tape (15%)</text>
+        <!-- Annotation: low-mid boost area -->
+        <line x1="200" y1="70" x2="200" y2="80" stroke="#e8834a" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="175" y="62" font-family="Space Mono,monospace" font-size="9" fill="#e8834a" text-anchor="middle">harmonic</text>
+        <text x="175" y="72" font-family="Space Mono,monospace" font-size="9" fill="#e8834a" text-anchor="middle">addition</text>
+        <!-- Annotation: high rolloff -->
+        <text x="670" y="145" font-family="Space Mono,monospace" font-size="9" fill="#e8834a" text-anchor="middle">high rolloff</text>
+      </svg>
+    </div>
+    <p>The orange curve shows the frequency response after 15% tape saturation: subtle harmonic addition in the low-mid range (200–500Hz) increases warmth and body, while the high-frequency rolloff deepens beyond the untreated signal (grey). The changes are small but perceptually significant.</p>
+  </content-card>
+
+  <content-card number="4" title="Noise and Imperfection" color="purple">
+    <p>A quiet noise floor makes a production feel <span class="key">less constructed and more discovered</span>. Tape hiss at –30 to –35dBFS, or a subtle room ambience recorded in a quiet space, adds the sense that the music exists in a physical environment — that it was made somewhere, not assembled from perfectly silent digital components.</p>
+    <p>Electronic music that includes the room it was made in sounds less perfect and therefore more human. This is counterintuitive from a production standpoint — conventional advice is to remove noise, not add it. But autumnal music is not trying to be perfect. It is trying to feel human, textured, and slightly impermanent. A noise floor at the right level achieves this without the listener ever consciously noticing it.</p>
+    <p>The key is level. At –30 to –35dBFS, the noise sits below the music and is felt more than heard — like the slight roughness of old paper under your fingertips. At –25dBFS or above, the noise becomes audible as noise, which is a different aesthetic entirely (lo-fi, vintage). At –40dBFS or below, the effect is too subtle to read.</p>
+    <div class="sub-section">
+      <div class="sub-title">Sources of useful imperfection</div>
+      <p>RC-20 Retro Color includes both noise and wobble in one plugin. Vinyl emulators (iZotope Vinyl, VinylDistortion) add crackle and dust. A field recording of a quiet room — even just a few seconds of room tone, looped — works beautifully. Ableton's built-in Vinyl Distortion adds crackle on demand.</p>
+    </div>
+  </content-card>
+
+  <content-card number="5" title="The Restraint Principle">
+    <p>Every tool in this chapter has a point of diminishing returns — and an autumnal quality that evaporates once crossed. Too much EQ rolloff and the music becomes muddy and unclear. Too much tape saturation and it sounds like a damaged cassette. Too much noise and it becomes a lo-fi aesthetic statement rather than an autumnal one.</p>
+    <p>The test is simple: <span class="key">if you can hear the processing as processing, you have gone too far</span>. The EQ cut should not be heard as a dull sound — it should be heard as a warm one. The tape saturation should not be heard as distortion — it should be heard as body. The noise should not be heard as hiss — it should be heard as presence.</p>
+    <p>Each of these effects works by removing the listener's sense that they are in the immediate present with the sound. Done subtly, they create the quality of comfortable distance — the autumnal quality. Done heavily, they remind the listener that production decisions were made, which breaks the spell entirely.</p>
+    <div class="principle-box">
+      Autumnal processing is invisible processing. The listener should feel the warmth, not see the tool. Restraint is not a limitation — it is the technique.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open <strong>Autumnal v6 — Timbral Layers</strong> (from A09: 72 bars, three tracks — harmonic bed, textural layer, bass voice — plus melody, 70 BPM).</p>
+    <p>Process each of the three tracks:</p>
+
+    <div class="sub-section">
+      <div class="sub-title">1. Harmonic Bed</div>
+      <p>Insert EQ Eight. Set a high-shelf cut at 8kHz: –4dB, broad shelf. Set a low-shelf boost at 120Hz: +2dB. Add a Saturator (or soft saturator plugin) at 15% drive — just enough for warmth. Play back and compare against the bypassed state. The processed version should feel warmer and fractionally more distant.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">2. Textural Layer</div>
+      <p>Same EQ Eight settings as the harmonic bed. Then add a LPF automation: draw a slow, linear descent from 2.5kHz at bar 1 to 1.2kHz at bar 32. The textural layer should slowly recede into the background over the first half of the arrangement, as if the afternoon is darkening around it.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">3. Bass Voice</div>
+      <p>High-cut filter at 5kHz (remove the top entirely — the bass voice has no business above 5kHz). Slight low-mid boost at 250Hz: +2dB. This adds body and warmth to the bass register without muddying the mix.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Compare and save</div>
+      <p>Bypass all three EQ/saturation chains and play back. Then re-engage them and play back again. The processed version should feel warmer, more unified, and fractionally more distant — like hearing the arrangement through a slightly warm room rather than direct monitoring. If the difference is too obvious, reduce the shelf cuts and the saturation drive. If you can't hear a difference at all, push the high-shelf cut to –6dB.</p>
+      <p>Save as <strong>Autumnal v7 — Filtered & Warm</strong>.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>FILTERING & IMPERFECTION ◇ HIGH-SHELF CUT ◇ TAPE SATURATION ◇ NOISE FLOOR ◇ RESTRAINT IS THE TECHNIQUE ◇ WARM NOT MUDDY</site-banner>
+
+<chapter-nav
+  prev-href="a09-timbral-palette.html" prev-title="A09 — Timbral Palette"
+  next-href="a11-space-and-silence.html" next-title="A11 — Space and Silence">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A10: FILTERING & IMPERFECTION — D MINOR"></site-footer>
+
+</body>
+</html>

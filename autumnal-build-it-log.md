@@ -54,4 +54,40 @@ Compact record of each chapter's Build It outcome — what exists in the session
 **Exercise:** Open "Autumnal Harmony v2." Add a 4-bar Lydian episode at bar 33: Fmaj7(♯11) (F3, A3, C4, E4, B4 at ~80% velocity) for bars 33–34, then Dm(add9) (D3, F3, A3, E4) for bars 35–36. The B4 on top creates the shimmer; removing it returns October.
 **Outcome:** 36-bar piece with three sections — subdominant skeleton (1–16), bittersweet modal mixture episode (17–32), and Lydian shimmer returning to Dm(add9) (33–36). Lydian contrast deepens both the light and the shadow around it.
 **Session state:** 36 bars, one pad track, Lydian episode at bars 33–34, 70 BPM. Saved as "Autumnal Harmony v3."
-**Next:** A07 doubles the duration of every chord — 32-bar piece becomes 64 bars — and introduces the practice of trusting stillness.
+**Next:** A07 doubles the duration of every chord — 36-bar piece becomes 72 bars — and introduces the practice of trusting stillness.
+
+---
+
+## A07 — Slow Harmonic Rhythm: Letting Chords Breathe
+
+**Exercise:** Open "Autumnal Harmony v3" (36 bars). Double the duration of every chord clip. The Lydian episode (2 bars Fmaj7♯11) becomes 4 bars; the Dm(add9) return (2 bars) becomes 4 bars. All other chords double proportionally.
+**Outcome:** 72-bar harmonic bed at 70 BPM (~4 minutes). Student plays it end-to-end, noting which bar numbers feel restless without changing any chords. Restless moments flagged as targets for future melody/texture work.
+**Session state:** 72 bars, one pad track, all chord durations doubled, 70 BPM. Saved as "Autumnal Harmony v4 — Slow."
+**Next:** A08 adds the first two melody notes (D5 and A4) with +10–12ms nudge lateness over the 72-bar bed.
+
+---
+
+## A08 — Behind the Beat: Rubato and the Sighing Phrase
+
+**Exercise:** Open "Autumnal Harmony v4 — Slow" (72 bars, one pad track, 70 BPM). Add a new melody track with a soft, light timbre. Place D5 (half note) on beat 1 of bar 1, nudge onset +12ms. Place A4 (quarter note) on beat 1 of bar 3, nudge onset +10ms. Play both notes over the harmonic bed.
+**Outcome:** Two melody notes — root held, fifth settling — both placed behind the beat. The melody sounds considered rather than programmed. Student can hear the perceptual difference between the on-grid and nudged positions.
+**Session state:** 72 bars, one pad track (harmonic bed), one melody track (D5 at +12ms, A4 at +10ms), 70 BPM. Saved as "Autumnal v5 — First Melody Notes."
+**Next:** A09 adds three timbral layers (harmonic bed, textural layer, bass voice) with low-pass filtering to each.
+
+---
+
+## A09 — Timbral Palette: Instruments That Sound Like October
+
+**Exercise:** Open "Autumnal v5 — First Melody Notes" (72 bars, one pad track, melody track). Add three new tracks: (1) Harmonic bed — Rhodes/organ/warm pad, same chord sequence, LPF at 2kHz. (2) Textural layer — string pad or filtered analog, slow attack, LPF at 1.5kHz. (3) Bass voice — low pad or soft bass, root notes only, LPF at 500Hz, velocity 60–70. Balance until the three tracks feel like a single warm environment.
+**Outcome:** 72-bar arrangement with three-layer timbral setup — harmonic bed carrying chord voicings, textural layer filling space, bass voice anchoring the register. Low-pass filters applied to all three channels. Each layer audible as a role, not as a separate instrument.
+**Session state:** 72 bars, three tracks (harmonic bed, textural layer, bass voice) with LPF on each, melody track (D5 +12ms, A4 +10ms), 70 BPM. Saved as "Autumnal v6 — Timbral Layers."
+**Next:** A10 processes the three tracks with EQ, tape saturation, and a low-pass filter automation that slowly closes over 32 bars.
+
+---
+
+## A10 — Filtering & Imperfection
+
+**Exercise:** Open "Autumnal v6 — Timbral Layers." Process three tracks: (1) Harmonic bed — EQ Eight: high-shelf –4dB @ 8kHz, low-shelf +2dB @ 120Hz; Saturator at 15% drive. (2) Textural layer — same EQ, plus LPF cutoff automation from 2.5kHz (bar 1) to 1.2kHz (bar 32), linear descent. (3) Bass voice — high-cut @ 5kHz, low-mid boost +2dB @ 250Hz. Bypass/re-engage all three chains to confirm the processed state feels warmer and fractionally more distant.
+**Outcome:** Three tracks processed with autumnal EQ and saturation. Textural layer now slowly recedes timbally over 32 bars. Overall mix is warmer, more unified, and slightly more distant — processing is felt, not heard.
+**Session state:** 72 bars, three processed tracks (harmonic bed, textural layer, bass voice — each with EQ + saturation), LPF automation on textural layer, melody track (D5 +12ms, A4 +10ms), 70 BPM. Saved as "Autumnal v7 — Filtered & Warm."
+**Next:** A11 adds reverb with pre-delay to the harmonic bed and a sustained D2 pedal tone bass track.
