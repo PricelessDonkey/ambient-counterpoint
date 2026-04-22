@@ -91,3 +91,12 @@ Compact record of each chapter's Build It outcome — what exists in the session
 **Outcome:** Three tracks processed with autumnal EQ and saturation. Textural layer now slowly recedes timbally over 32 bars. Overall mix is warmer, more unified, and slightly more distant — processing is felt, not heard.
 **Session state:** 72 bars, three processed tracks (harmonic bed, textural layer, bass voice — each with EQ + saturation), LPF automation on textural layer, melody track (D5 +12ms, A4 +10ms), 70 BPM. Saved as "Autumnal v7 — Filtered & Warm."
 **Next:** A11 adds reverb with pre-delay to the harmonic bed and a sustained D2 pedal tone bass track.
+
+---
+
+## A11 — Space and Silence
+
+**Exercise:** Open "Autumnal v7 — Filtered & Warm" (72 bars, three processed tracks, melody track). (1) Add reverb to harmonic bed: decay 2.5 sec, room size 80%, pre-delay 100ms, mix 35%. (2) Create new bass track — single D2 note sustained 8+ bars at a time, velocity 60. (3) Play full arrangement (harmonic bed + textural layer + bass voice + melody + pedal D). Adjust if the mix still feels like tracks rather than a space.
+**Outcome:** Reverb halo on harmonic bed; sustained D2 pedal tone grounding the arrangement. Full arrangement now sounds like a space the listener inhabits rather than music playing at them.
+**Session state:** 72 bars, four tracks (harmonic bed with reverb+pre-delay, textural layer, bass voice, pedal D2 at velocity 60), melody track (D5 +12ms, A4 +10ms), 70 BPM. Saved as "Autumnal v8 — Space and Pedal."
+**Next:** A12 adds a sparse countermelody (4–6 notes per 8 bars) using contrary motion against the main melody.
