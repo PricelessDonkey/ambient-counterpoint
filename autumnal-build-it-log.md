@@ -109,3 +109,21 @@ Compact record of each chapter's Build It outcome — what exists in the session
 **Outcome:** A second voice — sparse (4 notes total), contrary to the melody, with a gentle 9–8 suspension and deliberate silence after the resolution. The arrangement now feels inhabited by two presences breathing at different rates.
 **Session state:** 72 bars, five tracks (harmonic bed with reverb+pre-delay, textural layer, bass voice, pedal D2, countermelody), melody track (D5 +12ms bar 1, A4 +10ms bar 3), countermelody (A3 bar 5, D4 bar 7, E4 +10ms bar 9, D4 bar 10), 70 BPM. Saved as "Autumnal v9 — Countermelody."
 **Next:** A13 writes the main melody arc — 8 bars, A4 descending to D4, starting on beat 2.5 of bar 1.
+
+---
+
+## A13 — Falling Lines
+
+**Exercise:** Open "Autumnal v9 — Countermelody" (72 bars, five tracks). On the melody track, program 8 notes — one per bar, half-note duration each — starting on beat 2.5 of bar 1 with +10ms nudge: A4 → G4 → A4 → G4 → F4 → E4 → F4 → D4. Remove or absorb the earlier D5 placeholder from A08 as needed.
+**Outcome:** Complete 8-bar descending melody arc, discovered on beat 2.5 rather than announced on beat 1. Small returns at bars 3 and 7 (A4, F4) serve as breath points. Arrival on D4 in bar 8 is the first full tonic landing.
+**Session state:** 72 bars, five tracks (harmonic bed with reverb, textural layer, bass voice, pedal D2, countermelody), full 8-bar melody (A4–G4–A4–G4–F4–E4–F4–D4, beat 2.5 entry, +10ms nudge throughout), 70 BPM. Saved as "Autumnal v10 — Melody Arc."
+**Next:** A14 changes the final melody note from D4 to F4 and adds 3 bars of explicit silence — the inconclusive ending.
+
+---
+
+## A14 — Inconclusive Endings
+
+**Exercise:** Open "Autumnal v10 — Melody Arc" (72 bars, five tracks). On the melody track, change the final note in bar 8 from D4 to F4 (same duration, same +10ms nudge, same velocity). Remove any melody and countermelody notes from bars 9, 10, and 11. Let the harmonic bed, textural layer, bass voice, and pedal D continue; only the reverb tail of F4 decays across the silence.
+**Outcome:** 8-bar melody arc (A4–G4–A4–G4–F4–E4–F4–F4) ending on the minor third, followed by 3 bars of inhabited silence. The phrase says something; the silence considers it. The melodic structure is complete.
+**Session state:** 72 bars, five tracks (harmonic bed with reverb+pre-delay, textural layer, bass voice, pedal D2, countermelody at bars 5 and 7 only), full 8-bar melody ending on F4 (bar 8, +10ms, half note), bars 9–11 silent in melody and countermelody, 70 BPM. Saved as "Autumnal v11 — Inconclusive."
+**Next:** A15 case study — Bill Evans Peace Piece. Free sparse improvisation over the pedal tone.
