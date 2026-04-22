@@ -100,3 +100,12 @@ Compact record of each chapter's Build It outcome — what exists in the session
 **Outcome:** Reverb halo on harmonic bed; sustained D2 pedal tone grounding the arrangement. Full arrangement now sounds like a space the listener inhabits rather than music playing at them.
 **Session state:** 72 bars, four tracks (harmonic bed with reverb+pre-delay, textural layer, bass voice, pedal D2 at velocity 60), melody track (D5 +12ms, A4 +10ms), 70 BPM. Saved as "Autumnal v8 — Space and Pedal."
 **Next:** A12 adds a sparse countermelody (4–6 notes per 8 bars) using contrary motion against the main melody.
+
+---
+
+## A12 — Unhurried Counterpoint
+
+**Exercise:** Open "Autumnal v8 — Space and Pedal" (72 bars, four tracks). Add a new countermelody track with a different timbre. First phrase: A3 (half note, bar 5) → D4 (half note, bar 7) — contrary to the melody's D5→A4 descent. 9–8 suspension: E4 (bar 9, +10ms nudge) resolving down by step to D4 (bar 10). 4-bar minimum silence after the resolution. Countermelody 3–5 dB below melody in mix.
+**Outcome:** A second voice — sparse (4 notes total), contrary to the melody, with a gentle 9–8 suspension and deliberate silence after the resolution. The arrangement now feels inhabited by two presences breathing at different rates.
+**Session state:** 72 bars, five tracks (harmonic bed with reverb+pre-delay, textural layer, bass voice, pedal D2, countermelody), melody track (D5 +12ms bar 1, A4 +10ms bar 3), countermelody (A3 bar 5, D4 bar 7, E4 +10ms bar 9, D4 bar 10), 70 BPM. Saved as "Autumnal v9 — Countermelody."
+**Next:** A13 writes the main melody arc — 8 bars, A4 descending to D4, starting on beat 2.5 of bar 1.

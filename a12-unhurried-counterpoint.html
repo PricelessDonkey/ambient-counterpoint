@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A12 — Unhurried Counterpoint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="autumnal.html" label="Autumnal Aesthetics"></site-nav>
+
+<site-banner>CHAPTER A12 ◇ UNHURRIED COUNTERPOINT ◇ CONTRARY MOTION ◇ SUSPENSION ◇ VOICE CROSSING ◇ THE RESTING VOICE</site-banner>
+
+<site-hero>
+  <span slot="title">Unhurried Counterpoint</span>
+  <span slot="subtitle">Two voices that coexist in the same room — breathing at different rates, never chasing each other.</span>
+</site-hero>
+
+<intro-box>Bach's counterpoint moves fast: eighth notes and sixteenth notes create relentless forward motion. Autumnal counterpoint moves in half notes and whole notes — the voices breathe. When a second voice enters, it doesn't compete with the first. It occupies the same harmonic space and moves slowly in the opposite direction, or holds still while the other moves. This chapter covers the core techniques: contrary motion, the 9–8 suspension, voice crossing, and the resting voice. Together, they create the autumnal polyphonic texture — inhabited but unhurried.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="Hurried vs. Unhurried">
+    <p>What makes counterpoint feel hurried? Constant motion. When both voices move on every eighth note, the ear tracks their relationship anxiously — wondering who is leading, where they are going, when they will arrive. Bach's two-voice counterpoint is thrilling partly <em>because</em> of this anxiety. It generates forward energy by never being still.</p>
+    <p>Autumnal counterpoint inverts this. Both voices move in half notes, or one holds while the other takes a single step. The listener doesn't track either voice anxiously — they hear the space <em>between</em> them. The relationship between the voices is felt as air rather than argument.</p>
+    <p>The practical difference is note density. A conventional two-voice passage at 70 BPM might have eight to sixteen notes per voice per four bars. An autumnal two-voice passage has two or three. Each note is a deliberate presence; the rests are not gaps but load-bearing silences, equal to the notes in structural importance.</p>
+    <div class="idiom">
+      <div class="idiom-name">The Four Rules of Unhurried Motion</div>
+      <p><strong>Half notes and whole notes only</strong> — quarter notes are passing moves; eighth notes don't exist in this vocabulary.</p>
+      <p><strong>One voice moves at a time</strong> — not both together. The still voice creates the context for the moving one.</p>
+      <p><strong>Silences count</strong> — a voice that rests for four bars is not absent. It is listening.</p>
+      <p><strong>No sequential patterns</strong> — Bach sequences propel motion forward. Autumnal voices don't sequence. Each note is chosen, not consequent.</p>
+    </div>
+    <p>For the Bach counterpoint foundation this technique builds on, see <a href="ch03-two-voices.html">Ch 03 — Two-Voice Framework</a> and <a href="ch01-single-line.html">Ch 01 — The Single Line</a>.</p>
+  </content-card>
+
+  <content-card number="2" color="green" title="Contrary Motion as Breathing">
+    <p>Contrary motion means: when one voice steps up, the other steps down. It is the most stable and balanced of the four types of motion (contrary, similar, oblique, parallel), and in autumnal counterpoint it functions as a <span class="key">breathing gesture</span>. The two voices expand and contract around a shared pitch space — inhaling and exhaling, not pursuing each other.</p>
+    <p>The effect is equilibrium. No single voice dominates; both contribute to a shared shape. The listener's ear doesn't chase one line to the top or bottom — it hears the space between them widening and narrowing. When both voices converge on the same pitch, there is a moment of unity before they separate again.</p>
+    <div class="sub-section">
+      <div class="sub-title">Contrary Motion in D Minor</div>
+      <p>If the melody holds D4 and moves up to E4 then F4, the countermelody should move down — perhaps from A4 to G4 to F4. Both arrive at F4: a brief convergence. The convergence is not a resolution — it is a moment where the two voices breathe the same pitch before separating again.</p>
+      <p>The rate of motion can differ. The melody might take three bars to ascend a minor third; the countermelody might descend the same interval in two bars, then hold. This asymmetry is autumnal — it sounds discovered, not designed.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <line class="grid-line" x1="60" y1="50" x2="720" y2="50"/>
+        <line class="grid-line" x1="60" y1="70" x2="720" y2="70"/>
+        <line class="grid-line" x1="60" y1="90" x2="720" y2="90"/>
+        <line class="grid-line" x1="60" y1="110" x2="720" y2="110"/>
+        <line class="grid-line" x1="60" y1="130" x2="720" y2="130"/>
+        <!-- Pitch labels -->
+        <text x="52" y="54" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">A4</text>
+        <text x="52" y="74" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">G4</text>
+        <text x="52" y="94" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">F4</text>
+        <text x="52" y="114" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">E4</text>
+        <text x="52" y="134" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">D4</text>
+        <!-- Bar lines -->
+        <line x1="60" y1="35" x2="60" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="170" y1="35" x2="170" y2="155" stroke="#888" stroke-width="0.8"/>
+        <line x1="280" y1="35" x2="280" y2="155" stroke="#888" stroke-width="0.8"/>
+        <line x1="390" y1="35" x2="390" y2="155" stroke="#888" stroke-width="0.8"/>
+        <line x1="500" y1="35" x2="500" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="610" y1="35" x2="610" y2="155" stroke="#888" stroke-width="0.8"/>
+        <line x1="720" y1="35" x2="720" y2="155" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Melody (blue, ascending D4–E4–F4–G4, half notes) -->
+        <polyline points="115,130 225,110 335,90 445,70" stroke="#4a7fa5" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+        <circle cx="115" cy="130" r="5" fill="#4a7fa5"/>
+        <circle cx="225" cy="110" r="5" fill="#4a7fa5"/>
+        <circle cx="335" cy="90" r="5" fill="#4a7fa5"/>
+        <circle cx="445" cy="70" r="5" fill="#4a7fa5"/>
+        <!-- Melody rest (bars 5–6) ghost line -->
+        <line x1="445" y1="70" x2="665" y2="70" stroke="#4a7fa5" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.3"/>
+        <!-- Countermelody (red, descending A4–G4–F4–E4, half notes) -->
+        <polyline points="115,50 225,70 335,90 445,110" stroke="#e04848" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-dasharray="6 3"/>
+        <circle cx="115" cy="50" r="5" fill="#e04848"/>
+        <circle cx="225" cy="70" r="5" fill="#e04848"/>
+        <circle cx="335" cy="90" r="7" fill="#e04848" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="445" cy="110" r="5" fill="#e04848"/>
+        <!-- Countermelody rest (bars 5–6) ghost line -->
+        <line x1="445" y1="110" x2="665" y2="110" stroke="#e04848" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.3"/>
+        <!-- Convergence circle -->
+        <circle cx="335" cy="90" r="14" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="3 2"/>
+        <!-- Convergence label -->
+        <text x="335" y="168" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">convergence (F4)</text>
+        <line x1="335" y1="104" x2="335" y2="161" stroke="#888" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <!-- Rest label bars 5–6 -->
+        <text x="610" y="92" font-family="Space Mono,monospace" font-size="10" fill="#aaa" text-anchor="middle">— rest —</text>
+        <!-- Legend -->
+        <line x1="60" y1="183" x2="95" y2="183" stroke="#4a7fa5" stroke-width="2.5"/>
+        <text x="100" y="187" font-family="Space Mono,monospace" font-size="9" fill="#4a7fa5">melody (ascending)</text>
+        <line x1="270" y1="183" x2="305" y2="183" stroke="#e04848" stroke-width="2.5" stroke-dasharray="6 3"/>
+        <text x="310" y="187" font-family="Space Mono,monospace" font-size="9" fill="#e04848">countermelody (descending)</text>
+        <!-- Bar numbers -->
+        <text x="115" y="26" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">1</text>
+        <text x="225" y="26" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">2</text>
+        <text x="335" y="26" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">3</text>
+        <text x="445" y="26" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">4</text>
+        <text x="555" y="26" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">5</text>
+        <text x="665" y="26" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">6</text>
+      </svg>
+    </div>
+    <p>Notice that the convergence in bar 3 creates a moment of unison on F4 before both voices move away. The melody continues upward; the countermelody continues downward. Neither changes direction at the convergence — this is what makes it feel like breathing rather than argument.</p>
+  </content-card>
+
+  <content-card number="3" color="purple" title="The 9–8 Suspension">
+    <p>A <span class="key">suspension</span> is one of the most expressive devices in voice leading: a note is held over from the previous chord as the harmony changes beneath it, creating a brief dissonance that then resolves by step. In autumnal music, suspensions are gentle — the dissonance is mild, the resolution unhurried, and the emotional effect is of yearning that subsides without drama.</p>
+    <p>The 9–8 suspension is particularly autumnal. Over a Dm chord, the upper voice holds E4 — the ninth above D — as the chord arrives. E4 is not a chord tone; it creates a gentle clash against the D below. On the next beat (or next bar, in unhurried counterpoint), E4 resolves down a step to D4 — the octave. The dissonance breathes out. The resolution is not triumphant; it is simply an exhale.</p>
+    <div class="sub-section">
+      <div class="sub-title">Why This Interval</div>
+      <p>The 9th (E above D) is mild — not anguished, not dramatic. It sits a step above the octave, creating a gentle friction. The resolution to D4 feels like something settling, not arriving.</p>
+      <p>Compare this to the 4–3 suspension (holding F over Dm, resolving to E) or the 7–6 suspension — both more urgent, with tighter intervals and more pronounced resolutions. The 9–8 is the most spacious of the common suspensions: dissonance at arm's length, resolution without urgency. For the classical treatment of non-chord tones and suspensions, see <a href="ch04-non-chord-tones.html">Ch 04 — Non-Chord Tones</a>.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 165" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrow-resolve" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#4a7fa5"/>
+          </marker>
+        </defs>
+        <!-- Grid lines -->
+        <line class="grid-line" x1="60" y1="55" x2="700" y2="55"/>
+        <line class="grid-line" x1="60" y1="95" x2="700" y2="95"/>
+        <!-- Pitch labels -->
+        <text x="52" y="59" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">E4</text>
+        <text x="52" y="99" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="end">D4</text>
+        <!-- Bar line divider -->
+        <line x1="380" y1="30" x2="380" y2="130" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Section labels -->
+        <text x="200" y="20" font-family="Space Mono,monospace" font-size="10" fill="#c87cda" text-anchor="middle">E4 held — 9th (dissonance)</text>
+        <text x="560" y="20" font-family="Space Mono,monospace" font-size="10" fill="#4a7fa5" text-anchor="middle">E4 → D4 (resolution)</text>
+        <!-- Suspended E4 (purple) -->
+        <circle cx="210" cy="55" r="8" fill="#c87cda" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Sustained hold line -->
+        <line x1="218" y1="55" x2="378" y2="55" stroke="#c87cda" stroke-width="2" stroke-dasharray="4 3" opacity="0.55"/>
+        <!-- D4 reference dot (chord root context) -->
+        <circle cx="210" cy="95" r="5" fill="#aaa" opacity="0.4"/>
+        <!-- Interval bracket E4 to D4 -->
+        <line x1="250" y1="55" x2="250" y2="95" stroke="#888" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="262" y="79" font-family="Space Mono,monospace" font-size="9" fill="#888">9th</text>
+        <!-- Chord label bar 1 -->
+        <text x="210" y="120" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">Dm chord (D–F–A below)</text>
+        <!-- Resolution arrow E4 → D4 -->
+        <line x1="382" y1="57" x2="528" y2="91" stroke="#4a7fa5" stroke-width="2" marker-end="url(#arrow-resolve)"/>
+        <!-- Resolved D4 (yellow arrival dot) -->
+        <circle cx="540" cy="95" r="8" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Step label on arrow -->
+        <text x="458" y="63" font-family="Space Mono,monospace" font-size="10" fill="#4a7fa5" text-anchor="middle">step ↓</text>
+        <!-- 8ve label -->
+        <text x="575" y="99" font-family="Space Mono,monospace" font-size="9" fill="#4a7fa5">8ve</text>
+        <!-- Chord label bar 2 -->
+        <text x="540" y="120" font-family="Space Mono,monospace" font-size="8" fill="#aaa" text-anchor="middle">Dm chord (same)</text>
+        <!-- Bottom annotation -->
+        <text x="380" y="148" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">— dissonance held — — — — — — — — — — resolution: exhale —</text>
+      </svg>
+    </div>
+    <p>In Bach's fast counterpoint, suspensions resolve on the following beat. In autumnal music, the suspension can last a full bar before resolving — the dissonance simply exists, unhurried, until the ear is ready for the exhale.</p>
+  </content-card>
+
+  <content-card number="4" title="Voice Crossing">
+    <p>Voice crossing occurs when a lower voice rises above an upper voice — or vice versa — momentarily trading register. In classical counterpoint, voice crossing is used sparingly because it creates confusion about which voice is which. In autumnal music, this confusion is the point.</p>
+    <p>A brief voice crossing creates a moment of <span class="key">gentle ambiguity</span>: the listener loses track of which voice is the primary and which is the countermelody. The two presences become briefly indistinguishable, then separate again. It is a moment where the two voices seem to change places — noticed, but not alarming.</p>
+    <div class="idiom">
+      <div class="idiom-name">Voice Crossing in Practice</div>
+      <p><strong>Keep it brief</strong> — one or two bars maximum. Sustained crossing becomes confusing rather than interesting.</p>
+      <p><strong>Resolve by separation</strong> — after the crossing, the voices should move apart again, each returning to their register. The moment of overlap is the event; the return to clarity is the resolution.</p>
+      <p><strong>Move by step</strong> — a voice crossing achieved through stepwise motion feels gradual and organic. A leap into crossing territory sounds jarring.</p>
+      <p><strong>Use it at a harmonic rest point</strong> — voice crossing works best when the harmony is stable (sustaining Dm or Cmaj7), so the listener can absorb the textural event without also tracking harmonic motion.</p>
+    </div>
+    <p>Voice crossing is the exception, not the rule. In an 8-bar countermelody passage, one crossing — perhaps in bar 4 or 5 — creates the sense that the two voices are aware of each other, briefly sharing the same space before returning to their separate paths.</p>
+  </content-card>
+
+  <content-card number="5" color="green" title="The Resting Voice">
+    <p>In slow counterpoint, voices don't move constantly. The autumnal texture is built on <span class="key">alternation</span>: one voice moves while the other holds, then they trade. When a voice is still, the ear focuses entirely on the moving voice. When both move, the ear hears the space between them. This alternation — not simultaneous constant motion — is the autumnal polyphonic texture.</p>
+    <p>A voice can rest for four bars while the other moves, then enter for two bars while the first becomes still. The resting voice is not absent from the music — it is present as a memory and an anticipation. The listener knows it will return; the not-yet-returned voice is part of the texture.</p>
+    <div class="sub-section">
+      <div class="sub-title">Texture Map: Alternating Motion</div>
+      <p>Below: a 16-bar two-voice passage where the voices take turns. Neither voice is active more than half the time. The rests are as long as the active phrases.</p>
+    </div>
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 128" xmlns="http://www.w3.org/2000/svg">
+        <!-- Row backgrounds -->
+        <rect x="60" y="20" width="680" height="30" rx="2" fill="#f5f2ee" opacity="0.5"/>
+        <rect x="60" y="68" width="680" height="30" rx="2" fill="#f5f2ee" opacity="0.5"/>
+        <!-- Row labels -->
+        <text x="52" y="39" font-family="Space Mono,monospace" font-size="9" fill="#4a7fa5" text-anchor="end">MELODY</text>
+        <text x="52" y="87" font-family="Space Mono,monospace" font-size="9" fill="#5a9e6f" text-anchor="end">COUNTER</text>
+        <!-- Bar grid lines (16 bars, 42.5px each) -->
+        <line x1="60" y1="16" x2="60" y2="106" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="102" y1="16" x2="102" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="145" y1="16" x2="145" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="187" y1="16" x2="187" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="230" y1="16" x2="230" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="272" y1="16" x2="272" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="315" y1="16" x2="315" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="357" y1="16" x2="357" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="400" y1="16" x2="400" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="442" y1="16" x2="442" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="485" y1="16" x2="485" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="527" y1="16" x2="527" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="570" y1="16" x2="570" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="612" y1="16" x2="612" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="655" y1="16" x2="655" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="697" y1="16" x2="697" y2="106" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="740" y1="16" x2="740" y2="106" stroke="#1a1a1a" stroke-width="1"/>
+        <!-- Bar numbers -->
+        <text x="81" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">1</text>
+        <text x="123" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">2</text>
+        <text x="166" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">3</text>
+        <text x="208" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">4</text>
+        <text x="251" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">5</text>
+        <text x="293" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">6</text>
+        <text x="336" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">7</text>
+        <text x="378" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">8</text>
+        <text x="421" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">9</text>
+        <text x="463" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">10</text>
+        <text x="506" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">11</text>
+        <text x="548" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">12</text>
+        <text x="591" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">13</text>
+        <text x="633" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">14</text>
+        <text x="676" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">15</text>
+        <text x="718" y="11" font-family="Space Mono,monospace" font-size="8" fill="#ccc" text-anchor="middle">16</text>
+        <!-- Melody active blocks: bars 1–2, 7–8, 13–14 -->
+        <rect x="60" y="22" width="85" height="26" rx="2" fill="#4a7fa5" opacity="0.8"/>
+        <rect x="315" y="22" width="85" height="26" rx="2" fill="#4a7fa5" opacity="0.8"/>
+        <rect x="570" y="22" width="85" height="26" rx="2" fill="#4a7fa5" opacity="0.8"/>
+        <text x="102" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">active</text>
+        <text x="357" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">active</text>
+        <text x="612" y="40" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">active</text>
+        <!-- Countermelody active blocks: bars 3–4, 9–10, 15–16 -->
+        <rect x="145" y="70" width="85" height="26" rx="2" fill="#5a9e6f" opacity="0.8"/>
+        <rect x="400" y="70" width="85" height="26" rx="2" fill="#5a9e6f" opacity="0.8"/>
+        <rect x="655" y="70" width="85" height="26" rx="2" fill="#5a9e6f" opacity="0.8"/>
+        <text x="187" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">active</text>
+        <text x="442" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">active</text>
+        <text x="697" y="88" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">active</text>
+        <!-- Bottom annotation -->
+        <text x="400" y="120" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">— voices alternate: one active, one resting — each voice present half the time —</text>
+      </svg>
+    </div>
+    <p>The silence in each voice is not empty. The melody that rested in bars 3–6 is still present as a memory; its re-entry in bar 7 carries the weight of having been waited for. The two voices create a texture that feels inhabited without feeling busy.</p>
+    <div class="principle-box">
+      <p><strong>The autumnal two-voice principle:</strong> Both voices are present for the full duration — but not both moving. Stillness in one voice amplifies the movement in the other. The rests are structural, not decorative.</p>
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open your <strong>Autumnal v8 — Space and Pedal</strong> session (72 bars, four tracks — harmonic bed with reverb, textural layer, bass voice, pedal D2 — plus the melody track with D5 at +12ms and A4 at +10ms).</p>
+
+    <p><strong>Step 1 — Create a countermelody track.</strong> Add a new MIDI track. Choose a timbre clearly different from the melody — if the melody is a warm pad, use something cooler or slightly brighter. A thin string patch, a plucked tone, or a drier version of the pad works well. The two voices should be distinguishable by timbre as well as register.</p>
+
+    <p><strong>Step 2 — Place the first countermelody phrase.</strong> The main melody has D5 in bar 1 and A4 in bar 3, with silence between them and after bar 3. Enter the countermelody in that silence — approximately bar 5. Use contrary motion: the melody descended from D5 to A4 (a falling fifth), so the countermelody should ascend. Place A3 (half note) in bar 5, then D4 (half note) in bar 7. Two notes, contrary to the melody's direction. Allow a 2-bar rest after D4 before continuing.</p>
+
+    <p><strong>Step 3 — Add a 9–8 suspension.</strong> In bar 9, place E4 (half note or whole note) on the countermelody track. This is the 9th above D — a gentle dissonance against the Dm chord below. In bar 10, place D4 (step down — the resolution). Apply a +10ms nudge to the E4 so it arrives slightly behind the beat. The suspension should feel considered, not mechanical.</p>
+
+    <p><strong>Step 4 — Leave silence after the resolution.</strong> After the D4 resolution in bar 10, leave the countermelody silent for at least 4 bars. The silence after a suspension resolution is where the listener absorbs what just happened. Do not fill it.</p>
+
+    <p><strong>Step 5 — Balance.</strong> The countermelody should sit 3–5 dB quieter than the main melody. It should feel like a second presence in the room, not a competing voice. If you can hear it clearly at low volume, it's probably too loud.</p>
+
+    <p>Save as <strong>Autumnal v9 — Countermelody</strong>.</p>
+  </content-card>
+
+</div>
+
+<site-banner>UNHURRIED COUNTERPOINT ◇ CONTRARY MOTION ◇ 9–8 SUSPENSION ◇ VOICE CROSSING ◇ THE RESTING VOICE ◇ STILLNESS IS PRESENCE</site-banner>
+
+<chapter-nav
+  prev-href="a11-space-and-silence.html" prev-title="A11 — Space and Silence">
+</chapter-nav>
+
+<site-footer text="AMBIENT COUNTERPOINT — A12: UNHURRIED COUNTERPOINT — D MINOR"></site-footer>
+
+</body>
+</html>
