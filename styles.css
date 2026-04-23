@@ -134,7 +134,7 @@ body {
 }
 .banner-text {
   display: inline-block;
-  animation: scroll-banner 22s linear infinite;
+  animation: scroll-banner 90s linear infinite;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-size: 14px;
