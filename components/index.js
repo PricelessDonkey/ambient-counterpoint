@@ -100,3 +100,27 @@ class SiteFooter extends HTMLElement {
   }
 }
 customElements.define('site-footer', SiteFooter);
+
+// ── Diagram Zoom ──────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  const dialog = document.createElement('dialog');
+  dialog.className = 'diagram-zoom';
+  document.body.appendChild(dialog);
+
+  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+
+  document.querySelectorAll('.diagram-wrap').forEach(wrap => {
+    wrap.addEventListener('click', () => {
+      const svg = wrap.querySelector('svg');
+      if (!svg) return;
+      dialog.innerHTML = '';
+      dialog.appendChild(svg.cloneNode(true));
+      const closeBtn = document.createElement('button');
+      closeBtn.className = 'diagram-zoom-close';
+      closeBtn.textContent = '✕ close';
+      closeBtn.addEventListener('click', () => dialog.close());
+      dialog.appendChild(closeBtn);
+      dialog.showModal();
+    });
+  });
+});

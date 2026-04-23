@@ -109,6 +109,21 @@
         </div>
 
         <div>
+          <span class="hn-flow-label" style="color:var(--ink-soft);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;">Extensions</span>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-bottom:4px;">
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--ink-soft);text-transform:uppercase;display:block;">add9</span>
+              <span id="cur-add9-notes" class="hn-notes">—</span>
+            </div>
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--ink-soft);text-transform:uppercase;display:block;">Δ7 (chromatic)</span>
+              <span id="cur-chr-maj7-notes" class="hn-notes">—</span>
+            </div>
+          </div>
+          <span class="hn-hint">Voice the added note as the highest pitch for full effect. add9 hovers — blurs chord and scale. Δ7 = chromatic major 7th — wistful on minor chords (raised ♭7), same as diatonic 7th on major. Use Δ7 sparingly: 1–2 moments of emotional weight per piece.</span>
+        </div>
+
+        <div>
           <span class="hn-flow-label" style="color:var(--ink-soft);letter-spacing:2px;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;text-transform:uppercase;display:block;margin-bottom:6px;">Parallel Counterpoint</span>
           <div class="hn-harmonize-row"><span class="hn-har-label">3rd ↑ / 6th ↓</span><span id="cur-third-above" class="hn-har-note">—</span></div>
           <div class="hn-harmonize-row"><span class="hn-har-label">6th ↑ / 3rd ↓</span><span id="cur-sixth-above" class="hn-har-note">—</span></div>
@@ -120,6 +135,7 @@
           <div class="hn-inversion-row"><span class="hn-inv-label">Root (5-3)</span><span id="inv-root" class="hn-inv-bass">—</span><span class="hn-inv-sym">in bass</span></div>
           <div class="hn-inversion-row"><span class="hn-inv-label">1st inv (6-3)</span><span id="inv-first" class="hn-inv-bass">—</span><span class="hn-inv-sym">in bass</span></div>
           <div class="hn-inversion-row"><span class="hn-inv-label">2nd inv (6-4)</span><span id="inv-second" class="hn-inv-bass">—</span><span class="hn-inv-sym">in bass</span></div>
+          <span class="hn-hint">Root = stable arrival. 1st inv = smooth passing bass, lightens the chord. 2nd inv = unstable — use as cadential ⁶₄ directly before V.</span>
         </div>
 
       </div>
@@ -140,13 +156,13 @@
           <span class="hn-flow-label">Dominant Departure</span>
           <div id="dest-dom-title" class="hn-chord-name">—</div>
           <span id="dest-dom-notes" class="hn-notes">—</span>
-          <span class="hn-hint">Treat this chord as V7 — forces resolution</span>
+          <span class="hn-hint">Treat this chord as V7 — briefly tonicizes the resolution target, pulling outside the key. Works on any chord; use to pivot toward a new tonal center.</span>
         </div>
 
         <div class="hn-flow deceptive">
           <span class="hn-flow-label">Deceptive Exit</span>
           <div id="dest-dec" class="hn-chord-name">—</div>
-          <span class="hn-hint">Surprise in-key change — subverts expectation</span>
+          <span class="hn-hint">Surprise in-key change — bass moves up a step instead of falling a fifth. The listener expected a cadence; they get extension instead. Must rewind and try again to reach tonic.</span>
         </div>
 
       </div>
@@ -351,6 +367,12 @@
     document.getElementById('cur-triad').innerText = `${cur.name}${getQual(cur.name, d3)}`;
     document.getElementById('cur-notes').innerText = `${cur.name}, ${d3}, ${d5}`;
     document.getElementById('cur-7th-notes').innerText = `${cur.name}, ${d3}, ${d5}, ${d7}`;
+
+    // Extensions
+    const d9 = currentScale[(index + 1) % 7].name;
+    document.getElementById('cur-add9-notes').innerText = `${cur.name}, ${d3}, ${d5}, ${d9}`;
+    const chrMaj7 = getNote(curRootIdx, 11);
+    document.getElementById('cur-chr-maj7-notes').innerText = `${cur.name}, ${d3}, ${d5}, ${chrMaj7}`;
 
     // Present — function badge
     const fn = FUNCTIONS[scaleName][index];

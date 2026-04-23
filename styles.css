@@ -350,6 +350,7 @@ body {
   border: 2px solid var(--ink);
   padding: 20px;
   overflow: hidden;
+  cursor: zoom-in;
 }
 .diagram-wrap svg {
   display: block;
@@ -359,6 +360,50 @@ body {
 .grid-line {
   stroke: #d9d4ca;
   stroke-width: 0.5;
+}
+
+/* ── Diagram Zoom Dialog ── */
+dialog.diagram-zoom {
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  padding: 20px;
+  width: min(880px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  animation: diagram-zoom-in 0.18s ease both;
+}
+dialog.diagram-zoom svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+dialog.diagram-zoom::backdrop {
+  background: rgba(26, 26, 26, 0.8);
+  animation: diagram-backdrop-in 0.18s ease both;
+}
+dialog.diagram-zoom .diagram-zoom-close {
+  display: block;
+  margin: 12px 0 0 auto;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  background: none;
+  border: 1.5px solid var(--ink);
+  padding: 4px 10px;
+  cursor: pointer;
+  color: var(--ink);
+}
+dialog.diagram-zoom .diagram-zoom-close:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+@keyframes diagram-zoom-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes diagram-backdrop-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* ── Chapter Navigation (prev / next) ── */
