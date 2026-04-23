@@ -1,16 +1,23 @@
-/* Ambient Counterpoint — Web Components */
+/* Music Manual — Web Components */
 
 // ── site-nav ──────────────────────────────────────────────────────────────────
 class SiteNav extends HTMLElement {
   connectedCallback() {
     const href  = this.getAttribute('href');
-    const label = this.getAttribute('label') || 'Ambient Counterpoint';
+    const label = this.getAttribute('label') || 'Music Manual';
     const isChordFinder = window.location.pathname.includes('chord-finder');
     const toolLink = isChordFinder ? '' : `<a href="chord-finder.html" target="_blank" class="site-nav-tool">Harmonic Navigator</a>`;
     const left = href
       ? `<a href="${href}">${label}</a>`
-      : `<span class="site-nav-home">Ambient Counterpoint</span>`;
+      : `<span class="site-nav-home">Music Manual</span>`;
     this.innerHTML = `<nav class="site-nav">${left}${toolLink}</nav>`;
+
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      const nav = this.querySelector('.site-nav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('is-scrolled', window.scrollY > 60);
+      }, { passive: true });
+    }
   }
 }
 customElements.define('site-nav', SiteNav);

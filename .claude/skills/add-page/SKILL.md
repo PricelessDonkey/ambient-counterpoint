@@ -4,7 +4,7 @@ description: Add a new music theory reference page to this site and link it from
 argument-hint: [page title, topic, or chapter number — include "minimalist" or use m01-style numbering for the minimalist series]
 ---
 
-You are adding a new reference page to the Ambient Counterpoint music theory site at `/Users/sam/projects/composing/`.
+You are adding a new reference page to the Music Manual music theory site at `/Users/sam/projects/composing/`.
 
 CLAUDE.md is already loaded and contains the full design system, color semantics, component reference, SVG diagram conventions, chapter page skeleton, and chapter nav rules. Do not re-read those — treat CLAUDE.md as your style guide and follow it.
 
@@ -82,7 +82,7 @@ Follow the chapter page skeleton in CLAUDE.md exactly. Key reminders:
 - `<content-card>` color values: `color="green"`, `color="orange"`, `color="purple"`, `color="red"` (default = blue). Build It card always uses `number="✦" color="orange"`
 - Chapter nav: omit `prev-href`/`prev-title` for first chapter; omit `next-href`/`next-title` if the next HTML file doesn't exist yet (check your Glob result)
 - **`<site-nav>` href and label:** Bach → `href="bach.html" label="Bach Counterpoint"`; Minimalist → `href="minimalist.html" label="Minimalist Composition"`
-- **`<site-footer>` text:** `AMBIENT COUNTERPOINT — CH NN: TITLE — D MINOR` for Bach; `AMBIENT COUNTERPOINT — M NN: TITLE — D DORIAN` for Minimalist
+- **`<site-footer>` text:** `MUSIC MANUAL — CH NN: TITLE — D MINOR` for Bach; `MUSIC MANUAL — M NN: TITLE — D DORIAN` for Minimalist
 
 **Cross-references:** Where a minimalist technique has a Bach counterpart (or vice versa), include a `<p>` cross-reference in the relevant card pointing to the other chapter's HTML file. The plan files list the expected cross-references.
 

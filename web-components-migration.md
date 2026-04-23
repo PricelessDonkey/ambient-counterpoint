@@ -65,7 +65,7 @@ At the start of any session continuing this migration:
 </chapter-nav>
 <!-- omit prev-href/prev-title for first chapter; omit next-href/next-title for last -->
 
-<site-footer text="AMBIENT COUNTERPOINT — CH 01: A SINGLE LINE — D MINOR"></site-footer>
+<site-footer text="MUSIC MANUAL — CH 01: A SINGLE LINE — D MINOR"></site-footer>
 ```
 
 ## Script tag (add to every page's `<head>`, after the stylesheet link)

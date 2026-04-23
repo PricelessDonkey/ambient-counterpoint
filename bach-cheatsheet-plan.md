@@ -76,7 +76,7 @@ All chapters use a consistent visual language established in the first batch of 
 
 These pages are complete and establish the design language. Reference them for style consistency:
 
-1. **toolkit.html** — "Ambient Counterpoint Melodic Toolkit" — 10 compositional idioms for the Bach × Sinephro × Reich intersection. Covers: voice-leading inside arpeggios, one note per cycle, contrary motion, pedal freeze, chromatic visitors, phase displacement, velocity as third voice, subtraction arc, sequence as meditation, register as structure, leading tone as climax.
+1. **toolkit.html** — "Music Manual Melodic Toolkit" — 10 compositional idioms for the Bach × Sinephro × Reich intersection. Covers: voice-leading inside arpeggios, one note per cycle, contrary motion, pedal freeze, chromatic visitors, phase displacement, velocity as third voice, subtraction arc, sequence as meditation, register as structure, leading tone as climax.
 
 2. **phrase-shapes.html** — "Bach Phrase Shapes Visual Reference" — 7 melodic contour patterns with SVG contour diagrams. Covers: step up/leap down, leap up/step down, the arch, implied polyphony (with dual-color voice diagram), the circle (arpeggio-to-step), the sigh (suspension chain with clash zones), Fortspinnung chain (with handoff highlights and phrase brackets).
 
@@ -312,7 +312,7 @@ Each chapter = one HTML file. Chapters are designed to be read in order, with ea
 
 ---
 
-### Chapter 11 — From Bach to Ambient Counterpoint
+### Chapter 11 — From Bach to Music Manual
 *Translating everything into looping, phasing, Sinephro/Reich territory.*
 
 **File:** `ch11-ambient-counterpoint.html`

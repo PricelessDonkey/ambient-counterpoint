@@ -139,7 +139,7 @@ Session remains 60 bars, 9 tracks. Cadential sequence now reads: It⁶ → I⁶�
 
 ---
 
-## Ch11 — From Bach to Ambient Counterpoint
+## Ch11 — From Bach to Music Manual
 **Session state:** Three new tracks added to Ch10 session, expanded to 32 bars.
 - Track 6: 8-note arpeggio loop — D4 E4 F4 A4 G4 F4 E4 D4 (eighth notes, 1-bar loop)
 - Track 7: 7-note phase loop — A4 C5 E5 D5 G5 F5 A4 (eighth notes, drifts 1 eighth/bar vs Track 6)

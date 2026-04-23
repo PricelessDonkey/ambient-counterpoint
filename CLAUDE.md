@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Ambient Counterpoint** is a static music theory reference site bridging Bach's contrapuntal techniques with minimalist/ambient electronic music production. All examples are in D minor. No build tools — pure HTML, CSS, and inline SVG.
+**Music Manual** is a static music theory reference site bridging Bach's contrapuntal techniques with minimalist/ambient electronic music production. All examples are in D minor. No build tools — pure HTML, CSS, and inline SVG.
 
 ## Adding a New Page
 
@@ -80,7 +80,7 @@ Every chapter page (`ch01-single-line.html`, etc.) follows this skeleton — do 
   next-href="chNN-next.html"     next-title="Ch NN — Next Title">
 </chapter-nav>
 
-<site-footer text="AMBIENT COUNTERPOINT — CH 0N: TITLE — D MINOR"></site-footer>
+<site-footer text="MUSIC MANUAL — CH 0N: TITLE — D MINOR"></site-footer>
 
 </body>
 </html>

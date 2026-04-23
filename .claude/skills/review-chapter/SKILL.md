@@ -4,7 +4,7 @@ description: Review a chapter page for musical accuracy, diagram/text consistenc
 argument-hint: [chapter filename or number, e.g. ch03 or ch03-two-voices.html]
 ---
 
-You are reviewing a chapter of the Ambient Counterpoint music theory site at `/Users/sam/projects/composing/` for accuracy and clarity. Your job is to find real errors and genuine gaps — not to rewrite the chapter.
+You are reviewing a chapter of the Music Manual music theory site at `/Users/sam/projects/composing/` for accuracy and clarity. Your job is to find real errors and genuine gaps — not to rewrite the chapter.
 
 CLAUDE.md is already loaded. Use it for design conventions if needed, but this skill is about *content correctness*, not style.
 
