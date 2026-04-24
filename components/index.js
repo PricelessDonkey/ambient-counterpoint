@@ -108,26 +108,81 @@ class SiteFooter extends HTMLElement {
 }
 customElements.define('site-footer', SiteFooter);
 
-// ── Diagram Zoom ──────────────────────────────────────────────────────────────
+// ── Diagram Magnifier ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  const dialog = document.createElement('dialog');
-  dialog.className = 'diagram-zoom';
-  document.body.appendChild(dialog);
+  const LENS_SIZE   = 200;   // px diameter
+  const ZOOM        = 2.5;   // magnification factor
+  const HALF        = LENS_SIZE / 2;
 
-  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+  const lens = document.createElement('div');
+  lens.className = 'diagram-lens';
+  document.body.appendChild(lens);
+
+  let lensClone = null;
+  let activeSvg = null;
+
+  function showLens(wrap, clientX, clientY) {
+    const svg = wrap.querySelector('svg');
+    if (!svg) return;
+
+    // Rebuild clone only when entering a new diagram
+    if (svg !== activeSvg) {
+      activeSvg = svg;
+      lensClone = svg.cloneNode(true);
+      lensClone.style.cssText = '';
+      lens.innerHTML = '';
+      lens.appendChild(lensClone);
+    }
+
+    // Position of the SVG element on screen
+    const svgRect  = svg.getBoundingClientRect();
+    const svgW     = svgRect.width;
+    const svgH     = svgRect.height;
+
+    // Cursor position relative to SVG, clamped so lens doesn't show empty space
+    const relX = Math.max(0, Math.min(svgW, clientX - svgRect.left));
+    const relY = Math.max(0, Math.min(svgH, clientY - svgRect.top));
+
+    // The clone must be scaled and offset so that `relX/relY` maps to the center
+    const scaledW = svgW * ZOOM;
+    const scaledH = svgH * ZOOM;
+    const offsetX = HALF - relX * ZOOM;
+    const offsetY = HALF - relY * ZOOM;
+
+    lensClone.style.width    = `${scaledW}px`;
+    lensClone.style.height   = `${scaledH}px`;
+    lensClone.style.position = 'absolute';
+    lensClone.style.left     = `${offsetX}px`;
+    lensClone.style.top      = `${offsetY}px`;
+
+    // Center lens on cursor, offset so it doesn't sit under finger
+    lens.style.left = `${clientX - HALF}px`;
+    lens.style.top  = `${clientY - HALF - LENS_SIZE * 0.6}px`;
+    lens.classList.add('is-visible');
+  }
+
+  function hideLens() {
+    lens.classList.remove('is-visible');
+    activeSvg = null;
+  }
 
   document.querySelectorAll('.diagram-wrap').forEach(wrap => {
-    wrap.addEventListener('click', () => {
-      const svg = wrap.querySelector('svg');
-      if (!svg) return;
-      dialog.innerHTML = '';
-      dialog.appendChild(svg.cloneNode(true));
-      const closeBtn = document.createElement('button');
-      closeBtn.className = 'diagram-zoom-close';
-      closeBtn.textContent = '✕ close';
-      closeBtn.addEventListener('click', () => dialog.close());
-      dialog.appendChild(closeBtn);
-      dialog.showModal();
-    });
+    // Mouse
+    wrap.addEventListener('mousemove', e => showLens(wrap, e.clientX, e.clientY));
+    wrap.addEventListener('mouseleave', hideLens);
+
+    // Touch
+    wrap.addEventListener('touchstart', e => {
+      e.preventDefault();
+      const t = e.touches[0];
+      showLens(wrap, t.clientX, t.clientY);
+    }, { passive: false });
+    wrap.addEventListener('touchmove', e => {
+      e.preventDefault();
+      const t = e.touches[0];
+      showLens(wrap, t.clientX, t.clientY);
+    }, { passive: false });
+    wrap.addEventListener('touchend', hideLens);
+    wrap.addEventListener('touchcancel', hideLens);
   });
 });
