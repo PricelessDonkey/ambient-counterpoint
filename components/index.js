@@ -110,7 +110,7 @@ customElements.define('site-footer', SiteFooter);
 
 // ── Diagram Magnifier ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  const LENS_SIZE   = 200;   // px diameter
+  const LENS_SIZE   = 280;   // px diameter
   const ZOOM        = 2.5;   // magnification factor
   const HALF        = LENS_SIZE / 2;
 
@@ -155,9 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
     lensClone.style.left     = `${offsetX}px`;
     lensClone.style.top      = `${offsetY}px`;
 
-    // Center lens on cursor, offset so it doesn't sit under finger
+    // Center lens directly on cursor/finger
     lens.style.left = `${clientX - HALF}px`;
-    lens.style.top  = `${clientY - HALF - LENS_SIZE * 0.6}px`;
+    lens.style.top  = `${clientY - HALF}px`;
     lens.classList.add('is-visible');
   }
 

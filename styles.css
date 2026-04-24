@@ -376,8 +376,8 @@ body {
 /* ── Diagram Magnifier Lens ── */
 .diagram-lens {
   position: fixed;
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   border: 2.5px solid var(--ink);
   box-shadow: 0 4px 24px rgba(26,26,26,0.18);
