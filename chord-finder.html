@@ -165,6 +165,23 @@
           <span class="hn-hint">Surprise in-key change — bass moves up a step instead of falling a fifth. The listener expected a cadence; they get extension instead. Must rewind and try again to reach tonic.</span>
         </div>
 
+        <div class="hn-flow special">
+          <span class="hn-flow-label">Modulation via Pivot</span>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px;">
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;">As ii → sharp-ward</span>
+              <div id="dest-pivot-sharp" class="hn-chord-name" style="margin-top:2px;">—</div>
+              <span id="dest-pivot-sharp-notes" class="hn-notes">—</span>
+            </div>
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;font-weight:700;letter-spacing:1px;color:var(--purple);text-transform:uppercase;">As vi → flat-ward</span>
+              <div id="dest-pivot-flat" class="hn-chord-name" style="margin-top:2px;">—</div>
+              <span id="dest-pivot-flat-notes" class="hn-notes">—</span>
+            </div>
+          </div>
+          <span class="hn-hint">Reinterpret this chord as ii or vi of a new key — the secondary dominant seals the new tonic. Sharp-ward lands on the dominant key; flat-ward lands on the subdominant key. <a href="ch16-pivot-chords.html" style="color:var(--purple);">Ch 16 — Pivot Chords →</a></span>
+        </div>
+
       </div>
     </div>
 
@@ -433,6 +450,23 @@
 
     const decNote = currentScale[(index + 5) % 7].name;
     document.getElementById('dest-dec').innerText = `${cur.name} → ${decNote}${getQual(decNote, currentScale[(index + 7) % 7].name)}`;
+
+    // Modulation via pivot
+    // As ii: new tonic = root − 2 semitones; sec dom = new tonic + 7 = root + 5
+    const pivotSharpTonic = getNote(curRootIdx, 10);
+    const pivotSharpSecDomRoot = getNote(curRootIdx, 5);
+    const pivotSharpSecDomIdx = NOTES.indexOf(pivotSharpSecDomRoot);
+    const pivotSharpSecDomNotes = [pivotSharpSecDomRoot, getNote(pivotSharpSecDomIdx, 4), getNote(pivotSharpSecDomIdx, 7), getNote(pivotSharpSecDomIdx, 10)];
+    document.getElementById('dest-pivot-sharp').innerText = `${cur.name} → ${pivotSharpSecDomRoot}7 → ${pivotSharpTonic}`;
+    document.getElementById('dest-pivot-sharp-notes').innerText = pivotSharpSecDomNotes.join(', ');
+
+    // As vi: new tonic = root + 3 semitones; sec dom = new tonic + 7 = root + 10
+    const pivotFlatTonic = getNote(curRootIdx, 3);
+    const pivotFlatSecDomRoot = getNote(curRootIdx, 10);
+    const pivotFlatSecDomIdx = NOTES.indexOf(pivotFlatSecDomRoot);
+    const pivotFlatSecDomNotes = [pivotFlatSecDomRoot, getNote(pivotFlatSecDomIdx, 4), getNote(pivotFlatSecDomIdx, 7), getNote(pivotFlatSecDomIdx, 10)];
+    document.getElementById('dest-pivot-flat').innerText = `${cur.name} → ${pivotFlatSecDomRoot}7 → ${pivotFlatTonic}`;
+    document.getElementById('dest-pivot-flat-notes').innerText = pivotFlatSecDomNotes.join(', ');
 
     // Idioms
     const idiom = IDIOMS[index];

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 16 — Pivot Chords &amp; Secondary Dominants</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="bach.html" label="Bach Counterpoint"></site-nav>
+
+<site-banner>CHAPTER 16 ◇ PIVOT CHORDS ◇ SECONDARY DOMINANTS ◇ THE SUBDOMINANT ◇ TONAL GRAVITY ◇ CIRCLE OF FIFTHS ◇ TRITONE SUB ◇ CHAPTER 16 ◇ PIVOT CHORDS ◇ SECONDARY DOMINANTS ◇ THE SUBDOMINANT ◇ TONAL GRAVITY ◇ CIRCLE OF FIFTHS ◇ TRITONE SUB ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Pivot Chords &amp; Secondary Dominants</span>
+  <span slot="subtitle">Every chord belongs to multiple keys at once — harmonic motion is choosing which interpretation to lean into.</span>
+</site-hero>
+
+<intro-box>The tonic doesn't stand alone. It's flanked by two neighbors on the circle of fifths, each exerting gravitational pull. Knowing how to pivot between keys using a shared chord, and how to amplify arrival with a secondary dominant, is what turns a chord progression into a directed journey with a sense of departure and return. Bach's Prelude in C Major encodes every essential move in 35 measures of pure arpeggiation — a thesis statement about how tonal gravity works, written 30 years before Haydn formalized sonata form.</intro-box>
+
+<div class="content">
+
+  <!-- Card 1: The Tonal Axis -->
+  <content-card number="1" title="The Tonal Axis">
+    <p>Every tonic sits between two neighbors on the circle of fifths. In D minor, <span class="key">G minor</span> is one step flat-ward (D is the dominant of G), and <span class="key">A</span> is one step sharp-ward (A is the dominant of D). This isn't geography — it's a force diagram.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 168" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-left" markerWidth="8" markerHeight="6" refX="1" refY="3" orient="auto">
+            <polygon points="8 0, 0 3, 8 6" fill="#6a6460"/>
+          </marker>
+          <marker id="arr-right" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#6a6460"/>
+          </marker>
+        </defs>
+        <!-- Subdominant box: Gm -->
+        <rect x="30" y="44" width="185" height="84" rx="3" fill="#2a2520" stroke="#4a4540" stroke-width="1.5"/>
+        <text x="122" y="68" font-family="Space Mono,monospace" font-size="10" fill="#6a6460" text-anchor="middle" letter-spacing="3">SUBDOMINANT</text>
+        <text x="122" y="104" font-family="Space Mono,monospace" font-size="30" fill="#e0d8c8" text-anchor="middle">Gm</text>
+        <text x="122" y="148" font-family="Space Mono,monospace" font-size="9" fill="#5a5550" text-anchor="middle">D is V of Gm</text>
+        <!-- Tonic box: Dm (highlighted) -->
+        <rect x="288" y="34" width="184" height="94" rx="3" fill="#1a2e4a" stroke="#4a9eff" stroke-width="2"/>
+        <text x="380" y="58" font-family="Space Mono,monospace" font-size="10" fill="#4a9eff" text-anchor="middle" letter-spacing="3">TONIC</text>
+        <text x="380" y="100" font-family="Space Mono,monospace" font-size="30" fill="#e0d8c8" text-anchor="middle">Dm</text>
+        <text x="380" y="148" font-family="Space Mono,monospace" font-size="9" fill="#4a9eff" text-anchor="middle">home</text>
+        <!-- Dominant box: A -->
+        <rect x="545" y="44" width="185" height="84" rx="3" fill="#2a2520" stroke="#4a4540" stroke-width="1.5"/>
+        <text x="637" y="68" font-family="Space Mono,monospace" font-size="10" fill="#6a6460" text-anchor="middle" letter-spacing="3">DOMINANT</text>
+        <text x="637" y="104" font-family="Space Mono,monospace" font-size="30" fill="#e0d8c8" text-anchor="middle">A</text>
+        <text x="637" y="148" font-family="Space Mono,monospace" font-size="9" fill="#5a5550" text-anchor="middle">A is V of Dm</text>
+        <!-- Bidirectional arrows -->
+        <line x1="286" y1="86" x2="220" y2="86" stroke="#6a6460" stroke-width="1.5" marker-end="url(#arr-left)"/>
+        <line x1="472" y1="86" x2="540" y2="86" stroke="#6a6460" stroke-width="1.5" marker-end="url(#arr-right)"/>
+      </svg>
+    </div>
+
+    <p>The tonic holds a double identity: it is simultaneously the <span class="key">dominant of the subdominant</span> (D dominates G) and the <span class="key">subdominant of the dominant</span> (D is IV in A major). Motion sharp-ward creates tension and forward momentum. Motion flat-ward creates warmth, space, a settling back. Both directions are available from any tonic at any time.</p>
+
+    <div class="idiom">
+      <div class="idiom-name">The circle as force diagram</div>
+      <p>Moving one step sharp-ward on the circle of fifths increases tension. Moving one step flat-ward releases it. Every tonal composition is a navigation between these two forces — departure into tension, return through release.</p>
+    </div>
+  </content-card>
+
+  <!-- Card 2: Three Concepts Defined -->
+  <content-card number="2" title="Three Concepts Defined">
+    <p>Three terms describe the moves that make harmonic navigation possible. Each is a different tool for crossing from one key to another.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Subdominant</div>
+      <p>The chord the tonic is dominant of. In D minor, <span class="key">Gm is the subdominant</span> because D is the fifth of G. Subdominant motion moves flat-ward on the circle — toward warmth and memory. The plagal cadence (iv → i) is the most familiar gesture in this direction.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Secondary Dominant</div>
+      <p>The dominant of the dominant — the chord that most strongly pulls toward V rather than toward I. In D minor, <span class="key">E7 is the secondary dominant</span> (V of V, or V/V): its active chromatic tone (G#) is the leading tone of A, pulling sharply toward the expected A arrival. You can stack this logic: B7 is V/V/V, the dominant of E7.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Pivot Chord</div>
+      <p>A chord that is diatonic to two keys simultaneously, used as a hinge between them. Rather than lurching into a new key, you find a chord that belongs to both the old and new keys, reinterpret it in the new context, and confirm the new key with a secondary dominant. In D minor / D major, <span class="key">Bm is a pivot</span>: it is vi in D major and ii in A major — the door to the dominant.</p>
+    </div>
+  </content-card>
+
+  <!-- Card 3: The Pivot Chord -->
+  <content-card number="3" color="purple" title="The Pivot Chord — A Door Between Keys">
+    <p>The pivot chord is the smoothest possible key change because there is no actual "change" — you are already in both keys at once. The listener doesn't notice the modulation until the secondary dominant confirms the new tonic.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Tonicizing the Dominant (toward A)</div>
+      <p>In D major (the parallel major of our home key), <span class="key">Bm is vi</span>. In A major, <span class="key">Bm is ii</span>. Both keys share this chord with no alteration. You pivot on Bm, then confirm A with E7 — its dominant seventh. The G# in E7 is the moment of commitment: Bm has no G#, but E7 does — and G# is the leading tone of A, locking the ear into the new key.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-pv1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#9c59d1"/>
+            </marker>
+          </defs>
+          <!-- Row labels -->
+          <text x="0" y="54" font-family="Space Mono,monospace" font-size="10" fill="#6a6460">D context</text>
+          <text x="0" y="136" font-family="Space Mono,monospace" font-size="10" fill="#6a6460">A context</text>
+          <!-- Chord boxes: Dm, Bm, E7, A -->
+          <!-- Dm -->
+          <rect x="100" y="36" width="110" height="50" rx="3" fill="#1a2e4a" stroke="#4a9eff" stroke-width="1.5"/>
+          <text x="155" y="57" font-family="Space Mono,monospace" font-size="11" fill="#4a9eff" text-anchor="middle">i</text>
+          <text x="155" y="76" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Dm</text>
+          <!-- Bm (pivot) -->
+          <rect x="280" y="36" width="110" height="50" rx="3" fill="#3a1e5a" stroke="#9c59d1" stroke-width="2"/>
+          <text x="335" y="57" font-family="Space Mono,monospace" font-size="11" fill="#9c59d1" text-anchor="middle">vi</text>
+          <text x="335" y="76" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Bm</text>
+          <!-- Bm again (A context) -->
+          <rect x="280" y="116" width="110" height="50" rx="3" fill="#3a1e5a" stroke="#9c59d1" stroke-width="2"/>
+          <text x="335" y="137" font-family="Space Mono,monospace" font-size="11" fill="#9c59d1" text-anchor="middle">ii</text>
+          <text x="335" y="156" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Bm</text>
+          <!-- E7 -->
+          <rect x="460" y="116" width="110" height="50" rx="3" fill="#2a1a10" stroke="#e07020" stroke-width="1.5"/>
+          <text x="515" y="137" font-family="Space Mono,monospace" font-size="11" fill="#e07020" text-anchor="middle">V7</text>
+          <text x="515" y="156" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">E7</text>
+          <!-- A -->
+          <rect x="620" y="116" width="110" height="50" rx="3" fill="#1a3020" stroke="#4caf70" stroke-width="1.5"/>
+          <text x="675" y="137" font-family="Space Mono,monospace" font-size="11" fill="#4caf70" text-anchor="middle">I</text>
+          <text x="675" y="156" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">A</text>
+          <!-- D context arrow: Dm → Bm -->
+          <line x1="210" y1="61" x2="278" y2="61" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arr-pv1)"/>
+          <!-- A context arrows: Bm → E7 → A -->
+          <line x1="390" y1="141" x2="458" y2="141" stroke="#9c59d1" stroke-width="1.5" marker-end="url(#arr-pv1)"/>
+          <line x1="570" y1="141" x2="618" y2="141" stroke="#9c59d1" stroke-width="1.5" marker-end="url(#arr-pv1)"/>
+          <!-- Vertical pivot line -->
+          <line x1="335" y1="88" x2="335" y2="114" stroke="#9c59d1" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <!-- Pivot label -->
+          <text x="350" y="106" font-family="Space Mono,monospace" font-size="9" fill="#9c59d1">pivot — same chord, new role</text>
+        </svg>
+      </div>
+
+      <p>The pivot lives entirely in the ambiguity between Dm and A major. Before the F# of E7 arrives, the listener is in both keys. The moment E7 sounds, the ear locks onto A as a local tonic.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Tonicizing the Subdominant (toward Gm)</div>
+      <p>The same logic runs in the opposite direction. <span class="key">Am is v in D minor</span> and simultaneously <span class="key">ii in G minor</span> — a chord that belongs to both keys with no alteration needed. Pivot on Am, then confirm Gm with D7 — its dominant seventh. The F# in D7 is the moment of commitment: F# is chromatic to both D minor and G minor, and its pull toward G locks the ear into the new key.</p>
+
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arr-pv2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+              <polygon points="0 0, 8 3, 0 6" fill="#9c59d1"/>
+            </marker>
+          </defs>
+          <!-- Row labels -->
+          <text x="0" y="54" font-family="Space Mono,monospace" font-size="10" fill="#6a6460">D context</text>
+          <text x="0" y="136" font-family="Space Mono,monospace" font-size="10" fill="#6a6460">Gm context</text>
+          <!-- Dm -->
+          <rect x="100" y="36" width="110" height="50" rx="3" fill="#1a2e4a" stroke="#4a9eff" stroke-width="1.5"/>
+          <text x="155" y="57" font-family="Space Mono,monospace" font-size="11" fill="#4a9eff" text-anchor="middle">i</text>
+          <text x="155" y="76" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Dm</text>
+          <!-- Am (pivot) -->
+          <rect x="280" y="36" width="110" height="50" rx="3" fill="#3a1e5a" stroke="#9c59d1" stroke-width="2"/>
+          <text x="335" y="57" font-family="Space Mono,monospace" font-size="11" fill="#9c59d1" text-anchor="middle">v</text>
+          <text x="335" y="76" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Am</text>
+          <!-- Am again (Gm context) -->
+          <rect x="280" y="116" width="110" height="50" rx="3" fill="#3a1e5a" stroke="#9c59d1" stroke-width="2"/>
+          <text x="335" y="137" font-family="Space Mono,monospace" font-size="11" fill="#9c59d1" text-anchor="middle">ii</text>
+          <text x="335" y="156" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Am</text>
+          <!-- D7 -->
+          <rect x="460" y="116" width="110" height="50" rx="3" fill="#2a1a10" stroke="#e07020" stroke-width="1.5"/>
+          <text x="515" y="137" font-family="Space Mono,monospace" font-size="11" fill="#e07020" text-anchor="middle">V7</text>
+          <text x="515" y="156" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">D7</text>
+          <!-- Gm -->
+          <rect x="620" y="116" width="110" height="50" rx="3" fill="#1a3020" stroke="#4caf70" stroke-width="1.5"/>
+          <text x="675" y="137" font-family="Space Mono,monospace" font-size="11" fill="#4caf70" text-anchor="middle">i</text>
+          <text x="675" y="156" font-family="Space Mono,monospace" font-size="18" fill="#e0d8c8" text-anchor="middle">Gm</text>
+          <!-- D context arrow: Dm → Am -->
+          <line x1="210" y1="61" x2="278" y2="61" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arr-pv2)"/>
+          <!-- Gm context arrows -->
+          <line x1="390" y1="141" x2="458" y2="141" stroke="#9c59d1" stroke-width="1.5" marker-end="url(#arr-pv2)"/>
+          <line x1="570" y1="141" x2="618" y2="141" stroke="#9c59d1" stroke-width="1.5" marker-end="url(#arr-pv2)"/>
+          <!-- Vertical pivot line -->
+          <line x1="335" y1="88" x2="335" y2="114" stroke="#9c59d1" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="350" y="106" font-family="Space Mono,monospace" font-size="9" fill="#9c59d1">pivot — same chord, new role</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="principle-box">In major keys, vi is the door sharp-ward (to the dominant) and ii is the door flat-ward (to the subdominant) — exact mirror images. In minor, vi still opens the sharp-ward path (borrowed from parallel major). Flat-ward, look to the v chord: Am is v in D minor and ii in G minor, opening the same door by a different mechanism.</div>
+  </content-card>
+
+  <!-- Card 4: Pivot Reference Table -->
+  <content-card number="4" color="green" title="Pivot Reference — Common Keys">
+    <p>The pattern is consistent across keys. Sharp-ward, <span class="key">vi becomes ii</span> in the dominant key. Flat-ward, <span class="key">ii becomes vi</span> in the subdominant key — this works cleanly in major; in minor, use the v chord, which becomes ii in the subdominant key. Commit these shapes to muscle memory and you can pivot from any tonic.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Pivot toward the dominant (vi = ii in new key)</div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg">
+          <!-- Column headers -->
+          <text x="80" y="22" font-family="Space Mono,monospace" font-size="10" fill="#6a6460" text-anchor="middle" letter-spacing="2">HOME KEY</text>
+          <text x="300" y="22" font-family="Space Mono,monospace" font-size="10" fill="#9c59d1" text-anchor="middle" letter-spacing="2">PIVOT CHORD</text>
+          <text x="510" y="22" font-family="Space Mono,monospace" font-size="10" fill="#e07020" text-anchor="middle" letter-spacing="2">SECONDARY DOM</text>
+          <text x="680" y="22" font-family="Space Mono,monospace" font-size="10" fill="#4caf70" text-anchor="middle" letter-spacing="2">ARRIVAL</text>
+          <line x1="30" y1="30" x2="730" y2="30" stroke="#3a3530" stroke-width="1"/>
+          <!-- Row 1: D minor -->
+          <text x="80" y="62" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">D min</text>
+          <text x="300" y="62" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Bm  (vi → ii)</text>
+          <text x="510" y="62" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">E7</text>
+          <text x="680" y="62" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">A major</text>
+          <line x1="30" y1="72" x2="730" y2="72" stroke="#2a2520" stroke-width="1"/>
+          <!-- Row 2: G minor -->
+          <text x="80" y="104" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">G min</text>
+          <text x="300" y="104" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Em  (vi → ii)</text>
+          <text x="510" y="104" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">A7</text>
+          <text x="680" y="104" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">D major</text>
+          <line x1="30" y1="114" x2="730" y2="114" stroke="#2a2520" stroke-width="1"/>
+          <!-- Row 3: A minor -->
+          <text x="80" y="146" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">A min</text>
+          <text x="300" y="146" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">F#m  (vi → ii)</text>
+          <text x="510" y="146" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">B7</text>
+          <text x="680" y="146" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">E major</text>
+          <line x1="30" y1="156" x2="730" y2="156" stroke="#2a2520" stroke-width="1"/>
+          <!-- Row 4: F major -->
+          <text x="80" y="188" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">F maj</text>
+          <text x="300" y="188" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Dm  (vi → ii)</text>
+          <text x="510" y="188" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">G7</text>
+          <text x="680" y="188" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">C major</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Pivot toward the subdominant (ii = vi in new key)</div>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg">
+          <text x="80" y="22" font-family="Space Mono,monospace" font-size="10" fill="#6a6460" text-anchor="middle" letter-spacing="2">HOME KEY</text>
+          <text x="300" y="22" font-family="Space Mono,monospace" font-size="10" fill="#9c59d1" text-anchor="middle" letter-spacing="2">PIVOT CHORD</text>
+          <text x="510" y="22" font-family="Space Mono,monospace" font-size="10" fill="#e07020" text-anchor="middle" letter-spacing="2">SECONDARY DOM</text>
+          <text x="680" y="22" font-family="Space Mono,monospace" font-size="10" fill="#4caf70" text-anchor="middle" letter-spacing="2">ARRIVAL</text>
+          <line x1="30" y1="30" x2="730" y2="30" stroke="#3a3530" stroke-width="1"/>
+          <text x="80" y="62" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">D min</text>
+          <text x="300" y="62" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Am  (v → ii)</text>
+          <text x="510" y="62" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">D7</text>
+          <text x="680" y="62" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">G minor</text>
+          <line x1="30" y1="72" x2="730" y2="72" stroke="#2a2520" stroke-width="1"/>
+          <text x="80" y="104" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">G maj</text>
+          <text x="300" y="104" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Am  (ii → vi)</text>
+          <text x="510" y="104" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">G7</text>
+          <text x="680" y="104" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">C major</text>
+          <line x1="30" y1="114" x2="730" y2="114" stroke="#2a2520" stroke-width="1"/>
+          <text x="80" y="146" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">A maj</text>
+          <text x="300" y="146" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Bm  (ii → vi)</text>
+          <text x="510" y="146" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">A7</text>
+          <text x="680" y="146" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">D major</text>
+          <line x1="30" y1="156" x2="730" y2="156" stroke="#2a2520" stroke-width="1"/>
+          <text x="80" y="188" font-family="Space Mono,monospace" font-size="15" fill="#4a9eff" text-anchor="middle">F maj</text>
+          <text x="300" y="188" font-family="Space Mono,monospace" font-size="15" fill="#9c59d1" text-anchor="middle">Gm  (ii → vi)</text>
+          <text x="510" y="188" font-family="Space Mono,monospace" font-size="15" fill="#e07020" text-anchor="middle">F7</text>
+          <text x="680" y="188" font-family="Space Mono,monospace" font-size="15" fill="#4caf70" text-anchor="middle">Bb major</text>
+        </svg>
+      </div>
+    </div>
+
+    <p>Note the D major row in the second table: the <span class="key">subdominant of A major is D major</span>. Every key you tonicize is itself a home key with its own subdominant and dominant — the chain extends indefinitely in both directions. The ii → vi pivot works cleanly in major keys; in minor, borrow the same chord from the parallel major or use the v chord as shown in the D minor row.</p>
+  </content-card>
+
+  <!-- Card 5: Secondary Dominant Chains -->
+  <content-card number="5" color="purple" title="Secondary Dominant Chains">
+    <p>A secondary dominant is the dominant of the dominant. The logic stacks: every chord in the circle of fifths can act as a dominant toward the next one sharp-ward. The result is a chain of consecutive dominant sevenths, each resolving into the next, building momentum with each link.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 145" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-chain" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#9c59d1"/>
+          </marker>
+        </defs>
+        <!-- Box: B7 -->
+        <rect x="30" y="50" width="130" height="56" rx="3" fill="#2a1a38" stroke="#9c59d1" stroke-width="1.5"/>
+        <text x="95" y="72" font-family="Space Mono,monospace" font-size="10" fill="#9c59d1" text-anchor="middle">V/V/V</text>
+        <text x="95" y="95" font-family="Space Mono,monospace" font-size="22" fill="#e0d8c8" text-anchor="middle">B7</text>
+        <!-- Box: E7 -->
+        <rect x="215" y="50" width="130" height="56" rx="3" fill="#2a1a38" stroke="#9c59d1" stroke-width="1.5"/>
+        <text x="280" y="72" font-family="Space Mono,monospace" font-size="10" fill="#9c59d1" text-anchor="middle">V/V</text>
+        <text x="280" y="95" font-family="Space Mono,monospace" font-size="22" fill="#e0d8c8" text-anchor="middle">E7</text>
+        <!-- Box: A7 -->
+        <rect x="400" y="50" width="130" height="56" rx="3" fill="#2a1a38" stroke="#9c59d1" stroke-width="1.5"/>
+        <text x="465" y="72" font-family="Space Mono,monospace" font-size="10" fill="#9c59d1" text-anchor="middle">V</text>
+        <text x="465" y="95" font-family="Space Mono,monospace" font-size="22" fill="#e0d8c8" text-anchor="middle">A7</text>
+        <!-- Box: Dm -->
+        <rect x="585" y="50" width="140" height="56" rx="3" fill="#1a2e4a" stroke="#4a9eff" stroke-width="2"/>
+        <text x="655" y="72" font-family="Space Mono,monospace" font-size="10" fill="#4a9eff" text-anchor="middle">i</text>
+        <text x="655" y="95" font-family="Space Mono,monospace" font-size="22" fill="#e0d8c8" text-anchor="middle">Dm</text>
+        <!-- Arrows -->
+        <line x1="162" y1="78" x2="212" y2="78" stroke="#9c59d1" stroke-width="2" marker-end="url(#arr-chain)"/>
+        <line x1="347" y1="78" x2="397" y2="78" stroke="#9c59d1" stroke-width="2" marker-end="url(#arr-chain)"/>
+        <line x1="532" y1="78" x2="582" y2="78" stroke="#9c59d1" stroke-width="2" marker-end="url(#arr-chain)"/>
+        <!-- "each is dominant of the next" label -->
+        <text x="380" y="132" font-family="Space Mono,monospace" font-size="9" fill="#5a5550" text-anchor="middle">each chord is dominant of the next — one step along the circle of fifths</text>
+      </svg>
+    </div>
+
+    <p>Each arrow crosses one fifth. B7 → E7 → A7 → Dm traces three steps along the circle, each step sharpening the tension. <span class="key">Jazz musicians call extended chains "secondary dominant substitutions."</span> Bach uses shorter two-link versions throughout his chorales as a primary tool for generating forward momentum.</p>
+
+    <div class="idiom">
+      <div class="idiom-name">How far back to start</div>
+      <p>One secondary dominant (E7 before A7) adds urgency to the dominant arrival. Two (B7 → E7 → A7) creates a longer runway — useful for phrase climaxes. Three or more starts to feel like a sequence and takes on its own formal weight. One is surgical; three is a structural event.</p>
+    </div>
+
+    <div class="idiom">
+      <div class="idiom-name">Every link needs a leading tone</div>
+      <p>The D# in B7 resolves up to E. The G# in E7 resolves up to A. The C# in A7 resolves up to D. Each raised seventh adds one sharp to the temporary key — making the arrival feel earned from further away. When you stack three, you've crossed three temporary keys in a single gesture.</p>
+    </div>
+  </content-card>
+
+  <!-- Card 6: Tritone Substitution -->
+  <content-card number="6" color="purple" title="Tritone Substitution — The Half-Step Approach">
+    <p>Any dominant seventh chord can be replaced by the dominant seventh chord a tritone (six semitones) away. The substitution works because both chords share the same tritone — the tension-bearing interval that defines dominant sevenths — with the two voices that form it simply swapping roles.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-tt" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#4caf70"/>
+          </marker>
+        </defs>
+        <!-- Pitch grid lines -->
+        <line x1="30" y1="50" x2="730" y2="50" class="grid-line"/>
+        <line x1="30" y1="90" x2="730" y2="90" class="grid-line"/>
+        <line x1="30" y1="130" x2="730" y2="130" class="grid-line"/>
+        <!-- Pitch labels -->
+        <text x="22" y="54" font-family="Space Mono,monospace" font-size="10" fill="#6a6460" text-anchor="end">G</text>
+        <text x="22" y="94" font-family="Space Mono,monospace" font-size="10" fill="#e04848" text-anchor="end">C#/Db</text>
+        <text x="22" y="134" font-family="Space Mono,monospace" font-size="10" fill="#6a6460" text-anchor="end">D</text>
+        <!-- A7 chord notes at x=160 -->
+        <text x="160" y="30" font-family="Space Mono,monospace" font-size="14" fill="#9c59d1" text-anchor="middle" font-weight="bold">A7</text>
+        <circle cx="160" cy="50" r="7" fill="#3a3030" stroke="#6a6460" stroke-width="1.5"/>
+        <text x="188" y="54" font-family="Space Mono,monospace" font-size="10" fill="#6a6460">G (7th)</text>
+        <circle cx="160" cy="90" r="7" fill="#4a1a1a" stroke="#e04848" stroke-width="1.5"/>
+        <text x="188" y="94" font-family="Space Mono,monospace" font-size="10" fill="#e04848">C# (3rd)</text>
+        <!-- tritone bracket A7 -->
+        <line x1="152" y1="55" x2="152" y2="85" stroke="#e04848" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="134" y="73" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">tri-</text>
+        <text x="134" y="83" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">tone</text>
+        <!-- Arrow: A7 resolves to Dm -->
+        <line x1="185" y1="130" x2="300" y2="130" stroke="#4caf70" stroke-width="1.5" marker-end="url(#arr-tt)"/>
+        <text x="242" y="150" font-family="Space Mono,monospace" font-size="9" fill="#4caf70" text-anchor="middle">bass leaps ↓ 5th</text>
+        <!-- Dm arrival -->
+        <circle cx="340" cy="130" r="10" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="360" y="134" font-family="Space Mono,monospace" font-size="14" fill="#1a1a1a">Dm</text>
+        <!-- divider -->
+        <line x1="420" y1="20" x2="420" y2="170" stroke="#3a3530" stroke-width="1" stroke-dasharray="5 3"/>
+        <!-- Eb7 chord notes at x=530 -->
+        <text x="530" y="30" font-family="Space Mono,monospace" font-size="14" fill="#9c59d1" text-anchor="middle" font-weight="bold">Eb7</text>
+        <circle cx="530" cy="90" r="7" fill="#4a1a1a" stroke="#e04848" stroke-width="1.5"/>
+        <text x="558" y="94" font-family="Space Mono,monospace" font-size="10" fill="#e04848">Db≈C# (7th)</text>
+        <circle cx="530" cy="50" r="7" fill="#3a3030" stroke="#6a6460" stroke-width="1.5"/>
+        <text x="558" y="54" font-family="Space Mono,monospace" font-size="10" fill="#6a6460">G (3rd)</text>
+        <!-- tritone bracket Eb7 -->
+        <line x1="522" y1="55" x2="522" y2="85" stroke="#e04848" stroke-width="1" stroke-dasharray="3 2"/>
+        <text x="504" y="73" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">same</text>
+        <text x="504" y="83" font-family="Space Mono,monospace" font-size="8" fill="#e04848" text-anchor="middle">tritone</text>
+        <!-- Arrow: Eb7 resolves to Dm (half step bass) -->
+        <line x1="558" y1="130" x2="660" y2="130" stroke="#4caf70" stroke-width="1.5" marker-end="url(#arr-tt)"/>
+        <text x="610" y="150" font-family="Space Mono,monospace" font-size="9" fill="#4caf70" text-anchor="middle">bass slides ↓ ½ step</text>
+        <circle cx="700" cy="130" r="10" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="716" y="134" font-family="Space Mono,monospace" font-size="14" fill="#1a1a1a">Dm</text>
+        <!-- Label: swapped roles -->
+        <text x="380" y="182" font-family="Space Mono,monospace" font-size="9" fill="#5a5550" text-anchor="middle">A7 and Eb7 share the same tritone — 3rd and 7th swap roles</text>
+      </svg>
+    </div>
+
+    <p>In D minor, A7 is the standard dominant. <span class="key">Eb7 is its tritone substitute</span> — the bass moves by half step (Eb → D) instead of leaping a fifth (A → D). Both chords contain the same C#/G tritone; the voices that form it simply trade assignments. The resolution is identical in voice-leading terms; only the bass motion changes, from the functional leap to the chromatic slide.</p>
+
+    <div class="idiom">
+      <div class="idiom-name">Where to use it</div>
+      <p>Tritone substitution is a jazz and modern harmonic technique — it sounds anachronistic in strict Baroque style. But in ambient and electronic music it creates a silky half-step arrival that feels inevitable. Use it where a standard V → i would feel too blunt: cadences after long dominant pedals, inner-section arrivals, any moment where you want the resolution to feel inevitable rather than forceful.</p>
+    </div>
+  </content-card>
+
+  <!-- Card 7: The Character of the Subdominant -->
+  <content-card number="7" title="The Character of the Subdominant">
+    <p>The dominant creates tension by pulling forward. The subdominant creates something structurally different — warmth, space, an exhale. This emotional asymmetry is not subjective: it's structural. The dominant wants to resolve urgently. The subdominant wants to rest.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Sharp-ward: tension -->
+        <rect x="30" y="24" width="320" height="52" rx="3" fill="#2a1a10" stroke="#e07020" stroke-width="1.5"/>
+        <text x="46" y="46" font-family="Space Mono,monospace" font-size="10" fill="#e07020">SHARP-WARD  →  dominant</text>
+        <text x="46" y="66" font-family="Space Mono,monospace" font-size="12" fill="#e0d8c8">tension · urgency · forward lean</text>
+        <!-- Flat-ward: warmth -->
+        <rect x="410" y="24" width="320" height="52" rx="3" fill="#102a1a" stroke="#4caf70" stroke-width="1.5"/>
+        <text x="426" y="46" font-family="Space Mono,monospace" font-size="10" fill="#4caf70">FLAT-WARD  →  subdominant</text>
+        <text x="426" y="66" font-family="Space Mono,monospace" font-size="12" fill="#e0d8c8">warmth · space · settling · memory</text>
+      </svg>
+    </div>
+
+    <p>The subdominant rarely resolves directly to I with the force of V → i. The <span class="key">plagal cadence</span> (iv → i, the "Amen" cadence) feels conclusory rather than dramatic — an exhale, not a climax. This is why subdominant motion typically appears <em>after</em> dominant tension: as counterbalance, not as the main event.</p>
+
+    <p>Crucially, touching both neighbors <span class="key">recenters the tonic</span>. If a piece only tonicizes A, it risks feeling like the music wants to live in A permanently. Swinging through G minor and back confirms that D is the actual gravitational center — neither neighbor can claim it as a satellite. The final return to Dm feels like the only possible landing place.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Bach's structural deployment</div>
+      <p>In the Prelude in C Major, Bach moves sharp-ward first (toward G major, bars 5–11), then arrives at maximum chromatic tension (a diminished seventh, bar 12), then swings flat-ward through F major before returning home. The sharp-ward departure asks a question. The flat-ward approach answers it — from below, so that the final return to C feels inescapable. This is miniature sonata form, encoded 30 years before Haydn formalized it.</p>
+    </div>
+
+    <div class="principle-box">Tonicizing the dominant asks a question. Tonicizing the subdominant answers it — but from below, so the final return to i feels like the only place left to land.</div>
+  </content-card>
+
+  <!-- Card 8: Bach's Structural Arc -->
+  <content-card number="8" color="green" title="Bach's Structural Arc — WTC Prelude in C">
+    <p>The Prelude in C Major (WTC Book I) demonstrates every concept in this chapter in 35 measures of pure arpeggiation — no melody, no counterpoint, just harmonic rhythm. Its structure is the thesis statement of tonal music.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 222" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-arc" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+            <polygon points="0 0, 8 3, 0 6" fill="#4a9eff"/>
+          </marker>
+        </defs>
+        <!-- Phase boxes -->
+        <!-- Phase 1: establish home -->
+        <rect x="30" y="40" width="140" height="76" rx="3" fill="#1a2e4a" stroke="#4a9eff" stroke-width="1.5"/>
+        <text x="100" y="60" font-family="Space Mono,monospace" font-size="9" fill="#4a9eff" text-anchor="middle">mm. 1–4</text>
+        <text x="100" y="79" font-family="Space Mono,monospace" font-size="12" fill="#e0d8c8" text-anchor="middle">i → ii → V → i</text>
+        <text x="100" y="103" font-family="Space Mono,monospace" font-size="9" fill="#6a6460" text-anchor="middle">cadence stated</text>
+        <!-- Phase 2: sharp-ward -->
+        <rect x="210" y="40" width="160" height="76" rx="3" fill="#2a1e38" stroke="#9c59d1" stroke-width="1.5"/>
+        <text x="290" y="60" font-family="Space Mono,monospace" font-size="9" fill="#9c59d1" text-anchor="middle">mm. 5–11</text>
+        <text x="290" y="79" font-family="Space Mono,monospace" font-size="12" fill="#e0d8c8" text-anchor="middle">vi → V/V → V</text>
+        <text x="290" y="103" font-family="Space Mono,monospace" font-size="9" fill="#6a6460" text-anchor="middle">tonicize dominant</text>
+        <!-- Phase 3: tension peak -->
+        <rect x="410" y="40" width="130" height="76" rx="3" fill="#2a1a10" stroke="#e04848" stroke-width="1.5"/>
+        <text x="475" y="60" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">m. 12</text>
+        <text x="475" y="79" font-family="Space Mono,monospace" font-size="12" fill="#e0d8c8" text-anchor="middle">dim7</text>
+        <text x="475" y="103" font-family="Space Mono,monospace" font-size="9" fill="#6a6460" text-anchor="middle">max chromatic tension</text>
+        <!-- Phase 4: flat-ward home -->
+        <rect x="580" y="40" width="150" height="76" rx="3" fill="#102a1a" stroke="#4caf70" stroke-width="1.5"/>
+        <text x="655" y="60" font-family="Space Mono,monospace" font-size="9" fill="#4caf70" text-anchor="middle">mm. 13–17</text>
+        <text x="655" y="79" font-family="Space Mono,monospace" font-size="12" fill="#e0d8c8" text-anchor="middle">IV → ii → V → I</text>
+        <text x="655" y="103" font-family="Space Mono,monospace" font-size="9" fill="#6a6460" text-anchor="middle">subdominant → home</text>
+        <!-- Arrows between phases -->
+        <line x1="172" y1="78" x2="208" y2="78" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arr-arc)"/>
+        <line x1="372" y1="78" x2="408" y2="78" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arr-arc)"/>
+        <line x1="542" y1="78" x2="578" y2="78" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arr-arc)"/>
+        <!-- Arc label -->
+        <text x="380" y="148" font-family="Space Mono,monospace" font-size="11" fill="#6a6460" text-anchor="middle">establish → sharp-ward → peak → flat-ward home</text>
+        <!-- Curved bracket under all -->
+        <path d="M30,165 Q380,195 730,165" fill="none" stroke="#3a3530" stroke-width="1.5"/>
+        <text x="380" y="215" font-family="Space Mono,monospace" font-size="10" fill="#4a9eff" text-anchor="middle">miniature sonata form — tonic bracket confirmed by touching both neighbors</text>
+      </svg>
+    </div>
+
+    <p>This is the tonal bracket: by touching both the dominant (sharp-ward) and the subdominant (flat-ward) before returning home, Bach confirms that C is the gravitational center — not G, not F. The same architecture governs a Bach chorale, a Haydn sonata, a jazz standard, and a 16-bar phrase in Ableton. The scale changes; the logic doesn't.</p>
+
+    <div class="idiom">
+      <div class="idiom-name">Applying the arc in D minor</div>
+      <p>In D minor: establish Dm (bars 1–4). Move toward A (secondary dominant chain, bars 5–8). Hit a diminished or augmented sixth at peak tension (bar 9). Return via Gm (flat-ward approach, bars 10–12). Land on Dm (bar 13). The bracket is complete. Both neighbors have been touched; the tonic has been recentered by triangulation.</p>
+    </div>
+  </content-card>
+
+  <!-- Build It card -->
+  <content-card number="✦" color="orange" title="Build It — Secondary Dominants in the Arrangement">
+    <p>Open your Ch15 Ableton session — the 46-bar arrangement (Hook → Verse → Pre-chorus → Chorus → Bridge → Final Chorus). You'll plant two harmonic pivots: a secondary dominant chain approaching the Chorus, and a subdominant tonicization inside the Bridge.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Move 1 — Secondary dominant into the Chorus</div>
+      <p>The Verse ends around bar 16 of your arrangement before the Pre-chorus begins. Find the last two bars of the Verse and edit the harmony as follows:</p>
+      <p><strong>Second-to-last Verse bar, beat 1:</strong> Change the bass note to B (natural). In your upper voices, keep whatever D-minor material is there — Bm is vi in D, so no violent clash. This is the pivot: you're silently stepping into A major territory.</p>
+      <p><strong>Second-to-last Verse bar, beat 3:</strong> Add an E in the bass and G# in an inner voice. This is E7 — the secondary dominant of A, V/V. The G# signals the shift: it's the leading tone of A, absent from D minor, and its arrival tells the ear that A is the incoming tonic.</p>
+      <p><strong>Final Verse bar:</strong> Let A arrive as a local tonic (or A major chord). The Pre-chorus then pushes back toward Dm from this A arrival. You now have a ii → V7 → I secondary dominant approach (Bm → E7 → A) flowing into the Pre-chorus.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Move 2 — Subdominant tonicization in the Bridge</div>
+      <p>Your Bridge is already in F major (the Ch15 +3 semitone transposition). F major is D minor's relative major — but from a circle-of-fifths standpoint, F is also the subdominant side of C, which is the subtonic of D minor. You can reinforce the flat-ward feeling by briefly tonicizing Gm inside the Bridge.</p>
+      <p><strong>Bridge bar 5 (roughly bar 38 of arrangement):</strong> Add a D7 chord (D–F#–A–C). D7 is the secondary dominant of Gm — V7 of iv. The F# is the chromatic clue that Gm is about to arrive.</p>
+      <p><strong>Bridge bar 6:</strong> Resolve to Gm. One bar of Gm before the final two bars of dominant pedal. The subdominant has been tonicized; the flat-ward excursion is complete.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">After both edits</div>
+      <p>Play the full arrangement from top. Notice: the Verse-to-Chorus transition now has a two-chord runway (Bm → E7) that sharpens the Chorus arrival. The Bridge now has a brief Gm tonicization that deepens the flat-ward character before the final return. The tonic has been recentered — you've touched both neighbors. Your session is now 46 bars with a miniature tonal bracket built in.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>CHAPTER 16 ◇ PIVOT CHORDS ◇ SECONDARY DOMINANTS ◇ THE SUBDOMINANT ◇ TONAL GRAVITY ◇ CIRCLE OF FIFTHS ◇ TRITONE SUB ◇ CHAPTER 16 ◇ PIVOT CHORDS ◇ SECONDARY DOMINANTS ◇ THE SUBDOMINANT ◇ TONAL GRAVITY ◇ CIRCLE OF FIFTHS ◇ TRITONE SUB ◇</site-banner>
+
+<chapter-nav
+  prev-href="ch15-pop-structure.html" prev-title="Ch 15 — Bach's Blueprint for Pop">
+</chapter-nav>
+
+<site-footer text="MUSIC MANUAL — CH 16: PIVOT CHORDS & SECONDARY DOMINANTS — D MINOR"></site-footer>
+
+</body>
+</html>

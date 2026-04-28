@@ -139,6 +139,16 @@ Session remains 60 bars, 9 tracks. Cadential sequence now reads: It⁶ → I⁶�
 
 ---
 
+## Ch16 — Pivot Chords & Secondary Dominants
+**Session state:** Same Ch15 session (46-bar arrangement, 10 tracks). Two harmonic edits applied — no new tracks added.
+- Second-to-last Verse bar (approx. bar 15 of arrangement): beat 1 bass changed to B (pivot — Bm as vi in D / ii in A); beat 3 bass + inner voice changed to E7 (secondary dominant of A, V/V).
+- Final Verse bar: A arrives as local tonic before Pre-chorus pushes back to Dm. Chain reads: Bm → E7 → A — ii → V7 → I secondary dominant approach into the Chorus.
+- Bridge bar 5 (approx. bar 38): D7 chord inserted (V7 of Gm) — F# signals Gm arrival.
+- Bridge bar 6: Gm (one bar) — subdominant tonicized; F-major Bridge now has a brief flat-ward excursion before dominant pedal closes.
+- Arc: tonic bracket complete — both dominant (A) and subdominant (Gm) touched and recentered.
+
+---
+
 ## Ch11 — From Bach to Music Manual
 **Session state:** Three new tracks added to Ch10 session, expanded to 32 bars.
 - Track 6: 8-note arpeggio loop — D4 E4 F4 A4 G4 F4 E4 D4 (eighth notes, 1-bar loop)

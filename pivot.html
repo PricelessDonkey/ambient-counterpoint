@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter: Pivot Chords, Secondary Dominants & The Subdominant</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1410;
+    --paper: #f5f0e8;
+    --aged: #e8e0cc;
+    --accent: #8b3a1a;
+    --gold: #b8922a;
+    --muted: #6b5e4a;
+    --rule: #c8b89a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 60px 24px;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .chapter-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .subtitle {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h2 {
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 48px 0 16px;
+  }
+
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--ink);
+    margin: 28px 0 10px;
+  }
+
+  p {
+    margin-bottom: 16px;
+    color: var(--ink);
+    font-weight: 300;
+  }
+
+  .code-block {
+    background: var(--aged);
+    border-left: 2px solid var(--gold);
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 2;
+    color: var(--ink);
+    white-space: pre;
+    overflow-x: auto;
+  }
+
+  .code-block .comment {
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .code-block .highlight {
+    color: var(--accent);
+    font-weight: 400;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 16px;
+  }
+
+  th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--aged);
+    font-weight: 300;
+  }
+
+  td:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--accent);
+  }
+
+  .callout {
+    border: 1px solid var(--rule);
+    background: var(--aged);
+    padding: 24px 28px;
+    margin: 32px 0;
+    position: relative;
+  }
+
+  .callout::before {
+    content: '◆';
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    background: var(--aged);
+    padding: 0 6px;
+    color: var(--gold);
+    font-size: 12px;
+  }
+
+  .callout p {
+    margin: 0;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 48px 0;
+  }
+
+  .axis-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 32px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+
+  .axis-node {
+    text-align: center;
+    padding: 16px 20px;
+    border: 1px solid var(--rule);
+    background: var(--aged);
+    min-width: 100px;
+  }
+
+  .axis-node.tonic {
+    border-color: var(--gold);
+    background: var(--paper);
+    border-width: 2px;
+  }
+
+  .axis-node .label {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .axis-node .chord {
+    font-size: 18px;
+    color: var(--ink);
+  }
+
+  .axis-node .role {
+    font-size: 11px;
+    color: var(--accent);
+    margin-top: 4px;
+  }
+
+  .axis-arrow {
+    font-size: 18px;
+    color: var(--muted);
+    padding: 0 4px;
+  }
+
+  .footer {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="chapter-label">Chapter — Harmonic Navigation</div>
+  <h1>Pivot Chords, <em>Secondary Dominants</em><br>& the Subdominant</h1>
+  <p class="subtitle">A study of tonal gravity through Bach's Prelude in C Major, WTC Book I</p>
+
+  <!-- ── THE CORE INSIGHT ───────────────────────────── -->
+  <h2>The Core Insight</h2>
+
+  <p>Every chord in a major key belongs simultaneously to <em>multiple keys</em>. Harmonic motion is the art of choosing which interpretation to lean into — and confirming it with a secondary dominant. Bach's Prelude in C demonstrates every essential move in 35 measures of pure arpeggiation.</p>
+
+  <div class="axis-diagram">
+    <div class="axis-node">
+      <div class="label">Subdominant</div>
+      <div class="chord">F</div>
+      <div class="role">C dominates F</div>
+    </div>
+    <div class="axis-arrow">←</div>
+    <div class="axis-node tonic">
+      <div class="label">Tonic</div>
+      <div class="chord">C</div>
+      <div class="role">home</div>
+    </div>
+    <div class="axis-arrow">→</div>
+    <div class="axis-node">
+      <div class="label">Dominant</div>
+      <div class="chord">G</div>
+      <div class="role">G dominates C</div>
+    </div>
+  </div>
+
+  <p>The tonic sits between two neighbors on the circle of fifths. It is the <em>dominant</em> of the subdominant (C dominates F), and the <em>subdominant</em> of the dominant (C is IV in G). This symmetry is the engine of all tonal motion.</p>
+
+  <!-- ── DEFINITIONS ───────────────────────────── -->
+  <h2>The Three Relationships Defined</h2>
+
+  <table>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+      <th>In C Major</th>
+    </tr>
+    <tr>
+      <td>Subdominant</td>
+      <td>The chord the tonic is dominant of</td>
+      <td>F — because C is V of F</td>
+    </tr>
+    <tr>
+      <td>Secondary Dominant</td>
+      <td>The dominant of the current key's dominant</td>
+      <td>D7 — because D7 is V of G</td>
+    </tr>
+    <tr>
+      <td>Pivot Chord</td>
+      <td>A chord diatonic to two keys used as a hinge between them</td>
+      <td>Am = vi in C, ii in G</td>
+    </tr>
+  </table>
+
+  <!-- ── PIVOT CHORD ───────────────────────────── -->
+  <h2>The Pivot Chord — A Door Between Keys</h2>
+
+  <p>A pivot chord exists naturally in two keys at once. Rather than lurching into a new tonal area, you find the overlap and lean into the new interpretation — then confirm it with a secondary dominant.</p>
+
+  <h3>Tonicizing the Dominant (toward G)</h3>
+  <p>The <strong>vi chord</strong> (Am in C major) is simultaneously <strong>ii in G major</strong>. Because C and G share all notes except one (F vs F#), Am is fully diatonic to both keys.</p>
+
+  <div class="code-block"><span class="comment">C major:  I  →  vi  →  V/V  →  V</span>
+           C      <span class="highlight">Am</span>     D7      G
+<span class="comment">G major:       ii  →  V7   →  I</span>
+               <span class="highlight">↑</span>
+          <span class="comment">pivot lives here — same chord, new role</span></div>
+
+  <p>The F# in D7 is the moment of commitment. Before it, Am is ambiguous. After it, G is confirmed as a local tonic. One raised note does all the work.</p>
+
+  <h3>Tonicizing the Subdominant (toward F)</h3>
+  <p>The <strong>ii chord</strong> (Dm in C major) is simultaneously <strong>vi in F major</strong>. This points the opposite direction — flat-ward, toward the subdominant.</p>
+
+  <div class="code-block"><span class="comment">C major:  I  →  ii  →  V/IV →  IV</span>
+           C      <span class="highlight">Dm</span>     C7      F
+<span class="comment">F major:       vi  →  V7   →  I</span>
+               <span class="highlight">↑</span>
+          <span class="comment">same pivot logic, opposite direction</span></div>
+
+  <div class="callout">
+    <p>The vi chord is always the door to the dominant. The ii chord is always the door to the subdominant. They are mirror images across the tonic.</p>
+  </div>
+
+  <!-- ── THE UNIVERSAL PIVOT TABLE ───────────────────────────── -->
+  <h2>Universal Pivot Table</h2>
+
+  <table>
+    <tr>
+      <th>Home Key</th>
+      <th>vi (pivot → dominant)</th>
+      <th>ii (pivot → subdominant)</th>
+    </tr>
+    <tr><td>C major</td><td>Am → G</td><td>Dm → F</td></tr>
+    <tr><td>G major</td><td>Em → D</td><td>Am → C</td></tr>
+    <tr><td>D major</td><td>Bm → A</td><td>Em → G</td></tr>
+    <tr><td>F major</td><td>Dm → C</td><td>Gm → Bb</td></tr>
+  </table>
+
+  <!-- ── SECONDARY DOMINANTS ───────────────────────────── -->
+  <h2>Secondary Dominants & Dominant Chains</h2>
+
+  <p>A secondary dominant is the dominant of the dominant — the chord that most strongly pulls toward V, rather than toward I. The logic can be stacked indefinitely:</p>
+
+  <div class="code-block">V/V/V  →  V/V  →  V   →  I
+  A7    →   D7  →  G7  →  C
+
+<span class="comment">Each chord is dominant of the next.
+Each arrow points one step along the circle of fifths.</span></div>
+
+  <p>This is the circle of fifths made audible as motion. Jazz musicians call extended versions of this chain <em>secondary dominant substitutions</em>. Bach encodes shorter versions throughout his chorales and inventions as a primary tool for generating momentum.</p>
+
+  <!-- ── TRITONE SUB ───────────────────────────── -->
+  <h2>Tritone Substitution — The Half-Step Approach</h2>
+
+  <p>Any dominant 7th chord can be replaced by the dominant 7th chord a tritone away. The substitution works because both chords contain the <em>same tritone</em> — just with the two notes swapped in their roles:</p>
+
+  <div class="code-block">G7:   B (3rd) → F (7th)    <span class="comment">tritone</span>
+Db7:  F (3rd) → B (7th)    <span class="comment">same tritone, swapped</span>
+
+<span class="comment">Both resolve into C with identical voice leading.
+But Db7 → C moves the bass by half step — chromatic, smooth.</span>
+
+G7  → C  :  bass leaps a fifth  (functional)
+Db7 → C  :  bass slides a half step  (jazz)</div>
+
+  <!-- ── SUBDOMINANT CHARACTER ───────────────────────────── -->
+  <h2>The Character of the Subdominant</h2>
+
+  <p>The dominant creates tension by pulling forward. The subdominant creates something different — warmth, space, an exhale. This emotional asymmetry is structural:</p>
+
+  <div class="code-block">Sharp-ward  (dominant)   →  tension, urgency, forward lean
+Flat-ward   (subdominant) →  warmth, space, memory, settling</div>
+
+  <p>The subdominant rarely resolves directly to I with the force of V → I. The <strong>plagal cadence</strong> (IV → I, the "Amen" cadence) feels conclusory rather than dramatic. This is why subdominant motion typically appears <em>after</em> dominant tension — as counterbalance, not climax.</p>
+
+  <p>Crucially, by touching both neighbors, Bach <strong>recenters</strong> the tonic. If he only tonicized G, the piece might feel like it wants to live there. The swing through F confirms that C is the actual gravitational center — neither neighbor can claim it.</p>
+
+  <div class="callout">
+    <p>Tonicizing the dominant asks a question. Tonicizing the subdominant answers it — but from below, so the final return to I feels like the only place left to land.</p>
+  </div>
+
+  <!-- ── BACH'S STRUCTURAL ARC ───────────────────────────── -->
+  <h2>Bach's Structural Arc in the Prelude</h2>
+
+  <div class="code-block">mm. 1–4    I → ii7 → V7 → I       <span class="comment">cadence stated</span>
+mm. 5–11   vi → V/V → V           <span class="comment">tonicize dominant (sharp-ward)</span>
+m. 12      dim7                    <span class="comment">maximum chromatic tension</span>
+mm. 13–17  IV → ii → V → I        <span class="comment">subdominant approach → home</span></div>
+
+  <p>This is sonata form in miniature — establish home, move toward the dominant, return via the subdominant — encoded 30 years before Haydn and Mozart formalized it. The Prelude is a thesis statement about how tonal gravity works.</p>
+
+  <!-- ── SUMMARY ───────────────────────────── -->
+  <hr class="rule">
+  <h2>One-Page Summary</h2>
+
+  <table>
+    <tr>
+      <th>Concept</th>
+      <th>The Move</th>
+      <th>Why It Works</th>
+    </tr>
+    <tr>
+      <td>Secondary dominant</td>
+      <td>Play V7 of V before V</td>
+      <td>Strongest possible approach to dominant</td>
+    </tr>
+    <tr>
+      <td>Pivot to dominant</td>
+      <td>vi becomes ii in new key</td>
+      <td>Shared notes, seamless reinterpretation</td>
+    </tr>
+    <tr>
+      <td>Pivot to subdominant</td>
+      <td>ii becomes vi in new key</td>
+      <td>Same logic, flat-ward direction</td>
+    </tr>
+    <tr>
+      <td>Tritone sub</td>
+      <td>Replace V7 with bII7</td>
+      <td>Same tritone, half-step bass motion</td>
+    </tr>
+    <tr>
+      <td>Subdominant role</td>
+      <td>Arrive from flat side after dominant tension</td>
+      <td>Recenters tonic, completes the bracket</td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    <span>Harmonic Navigation — Pivot Chords & Secondary Dominants</span>
+    <span>WTC Book I · C Major Prelude</span>
+  </div>
+
+</div>
+</body>
+</html>
