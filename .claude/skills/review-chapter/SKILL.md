@@ -14,9 +14,19 @@ CLAUDE.md is already loaded. Use it for design conventions if needed, but this s
 
 Resolve the argument to a filename:
 - If given a full filename (e.g. `ch03-two-voices.html`), use it directly.
-- If given a chapter number (e.g. `ch03` or `3`), glob for `ch03-*.html` to find the actual filename.
+- If given a short chapter number or prefix, resolve it:
+  - `ch03` or `3` → glob `ch03-*.html`
+  - `m06` → glob `m06-*.html`
+  - `a04` → glob `a04-*.html`
+  - `e02` → glob `e02-*.html`
 
 Read the full chapter HTML.
+
+**Determine the series** from the filename prefix, and use the appropriate key reference in Steps 2–3:
+- `ch` prefix → **Bach series** (D natural minor / D harmonic minor)
+- `m` prefix → **Minimalist series** (D Dorian)
+- `a` prefix → **Autumnal series** (D Aeolian / D Dorian, sometimes F Lydian episode)
+- `e` prefix → **Ecstatic series** (D Mixolydian, D Lydian, D Lydian Dominant)
 
 ## Step 1 — Parse claims and diagrams
 
@@ -49,11 +59,15 @@ For every text claim paired with a diagram, verify:
 
 Independent of diagrams, verify each theoretical claim in the text:
 
-- **Key consistency** — all pitches mentioned should belong to D natural minor, D harmonic minor, or be explicitly flagged as chromatic (Neapolitan, etc.)
+- **Key consistency** — pitches should belong to the series home scale (see Step 0), or be explicitly flagged as chromatic. Series reference:
+  - Bach (D natural minor): D E F G A Bb C; harmonic minor adds C#
+  - Minimalist (D Dorian): D E F G A B C
+  - Autumnal (D Aeolian): D E F G A Bb C; Dorian passages use B natural; F Lydian episodes use B natural above F
+  - Ecstatic (D Mixolydian): D E F# G A B C; Lydian passages raise G to G#; Lydian Dominant uses G# + C natural
 - **Interval names** — check that interval labels are correct (e.g. a leap from D to A is a perfect fifth, not a sixth)
-- **Chord qualities** — verify Roman numeral labels match the chord built on that scale degree in D minor (i=Dm, iidim=Edim, III=F, iv=Gm, v=Am, V=A, VI=Bb, VII=C, bII=Eb for Neapolitan)
+- **Chord qualities** — verify Roman numeral labels match the chord built on that scale degree in the series home key. Bach D minor: i=Dm, iidim=Edim, III=F, iv=Gm, v=Am, V=A, VI=Bb, VII=C, bII=Eb. Ecstatic D Mixolydian: I=D, ii=Em, iii=F#dim, IV=G, v=Am, vi=Bm, ♭VII=C.
 - **Counterpoint rules cited** — if a rule is stated (e.g. "contrary motion avoids parallel fifths"), verify the rule is correctly described
-- **Build It instructions** — check that any specific pitch, interval, or technique named in the Build It card is consistent with the chapter content and D minor
+- **Build It instructions** — check that any specific pitch, interval, or technique named in the Build It card is consistent with the chapter content and the series home key
 
 ## Step 4 — Identify clarity gaps
 
@@ -97,13 +111,13 @@ If none found, say "None found."
 ### Summary
 One paragraph: overall accuracy assessment, how many issues were found, and the most critical fix needed (if any).
 
-Then ask the user: **"Fix all issues now?"** and wait for their response before proceeding to Phase 2.
+Then proceed immediately to Phase 2 — do not wait for user confirmation.
 
 ---
 
 ## Phase 2 — Fix
 
-Only begin Phase 2 after the user confirms they want fixes applied.
+Apply all fixes immediately after the report.
 
 Work through every issue from the report and apply corrections directly to the HTML file. Rules:
 

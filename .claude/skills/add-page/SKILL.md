@@ -1,7 +1,7 @@
 ---
 name: add-page
 description: Add a new music theory reference page to this site and link it from the landing page
-argument-hint: [page title, topic, or chapter number — include "minimalist" or use m01-style numbering for the minimalist series]
+argument-hint: [page title, topic, or chapter number — include "minimalist"/"autumnal"/"ecstatic" or use m01/a01/e01-style numbering to identify the series]
 ---
 
 You are adding a new reference page to the Music Manual music theory site at `/Users/sam/projects/composing/`.
@@ -11,7 +11,9 @@ CLAUDE.md is already loaded and contains the full design system, color semantics
 ## Step 0 — Detect section and gather context
 
 **Determine which series this chapter belongs to:**
-- If the invocation mentions "minimalist" OR the chapter uses `m01`–`m16` numbering → **Minimalist series**
+- If the invocation mentions "minimalist" OR uses `m01`–`m16` numbering → **Minimalist series**
+- If the invocation mentions "autumnal" OR uses `a01`–`a99` numbering → **Autumnal series**
+- If the invocation mentions "ecstatic" OR uses `e01`–`e12` numbering → **Ecstatic series**
 - Otherwise → **Bach series** (default)
 
 Run these reads in parallel based on the detected section:
@@ -32,9 +34,7 @@ Run these reads in parallel based on the detected section:
 
 4. **Grep `index.html` (or `bach.html` if it exists) for the last `.page-card`** to find the insert point.
 
-5. **Index target:** Add the new card to `bach.html` if that file exists; otherwise to `index.html` under the Bach section.
-
-6. **nav-back link:** `bach.html` if that file exists; otherwise `index.html`.
+5. **Index target:** `bach.html`; **nav-back link:** `bach.html`
 
 ### Minimalist series
 1. **Grep `minimalist-cheatsheet-plan.md` for the target chapter** to get the topic list, diagrams, and Build It spec:
@@ -51,11 +51,44 @@ Run these reads in parallel based on the detected section:
    ```
    Also check `m1*.html` for chapters 10–16.
 
-4. **Grep `minimalist.html` for the last `.page-card`** to find the insert point. If `minimalist.html` doesn't exist yet, you'll need to create it (see Step 3 note).
+4. **Grep `minimalist.html` for the last `.page-card`** to find the insert point. If `minimalist.html` doesn't exist yet, create it (see Step 3 note).
 
-5. **Index target:** `minimalist.html`
+5. **Index target:** `minimalist.html`; **nav-back link:** `minimalist.html`
 
-6. **nav-back link:** `minimalist.html`
+### Autumnal series
+1. **Grep `autumnal-plan.md` for the target chapter** to get the topic list, diagrams, and Build It spec:
+   ```
+   grep -A 60 "Chapter N —" autumnal-plan.md
+   ```
+
+2. **Read `autumnal-build-it-log.md`** — compact record of every Autumnal chapter's Build It outcome. Use the previous chapter's entry instead of reading the previous HTML file.
+
+3. **Glob for existing Autumnal chapter files** to determine prev/next links:
+   ```
+   a0*.html
+   ```
+   Also check `a1*.html` for chapters 10+.
+
+4. **Grep `autumnal.html` for the last `.page-card`** to find the insert point. If `autumnal.html` doesn't exist yet, create it (see Step 3 note).
+
+5. **Index target:** `autumnal.html`; **nav-back link:** `autumnal.html`
+
+### Ecstatic series
+1. **Grep `ecstatic-plan.md` for the target chapter** to get the topic list, diagrams, and Build It spec:
+   ```
+   grep -A 60 "Chapter N —" ecstatic-plan.md
+   ```
+
+2. **Read `ecstatic-build-it-log.md`** if it exists — compact record of every Ecstatic chapter's Build It outcome. Use the previous chapter's entry instead of reading the previous HTML file.
+
+3. **Glob for existing Ecstatic chapter files** to determine prev/next links:
+   ```
+   e0*.html
+   ```
+
+4. **Grep `ecstatic.html` for the last `.page-card`** to find the insert point. If `ecstatic.html` doesn't exist yet, create it (see Step 3 note).
+
+5. **Index target:** `ecstatic.html`; **nav-back link:** `ecstatic.html`
 
 ## Step 1 — Determine page type
 
@@ -63,6 +96,8 @@ Run these reads in parallel based on the detected section:
 - **Filename, number, title** — from the File Naming section in the relevant plan
   - Bach: `ch01-single-line.html` through `ch12-canons-rounds.html`
   - Minimalist: `m01-the-loop-as-architecture.html` through `m16-evolution.html`
+  - Autumnal: `a01-what-is-autumnal.html` through `a17+`
+  - Ecstatic: `e01-what-is-ecstatic.html` through `e12-the-complete-arc.html`
 - **Topics** — use the numbered list from the plan verbatim as the card outline
 - **Diagrams** — build every diagram listed under "Diagrams needed"
 - **Build It** — use the plan's exercise spec; read the relevant build-it-log for the previous chapter's state and frame this as a direct continuation ("Open your M01 session…" or "Open your Ch01 session…")
@@ -81,8 +116,16 @@ Follow the chapter page skeleton in CLAUDE.md exactly. Key reminders:
 - Use `<site-nav>`, `<site-banner>`, `<site-hero>`, `<intro-box>`, `<content-card>`, `<chapter-nav>`, `<site-footer>` components (see CLAUDE.md skeleton for syntax)
 - `<content-card>` color values: `color="green"`, `color="orange"`, `color="purple"`, `color="red"` (default = blue). Build It card always uses `number="✦" color="orange"`
 - Chapter nav: omit `prev-href`/`prev-title` for first chapter; omit `next-href`/`next-title` if the next HTML file doesn't exist yet (check your Glob result)
-- **`<site-nav>` href and label:** Bach → `href="bach.html" label="Bach Counterpoint"`; Minimalist → `href="minimalist.html" label="Minimalist Composition"`
-- **`<site-footer>` text:** `MUSIC MANUAL — CH NN: TITLE — D MINOR` for Bach; `MUSIC MANUAL — M NN: TITLE — D DORIAN` for Minimalist
+- **`<site-nav>` href and label:**
+  - Bach → `href="bach.html" label="Bach Counterpoint"`
+  - Minimalist → `href="minimalist.html" label="Minimalist Composition"`
+  - Autumnal → `href="autumnal.html" label="Autumnal Sound"`
+  - Ecstatic → `href="ecstatic.html" label="Ecstatic Music"`
+- **`<site-footer>` text:**
+  - Bach: `MUSIC MANUAL — CH NN: TITLE — D MINOR`
+  - Minimalist: `MUSIC MANUAL — M NN: TITLE — D DORIAN`
+  - Autumnal: `MUSIC MANUAL — A NN: TITLE — D AEOLIAN`
+  - Ecstatic: `MUSIC MANUAL — E NN: TITLE — D MIXOLYDIAN`
 
 **Cross-references:** Where a minimalist technique has a Bach counterpart (or vice versa), include a `<p>` cross-reference in the relevant card pointing to the other chapter's HTML file. The plan files list the expected cross-references.
 
@@ -132,6 +175,8 @@ Append a new entry summarizing the exact Build It outcome (what notes, what voic
 
 - Bach chapters → `build-it-log.md`
 - Minimalist chapters → `minimalist-build-it-log.md`
+- Autumnal chapters → `autumnal-build-it-log.md`
+- Ecstatic chapters → `ecstatic-build-it-log.md` (create if it doesn't exist yet)
 
 ## Done
 

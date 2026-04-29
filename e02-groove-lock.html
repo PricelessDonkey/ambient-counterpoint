@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E02 — The Groove Lock</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="ecstatic.html" label="Ecstatic Music"></site-nav>
+
+<site-banner>CHAPTER 02 ◇ THE GROOVE LOCK ◇ CHAPTER 02 ◇ THE GROOVE LOCK ◇ CHAPTER 02 ◇ THE GROOVE LOCK ◇ CHAPTER 02 ◇ THE GROOVE LOCK ◇</site-banner>
+
+<site-hero>
+  <span slot="title">The Groove Lock</span>
+  <span slot="subtitle">Joy that lives around the beat, not on it.</span>
+</site-hero>
+
+<intro-box>A groove locks when the listener stops tracking individual beats and starts feeling the whole pattern as a single propulsive object. This chapter covers the rhythmic mechanisms — syncopation, displacement, and velocity shaping — that cross that threshold. By the end you will have entered the seed cell that drives the rest of this series.</intro-box>
+
+<div class="content">
+
+  <content-card number="6" title="What a Locked Groove Is">
+    <p>A locked groove is a rhythmic pattern so internally consistent that it creates a sense of <span class="key">euphoric inevitability</span>. When a groove locks, the listener's ear no longer consciously tracks individual note positions. Instead, the entire pattern is perceived as a single propulsive object — a thing moving through time, not a sequence of events happening in it.</p>
+    <p>This shift from tracking to absorption is the first micro-threshold of ecstatic music. It happens before harmonic accumulation, before textural buildup — it is the foundation everything else is built on. A groove that doesn't lock will not accumulate into anything.</p>
+    <p>A locked groove has three properties: internal consistency (the same pattern repeats without variation or fills), rhythmic tension (not all attacks land on strong beats), and momentum (each note implies the next). The goal of this chapter is to understand how these properties are achieved technically.</p>
+  </content-card>
+
+  <content-card number="7" title="Syncopation vs. Downbeat">
+    <p>A melody that always lands on beat 1 sounds <span class="key">planted</span>, not propelled. The note is where the bar is — solid, stable, and static. The ear arrives at the same place the meter arrives, and there is no tension between the two.</p>
+    <p>Shifting the melodic accent to the "and" of beat 1, or to beat 2, or the "and" of beat 3 creates a <span class="key">forward lean</span>. The melody is slightly ahead of or around the beat — chasing something. The ear expects the downbeat to anchor the pattern, but the melody has already moved past it. This creates a subtle urgency.</p>
+    <p>In D Mixolydian, the most effective syncopated start point is the "and" of beat 1 (the 8th-note subdivision between beat 1 and beat 2). The listener's body still marks beat 1, but the melody has already started. This is where the seed cell for this series begins. In the diagram below, "+1" labels the "and" of beat 1, "+2" the "and" of beat 2, and so on — the "+" prefix marks off-beat (syncopated) positions.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#1a1a1a"/>
+          </marker>
+        </defs>
+        <!-- Grid lines -->
+        <line x1="80" y1="30" x2="720" y2="30" class="grid-line"/>
+        <line x1="80" y1="90" x2="720" y2="90" class="grid-line"/>
+        <line x1="80" y1="150" x2="720" y2="150" class="grid-line"/>
+        <line x1="80" y1="185" x2="720" y2="185" class="grid-line"/>
+
+        <!-- Beat markers -->
+        <text x="80"  y="195" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">1</text>
+        <text x="240" y="195" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">2</text>
+        <text x="400" y="195" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">3</text>
+        <text x="560" y="195" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">4</text>
+        <text x="720" y="195" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">1</text>
+
+        <!-- Beat verticals -->
+        <line x1="80"  y1="25" x2="80"  y2="180" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="240" y1="25" x2="240" y2="180" stroke="#ccc" stroke-width="0.8"/>
+        <line x1="400" y1="25" x2="400" y2="180" stroke="#ccc" stroke-width="0.8"/>
+        <line x1="560" y1="25" x2="560" y2="180" stroke="#ccc" stroke-width="0.8"/>
+        <line x1="720" y1="25" x2="720" y2="180" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- ROW 1: Downbeat melody (planted) -->
+        <text x="10" y="57" font-family="Space Mono,monospace" font-size="9" fill="#555">PLANTED</text>
+        <rect x="80"  y="40" width="45" height="8" rx="2" fill="#4a90d9"/>
+        <rect x="240" y="40" width="45" height="8" rx="2" fill="#4a90d9"/>
+        <rect x="400" y="40" width="45" height="8" rx="2" fill="#4a90d9"/>
+        <rect x="560" y="40" width="45" height="8" rx="2" fill="#4a90d9"/>
+
+        <!-- ROW 2: Syncopated (on the "and" of 1) -->
+        <text x="10" y="117" font-family="Space Mono,monospace" font-size="9" fill="#555">SYNCO-</text>
+        <text x="10" y="128" font-family="Space Mono,monospace" font-size="9" fill="#555">PATED</text>
+        <rect x="160" y="100" width="45" height="8" rx="2" fill="#e07b39"/>
+        <rect x="320" y="100" width="45" height="8" rx="2" fill="#e07b39"/>
+        <rect x="480" y="100" width="45" height="8" rx="2" fill="#e07b39"/>
+        <rect x="640" y="100" width="45" height="8" rx="2" fill="#e07b39"/>
+        <!-- and-of-1 label -->
+        <text x="160" y="96" font-family="Space Mono,monospace" font-size="8" fill="#e07b39" text-anchor="middle">+1</text>
+        <text x="320" y="96" font-family="Space Mono,monospace" font-size="8" fill="#e07b39" text-anchor="middle">+2</text>
+        <text x="480" y="96" font-family="Space Mono,monospace" font-size="8" fill="#e07b39" text-anchor="middle">+3</text>
+        <text x="640" y="96" font-family="Space Mono,monospace" font-size="8" fill="#e07b39" text-anchor="middle">+4</text>
+
+        <!-- ROW 3: Seed cell (starting on "and" of beat 1) -->
+        <text x="10" y="162" font-family="Space Mono,monospace" font-size="9" fill="#555">SEED</text>
+        <text x="10" y="173" font-family="Space Mono,monospace" font-size="9" fill="#555">CELL</text>
+        <!-- D4 on and-of-1 -->
+        <rect x="160" y="155" width="45" height="8" rx="2" fill="#4a90d9"/>
+        <!-- F#4 on beat 2 -->
+        <rect x="240" y="155" width="45" height="8" rx="2" fill="#4a90d9"/>
+        <!-- A4 on and-of-2 -->
+        <rect x="320" y="155" width="45" height="8" rx="2" fill="#4a90d9"/>
+        <!-- C4 on beat 3 -->
+        <rect x="400" y="155" width="45" height="8" rx="2" fill="#4a90d9"/>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="8" title="Displacement">
+    <p><span class="key">Displacement</span> takes a melodic cell and shifts its start point by one 8th or 16th note relative to the bar. The notes are identical. The rhythmic pattern within the cell is identical. But the cell's relationship to the downbeat has changed.</p>
+    <p>This is how one idea yields multiple grooves without rewriting anything. A cell starting on the "and" of beat 1 feels like a leap into motion. The same cell starting on beat 2 settles in differently — slightly more grounded, slightly less chasing. Shifted to the "and" of beat 4, it crosses the barline and creates anticipation into the next cycle.</p>
+    <p>In the Build It exercise you will compare the original placement against a displacement by one 8th note earlier. The difference is subtle — but one version will feel like it locks harder. That is the version to keep.</p>
+    <p>Cross-reference: For displacement as a structural variation technique across multiple loop layers, see <a href="m07-rhythmic-displacement.html">M07 — Rhythmic Displacement</a> in the Minimalist series.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 160" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid -->
+        <line x1="80" y1="25" x2="720" y2="25" class="grid-line"/>
+        <line x1="80" y1="85" x2="720" y2="85" class="grid-line"/>
+        <line x1="80" y1="140" x2="720" y2="140" class="grid-line"/>
+
+        <!-- Beat verticals -->
+        <line x1="80"  y1="20" x2="80"  y2="130" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="240" y1="20" x2="240" y2="130" stroke="#ccc" stroke-width="0.8"/>
+        <line x1="400" y1="20" x2="400" y2="130" stroke="#ccc" stroke-width="0.8"/>
+        <line x1="560" y1="20" x2="560" y2="130" stroke="#ccc" stroke-width="0.8"/>
+        <line x1="720" y1="20" x2="720" y2="130" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Beat labels -->
+        <text x="80"  y="148" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">1</text>
+        <text x="240" y="148" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">2</text>
+        <text x="400" y="148" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">3</text>
+        <text x="560" y="148" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">4</text>
+        <text x="720" y="148" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">1</text>
+
+        <!-- ROW 1: Original seed cell (starts on and-of-1) -->
+        <text x="10" y="42" font-family="Space Mono,monospace" font-size="9" fill="#555">ORIG.</text>
+        <rect x="160" y="30" width="44" height="8" rx="2" fill="#4a90d9"/>
+        <text x="182" y="37" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">D4</text>
+        <rect x="240" y="30" width="44" height="8" rx="2" fill="#4a90d9"/>
+        <text x="262" y="37" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">F#4</text>
+        <rect x="320" y="30" width="44" height="8" rx="2" fill="#4a90d9"/>
+        <text x="342" y="37" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">A4</text>
+        <rect x="400" y="30" width="44" height="8" rx="2" fill="#4a90d9"/>
+        <text x="422" y="37" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">C4</text>
+        <!-- start marker -->
+        <line x1="160" y1="20" x2="160" y2="25" stroke="#e07b39" stroke-width="1.5"/>
+        <text x="160" y="19" font-family="Space Mono,monospace" font-size="8" fill="#e07b39" text-anchor="middle">+1</text>
+
+        <!-- ROW 2: Displaced one 8th earlier (starts on beat 1) -->
+        <text x="10" y="100" font-family="Space Mono,monospace" font-size="9" fill="#555">DISP.</text>
+        <text x="10" y="111" font-family="Space Mono,monospace" font-size="9" fill="#555">−8th</text>
+        <rect x="80"  y="90" width="44" height="8" rx="2" fill="#5caa6e"/>
+        <text x="102" y="97" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">D4</text>
+        <rect x="160" y="90" width="44" height="8" rx="2" fill="#5caa6e"/>
+        <text x="182" y="97" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">F#4</text>
+        <rect x="240" y="90" width="44" height="8" rx="2" fill="#5caa6e"/>
+        <text x="262" y="97" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">A4</text>
+        <rect x="320" y="90" width="44" height="8" rx="2" fill="#5caa6e"/>
+        <text x="342" y="97" font-family="Space Mono,monospace" font-size="7" fill="white" text-anchor="middle">C4</text>
+        <!-- start marker -->
+        <line x1="80" y1="80" x2="80" y2="85" stroke="#5caa6e" stroke-width="1.5"/>
+        <text x="80" y="79" font-family="Space Mono,monospace" font-size="8" fill="#5caa6e" text-anchor="middle">1</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="9" title="Velocity Shaping as Groove">
+    <p>Identical note positions with flat velocities — all notes at 80 or 100 — sound <span class="key">mechanical</span>. The timing is correct but the body doesn't move. Velocity is where the groove lives after rhythm.</p>
+    <p>Accenting beats 2 and 4 (or the "and" of 2) creates the sense of a body in motion. This is the backbeat principle borrowed from gospel, soul, and drum programming. Within a melodic cell, the accent pattern does not have to follow the global backbeat — it can create its own internal accent shape that works against the meter in a productive way.</p>
+    <p>The seed cell for this series uses a four-note velocity shape: <strong>100 → 85 → 75 → 90</strong>. The first note leads strong, the middle notes relax, and the fourth note re-accelerates — a slight kick back toward the start of the next iteration. This re-acceleration is what makes the loop want to repeat. The cell contains its own momentum into the next cycle.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Horizontal baseline -->
+        <line x1="80" y1="145" x2="680" y2="145" stroke="#1a1a1a" stroke-width="1"/>
+        <!-- Velocity ceiling guide -->
+        <line x1="80" y1="40" x2="680" y2="40" class="grid-line"/>
+        <!-- Mid guide -->
+        <line x1="80" y1="92" x2="680" y2="92" class="grid-line"/>
+
+        <!-- Labels -->
+        <text x="60" y="44"  font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="end">127</text>
+        <text x="60" y="96"  font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="end">64</text>
+        <text x="60" y="149" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="end">0</text>
+
+        <!-- Note bars: D4 vel=100 -->
+        <rect x="120" y="50" width="60" height="95" rx="2" fill="#4a90d9" opacity="0.85"/>
+        <text x="150" y="166" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle">D4</text>
+        <text x="150" y="46"  font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle">100</text>
+
+        <!-- F#4 vel=85 -->
+        <rect x="250" y="64" width="60" height="81" rx="2" fill="#4a90d9" opacity="0.7"/>
+        <text x="280" y="166" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle">F#4</text>
+        <text x="280" y="60"  font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle">85</text>
+
+        <!-- A4 vel=75 -->
+        <rect x="380" y="74" width="60" height="71" rx="2" fill="#4a90d9" opacity="0.55"/>
+        <text x="410" y="166" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle">A4</text>
+        <text x="410" y="70"  font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="middle">75</text>
+
+        <!-- C4 vel=90 — re-accelerates -->
+        <rect x="510" y="57" width="60" height="88" rx="2" fill="#e07b39" opacity="0.85"/>
+        <text x="540" y="166" font-family="Space Mono,monospace" font-size="10" fill="#1a1a1a" text-anchor="middle">C4</text>
+        <text x="540" y="53"  font-family="Space Mono,monospace" font-size="10" fill="#e07b39" text-anchor="middle">90↑</text>
+
+        <!-- Arrow indicating re-acceleration -->
+        <text x="620" y="90"  font-family="Space Mono,monospace" font-size="9" fill="#e07b39">→ loop</text>
+        <text x="620" y="103" font-family="Space Mono,monospace" font-size="9" fill="#e07b39">restart</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="10" title="The Locked-Groove Test">
+    <p>There is a practical test for whether a groove has locked: play the loop for two minutes with your eyes closed and notice when — if ever — you stop consciously tracking the individual notes. The moment you are no longer analyzing the pattern and instead simply inside it is the moment the groove has locked.</p>
+    <p>If you are still tracking individual notes after 32 repetitions, the groove has not locked. The most common reason is too much rhythmic regularity (all downbeat), too much velocity uniformity, or a cell that is too long to repeat before the ear has processed it. Shorter cells — 2 to 4 notes — lock faster than longer ones.</p>
+    <p>The diagram below represents this qualitatively. The lock point is an inflection, not a threshold — it is gradual, but it is felt. Once it happens, the groove has become a carrier, and you can begin layering material on top of it.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-lock" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 Z" fill="#ffd200"/>
+          </marker>
+        </defs>
+        <!-- Axes -->
+        <line x1="80" y1="20" x2="80" y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="80" y1="145" x2="700" y2="145" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Y labels -->
+        <text x="75" y="28"  font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">absorbing</text>
+        <text x="75" y="148" font-family="Space Mono,monospace" font-size="9" fill="#555" text-anchor="end">tracking</text>
+
+        <!-- X labels -->
+        <text x="80"  y="160" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">1</text>
+        <text x="230" y="160" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">8</text>
+        <text x="390" y="160" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">16</text>
+        <text x="550" y="160" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">24</text>
+        <text x="700" y="160" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">32</text>
+        <text x="390" y="175" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">repetitions</text>
+
+        <!-- Curve: starts high (tracking), inflects around rep 10, then drops toward absorbing -->
+        <!-- Points: (80,135) (150,130) (230,120) (310,100) (390,65) (470,38) (550,28) (700,24) -->
+        <polyline
+          points="80,135 150,130 230,120 310,100 390,65 470,38 550,28 700,24"
+          stroke="#4a90d9" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+        <!-- Lock inflection marker -->
+        <line x1="390" y1="20" x2="390" y2="145" stroke="#ffd200" stroke-width="1.5" stroke-dasharray="5 3"/>
+        <circle cx="390" cy="65" r="6" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="395" y="55" font-family="Space Mono,monospace" font-size="9" fill="#ffd200">here it locks</text>
+        <text x="395" y="66" font-family="Space Mono,monospace" font-size="9" fill="#ffd200">~rep 16</text>
+      </svg>
+    </div>
+
+    <div class="principle-box">
+      A locked groove is not a compositional achievement — it is a prerequisite. The ecstatic threshold is built on top of a groove that has already crossed this first inflection. Nothing you add later will compensate for a groove that the ear never stopped analyzing.
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open your <strong>E01-Ecstatic.als</strong> session (108 BPM, 4/4, D Mixolydian). Add a MIDI track with a bright, melodic lead sound — a plucked synth, a marimba, or a short-attack pad. Name it "Seed Groove."</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Enter the seed cell</div>
+      <p>In a 1-bar MIDI clip, enter these four notes starting on the "and" of beat 1 (i.e., the second 8th-note subdivision):</p>
+      <ul>
+        <li><strong>D4</strong> — "and" of beat 1, 8th note duration, velocity 100</li>
+        <li><strong>F#4</strong> — beat 2, 8th note duration, velocity 85</li>
+        <li><strong>A4</strong> — "and" of beat 2, 8th note duration, velocity 75</li>
+        <li><strong>C4</strong> — beat 3, 8th note duration, velocity 90</li>
+      </ul>
+      <p>Note that C4 sits below D4: the cell arpeggios up through the D major triad (D–F#–A) then drops a major sixth to land on C4 — the ♭7 of D Mixolydian — before cycling back up to D at the start of the next repetition. That drop is the cell's characteristic Mixolydian hook.</p>
+      <p>Set the clip to loop. Hit play. Listen for 32 repetitions. Mark the repetition — if any — at which you stop tracking and start absorbing. Write it in the session notes.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Try displacement</div>
+      <p>Duplicate the clip. In the copy, shift the entire cell one 8th note earlier — so D4 now falls on beat 1 instead of the "and" of beat 1. Listen to both versions back to back. Choose whichever locks harder. Delete the other.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">What you now have</div>
+      <p>Your E01-Ecstatic.als session now contains a single MIDI track carrying the seed groove — a 1-bar D Mixolydian cell with a shaped velocity arc and a confirmed lock point. This groove is the foundation for every subsequent chapter in this series. Save and label it clearly: <strong>Seed Groove — locked.</strong></p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>THE GROOVE LOCK ◇ D MIXOLYDIAN ◇ SYNCOPATION × DISPLACEMENT × VELOCITY ◇ THE GROOVE LOCK ◇ D MIXOLYDIAN ◇ SYNCOPATION × DISPLACEMENT × VELOCITY ◇</site-banner>
+
+<chapter-nav
+  prev-href="e01-what-is-ecstatic.html" prev-title="E01 — What Is Ecstatic?"
+  next-href="e03-polyrhythm.html"        next-title="E03 — Polyrhythm and Cross-Rhythm">
+</chapter-nav>
+
+<site-footer text="MUSIC MANUAL — E02: THE GROOVE LOCK — D MIXOLYDIAN"></site-footer>
+
+</body>
+</html>
