@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E06 — Open and Quartal Voicings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="ecstatic.html" label="Ecstatic Music"></site-nav>
+
+<site-banner>OPEN VOICINGS ◇ QUARTAL HARMONY ◇ SUSPENSION AS DESTINATION ◇ POLYCHORDS ◇ OPEN VOICINGS ◇ QUARTAL HARMONY ◇ SUSPENSION AS DESTINATION ◇ POLYCHORDS ◇</site-banner>
+
+<site-hero>
+  <span slot="title">Open and Quartal Voicings</span>
+  <span slot="subtitle">Harmony that resonates without committing.</span>
+</site-hero>
+
+<intro-box>Close voicings pack notes into a single octave, creating walls of sound. Open voicings spread those same notes across two or more octaves so each pitch resonates individually. Quartal voicings — chords built from stacked fourths — hover between major and minor entirely. Together these techniques produce the luminous, suspended quality of Coltrane, Sinephro, and late-period ambient music.</intro-box>
+
+<div class="content">
+
+  <content-card number="26" title="Why Open Voicings Sound Ecstatic">
+    <div class="sub-section">
+      <p class="sub-title">The field vs. the wall</p>
+      <p>Close voicings — all notes packed within a single octave — sound dense and enclosed. The notes press against each other harmonically, creating a focused, directional sound. Open voicings spread the same chord across two or more octaves; the gaps between notes allow each pitch to ring individually. The chord sounds like a <span class="key">field</span>, not a wall.</p>
+      <p>The visual difference is immediate in a piano roll: a close voicing appears as a tight cluster of blocks stacked within 60–80px of vertical space; an open voicing spreads those same three notes across 200px or more, with air between them.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 270" xmlns="http://www.w3.org/2000/svg">
+        <!-- grid lines, close panel -->
+        <line class="grid-line" x1="30" y1="84" x2="370" y2="84"/>
+        <line class="grid-line" x1="30" y1="114" x2="370" y2="114"/>
+        <line class="grid-line" x1="30" y1="154" x2="370" y2="154"/>
+        <!-- grid lines, open panel -->
+        <line class="grid-line" x1="390" y1="14" x2="750" y2="14"/>
+        <line class="grid-line" x1="390" y1="84" x2="750" y2="84"/>
+        <line class="grid-line" x1="390" y1="234" x2="750" y2="234"/>
+
+        <!-- panel divider -->
+        <line x1="380" y1="0" x2="380" y2="270" stroke="#d9d4ca" stroke-width="1"/>
+
+        <!-- CLOSE VOICING panel label -->
+        <text x="100" y="18" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">CLOSE VOICING</text>
+
+        <!-- range bracket, close voicing -->
+        <line x1="68" y1="84" x2="68" y2="164" stroke="#bbb" stroke-width="1"/>
+        <line x1="68" y1="84" x2="74" y2="84" stroke="#bbb" stroke-width="1"/>
+        <line x1="68" y1="164" x2="74" y2="164" stroke="#bbb" stroke-width="1"/>
+        <text x="55" y="128" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle" transform="rotate(-90,55,128)">7 semitones</text>
+
+        <!-- note blocks, close voicing -->
+        <rect x="90" y="78" width="130" height="10" rx="2" fill="#4a90d9"/>
+        <text x="230" y="87" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">A4</text>
+        <rect x="90" y="108" width="130" height="10" rx="2" fill="#4a90d9"/>
+        <text x="230" y="117" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">F#4</text>
+        <rect x="90" y="148" width="130" height="10" rx="2" fill="#4a90d9"/>
+        <text x="230" y="157" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">D4</text>
+
+        <text x="155" y="200" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">D major, close position</text>
+        <text x="155" y="216" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">notes press together</text>
+
+        <!-- OPEN VOICING panel label -->
+        <text x="575" y="18" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">OPEN VOICING</text>
+
+        <!-- range bracket, open voicing -->
+        <line x1="452" y1="14" x2="452" y2="244" stroke="#bbb" stroke-width="1"/>
+        <line x1="452" y1="14" x2="458" y2="14" stroke="#bbb" stroke-width="1"/>
+        <line x1="452" y1="244" x2="458" y2="244" stroke="#bbb" stroke-width="1"/>
+        <text x="440" y="129" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle" transform="rotate(-90,440,129)">28 semitones</text>
+
+        <!-- note blocks, open voicing -->
+        <rect x="474" y="8" width="130" height="10" rx="2" fill="#4a90d9"/>
+        <text x="614" y="17" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">F#5</text>
+
+        <!-- gap annotation -->
+        <text x="680" y="55" font-family="Space Mono,monospace" font-size="9" fill="#888">← gap</text>
+        <line x1="668" y1="20" x2="668" y2="82" stroke="#e0dbd0" stroke-width="1" stroke-dasharray="3 2"/>
+
+        <rect x="474" y="78" width="130" height="10" rx="2" fill="#4a90d9"/>
+        <text x="614" y="87" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">A4</text>
+
+        <!-- gap annotation -->
+        <text x="680" y="165" font-family="Space Mono,monospace" font-size="9" fill="#888">← gap</text>
+        <line x1="668" y1="90" x2="668" y2="232" stroke="#e0dbd0" stroke-width="1" stroke-dasharray="3 2"/>
+
+        <rect x="474" y="228" width="130" height="10" rx="2" fill="#4a90d9"/>
+        <text x="614" y="237" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">D3</text>
+
+        <text x="539" y="260" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="middle">D major, open — each pitch resonates</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="27" color="purple" title="Quartal Harmony">
+    <div class="sub-section">
+      <p class="sub-title">Stacked fourths</p>
+      <p>Conventional Western harmony stacks <span class="key">thirds</span>: D–F#–A is a major triad (major 3rd + minor 3rd). <span class="key">Quartal voicings</span> stack <span class="key">fourths</span> instead: D–G–C places each note a perfect fourth apart. The result is a chord that is neither obviously major nor minor. It hovers. McCoy Tyner used quartal voicings constantly on <em>A Love Supreme</em>; Nala Sinephro's work is built on them. They have a resonant, open quality because 4ths are less directionally charged than 3rds.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- LEFT: stacked interval blocks -->
+        <text x="125" y="22" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">STACKED 4THS</text>
+
+        <!-- C block (top) -->
+        <rect x="60" y="32" width="130" height="38" rx="3" fill="#8b5cf6" opacity="0.85"/>
+        <text x="125" y="56" font-family="Space Mono,monospace" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">C</text>
+
+        <text x="125" y="92" font-family="Space Mono,monospace" font-size="10" fill="#8b5cf6" text-anchor="middle">P4 ↕</text>
+
+        <!-- G block (middle) -->
+        <rect x="60" y="100" width="130" height="38" rx="3" fill="#8b5cf6" opacity="0.85"/>
+        <text x="125" y="124" font-family="Space Mono,monospace" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">G</text>
+
+        <text x="125" y="160" font-family="Space Mono,monospace" font-size="10" fill="#8b5cf6" text-anchor="middle">P4 ↕</text>
+
+        <!-- D block (bottom) -->
+        <rect x="60" y="168" width="130" height="38" rx="3" fill="#8b5cf6" opacity="0.85"/>
+        <text x="125" y="192" font-family="Space Mono,monospace" font-size="15" fill="#fff" font-weight="700" text-anchor="middle">D</text>
+
+        <!-- panel divider -->
+        <line x1="230" y1="10" x2="230" y2="215" stroke="#d9d4ca" stroke-width="1"/>
+
+        <!-- RIGHT: piano roll comparison -->
+        <text x="310" y="22" font-family="Space Mono,monospace" font-size="11" fill="#888" text-anchor="middle">D MAJOR</text>
+        <text x="550" y="22" font-family="Space Mono,monospace" font-size="11" fill="#8b5cf6" text-anchor="middle">QUARTAL D–G–C</text>
+
+        <!-- grid lines -->
+        <line class="grid-line" x1="240" y1="72" x2="720" y2="72"/>
+        <line class="grid-line" x1="240" y1="102" x2="720" y2="102"/>
+        <line class="grid-line" x1="240" y1="140" x2="720" y2="140"/>
+
+        <!-- D MAJOR: A4, F#4, D4 -->
+        <rect x="260" y="66" width="100" height="10" rx="2" fill="#4a90d9"/>
+        <text x="368" y="75" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">A4</text>
+        <rect x="260" y="96" width="100" height="10" rx="2" fill="#4a90d9"/>
+        <text x="368" y="105" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">F#4</text>
+        <rect x="260" y="134" width="100" height="10" rx="2" fill="#4a90d9"/>
+        <text x="368" y="143" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9">D4</text>
+        <text x="310" y="170" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">clearly major</text>
+
+        <!-- QUARTAL D–G–C: C5, G4, D4 -->
+        <!-- C5 = 10 semitones above D4; D4=140, 8px/semitone: C5=140-80=60 -->
+        <rect x="490" y="52" width="100" height="10" rx="2" fill="#8b5cf6"/>
+        <text x="598" y="61" font-family="Space Mono,monospace" font-size="10" fill="#8b5cf6">C5</text>
+        <!-- G4 = 5 semitones above D4: 140-40=100 -->
+        <rect x="490" y="100" width="100" height="10" rx="2" fill="#8b5cf6"/>
+        <text x="598" y="109" font-family="Space Mono,monospace" font-size="10" fill="#8b5cf6">G4</text>
+        <rect x="490" y="134" width="100" height="10" rx="2" fill="#8b5cf6"/>
+        <text x="598" y="143" font-family="Space Mono,monospace" font-size="10" fill="#8b5cf6">D4</text>
+        <text x="540" y="170" font-family="Space Mono,monospace" font-size="9" fill="#8b5cf6" text-anchor="middle">neither major</text>
+        <text x="540" y="182" font-family="Space Mono,monospace" font-size="9" fill="#8b5cf6" text-anchor="middle">nor minor</text>
+      </svg>
+    </div>
+
+    <div class="sub-section">
+      <p class="sub-title">Voice leading in quartal progressions</p>
+      <p>Even when chords don't follow functional harmony, inner voices should move efficiently — by half-step or whole-step when possible. Quartal voicings connect most smoothly when one voice moves by step and the others stay or move by a 4th. This maintains the open, resonant quality without creating harsh, lurching transitions between chords. The quartal language stays consistent; the motion sounds inevitable.</p>
+    </div>
+  </content-card>
+
+  <content-card number="28" color="green" title="Suspended Chords as Destinations">
+    <div class="sub-section">
+      <p class="sub-title">The tension that becomes the point</p>
+      <p><span class="key">Sus2</span> (D–E–A) and <span class="key">sus4</span> (D–G–A) are conventionally treated as tensions that resolve to major or minor. In functional harmony, a sus4 chord anticipates the resolution of its fourth down to the third. But if held long enough — 4 bars, 8 bars — the suspended chord stops feeling like tension and becomes the <span class="key">destination</span>.</p>
+      <p>This is one of the defining techniques of ambient and drone-influenced music: the suspension <em>is</em> the chord. The ear recalibrates. What felt unresolved after one bar feels complete after eight. Nala Sinephro's <em>Space 1.8</em> treats sus2 voicings as tonal home bases, never resolving them. The hovering quality is the point, not a problem to fix.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Duration as reframing</p>
+      <p>The same suspension chord can feel like unrest or like serenity depending entirely on how long it lasts. At one bar: tension. At eight bars: the new tonic. This is not a trick — it reflects how the brain's harmonic expectation system works. Once a context is held long enough, it stops being a deviation and becomes the norm. Ecstatic music exploits this recalibration systematically.</p>
+    </div>
+    <p><strong>Cross-reference:</strong> For suspended chords used as drone texture in a minimalist context, see <a href="m01-the-loop-as-architecture.html">m01-the-loop-as-architecture.html</a>.</p>
+  </content-card>
+
+  <content-card number="29" color="red" title="Polychords and Shimmer">
+    <div class="sub-section">
+      <p class="sub-title">Two triads, one texture</p>
+      <p>A <span class="key">polychord</span> stacks two triads a 2nd or 3rd apart, creating shimmer and density that neither triad alone possesses. A D major triad over a G bass creates Gsus2(add5). A <span class="key">C major triad over a D bass</span> creates something close to a D dominant 9th — luminous and harmonically ambiguous. This is the shimmer quality of Bon Iver's layered harmonics and much of late-period Arvo Pärt.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg">
+        <!-- grid lines -->
+        <line class="grid-line" x1="200" y1="55" x2="630" y2="55"/>
+        <line class="grid-line" x1="200" y1="75" x2="630" y2="75"/>
+        <line class="grid-line" x1="200" y1="95" x2="630" y2="95"/>
+        <line class="grid-line" x1="200" y1="115" x2="630" y2="115"/>
+        <line class="grid-line" x1="200" y1="135" x2="630" y2="135"/>
+        <line class="grid-line" x1="200" y1="155" x2="630" y2="155"/>
+
+        <!-- D major triad (blue): A4, F#4, D4 -->
+        <rect x="230" y="50" width="160" height="9" rx="2" fill="#4a90d9"/>
+        <text x="218" y="58" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="end">A4</text>
+        <rect x="230" y="90" width="160" height="9" rx="2" fill="#4a90d9"/>
+        <text x="218" y="98" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="end">F#4</text>
+        <rect x="230" y="130" width="160" height="9" rx="2" fill="#4a90d9"/>
+        <text x="218" y="138" font-family="Space Mono,monospace" font-size="10" fill="#4a90d9" text-anchor="end">D4</text>
+
+        <!-- C major triad (green): G4, E4, C4 — slightly offset right to show interleaving -->
+        <rect x="260" y="70" width="160" height="9" rx="2" fill="#5ba85b" opacity="0.9"/>
+        <text x="432" y="78" font-family="Space Mono,monospace" font-size="10" fill="#5ba85b">G4</text>
+        <rect x="260" y="110" width="160" height="9" rx="2" fill="#5ba85b" opacity="0.9"/>
+        <text x="432" y="118" font-family="Space Mono,monospace" font-size="10" fill="#5ba85b">E4</text>
+        <rect x="260" y="150" width="160" height="9" rx="2" fill="#5ba85b" opacity="0.9"/>
+        <text x="432" y="158" font-family="Space Mono,monospace" font-size="10" fill="#5ba85b">C4</text>
+
+        <!-- legend -->
+        <rect x="490" y="46" width="11" height="8" rx="1" fill="#4a90d9"/>
+        <text x="508" y="54" font-family="Space Mono,monospace" font-size="10" fill="#888">D major triad</text>
+        <rect x="490" y="64" width="11" height="8" rx="1" fill="#5ba85b"/>
+        <text x="508" y="72" font-family="Space Mono,monospace" font-size="10" fill="#888">C major triad</text>
+
+        <!-- result label -->
+        <text x="490" y="103" font-family="Space Mono,monospace" font-size="10" fill="#888">combined:</text>
+        <text x="490" y="118" font-family="Space Mono,monospace" font-size="10" fill="#888">D dom9 quality</text>
+        <text x="490" y="133" font-family="Space Mono,monospace" font-size="10" fill="#888">luminous +</text>
+        <text x="490" y="148" font-family="Space Mono,monospace" font-size="10" fill="#888">ambiguous</text>
+      </svg>
+    </div>
+
+    <div class="sub-section">
+      <p class="sub-title">Superimposition in D Mixolydian</p>
+      <p>The simplest polychord in D Mixolydian: play a C major triad in a high pad register while the bass emphasizes D. The C major notes (C, E, G) all belong to D Mixolydian, so there is no clash — only additional harmonic color. The C adds a ♭7; the E adds a 9th; the G adds the 4th. Together they create a warm, luminous extension of the D harmony without explicitly naming a chord quality.</p>
+    </div>
+    <p><strong>Cross-reference:</strong> For open voicing in a two-voice Bach context, see <a href="ch03-two-voices.html">ch03-two-voices.html</a>.</p>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <p class="sub-title">Open your E05-Ecstatic.als session</p>
+      <p>You have four tracks: Seed Groove (1-bar D Mixolydian melody), Hocket (3-against-4 percussive counter-voice), Mixolydian Pad (gasp harmonic sequence), and the foundational listening setup from E01. Now add a fifth track for a quartal open-voicing pad.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Voice the four quartal chords</p>
+      <p>Create a new MIDI track with a long-attack, long-release pad sound — strings, choir, or soft synth pad. Program a 4-bar MIDI clip with these quartal voicings, one chord per bar:</p>
+      <ul>
+        <li><strong>Bar 1:</strong> D–G–C — lowest note D3, middle G3 or G4, top note C5</li>
+        <li><strong>Bar 2:</strong> G–C–F# — lowest note G3, middle C4, top note F#4 or F#5 (top interval is an augmented 4th — a standard quartal variant that keeps all notes in D Mixolydian)</li>
+        <li><strong>Bar 3:</strong> A–D–G — lowest note A3, middle D4, top note G4</li>
+        <li><strong>Bar 4:</strong> D–G–C — return to bar 1 voicing</li>
+      </ul>
+      <p>Spread is critical: lowest note around D3, top note around C5 — over an octave of vertical space. Each chord lasts the full bar.</p>
+    </div>
+    <div class="sub-section">
+      <p class="sub-title">Notice the hovering quality</p>
+      <p>None of these quartal chords firmly establish D as tonic on their own — they hover between tonal centers. Let the Seed Groove track provide the tonal grounding while the quartal pad floats above. Play the full loop and observe: the groove anchors, the pad radiates. Save the session as <strong>E06-Ecstatic.als</strong>.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>OPEN VOICINGS ◇ QUARTAL HARMONY ◇ SUSPENSION AS DESTINATION ◇ POLYCHORDS ◇ OPEN VOICINGS ◇ QUARTAL HARMONY ◇ SUSPENSION AS DESTINATION ◇ POLYCHORDS ◇</site-banner>
+
+<chapter-nav
+  prev-href="e05-harmonic-gasps.html" prev-title="E05 — Harmonic Gasps">
+</chapter-nav>
+
+<site-footer text="MUSIC MANUAL — E 06: OPEN AND QUARTAL VOICINGS — D MIXOLYDIAN"></site-footer>
+
+</body>
+</html>

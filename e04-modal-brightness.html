@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E04 — Modal Brightness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="ecstatic.html" label="Ecstatic Music"></site-nav>
+
+<site-banner>CHAPTER E04 ◇ MODAL BRIGHTNESS ◇ CHAPTER E04 ◇ MODAL BRIGHTNESS ◇ CHAPTER E04 ◇ MODAL BRIGHTNESS</site-banner>
+
+<site-hero>
+  <span slot="title">Modal Brightness</span>
+  <span slot="subtitle">Lydian, Mixolydian, Lydian Dominant: three shades of ecstatic light.</span>
+</site-hero>
+
+<intro-box>The major scale has a problem: its V–I cadential pull sounds conclusive rather than hovering. Ecstatic music needs harmony that opens rather than closes. Three modes solve this — Mixolydian, Lydian Dominant, and Lydian — each sharing the major quality but with characteristic alterations that prevent full closure. This chapter maps those alterations, explains their emotional signatures, and shows how to move between them.</intro-box>
+
+<div class="content">
+
+  <content-card number="16" title="Why Modes Rather Than Major">
+    <div class="sub-section">
+      <div class="sub-title">The Problem With Ionian</div>
+      <p>Standard major — D Ionian — contains a <span class="key">leading tone</span>: C# wants to resolve up to D. Every dominant chord (A major) contains this pull, and the progression A→D is one of the strongest resolution forces in Western harmony. The ear hears V–I and feels arrival, completion, closure.</p>
+      <p>Ecstatic music needs the opposite: harmony that implies continuation, not conclusion. The ear should feel the music is still going somewhere, not that it has landed. The modes that accomplish this all share one quality with major — a major third above the root — while substituting a different note for either the 4th or the 7th (or both), breaking the cadential mechanism.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The Three Ecstatic Modes</div>
+      <p>All three are built on D for this series. They differ in which of the two characteristic notes they alter:</p>
+      <ul>
+        <li><span class="key">D Mixolydian</span> — ♭7 (C natural instead of C#). Breaks the leading-tone pull. Instead of A major resolving up to D as a dominant (V–I), the characteristic move is ♭VII→I: C major slides to D — a lateral step, not a resolution.</li>
+        <li><span class="key">D Lydian</span> — ♯4 (G# instead of G). The raised 4th destabilizes the subdominant direction, creating a floating, upward tendency in every phrase.</li>
+        <li><span class="key">D Lydian Dominant</span> — both ♯4 and ♭7. The most energetically charged: floating upward lift from the G# plus unresolved continuation from the C natural.</li>
+      </ul>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 175" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="modeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4a5568;stop-opacity:1" />
+            <stop offset="45%" style="stop-color:#4a90c4;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#f5a623;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+
+        <!-- Dark/Bright labels -->
+        <text x="30" y="28" font-family="Space Mono,monospace" font-size="10" fill="#888">MINOR</text>
+        <text x="720" y="28" font-family="Space Mono,monospace" font-size="10" fill="#888" text-anchor="end">ECSTATIC</text>
+
+        <!-- Gradient bar -->
+        <rect x="30" y="35" width="700" height="18" rx="4" fill="url(#modeGrad)" />
+
+        <!-- Ecstatic zone highlight (Mixolydian → Lydian) -->
+        <rect x="390" y="33" width="340" height="22" rx="4" fill="#e8832a" fill-opacity="0.25" stroke="#e8832a" stroke-width="1.5" stroke-dasharray="4 3" />
+        <text x="560" y="68" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">ECSTATIC ZONE</text>
+
+        <!-- Mode tick marks -->
+        <line x1="80" y1="35" x2="80" y2="53" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="195" y1="35" x2="195" y2="53" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="320" y1="35" x2="320" y2="53" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="440" y1="35" x2="440" y2="53" stroke="#e8832a" stroke-width="1.5"/>
+        <line x1="580" y1="35" x2="580" y2="53" stroke="#e8832a" stroke-width="1.5"/>
+        <line x1="695" y1="35" x2="695" y2="53" stroke="#e8832a" stroke-width="1.5"/>
+
+        <!-- Mode name labels -->
+        <text x="80" y="80" font-family="Space Mono,monospace" font-size="11" fill="#555" text-anchor="middle">Aeolian</text>
+        <text x="195" y="80" font-family="Space Mono,monospace" font-size="11" fill="#555" text-anchor="middle">Dorian</text>
+        <text x="320" y="80" font-family="Space Mono,monospace" font-size="11" fill="#4a90c4" text-anchor="middle">Ionian</text>
+        <text x="440" y="80" font-family="Space Mono,monospace" font-size="11" fill="#e8832a" text-anchor="middle" font-weight="bold">Mixolydian</text>
+        <text x="580" y="80" font-family="Space Mono,monospace" font-size="11" fill="#e8832a" text-anchor="middle" font-weight="bold">Lydian Dom</text>
+        <text x="695" y="80" font-family="Space Mono,monospace" font-size="11" fill="#e8832a" text-anchor="middle" font-weight="bold">Lydian</text>
+
+        <!-- Characteristic note labels -->
+        <text x="80" y="100" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">♭3 ♭6 ♭7</text>
+        <text x="195" y="100" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">♭3 ♭7</text>
+        <text x="320" y="100" font-family="Space Mono,monospace" font-size="9" fill="#4a90c4" text-anchor="middle">standard major</text>
+        <text x="440" y="100" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">♭7 = C♮</text>
+        <text x="580" y="100" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">♯4 + ♭7 = G# + C♮</text>
+        <text x="695" y="100" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">♯4 = G#</text>
+
+        <!-- Emotional captions -->
+        <text x="80" y="130" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle" font-style="italic">melancholic</text>
+        <text x="195" y="130" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle" font-style="italic">hopeful</text>
+        <text x="320" y="130" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle" font-style="italic">resolved</text>
+        <text x="440" y="130" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle" font-style="italic">floating lateral</text>
+        <text x="580" y="130" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle" font-style="italic">propelled + shimmering</text>
+        <text x="695" y="130" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle" font-style="italic">transcendent</text>
+
+        <!-- Diagram label -->
+        <text x="380" y="162" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">MODAL SPECTRUM — D AS ROOT — ECSTATIC ZONE SHADED</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="17" color="orange" title="D Mixolydian — The Groove Mode">
+    <div class="sub-section">
+      <div class="sub-title">One Note Changes Everything</div>
+      <p>D Mixolydian is D major with one alteration: C# becomes <span class="key">C natural</span>. The scale is D–E–F#–G–A–B–C. That one flattened 7th eliminates the leading tone — the note that gives major harmony its gravitational pull toward resolution.</p>
+      <p>A C natural over a D bass sounds like an unresolved dominant. It implies continuation rather than conclusion. This is why Mixolydian is the backbone of gospel, Celtic session music, and house: all forms where the music needs to keep moving forward without ever fully landing.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">The Sonic Fingerprint: I → ♭VII → IV</div>
+      <p>The three-chord progression D → C → G is Mixolydian's defining harmonic motion. C major (built on the ♭7) sits sideways from D — not below it as a dominant, not above it as a subdominant, but laterally adjacent. Moving from D to C doesn't feel like falling; it feels like sliding. Moving on to G (the IV) gives a breath before returning to D.</p>
+      <p>This progression appears in countless recordings: the Allman Brothers, Van Morrison's "Gloria" lineage, early house records, and Basic Channel's harmonic material. Its emotional quality is <em>triumphant without being militaristic</em> — joyful momentum without the march of V–I.</p>
+    </div>
+  </content-card>
+
+  <content-card number="18" title="D Lydian — Pure Shimmer">
+    <div class="sub-section">
+      <div class="sub-title">The Raised Fourth</div>
+      <p>D Lydian keeps C# (the major 7th) but raises G to <span class="key">G#</span>. The scale is D–E–F#–G#–A–B–C#. The G# creates a distinctive upward pull: it wants to drift to A, and since A is the fifth of D, every phrase takes on a floating, slightly unresolved shimmer.</p>
+      <p>This is the "transcendent" mode — the harmonic sound behind John Williams's wonder moments, Debussy's <em>Sunken Cathedral</em>, and much of ambient electronic music. The raised fourth makes the tritone (G#–D) built into the mode itself; it's harmonically charged simply by existing.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">How to Use It</div>
+      <p>Lydian is powerful but delicate. Used for brief, luminous passages — a 4-bar or 8-bar section breaking from an otherwise Mixolydian texture — it creates a genuine moment of lift. Extended over many bars it can feel precious or harmonically static. Think of it as the shimmer you deploy once per section, not the water you swim in all song.</p>
+      <p>The one-note move in or out of Lydian is the G: raise G to G# and you've entered Lydian territory. Lower it back and you've returned to Mixolydian or Ionian ground.</p>
+    </div>
+  </content-card>
+
+  <content-card number="19" color="purple" title="D Lydian Dominant — Maximum Momentum">
+    <div class="sub-section">
+      <div class="sub-title">Both Alterations Simultaneously</div>
+      <p>Lydian Dominant combines the alterations of both previous modes: <span class="key">♯4</span> (G# from Lydian) plus <span class="key">♭7</span> (C natural from Mixolydian). The scale is D–E–F#–G#–A–B–C. This is the most harmonically charged of the three ecstatic modes.</p>
+      <p>The G# provides the upward floating lift — every phrase wants to drift higher. The C natural prevents the dominant chord from resolving down — the music never lands. Both forces act simultaneously. The result is a sound that is both propelled and shimmering: it feels like it's moving fast while hovering in place.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Where It Appears</div>
+      <p>Jazz musicians use Lydian Dominant over dominant 7th chords at moments of maximum momentum — the measure before a major arrival. It appears in jazz-influenced electronic music (Nala Sinephro's approach to the raised 4th over Mixolydian bass lines). It's also the sound of many film trailer climaxes: all forward momentum, no resolution offered.</p>
+      <p>Because both alterations are active simultaneously, Lydian Dominant doesn't sustain as a home base for long passages. It works best as a push — a 2- or 4-bar intensification before returning to Mixolydian or resolving to Lydian.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <line x1="60" y1="55" x2="720" y2="55" class="grid-line"/>
+        <line x1="60" y1="105" x2="720" y2="105" class="grid-line"/>
+        <line x1="60" y1="155" x2="720" y2="155" class="grid-line"/>
+
+        <!-- Note x positions: D E F# G/G# A B C/C# -->
+        <!-- x = 90, 185, 280, 375, 465, 555, 645 -->
+
+        <!-- Row labels -->
+        <text x="52" y="59" font-family="Space Mono,monospace" font-size="10" fill="#e8832a" text-anchor="end" font-weight="bold">Mixolydian</text>
+        <text x="52" y="109" font-family="Space Mono,monospace" font-size="10" fill="#9b59b6" text-anchor="end" font-weight="bold">Lydian Dom</text>
+        <text x="52" y="159" font-family="Space Mono,monospace" font-size="10" fill="#4a90c4" text-anchor="end" font-weight="bold">Lydian</text>
+
+        <!-- Scale note labels (column headers) -->
+        <text x="90" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">D</text>
+        <text x="185" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">E</text>
+        <text x="280" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">F#</text>
+        <text x="375" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">G / G#</text>
+        <text x="465" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">A</text>
+        <text x="555" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">B</text>
+        <text x="645" y="25" font-family="Space Mono,monospace" font-size="10" fill="#555" text-anchor="middle">C / C#</text>
+
+        <!-- Mixolydian row: D E F# G A B C — characteristic: G (natural), C (♭7) -->
+        <circle cx="90" cy="55" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="185" cy="55" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="280" cy="55" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="375" cy="55" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="465" cy="55" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="555" cy="55" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="645" cy="55" r="8" fill="#e8832a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Characteristic note label: C♮ -->
+        <text x="645" y="40" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">C♮ ♭7</text>
+
+        <!-- Lydian Dominant row: D E F# G# A B C — characteristic: G# (♯4) and C (♭7) -->
+        <circle cx="90" cy="105" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="185" cy="105" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="280" cy="105" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="375" cy="105" r="8" fill="#e8832a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="465" cy="105" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="555" cy="105" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="645" cy="105" r="8" fill="#e8832a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <!-- Characteristic note labels -->
+        <text x="375" y="90" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">G# ♯4</text>
+        <text x="645" y="90" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">C♮ ♭7</text>
+
+        <!-- Lydian row: D E F# G# A B C# — characteristic: G# (♯4) and C# (major 7) -->
+        <circle cx="90" cy="155" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="185" cy="155" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="280" cy="155" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="375" cy="155" r="8" fill="#e8832a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <circle cx="465" cy="155" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="555" cy="155" r="6" fill="#4a90c4" stroke="none"/>
+        <circle cx="645" cy="155" r="6" fill="#4a90c4" stroke="none"/>
+        <!-- Characteristic note labels for Lydian -->
+        <text x="375" y="140" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">G# ♯4</text>
+        <text x="645" y="140" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">C# ♮7</text>
+
+        <!-- Legend -->
+        <circle cx="310" cy="185" r="5" fill="#4a90c4" stroke="none"/>
+        <text x="320" y="189" font-family="Space Mono,monospace" font-size="9" fill="#888">shared tone</text>
+        <circle cx="420" cy="185" r="6" fill="#e8832a" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="432" y="189" font-family="Space Mono,monospace" font-size="9" fill="#888">characteristic altered note</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="20" color="green" title="Moving Between the Three Modes">
+    <div class="sub-section">
+      <div class="sub-title">Single-Note Transitions</div>
+      <p>The three ecstatic modes differ by at most two notes from each other. This makes transitions extremely efficient — one or two notes change, and the harmonic world shifts noticeably. The easiest moves are stepwise across the spectrum:</p>
+      <ul>
+        <li><span class="key">Mixolydian → Lydian Dominant:</span> raise G to G#. One note. The groove locks harder; the shimmer intensifies.</li>
+        <li><span class="key">Lydian Dominant → Lydian:</span> raise C natural to C#. One note. The ♭7 disappears; the sense of floating increases, but lateral motion decreases.</li>
+        <li><span class="key">Lydian Dominant → Mixolydian:</span> lower G# back to G. One note. Returns to groove territory.</li>
+      </ul>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Structural Strategy</div>
+      <p>A productive approach: use <span class="key">Mixolydian</span> as the home base for groove-locked sections (most of the track), push to <span class="key">Lydian Dominant</span> for climactic intensifications (bridge, breakdown-to-drop moments), and use brief <span class="key">Lydian</span> passages for pure shimmer (4-bar intros, moment-before-return transitions).</p>
+      <p>The return signal is always the same: lowering the raised 4th (G# → G) signals the return to Mixolydian ground. The listener feels it even without knowing the theory — the floating upward quality resolves into the more grounded groove mode.</p>
+      <p>For mode choice in a darker harmonic context, see <a href="a02-mode-choice.html">A02 — Mode Choice</a> (Autumnal series), which treats Mixolydian as a secondary brightness against an Aeolian home base.</p>
+    </div>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
+        <!-- Chord block timeline: D major (I) 4 bars → C major (♭VII) 2 bars → G major (IV) 2 bars -->
+
+        <!-- Bar grid lines (8 bars, bar width ~85px, starting at x=30) -->
+        <line x1="30" y1="30" x2="30" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="115" y1="30" x2="115" y2="100" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="200" y1="30" x2="200" y2="100" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="285" y1="30" x2="285" y2="100" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="370" y1="30" x2="370" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="455" y1="30" x2="455" y2="100" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="540" y1="30" x2="540" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="625" y1="30" x2="625" y2="100" stroke="#d9d4ca" stroke-width="0.5"/>
+        <line x1="710" y1="30" x2="710" y2="100" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- D major block (bars 1-4, x=30 to 370) -->
+        <rect x="31" y="40" width="338" height="48" rx="3" fill="#4a90c4" fill-opacity="0.25" stroke="#4a90c4" stroke-width="1.5"/>
+        <text x="200" y="61" font-family="Space Mono,monospace" font-size="14" fill="#4a90c4" text-anchor="middle" font-weight="bold">D major</text>
+        <text x="200" y="78" font-family="Space Mono,monospace" font-size="10" fill="#4a90c4" text-anchor="middle">I — home</text>
+
+        <!-- C major block (bars 5-6, x=370 to 540) -->
+        <rect x="371" y="40" width="168" height="48" rx="3" fill="#e8832a" fill-opacity="0.25" stroke="#e8832a" stroke-width="1.5"/>
+        <text x="455" y="61" font-family="Space Mono,monospace" font-size="14" fill="#e8832a" text-anchor="middle" font-weight="bold">C major</text>
+        <text x="455" y="78" font-family="Space Mono,monospace" font-size="10" fill="#e8832a" text-anchor="middle">♭VII — floats</text>
+
+        <!-- G major block (bars 7-8, x=540 to 710) -->
+        <rect x="541" y="40" width="168" height="48" rx="3" fill="#4ab84a" fill-opacity="0.2" stroke="#4ab84a" stroke-width="1.5"/>
+        <text x="625" y="61" font-family="Space Mono,monospace" font-size="14" fill="#4ab84a" text-anchor="middle" font-weight="bold">G major</text>
+        <text x="625" y="78" font-family="Space Mono,monospace" font-size="10" fill="#4ab84a" text-anchor="middle">IV — breathes</text>
+
+        <!-- Bar number labels -->
+        <text x="72" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 1</text>
+        <text x="157" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 2</text>
+        <text x="242" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 3</text>
+        <text x="327" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 4</text>
+        <text x="412" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 5</text>
+        <text x="497" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 6</text>
+        <text x="582" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 7</text>
+        <text x="667" y="110" font-family="Space Mono,monospace" font-size="9" fill="#aaa" text-anchor="middle">bar 8</text>
+
+        <!-- C note annotation -->
+        <text x="455" y="128" font-family="Space Mono,monospace" font-size="9" fill="#e8832a" text-anchor="middle">C♮ = the ♭VII — doesn't resolve down, floats sideways</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <div class="sub-section">
+      <div class="sub-title">Session State: Two Tracks Running</div>
+      <p>Open your E01-Ecstatic.als session. You have two MIDI tracks: "Seed Groove" (1-bar D Mixolydian melody: D4–F#4–A4–C4) and "Hocket" (3-note percussive pattern creating a 3-against-4 polyrhythmic cycle). Both are looping.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 1 — Add the Slow Pad</div>
+      <p>Create a third MIDI track. Choose a pad sound with high attack (300–600ms) and long release (1–2 seconds) — a smooth synth pad, strings, or evolving texture. Label it "Mixolydian Pad."</p>
+      <p>Program two chords in an 8-bar MIDI clip: D major (D3–F#3–A3) sustained for 4 bars, then C major (C3–E3–G3) sustained for 4 bars. This is the I → ♭VII Mixolydian move. Loop the 8-bar clip.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 2 — Hear the Lateral Float</div>
+      <p>Play all three tracks together. Listen to how the C major chord arrives after 4 bars: it doesn't resolve downward (the way V → I does in major). It slides sideways. The bass note changes, the harmony changes, but the music doesn't feel like it has landed anywhere — it keeps moving forward.</p>
+      <p>Notice how the seed groove's C4 (the ♭7 of D Mixolydian) suddenly sounds "at home" when the pad shifts to C major. The mode and the harmony are now in agreement.</p>
+    </div>
+    <div class="sub-section">
+      <div class="sub-title">Step 3 — Try Lydian Dominant</div>
+      <p>Return to the D major section of the pad. In the seed groove MIDI clip, find the A4 note. Raise it by one semitone to A#4 (Bb4). Play back: this doesn't quite capture it — undo. Instead, find the G notes in any of your tracks and raise them to G#. Now the I chord has a Lydian Dominant quality: the ♯4 creates an upward shimmer against the D bass.</p>
+      <p>Notice how the feel changes: the same D root, the same C natural ♭7, but the G# adds a floating propulsion. This is the one-note move that tips from Mixolydian into Lydian Dominant territory. Undo before moving on — keep the session in clean Mixolydian for now. You've calibrated the difference.</p>
+      <p><strong>What you now have:</strong> Three MIDI tracks — seed groove, hocket, and a slow Mixolydian pad — with a clear I→♭VII harmonic cycle running underneath. The session has both rhythmic and harmonic motion for the first time.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>MODAL BRIGHTNESS ◇ MIXOLYDIAN ◇ LYDIAN DOMINANT ◇ LYDIAN ◇ MODAL BRIGHTNESS ◇ MIXOLYDIAN</site-banner>
+
+<chapter-nav
+  prev-href="e03-polyrhythm.html" prev-title="E03 — Polyrhythm and Cross-Rhythm"
+  next-href="e05-harmonic-gasps.html" next-title="E05 — Harmonic Gasps">
+</chapter-nav>
+
+<site-footer text="MUSIC MANUAL — E 04: MODAL BRIGHTNESS — D MIXOLYDIAN"></site-footer>
+
+</body>
+</html>
