@@ -101,3 +101,18 @@ Compact record of each chapter's Build It outcome. Used by the /add-page skill t
 - Bar 21: New lead melodic line (seed-cell derived, 2-bar MIDI clip) — 8 bars to end
 **What the student now has:** A 28-bar arrangement in Arrangement View with all six tracks layered in accumulation order. The full texture arrives at bar 21 and runs 8 bars. Student has tested whether the density at bar 21 feels earned or crowded, and adjusted spacing if needed.
 **Next chapter builds on:** E08-Ecstatic.als. E09 will extend the "all layers" section to 40 bars and introduce micro-variation in the lead melody to approach the trance point, followed by a 2-bar space (the trance break).
+
+---
+
+## E09 — The Trance Point
+
+**Session:** E09-Ecstatic.als (continued from E08) | 108 BPM | 4/4 | D Mixolydian
+**Structure:** 42-bar arrangement + arrival
+**Changes from E08:**
+- All-layers section extended from 8 bars (bars 21–28) to 20 bars (bars 21–40)
+- Lead melody only: micro-variation applied every 4 bars (bars 25, 29, 33, 37) — one note changed by half/whole step each time
+- Bars 41–42: trance break — all tracks muted except Bass Pedal (velocity reduced to 50–60)
+- Bar 43: all layers return simultaneously (trance break resolved)
+**Student identified:** the bar at which the trance point arrived (marked with a locator); tested whether the 2-bar space felt like surfacing or interruption; optionally pre-tapered bar 40 velocity
+**What the student now has:** A 42+-bar arrangement with a complete trance arc: accumulation → full density → micro-varied trance → 2-bar quiet break → arrival. The trance point is marked and the break is engineered.
+**Next chapter builds on:** E09-Ecstatic.als. E10 extends the 2-bar trance break to 4 bars and builds a staggered return — each layer reentering one at a time over 8 bars.

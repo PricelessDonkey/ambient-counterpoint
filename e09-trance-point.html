@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 09 — The Trance Point</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="components/index.js" defer></script>
+</head>
+<body>
+
+<site-nav href="ecstatic.html" label="Ecstatic Music"></site-nav>
+
+<site-banner>CHAPTER 09 ◇ THE TRANCE POINT ◇ CHAPTER 09 ◇ THE TRANCE POINT ◇ CHAPTER 09 ◇ THE TRANCE POINT ◇</site-banner>
+
+<site-hero>
+  <span slot="title">The Trance Point</span>
+  <span slot="subtitle">The moment where repetition tips from tracking into floating.</span>
+</site-hero>
+
+<intro-box>Every repeated pattern has a threshold — the point where the listener's brain stops consciously following the notes and starts experiencing the pattern as texture, as motion, as a surface to float on. This transition is the central psychological event of ecstatic music. This chapter describes what causes it, how long it takes, how to sustain it, and how to break it cleanly.</intro-box>
+
+<div class="content">
+
+  <content-card number="1" title="The Trance Point">
+    <p>When you first hear a loop, your brain is working: logging pitches, noting rhythmic positions, building a predictive model of what comes next. You are <span class="key">tracking</span> — consciously attending to the content of the pattern.</p>
+    <p>Once the model is complete, the brain shifts its mode of attention. The pattern is no longer an object to be understood; it becomes a substrate — something to float on rather than watch. This shift is the <span class="key">trance point</span>. Before it: "D, F#, A, C, rest, D..." After it: pure motion. No note-by-note analysis. The listener is inside the sound rather than observing it.</p>
+    <p>This is the defining psychological event of ecstatic music. It is not something that happens to every listener at exactly the same moment, but it is reliably producible by the right kind of repetition. The composer's job is to get the listener across the threshold — and then keep them there.</p>
+
+    <div class="diagram-wrap">
+      <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arr-th" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <path d="M0,0 L7,3.5 L0,7 z" fill="#1a1a1a"/>
+          </marker>
+        </defs>
+
+        <!-- Tracking zone -->
+        <rect x="60" y="18" width="655" height="82" fill="#dce8ff" opacity="0.45" rx="3"/>
+        <!-- Floating zone -->
+        <rect x="60" y="108" width="655" height="72" fill="#d4edda" opacity="0.45" rx="3"/>
+
+        <!-- Zone labels -->
+        <text x="72" y="48" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#4a7fc1">TRACKING</text>
+        <text x="74" y="63" font-family="Space Mono,monospace" font-size="10" fill="#4a7fc1" opacity="0.8">conscious attention — "D, F#, A, C..."</text>
+        <text x="72" y="135" font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#3a9a5c">FLOATING</text>
+        <text x="74" y="150" font-family="Space Mono,monospace" font-size="10" fill="#3a9a5c" opacity="0.8">pattern = substrate — pure motion</text>
+
+        <!-- Threshold dashed line -->
+        <line x1="60" y1="108" x2="715" y2="108" stroke="#aaaaaa" stroke-width="1" stroke-dasharray="5 4"/>
+
+        <!-- Axes -->
+        <line x1="60" y1="185" x2="716" y2="185" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arr-th)"/>
+        <line x1="60" y1="185" x2="60" y2="12" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arr-th)"/>
+
+        <!-- X tick marks and labels -->
+        <!-- rep 1=x60, rep 8=x225, rep 12=x308, rep 16=x390, rep 24=x555, rep 32=x720 -->
+        <line x1="60" y1="185" x2="60" y2="190" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="60" y="202" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">1</text>
+
+        <line x1="225" y1="185" x2="225" y2="190" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="225" y="202" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">8</text>
+
+        <line x1="308" y1="185" x2="308" y2="190" stroke="#e04848" stroke-width="1.5"/>
+        <text x="308" y="202" font-family="Space Mono,monospace" font-size="9" fill="#e04848" text-anchor="middle">12</text>
+
+        <line x1="390" y1="185" x2="390" y2="190" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="390" y="202" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">16</text>
+
+        <line x1="555" y1="185" x2="555" y2="190" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="555" y="202" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">24</text>
+
+        <line x1="715" y1="185" x2="715" y2="190" stroke="#1a1a1a" stroke-width="1"/>
+        <text x="715" y="202" font-family="Space Mono,monospace" font-size="9" fill="#666" text-anchor="middle">32</text>
+
+        <text x="388" y="210" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">REPETITIONS</text>
+
+        <!-- The curve — slow descent, inflection at rep 12, steeper below -->
+        <path d="M 60,28 C 150,28 245,72 308,108 S 530,168 715,176"
+              stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+
+        <!-- Inflection point (trance threshold) -->
+        <circle cx="308" cy="108" r="6" fill="#ffd200" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Label for inflection point -->
+        <line x1="308" y1="101" x2="308" y2="32" stroke="#888" stroke-width="1" stroke-dasharray="3 3"/>
+        <text x="318" y="38" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a">trance</text>
+        <text x="318" y="50" font-family="Space Mono,monospace" font-size="9" fill="#1a1a1a">threshold</text>
+        <text x="318" y="65" font-family="Space Mono,monospace" font-size="9" fill="#e04848">~rep 12</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="2" title="How Repetition Creates Trance">
+    <p>The brain is a <span class="key">prediction machine</span>. Every time a pattern repeats, it refines its internal model: the expected pitch, the expected rhythm, the expected arrival. Once the model is accurate and stable, the brain reduces its allocation of conscious attention to the pattern — it no longer needs to listen hard to know what comes next.</p>
+    <p>With the right music, the freed attention doesn't wander outward. Instead, it stays inside the sound, floating on the pattern as texture rather than content. The music becomes a field rather than a sequence of events. This is only possible if the pattern is rich enough to hold the ear and simple enough to be fully modeled — the ecstatic sweet spot.</p>
+    <p>This is why ecstatic patterns work best in the 4–8 note range. Fewer notes are modeled too quickly and produce boredom rather than trance. More notes take too long to model, or are never fully absorbed, keeping the listener in analytical mode. The <span class="key">D Mixolydian seed cell</span> built in E02 was designed for exactly this length.</p>
+  </content-card>
+
+  <content-card number="3" color="green" title="The Trance-Point Timeline">
+    <p>The trance point arrives at different times depending on pattern length and tempo. These are approximate thresholds — real listeners vary, but the ranges are reliable:</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Simple 4-note cell (1 bar)</div>
+      <p>At 108 BPM: approximately <strong>8–16 repetitions</strong> — about 15–35 seconds. This is the seed groove from E02. Faster listeners arrive at rep 8; slower analytical listeners at rep 16. The trance point is close enough that it arrives before the listener loses patience.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Complex 8-bar pattern</div>
+      <p>At 108 BPM: approximately <strong>4–8 repetitions</strong> — about 1–2 minutes total to reach the trance point. The longer pattern takes more repetitions to fully model, but each repetition gives the brain more prediction data. The trance point arrives later in calendar time but at fewer loop counts.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Tempo effect</div>
+      <p><strong>Faster tempos</strong> reach the trance point slightly earlier (less time per repetition means less time for the brain to second-guess its model). <strong>Slower tempos</strong> may require many more repetitions — 20 or 30 — before the pattern is truly absorbed. At very slow tempos, trance can feel more like a meditation than a groove.</p>
+    </div>
+
+    <div class="idiom">
+      <div class="idiom-name">The 16-Repetition Test</div>
+      Loop your seed cell 16 times in isolation, without drums or other context. If you are not fully absorbed by repetition 12–14, the cell is too complex or too static. This is different from the minimalist "16-repetition test" (see <a href="m02-loop-craft.html">M02 — Loop Craft</a>), which tests whether a loop can survive repetition; this test asks whether it can generate trance.
+    </div>
+  </content-card>
+
+  <content-card number="4" title="Sustaining the Trance Without Breaking It">
+    <p>Once the listener has crossed the trance threshold, the danger is equal on both sides: too much sameness produces <span class="key">boredom</span>, pulling the listener out of the trance by disengaging; too much change produces <span class="key">re-engagement</span>, pulling the listener back into analytical tracking mode. The goal is to move, barely.</p>
+    <p><span class="key">Micro-variation</span> is the solution: changing one note in the pattern every 4–8 loops, by a half or whole step. The change is small enough that the brain doesn't need to rebuild its model from scratch — it simply updates a single prediction. The listener feels the shift without hearing it consciously. See also <a href="m03-micro-variation.html">M03 — Micro-Variation</a> for the minimalist equivalent of this technique.</p>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 2: Micro-variation in trance — two piano-roll rows, 8 bars each -->
+      <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Row backgrounds -->
+        <rect x="60" y="18" width="640" height="60" fill="#f0f0f0" rx="2"/>
+        <rect x="60" y="118" width="640" height="60" fill="#f0f0f0" rx="2"/>
+
+        <!-- Row labels -->
+        <text x="54" y="42" font-family="Space Mono,monospace" font-size="9" fill="#4a7fc1" text-anchor="end" font-weight="700">ORIGINAL</text>
+        <text x="54" y="52" font-family="Space Mono,monospace" font-size="9" fill="#4a7fc1" text-anchor="end">loop</text>
+        <text x="54" y="142" font-family="Space Mono,monospace" font-size="9" fill="#3a9a5c" text-anchor="end" font-weight="700">VARIED</text>
+        <text x="54" y="152" font-family="Space Mono,monospace" font-size="9" fill="#3a9a5c" text-anchor="end">micro-change</text>
+
+        <!-- Bar lines for row 1 -->
+        <line x1="60" y1="18" x2="60" y2="78" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="140" y1="18" x2="140" y2="78" class="grid-line"/>
+        <line x1="220" y1="18" x2="220" y2="78" class="grid-line"/>
+        <line x1="300" y1="18" x2="300" y2="78" stroke="#888" stroke-width="1"/>
+        <line x1="380" y1="18" x2="380" y2="78" class="grid-line"/>
+        <line x1="460" y1="18" x2="460" y2="78" class="grid-line"/>
+        <line x1="540" y1="18" x2="540" y2="78" class="grid-line"/>
+        <line x1="620" y1="18" x2="620" y2="78" stroke="#888" stroke-width="1"/>
+        <line x1="700" y1="18" x2="700" y2="78" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Bar lines for row 2 -->
+        <line x1="60" y1="118" x2="60" y2="178" stroke="#1a1a1a" stroke-width="1.5"/>
+        <line x1="140" y1="118" x2="140" y2="178" class="grid-line"/>
+        <line x1="220" y1="118" x2="220" y2="178" class="grid-line"/>
+        <line x1="300" y1="118" x2="300" y2="178" stroke="#888" stroke-width="1"/>
+        <line x1="380" y1="118" x2="380" y2="178" class="grid-line"/>
+        <line x1="460" y1="118" x2="460" y2="178" class="grid-line"/>
+        <line x1="540" y1="118" x2="540" y2="178" class="grid-line"/>
+        <line x1="620" y1="118" x2="620" y2="178" stroke="#888" stroke-width="1"/>
+        <line x1="700" y1="118" x2="700" y2="178" stroke="#1a1a1a" stroke-width="1.5"/>
+
+        <!-- Bar numbers for row 1 (below) -->
+        <text x="100" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">1</text>
+        <text x="180" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">2</text>
+        <text x="260" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">3</text>
+        <text x="340" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">4</text>
+        <text x="420" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">5</text>
+        <text x="500" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">6</text>
+        <text x="580" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">7</text>
+        <text x="660" y="90" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">8</text>
+
+        <!-- Seed groove notes: D4, F#4, A4, C4 within each bar -->
+        <!-- Pitch Y (row 1): A4=26, F#4=36, D4=50, C4=60 -->
+        <!-- Note: x offset within bar = 10 (D4), 21 (F#4), 32 (A4), 43 (C4) -->
+        <!-- Note size: width=10, height=8, rx=2 -->
+
+        <!-- Helper: bars at x= 60, 140, 220, 300, 380, 460, 540, 620 -->
+        <!-- Row 1 — all original (blue) -->
+        <!-- Bar 1 -->
+        <rect x="70" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="81" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="92" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="103" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 2 -->
+        <rect x="150" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="161" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="172" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="183" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 3 -->
+        <rect x="230" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="241" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="252" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="263" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 4 -->
+        <rect x="310" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="321" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="332" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="343" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 5 -->
+        <rect x="390" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="401" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="412" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="423" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 6 -->
+        <rect x="470" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="481" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="492" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="503" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 7 -->
+        <rect x="550" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="561" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="572" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="583" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 8 -->
+        <rect x="630" y="50" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="641" y="36" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="652" y="26" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="663" y="60" width="10" height="8" rx="2" fill="#4a7fc1"/>
+
+        <!-- Row 2 — same as row 1, but bars 4 and 8 have F#4 changed to G4 (green, shifted slightly up) -->
+        <!-- Row 2 Y offsets = row 1 + 100: A4=126, G4=131 (raised one step), F#4=136, D4=150, C4=160 -->
+        <!-- Bar 1 (row 2) -->
+        <rect x="70" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="81" y="136" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="92" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="103" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 2 (row 2) -->
+        <rect x="150" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="161" y="136" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="172" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="183" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 3 (row 2) -->
+        <rect x="230" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="241" y="136" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="252" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="263" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 4 (row 2) — F#4 → G4 (green, y=131 instead of 136) -->
+        <rect x="310" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="321" y="131" width="10" height="8" rx="2" fill="#3a9a5c"/>
+        <circle cx="326" cy="135" r="9" fill="none" stroke="#3a9a5c" stroke-width="1.5"/>
+        <rect x="332" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="343" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 5 (row 2) -->
+        <rect x="390" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="401" y="136" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="412" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="423" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 6 (row 2) -->
+        <rect x="470" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="481" y="136" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="492" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="503" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 7 (row 2) -->
+        <rect x="550" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="561" y="136" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="572" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="583" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <!-- Bar 8 (row 2) — F#4 → G4 (green) -->
+        <rect x="630" y="150" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="641" y="131" width="10" height="8" rx="2" fill="#3a9a5c"/>
+        <circle cx="646" cy="135" r="9" fill="none" stroke="#3a9a5c" stroke-width="1.5"/>
+        <rect x="652" y="126" width="10" height="8" rx="2" fill="#4a7fc1"/>
+        <rect x="663" y="160" width="10" height="8" rx="2" fill="#4a7fc1"/>
+
+        <!-- Section labels for bars 4 and 8 in row 2 -->
+        <text x="326" y="180" font-family="Space Mono,monospace" font-size="8" fill="#3a9a5c" text-anchor="middle">bar 4 change</text>
+        <text x="646" y="180" font-family="Space Mono,monospace" font-size="8" fill="#3a9a5c" text-anchor="middle">bar 8 change</text>
+
+        <!-- Bottom caption -->
+        <text x="380" y="197" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle" font-style="italic">below threshold — felt, not analyzed</text>
+      </svg>
+    </div>
+
+    <div class="idiom">
+      <div class="idiom-name">The Calibration Rule</div>
+      Too much variation: the listener re-engages analytical attention and starts tracking again. Too little: boredom — the pattern becomes wallpaper. One note changed by a half or whole step every 4–8 loops sits reliably below the analytical threshold. If a listener can describe what changed without rewinding, you have crossed back into variation territory.
+    </div>
+  </content-card>
+
+  <content-card number="5" color="red" title="The Trance Break">
+    <p>Every trance point ends. A new layer enters, a harmony changes significantly, the texture drops out — some event returns the listener to a more conscious mode of attention. The art is in how cleanly this transition happens.</p>
+    <p>The worst trance break feels like an interruption — as if someone switched channels. The best trance break feels like <span class="key">emerging from water</span>: a smooth return to the surface, with a moment of maximum density or maximum space that signals the shift before it arrives.</p>
+    <p>Prepare the break with contrast: if the trance was dense, the break is a sudden space. If the trance was sparse, the break is a new layer arriving with sudden weight. The listener should feel the approach before the arrival — a slight sense of "something is about to change" that is confirmed rather than surprised.</p>
+
+    <div class="diagram-wrap">
+      <!-- Diagram 3: Trance break structure — layer timeline bars 29–44 -->
+      <svg viewBox="0 0 760 195" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Section labels -->
+        <text x="215" y="14" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">ALL LAYERS — DENSE (bars 29–40)</text>
+        <text x="590" y="14" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">SPACE</text>
+        <text x="683" y="14" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">ARRIVAL</text>
+
+        <!-- Section bracket lines above rows -->
+        <line x1="60" y1="17" x2="540" y2="17" stroke="#888" stroke-width="0.75"/>
+        <line x1="540" y1="17" x2="540" y2="22" stroke="#888" stroke-width="0.75"/>
+        <line x1="60" y1="17" x2="60" y2="22" stroke="#888" stroke-width="0.75"/>
+
+        <line x1="545" y1="17" x2="625" y2="17" stroke="#e04848" stroke-width="0.75"/>
+        <line x1="545" y1="17" x2="545" y2="22" stroke="#e04848" stroke-width="0.75"/>
+        <line x1="625" y1="17" x2="625" y2="22" stroke="#e04848" stroke-width="0.75"/>
+
+        <line x1="630" y1="17" x2="700" y2="17" stroke="#ffd200" stroke-width="0.75"/>
+        <line x1="630" y1="17" x2="630" y2="22" stroke="#ffd200" stroke-width="0.75"/>
+        <line x1="700" y1="17" x2="700" y2="22" stroke="#ffd200" stroke-width="0.75"/>
+
+        <!-- Row definitions: 5 tracks, 22px tall, 3px gap, starts y=24 -->
+        <!-- Lead Melody: y=24, Quartal Pad: y=49, Hocket: y=74, Seed Groove: y=99, Bass Pedal: y=124 -->
+        <!-- Bars: 29=x60, 30=x100, ..., 40=x500, 41=x540, 42=x580, 43=x620, 44=x660, 45=x700 -->
+        <!-- Bar width: 40px -->
+
+        <!-- Row labels -->
+        <text x="54" y="38" font-family="Space Mono,monospace" font-size="8" fill="#e8894a" text-anchor="end">LEAD</text>
+        <text x="54" y="63" font-family="Space Mono,monospace" font-size="8" fill="#9b8bc4" text-anchor="end">PAD</text>
+        <text x="54" y="88" font-family="Space Mono,monospace" font-size="8" fill="#5a9a6a" text-anchor="end">HOCKET</text>
+        <text x="54" y="113" font-family="Space Mono,monospace" font-size="8" fill="#4a7fc1" text-anchor="end">GROOVE</text>
+        <text x="54" y="138" font-family="Space Mono,monospace" font-size="8" fill="#4a7fc1" text-anchor="end">PEDAL</text>
+
+        <!-- Dense section: bars 29–40 (x=60 to x=540, width=480) — all 5 tracks -->
+        <!-- Lead Melody (orange) -->
+        <rect x="60" y="24" width="480" height="22" rx="2" fill="#e8894a" opacity="0.85"/>
+        <!-- Quartal Pad (purple) -->
+        <rect x="60" y="49" width="480" height="22" rx="2" fill="#9b8bc4" opacity="0.85"/>
+        <!-- Hocket (green) -->
+        <rect x="60" y="74" width="480" height="22" rx="2" fill="#5a9a6a" opacity="0.85"/>
+        <!-- Seed Groove (blue) -->
+        <rect x="60" y="99" width="480" height="22" rx="2" fill="#4a7fc1" opacity="0.85"/>
+        <!-- Bass Pedal (blue) -->
+        <rect x="60" y="124" width="480" height="22" rx="2" fill="#4a7fc1" opacity="0.85"/>
+
+        <!-- Micro-variation label within dense section -->
+        <text x="300" y="37" font-family="Space Mono,monospace" font-size="8" fill="white" text-anchor="middle">micro-variation every 4 bars</text>
+
+        <!-- Space section: bars 41–42 (x=540 to x=620, width=80) — only Bass Pedal -->
+        <rect x="540" y="124" width="80" height="22" rx="2" fill="#4a7fc1" opacity="0.3"/>
+        <!-- Empty rows (show just background) -->
+        <rect x="540" y="24" width="80" height="22" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+        <rect x="540" y="49" width="80" height="22" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+        <rect x="540" y="74" width="80" height="22" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+        <rect x="540" y="99" width="80" height="22" rx="2" fill="none" stroke="#ddd" stroke-width="1" stroke-dasharray="3 3"/>
+        <!-- Space label -->
+        <text x="580" y="115" font-family="Space Mono,monospace" font-size="7.5" fill="#e04848" text-anchor="middle">pedal only</text>
+
+        <!-- Arrival section: bars 43–44 (x=620 to x=700, width=80) — arrival -->
+        <rect x="620" y="24" width="80" height="22" rx="2" fill="#ffd200" opacity="0.6" stroke="#1a1a1a" stroke-width="0.5"/>
+        <rect x="620" y="49" width="80" height="22" rx="2" fill="#ffd200" opacity="0.6" stroke="#1a1a1a" stroke-width="0.5"/>
+        <rect x="620" y="74" width="80" height="22" rx="2" fill="#ffd200" opacity="0.6" stroke="#1a1a1a" stroke-width="0.5"/>
+        <rect x="620" y="99" width="80" height="22" rx="2" fill="#ffd200" opacity="0.6" stroke="#1a1a1a" stroke-width="0.5"/>
+        <rect x="620" y="124" width="80" height="22" rx="2" fill="#4a7fc1" opacity="0.85"/>
+        <text x="660" y="69" font-family="Space Mono,monospace" font-size="7.5" fill="#1a1a1a" text-anchor="middle">arrival</text>
+        <text x="660" y="79" font-family="Space Mono,monospace" font-size="7.5" fill="#1a1a1a" text-anchor="middle">begins</text>
+
+        <!-- Bar dividers within dense section (every 4 bars = every 160px) -->
+        <line x1="220" y1="24" x2="220" y2="146" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+        <line x1="380" y1="24" x2="380" y2="146" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+
+        <!-- Bar number labels at bottom -->
+        <text x="60" y="158" font-family="Space Mono,monospace" font-size="8.5" fill="#666" text-anchor="middle">29</text>
+        <text x="220" y="158" font-family="Space Mono,monospace" font-size="8.5" fill="#666" text-anchor="middle">33</text>
+        <text x="380" y="158" font-family="Space Mono,monospace" font-size="8.5" fill="#666" text-anchor="middle">37</text>
+        <text x="540" y="158" font-family="Space Mono,monospace" font-size="8.5" fill="#e04848" text-anchor="middle">41</text>
+        <text x="620" y="158" font-family="Space Mono,monospace" font-size="8.5" fill="#e04848" text-anchor="middle">43</text>
+        <text x="700" y="158" font-family="Space Mono,monospace" font-size="8.5" fill="#666" text-anchor="middle">45</text>
+
+        <!-- Bottom axis line -->
+        <line x1="60" y1="149" x2="700" y2="149" stroke="#1a1a1a" stroke-width="1"/>
+
+        <!-- Caption -->
+        <text x="380" y="178" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">dense → trance → space (2 bars) → arrival</text>
+        <text x="380" y="190" font-family="Space Mono,monospace" font-size="9" fill="#888" text-anchor="middle">emerging from water, not being interrupted</text>
+      </svg>
+    </div>
+  </content-card>
+
+  <content-card number="✦" color="orange" title="Build It">
+    <p>Open your <strong>E08-Ecstatic.als</strong> session. You have a 28-bar arrangement with all six tracks layered in accumulation order, full texture arriving at bar 21.</p>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 1 — Extend to 40 bars</div>
+      <p>In Arrangement View, extend all clips so the "all layers active" section runs from bar 21 through bar 40 (20 bars total, rather than the original 8). Do not change anything yet — just extend the clips. Play from bar 1 and let the full texture run. Note which bar the trance point seems to arrive. Mark it with a locator.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 2 — Introduce micro-variation</div>
+      <p>On the lead melody track only (the new melodic line added in E08), open the MIDI clip editor. Every 4 bars (bars 25, 29, 33, 37), change one note in the seed cell by a half or whole step — your choice. Leave every other track completely unchanged. Repeat the same or different micro-variation each time; let your ear guide you. Render and listen back.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 3 — The trance break</div>
+      <p>At bar 41, mute all tracks except the Bass Pedal for 2 bars (bars 41–42). Reduce the Bass Pedal velocity to 50–60 during these 2 bars (a quiet hum, not silence). At bar 43, bring all layers back simultaneously. Play the full arrangement from bar 1. The shift from dense → 2-bar quiet → full return is your trance break.</p>
+    </div>
+
+    <div class="sub-section">
+      <div class="sub-title">Step 4 — Identify the threshold</div>
+      <p>Play the arrangement three times with fresh ears (ideally with a short break between listens). Mark the bar where the trance point arrives each time. Compare. The trance break at bar 41 should feel like surfacing from water — a moment of breath before the return. If it feels abrupt, try reducing the velocity at bar 40 (the last dense bar) by 10–15% as a pre-emptive signal. Save as <strong>E09-Ecstatic.als</strong>.</p>
+    </div>
+  </content-card>
+
+</div>
+
+<site-banner>COLTRANE × REICH × RILEY × BASIC CHANNEL × SINEPHRO ◇ D MIXOLYDIAN ◇ COLTRANE × REICH × RILEY × BASIC CHANNEL × SINEPHRO ◇ D MIXOLYDIAN ◇</site-banner>
+
+<chapter-nav
+  prev-href="e08-accumulation.html" prev-title="Ch 08 — Accumulation">
+</chapter-nav>
+
+<site-footer text="MUSIC MANUAL — E 09: THE TRANCE POINT — D MIXOLYDIAN"></site-footer>
+
+</body>
+</html>
